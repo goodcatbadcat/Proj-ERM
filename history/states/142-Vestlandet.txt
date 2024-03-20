@@ -1,0 +1,53 @@
+
+state={
+	id=142
+	name="STATE_142"
+	manpower = 880945
+	
+	state_category = town
+	
+	resources={
+		chromium=1 # was: 2
+		aluminium=15 # was: 22
+	}
+
+	history = {
+		victory_points = { 53 1 }
+		victory_points = { 122 3 }
+		owner = NOR
+		add_core_of = NOR
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 2
+			air_base = 1
+			53 = {
+				naval_base = 1
+				coastal_bunker = 1
+			}
+			122 = {
+				naval_base = 3
+				coastal_bunker = 2
+			}
+		}
+		1941.1.1 = {
+			owner = NOR
+			controller = GER
+			buildings = {
+				industrial_complex = 0
+			}
+		}
+		1944.1.1 = {
+			buildings = {
+				air_base = 5
+				radar_station = 1
+				anti_air_building = 2 
+			}
+		}	
+	}
+
+	provinces={
+		53 65 102 122 137 188 199 3090 3093 3096 3114 3180 3188 3192 6145 6176 6204 6216 9047 9127 9170 9216 11100 11198  
+	}
+
+	local_supplies=0.0 
+}

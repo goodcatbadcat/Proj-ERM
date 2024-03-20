@@ -1,0 +1,414 @@
+﻿##############################
+# FINNISH DIVISION TEMPLATES #
+##############################
+
+
+#####################
+# INFANTRY VARIANTS #
+#####################
+
+division_template = {
+	name = "Jalkaväkidivisioona"		# Infantry Division
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		artillery_brigade = { x = 2 y = 1 }
+		artillery_brigade = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		anti_tank = { x = 0 y = 2 }
+		recon = { x = 0 y = 3 }
+	}
+}
+
+division_template = {
+	name = "Jalkaväkiprikaati"		# Infantry Brigade
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		artillery_brigade = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		anti_tank = { x = 0 y = 2 }
+		recon = { x = 0 y = 3 }
+	}
+}
+
+## Garrison Troops ##
+division_template = {
+	name = "Erillinen Prikaati" 	# Separate Brigade - Represents groups of separate battalions (Erillinen Pataljoona) and various garrison units
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+	priority = 0
+}
+
+####################
+# CAVALRY VARIANTS #
+####################
+
+division_template = {
+	name = "Ratsuväkiprikaati" 		# Cavalry Division
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+		artillery_brigade = { x = 2 y = 0 }
+		artillery_brigade = { x = 2 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		anti_tank = { x = 0 y = 2 }
+		recon = { x = 0 y = 3 }
+	}
+}
+
+######################
+# MOTORIZED VARIANTS #
+######################
+
+division_template = {
+	name = "Panssaridivisioona"			
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+        motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }	
+		artillery_brigade = { x = 3 y = 0 }
+		anti_tank_brigade = { x = 3 y = 1 }
+		anti_tank_brigade = { x = 3 y = 2 }
+	}
+	support = {
+       	artillery = { x = 0 y = 0 } 
+		anti_tank = { x = 0 y = 1 }
+		recon = { x = 0 y = 2 }
+		engineer = { x = 0 y = 3 }
+	}
+	priority = 10
+}
+
+###################
+# ORDER OF BATTLE #
+###################
+
+units = {
+
+	#################
+	# VIIPURI FRONT #
+	#################
+	
+	division = {
+		name = "20. Prikaati"
+		location = 9206
+		division_template = "Jalkaväkiprikaati"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "FIN" } }
+		start_experience_factor = 0.80
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "18. Divisioona"
+		location = 9206
+		division_template = "Jalkaväkidivisioona"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "FIN" } }
+		start_experience_factor = 0.75
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "4. Divisioona"
+		location = 9206
+		division_template = "Jalkaväkidivisioona"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "FIN" } }
+		start_experience_factor = 0.75
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "3. Prikaati"
+		location = 9206
+		division_template = "Jalkaväkiprikaati"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "FIN" } }
+		start_experience_factor = 0.75
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "3. Divisioona"
+		location = 9206
+		division_template = "Jalkaväkidivisioona"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "FIN" } }
+		start_experience_factor = 0.80
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Ita-Suoma Ratsuväkiprikaati"
+		location = 6186
+		division_template = "Erillinen Prikaati"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "FIN" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Ratsuväkiprikaati"
+		location = 11162
+		division_template = "Ratsuväkiprikaati"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "FIN" } }
+		start_experience_factor = 0.75
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "10. Divisioona"
+		location = 11162
+		division_template = "Jalkaväkidivisioona"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "FIN" } }
+		start_experience_factor = 0.79
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "1. Panssaridivisioona"
+		location = 11162
+		division_template = "Panssaridivisioona"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "FIN" } }
+		force_equipment_variants = { light_tank_destroyer_equipment_2 = { owner = "FIN" } }
+		start_experience_factor = 0.85
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "2. Divisioona"
+		location = 9105
+		division_template = "Jalkaväkidivisioona"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "FIN" } }
+		start_experience_factor = 0.95
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "15. Divisioona"
+		location = 9105
+		division_template = "Jalkaväkidivisioona"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "FIN" } }
+		start_experience_factor = 0.88
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "19. Prikaati"
+		location = 9105
+		division_template = "Jalkaväkiprikaati"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "FIN" } }
+		start_experience_factor = 0.85
+		start_equipment_factor = 1.0
+	}
+	
+	#####################
+	# KARELIAN RESERVES #
+	#####################
+	
+	division = {
+		name = "11. Divisioona"
+		location = 3187
+		division_template = "Jalkaväkidivisioona"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "FIN" } }
+		start_experience_factor = 0.88
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "17. Divisioona"
+		location = 3187
+		division_template = "Jalkaväkidivisioona"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "FIN" } }
+		start_experience_factor = 0.85
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "6. Divisioona"
+		location = 3187
+		division_template = "Jalkaväkidivisioona"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "FIN" } }
+		start_experience_factor = 0.92
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Laatokan Ratsuväkiprikaati"
+		location = 3187
+		division_template = "Erillinen Prikaati"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "FIN" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 1.0
+	}
+	
+	#################
+	# OLONETS FRONT #
+	#################
+	
+	division = {
+		name = "5. Divisioona"
+		location = 11153
+		division_template = "Jalkaväkidivisioona"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "FIN" } }
+		start_experience_factor = 0.88
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "15. Prikaati"
+		location = 6057
+		division_template = "Jalkaväkiprikaati"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "FIN" } }
+		start_experience_factor = 0.85
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "7. Divisioona"
+		location = 3084
+		division_template = "Jalkaväkidivisioona"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "FIN" } }
+		start_experience_factor = 0.88
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "8. Divisioona"
+		location = 6106
+		division_template = "Jalkaväkidivisioona"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "FIN" } }
+		start_experience_factor = 0.88
+		start_equipment_factor = 1.0
+	}
+	
+	###############
+	# ONEGA FRONT #
+	###############
+	
+	division = {
+		name = "Rajajääkäriprikaati"
+		location = 6153
+		division_template = "Erillinen Prikaati"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "FIN" } }
+		start_experience_factor = 0.65
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "1. Divisioona"
+		location = 155
+		division_template = "Jalkaväkidivisioona"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "FIN" } }
+		start_experience_factor = 0.94
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "21. Prikaati"
+		location = 3071
+		division_template = "Jalkaväkiprikaati"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "FIN" } }
+		start_experience_factor = 0.85
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "14. Divisioona"
+		location = 6096
+		division_template = "Jalkaväkidivisioona"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "FIN" } }
+		start_experience_factor = 0.95
+		start_equipment_factor = 1.0
+	}
+	
+	#############
+	# GARRISONS #
+	#############
+	
+	division = {
+		name = "Osasto Aland"
+		location = 9228
+		division_template = "Erillinen Prikaati"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FIN" } }
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.99
+	}
+	division = {
+		name = "Osasto Turku"
+		location = 3083
+		division_template = "Erillinen Prikaati"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FIN" } }
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.99
+	}
+	division = {
+		name = "Osasto Hanko"
+		location = 9158
+		division_template = "Erillinen Prikaati"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FIN" } }
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.99
+	}
+	division = {
+		name = "Osasto Vaasa"
+		location = 3122
+		division_template = "Erillinen Prikaati"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FIN" } }
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.99
+	}
+	division = {
+		name = "Osasto Oulu"
+		location = 6183
+		division_template = "Erillinen Prikaati"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FIN" } }
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.95
+	}
+}
+
+###########
+# AIR OOB #
+###########
+
+air_wings = {
+
+	# Helsinki #
+	111 = {
+		### Suomen Ilmavoimat ###
+		fighter_equipment_2 = {
+			owner = "FIN"
+			amount = 50
+		}	
+		name = "1. Suomen Ilmavoimat"
+		##
+		fighter_equipment_2 = {
+			owner = "FIN"
+			amount = 50
+		}	
+		name = "2. Suomen Ilmavoimat"
+		##
+		fighter_equipment_2 = {
+			owner = "FIN"
+			amount = 50
+		}	
+		name = "3. Suomen Ilmavoimat"
+		##
+	}
+}

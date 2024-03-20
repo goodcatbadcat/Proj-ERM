@@ -1,0 +1,234 @@
+leader_traits = {
+
+###################################################################
+###################### Head of Government #########################
+###################################################################
+
+	HOG_brown_eminence = {
+		random = yes
+		sprite = 13
+		political_power_factor = 0.10
+		consumer_goods_factor = -0.05
+		army_org_factor = -0.10
+		stability_factor = -0.10
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	HOG_provisional_government = {
+		random = yes
+		sprite = 13
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	HOG_the_razor = {
+		random = yes
+		sprite = 13
+		political_power_factor = 0.15
+		consumer_goods_factor = -0.10
+		stability_factor = 0.10
+		war_support_factor = 0.10
+		training_time_factor = -0.10
+		ai_focus_aggressive_factor = 0.50
+		justify_war_goal_time = -0.50
+		subversive_activites_upkeep = -0.5
+		
+		equipment_bonus = {
+			infantry_equipment = {
+				build_cost_ic = -0.05 instant = yes
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	HOG_silent_workhorse = {
+		random = yes
+		sprite = 13
+		political_power_factor = 0.15
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	HOG_flamboyant_tough_guy = {
+		war_support_factor = 0.06
+		stability_factor = 0.06
+		political_power_gain = -0.10
+		
+		random = no
+	}
+
+	HOG_naive_optimist = {
+		random = yes
+		sprite = 13
+		political_power_factor = -0.05
+		consumer_goods_factor = -0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	HOG_happy_amateur = {
+		random = yes
+		sprite = 13
+		political_power_factor = -0.05
+		consumer_goods_factor = 0.10
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	HOG_backstabber_backroom = {
+		random = yes
+		sprite = 13
+		stability_factor = 0.15
+		production_factory_max_efficiency_factor = 0.10
+		political_power_factor = 0.05
+		consumer_goods_factor = -0.075
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	HOG_smiling_oilman = {
+		sprite = 13
+		production_factory_max_efficiency_factor = 0.05
+		production_speed_synthetic_refinery_factor = 0.20
+		opinion_gain_monthly_factor = -0.001
+		trade_opinion_factor = -0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	HOG_old_general = {
+		sprite = 13
+		training_time_factor = -0.05
+		production_speed_arms_factory_factor = 0.075
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	HOG_old_admiral = {
+		sprite = 13 
+		production_speed_naval_base_factor = 0.10
+		production_speed_dockyard_factor = 0.10
+		experience_gain_navy = 0.25
+
+		random = no
+	}
+
+	HOG_old_air_marshal = {
+		sprite = 13 
+		production_speed_air_base_factor = 0.10
+
+		equipment_bonus = {
+			fighter_equipment = {
+				build_cost_ic = -0.05
+				instant = yes
+			}
+			heavy_fighter_equipment = {
+				build_cost_ic = -0.05
+				instant = yes
+			}
+			CAS_equipment = {
+				build_cost_ic = -0.05
+				instant = yes
+			}
+			tac_bomber_equipment = {
+				build_cost_ic = -0.05
+				instant = yes
+			}
+			strat_bomber_equipment = {
+				build_cost_ic = -0.05
+				instant = yes
+			}
+		}
+		experience_gain_air = 0.05
+
+		random = no
+	}
+
+	HOG_political_protege = {
+		sprite = 13
+		consumer_goods_factor = 0.05
+		political_power_gain = 0.25
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	HOG_corporate_suit = {
+		sprite = 13 
+		trade_opinion_factor = 0.05
+		political_power_gain = -0.20
+		production_speed_industrial_complex_factor = 0.12
+		production_speed_arms_factory_factor = 0.06
+
+		random = no
+	}
+	
+	HOG_insignificant_layman = {
+		sprite = 13 
+		political_power_gain = -0.10
+
+		random = no
+	}
+
+	HOG_ambitious_union_boss = {
+		sprite = 13 
+		industrial_capacity_factory = 0.08
+		political_power_gain = 0.05
+
+		random = no
+	}
+
+	HOG_resigned_generalissimo = {
+		sprite = 13
+		attrition = -0.10
+		consumer_goods_factor = 0.25
+
+		equipment_bonus = {
+			infantry_equipment = {
+				build_cost_ic = -0.05 instant = yes
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	HOG_respected_war_hero = {
+		sprite = 13
+		army_morale_factor = 0.05
+		training_time_factor = -0.05
+		experience_gain_army_factor = 0.05
+
+		equipment_bonus = {
+			infantry_equipment = {
+				build_cost_ic = -0.05 instant = yes
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

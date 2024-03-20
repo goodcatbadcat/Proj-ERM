@@ -1,0 +1,618 @@
+﻿###################
+# INDONESIA SETUP #
+###################
+
+capital = 335 # Jakarta
+
+set_cosmetic_tag = INS_HOL # Netherlands East Indies
+
+########
+# ARMY #
+########
+
+oob = "INS_1936"
+
+#################
+# Starting Tech #
+#################
+
+set_research_slots = 3
+
+set_technology = { 
+
+	############
+	# Infantry #
+	############
+	
+	# Support Weapons
+	
+	# Infantry Weapons
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	
+	# Infantry Equipment
+	
+	# Motorised
+	
+	# Marines
+	
+	# Mountaineers
+	tech_mountaineers = 1
+
+	######################
+	# Support Battalions #
+	######################
+	
+	tech_support = 1	
+	basic_train = 1 	
+	
+	# Engineer
+	tech_engineers = 1
+	
+	# Recon
+	tech_recon = 1
+	
+	# Military Police
+	
+	# Maintenance
+	
+	# Logistics
+	
+	# Signal
+	
+	# Field Hospital
+	
+	#############
+	# Artillery #
+	#############
+	
+	# Artillery
+	gw_artillery = 1
+	
+	# Anti-Air
+	interwar_antiair = 1
+	
+	# AT
+	interwar_antitank = 1
+	
+	#################
+	# Land Doctrine #
+	#################
+	
+	# Trench Warfare
+	trench_warfare = 1
+	
+	##################
+	# Naval Doctrine #
+	##################
+	
+	# Fleet in Being
+	fleet_in_being = 1 
+	
+	#################
+	# Air Equipment #
+	#################
+	
+	# Interceptor
+	early_fighter = 1
+	
+	# Multi-Role
+	
+	# Tactical Bomber
+	early_bomber = 1
+	
+	# Strategic Bomber
+	
+	# Naval Bomber
+	
+	# CV
+	
+	################
+	# Air Doctrine #
+	################
+	
+	# Air Supereurity
+	air_superiority = 1
+	
+	################################
+	# Engineering / Secret Weapons #
+	################################
+	
+	# Radio 
+	
+	# Electrical and Mechanical
+	
+	# Decryption & Encryption
+	
+	############
+	# Industry #
+	############
+	
+	# Machine Tools
+	
+	# Industry [Concentrated vs Dispersed ]
+	
+	# Construction
+	
+	# Synthetics
+	fuel_refining = 1 
+	fuel_silos = 1 
+}
+
+##############
+# ARMOR TECH #
+##############
+
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+	
+		## Tank Prot. ##
+		gwtank = 1
+		
+		## Light Tank ##
+		basic_light_tank = 1
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = { 
+	
+		## Light Tank ##
+		gwtank_chassis = 1
+	}
+}
+
+##############
+# Naval Tech #
+##############
+
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		#########
+		# Naval #
+		#########
+		
+		# Misc
+		transport = 1
+		
+		# Destroyer
+		early_destroyer = 1
+		basic_destroyer = 1
+		
+		# Light Cruiser
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		
+		# Heavy Cruiser
+		early_heavy_cruiser = 1
+		
+		# Battleship
+		
+		# Battlecruiser
+		
+		# Carrier
+		
+		# Submarine
+		early_submarine = 1
+		
+	}
+	set_naval_oob = "INS_1936_NON_MTG"
+}
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		#########
+		# Naval #
+		#########
+		
+		# Various Eqpt.
+		
+		# Depth Charges
+		
+		# Naval Mines 
+		
+		# Destroyer
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		
+		# Cruiser
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		
+		# Battleship
+		
+		# Carrier
+		
+		# Submarine
+		early_ship_hull_submarine = 1
+		
+		# Torpedo Eqpt.
+		basic_torpedo = 1
+		
+		# Naval Gunnery Eqpt.
+		basic_battery = 1
+		
+		# Landing Craft
+		mtg_transport = 1
+		
+		# Fire Drills
+		
+		# Bracket Shooting
+		
+	}
+	set_naval_oob = "INS_1936_MTG"
+}
+
+############
+# Politics #
+############
+
+set_popularities = {
+set_popularities = {
+	fascism = 0
+	neutrality = 20
+	democratic = 70
+	communism = 10
+}
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1938.11.6"
+	election_frequency = 72
+	elections_allowed = yes
+}
+
+create_country_leader = {
+	name = "Sukarno"
+	desc = ""
+	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_5.dds"
+	expire = "1953.3.1"
+	ideology = neutrality
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "A. T. van Starkenborgh Stachouwer"
+	desc = ""
+	picture = "GFX_portrait_indonesia_at_van_starkenborgh"
+	expire = "1953.3.1"
+	ideology = democratic
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Amir Sjarifuddin Harahap"
+	desc = ""
+	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_1.dds"
+	expire = "1953.3.1"
+	ideology = communism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Suharto"
+	desc = ""
+	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_fascism.dds"
+	expire = "1953.3.1"
+	ideology = fascism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Sutan Sjahrir"
+	desc = ""
+	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_2.dds"
+	expire = "1953.3.1"
+	ideology = democratic
+	traits = {
+		
+	}
+}
+
+##############
+# COMMANDERS #
+##############
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	create_field_marshal = {
+		name = "Hein ter Poorten"
+		gfx = "GFX_portrait_hol_hein_ter_poorten"
+		traits = { inspirational_leader logistics_wizard }
+		skill = 3
+		attack_skill = 2
+		defense_skill = 3
+		planning_skill = 2
+		logistics_skill = 3
+	}
+}
+
+
+##############
+# 1944 SETUP #
+##############
+
+1944.1.1 = {
+	
+	#################
+	# COUNTRY SETUP #
+	#################
+	
+	add_political_power = 150
+
+	become_exiled_in = { 
+		target = ENG 
+		legitimacy = 100 
+	}
+	
+	########
+	# ARMY #
+	########
+	
+	oob = "INS_1944"
+
+	###########
+	# FOCUSES #
+	###########
+	
+	## Generic ## 
+	complete_national_focus = army_effort
+	complete_national_focus = equipment_effort
+	complete_national_focus = motorization_effort
+	complete_national_focus = aviation_effort
+	complete_national_focus = naval_effort
+	complete_national_focus = flexible_navy
+	complete_national_focus = industrial_effort
+	complete_national_focus = construction_effort
+	complete_national_focus = production_effort
+	
+	###################
+	# Technology 1944 #
+	###################
+	
+	set_technology = {
+
+		############
+		# Infantry #
+		############
+		
+		# Support Weapons
+		support_weapons = 1 
+		support_weapons2 = 1 
+		
+		# Infantry Weapons
+		infantry_weapons = 1
+		infantry_weapons1 = 1
+		infantry_weapons2 = 1 
+		
+		# Infantry Equipment
+		
+		# Motorised
+		motorised_infantry = 1
+		
+		# Mechanized
+		
+		# Trench Warfare
+		
+		# Marines
+		marines = 1
+		
+		# Paratroops
+		
+		# Mountaineers
+		
+		# Special Forces
+
+		######################
+		# Support Battalions #
+		######################
+		
+		tech_support = 1	
+	    basic_train = 1 	
+	
+		# Engineer
+		tech_engineers = 1
+		tech_engineers2 = 1 
+		
+		# Recon
+		tech_recon = 1
+		tech_recon2 = 1 
+		
+		# Military Police
+		tech_military_police = 1 
+		
+		# Maintenance
+		tech_maintenance_company = 1 
+		
+		# Logistics
+		tech_logistics_company = 1 
+		
+		# Signal
+		
+		# Field Hospital
+		tech_field_hospital = 1 
+		
+		#############
+		# Artillery #
+		#############
+		
+		# Artillery
+		gw_artillery = 1
+		interwar_artillery = 1
+		artillery1 = 1 
+		
+		# Rocket Artillery
+		
+		# Anti-Air
+		interwar_antiair = 1
+		antiair1 = 1  
+		
+		# Anti-Tank
+		interwar_antitank = 1 
+		
+		#################
+		# Land Doctrine #
+		#################
+		
+		# Trench Warfare
+		trench_warfare = 1 
+		grand_battle_plan = 1 
+		prepared_defense = 1 
+		grand_assault = 1 
+		
+		##################
+		# Naval Doctrine #
+		##################
+		
+		# Fleet in Being
+		fleet_in_being = 1 
+		battlefleet_concentration = 1 
+		convoy_sailing = 1 
+		
+		#################
+		# Air Equipment #
+		#################
+		
+		# Interceptor
+		early_fighter = 1
+		fighter1 = 1
+		
+		# Heavy Fighter
+		
+		# Multi-Role
+		CAS1 = 1
+		
+		# Tactical Bomber
+		early_bomber = 1
+		tactical_bomber1 = 1
+		
+		# Strategic Bomber
+		
+		# Naval Bomber
+		naval_bomber1 = 1
+		
+		# Carrier Fighter
+		
+		# Carrier CAS
+		
+		# Carrier Bomber
+		
+		################
+		# Air Doctrine #
+		################
+		
+		# Air Superiority
+		air_superiority = 1 
+		infrastructure_destruction = 1 
+		
+		################################
+		# Engineering / Secret Weapons #
+		################################
+		
+		# Radio
+		radio = 1 
+		radio_detection = 1 
+		
+		# Electrical and Mechanical
+		electronic_mechanical_engineering = 1
+		
+		# Decryption & Encryption
+		basic_encryption = 1 
+		basic_decryption = 1 
+		
+		# Rocketry
+		
+		# Jet Engine
+		
+		# Nuclear Research
+		
+		############
+		# Industry #
+		############
+		
+		# Machine Tools
+		basic_machine_tools = 1 
+		improved_machine_tools = 1 
+		
+		# Assembly
+		
+		# Industry [Concentrated vs Dispersed]
+		concentrated_industry = 1 
+		concentrated_industry2 = 1 
+		
+		# Construction
+		construction1 = 1 
+		construction2 = 1	
+		
+		# Excavation
+		excavation1 = 1 
+		excavation2 = 1 
+		
+		# Synthetics
+		oil_processing = 1 
+		improved_oil_processing = 1 
+		fuel_silos = 1
+		fuel_refining = 1
+	}
+	
+	##############
+	# ARMOR TECH #
+	##############
+
+	if = {
+		limit = {
+			NOT = { has_dlc = "No Step Back" }
+		}
+		set_technology = {
+		
+			## Prot. Tank ##
+			gwtank = 1
+		
+			## Light Tank ##
+			basic_light_tank = 1
+			basic_light_td = 1 
+			basic_light_art = 1 
+			basic_light_spaa = 1 
+		}
+	}
+
+	if = {
+		limit = {
+			has_dlc = "No Step Back"
+		}
+		set_technology = { 
+		
+			## Light Tank ##
+			gwtank_chassis = 1
+			basic_light_tank_chassis = 1
+			
+			## Armor ##
+			armor_tech_1 = 1 
+			
+			## Engine ##
+			engine_tech_1 = 1 
+		}
+	}
+}

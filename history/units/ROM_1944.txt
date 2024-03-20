@@ -1,0 +1,502 @@
+﻿###########################
+# ROMANIAN UNIT TEMPLATES #
+###########################
+
+#####################
+# INFANTRY VARIANTS #
+#####################
+
+# Infantry Division
+division_template = {
+	name = "Divizia Infanterie"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+	}
+	support = {
+       	artillery = { x = 0 y = 0 } 
+		anti_air = { x = 0 y = 1 }
+		anti_tank = { x = 0 y = 2 }
+		recon = { x = 0 y = 3 }
+		field_hospital = { x = 0 y = 4 }
+	}
+	priority = 25
+}
+
+# Mountaineer Division
+division_template = {
+	name = "Divizia Munte"
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+		mountaineers = { x = 2 y = 0 }
+		mountaineers = { x = 2 y = 1 }
+		mountaineers = { x = 2 y = 2 }
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+		light_tank_destroyer_brigade = { x = 4 y = 0 }
+	}
+	support = {
+       	artillery = { x = 0 y = 0 } 
+		anti_air = { x = 0 y = 1 }
+		anti_tank = { x = 0 y = 2 }
+		recon = { x = 0 y = 3 }
+		field_hospital = { x = 0 y = 4 }
+	}
+	priority = 10
+}
+
+# Garnizoană
+division_template = {
+	name = "Brigada Garnizoană"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+	support = {
+		anti_air = { x = 0 y = 0 }
+	}
+	priority = 0
+}
+
+####################
+# CAVALRY VARIANTS #
+####################
+
+# Cavalry Division
+# Partially motorized
+division_template = {
+	name = "Divizia Cavalerie" 			
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		mot_artillery_brigade = { x = 2 y = 2 }
+	    mot_artillery_brigade = { x = 2 y = 3 }
+	}
+	support = {
+       	artillery = { x = 0 y = 0 } 
+		anti_air = { x = 0 y = 1 }
+		anti_tank = { x = 0 y = 2 }
+		engineer = { x = 0 y = 3 }
+		recon = { x = 0 y = 4 }
+	}
+	priority = 0
+}
+
+# Mechanized Division
+division_template = {
+	name = "Divizia Cavalerie Motorizata" 			
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 0 y = 2 }
+		mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+		mechanized = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+		mot_artillery_brigade = { x = 2 y = 0 }
+		mot_artillery_brigade = { x = 2 y = 1 }
+	}
+	support = {
+       	recon = { x = 0 y = 0 } 
+		anti_tank = { x = 0 y = 1 }
+		engineer = { x = 0 y = 2 }
+		maintenance_company = { x = 0 y = 3 }
+		signals_company = { x = 0 y = 4 }
+	}
+	priority = 5
+}
+
+####################
+# ARMORED VARIANTS #
+####################
+
+# Armored Division Division
+division_template = {
+	name = "Divizia Blindata"
+
+	regiments = {
+		medium_armor = { x = 0 y = 0 }
+		medium_armor = { x = 0 y = 1 }
+		medium_armor = { x = 0 y = 2 }
+		mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+		mechanized = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+		mot_artillery_brigade = { x = 3 y = 2 }
+	    mot_artillery_brigade = { x = 3 y = 3 }
+		light_tank_destroyer_brigade = { x = 4 y = 0 }
+		medium_tank_destroyer_brigade = { x = 4 y = 1 }
+		medium_tank_destroyer_brigade = { x = 4 y = 2 }
+	}
+	support = {
+       	recon = { x = 0 y = 0 }
+		anti_tank = { x = 0 y = 1 }
+		engineer = { x = 0 y = 2 }
+		signals_company = { x = 0 y = 3 }
+		maintenance_company = { x = 0 y = 4 }
+	}
+	priority = 5
+}
+
+
+units = {
+
+	##################
+	# ROMANIAN FRONT #
+	##################
+	division = {
+		name = "15 Divizia Infanterie"
+		location = 6727
+		division_template = "Divizia Infanterie"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ROM" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 0.95
+	}
+	division = {
+		name = "103 Divizia Munte"
+		location = 6727
+		division_template = "Divizia Munte"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ROM" } }
+		force_equipment_variants = { light_tank_destroyer_equipment_2 = { owner = "ROM" } }
+		start_experience_factor = 0.80
+		start_equipment_factor = 0.95
+	}
+	division = {
+		name = "5 Divizia Cavalerie"
+		location = 6727
+		division_template = "Divizia Cavalerie"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ROM" } }
+		start_experience_factor = 0.40
+		start_equipment_factor = 0.95
+	}
+	#
+	division = {
+		name = "21 Divizia Infanterie"
+		location = 6743
+		division_template = "Divizia Infanterie"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ROM" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 0.95
+	}
+	division = {
+		name = "9 Divizia Infanterie"
+		location = 6743
+		division_template = "Divizia Infanterie"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ROM" } }
+		start_experience_factor = 0.40
+		start_equipment_factor = 0.95
+	}
+	division = {
+		name = "4 Divizia Munte"
+		location = 6743
+		division_template = "Divizia Munte"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ROM" } }
+		force_equipment_variants = { light_tank_destroyer_equipment_2 = { owner = "ROM" } }
+		start_experience_factor = 0.80
+		start_equipment_factor = 0.95
+	}
+	#
+	division = {
+		name = "18 Divizia Infanterie"
+		location = 9683
+		division_template = "Divizia Infanterie"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ROM" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 0.95
+	}
+	#
+	division = {
+		name = "14 Divizia Infanterie"
+		location = 723
+		division_template = "Divizia Infanterie"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ROM" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 0.95
+	}
+	division = {
+		name = "19 Divizia Infanterie"
+		location = 723
+		division_template = "Divizia Infanterie"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ROM" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 0.95
+	}
+	#
+	division = {
+		name = "2 Divizia Infanterie"
+		location = 9716
+		division_template = "Divizia Infanterie"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ROM" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 0.95
+	}
+	division = {
+		name = "3 Divizia Infanterie"
+		location = 9716
+		division_template = "Divizia Infanterie"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ROM" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 0.95
+	}
+	division = {
+		name = "11 Divizia Infanterie"
+		location = 9716
+		division_template = "Divizia Infanterie"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ROM" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 0.95
+	}
+	#
+	division = {
+		name = "1 Divizia Blindata"
+		location = 744
+		division_template = "Divizia Blindata"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ROM" } }
+		force_equipment_variants = { medium_tank_equipment_2 = { owner = "ROM" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 0.95
+	}
+	division = {
+		name = "5 Divizia Infanterie"
+		location = 744
+		division_template = "Divizia Infanterie"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ROM" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 0.95
+	}
+	division = {
+		name = "7 Divizia Infanterie"
+		location = 744
+		division_template = "Divizia Infanterie"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ROM" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 0.95
+	}
+	division = {
+		name = "8 Divizia Infanterie"
+		location = 744
+		division_template = "Divizia Infanterie"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ROM" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 0.95
+	}
+	division = {
+		name = "10 Divizia Infanterie"
+		location = 744
+		division_template = "Divizia Infanterie"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ROM" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 0.95
+	}
+	division = {
+		name = "18 Divizia Munte"
+		location = 744
+		division_template = "Divizia Munte"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ROM" } }
+		force_equipment_variants = { light_tank_destroyer_equipment_2 = { owner = "ROM" } }
+		start_experience_factor = 0.80
+		start_equipment_factor = 0.95
+	}
+	division = {
+		name = "1 Divizia Cavalerie"
+		location = 744
+		division_template = "Divizia Cavalerie"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ROM" } }
+		start_experience_factor = 0.40
+		start_equipment_factor = 0.95
+	}
+	division = {
+		name = "8 Divizia Cavalerie Motorizata"
+		location = 744
+		division_template = "Divizia Cavalerie Motorizata"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ROM" } }
+		start_experience_factor = 0.65
+		start_equipment_factor = 0.95
+	}
+	#
+	division = {
+		name = "1 Divizia Infanterie"
+		location = 11689
+		division_template = "Divizia Infanterie"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ROM" } }
+		start_experience_factor = 0.65
+		start_equipment_factor = 0.95
+	}
+	division = {
+		name = "4 Divizia Infanterie"
+		location = 11689
+		division_template = "Divizia Infanterie"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ROM" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 0.95
+	}
+	division = {
+		name = "13 Divizia Infanterie"
+		location = 11689
+		division_template = "Divizia Infanterie"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ROM" } }
+		start_experience_factor = 0.60
+		start_equipment_factor = 0.95
+	}
+	division = {
+		name = "1 Divizia Garda"
+		location = 11689
+		division_template = "Divizia Infanterie"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ROM" } }
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.75
+	}
+	division = {
+		name = "9 Divizia Cavalaerie"
+		location = 11689
+		division_template = "Divizia Cavalerie"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ROM" } }
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.75
+	}
+	#
+	division = {
+		name = "6 Divizia Infanterie"
+		location = 9548
+		division_template = "Divizia Infanterie"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ROM" } }
+		start_experience_factor = 0.60
+		start_equipment_factor = 0.95
+	}
+	division = {
+		name = "20 Divizia Infanterie"
+		location = 9548
+		division_template = "Divizia Infanterie"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ROM" } }
+		start_experience_factor = 0.60
+		start_equipment_factor = 0.95
+	}
+	division = {
+		name = "2 Divizia Munte"
+		location = 9548
+		division_template = "Divizia Munte"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ROM" } }
+		force_equipment_variants = { light_tank_destroyer_equipment_2 = { owner = "ROM" } }
+		start_experience_factor = 0.80
+		start_equipment_factor = 0.85
+	}
+	#
+	division = {
+		name = "1 Divizia Munte"
+		location = 687
+		division_template = "Divizia Munte"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ROM" } }
+		force_equipment_variants = { light_tank_destroyer_equipment_2 = { owner = "ROM" } }
+		start_experience_factor = 0.80
+		start_equipment_factor = 0.50
+	}
+	
+	################
+	# HOME DEFENSE #
+	################
+	
+	division = {
+		name = "1 Divizia Artilerie AA"
+		location = 9617
+		division_template = "Brigada Garnizoană"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ROM" } }
+		start_experience_factor = 0.10
+		start_equipment_factor = 0.75
+	}
+	#
+	division = {
+		name = "Ploiesti Garnizoană"
+		location = 3663
+		division_template = "Brigada Garnizoană"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ROM" } }
+		start_experience_factor = 0.10
+		start_equipment_factor = 0.75
+	}
+	#
+	division = {
+		name = "Arad Garnizoană"
+		location = 6682
+		division_template = "Brigada Garnizoană"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ROM" } }
+		start_experience_factor = 0.10
+		start_equipment_factor = 0.75
+	}
+	#
+	division = {
+		name = "Galati Garnizoană"
+		location = 6706
+		division_template = "Brigada Garnizoană"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ROM" } }
+		start_experience_factor = 0.10
+		start_equipment_factor = 0.75
+	}
+	#
+	division = {
+		name = "Constanta Garnizoană"
+		location = 657
+		division_template = "Brigada Garnizoană"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "ROM" } }
+		start_experience_factor = 0.10
+		start_equipment_factor = 0.75
+	}
+}
+
+###########
+# AIR OOB #
+###########
+
+air_wings = {
+
+	# Bucharest #
+	46 = {
+		### Gruparea Aeriana de Lupta ###
+		fighter_equipment_2 = {
+			owner = "ROM"
+			amount = 80
+		}	
+		name = "Flotila 1 Vanatoare"
+		##
+		fighter_equipment_2 = {
+			owner = "ROM"
+			amount = 80
+		}	
+		name = "Flotila 2 Vanatoare"
+		##
+		tac_bomber_equipment_2 = {
+			owner = "ROM"
+			amount = 80
+		}	
+		name = "Flotila 1 Bombardament"
+	}
+}

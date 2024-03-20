@@ -1,0 +1,391 @@
+﻿####################
+# Hungarian Events #
+####################
+
+add_namespace = ERM_bulgaria
+
+# Soveits on Border Neutrality or War?
+country_event = {
+	id = ERM_bulgaria.1
+	title = ERM_bulgaria.1.t
+	desc = ERM_bulgaria.1.d
+	picture = GFX_report_event_soviet_troops_romania
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = BUL
+		has_global_flag = ROM_monarchist_coup
+		AND = {
+			ROM = {
+				NOT = {
+					is_in_faction_with = GER
+				}
+			}
+		}
+	}
+	
+	immediate = {
+		BUL = {
+			transfer_state = 803
+			transfer_state = 106
+			transfer_state = 184
+		}
+		GER = {
+			set_state_controller = 731
+		}
+	}
+
+	mean_time_to_happen = { days = 1 }
+	
+	# Declare Neutrality
+	option = {
+		name = ERM_hungary.1.a
+		ai_chance = { factor = 100 }
+		set_global_flag = BUL_declare_neutrality
+		SOV = { country_event = { id = ERM_bulgaria.2 hours = 24 } }
+		GER = { country_event = { id = ERM_bulgaria.5 hours = 24 } }
+		BUL = {
+			leave_faction = yes
+			every_enemy_country = {
+				white_peace = BUL
+			}
+		}
+		news_event = { id = world_news.24 }
+	}
+	# Stay loyal to Germany!
+	option = {
+		name = ERM_hungary.2.b
+		ai_chance = { factor = 0 }
+		set_global_flag = BUL_stand_by_GER
+		add_stability = -0.20
+		add_war_support = -0.20
+		news_event = { id = world_news.25 }
+	}
+	# Declare War on Germany
+	option = {
+		name = ERM_hungary.3.b
+		ai_chance = { factor = 0 }
+		set_global_flag = BUL_war_GER
+		SOV = { country_event = { id = ERM_bulgaria.4 hours = 24 } }
+		GER = { country_event = { id = ERM_bulgaria.6 hours = 24 } }
+		BUL = {
+			leave_faction = yes
+			every_enemy_country = {
+				white_peace = BUL
+			}
+		}
+		news_event = { id = world_news.26 }
+	}
+}
+
+# SOV Reacts: Bulgaria Declares Neutrality
+country_event = {
+	id = ERM_bulgaria.2
+	title = ERM_bulgaria.2.t
+	desc = ERM_bulgaria.2.d
+	picture = GFX_report_event_bulgaria
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = { days = 1 }
+	
+	# Accept their Neutrality
+	option = {
+		name = ERM_bulgaria.2.a
+		ai_chance = { factor = 0 }
+		BUL = { country_event = { id = ERM_bulgaria.3 hours = 480 } }
+		set_global_flag = SOV_accepted_neutrality_BUL
+	}
+	# We will give them time to change their mind
+	option = {
+		name = ERM_bulgaria.2.b
+		ai_chance = { factor = 1 }
+		BUL = { country_event = { id = ERM_bulgaria.301 hours = 480 } }
+		set_global_flag = SOV_tolerated_neutrality_BUL
+	}
+	# Neutrality will not be tolerated
+	option = {
+		name = ERM_bulgaria.2.b
+		ai_chance = { factor = 0 }
+		BUL = { country_event = { id = ERM_bulgaria.302 hours = 480 } }
+		set_global_flag = SOV_untolerated_neutrality_BUL
+		SOV = {
+			declare_war_on = {
+				target = BUL
+				type = puppet
+			}
+		}
+	}
+}
+
+# BUL Reacts: SOV Accepts Neutrality
+country_event = {
+	id = ERM_bulgaria.3
+	title = ERM_bulgaria.3.t
+	desc = ERM_bulgaria.3.d
+	picture = GFX_report_event_SOV_neutrality_accept
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = { days = 1 }
+	
+	# A relief
+	option = {
+		name = ERM_bulgaria.3.a
+	}
+}
+
+# BUL Reacts: SOV Tolerates Neutrality
+country_event = {
+	id = ERM_bulgaria.301
+	title = ERM_bulgaria.301.t
+	desc = ERM_bulgaria.301.d
+	picture = GFX_report_event_SOV_neutrality_accept
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = { days = 1 }
+	
+	# Worrying
+	option = {
+		name = ERM_bulgaria.301.a
+	}
+}
+ 
+# BUL Reacts: SOV Denies Neutrality/War
+country_event = {
+	id = ERM_bulgaria.302
+	title = ERM_bulgaria.302.t
+	desc = ERM_bulgaria.302.d
+	picture = GFX_report_event_SOV_neutrality_accept
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = { days = 1 }
+	
+	# Damn!
+	option = {
+		name = ERM_bulgaria.302.a
+	}
+}
+
+# SOV Reacts: Bulgaria Declares War on Germany
+country_event = {
+	id = ERM_bulgaria.4
+	title = ERM_bulgaria.4.t
+	desc = ERM_bulgaria.4.d
+	picture = GFX_report_event_bulgaria
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = { days = 1 }
+	
+	# We Welcome Our Comrades
+	option = {
+		name = ERM_bulgaria.4.a
+		SOV = { add_to_faction = BUL }
+		BUL = {
+			add_to_war = {
+				targeted_alliance = SOV
+				enemy = GER
+				hostility_reason = asked_to_join
+			}
+		}
+	}
+}
+
+# GER Reacts: Bulgaria Withdraws, Declares Neutrality
+country_event = {
+	id = ERM_bulgaria.5
+	title = ERM_bulgaria.5.t
+	desc = ERM_bulgaria.5.d
+	picture = GFX_report_event_bulgaria
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = { days = 1 }
+	
+	# There is nothing we can do
+	option = {
+		name = ERM_bulgaria.5.a
+		ai_chance = { factor = 1 }
+		add_political_power = -50
+		add_war_support = -0.05
+		add_stability = -0.05
+	}
+	
+	# We will crush them like the vermin they are
+	option = {
+		name = ERM_bulgaria.5.b
+		ai_chance = { factor = 0 }
+		add_political_power = -25
+		add_war_support = -0.025
+		add_stability = -0.025
+		GER = {
+			declare_war_on = {
+				target = BUL
+				type = puppet
+			}
+		}
+	}
+}
+
+# GER Reacts: Bulgaria Withdraws, Declares War on US! (AHHH WHY BULGARIA WHY)
+country_event = {
+	id = ERM_bulgaria.6
+	title = ERM_bulgaria.6.t
+	desc = ERM_bulgaria.6.d
+	picture = GFX_report_event_bulgaria
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = { days = 1 }
+	
+	# There is nothing we can do
+	option = {
+		name = ERM_bulgaria.6.a
+		ai_chance = { factor = 1 }
+		add_political_power = -50
+		add_war_support = -0.05
+		add_stability = -0.05
+	}
+}
+
+# Bagryanov Government Sacked
+country_event = {
+	id = ERM_bulgaria.7
+	title = ERM_bulgaria.7.t
+	desc = ERM_bulgaria.7.d
+	picture = GFX_report_event_fatherland_front_coup
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = BUL
+		has_global_flag = SOV_tolerated_neutrality_BUL
+		NOT = { has_war_with = SOV }
+	}
+
+	mean_time_to_happen = { days = 3 }
+		
+	# 
+	option = {
+		name = ERM_bulgaria.7.a
+		news_event = { id = world_news.27 }
+		set_global_flag = BUL_bagryanov_government_sacked
+		remove_ideas = {
+			# HOG 
+			BUL_Ivan_Bagryanov
+			# FM
+			BUL_Ivan_Popov
+			# High Command
+			BUL_Ivan_Valkov
+		}
+		add_ideas = {
+			# HOG
+			BUL_Konstantin_Muraviev
+			# FM
+			BUL_Konstantin_Muraviev2
+			# High Command
+			BUL_Ivan_Marinov
+		}
+	}
+}
+
+# Fatherland Front Rebellion
+country_event = {
+	id = ERM_bulgaria.8
+	title = ERM_bulgaria.8.t
+	desc = ERM_bulgaria.8.d
+	picture = GFX_report_event_fatherland_front_coup
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = BUL
+		has_global_flag = BUL_bagryanov_government_sacked
+		OR = { SOV = { has_war_with = BUL } }
+	}
+
+	mean_time_to_happen = { days = 1 }
+	
+	immediate = {
+		BUL = {
+			set_popularities = {
+				neutrality = 0
+				fascism = 0
+				democratic = 0
+				communism = 100
+			}
+			set_politics = {
+				ruling_party = communism
+				last_election = "1944.1.1"
+				election_frequency = 72
+				elections_allowed = no
+			}
+		}
+		BUL = {
+			every_enemy_country = {
+				white_peace = BUL
+			}
+		}
+	}
+		
+	
+	# 
+	option = {
+		name = ERM_bulgaria.8.a
+		news_event = { id = world_news.28 }
+		SOV = { add_to_faction = BUL }
+		remove_ideas = {
+			# HOG
+			BUL_Konstantin_Muraviev
+			# FM
+			BUL_Konstantin_Muraviev2
+			# AM
+			BUL_Dimitar_Savov
+			# MOS 
+			BUL_Aleksandar_Stanishev
+			# MOI 
+			BUL_Krum_Kolev
+			# MOC
+			BUL_Teodor_Trayanov
+			# High Command
+			BUL_Ivan_Marinov
+			BUL_Teodosi_Dakalov
+			BUL_Russi_Rusev
+			# Army Chief
+			BUL_Nikola_Mihov
+			# Air Chief
+			BUL_Dimitr_Ayryanov
+			# Navy Chief 
+			BUL_Atanas_Shalapatov
+			
+		}
+		add_ideas = {
+			# HOG
+			BUL_Kimon_Georgiev
+			# FM
+			BUL_Velizar_Velchkov
+			# AM
+			BUL_Todor_Pavlov
+			# MOS 
+			BUL_Anton_Yugov
+			# MOI 
+			BUL_Traicho_Kostov
+			# MOC
+			BUL_Georgi_Kulishev
+			# High Command
+			BUL_Ferdinand_Kozovski
+			BUL_Stoyan_Trendafilov
+			BUL_Vladimir_Stoychev
+			# Army Chief
+			BUL_Ivan_Kinov
+			# Air Chief
+			BUL_Gancho_Manchev
+			# Navy Chief 
+			BUL_Ivan_Variklechkov
+		}
+	}
+}

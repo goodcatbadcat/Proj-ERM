@@ -1,0 +1,209 @@
+leader_traits = {
+
+###################################################################
+###################### Minister of Industry #######################
+###################################################################
+
+	MOI_backstabber = {
+		sprite = 10
+		random = yes
+		production_factory_max_efficiency_factor = 0.05
+		consumer_goods_factor = -0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	MOI_balanced_budget_proponent = {
+		sprite = 10
+		random = yes
+		consumer_goods_factor = 0.10
+		local_resources = -0.05
+		industrial_capacity_factory = -0.10
+		production_speed_arms_factory_factor = -0.10
+		production_speed_industrial_complex_factor = 0.10
+		production_speed_infrastructure_factor = 0.25
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	MOI_expert_banker = {
+		sprite = 10
+		random = yes
+		consumer_goods_factor = -0.10
+		production_speed_industrial_complex_factor = 0.10
+		production_speed_arms_factory_factor = 0.05
+		production_speed_infrastructure_factor = 0.25
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	MOI_administrative_genius = {
+		sprite = 10
+		random = yes
+		production_speed_arms_factory_factor = 0.15
+		production_speed_industrial_complex_factor = 0.10
+		production_speed_infrastructure_factor = 0.25
+		production_speed_synthetic_refinery_factor = 0.25
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	MOI_organizer_of_industry = {
+		sprite = 10
+		random = yes
+		conversion_cost_civ_to_mil_factor = -0.50
+		production_speed_arms_factory_factor = 0.10
+		production_speed_industrial_complex_factor = 0.10
+		production_speed_infrastructure_factor = 0.25
+		local_resources = 0.10
+		refit_speed = 0.25
+		production_factory_max_efficiency_factor = 0.10
+		consumer_goods_factor = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	MOI_keynesian_economy_proponent = {
+		sprite = 10
+		random = yes
+		consumer_goods_factor = -0.05
+		production_speed_industrial_complex_factor = -0.10
+		production_speed_arms_factory_factor = -0.075
+		production_factory_max_efficiency_factor = -0.05
+		local_resources_factor = -0.10
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	MOI_planned_economy_proponent = {
+		sprite = 10
+		random = yes
+		consumer_goods_factor = 0.15
+		production_speed_industrial_complex_factor = -0.1
+		production_factory_max_efficiency_factor = 0.10
+		production_speed_arms_factory_factor = 0.10
+		local_resources_factor = 0.25
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	MOI_laissez_faire_capitalist = {
+		sprite = 10
+		random = yes
+		consumer_goods_factor = 0.10
+		production_speed_industrial_complex_factor = -0.15
+		production_speed_infrastructure_factor = -0.10
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	MOI_oil_baron = {
+		sprite = 10
+		local_resources_factor = 0.10
+		production_factory_max_efficiency_factor = 0.05
+		production_speed_synthetic_refinery_factor = 0.15
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	MOI_captain_of_industry = {
+		sprite = 10
+		random = yes
+		production_speed_industrial_complex_factor = 0.1
+		production_speed_infrastructure_factor = 0.1
+		production_speed_synthetic_refinery_factor = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	
+	MOI_resource_industrialist = {
+		sprite = 10
+		local_resources_factor = 0.15
+		production_factory_max_efficiency_factor = 0.10
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	MOI_corrupt_kleptocrat = {
+		random = yes
+		sprite = 13
+		political_power_factor = -0.10
+		training_time_army_factor = -0.1
+		production_speed_industrial_complex_factor = -0.1
+		production_speed_arms_factory_factor = -0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	MOI_fortification_engineer = {
+		sprite = 10
+		random = yes
+		production_speed_bunker_factor = 0.2
+		production_speed_coastal_bunker_factor = 0.2
+		production_speed_anti_air_building_factor = 0.2
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	MOI_war_industrialist = {
+		sprite = 10
+		random = yes
+		production_speed_arms_factory_factor = 0.15
+		production_speed_dockyard_factor = 0.15
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	MOI_crime_fighter = {
+		sprite = 10
+		random = yes
+		local_resources_factor = 0.10
+		production_speed_industrial_complex_factor = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	MOI_efficient_sociopath = {
+		sprite = 10
+		local_resources_factor = 0.25
+		production_factory_max_efficiency_factor = 0.10
+		production_speed_arms_factory_factor = 0.15
+		consumer_goods_factor = -0.05
+		conscription_factor = -0.035
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

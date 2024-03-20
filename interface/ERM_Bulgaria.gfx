@@ -1,0 +1,458 @@
+spriteTypes = {
+
+
+    ######################
+    ## ROMMANIAN EVENTS ##
+    ######################
+
+        SpriteType = {
+        name = "GFX_report_event_"
+        texturefile = "gfx/event_pictures/Romania/report_event_.dds"
+    }
+
+    ####################
+    ## ROMANIAN IDEAS ##
+    ####################
+
+        SpriteType = {
+        name = "GFX_idea_BUL_"
+        texturefile = "gfx/interface/ideas/national_ideas/BUL/idea_BUL_.dds"
+    }
+
+    ##########################
+    ### ROMANIAN MINISTERS ###
+    ##########################
+
+    SpriteType = {
+        name = "GFX_idea_BUL_Teodosi_Dakalov"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Teodosi_Dakalov.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Todor_Georgiev"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Todor_Georgiev.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Russi_Rusev"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Russi_Rusev.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Ivan_Valkov"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Ivan_Valkov.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Ivan_Marinov"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Ivan_Marinov.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Ivan_Sapundzhiev"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Ivan_Sapundzhiev.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Atanas_Zhilkov"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Atanas_Zhilkov.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Trifon_Trifonov"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Trifon_Trifonov.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Ferdinand_Kozovski"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Ferdinand_Kozovski.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Stoyan_Trendafilov"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Stoyan_Trendafilov.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Vladimir_Stoychev"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Vladimir_Stoychev.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Nikola_Mihov"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Nikola_Mihov.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Asen_Nikolov"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Asen_Nikolov.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Nikola_Stoyche"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BULNikola_Stoyche.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Damyan_Velche"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Damyan_Velche.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Nikola_Nako"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Nikola_Nako.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Konstantin_Lukash"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Konstantin_Lukash.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Nikola_Hadzipetkov"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Nikola_Hadzipetkov.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Kiril_Yanchulev"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Kiril_Yanchulev.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Vasil_Boydev"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Vasil_Boydev.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Kiril_Stanchev"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Kiril_Stanchev.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Yordan_Peev"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Yordan_Peev.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Raycho_Slavkov"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Raycho_Slavkov.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Ivan_Kinov"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Ivan_Kinov.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Dimitar_Gichev"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Dimitar_Gichev.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Asen_Sirakov"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Asen_Sirakov.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Dimitar_Ayryanov"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Dimitar_Ayryanov.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Chudomir_Toplodolski"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Chudomir_Toplodolski.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Stoyan_Stoyanov"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Stoyan_Stoyanov.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Georgi_Drenikov"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Georgi_Drenikov.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Gancho_Manchev"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Gancho_Manchev.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Zachari_Zachariev"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Zachari_Zachariev.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Hristo_Krastev"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Hristo_Krastev.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Kiril_Kostov"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Kiril_Kostov.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Atanas_Shalapatov"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Atanas_Shalapatov.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Asen_Toshev"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Asen_Toshev.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Georgi_Petsov"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Georgi_Petsov.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Ivan_Variklechkov"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Ivan_Variklechkov.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Aleksandar_Russev"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Aleksandar_Russev.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Rumen_Ivanov"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Rumen_Ivanov.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Ivan_Bagryanov"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Ivan_Bagryanov.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Konstantin_Muraviev"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Konstantin_Muraviev.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Kimon_Georgiev"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Kimon_Georgiev.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Nikola_Mushanov"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Nikola_Mushanov.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Aleksandar_Tsankov"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Aleksandar_Tsankov.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Ivan_Popov"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Ivan_Popov.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Georgi_Popov"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Georgi_Popov.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Bogdan_Filov"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Bogdan_Filov.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Aleksandar_Nikolaev"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Aleksandar_Nikolaev.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Dimitar_Shishmanov"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Dimitar_Shishmanov.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Parvan_Draganov"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Parvan_Draganov.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Atanas_Burov"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Atanas_Burov.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Georgi_Brasov"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Georgi_Brasov.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Sava_Kirov"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Sava_Kirov.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Dimitar_Peshev"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Dimitar_Peshev.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Simeon_Radev"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Simeon_Radev.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Georgi_Kyoseivanov"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Georgi_Kyoseivanov.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Velizar_Velchkov"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Velizar_Velchkov.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Georgi_Kulishev"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Georgi_Kulishev.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Mincho_Neychev"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Mincho_Neychev.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Vasil_Kolarov"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Vasil_Kolarov.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Dimitar_Ganev"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Dimitar_Ganev.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Nikola_Momchilov"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Nikola_Momchilov.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Dimitar_Savov"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Dimitar_Savov.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Dobri_Bozhilov"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Dobri_Bozhilov.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Georgi_Sapov"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Georgi_Sapov.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Asen_Kesarovski"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Asen_Kesarovski.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Todor_Pavlov"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Todor_Pavlov.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Tobri_Terpeshev"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Tobri_Terpeshev.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Dimo_Kazasov"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Dimo_Kazasov.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Aleksandar_Stanishev"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Aleksandar_Stanishev.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Nikolay_Nikolaev"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Nikolay_Nikolaev.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Nikola_Nedev"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Nikola_Nedev.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Docho_Hristov"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Docho_Hristov.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Petar_Gabrovski"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Petar_Gabrovski.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Vergil_Dimov"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Vergil_Dimov.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Petar_Midilev"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Petar_Midilev.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Rashko_Atanasov"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Rashko_Atanasov.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Kiril_Gunev"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Kiril_Gunev.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Kiril_Gunev"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Kiril_Gunev.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Kiril_Stanchev"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Kiril_Stanchev.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Ivan_Rogosarski"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Ivan_Rogosarski.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Anton_Yugov"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Anton_Yugov.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Georgi_Tsankov"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Georgi_Tsankov.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Panko_Vrashnarrov"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Panko_Vrashnarrov.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Sava_Ganovski"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Sava_Ganovski.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Krum_Kolev"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Krum_Kolev.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Stanko_Nikoladorov"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Stanko_Nikoladorov.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Aleksandar_Georginov"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Aleksandar_Georginov.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Stefan_Stefanov"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Stefan_Stefanov.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Mikhail_Kalenderov"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Mikhail_Kalenderov.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Marko_Ryaskov"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Marko_Ryaskov.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Stoycho_Moshanov"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Stoycho_Moshanov.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Traicho_Kostov"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Traicho_Kostov.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Chavdar_Kyuranov"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Chavdar_Kyuranov.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Kiril_Petkov"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Kiril_Petkov.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Hristo_Statev"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Hristo_Statev.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Teodor_Trayanov"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Teodor_Trayanov.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Georgi_Kulishev"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Georgi_Kulishev.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Luben_Dimchev"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Luben_Dimchev.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Valko_Chervenkov"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Valko_Chervenkov.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Asen_Zlatarov"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Asen_Zlatarov.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Georgi_Nadjakov"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Georgi_Nadjakov.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_BUL_Todor_Pavlov"
+        texturefile = "gfx/interface/ideas/ministers/BUL/idea_BUL_Todor_Pavlov.dds"
+    }
+
+    
+    ######################
+    # ROMANIAN COMPANIES #
+    ######################
+
+    ## Armor ##
+
+    ## Materiel Manufacturer ##
+   
+    ## Air ##
+   
+    ## Industry ##
+    
+    ## Naval ##
+
+}

@@ -1,0 +1,92 @@
+﻿l_english:
+
+hoi3_nation_name_text:0 "§g[Root.GetName]§!"
+MONEY_MAIN:0 "§g[Root.GetName]§!" 
+STEEL_TEXT:0 "[?Root.resource@steel|+0]"
+OIL_TEXT:0 "[?Root.resource@oil|+0]"
+ALUMINIUM_TEXT:0 "[?Root.resource@aluminium|+0]"
+RUBBER_TEXT:0 "[?Root.resource@rubber|+0]"
+TUNGSTEN_TEXT:0 "[?Root.resource@tungsten|+0]"
+CHROMIUM_TEXT:0 "[?Root.resource@chromium|+0]"
+GRAIN_TEXT:0 "[?Root.resource@grain|+0]"
+COPPER_TEXT:0 "[?Root.resource@copper|+0]"
+
+OIL_TEXT_TIP:0 "Oil Consumed: [?Root.resource_consumed@oil|-0]\nOil Exported: [?Root.resource_exported@oil|-0]\nOil Imported: [?Root.resource_imported@oil|+0]\nOil Produced: [?Root.resource_produced@oil|+0]\n"
+
+STEEL_TEXT_TIP:0 "Steel Consumed: [?Root.resource_consumed@steel|-0]\nSteel Exported: [?Root.resource_exported@steel|-0]\nSteel Imported: [?Root.resource_imported@steel|+0]\nSteel Produced: [?Root.resource_produced@steel|+0]\n"
+
+ALUMINIUM_TEXT_TIP:0 "Aluminium Consumed: [?Root.resource_consumed@aluminium|-0]\nAluminium Exported: [?Root.resource_exported@aluminium|-0]\nAluminium Imported: [?Root.resource_imported@aluminium|+0]\nAluminium Produced: [?Root.resource_produced@aluminium|+0]\n"
+
+RUBBER_TEXT_TIP:0 "Rubber Consumed: [?Root.resource_consumed@rubber|-0]\nRubber Exported: [?Root.resource_exported@rubber|-0]\nRubber Imported: [?Root.resource_imported@rubber|+0]\nRubber Produced: [?Root.resource_produced@rubber|+0]\n"
+
+TUNGSTEN_TEXT_TIP:0 "Tungsten Consumed: [?Root.resource_consumed@tungsten|-0]\nTungsten Exported: [?Root.resource_exported@tungsten|-0]\nTungsten Imported: [?Root.resource_imported@tungsten|+0]\nTungsten Produced: [?Root.resource_produced@tungsten|+0]\n"
+
+CHROMIUM_TEXT_TIP:0 "Chromium Consumed: [?Root.resource_consumed@chromium|-0]\nChromium Exported: [?Root.resource_exported@chromium|-0]\nChromium Imported: [?Root.resource_imported@chromium|+0]\nChromium Produced: [?Root.resource_produced@chromium|+0]\n"
+
+GRAIN_TEXT_TIP:0 "Grain Consumed: [?Root.resource_consumed@grain|-0]\nGrain Exported: [?Root.resource_exported@grain|-0]\nGrain Imported: [?Root.resource_imported@grain|+0]\nGrain Produced: [?Root.resource_produced@grain|+0]\n"
+
+COPPER_TEXT_TIP:0 "Copper Consumed: [?Root.resource_consumed@copper|-0]\nCopper Exported: [?Root.resource_exported@copper|-0]\nCopper Imported: [?Root.resource_imported@copper|+0]\nCopper Produced: [?Root.resource_produced@copper|+0]\n"
+
+IC_TEXT:0 "= [?Root.num_of_military_factories|G0] / [?Root.num_of_naval_factories|C0] / [?Root.num_of_civilian_factories|Y0]"
+
+Consumer_TEXT:0 "[?Root.fuel_k|G0] k"
+
+flag_alignment_tip:0 "[THIS.GetName]"
+main_factions_tip:0 "Ruling Party: [THIS.GetRulingParty]\nParty's Ideology: [THIS.GetRulingIdeology]\nParty's Support: [THIS.GetPartySupport]%"
+
+SM_GAME:0 "§YGame§!"
+
+SM_VIDEO:0 "§YVideo§!" 
+
+SM_AUDIO:0 "§YAudio§!"
+
+SETTINGS_ACCESSIBILITY:0 "§YControls§!"
+
+SM_OPTIONS:0 "Settings"
+
+SM_AUTOSAVE_INTERVAL
+
+UNIT_LEADER_NAME_SORT:0 "Skills"
+traits_name:0 "Traits"
+
+### Alignment Triangle main factions ###
+
+### Vanilla Code
+axis_title:0"[GER.GetFactionName]"
+allies_title:0"[ENG.GetFactionName]"
+comintern_title:0"[SOV.GetFactionName]"
+
+
+### TEAW Code
+#axis_title:0"[GER.GetFactionName]"
+#allies_title:0"[FRA.GetFactionName]"
+#comintern_title:0"[SOV.GetFactionName]"
+
+### FR Code
+#axis_title:0"[GER.GetFactionName]"
+#allies_title:0"[FRA.GetFactionName]"
+#comintern_title:0"[SOV.GetFactionName]"
+
+### KR Code
+#axis_title:0"[GER.GetFactionName]"
+#allies_title:0"[CAN.GetFactionName]"
+#comintern_title:0"[FRA.GetFactionName]"
+
+### RF Code
+# axis_title:0 "[FRA.GetFactionName]"
+# allies_title:0"[ENG.GetFactionName]"
+# comintern_title:0"[GER.GetFactionName]"
+
+### TNO Code
+#axis_title:0 "[GER.GetFactionName]"
+#allies_title:0"[USA.GetFactionName]"
+#comintern_title:0"[JAP.GetFactionName]"
+
+### BIce Code
+# axis_title:0 "[GER.GetFactionName]"
+# allies_title:0"[ENG.GetFactionName]"
+# comintern_title:0"[SOV.GetFactionName]"
+
+### Vanilla Loc Stuff ###
+
+DECISIONVIEW_TITLE:0 "Decisions"

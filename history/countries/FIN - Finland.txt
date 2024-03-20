@@ -1,0 +1,801 @@
+﻿#################
+# FINLAND SETUP #
+#################
+
+capital = 111 # Helsinki 
+
+set_stability = 0.71
+set_war_support = 0.35
+set_convoys = 30
+
+add_ideas = {
+	limited_conscription
+	sisu
+}
+
+########
+# ARMY #
+########
+
+oob = "FIN_1936"
+
+#################
+# Starting Tech #
+#################
+
+set_research_slots = 3
+
+set_technology = { 
+
+	############
+	# Infantry #
+	############
+	
+	# Support Weapons
+	
+	# Infantry Weapons
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	
+	# Infantry Equipment
+	
+	# Motorised
+	
+	# Marines
+	
+	# Mountaineers
+	tech_mountaineers = 1
+
+	######################
+	# Support Battalions #
+	######################
+	
+	tech_support = 1	
+	basic_train = 1 	
+	
+	# Engineer
+	tech_engineers = 1
+	
+	# Recon
+	tech_recon = 1
+	
+	# Military Police
+	
+	# Maintenance
+	
+	# Logistics
+	
+	# Signal
+	
+	# Field Hospital
+	
+	#############
+	# Artillery #
+	#############
+	
+	# Artillery
+	gw_artillery = 1
+	
+	# Anti-Air
+	interwar_antiair = 1
+	
+	# AT
+	interwar_antitank = 1
+	
+	#################
+	# Land Doctrine #
+	#################
+	
+	# Trench Warfare
+	trench_warfare = 1
+	
+	##################
+	# Naval Doctrine #
+	##################
+	
+	# Fleet in Being
+	fleet_in_being = 1 
+	
+	#################
+	# Air Equipment #
+	#################
+	
+	# Interceptor
+	early_fighter = 1
+	
+	# Multi-Role
+	
+	# Tactical Bomber
+	early_bomber = 1
+	
+	# Strategic Bomber
+	
+	# Naval Bomber
+	
+	# CV
+	
+	################
+	# Air Doctrine #
+	################
+	
+	# Air Supereurity
+	air_superiority = 1
+	
+	################################
+	# Engineering / Secret Weapons #
+	################################
+	
+	# Radio 
+	
+	# Electrical and Mechanical
+	
+	# Decryption & Encryption
+	
+	############
+	# Industry #
+	############
+	
+	# Machine Tools
+	
+	# Industry [Concentrated vs Dispersed ]
+	
+	# Construction
+	
+	# Synthetics
+}
+
+##############
+# ARMOR TECH #
+##############
+
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+	
+		## Tank Prot. ##
+		gwtank = 1
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = { 
+	
+		## Light Tank ##
+		gwtank_chassis = 1
+		
+	}
+}
+
+##############
+# Naval Tech #
+##############
+
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		#########
+		# Naval #
+		#########
+		
+		# Misc
+		transport = 1
+		
+		# Destroyer
+		early_destroyer = 1
+		basic_destroyer = 1
+		
+		# Light Cruiser
+		early_light_cruiser = 1
+		
+		# Heavy Cruiser
+		early_heavy_cruiser = 1
+		
+		# Battleship
+		
+		# Battlecruiser
+		
+		# Carrier
+		
+		# Submarine
+		early_submarine = 1
+		
+	}
+	set_naval_oob = "FIN_1936_NON_MTG"
+}
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		#########
+		# Naval #
+		#########
+		
+		# Various Eqpt.
+		coastal_defense_ships = 1
+		
+		# Naval Mines 
+		submarine_mine_laying = 1
+		basic_naval_mines = 1
+		
+		# Destroyer
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		
+		# Cruiser
+		early_ship_hull_cruiser = 1
+		
+		# Submarine
+		early_ship_hull_submarine = 1
+		
+		# Torpedo Eqpt.
+		basic_torpedo = 1
+		
+		# Naval Gunnery Eqpt.
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		
+		# Landing Craft
+		mtg_transport = 1
+		
+		# Fire Drills
+		
+		# Bracket Shooting
+		
+	}
+	set_naval_oob = "FIN_1936_MTG"
+}
+
+############
+# Politics #
+############
+
+############
+# Politics #
+############
+
+set_popularities = {
+	fascism = 5
+	neutrality = 70
+	democratic = 15
+	communism = 10
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1940.12.19"
+	election_frequency = 72
+	elections_allowed = yes
+}
+
+##################
+# COUNTRY LEADER #
+##################
+recruit_character = FIN_Risto_Ryti
+recruit_character = FIN_Aimo_Aaltonen
+recruit_character = FIN_Vilho_Annala
+recruit_character = FIN_Kyosti_Kallio
+
+#################
+# FIELD MARSHAL #
+#################
+recruit_character = FIN_CGE_Mannerheim
+
+###################
+# CORPS COMMANDER #
+###################
+recruit_character = FIN_Kaarle_Vaino_Voionmaa
+recruit_character = FIN_Aksel_Airo
+recruit_character = FIN_Akseli_Anttila
+recruit_character = FIN_Erik_Heinrichs
+recruit_character = FIN_Harald_Ohquist
+recruit_character = FIN_Hugo_Osterman
+recruit_character = FIN_Johan_W_Hagglund
+recruit_character = FIN_K_Lennart_Oesch
+recruit_character = FIN_Wiljo_Tuompo
+recruit_character = FIN_Vilho_Petter_Nenonen
+
+#############
+# AIR CHIEF #
+#############
+recruit_character = FIN_Jarl_F_Lundqvist
+recruit_character = FIN_Ricahrd_Lorentz
+recruit_character = FIN_Toivo_Somerto
+recruit_character = FIN_Frans_E_Helminen
+recruit_character = FIN_Reino_Artola
+
+##############
+# NAVY CHIEF #
+##############
+recruit_character = FIN_Claes_Horola
+recruit_character = FIN_Eero_Raholda
+recruit_character = FIN_Vaino_Valve
+
+######################
+# HEAD OF GOVERNMENT #
+######################
+recruit_character = FIN_Edwin_J_H_Linkomies
+recruit_character = FIN_Antti_Hackzell
+
+####################
+# FOREIGN MINISTER #
+####################
+recruit_character = FIN_Carl_Ramsay
+recruit_character = FIN_Rolf_J_Witting
+recruit_character = FIN_Arvi_Oksala
+recruit_character = FIN_Carl_Enckell
+recruit_character = FIN_Vaino_Tanner
+recruit_character = FIN_Eljas_Erkko
+recruit_character = FIN_Rudolf_Holsti
+
+######################
+# ARMAMENTS MINISTER #
+######################
+recruit_character = FIN_Urho_Castren
+recruit_character = FIN_Leonard_Grandell
+
+########################
+# MINISTER OF SECURITY #
+########################
+recruit_character = FIN_Oskari_Lehtonen
+recruit_character = FIN_Urho_Kekkonen
+recruit_character = FIN_Ernst_von_Born
+recruit_character = FIN_Leo_R_Ehrnrooth
+recruit_character = FIN_Toivo_Horelli
+recruit_character = FIN_Arno_Anthoni
+recruit_character = FIN_Paavo_Kastari
+recruit_character = FIN_Esko_Riekki
+recruit_character = FIN_Johan_W_Rangell
+recruit_character = FIN_Toivo_M_Kivimaki
+recruit_character = FIN_Bruno_Suviranta
+recruit_character = FIN_Hjalmar_J_Procope
+recruit_character = FIN_Yrjo_Puhakka
+recruit_character = FIN_Johan_Arajuuri
+
+########################
+# MINISTER OF INDUSTRY #
+########################
+recruit_character = FIN_Tyko_Reinikka
+recruit_character = FIN_Juho_Niukkanen
+recruit_character = FIN_Aimo_Cajander
+recruit_character = FIN_Kyosti_Jarvinen
+recruit_character = FIN_Juho_K_Paasikivi
+recruit_character = FIN_Karl_Rudolf_Walden
+recruit_character = FIN_Berndt_Rainer_von_Fieandt
+
+#######################
+# MINISTER OF CULTURE #
+#######################
+
+############
+# THEORIST #
+############
+recruit_character = FIN_Georg_A_de_Gripenberg
+recruit_character = FIN_Vilho_Vaisala
+recruit_character = FIN_Jorma_Sarvanto
+recruit_character = FIN_Jarl_A_Wasastjerna
+
+##############
+# 1944 SETUP #
+##############
+
+1944.1.1 = {
+	
+	#################
+	# COUNTRY SETUP #
+	#################
+	
+	add_political_power = 200
+	
+	set_stability = 0.54
+	set_war_support = 0.22
+	set_convoys = 10
+	set_fuel_ratio = 0.50
+	
+	########
+	# ARMY #
+	########
+	
+	oob = "FIN_1944"
+	
+	###########
+	# FOCUSES #
+	###########
+	
+	## Generic ##
+	complete_national_focus = army_effort
+	complete_national_focus = equipment_effort
+	complete_national_focus = motorization_effort
+	complete_national_focus = aviation_effort
+	complete_national_focus = naval_effort
+	complete_national_focus = flexible_navy
+	complete_national_focus = industrial_effort
+	complete_national_focus = construction_effort
+	complete_national_focus = production_effort
+	
+	#############
+	# DIPLOMACY #
+	#############
+	
+	# Continuation War
+	declare_war_on = {
+		target = SOV
+		type = liberate_wargoal
+	}
+	
+	################
+	# IDEAS / LAWS #
+	################
+	
+	add_ideas = {
+		
+		## Ministers ##
+		
+		# HoG
+		FIN_Edwin_J_H_Linkomies
+		
+		# FM	
+		FIN_Carl_Ramsay
+		
+		# MoS
+		FIN_Oskari_Lehtonen
+		
+		# AM
+		FIN_Urho_Castren
+		
+		# MoI
+		FIN_Tyko_Reinikka
+		
+		# MoC
+		FIN_Eljas_Erkko2
+		
+		# Theorist
+		FIN_Georg_A_de_Gripenberg
+		
+		# High Command
+		FIN_Kaarle_Vaino_Voionmaa
+		FIN_K_Lennart_Oesch
+		FIN_CGE_Mannerheim2
+		
+		# Army Chief
+		FIN_CGE_Mannerheim
+		
+		# Air Chief
+		FIN_Jarl_F_Lundqvist
+		
+		# Navy Chief
+		FIN_Claes_Horola
+	
+		## Laws ##
+		
+		# Economy 
+		war_economy
+		
+		# Conscription
+		extensive_conscription
+		
+		# Exports
+		limited_exports
+		
+		# Education
+		massive_education_investment
+		
+		# Press
+		censored_press
+		
+		# Army Training
+		advanced_training
+		
+		## Companies ##
+	}
+	
+	###################
+	# Technology 1944 #
+	###################
+	
+	set_technology = {
+
+		############
+		# Infantry #
+		############
+		
+		# Support Weapons
+		support_weapons = 1 
+		support_weapons2 = 1 
+		support_weapons3 = 1 
+		
+		# Infantry Weapons
+		infantry_weapons = 1
+		infantry_weapons1 = 1
+		infantry_weapons2 = 1 
+		
+		# Infantry Equipment
+		
+		# Motorised
+		motorised_infantry = 1
+		
+		# Mechanized
+		
+		# Trench Warfare
+		
+		# Marines
+		marines = 1
+		
+		# Paratroops
+		
+		# Mountaineers
+		
+		# Special Forces
+
+		######################
+		# Support Battalions #
+		######################
+		
+		tech_support = 1	
+		basic_train = 1 	
+	
+		# Engineer
+		tech_engineers = 1
+		tech_engineers2 = 1 
+		
+		# Recon
+		tech_recon = 1
+		tech_recon2 = 1 
+		tech_recon3 = 1 
+		
+		# Military Police
+		tech_military_police = 1 
+		
+		# Maintenance
+		tech_maintenance_company = 1 
+		
+		# Logistics
+		tech_logistics_company = 1 
+		
+		# Signal
+		tech_signal_company = 1 
+		
+		# Field Hospital
+		tech_field_hospital = 1 
+		tech_field_hospital2 = 1 
+
+		#############
+		# Artillery #
+		#############
+		
+		# Artillery
+		gw_artillery = 1
+		interwar_artillery = 1
+		artillery1 = 1 
+		artillery2 = 1
+		
+		# Rocket Artillery
+		
+		# Anti-Air
+		interwar_antiair = 1
+		antiair1 = 1  
+		
+		# Anti-Tank
+		interwar_antitank = 1 
+		antitank1 = 1 
+		
+		#################
+		# Land Doctrine #
+		#################
+		
+		# Trench Warfare
+		trench_warfare = 1 
+		grand_battle_plan = 1 
+		prepared_defense = 1 
+		grand_assault = 1 
+		
+		##################
+		# Naval Doctrine #
+		##################
+		
+		# Fleet in Being
+		fleet_in_being = 1 
+		battlefleet_concentration = 1 
+		convoy_sailing = 1 
+		
+		#################
+		# Air Equipment #
+		#################
+		
+		# Interceptor
+		early_fighter = 1
+		fighter1 = 1
+		fighter2 = 1
+		
+		# Heavy Fighter
+		
+		# Multi-Role
+		CAS1 = 1
+		
+		# Tactical Bomber
+		early_bomber = 1
+		tactical_bomber1 = 1
+		
+		# Strategic Bomber
+		
+		# Naval Bomber
+		naval_bomber1 = 1
+		
+		# Carrier Fighter
+		
+		# Carrier CAS
+		
+		# Carrier Bomber
+		
+		################
+		# Air Doctrine #
+		################
+		
+		# Air Superiority
+		air_superiority = 1 
+		infrastructure_destruction = 1 
+		home_defence = 1 
+		naval_strike_tactics = 1 
+		
+		################################
+		# Engineering / Secret Weapons #
+		################################
+		
+		# Radio
+		radio = 1 
+		radio_detection = 1 
+		
+		# Electrical and Mechanical
+		electronic_mechanical_engineering = 1
+		mechanical_computing = 1 
+		computing_machine = 1 
+		
+		# Decryption & Encryption
+		basic_encryption = 1 
+		improved_encryption = 1 
+		basic_decryption = 1 
+		
+		# Rocketry
+		
+		# Jet Engine
+		
+		# Nuclear Research
+		
+		############
+		# Industry #
+		############
+		
+		# Machine Tools
+		basic_machine_tools = 1 
+		improved_machine_tools = 1 
+		
+		# Assembly
+		
+		# Industry [Concentrated vs Dispersed]
+		dispersed_industry = 1 
+		dispersed_industry2 = 1 
+		dispersed_industry3 = 1 
+		
+		# Construction
+		construction1 = 1 
+		construction2 = 1
+		construction3 = 1 		
+		
+		# Excavation
+		excavation1 = 1 
+		excavation2 = 1 
+		excavation3 = 1 
+		
+		# Synthetics
+		oil_processing = 1 
+		improved_oil_processing = 1 
+		fuel_silos = 1
+		fuel_refining = 1
+		fuel_refining2 = 1 
+	}
+	
+	##############
+	# ARMOR TECH #
+	##############
+
+	if = {
+		limit = {
+			NOT = { has_dlc = "No Step Back" }
+		}
+		set_technology = {
+		
+			## Prot. Tank ##
+			gwtank = 1
+		
+			## Light Tank ##
+			basic_light_tank = 1
+			basic_light_td = 1 
+			basic_light_art = 1 
+			basic_light_spaa = 1 
+		}
+	}
+
+	if = {
+		limit = {
+			has_dlc = "No Step Back"
+		}
+		set_technology = { 
+		
+			## Light Tank ##
+			gwtank_chassis = 1
+			basic_light_tank_chassis = 1
+			
+			## Armor ##
+			armor_tech_1 = 1 
+			
+			## Engine ##
+			engine_tech_1 = 1 
+		}
+	}
+}
+
+
+
+
+#################
+# SHIP VARIANTS #
+#################
+
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	### Ship Variants ###
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	# Submarines #
+	create_equipment_variant = {
+		name = "Vetehinen Class"								
+		type = ship_hull_submarine_1
+		name_group = FIN_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = ship_mine_layer_sub
+		}
+	}
+	create_equipment_variant = {
+		name = "Vesikko Class"								
+		type = ship_hull_submarine_1
+		name_group = FIN_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = empty
+		}
+	}
+	# Heavy Cruisers #
+	create_equipment_variant = {
+		name = "Väinämöinen Class"				
+		type = ship_hull_cruiser_coastal_defense_ship
+		name_group = FIN_CA_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+	}
+}

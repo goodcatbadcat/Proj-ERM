@@ -1,0 +1,340 @@
+#####################
+# Head of State traits
+#####################
+
+leader_traits = {
+
+###################################################################
+#################### Head of State ################################
+###################################################################
+
+	HOS_sawdust_caesar = {
+		sprite = 13
+		political_power_gain = -0.15
+		stability_factor = -0.10
+		war_support_factor = 0.10
+		ai_focus_aggressive_factor = 0.50
+		army_org_factor = -0.05
+		land_reinforce_rate = -0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	HOS_paranoid_megalomaniac = {
+		random = no
+		conscription_factor = 0.10
+		stability_factor = 0.15
+		industrial_capacity_factory = 0.1
+		consumer_goods_factor = -0.10
+		ai_focus_aggressive_factor = 0.50
+		land_reinforce_rate = 0.10
+		army_speed_factor = 0.10
+	}
+	
+	HOS_provisional_government = {
+		random = no
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	HOS_regency_council = {
+		random = no
+		
+		political_power_gain = -0.25
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		
+
+	HOS_triumphant_revolutionary = {
+		random = no
+		justify_war_goal_time = 0.15
+		subversive_activites_upkeep = -0.5
+		drift_defence_factor = 0.5
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	HOS_permanent_revolutionary = {
+		random = no
+		political_power_factor = -0.15
+		justify_war_goal_time = 0.15
+		subversive_activites_upkeep = -0.3
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	HOS_cornered_fox = {
+		random = no
+		army_defence_factor = 0.15
+		army_morale_factor = 0.10
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	HOS_staunch_constitutionalist = {
+		random = no
+		drift_defence_factor = 0.5
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	HOS_dislikes_germany = {
+		random = no
+		ai_strategy = {
+			type = antagonize
+			id = "GER"			
+			value = 200
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	HOS_indomitable_perseverance = { # Ground units get 4 more Morale 
+		random = no
+		sprite = 5
+		army_morale_factor = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	HOS_old_guard = {
+		random = no
+		political_power_factor = -0.25
+		stability_factor = 0.10
+		army_morale_factor = 0.025
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	HOS_divided_leadership = {
+		random = no
+		political_power_factor = -0.25
+		stability_factor = -0.05
+		justify_war_goal_time = 0.25
+		army_morale_factor = -0.10
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	HOS_corrupt = {
+		random = no
+		political_power_factor = -0.25
+		stability_factor = -0.05
+		army_morale_factor = -0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	HOS_inexperienced_imperialist = {
+		random = no
+		political_power_factor = -0.35
+		stability_factor = -0.05
+		justify_war_goal_time = -0.25
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	HOS_stout_defender = { # This particular trait will make the AI heavily prioritize defensive warfare, rarely, if ever, attacking out of fortified locations
+		random = no
+		ai_focus_defense_factor = 0.5
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	HOS_warmonger = {
+		random = no
+		ai_focus_aggressive_factor = 0.5
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	HOS_dictator = {
+		random = no
+		political_power_factor = 0.25
+		stability_factor = -0.10
+		army_attack_factor = -0.10
+		army_morale_factor = -0.10
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	HOS_president_king = {
+		random = no
+		political_power_factor = 0.20
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	HOS_unpopular_leader = {
+		random = no
+		political_power_factor = -0.15
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	HOS_popular_figurehead = {
+		sprite = 13
+		stability_factor = 0.15 
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	HOS_power_hungry_demagogue = {
+		sprite = 13
+		political_power_gain = 0.1
+		ai_focus_aggressive_factor = 0.25
+		army_org_factor = -0.1
+		army_attack_factor = 0.10
+		drift_defence_factor = 0.15
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	HOS_stern_imperialist = {
+		sprite = 13
+		production_speed_arms_factory_factor = 0.1
+		production_speed_dockyard_factor = 0.1
+		ai_focus_aggressive_factor = 0.5
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	HOS_barking_buffoon = {
+		sprite = 13
+		political_power_gain = -0.10
+		army_org_factor = -0.10
+		army_attack_factor = -0.10
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	HOS_ruthless_powermonger = {
+		sprite = 13
+		production_speed_industrial_complex_factor = 0.1
+		production_speed_arms_factory_factor = 0.1
+		production_speed_synthetic_refinery_factor = 0.10
+		production_speed_dockyard_factor = 0.1
+		production_speed_infrastructure_factor = 0.15
+		production_speed_air_base_factor = 0.10
+		production_speed_naval_base_factor = 0.10
+		army_org_factor = -0.125
+		stability_factor = -0.1
+		army_attack_factor = 0.10
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	HOS_autocratic_charmer = {
+		sprite = 13
+		production_speed_arms_factory_factor = 0.15
+		ai_focus_aggressive_factor = 0.15
+		consumer_goods_factor = 0.25
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	HOS_weary_stiffneck = {
+		sprite = 13
+		army_morale_factor = 0.08
+		justify_war_goal_time = 0.25
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	HOS_die_hard_reformer = {
+		sprite = 13
+		consumer_goods_factor = -0.1
+		justify_war_goal_time = 0.15
+		political_power_factor = 0.25
+		production_speed_industrial_complex_factor = -0.10
+		industrial_capacity_factory = 0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	HOS_benevolent_gentleman = {
+		sprite = 13
+		consumer_goods_factor = -0.05
+		justify_war_goal_time = 0.20
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	HOS_supreme_gentleman = {
+		sprite = 13
+		consumer_goods_factor = -0.10
+		political_power_factor = 0.25
+		justify_war_goal_time = 0.25
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	HOS_armchair_general = {
+		sprite = 13
+		army_morale_factor = -0.10
+		army_org_factor = -0.10
+		ai_focus_aggressive_factor = 0.15
+		army_attack_factor = 0.15
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

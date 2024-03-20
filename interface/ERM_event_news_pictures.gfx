@@ -1,0 +1,15 @@
+spriteTypes = {
+
+	#Sorted by tag, not name
+
+	### ANQ - Anqing Clique ###
+	spriteType = {
+		name = "GFX_news_event_operation_panzerfaust"
+		texturefile = "gfx/event_news_pictures/news_event_operation_panzerfaust.png"
+	}
+	spriteType = {
+		name = "GFX_news_event_operation_margarethe_ii"
+		texturefile = "gfx/event_news_pictures/news_event_operation_margarethe_ii.png"
+	}
+}
+

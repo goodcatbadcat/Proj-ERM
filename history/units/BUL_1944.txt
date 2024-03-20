@@ -1,0 +1,312 @@
+﻿################################
+# BULGARIAN DIVISION TEMPLATES #
+################################
+
+
+#####################
+# INFANTRY VARIANTS #
+#####################
+
+division_template = {
+	name = "Pekhotna Divizija"		# Infantry Division
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 0 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		anti_tank = { x = 0 y = 2 }
+		field_hospital = { x = 0 y = 3 }
+	}
+	priority = 50
+}
+
+## Garrison Troops ##
+division_template = {
+	name = "Garnizon Divizija" 	# Garrison 
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+	priority = 0
+}
+
+####################
+# CAVALRY VARIANTS #
+####################
+
+division_template = {
+	name = "Konna Divizija" 		# Cavalry Division
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+		artillery_brigade = { x = 2 y = 0 }
+		artillery_brigade = { x = 2 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		anti_tank = { x = 0 y = 2 }
+		field_hospital = { x = 0 y = 3 }
+	}
+	priority = 3
+}
+
+######################
+# MOTORIZED VARIANTS #
+######################
+
+division_template = {
+	name = "Bronirana Divizija"			
+
+	regiments = {
+		medium_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 0 y = 2 }
+        motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }	
+		armored_car = { x = 2 y = 0 }
+		armored_car = { x = 2 y = 1 }
+		armored_car = { x = 2 y = 2 }	
+		artillery_brigade = { x = 3 y = 0 }
+		anti_tank_brigade = { x = 3 y = 1 }
+	}
+	support = {
+       	artillery = { x = 0 y = 0 } 
+		anti_tank = { x = 0 y = 1 }
+		recon = { x = 0 y = 2 }
+		engineer = { x = 0 y = 3 }
+	}
+	priority = 5
+}
+
+###################
+# ORDER OF BATTLE #
+###################
+
+units = {
+
+	##########
+	# PLEVEN #
+	##########
+	
+	division = {
+		name = "5-ta Dunavska Pekhotna Divizija"
+		location = 3796
+		division_template = "Pekhotna Divizija"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "BUL" } }
+		start_experience_factor = 0.40
+		start_equipment_factor = 0.95
+	}
+	division = {
+		name = "6-ta Bdinska Pekhotna Divizija"
+		location = 3796
+		division_template = "Pekhotna Divizija"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "BUL" } }
+		start_experience_factor = 0.40
+		start_equipment_factor = 0.95
+	}
+	division = {
+		name = "9-ta Plevenska Pekhotna Divizija"
+		location = 3796
+		division_template = "Pekhotna Divizija"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "BUL" } }
+		start_experience_factor = 0.40
+		start_equipment_factor = 0.95
+	}
+	
+	#########
+	# VARNA #
+	#########
+	
+	division = {
+		name = "3-ta Balkanska Pekhotna Divizija"
+		location = 9783
+		division_template = "Pekhotna Divizija"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "BUL" } }
+		start_experience_factor = 0.40
+		start_equipment_factor = 0.95
+	}
+	division = {
+		name = "5-ta Preslavska Pekhotna Divizija"
+		location = 9783
+		division_template = "Pekhotna Divizija"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "BUL" } }
+		start_experience_factor = 0.40
+		start_equipment_factor = 0.95
+	}
+
+	###########
+	# PLOVDIV #
+	###########
+	
+	division = {
+		name = "2-ra Trakiiska Pekhotna Divizija"
+		location = 6923
+		division_template = "Pekhotna Divizija"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "BUL" } }
+		start_experience_factor = 0.40
+		start_equipment_factor = 0.95
+	}
+	division = {
+		name = "8-a Tundzhanska Pekhotna Divizija"
+		location = 6923
+		division_template = "Pekhotna Divizija"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "BUL" } }
+		start_experience_factor = 0.40
+		start_equipment_factor = 0.95
+	}
+	division = {
+		name = "10-ta Rodopska Pekhotna Divizija"
+		location = 6923
+		division_template = "Pekhotna Divizija"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "BUL" } }
+		start_experience_factor = 0.40
+		start_equipment_factor = 0.95
+	}
+	division = {
+		name = "2-ra Konna Divizija"
+		location = 6923
+		division_template = "Pekhotna Divizija"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "BUL" } }
+		start_experience_factor = 0.40
+		start_equipment_factor = 0.95
+	}
+	
+	##########
+	# SOFIYA #
+	##########
+	
+	division = {
+		name = "1-va Sofiiska Pekhotna Divizija"
+		location = 949
+		division_template = "Pekhotna Divizija"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "BUL" } }
+		start_experience_factor = 0.40
+		start_equipment_factor = 0.95
+	}
+	division = {
+		name = "1-va Bronirana Divizija"
+		location = 949
+		division_template = "Bronirana Divizija"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "BUL" } }
+		force_equipment_variants = { medium_tank_equipment_1 = { owner = "BUL" } }
+		force_equipment_variants = { light_tank_equipment_2 = { owner = "BUL" } }
+		force_equipment_variants = { light_tank_destroyer_equipment_2 = { owner = "BUL" } }
+		start_experience_factor = 0.40
+		start_equipment_factor = 0.95
+	}
+	
+	##########
+	# SKOPJE #
+	##########
+	
+	division = {
+		name = "14-ta Skopska Pekhotna Divizija"
+		location = 3882
+		division_template = "Pekhotna Divizija"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "BUL" } }
+		start_experience_factor = 0.40
+		start_equipment_factor = 0.95
+	}
+	division = {
+		name = "15-ta Ohridska Pekhotna Divizija"
+		location = 3882
+		division_template = "Pekhotna Divizija"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "BUL" } }
+		start_experience_factor = 0.40
+		start_equipment_factor = 0.95
+	}
+	
+	##########
+	# THASOS #
+	##########
+	
+	division = {
+		name = "7-ma Rilska Pekhotna Divizija"
+		location = 11774
+		division_template = "Pekhotna Divizija"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "BUL" } }
+		start_experience_factor = 0.40
+		start_equipment_factor = 0.95
+	}
+	division = {
+		name = "16-ta Belomorska Pekhotna Divizija"
+		location = 11774
+		division_template = "Pekhotna Divizija"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "BUL" } }
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.95
+	}
+	division = {
+		name = "28-ta Zapasna Pekhotna Divizija"
+		location = 11774
+		division_template = "Pekhotna Divizija"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "BUL" } }
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.95
+	}
+}
+
+###########
+# AIR OOB #
+###########
+
+air_wings = {
+
+	# Sofiya #
+	48 = {
+		### 1-vi Vyzdushen Polk ###
+		fighter_equipment_2 = {
+			owner = "BUL"
+			amount = 75
+		}	
+		name = "1-vi Vyzdushen Polk"
+		##
+		fighter_equipment_2 = {
+			owner = "BUL"
+			amount = 75
+		}	
+		name = "2-ri Vyzdushen Polk"
+	}
+	# Varna #
+	211 = {
+		### 6-ti Iztrebitelen Polk ###
+		fighter_equipment_2 = {
+			owner = "BUL"
+			amount = 75
+		}	
+		name = "6-ti Iztrebitelen Polk"
+		##
+		tac_bomber_equipment_2 = {
+			owner = "BUL"
+			amount = 50
+		}	
+		name = "5-ti Vyzdushna Napadatelna Brigada"
+	}
+}

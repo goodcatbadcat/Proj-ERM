@@ -1,0 +1,215 @@
+﻿################################
+# BULGARIAN DIVISION TEMPLATES #
+################################
+
+
+#####################
+# INFANTRY VARIANTS #
+#####################
+
+division_template = {
+	name = "Divizioni Këmbësorisë"		# Infantry Division
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 0 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		anti_tank = { x = 0 y = 2 }
+		field_hospital = { x = 0 y = 3 }
+	}
+	priority = 50
+}
+
+division_template = {
+	name = "Brigada Këmbësorisë"		# Infantry Brigade
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		artillery_brigade = { x = 3 y = 0 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+	priority = 50
+}
+
+
+####################
+# CAVALRY VARIANTS #
+####################
+
+division_template = {
+	name = "Divizioni Kalorësisë" 		# Cavalry Division
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+		artillery_brigade = { x = 2 y = 0 }
+		artillery_brigade = { x = 2 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+	priority = 3
+}
+
+####################
+# CAVALRY VARIANTS #
+####################
+
+division_template = {
+	name = "Brigada  Kalorësisë" 		# Cavalry Brigade
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		artillery_brigade = { x = 1 y = 0 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+	priority = 3
+}
+
+###################
+# ORDER OF BATTLE #
+###################
+
+units = {
+	###########
+	# Shkoder #
+	###########
+	division = {
+		name = "Brigada 1 Çlirimtare"
+		division_template = "Brigada Këmbësorisë" 
+		start_experience_factor = 0.85
+		start_equipment_factor = 0.5
+		owner = ALB
+		location = 9780
+	}
+	division = {
+		name = "Brigada 2 Çlirimtare"
+		division_template = "Brigada Këmbësorisë" 
+		start_experience_factor = 0.85
+		start_equipment_factor = 0.5
+		owner = ALB
+		location = 9780
+	}
+	##########
+	# Durres #
+	##########
+	division = {
+		name = "Brigada 4 Çlirimtare"
+		division_template = "Brigada Këmbësorisë" 
+		start_experience_factor = 0.85
+		start_equipment_factor = 0.5
+		owner = ALB
+		location = 13255
+	}
+	division = {
+		name = "Brigada 5 Çlirimtare"
+		division_template = "Brigada Këmbësorisë" 
+		start_experience_factor = 0.85
+		start_equipment_factor = 0.5
+		owner = ALB
+		location = 13255
+	}
+	division = {
+		name = "Brigada 6 Çlirimtare"
+		division_template = "Brigada Këmbësorisë" 
+		start_experience_factor = 0.85
+		start_equipment_factor = 0.5
+		owner = ALB
+		location = 13255
+	}
+	##########
+	# Tirana #
+	##########
+	division = {
+		name = "Brigada 3 Çlirimtare"
+		division_template = "Brigada Këmbësorisë" 
+		start_experience_factor = 0.85
+		start_equipment_factor = 0.5
+		owner = ALB
+		location = 9914
+	}
+	division = {
+		name = "Brigada 7 Çlirimtare"
+		division_template = "Brigada Këmbësorisë" 
+		start_experience_factor = 0.85
+		start_equipment_factor = 0.5
+		owner = ALB
+		location = 9914
+	}
+	division = {
+		name = "Brigada 8 Çlirimtare"
+		division_template = "Brigada Këmbësorisë" 
+		start_experience_factor = 0.85
+		start_equipment_factor = 0.5
+		owner = ALB
+		location = 9914
+	}
+	division = {
+		name = "Brigada 9 Çlirimtare"
+		division_template = "Brigada Këmbësorisë" 
+		start_experience_factor = 0.85
+		start_equipment_factor = 0.5
+		owner = ALB
+		location = 9914
+	}
+	#########
+	# Vlore #
+	#########
+	division = {
+		name = "Brigada 10 Çlirimtare"
+		division_template = "Brigada Këmbësorisë" 
+		start_experience_factor = 0.85
+		start_equipment_factor = 0.5
+		owner = ALB
+		location = 11767
+	}
+	division = {
+		name = "Brigada 11 Çlirimtare"
+		division_template = "Brigada Këmbësorisë" 
+		start_experience_factor = 0.85
+		start_equipment_factor = 0.5
+		owner = ALB
+		location = 11767
+	}
+	#########
+	# Korce #
+	#########
+	division = {
+		name = "Brigada 12 Çlirimtare"
+		division_template = "Brigada Këmbësorisë" 
+		start_experience_factor = 0.85
+		start_equipment_factor = 0.5
+		owner = ALB
+		location = 6900
+	}
+}

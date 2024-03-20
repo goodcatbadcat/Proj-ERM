@@ -1,0 +1,37 @@
+##########################
+##########################
+### ROMANIAN DECISIONS ###
+##########################
+##########################
+
+#########################
+# OPERATION PANZERFAUST #
+#########################
+
+ROM_ask_SOV_arms = {
+
+	ROM_ask_SOV_arms = {
+		icon = decision_gre_faction_management_category
+
+		allowed = {
+			original_tag = ROM
+		}
+
+		available = {
+			has_war = yes
+			ROM = {
+				is_in_faction_with = SOV
+			}
+		}
+
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 1000
+		}
+
+		complete_effect = {
+			country_event = romania.201
+		}
+	}
+}

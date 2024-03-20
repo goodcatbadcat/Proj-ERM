@@ -1,0 +1,190 @@
+leader_traits = {
+
+###################################################################
+###################### Minister of Culture ########################
+###################################################################
+
+	MOC_master_of_propaganda = {
+		sprite = 13
+		political_power_gain = 0.25
+		stability_factor = 0.15
+		war_support_factor = 0.15
+		consumer_goods_factor = -0.10
+		conscription_factor = 0.05
+		recruitable_population_factor = 0.025
+		army_core_defence_factor = 0.15
+		army_core_attack_factor = 0.10
+		army_morale_factor = 0.05
+		no_supply_grace = 30
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	MOC_master_of_dissemination = {
+		sprite = 13
+		political_power_gain = 0.20
+		stability_factor = 0.10
+		war_support_factor = 0.15
+		encryption = 0.25
+		drift_defence_factor = 0.50
+		party_popularity_stability_factor = 0.10
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	MOC_political_columnist = {
+		sprite = 13
+		political_power_gain = 0.10
+		stability_factor = 0.05
+		war_support_factor = 0.05
+		party_popularity_stability_factor = 0.10
+		drift_defence_factor = 0.25
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	MOC_charismatic_speaker = {
+		sprite = 13
+		political_power_gain = 0.25
+		stability_factor = 0.10
+		war_support_factor = 0.10
+		party_popularity_stability_factor = 0.25
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	MOC_head_of_political_directorate = {
+		sprite = 13
+		army_attack_factor = 0.05
+		army_core_defence_factor = 0.1
+		army_morale_factor = 0.10
+		army_org_regain = 0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	MOC_propagandist_in_chief = {
+		sprite = 13
+		political_power_gain = 0.15
+		stability_factor = 0.10
+		war_support_factor = 0.10
+		consumer_goods_factor = -0.05
+		army_defence_factor = 0.10
+		army_morale_factor = 0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	MOC_expert_manipulator = {
+		sprite = 13
+		political_power_gain = 0.10
+		stability_factor = 0.05
+		war_support_factor = 0.15
+		army_morale_factor = 0.10
+		army_core_defence_factor = 0.10
+		army_core_attack_factor = 0.10
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	MOC_ideological_fanatic = {
+		sprite = 13
+		army_core_defence_factor = 0.15
+		army_morale_factor = 0.05
+		war_support_factor = 0.10
+		political_power_gain = 0.075
+		no_supply_grace = 60
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	MOC_press_propagandist = {
+		sprite = 13
+		war_support_factor = 0.075
+		political_power_gain = 0.05
+		stability_factor = 0.05 
+		recruitable_population_factor = 0.025
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	MOC_political_commissar = {
+		sprite = 13
+		
+		max_planning_factor = 0.10
+		army_core_defence_factor = 0.1
+		army_core_attack_factor = 0.1
+		army_morale_factor = 0.05
+		war_support_factor = 0.05
+		political_power_gain = 0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	MOC_talented_censorer = {
+		sprite = 13
+		political_power_gain = 0.15
+		encryption = 1
+		stability_factor = 0.05 
+		war_support_factor = 0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	MOC_radio_commentator = {
+		sprite = 13
+		political_power_gain = 0.05
+		war_support_factor = 0.10
+		stability_factor = 0.10 
+		party_popularity_stability_factor = 0.10
+		consumer_goods_factor = -0.10
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	MOC_master_of_war_propaganda = {
+		sprite = 13
+		consumer_goods_factor = -0.10
+		war_support_factor = 0.15
+		stability_factor = 0.10
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	MOC_political_film_maker = {
+		sprite = 13
+		war_support_factor = 0.05
+		stability_factor = 0.05
+		political_power_gain = 0.10
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

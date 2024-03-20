@@ -1,0 +1,378 @@
+spriteTypes = {
+
+
+    ######################
+    ## ROMMANIAN EVENTS ##
+    ######################
+
+    spriteType = {
+        name = "GFX_report_event_romania_coup"
+        texturefile = "gfx/event_pictures/Romania/report_event_romania_coup.dds"
+    }
+
+    ####################
+    ## ROMANIAN IDEAS ##
+    ####################
+
+    spriteType = {
+        name = "GFX_idea_ROM_"
+        texturefile = "gfx/interface/ideas/national_ideas/ROM/idea_ROM_.dds"
+    }
+
+    ##########################
+    ### ROMANIAN MINISTERS ###
+    ##########################
+
+    spriteType = {
+        name = "GFX_idea_ROM_Mihai_I"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_Mihai_I.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ROM_Horia_Sima"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_Horia_Sima.dds"
+    }
+    spriteType = {
+        name = "GFX_ROM_Gheorghe_Gheorghiu_Dej"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_Gheorghe_Gheorghiu_Dej.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ROM_Ion_Antonescu"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_Ion_Antonescu.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ROM_Petre_Dumitrescu"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_Petre_Dumitrescu.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ROM_Constantin_Sanatescu"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_Constantin_Sanatescu.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ROM_Ioan_Mihail_Racovita"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_Ioan_Mihail_Racovita.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ROM_Illie_Steflea"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_Illie_Steflea.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ROM_Eugen_Cristescu"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_Eugen_Cristescu.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ROM_Martin_Ceausu"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_Martin_Ceausu.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ROM_Gheorghe_Mihail"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_Gheorghe_Mihail.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ROM_Nicolae_Radescu"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_Nicolae_Radescu.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ROM_Constantin_Petrovicescu"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_Constantin_Petrovicescu.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ROM_Ion_Gigurtu"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_Ion_Gigurtu.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ROM_Platon_Chirnoaga"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_Platon_Chirnoaga.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ROM_Emil_Bodnaras"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_Emil_Bodnaras.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ROM_Radu_Korne"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_Radu_Korne.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ROM_Georghe_Sinaia_Ionescu"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_Georghe_Sinaia_Ionescu.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ROM_Emil_Gheorghiu"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_Emil_Gheorghiu.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ROM_Dante_Vizante"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_Dante_Vizante.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ROM_Gheorghe_Jienescu"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_Gheorghe_Jienescu.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ROM_Paul_Teodorescu"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_Paul_Teodorescu.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ROM_Gheorghe_Vasiliu"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_Gheorghe_Vasiliu.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ROM_Horia_Macellariu"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_Horia_Macellariu.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ROM_Nicolae_Caranfil"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_Nicolae_Caranfil.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ROM_Ioan_Georgescu"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_Ioan_Georgescu.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ROM_Nicolae_Sova"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_Nicolae_Sova.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ROM_Nicolai_Duca_di_Silvania"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_Nicolai_Duca_di_Silvania.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ROM_Petru_Groza"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_Petru_Groza.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ROM_Mihai_Antonescu"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_Mihai_Antonescu.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ROM_Mihai_Antonescu"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_Mihai_Antonescu.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ROM_Istrate_Micescu"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_Istrate_Micescu.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ROM_Mihail_Manoilescu"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_Mihail_Manoilescu.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ROM_Grigore_Niclesco_Buzesti"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_Grigore_Niclesco_Buzesti.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ROM_Constantin_Visoianu"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_Constantin_Visoianu.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ROM_Gheorghe_Tatarescu"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_Gheorghe_Tatarescu.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ROM_Constantin_Argetoianu"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_Constantin_Argetoianu.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ROM_Ana_Pauker"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_Ana_Pauker.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ROM_Simon_Bughici"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_Simon_Bughici.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ROM_Grigore_Preoteasa"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_Grigore_Preoteasa.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ROM_Gheorghe_Ptopeanu"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_Gheorghe_Ptopeanu.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ROM_Gheorghe_Dobre"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_Gheorghe_Dobre.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ROM_Nicolai_Stoenescu"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_Nicolai_Stoenescu.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ROM_Constantin_Papanace"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_Constantin_Papanace.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ROM_Iosif_Iacobici"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_Iosif_Iacobici.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ROM_Constantin_Pantazi"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_Constantin_Pantazi.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ROM_Ion_N_Fintescu"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_Ion_N_Fintescu.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ROM_David_Popescu"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_David_Popescu.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ROM_David_Popescu"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_David_Popescu.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ROM_David_Popescu"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_David_Popescu.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ROM_David_Popescu"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_David_Popescu.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ROM_Romulus_Opris"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_Romulus_Opris.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ROM_Radu_Mironovici"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_Radu_Mironovici.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ROM_Constantin_Petrovicescu"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_Constantin_Petrovicescu.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ROM_Chivu_Stoica"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_Chivu_Stoica.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ROM_Gheron_Netta"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_Gheron_Netta.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ROM_Caius_Brediceanu"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_Caius_Brediceanu.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ROM_Alexandru_D_Neagu"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_Alexandru_D_Neagu.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ROM_Alexandru_D_Neagu"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_Alexandru_D_Neagu.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ROM_Mihail_Manoilescu"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_Mihail_Manoilescu.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ROM_Ion_Gigurtu"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_Ion_Gigurtu.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ROM_Corneliu_Georgescu"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_Corneliu_Georgescu.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ROM_Stan_Ghitescu"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_Stan_Ghitescu.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ROM_George_Cretzianu"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_George_Cretzianu.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ROM_Mircea_Cancicov"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_Mircea_Cancicov.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ROM_Ion_C_Marinescu"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_Ion_C_Marinescu.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ROM_Mihail_Roller"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_Mihail_Roller.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ROM_Nichifor_Crainic"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_Nichifor_Crainic.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ROM_Dumitru_Caracostea"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_Dumitru_Caracostea.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ROM_Traian_Braileanu"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_Traian_Braileanu.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ROM_Illie_Garneata"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_Illie_Garneata.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ROM_Nae_Ionescu"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_Nae_Ionescu.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ROM_Nicolae_Stonescu"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_Nicolae_Stonescu.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ROM_Horia_Hulubei"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_Horia_Hulubei.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ROM_Grigore_C_Moisil"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_Grigore_C_Moisil.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ROM_Elie_Carafoli"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_Elie_Carafoli.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ROM_Micrea_Sabau"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_Micrea_Sabau.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ROM_Mihail_Romniceanu"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_Mihail_Romniceanu.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ROM_Constantin_IC_Bratianu"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_Constantin_IC_Bratianu.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ROM_Radu_Irimescu"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_Radu_Irimescu.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ROM_Vasile_Iasinschi"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_Vasile_Iasinschi.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ROM_Nicolae_Petrascu"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_Nicolae_Petrascu.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ROM_Mikhail_Sturdza"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_Mikhail_Sturdza.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ROM_Ion_Boiteanu"
+        texturefile = "gfx/interface/ideas/Ministers/ROM/idea_ROM_Ion_Boiteanu.dds"
+    }
+
+    
+    ######################
+    # ROMANIAN COMPANIES #
+    ######################
+
+    ## Armor ##
+
+    ## Materiel Manufacturer ##
+   
+    ## Air ##
+   
+    ## Industry ##
+    
+    ## Naval ##
+
+}

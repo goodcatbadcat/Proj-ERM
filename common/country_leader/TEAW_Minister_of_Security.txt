@@ -1,0 +1,201 @@
+leader_traits = {
+
+###################################################################
+###################### Minister of Security #######################
+###################################################################
+
+	MOS_silent_lawyer = {
+		random = yes
+		sprite = 13
+		political_power_factor = 0.05
+		consumer_goods_factor = -0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	MOS_chief_of_secret_police = {
+		random = yes
+		sprite = 13
+		consumer_goods_factor = 0.05
+		required_garrison_factor = 0.25
+		resistance_damage_to_garrison_on_our_occupied_states = 0.25
+		occupation_cost = -0.35
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	MOS_chief_of_state_police = {
+		random = yes
+		sprite = 13
+		consumer_goods_factor = 0.05
+		required_garrison_factor = 0.25
+		resistance_damage_to_garrison_on_our_occupied_states = 0.25
+		occupation_cost = -0.35
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	MOS_butcher = {
+		random = yes
+		sprite = 13
+		consumer_goods_factor = -0.05
+		encryption = 1 
+		local_resources_factor = 0.15
+		occupation_cost = -0.25
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	MOS_chief_of_military_intelligence = {
+		random = yes
+		sprite = 13
+		
+		decryption = 1
+		encryption = 1 
+		stability_factor = 0.10
+		own_operative_detection_chance_factor = -0.5
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	MOS_ruthless_organizer = {
+		random = yes
+		sprite = 13
+		conscription_factor = 0.05
+		local_resources_factor = 0.10
+		consumer_goods_factor = -0.05
+		stability_factor = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	MOS_SS_Reichsfuehrer = {
+		sprite = 13
+		foreign_subversive_activites = -0.25
+		local_resources_factor = 0.25
+		political_power_gain = 0.05
+		production_factory_max_efficiency_factor = 0.05
+		required_garrison_factor = 0.50
+		resistance_damage_to_garrison_on_our_occupied_states = 0.25
+		occupation_cost = -0.25
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	MOS_compassionate_gentleman = {
+		random = yes
+		sprite = 13
+		opinion_gain_monthly_factor = 0.15
+		political_power_gain = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	MOS_man_of_the_people = {
+		sprite = 13
+		stability_factor = 0.05
+		political_power_factor = 0.15
+		conscription_factor = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	MOS_dismal_enigma = {
+		sprite = 13
+		encryption = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	MOS_crooked_kleptocrat = {
+		random = yes
+		sprite = 13
+		political_power_factor = -0.10
+		training_time_army_factor = -0.1
+		production_speed_industrial_complex_factor = -0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	MOS_anti_communist = {
+		leninist_drift = -0.01
+		stalinist_drift = -0.01
+		left_wing_radical_drift = -0.01
+		
+		ai_will_do = {
+			factor = 3
+		}
+	}
+
+	MOS_political_specialist = {
+		sprite = 13
+		decryption = 1
+		political_power_gain = 0.15
+		stability_factor = 0.05
+		war_support_factor = 0.025
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	MOS_technical_specialist = {
+		sprite = 13 
+		decryption = 0.5
+		research_speed_factor = -0.05
+
+		random = no
+	}
+
+	MOS_logistics_specialist = {
+		sprite = 13
+		decryption = 1
+		supply_consumption_factor = -0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	MOS_naval_intelligence_specialist = {
+		sprite = 13 
+		decryption = 0.5
+		sortie_efficiency = 0.1
+
+		random = no
+	}
+
+	MOS_prince_of_terror = {
+		sprite = 13
+		#enemy_partisan_effect = -0.25
+		foreign_subversive_activites = -0.3
+		local_resources_factor = 0.30
+		conscription_factor = -0.005
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

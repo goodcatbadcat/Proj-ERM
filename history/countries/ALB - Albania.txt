@@ -1,0 +1,515 @@
+﻿#################
+# ALBANIA SETUP #
+#################
+	# Infantry Weapons
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	
+	# Infantry Equipment
+	
+	# Motorised
+	
+
+capital = 44 # Tirana 
+
+########
+# ARMY #
+########
+
+
+#################
+# Starting Tech #
+#################
+
+set_research_slots = 2
+
+set_technology = { 
+
+	############
+	# Infantry #
+	############
+	
+	# Support Weapons
+	
+	# Marines
+	
+	# Mountaineers
+	
+	######################
+	# Support Battalions #
+	######################
+	
+	tech_support = 1	
+	basic_train = 1 	
+	
+	# Engineer
+	
+	# Recon
+	
+	# Military Police
+	
+	# Maintenance
+	
+	# Logistics
+	
+	# Signal
+	
+	# Field Hospital
+	
+	#########
+	# Armor #
+	#########
+	
+	# Tank Prototype
+	gwtank = 1
+	
+	# Tank
+	
+	#############
+	# Artillery #
+	#############
+	
+	# Artillery
+	gw_artillery = 1
+	
+	# Howitzer
+	
+	# Anti-Air
+	interwar_antiair = 1
+	
+	# AT
+	interwar_antitank = 1
+	
+	# Mortar
+	
+	#################
+	# Land Doctrine #
+	#################
+	
+	# Grand Battle Plan
+	trench_warfare = 1
+	
+	##################
+	# Naval Doctrine #
+	##################
+	
+	# Trade Interdiction
+	
+	#################
+	# Air Equipment #
+	#################
+	
+	# Interceptor
+	early_fighter = 1
+	
+	# Multi-Role
+	
+	# Tactical Bomber
+	early_bomber = 1
+	
+	# Strategic Bomber
+	
+	# Naval Bomber
+	
+	################
+	# Air Doctrine #
+	################
+	
+	# Ground Support
+	
+	################################
+	# Engineering / Secret Weapons #
+	################################
+	
+	# Electrical and Mechanical
+	
+	# Decryption & Encryption
+	
+	############
+	# Industry #
+	############
+	
+	# Machine Tools
+	
+	# Industry [Concentrated vs Dispersed ]
+	
+	# Construction
+	
+	# Synthetics
+}
+
+##############
+# ARMOR TECH # (Fuck you paradox for giving modders such a headache will all these DLC exclusive techs -_-)
+##############
+
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = { 
+		gwtank = 1
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = { 
+		gwtank_chassis = 1
+		
+	}
+}
+
+############
+# Politics #
+############
+
+set_popularities = {
+	fascism = 0
+	neutrality = 100
+	democratic = 0
+	communism = 0
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1938.11.6"
+	election_frequency = 72
+	elections_allowed = yes
+}
+
+create_country_leader = {
+	name = "King Zog"
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "Portrait_Albania_King_Zog.dds"
+	expire = "1965.1.1"
+	ideology = neutrality
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Enver Hoxha"
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "Portrait_Albania_Enver_Hoxha.dds"
+	expire = "1965.1.1"
+	ideology = communism
+	traits = {
+		#
+	}
+}
+
+##############
+# Commanders #
+##############
+
+create_field_marshal = {
+	name = "Xhemal Aranitasi"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 1
+    defense_skill = 3
+    planning_skill = 2
+    logistics_skill = 1
+}
+
+##############
+# 1944 SETUP #
+##############
+
+1944.1.1 = {
+
+	##############
+	# Government #
+	##############
+	
+	become_exiled_in = { 
+		target = SOV
+		legitimacy = 100 
+	}
+	
+	set_fuel_ratio = 0.0
+	add_political_power = 50
+	set_stability = -0.10
+	set_war_support = -0.10
+	
+	##############
+	# Ideas/Laws #
+	##############
+	
+	add_ideas = {
+	
+		## Ministers ##
+		
+		# FM
+		
+		# MoS
+		
+		# AM
+		
+		# MoC
+		
+		# Theorist
+		
+		# Army Chief
+		
+		# Air Chief
+		
+		# Navy Chief
+		
+		# High Command 
+		
+		## Laws ##
+			
+		# Economy 
+		war_economy
+		
+		# Conscription
+		extensive_conscription
+		
+		# Exports
+		closed_economy
+		
+		# Education
+		minimal_education_investment
+		
+		# Press
+		propaganda_press
+		
+		# Army Training
+		basic_training
+		
+		# Companies 
+		
+	}
+	
+	############
+	# Politics #
+	############
+
+	set_popularities = {
+		fascism = 0
+		neutrality = 0
+		democratic = 0
+		communism = 100
+	}
+
+	set_politics = {
+		ruling_party = communism
+		last_election = "1944.1.1"
+		election_frequency = 72
+		elections_allowed = no
+	}
+	
+	create_country_leader = {
+		name = "Enver Hoxha"
+		desc = "POLITICS_KING_ZOG_DESC"
+		picture = "Portrait_Albania_Enver_Hoxha.dds"
+		expire = "1965.1.1"
+		ideology = communism
+		traits = {
+			#
+		}
+	}
+	
+	## Generic Focuses ##
+	complete_national_focus = army_effort
+	complete_national_focus = equipment_effort
+	complete_national_focus = motorization_effort
+	complete_national_focus = aviation_effort
+	complete_national_focus = construction_effort_2
+	complete_national_focus = production_effort_2
+	complete_national_focus = infrastructure_effort
+	complete_national_focus = industrial_effort
+	complete_national_focus = construction_effort
+	complete_national_focus = production_effort
+	
+	##############
+	# TECHNOLOGY #
+	##############
+	
+	#################
+	# Starting Tech #
+	#################
+	set_technology = {
+
+		############
+		# Infantry #
+		############
+		
+		# Support Weapons
+		support_weapons = 1 
+		
+		# Infantry Weapons
+		infantry_weapons = 1
+		infantry_weapons1 = 1
+		
+		# Infantry Equipment
+		
+		# Motorised
+		
+		# Mechanized
+		
+		# Trench Warfare
+		
+		# Marines
+		
+		# Paratroops
+		
+		# Mountaineers
+		tech_mountaineers = 1
+		
+		# Special Forces
+
+		######################
+		# Support Battalions #
+		######################
+		
+		tech_support = 1	
+	    basic_train = 1 	
+	
+		# Engineer
+		
+		# Recon
+		tech_recon = 1
+		
+		# Military Police
+		
+		# Maintenance
+		
+		# Logistics
+		
+		# Signal
+		
+		# Field Hospital
+		
+		#############
+		# Artillery #
+		#############
+		
+		# Artillery
+		gw_artillery = 1
+		interwar_artillery = 1
+		
+		# Rocket Artillery
+		
+		# Anti-Air
+		interwar_antiair = 1
+		
+		# Anti-Tank
+		interwar_antitank = 1 
+		
+		#################
+		# Land Doctrine #
+		#################
+		
+		# Trench Warfare
+		
+		trench_warfare = 1 
+		grand_battle_plan = 1 
+		prepared_defense = 1 
+		
+		##################
+		# Naval Doctrine #
+		##################
+
+		#################
+		# Air Equipment #
+		#################
+		
+		# Interceptor
+		early_fighter = 1
+		fighter1 = 1
+		
+		# Heavy Fighter
+		
+		# Multi-Role
+		
+		# Tactical Bomber
+		early_bomber = 1
+		
+		# Strategic Bomber
+		
+		# Naval Bomber
+		
+		# Carrier Fighter
+		
+		# Carrier CAS
+		
+		# Carrier Bomber
+		
+		################
+		# Air Doctrine #
+		################
+		
+		# Air Supererurity
+		
+		air_superiority = 1 
+		
+		################################
+		# Engineering / Secret Weapons #
+		################################
+		
+		# Radio
+		
+		# Electrical and Mechanical
+		
+		# Decryption & Encryption
+		
+		# Rocketry
+		
+		# Jet Engine
+		
+		# Nuclear Research
+		
+		############
+		# Industry #
+		############
+		
+		# Machine Tools
+		basic_machine_tools = 1 
+		
+		# Assembly
+		
+		# Industry [Concentrated vs Dispersed]
+		concentrated_industry = 1 
+		concentrated_industry2 = 1 
+		
+		# Construction
+		construction1 = 1 
+		construction2 = 1
+		
+		# Excavation
+		excavation1 = 1 
+		excavation2 = 1 
+		
+		# Synthetics
+	}
+	
+	##############
+	# ARMOR TECH # (Fuck you paradox for giving modders such a headache will all these DLC exclusive techs -_-)
+	##############
+
+	if = {
+		limit = {
+			NOT = { has_dlc = "No Step Back" }
+		}
+		set_technology = { 
+			gwtank = 1
+			basic_light_tank = 1
+		}
+	}
+
+	if = {
+		limit = {
+			has_dlc = "No Step Back"
+		}
+		set_technology = { 
+			gwtank_chassis = 1
+			
+		}
+	}
+}

@@ -1,0 +1,4559 @@
+###########################################
+# JAPANESE LEADERS/COMMANDERS/POLITICIANS #
+###########################################
+
+characters = {
+
+	################
+	# BASE LEADERS #
+	################
+	
+	JAP_Emperor_Hirohito = {
+		name = JAP_Emperor_Hirohito
+		
+		portraits = {
+			civilian = { 
+				large = "gfx/leaders/JAP/Portrait_Japan_Emperor_Hirohito.dds" 
+				small = "GFX_idea_JAP_Emperor_Hirohito"
+			}
+		}
+		
+		advisor = {
+			slot = head_of_state
+			ledger = civilian
+			idea_token = JAP_Emperor_Hirohito
+			allowed = { original_tag = JAP }
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			visible = {
+				OR = {
+					has_government = democratic
+					has_government = neutrality
+				}
+			}
+			traits = { HOS_puppet_emperor }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	##############
+	# ARMY CHIEF #
+	##############
+	
+	JAP_Tanigawa_Kazuo = {
+		name = JAP_Tanigawa_Kazuo
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_JAP_Tanigawa_Kazuo"
+			}
+		}
+		
+		advisor = {
+			slot = army_chief
+			idea_token = JAP_Tanigawa_Kazuo
+			ledger = army
+			allowed = { original_tag = JAP }
+			traits = { AC_school_of_mass_combat }
+			cost = 100
+			ai_will_do = { factor = 1 }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+		}
+	}
+	
+	JAP_Mikawa_Gunichi = {
+		name = JAP_Mikawa_Gunichi
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_JAP_Mikawa_Gunichi"
+			}
+		}
+		
+		advisor = {
+			slot = army_chief
+			idea_token = JAP_Mikawa_Gunichi
+			ledger = army
+			allowed = { original_tag = JAP }
+			traits = { AC_school_of_psychology }
+			cost = 100
+			ai_will_do = { factor = 1 }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+		}
+	}
+	
+	################
+	# HIGH COMMAND #
+	################
+	
+	JAP_Yuitsu_Tsuchihashi ={
+		name = JAP_Yuitsu_Tsuchihashi
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_JAP_Tsuchihashi_Yuitsu"
+			}
+		}
+		
+		advisor = {
+			slot = high_command
+			idea_token = JAP_Yuitsu_Tsuchihashi
+			ledger = army
+			allowed = { original_tag = JAP }
+			traits = { AC_decisive_battle_doctrine }
+			cost = 100
+			ai_will_do = { factor = 1 }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+		}
+	}
+	
+	JAP_Fujioka_Takeo ={
+		name = JAP_Fujioka_Takeo
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_JAP_Fujioka_Takeo"
+			}
+		}
+		
+		advisor = {
+			slot = high_command
+			idea_token = JAP_Fujioka_Takeo
+			ledger = army
+			allowed = { original_tag = JAP }
+			traits = { AC_elastic_defense_doctrine }
+			cost = 100
+			ai_will_do = { factor = 1 }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+		}
+	}
+	
+	JAP_Aotsu_Kikutaro ={
+		name = JAP_Aotsu_Kikutaro
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_JAP_Aotsu_Kikutaro"
+			}
+		}
+		
+		advisor = {
+			slot = high_command
+			idea_token = JAP_Aotsu_Kikutaro
+			ledger = army
+			allowed = { original_tag = JAP }
+			traits = { AC_doctrine_of_autonomy }
+			cost = 100
+			ai_will_do = { factor = 1 }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+		}
+	}
+	
+	##################
+	# FIELD MARSHALS #
+	##################
+	
+	JAP_Hata_Shunroku ={
+		name = JAP_Hata_Shunroku
+		
+		portraits = {
+			army = {
+				large = "gfx/leaders/JAP/Portrait_Japan_Hata_Shunroku.dds"
+				small = "GFX_idea_JAP_Hata_Shunroku"
+			}
+		}
+		
+		advisor = {
+			slot = army_chief
+			idea_token = JAP_Hata_Shunroku
+			ledger = army
+			allowed = { original_tag = JAP }
+			traits = { AC_school_of_defense }
+			cost = 100
+			ai_will_do = { factor = 1 }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+		}
+		
+		advisor = {
+			slot = high_command
+			idea_token = JAP_Hata_Shunroku2
+			ledger = army
+			allowed = { original_tag = JAP }
+			traits = { AC_decisive_battle_doctrine }
+			cost = 100
+			ai_will_do = { factor = 1 }
+		}
+		
+		field_marshal = {
+			traits = { JAP_samurai_lineage offensive_doctrine thorough_planner organisational_leader infantry_leader skirmisher guerilla_fighter }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 5
+			planning_skill=  3
+			logistics_skill = 4
+			legacy_id = 0
+		}
+	}
+	
+	JAP_Terauchi_Hisaichi = {
+		name = JAP_Terauchi_Hisaichi
+		
+		portraits = {
+			army = {
+				large = "gfx/leaders/JAP/Portrait_Japan_Terauchi_Hisaichi.dds"
+				small = "GFX_idea_JAP_Terauchi_Hisaichi"
+			}
+		}
+		
+		advisor = {
+			cost = 100
+			slot = army_chief
+			idea_token = JAP_Terauchi_Hisaichi
+			ledger = army
+			allowed = { original_tag = JAP }
+			traits = { AC_school_of_psychology }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+		}
+		
+		advisor = {
+			cost = 100
+			slot = high_command
+			idea_token = JAP_Terauchi_Hisaichi2
+			ledger = army
+			allowed = { original_tag = JAP }
+			traits = { AC_army_chief_organizational_2 }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+		}
+		
+		advisor = {
+			slot = armaments_minister
+			ledger = civilian
+			idea_token = JAP_Terauchi_Hisaichi3
+			allowed = { original_tag = JAP }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { AM_tank_proponent }
+			cost = 100
+		}
+		
+		advisor = {
+			cost = 100
+			slot = theorist
+			idea_token = JAP_Terauchi_Hisaichi4
+			ledger = army
+			allowed = { original_tag = JAP }
+			traits = { THEO_military_theorist }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+		}
+		
+		field_marshal = {
+			traits = { politically_connected JAP_samurai_lineage offensive_doctrine naval_invader unyielding_defender }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 2
+			legacy_id = 0
+		}
+	}
+	
+	####################
+	# CORPS COMMANDERS #
+	####################
+	
+	JAP_Adachi_Hatazo = {
+		name = JAP_Adachi_Hatazo
+		
+		portraits = {
+			army = {
+				large = "gfx/leaders/JAP/Portrait_Japan_Adachi_Hatazo.dds"
+				small = "GFX_idea_JAP_Adachi_Hatazo"
+			}
+		}
+		
+		advisor = {
+			cost = 100
+			slot = high_command
+			idea_token = JAP_Adachi_Hatazo
+			ledger = army
+			allowed = { original_tag = JAP }
+			traits = { 
+				AC_army_entrenchment_2
+				AC_army_concealment_2				
+			}
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+		}
+		
+		corps_commander = {
+			traits = { trait_reckless infantry_officer infantry_leader JAP_samurai_lineage trickster inflexible_strategist commando scavenger ambusher guerilla_fighter camouflage_expert skirmisher }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 5
+			planning_skill = 3
+			logistics_skill = 2
+			legacy_id = 0
+		}
+	}
+	
+	JAP_Ando_Rikichi ={
+		name = JAP_Ando_Rikichi
+		
+		portraits = {
+			army = {
+				large = "gfx/leaders/JAP/Portrait_Japan_Ando_Rikichi.dds"
+				small = "GFX_idea_JAP_Ando_Rikichi"
+			}
+		}
+		
+		corps_commander = {
+			traits = { career_officer }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+			legacy_id = 0
+		}
+	}
+	
+	JAP_Araki_Sadao = {
+		name=  JAP_Araki_Sadao
+		
+		portraits = {
+			army = {
+				large = "gfx/leaders/JAP/Portrait_Japan_Araki_Sadao.dds"
+				small = "GFX_idea_JAP_Araki_Sadao"
+			}
+		}
+		
+		advisor = {
+			cost = 100
+			slot = minister_of_culture
+			idea_token = JAP_Araki_Sadao
+			ledger = army
+			allowed = { original_tag = JAP }
+			traits = { MOC_master_of_dissemination }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+		}
+		
+		advisor = {
+			slot = minister_of_security
+			ledger = civilian
+			idea_token = JAP_Araki_Sadao2
+			allowed = { original_tag = JAP }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { MOS_naval_intelligence_specialist }
+			cost = 100
+		}
+		
+		corps_commander = {
+			traits = { JAP_samurai_lineage }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = 0
+		}
+	}
+	
+	JAP_Fujie_Keisuke = {
+		name = JAP_Fujie_Keisuke
+		
+		portraits = {
+			army = {
+				large = "gfx/leaders/JAP/Portrait_Japan_Fujie_Keisuke.dds"
+			}
+		}
+		
+		corps_commander = {
+			traits = { career_officer politically_connected fortress_buster inflexible_strategist infantry_officer infantry_leader organizer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+			legacy_id = 0
+		}
+	}
+	
+	JAP_Higashikuni_Naruhiko = {
+		name = JAP_Higashikuni_Naruhiko
+		
+		portraits = {
+			army = {
+				large = "gfx/leaders/JAP/Portrait_Japan_Higashikuni_Naruhiko.dds"
+				small = "GFX_idea_JAP_Higashikuni_Naruhiko"
+			}
+		}
+		
+		advisor = {
+			slot = air_chief
+			idea_token = JAP_Higashikuni_Naruhiko
+			ledger = navy
+			allowed = { original_tag = JAP }
+			traits = { AFC_carpet_bombing_doctrine }
+			cost =  50
+			ai_will_do = { factor = 1 }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+		}
+		
+		corps_commander = {
+			traits = { politically_connected JAP_samurai_lineage infantry_expert }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = 0
+		}
+	}
+	
+	JAP_Higuchi_Kiichiro = {
+		name = JAP_Higuchi_Kiichiro
+		
+		portraits = {
+			army = {
+				large = "gfx/leaders/JAP/Portrait_Japan_Higuchi_Kiichiro.dds"
+				small = "GFX_idea_JAP_Higuchi_Kiichiro"
+			}
+		}
+		
+		advisor = {
+			cost = 100
+			slot = high_command
+			idea_token = JAP_Higuchi_Kiichiro
+			ledger = army
+			allowed = { original_tag = JAP }
+			traits = { AC_army_chief_defensive_1 }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+		}
+		
+		corps_commander = { 
+			traits = { career_officer trait_cautious naval_invader naval_liason }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = 0
+		}
+	}
+	
+	JAP_Hyakutake_Harukichi = {
+		name = JAP_Hyakutake_Harukichi
+		
+		portraits = {
+			army = {
+				large = "gfx/leaders/JAP/Portrait_Japan_Hyakutake_Harukichi.dds"
+			}
+		}
+		
+		corps_commander = {
+			traits = { infantry_officer infantry_leader politically_connected skirmisher guerilla_fighter jungle_rat commando }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 5
+			planning_skill = 3
+			logistics_skill = 5
+			legacy_id = 0
+		}
+	}
+	
+	JAP_Iimura_Jo = {
+		name = JAP_Iimura_Jo
+		
+		portraits = {
+			army = {
+				large = "gfx/leaders/JAP/Portrait_Japan_Iimura_Jo.dds"
+				small = "GFX_idea_JAP_Iimura_Jo"
+			}
+		}
+		
+		advisor = {
+			cost = 100
+			slot = high_command
+			idea_token = JAP_Iimura_Jo
+			ledger = army
+			allowed = { original_tag = JAP }
+			traits = { AC_army_chief_reform_2 }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+		}
+		
+		advisor = {
+			cost = 100
+			slot = minister_of_security
+			idea_token = JAP_Iimura_Jo2
+			ledger = army
+			allowed = { original_tag = JAP }
+			traits = { MOI_crime_fighter }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+		}
+		
+		corps_commander = {
+			traits = { career_officer infantry_officer infantry_leader inflexible_strategist trickster }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 2
+			legacy_id = 0
+		}
+	}
+	
+	JAP_Imamura_Hitoshi = {
+		name = JAP_Imamura_Hitoshi
+		
+		portraits = {
+			army = {
+				large = "gfx/leaders/JAP/Portrait_Japan_Imamura_Hitoshi.dds"
+				small = "GFX_idea_JAP_Imamura_Hitoshi"
+			}
+		}
+		
+		advisor = {
+			slot = high_command
+			idea_token = JAP_Imamura_Hitoshi
+			ledger = army
+			allowed = { original_tag = JAP }
+			traits = { AC_army_logistics_2 }
+			cost = 100
+			ai_will_do = { factor = 3 }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+		}
+		
+		corps_commander = {
+			traits = { career_officer infantry_officer commando inflexible_strategist naval_invader trickster infantry_leader }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 5
+			legacy_id = 0
+		}
+	}
+	
+	JAP_Itagaki_Seishiro = {
+		name = JAP_Itagaki_Seishiro 
+		
+		portraits = {
+			army = {
+				large = "gfx/leaders/JAP/Portrait_Japan_Itagaki_Seishiro.dds"
+			}
+		}
+		corps_commander = {
+			traits = { inflexible_strategist trait_reckless JAP_samurai_lineage }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = 0
+		}
+	}
+	
+	JAP_Kanda_Masatane = {
+		name = JAP_masatane_kanda
+		
+		portraits = {
+			army = {
+				large = "gfx/leaders/JAP/Portrait_Japan_Kanda_Masatane.dds"
+			}
+		}
+		
+		corps_commander = {
+			traits = { trait_cautious infantry_officer organizer commando jungle_rat }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = 0
+		}
+	}
+	
+	JAP_Kenji_Doihara = {
+		name = JAP_Kenji_Doihara
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_JAP_Doihara_Kenji"
+				large = "gfx/leaders/JAP/Portrait_Japan_Doihara_Kenji.dds"
+			}
+		}
+		
+		advisor = {
+			slot = air_chief
+			idea_token = JAP_Kenji_Doihara
+			allowed = { original_tag = JAP }
+			traits = { AFC_air_chief_all_weather_2 }
+			cost =  50
+			ai_will_do = { factor = 1 }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+		}
+		
+		corps_commander = { 
+			traits = { career_officer substance_abuser infantry_officer infantry_leader }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = 0
+		}
+	}
+	
+	JAP_Koiso_Kuniaki = {
+		name = JAP_Koiso_Kuniaki
+		
+		portraits = {
+			army = {
+				large = "gfx/leaders/JAP/Portrait_Japan_Koiso_Kuniaki.dds"
+				small = "GFX_idea_JAP_Koiso_Kuniaki"
+			}
+		}
+		
+		advisor = {
+			slot = head_of_government
+			idea_token = JAP_Koiso_Kuniaki
+			allowed = { original_tag = JAP }
+			traits = { HOS_weary_stiffneck }
+			cost =  50
+			ai_will_do = { factor = 1 }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+		}
+		
+		corps_commander = {
+			traits = { old_guard politically_connected JAP_samurai_lineage inflexible_strategist trait_cautious }
+			skill = 3
+			attack_skill = 2 
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+			legacy_id = 0
+		}
+	}
+	
+	JAP_Muto_Akira ={
+		name = JAP_Muto_Akira
+		
+		portraits = {
+			army = {
+				large = "gfx/leaders/JAP/Portrait_Japan_Muto_Akira.dds"
+				small = "GFX_idea_JAP_Muto_Akira"
+			}
+		}
+		
+		corps_commander = {
+			traits = { career_officer infantry_leader }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+			legacy_id = 0
+		}
+	}
+	
+	JAP_Nishio_Toshizo = {
+		name = JAP_Nishio_Toshizo
+		
+		portraits = {
+			army = {
+				large = "gfx/leaders/JAP/Portrait_Japan_Nishio_Toshizo.dds"
+				small = "GFX_idea_JAP_Nishio_Toshizo"
+			}
+		}
+		
+		corps_commander = {
+			traits = { brilliant_strategist infantry_officer infantry_leader infantry_expert ambusher expert_improviser }
+			skill = 5
+			attack_skill = 5
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = 0
+		}
+	}
+	
+	JAP_Okamura_Yasuji = {
+		name = JAP_Okamura_Yasuji
+		
+		portraits = {
+			army = {
+				large = "gfx/leaders/JAP/Portrait_Japan_Okamura_Yasuji.dds"
+				small = "GFX_idea_JAP_Okamura_Yasuji"
+			}
+		}
+		
+		advisor = {
+			slot = high_command
+			idea_token = JAP_Okamura_Yasuji
+			ledger = army
+			allowed = { original_tag = JAP }
+			traits = { AC_army_infantry_2 }
+			cost = 100
+			ai_will_do = {
+				factor = 3.000
+				modifier = {
+					factor = 3.000
+					not = {
+						JAP = {
+							has_war_with = USA
+						}
+					}
+				}
+			}
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+		}
+		
+		corps_commander = {
+			traits = { infantry_officer infantry_leader infantry_expert trait_reckless urban_assault_specialist skirmisher skilled_staffer organizer }
+			skill = 6
+			attack_skill = 5
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 4
+			legacy_id = 0
+		}
+	}
+	
+	JAP_Tanaka_Shizuichi = {
+		name = JAP_Tanaka_Shizuichi
+
+		portraits = {
+			army = {
+				large = "gfx/leaders/JAP/Portrait_Japan_Tanaka_Shizuichi.dds"
+			}
+		}
+		
+		corps_commander = {
+			traits = { career_officer infantry_officer trickster }
+			skill= 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 4
+			legacy_id = 0
+		}
+	}
+	
+	JAP_Sakai_Takashi = {
+		name = JAP_Sakai_Takashi
+		
+		portraits = {
+			army = {
+				large = "gfx/leaders/JAP/Portrait_Japan_Sakai_Takashi.dds"
+			}
+		}
+		
+		corps_commander = {
+			traits = { trait_reckless infantry_officer naval_invader urban_assault_specialist }
+			skill = 2
+			attack_skill = 2 
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill=  3
+			legacy_id = 0
+		}
+	}
+	
+	JAP_Umezu_Yoshijiro = {
+		name = JAP_Umezu_Yoshijiro
+		
+		portraits = {
+			army = {
+				large = "gfx/leaders/JAP/Portrait_Japan_Umezu_Yoshijiro.dds"
+				small = "GFX_idea_JAP_Umezu_Yoshijiro"
+			}
+		}
+		
+		advisor = {
+			cost = 150
+			slot = high_command
+			idea_token = JAP_Umezu_Yoshijiro
+			ledger = army
+			allowed = { original_tag = JAP }
+			traits = { AC_guns_n_butter_doctrine }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+		}
+		
+		advisor = {
+			cost = 150
+			slot = army_chief
+			idea_token = JAP_Umezu_Yoshijiro2
+			ledger = army
+			allowed = { original_tag = JAP }
+			traits = { AC_school_of_fire }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+		}
+		
+		corps_commander = {
+			traits = { trait_cautious politically_connected organizer infantry_officer infantry_leader guerilla_fighter }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = 0
+		}
+	}
+	
+	JAP_Yamada_Otozo = {
+		name = JAP_Yamada_Otozo
+		
+		portraits = {
+			army = {
+				large = "gfx/leaders/JAP/Portrait_Japan_Yamada_Otozo.dds"
+				small = "GFX_idea_JAP_Yamada_Otozo"
+			}
+		}
+		
+		advisor = {
+			cost = 150
+			slot = high_command
+			idea_token = JAP_Yamada_Otozo
+			ledger = army
+			allowed = { original_tag = JAP }
+			traits = { AC_army_chief_drill_3 }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+		}
+		
+		corps_commander = {
+			traits = { inflexible_strategist career_officer cavalry_officer organizer trait_engineer }
+			skill = 5
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 5
+			logistics_skill = 4
+			legacy_id = 0
+		}
+	}
+	
+	JAP_Yamashita_Tomoyuki = {
+		name = JAP_Yamashita_Tomoyuki
+		
+		portraits = {
+			army = {
+				large = "gfx/leaders/JAP/Portrait_Japan_Yamashita_Tomoyuki.dds"
+				small = "GFX_idea_JAP_Yamashita_Tomoyuki"
+			}
+		}
+		
+		advisor = {
+			cost = 150
+			slot = high_command
+			idea_token = JAP_Yamashita_Tomoyuki
+			ledger = army
+			allowed = { original_tag = JAP }
+			traits = { AC_tiger_of_malaya }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+		}
+		
+		advisor = {
+			cost = 150
+			slot = air_chief
+			idea_token = JAP_Yamashita_Tomoyuki12
+			ledger = army
+			allowed = { original_tag = JAP }
+			traits = { AFC_carpet_bombing_doctrine }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+		}
+
+		corps_commander = {
+			traits = { brilliant_strategist politically_connected trickster trait_engineer war_hero organizer infantry_leader commando jungle_rat naval_invader }
+			skill = 5
+			attack_skill = 4
+			defense_skill = 5
+			planning_skill = 3
+			logistics_skill = 4
+			legacy_id = 0
+		}
+	}
+	
+	##################
+	# AIR COMMANDERS #
+	##################
+	
+	JAP_Tsukahara_Nishizo = {
+		name = JAP_Tsukahara_Nishizo
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_JAP_Tsukahara_Nishizo"
+			}
+		}
+		
+		advisor = {
+			slot = air_chief
+			idea_token = JAP_Tsukahara_Nishizo
+			ledger = navy
+			allowed = { original_tag = JAP }
+			traits = { AFC_army_aviation_doctrine }
+			cost =  50
+			ai_will_do = { factor = 1 }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+		}
+	}
+	
+	JAP_Doihara_Kenji = {
+		name = JAP_Doihara_Kenji
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_JAP_Doihara_Kenji"
+			}
+		}
+		
+		advisor = {
+			slot = air_chief
+			idea_token = JAP_Doihara_Kenji
+			ledger = navy
+			allowed = { original_tag = JAP }
+			traits = { NC_navy_chief_naval_aviation_2 }
+			cost =  50
+			ai_will_do = { factor = 1 }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+		}
+	}
+	
+	JAP_Wada_Misao = {
+		name = JAP_Wada_Misao
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_JAP_Wada_Misao"
+			}
+		}
+		
+		advisor = {
+			slot = air_chief
+			idea_token = JAP_Wada_Misao
+			ledger = navy
+			allowed = { original_tag = JAP }
+			traits = { AFC_vertical_envelopment_doctrine }
+			cost =  50
+			ai_will_do = { factor = 1 }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+		}
+	}
+	
+	JAP_Yamashita_Tomouki = {
+		name = JAP_Yamashita_Tomouki
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_JAP_Yamashita_Tomouki"
+			}
+		}
+		
+		advisor = {
+			slot = air_chief
+			idea_token = JAP_Yamashita_Tomouki
+			ledger = navy
+			allowed = { original_tag = JAP }
+			traits = { AFC_air_superiority_doctrine }
+			cost =  50
+			ai_will_do = { factor = 1 }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+		}
+	}
+	
+	JAP_Anami_Korechika = {
+		name = JAP_Anami_Korechika
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_JAP_Anami_Korechika"
+			}
+		}
+		
+		advisor = {
+			slot = air_chief
+			idea_token = JAP_Anami_Korechika
+			ledger = navy
+			allowed = { original_tag = JAP }
+			traits = { AFC_air_airborne_2 }
+			cost =  50
+			ai_will_do = { factor = 1 }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+		}
+	}
+	
+	JAP_Ushiroku_Jun = {
+		name = JAP_Ushiroku_Jun
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_JAP_Ushiroku_Jun"
+			}
+		}
+		
+		advisor = {
+			slot = air_chief
+			idea_token = JAP_Ushiroku_Jun
+			ledger = navy
+			allowed = { original_tag = JAP }
+			traits = { AFC_army_aviation_doctrine }
+			cost =  50
+			ai_will_do = { factor = 1 }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+		}
+	}
+	
+	JAP_Sugawara_Michio = {
+		name = JAP_Sugawara_Michio
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_JAP_Sugawara_Michio"
+			}
+		}
+		
+		advisor = {
+			slot = air_chief
+			idea_token = JAP_Sugawara_Michio
+			ledger = navy
+			allowed = { original_tag = JAP }
+			traits = { AFC_air_superiority_doctrine }
+			cost =  50
+			ai_will_do = { factor = 1 }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+		}
+	}
+	
+	JAP_Kawabe_Masakazu = {
+		name = JAP_Kawabe_Masakazu
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_JAP_Kawabe_Masakazu"
+			}
+		}
+		
+		advisor = {
+			slot = high_command
+			idea_token = JAP_Kawabe_Masakazu
+			ledger = navy
+			allowed = { original_tag = JAP }
+			traits = { AC_school_of_defense }
+			cost =  50
+			ai_will_do = { factor = 1 }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+		}
+		
+		advisor = {
+			slot = air_chief
+			idea_token = JAP_Kawabe_Masakazu2
+			ledger = navy
+			allowed = { original_tag = JAP }
+			traits = { AFC_defense_aviation_doctrine }
+			cost =  50
+			ai_will_do = { factor = 1 }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+		}
+	}
+	
+	JAP_Inoue_Ikutaro = {
+		name = JAP_Inoue_Ikutaro
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_JAP_Inoue_Ikutaro"
+			}
+		}
+		
+		advisor = {
+			slot = air_chief
+			idea_token = JAP_Inoue_Ikutaro
+			ledger = navy
+			allowed = { original_tag = JAP }
+			traits = { AFC_air_bomber_interception_2 }
+			cost =  50
+			ai_will_do = { factor = 1 }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+		}
+	}
+	
+	JAP_Tokugawa_Yoshitoshi = {
+		name = JAP_Tokugawa_Yoshitoshi
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_JAP_Tokugawa_Yoshitoshi"
+			}
+		}
+		
+		advisor = {
+			slot = air_chief
+			idea_token = JAP_Tokugawa_Yoshitoshi
+			ledger = navy
+			allowed = { original_tag = JAP }
+			traits = { AFC_air_close_air_support_2 }
+			cost =  50
+			ai_will_do = { factor = 1 }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+		}
+	}
+	
+	JAP_Yamamoto_Eisuke = {
+		name = JAP_Yamamoto_Eisuke
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_JAP_Yamamoto_Eisuke"
+			}
+		}
+		
+		advisor = {
+			slot = air_chief
+			idea_token = JAP_Yamamoto_Eisuke
+			ledger = navy
+			allowed = { original_tag = JAP }
+			traits = { NC_navy_chief_naval_aviation_3 }
+			cost =  50
+			ai_will_do = { factor = 1 }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+		}
+	}
+	
+	####################
+	# NAVAL COMMANDERS #
+	####################
+	
+	JAP_Abe_Hiroaki = {
+		name = JAP_Abe_Hiroaki
+		
+		portraits = {
+			army = {
+				large = "gfx/leaders/JAP/Portrait_Japan_Abe_Hiroaki.dds"
+			}
+		}
+		
+		navy_leader = {
+			traits = { battleship_adherent blue_water_expert ground_pounder big_guns_expert cruiser_captain }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 1
+			maneuvering_skill = 2
+			coordination_skill = 1
+			legacy_id = 0
+		}
+	}
+	
+	JAP_Daigo_Tadashige = {
+		name = JAP_Daigo_Tadashige
+		
+		portraits = {
+			army = {
+				large = "gfx/leaders/JAP/Portrait_Japan_Daigo_Tadashige.dds"
+				small = "GFX_idea_JAP_Daigo_Tadashige"
+			}
+		}
+		
+		advisor = {
+			cost = 150
+			slot = navy_chief
+			idea_token = JAP_Daigo_Tadashige
+			ledger = navy
+			allowed = { original_tag = JAP }
+			traits = { NC_submarine_proponent }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+		}
+		
+		navy_leader = {
+			traits = { navy_career_officer seawolf cruiser_captain blue_water_expert }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 1
+			maneuvering_skill = 2
+			coordination_skill = 3
+			legacy_id = 0
+		}
+	}
+	
+	JAP_Hasegawa_Kiyoshi = {
+		name = JAP_Hasegawa_Kiyoshi
+		
+		portraits = {
+			army = {
+				large = "gfx/leaders/JAP/Portrait_Japan_Hasegawa_Kiyoshi.dds"
+				small = "GFX_idea_JAP_Hasegawa_Kiyoshi"
+			}
+		}
+		
+		advisor = {
+			cost = 150
+			slot = theorist
+			idea_token = JAP_Hasegawa_Kiyoshi
+			ledger = navy
+			allowed = { original_tag = JAP }
+			traits = { THEO_grand_fleet_proponent }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+		}
+		
+		advisor = {
+			cost = 150
+			slot = navy_chief
+			idea_token = JAP_Hasegawa_Kiyoshi2
+			ledger = navy
+			allowed = { original_tag = JAP }
+			traits = { NC_navy_chief_reform_2 }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+		}
+		
+		navy_leader = {
+			traits = { gentlemanly fleet_protector spotter }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			maneuvering_skill = 2
+			coordination_skill = 4
+			legacy_id = 0
+		}
+	}
+	
+	JAP_Inoue_Shigeyoshi = {
+		name = JAP_Inoue_Shigeyoshi
+		
+		portraits = {
+			army = {
+				large = "gfx/leaders/JAP/Portrait_Japan_Inoue_Shigeyoshi.dds"
+				small = "GFX_idea_JAP_Inoue_Shigeyoshi"
+			}
+		}
+		
+		advisor = {
+			cost = 150
+			slot = air_chief
+			idea_token = JAP_Hasegawa_Kiyoshi2
+			ledger = navy
+			allowed = { original_tag = JAP }
+			traits = { NC_navy_chief_naval_aviation_2 }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+		}
+		
+		navy_leader = {
+			traits = { navy_career_officer aviation_enthusiast }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			maneuvering_skill = 2
+			coordination_skill = 3
+			legacy_id = 0
+		}
+	}
+	
+	JAP_Kondo_Nobutake = {
+		name = JAP_Kondo_Nobutake
+		
+		portraits = {
+			army = {
+				large = "gfx/leaders/JAP/Portrait_Japan_Kondo_Nobutake.dds"
+			}
+		}
+		
+		navy_leader = {
+			traits = { battleship_adherent naval_lineage fly_swatter }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 2
+			maneuvering_skill = 2
+			coordination_skill = 2
+			legacy_id = 0
+		}
+	}
+	
+	JAP_Kurita_Takeo = { # Retired Forcefully Dec 1945
+		name = JAP_Kurita_Takeo
+		
+		portraits = {
+			army = {
+				large = "gfx/leaders/JAP/Portrait_Japan_Kurita_Takeo.dds"
+			}
+		}
+		
+		navy_leader = {
+			traits = { destroyer_leader craven blue_water_expert concealment_expert fleet_protector }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			maneuvering_skill = 3
+			coordination_skill = 3
+			legacy_id = 0
+		}
+	}
+	
+	JAP_Ozawa_Jisaburo = {
+		name = JAP_Ozawa_Jisaburo
+		portraits = {
+			army = {
+				large = "gfx/leaders/JAP/Portrait_Japan_Ozawa_Jisaburo.dds"
+				small = "GFX_idea_JAP_Jisaburo_Ozawa"
+			}
+		}
+		
+		advisor = {
+			slot = navy_chief
+			idea_token = JAP_Ozawa_Jisaburo
+			ledger = navy
+			allowed = { original_tag = JAP }
+			traits = { NC_open_seas_doctrine }
+			cost =  50
+			ai_will_do = { factor = 1 }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+		}
+		
+		navy_leader = {
+			traits = { bold navy_career_officer aviation_enthusiast blockade_runner superior_tactician }
+			skill = 5
+			attack_skill = 5
+			defense_skill = 3
+			maneuvering_skill = 3
+			coordination_skill = 4
+			legacy_id = 0
+		}
+	}
+	
+	JAP_Toyoda_Soemu = {
+		name = JAP_Toyoda_Soemu
+		
+		portraits = {
+			army = {
+				large = "gfx/leaders/JAP/Portrait_Japan_Toyoda_Soemu.dds"
+				small = "GFX_idea_JAP_Toyoda_Soemu"
+			}
+		}
+		
+		advisor = {
+			slot = navy_chief
+			idea_token = JAP_Toyoda_Soemu
+			ledger = navy
+			allowed = { original_tag = JAP }
+			traits = { NC_navy_chief_decisive_battle_2 }
+			cost =  50
+			ai_will_do = { factor = 1 }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+		}
+		
+		navy_leader = {
+			traits = { old_guard_navy bold battleship_adherent blue_water_expert ironside big_guns_expert }
+			skill = 4
+			attack_skill = 5
+			defense_skill = 2
+			maneuvering_skill = 3
+			coordination_skill = 3
+			legacy_id = 0
+		}
+	}
+	
+	JAP_Takagi_Takeo = { # Dies July 1944
+		name = JAP_Takagi_Takeo
+		
+		portraits = {
+			army = {
+				large = "gfx/leaders/JAP/Portrait_Japan_Takagi_Takeo.dds"
+				small = "GFX_idea_JAP_Takagi_Takeo"
+			}
+		}
+		
+		navy_leader = {
+			traits = { spotter blockade_runner cruiser_captain search_pattern_expert }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			maneuvering_skill = 3
+			coordination_skill = 3
+			legacy_id = 0
+		}
+	}
+	
+	JAP_Yoshida_Zengo = {
+		name = JAP_Yoshida_Zengo
+		
+		portraits = {
+			army = {
+				large = "gfx/leaders/JAP/Portrait_Japan_Yoshida_Zengo.dds"
+				small = "GFX_idea_JAP_Yoshida_Zengo"
+			}
+		}
+		
+		advisor = {
+			slot = navy_chief
+			idea_token = JAP_Yoshida_Zengo
+			ledger = navy
+			allowed = { original_tag = JAP }
+			traits = { NC_navy_submarine_2 }
+			cost =  50
+			ai_will_do = { factor = 1 }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+		}
+		
+		navy_leader = {
+			traits = { old_guard_navy blue_water_expert green_water_expert cruiser_captain torpedo_expert }
+			skill = 4
+			attack_skill = 2
+			defense_skill = 3
+			maneuvering_skill = 2 
+			coordination_skill = 3
+			legacy_id = 0
+		}
+	}
+	
+	JAP_Shimada_Shigetaro = {
+		name = JAP_Shimada_Shigetaro
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_JAP_Shimada_Shigetaro"
+			}
+		}
+		
+		advisor = {
+			slot = navy_chief
+			idea_token = JAP_Shimada_Shigetaro
+			ledger = navy
+			allowed = { original_tag = JAP }
+			traits = { NC_open_seas_doctrine }
+			cost =  50
+			ai_will_do = { factor = 1 }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+		}
+	}
+	
+	JAP_Nagano_Osami = {
+		name = JAP_Nagano_Osami
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_JAP_Nagano_Osami"
+			}
+		}
+		
+		advisor = {
+			slot = navy_chief
+			idea_token = JAP_Nagano_Osami
+			ledger = navy
+			allowed = { original_tag = JAP }
+			traits = { NC_power_projection_doctrine }
+			cost =  50
+			ai_will_do = { factor = 1 }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+		}
+	}
+	
+	JAP_Oikawa_Koshiro = {
+		name = JAP_Oikawa_Koshiro
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_JAP_Oikawa_Koshiro"
+			}
+		}
+		
+		advisor = {
+			slot = navy_chief
+			idea_token = JAP_Oikawa_Koshiro
+			ledger = navy
+			allowed = { original_tag = JAP }
+			traits = { NC_base_control_doctrine }
+			cost =  50
+			ai_will_do = { factor = 1 }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+		}
+	}
+	
+	JAP_Fushimi_Hiroyasu = {
+		name = JAP_Fushimi_Hiroyasu
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_JAP_Fushimi_Hiroyasu"
+			}
+		}
+		
+		advisor = {
+			slot = navy_chief
+			idea_token = JAP_Fushimi_Hiroyasu
+			ledger = navy
+			allowed = { original_tag = JAP }
+			traits = { NC_base_control_doctrine }
+			cost =  50
+			ai_will_do = { factor = 1 }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+		}
+	}
+	
+	JAP_Takarabe_Takeshi = {
+		name = JAP_Takarabe_Takeshi
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_JAP_Takarabe_Takeshi"
+			}
+		}
+		
+		advisor = {
+			slot = navy_chief
+			idea_token = JAP_Takarabe_Takeshi
+			ledger = navy
+			allowed = { original_tag = JAP }
+			traits = { NC_indirect_approach_doctrine }
+			cost =  50
+			ai_will_do = { factor = 1 }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+		}
+	}
+	
+	JAP_Genda_Minoru = {
+		name = JAP_Genda_Minoru
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_JAP_Genda_Minoru"
+			}
+		}
+		
+		advisor = {
+			slot = air_chief
+			idea_token = JAP_Genda_Minoru
+			ledger = navy
+			allowed = { original_tag = JAP }
+			traits = { NC_navy_chief_naval_aviation_2 }
+			cost =  50
+			ai_will_do = { factor = 1 }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+		}
+	}
+	
+	######################
+	# HEAD OF GOVERNMENT #
+	######################
+
+	JAP_Tojo_Hideki = {
+		name = JAP_Tojo_Hideki
+		
+		portraits = {
+			civilian = { large = "gfx/leaders/JAP/Portrait_Japan_Hideki_Tojo.dds" }
+			army = { small = "GFX_idea_JAP_Tojo_Hideki" }
+		}
+		
+		country_leader = {
+			ideology = paternal_autocrat
+			traits = { HOG_the_razor }
+			expire = "1989.1.1.1"
+			id = -1
+		}
+		
+		advisor = {
+			slot = foreign_minister
+			ledger = civilian
+			idea_token = JAP_Tojo_Hideki2
+			allowed = { original_tag = JAP }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { FM_general_staffer }
+			cost = 100
+		}
+		
+		advisor = {
+			slot = armaments_minister
+			ledger = civilian
+			idea_token = JAP_Tojo_Hideki3
+			allowed = { original_tag = JAP }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { AM_infantry_proponent }
+			cost = 100
+		}
+		
+		advisor = {
+			slot = minister_of_security
+			ledger = civilian
+			idea_token = JAP_Tojo_Hideki4
+			allowed = { original_tag = JAP }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { MOS_chief_of_secret_police }
+			cost = 100
+		}
+		
+		advisor = {
+			slot = high_command
+			ledger = civilian
+			idea_token = JAP_Tojo_Hideki5
+			allowed = { original_tag = JAP }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { AC_elastic_defense_doctrine }
+			cost = 100
+		}
+		
+		advisor = {
+			slot = army_chief
+			ledger = civilian
+			idea_token = JAP_Tojo_Hideki6
+			allowed = { original_tag = JAP }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { AC_school_of_psychology }
+			cost = 100
+		}
+		
+		advisor = {
+			slot = air_chief
+			ledger = civilian
+			idea_token = JAP_Tojo_Hideki7
+			allowed = { original_tag = JAP }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { AFC_army_aviation_doctrine }
+			cost = 100
+		}
+	}
+	
+	####################
+	# FOREIGN MINISTER #
+	####################
+	
+	JAP_Shigemitsu_Mamoru = {
+		name = JAP_Shigemitsu_Mamoru
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_JAP_Shigemitsu_Mamoru"
+			}
+		}
+		
+		advisor = {
+			slot = foreign_minister
+			ledger = civilian
+			idea_token = JAP_Shigemitsu_Mamoru
+			allowed = { original_tag = JAP }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { FM_great_compromiser }
+			cost = 100
+		}
+	}
+	
+	JAP_Konoe_Fumimaro = {
+		name = JAP_Konoe_Fumimaro
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_JAP_Konoe_Fumimaro"
+			}
+		}
+		
+		advisor = {
+			slot = foreign_minister
+			ledger = civilian
+			idea_token = JAP_Konoe_Fumimaro
+			allowed = { original_tag = JAP }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { FM_apologetic_clerk }
+			cost = 100
+		}
+	}
+	
+	JAP_Abe_Nobuyuki = {
+		name = JAP_Abe_Nobuyuki
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_JAP_Abe_Nobuyuki"
+			}
+		}
+		
+		advisor = {
+			slot = foreign_minister
+			ledger = civilian
+			idea_token = JAP_Abe_Nobuyuki
+			allowed = { original_tag = JAP }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { FM_iron_fisted_brute }
+			cost = 100
+		}
+		
+		advisor = {
+			cost = 150
+			slot = army_chief
+			idea_token = JAP_Abe_Nobuyuki2
+			ledger = navy
+			allowed = { original_tag = JAP }
+			traits = { AC_school_of_fire }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+		}
+	}
+	
+	JAP_Matsuoka_Yosuke = {
+		name = JAP_Matsuoka_Yosuke
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_JAP_Matsuoka_Yosuke"
+			}
+		}
+		
+		advisor = {
+			slot = foreign_minister
+			ledger = civilian
+			idea_token = JAP_Matsuoka_Yosuke
+			allowed = { original_tag = JAP }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { FM_ideological_crusader }
+			cost = 100
+		}
+	}
+	
+	JAP_Toyoda_Teijiro = {
+		name = JAP_Toyoda_Teijiro
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_JAP_Toyoda_Teijiro"
+			}
+		}
+		
+		advisor = {
+			slot = foreign_minister
+			ledger = civilian
+			idea_token = JAP_Toyoda_Teijiro
+			allowed = { original_tag = JAP }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { FM_iron_fisted_brute }
+			cost = 100
+		}
+		
+		advisor = {
+			slot = armaments_minister
+			ledger = civilian
+			idea_token = JAP_Toyoda_Teijiro2
+			allowed = { original_tag = JAP }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { AM_battlefield_support_proponent }
+			cost = 100
+		}
+	}
+	
+	JAP_Togo_Shigenori = {
+		name = JAP_Togo_Shigenori
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_JAP_Togo_Shigenori"
+			}
+		}
+		
+		advisor = {
+			slot = foreign_minister
+			ledger = civilian
+			idea_token = JAP_Togo_Shigenori
+			allowed = { original_tag = JAP }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { FM_biased_intellectual }
+			cost = 100
+		}
+	}
+	
+	JAP_Tani_Masayuki = {
+		name = JAP_Tani_Masayuki
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_JAP_Tani_Masayuki"
+			}
+		}
+		
+		advisor = {
+			slot = foreign_minister
+			ledger = civilian
+			idea_token = JAP_Tani_Masayuki
+			allowed = { original_tag = JAP }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { FM_apologetic_clerk }
+			cost = 100
+		}
+	}
+	
+	JAP_Suzuki_Kantaro = {
+		name = JAP_Suzuki_Kantaro
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_JAP_Suzuki_Kantaro"
+			}
+		}
+		
+		advisor = {
+			slot = foreign_minister
+			ledger = civilian
+			idea_token = JAP_Suzuki_Kantaro
+			allowed = { original_tag = JAP }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { FM_biased_intellectual }
+			cost = 100
+		}
+		
+		advisor = {
+			slot = minister_of_security
+			ledger = civilian
+			idea_token = JAP_Suzuki_Kantaro2
+			allowed = { original_tag = JAP }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { MOS_political_specialist }
+			cost = 100
+		}
+	}
+	
+	######################
+	# ARMAMENTS MINISTER #
+	######################
+	
+	JAP_Hara_Tomio = {
+		name = JAP_Hara_Tomio
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_JAP_Hara_Tomio"
+			}
+		}
+		
+		advisor = {
+			slot = armaments_minister
+			ledger = civilian
+			idea_token = JAP_Hara_Tomio
+			allowed = { original_tag = JAP }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { AM_armaments_organizer }
+			cost = 100
+		}
+		
+		advisor = {
+			slot = theorist
+			ledger = civilian
+			idea_token = JAP_Hara_Tomio2
+			allowed = { original_tag = JAP }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { THEO_tank_designer }
+			research_bonus = { armor = 0.05 }
+			cost = 100
+		}
+	}
+	
+	JAP_Hatta_Yoshiaki = {
+		name = JAP_Hatta_Yoshiaki
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_JAP_Hatta_Yoshiaki"
+			}
+		}
+		
+		advisor = {
+			slot = armaments_minister
+			ledger = civilian
+			idea_token = JAP_Hatta_Yoshiaki
+			allowed = { original_tag = JAP }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { AM_military_entrenpreneur }
+			cost = 100
+		}
+	}
+	
+	JAP_Sakonji_Seizo = {
+		name = JAP_Sakonji_Seizo
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_JAP_Sakonji_Seizo"
+			}
+		}
+		
+		advisor = {
+			slot = armaments_minister
+			ledger = civilian
+			idea_token = JAP_Sakonji_Seizo
+			allowed = { original_tag = JAP }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { AM_submarine_proponent }
+			cost = 100
+		}
+	}
+	
+	JAP_Yonai_Mutsumasa = {
+		name = JAP_Yonai_Mutsumasa
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_JAP_Yonai_Mitsumasa"
+			}
+		}
+		
+		advisor = {
+			slot = armaments_minister
+			ledger = civilian
+			idea_token = JAP_Yonai_Mutsumasa
+			allowed = { original_tag = JAP }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { AM_battlefleet_proponent }
+			cost = 100
+		}
+	}
+	
+	JAP_Nakajima_Chikuhei = {
+		name = JAP_Nakajima_Chikuhei
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_JAP_Nakajima_Chikuhei"
+			}
+		}
+		
+		advisor = {
+			slot = armaments_minister
+			ledger = civilian
+			idea_token = JAP_Nakajima_Chikuhei
+			allowed = { original_tag = JAP }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { AM_carrier_proponent }
+			cost = 100
+		}
+	}
+	
+	JAP_Ichiki_Otohiko = {
+		name = JAP_Ichiki_Otohiko
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_JAP_Ichiki_Otohiko"
+			}
+		}
+		
+		advisor = {
+			slot = armaments_minister
+			ledger = civilian
+			idea_token = JAP_Ichiki_Otohiko
+			allowed = { original_tag = JAP }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { AM_military_entrenpreneur }
+			cost = 100
+		}
+	}
+
+	########################
+	# MINISTER OF SECURITY #
+	########################
+	
+	JAP_Ando_Kisaburo = {
+		name = JAP_Ando_Kisaburo
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_JAP_Ando_Kisaburo"
+			}
+		}
+		
+		advisor = {
+			slot = minister_of_security
+			ledger = civilian
+			idea_token = JAP_Ando_Kisaburo
+			allowed = { original_tag = JAP }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { MOI_crime_fighter }
+			cost = 100
+		}
+	}
+	
+	JAP_Yasui_Eiji = {
+		name = JAP_Yasui_Eiji
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_JAP_Yasui_Eiji"
+			}
+		}
+		
+		advisor = {
+			slot = minister_of_security
+			ledger = civilian
+			idea_token = JAP_Yasui_Eiji
+			allowed = { original_tag = JAP }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { MOS_crooked_kleptocrat }
+			cost = 100
+		}
+	}
+	
+	JAP_Kobayashi_Seizo = {
+		name = JAP_Kobayashi_Seizo
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_JAP_Kobayashi_Seizo"
+			}
+		}
+		
+		advisor = {
+			slot = minister_of_security
+			ledger = civilian
+			idea_token = JAP_Kobayashi_Seizo
+			allowed = { original_tag = JAP }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { MOS_man_of_the_people }
+			cost = 100
+		}
+	}
+	
+	JAP_Tanabe_Harumichi = {
+		name = JAP_Tanabe_Harumichi
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_JAP_Tanabe_Harumichi"
+			}
+		}
+		
+		advisor = {
+			slot = minister_of_security
+			ledger = civilian
+			idea_token = JAP_Tanabe_Harumichi
+			allowed = { original_tag = JAP }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { MOS_man_of_the_people }
+			cost = 100
+		}
+	}
+	
+	JAP_Yuzawa_Michio = {
+		name = JAP_Yuzawa_Michio
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_JAP_Yuzawa_Michio"
+			}
+		}
+		
+		advisor = {
+			slot = minister_of_security
+			ledger = civilian
+			idea_token = JAP_Yuzawa_Michio
+			allowed = { original_tag = JAP }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { MOS_silent_lawyer }
+			cost = 100
+		}
+	}
+	
+	JAP_Abe_Genki = {
+		name = JAP_Abe_Genki
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_JAP_Abe_Genki"
+			}
+		}
+		
+		advisor = {
+			slot = minister_of_security
+			ledger = civilian
+			idea_token = JAP_Abe_Genki
+			allowed = { original_tag = JAP }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { MOS_silent_lawyer }
+			cost = 100
+		}
+	}
+	
+	JAP_Kodama_Hideo = {
+		name = JAP_Kodama_Hideo
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_JAP_Kodama_Hideo"
+			}
+		}
+		
+		advisor = {
+			slot = minister_of_security
+			ledger = civilian
+			idea_token = JAP_Kodama_Hideo
+			allowed = { original_tag = JAP }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { MOS_silent_lawyer }
+			cost = 100
+		}
+	}
+	
+	JAP_Nakamura_Aketo = {
+		name = JAP_Nakamura_Aketo
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_JAP_Nakamura_Aketo"
+			}
+		}
+		
+		advisor = {
+			slot = minister_of_security
+			ledger = civilian
+			idea_token = JAP_Nakamura_Aketo
+			allowed = { original_tag = JAP }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { MOI_crime_fighter }
+			cost = 100
+		}
+	}
+	
+	JAP_Kato_Hakujiro = {
+		name = JAP_Kato_Hakujiro
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_JAP_Kato_Hakujiro"
+			}
+		}
+		
+		advisor = {
+			slot = minister_of_security
+			ledger = civilian
+			idea_token = JAP_Kato_Hakujiro
+			allowed = { original_tag = JAP }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { MOS_man_of_the_people }
+			cost = 100
+		}
+	}
+	
+	JAP_Odachi_Shigeo = {
+		name = JAP_Odachi_Shigeo
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_JAP_Odachi_Shigeo"
+			}
+		}
+		
+		advisor = {
+			slot = minister_of_security
+			ledger = civilian
+			idea_token = JAP_Odachi_Shigeo
+			allowed = { original_tag = JAP }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { MOS_dismal_enigma }
+			cost = 100
+		}
+	}
+	
+	JAP_Mizuno_Rentaro = {
+		name = JAP_Mizuno_Rentaro
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_JAP_Mizuno_Rentaro"
+			}
+		}
+		
+		advisor = {
+			slot = minister_of_security
+			ledger = civilian
+			idea_token = JAP_Mizuno_Rentaro
+			allowed = { original_tag = JAP }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { MOS_crooked_kleptocrat }
+			cost = 100
+		}
+	}
+	
+	JAP_Ogawa_Gotaro = {
+		name = JAP_Ogawa_Gotaro
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_JAP_Gotaro_Ogawa"
+			}
+		}
+		
+		advisor = {
+			slot = minister_of_security
+			ledger = civilian
+			idea_token = JAP_Ogawa_Gotaro
+			allowed = { original_tag = JAP }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { MOS_dismal_enigma }
+			cost = 100
+		}
+	}
+	
+	JAP_Ugaki_Kazushige = {
+		name = JAP_Ugaki_Kazushige
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_JAP_Ugaki_Kazushige"
+			}
+		}
+		
+		advisor = {
+			slot = minister_of_security
+			ledger = civilian
+			idea_token = JAP_Ugaki_Kazushige
+			allowed = { original_tag = JAP }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { MOS_political_specialist }
+			cost = 100
+		}
+	}
+	
+	JAP_Tsuchihashi_Yuitsu = {
+		name = JAP_Tsuchihashi_Yuitsu
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_JAP_Tsuchihashi_Yuitsu"
+			}
+		}
+		
+		advisor = {
+			slot = minister_of_security
+			ledger = civilian
+			idea_token = JAP_Tsuchihashi_Yuitsu
+			allowed = { original_tag = JAP }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { MOS_technical_specialist }
+			cost = 100
+		}
+	}
+	
+	JAP_Machida_Chuji = {
+		name = JAP_Machida_Chuji
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_JAP_Machida_Chuji"
+			}
+		}
+		
+		advisor = {
+			slot = minister_of_security
+			ledger = civilian
+			idea_token = JAP_Machida_Chuji
+			allowed = { original_tag = JAP }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { MOS_technical_specialist }
+			cost = 100
+		}
+	}
+	
+	JAP_Horikiri_Zenjiro = {
+		name = JAP_Horikiri_Zenjiro
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_JAP_Horikiri_Zenjiro"
+			}
+		}
+		
+		advisor = {
+			slot = minister_of_security
+			ledger = civilian
+			idea_token = JAP_Horikiri_Zenjiro
+			allowed = { original_tag = JAP }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { MOS_logistics_specialist }
+			cost = 100
+		}
+	}
+	
+	JAP_Nomura_Naokuni = {
+		name = JAP_Nomura_Naokuni
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_JAP_Nomura_Naokuni"
+			}
+		}
+		
+		advisor = {
+			slot = minister_of_security
+			ledger = civilian
+			idea_token = JAP_Nomura_Naokuni
+			allowed = { original_tag = JAP }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { MOS_naval_intelligence_specialist }
+			cost = 100
+		}
+	}
+	
+	JAP_Oka_Takazuni = {
+		name = JAP_Oka_Takazuni
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_JAP_Oka_Takazumi"
+			}
+		}
+		
+		advisor = {
+			slot = minister_of_security
+			ledger = civilian
+			idea_token = JAP_Oka_Takazuni
+			allowed = { original_tag = JAP }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { MOS_logistics_specialist }
+			cost = 100
+		}
+	}
+	
+	JAP_Kato_Ryogoro = {
+		name = JAP_Kato_Ryogoro
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_JAP_Kato_Ryogoro"
+			}
+		}
+		
+		advisor = {
+			slot = minister_of_security
+			ledger = civilian
+			idea_token = JAP_Kato_Ryogoro
+			allowed = { original_tag = JAP }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { MOS_political_specialist }
+			cost = 100
+		}
+	}
+	
+	########################
+	# MINISTER OF INDUSTRY #
+	########################
+	
+	JAP_Sakurauchi_Yukio = {
+		name = JAP_Sakurauchi_Yukio
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_JAP_Aoki_Kazuo"
+			}
+		}
+		
+		advisor = {
+			slot = minister_of_industry
+			ledger = civilian
+			idea_token = JAP_Sakurauchi_Yukio
+			allowed = { original_tag = JAP }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { MOI_laissez_faire_capitalist }
+			cost = 100
+		}
+	}
+	
+	JAP_Kawada_Isao = {
+		name = JAP_Kawada_Isao
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_JAP_Kawada_Isao"
+			}
+		}
+		
+		advisor = {
+			slot = minister_of_industry
+			ledger = civilian
+			idea_token = JAP_Kawada_Isao
+			allowed = { original_tag = JAP }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { MOI_administrative_genius }
+			cost = 100
+		}
+	}
+	
+	JAP_Ogura_Masatsune = {
+		name = JAP_Ogura_Masatsune
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_JAP_Ogura_Masatsune"
+			}
+		}
+		
+		advisor = {
+			slot = minister_of_industry
+			ledger = civilian
+			idea_token = JAP_Ogura_Masatsune
+			allowed = { original_tag = JAP }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { MOI_laissez_faire_capitalist }
+			cost = 100
+		}
+	}
+	
+	JAP_Yuki_Toyotaro = {
+		name = JAP_Yuki_Toyotaro
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_JAP_Yuki_Toyotaro"
+			}
+		}
+		
+		advisor = {
+			slot = minister_of_industry
+			ledger = civilian
+			idea_token = JAP_Yuki_Toyotaro
+			allowed = { original_tag = JAP }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { MOI_balanced_budget_proponent }
+			cost = 100
+		}
+	}
+	
+	JAP_Ishiwata_Sotaro = {
+		name = JAP_Ishiwata_Sotaro
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_JAP_Ishiwata_Sotaro"
+			}
+		}
+		
+		advisor = {
+			slot = minister_of_industry
+			ledger = civilian
+			idea_token = JAP_Ishiwata_Sotaro
+			allowed = { original_tag = JAP }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { MOI_captain_of_industry }
+			cost = 100
+		}
+	}
+	
+	JAP_Yamamoto_Tatsuo = {
+		name = JAP_Yamamoto_Tatsuo
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_JAP_Yamamoto_Tatsuo"
+			}
+		}
+		
+		advisor = {
+			slot = minister_of_industry
+			ledger = civilian
+			idea_token = JAP_Yamamoto_Tatsuo
+			allowed = { original_tag = JAP }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { MOI_expert_banker }
+			cost = 100
+		}
+	}
+	
+	JAP_Kishi_Nobusuke = {
+		name = JAP_Kishi_Nobusuke
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_JAP_Kishi_Nobusuke"
+			}
+		}
+		
+		advisor = {
+			slot = minister_of_industry
+			ledger = civilian
+			idea_token = JAP_Kishi_Nobusuke
+			allowed = { original_tag = JAP }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { THEO_industrial_specialist }
+			cost = 100
+		}
+	}
+	
+	JAP_Aoki_Kazuo = {
+		name = JAP_Aoki_Kazuo
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_JAP_Aoki_Kazuo"
+			}
+		}
+		
+		advisor = {
+			slot = minister_of_industry
+			ledger = civilian
+			idea_token = JAP_Aoki_Kazuo
+			allowed = { original_tag = JAP }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { MOI_resource_industrialist }
+			cost = 100
+		}
+	}
+	
+	JAP_Ikeda_Shieaki = {
+		name = JAP_Ikeda_Shieaki
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_JAP_Ikeda_Shigeaki"
+			}
+		}
+		
+		advisor = {
+			slot = minister_of_industry
+			ledger = civilian
+			idea_token = JAP_Ikeda_Shieaki
+			allowed = { original_tag = JAP }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { MOI_resource_industrialist }
+			cost = 100
+		}
+	}
+	
+	JAP_Fujiwara_Ginjiro = {
+		name = JAP_Hatta_Yoshiaki
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_JAP_Hatta_Yoshiaki"
+			}
+		}
+		
+		advisor = {
+			slot = minister_of_industry
+			ledger = civilian
+			idea_token = JAP_Hatta_Yoshiaki
+			allowed = { original_tag = JAP }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { MOI_administrative_genius }
+			cost = 100
+		}
+	}
+	
+	JAP_Kobayashi_Ichizo = {
+		name = JAP_Kobayashi_Ichizo
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_JAP_Kobayashi_Ichizo"
+			}
+		}
+		
+		advisor = {
+			slot = minister_of_industry
+			ledger = civilian
+			idea_token = JAP_Kobayashi_Ichizo
+			allowed = { original_tag = JAP }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { MOI_resource_industrialist }
+			cost = 100
+		}
+	}
+	
+	#######################
+	# MINISTER OF CULTURE #
+	#######################
+	
+	JAP_Nakao_Nahagi = {
+		name = JAP_Nakao_Nahagi
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_JAP_Nakao_Nahagi"
+			}
+		}
+		
+		advisor = {
+			slot = minister_of_culture
+			ledger = civilian
+			idea_token = JAP_Nakao_Nahagi
+			allowed = { original_tag = JAP }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { MOC_talented_censorer }
+			cost = 100
+		}
+	}
+	
+	JAP_Hideo_Hiraide = {
+		name = JAP_Hideo_Hiraide
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_JAP_Hideo_Hiraide"
+			}
+		}
+		
+		advisor = {
+			slot = minister_of_culture
+			ledger = civilian
+			idea_token = JAP_Hideo_Hiraide
+			allowed = { original_tag = JAP }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { MOC_radio_commentator }
+			cost = 100
+		}
+	}
+	
+	JAP_Kiwao_Okumura = {
+		name = JAP_Kiwao_Okumura
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_JAP_Okumura_Kiwao"
+			}
+		}
+		
+		advisor = {
+			slot = minister_of_culture
+			ledger = civilian
+			idea_token = JAP_Kiwao_Okumura
+			allowed = { original_tag = JAP }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { MOC_political_columnist }
+			cost = 100
+		}
+	}
+	
+	JAP_Miyoshi_Shigeo = {
+		name = JAP_Miyoshi_Shigeo
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_JAP_Miyoshi_Shigeo"
+			}
+		}
+		
+		advisor = {
+			slot = minister_of_culture
+			ledger = civilian
+			idea_token = JAP_Miyoshi_Shigeo
+			allowed = { original_tag = JAP }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { MOC_talented_censorer }
+			cost = 100
+		}
+	}
+	
+	#############
+	# THEORISTS #
+	#############
+	
+	JAP_Ishii_Shiro = {
+		name = JAP_Ishii_Shiro
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_JAP_Ishii_Shiro"
+			}
+		}
+		
+		advisor = {
+			slot = theorist
+			ledger = civilian
+			idea_token = JAP_Ishii_Shiro
+			allowed = { original_tag = JAP }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { THEO_treacherous_microbiologist }
+			cost = 100
+		}
+	}
+	
+	JAP_Kitano_Masaji = {
+		name = JAP_Kitano_Masaji
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_JAP_Kitano_Masaji"
+			}
+		}
+		
+		advisor = {
+			slot = theorist
+			ledger = civilian
+			idea_token = JAP_Kitano_Masaji
+			allowed = { original_tag = JAP }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { THEO_questionable_doctor }
+			cost = 100
+		}
+	}
+	
+	JAP_Satoyasu_Iimori = {
+		name = JAP_Satoyasu_Iimori
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_JAP_Satoyasu_Iimori"
+			}
+		}
+		
+		advisor = {
+			slot = theorist
+			ledger = civilian
+			idea_token = JAP_Satoyasu_Iimori
+			allowed = { original_tag = JAP }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { THEO_chemical_physicist }
+			research_bonus = { jet_technology = 0.10 }
+			cost = 100
+		}
+	}
+	
+	JAP_Matsusaburo_Fujiwara = {
+		name = JAP_Matsusaburo_Fujiwara
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_JAP_Matsusaburo_Fujiwara"
+			}
+		}
+		
+		advisor = {
+			slot = theorist
+			ledger = civilian
+			idea_token = JAP_Matsusaburo_Fujiwara
+			allowed = { original_tag = JAP }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { THEO_famous_mathematician }
+			cost = 100
+		}
+	}
+	
+	JAP_Arakatsu_Bunsaku = {
+		name = JAP_Arakatsu_Bunsaku
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_JAP_Arakatsu_Bunsaku"
+			}
+		}
+		
+		advisor = {
+			slot = theorist
+			ledger = civilian
+			idea_token = JAP_Arakatsu_Bunsaku
+			allowed = { original_tag = JAP }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { THEO_nuclear_theorist }
+			research_bonus = { nuclear = 0.15 }
+			cost = 100
+		}
+	}
+	
+	JAP_Yukawa_Hideki = {
+		name = JAP_Yukawa_Hideki
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_JAP_Yukawa_Hideki"
+			}
+		}
+		
+		advisor = {
+			slot = theorist
+			ledger = civilian
+			idea_token = JAP_Yukawa_Hideki
+			allowed = { original_tag = JAP }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { THEO_theoretical_scientist }
+			research_bonus = { industry = 0.05 }
+			cost = 100
+		}
+	}
+	
+	JAP_Horikoshi_Jiro = {
+		name = JAP_Horikoshi_Jiro
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_JAP_Horikoshi_Jiro"
+			}
+		}
+		
+		advisor = {
+			slot = theorist
+			ledger = civilian
+			idea_token = JAP_Horikoshi_Jiro
+			allowed = { original_tag = JAP }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { THEO_air_designer }
+			research_bonus = { air_equipment = 0.10 }
+			cost = 100
+		}
+	}
+	
+	JAP_Doi_Takeo = {
+		name = JAP_Doi_Takeo
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_JAP_Doi_Takeo"
+			}
+		}
+		
+		advisor = {
+			slot = theorist
+			ledger = civilian
+			idea_token = JAP_Doi_Takeo
+			allowed = { original_tag = JAP }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { THEO_air_designer }
+			research_bonus = { air_equipment = 0.10 }
+			cost = 100
+		}
+	}
+}
+

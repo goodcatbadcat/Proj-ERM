@@ -1,0 +1,30 @@
+#####################
+# DYNAMIC MODIFIERS #
+# FOR ENDSIEG MOD   #
+#####################
+
+GER_war_city_berlin = {
+
+	enable = { always = yes }
+
+	icon = GFX_GER_war_city_berlin
+	
+	army_core_defence_factor = 0.35
+	supply_factor = 0.15
+	dig_in_speed_factor = 0.25
+	max_dig_in_factor = 0.1
+	pocket_penalty = -0.15
+}
+
+GER_national_redoubt = {
+
+	enable = { always = yes }
+
+	icon = GFX_GER_national_redoubt
+	
+	army_core_defence_factor = 0.75
+	supply_factor = 0.50
+	dig_in_speed_factor = 0.50
+	max_dig_in_factor = 0.50
+	pocket_penalty = -0.50
+}

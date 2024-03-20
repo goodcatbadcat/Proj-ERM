@@ -1,0 +1,50 @@
+﻿######################
+# Nero Decree Events #
+######################
+
+add_namespace = ERM_nero_decree
+
+# Operation Panzerfaust
+country_event = {
+	id = ERM_nero_decree.1
+	title = ERM_nero_decree.1.t
+	desc = ERM_nero_decree.1.d
+	picture = GFX_report_event_operation_panzerfaust
+
+	fire_only_once = no
+
+	trigger = {
+		tag = GER
+		any_state = {
+			has_state_flag = GER_nero_decree
+		}
+		AND = {
+			NOT = {
+				is_controlled_by = GER
+			}
+		}
+	}
+
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = ERM_nero_decree.1.a
+		limit = {
+			any_state = {	
+				has_state_flag = GER_nero_decree
+				AND = {
+					NOT = {
+						is_controlled_by = GER
+					}
+				}
+			}
+		}
+		add_state_modifier = {
+				modifier = {
+					local_resources = 2.0
+				}
+			}
+		}
+	}
+}
+

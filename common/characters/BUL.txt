@@ -1,0 +1,3509 @@
+characters = {
+
+	###################
+	# COUNTRY LEADERS #
+	###################
+
+	BUL_Kiril_Preslavski = { 
+		name = BUL_Kiril_Preslavski
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BUL/Portrait_Bulgaria_Prince_Kiril.dds"
+			}
+		}
+
+		country_leader = {
+			ideology = paternal_autocrat
+			traits = { HOS_regency_council }
+			expire = "1965.1.1"
+			id = -1
+		}
+	}
+	
+
+	################
+	# HIGH COMMAND #
+	################
+	
+	BUL_Teodosi_Dakalov = {
+		name = BUL_Teodosi_Dakalov
+		portraits = {
+			army = {
+				small = "GFX_idea_BUL_Teodosi_Dakalov"
+			}
+		}
+		
+		advisor = {
+			slot = high_command
+			ledger = military
+			idea_token = BUL_Teodosi_Dakalov
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+					has_government = fascism
+				}
+			}
+			visible = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+					has_government = fascism
+				}
+			}
+			traits = { AC_school_of_defense }
+			ai_will_do = { factor = 1 }
+		}
+	}
+	
+	BUL_Todor_Georgiev = {
+		name = BUL_Todor_Georgiev
+		portraits = {
+			army = {
+				small = "GFX_idea_BUL_Todor_Georgiev"
+			}
+		}
+		
+		advisor = {
+			slot = high_command
+			ledger = military
+			idea_token = BUL_Todor_Georgiev
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			visible = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			traits = { AC_shool_of_maneuver }
+			ai_will_do = { factor = 1 }
+		}
+	}
+	
+	BUL_Russi_Rusev = {
+		name = BUL_Russi_Rusev
+		portraits = {
+			army = {
+				small = "GFX_idea_BUL_Russi_Rusev"
+			}
+		}
+		
+		advisor = {
+			slot = high_command
+			ledger = military
+			idea_token = BUL_Russi_Rusev
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			visible = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			traits = { AC_school_of_mass_combat }
+			ai_will_do = { factor = 1 }
+		}
+	}
+	
+	BUL_Ivan_Valkov = {
+		name = BUL_Ivan_Valkov
+		portraits = {
+			army = {
+				small = "GFX_idea_BUL_Ivan_Valkov"
+			}
+		}
+		
+		advisor = {
+			slot = high_command
+			ledger = military
+			idea_token = BUL_Ivan_Valkov
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+					has_government = fascism
+				}
+			}
+			visible = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+					has_government = fascism
+				}
+			}
+			traits = { AC_school_of_defense }
+			ai_will_do = { factor = 1 }
+		}
+	}
+	
+	BUL_Ivan_Marinov = {
+		name = BUL_Ivan_Marinov
+		portraits = {
+			army = {
+				small = "GFX_idea_BUL_Ivan_Marinov"
+			}
+		}
+		
+		advisor = {
+			slot = high_command
+			ledger = military
+			idea_token = BUL_Ivan_Marinov
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+					has_government = fascism
+				}
+			}
+			visible = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+					has_government = fascism
+				}
+			}
+			traits = { AC_shool_of_maneuver }
+			ai_will_do = { factor = 1 }
+		}
+	}
+	
+	BUL_Ivan_Sapundzhiev = {
+		name = BUL_Ivan_Sapundzhiev
+		portraits = {
+			army = {
+				small = "GFX_idea_BUL_Ivan_Sapundzhiev"
+			}
+		}
+		
+		advisor = {
+			slot = high_command
+			ledger = military
+			idea_token = BUL_Ivan_Sapundzhiev
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+					has_government = fascism
+				}
+			}
+			visible = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+					has_government = fascism
+				}
+			}
+			traits = { AC_army_artillery_2 }
+			ai_will_do = { factor = 1 }
+		}
+	}
+
+	BUL_Atanas_Zhilkov = {
+		name = BUL_Atanas_Zhilkov
+		portraits = {
+			army = {
+				small = "GFX_idea_BUL_Atanas_Zhilkov"
+			}
+		}
+	
+		advisor = {
+			slot = high_command
+			ledger = military
+			idea_token = BUL_Atanas_Zhilkov
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			visible = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			traits = { AC_army_cavalry_2 }
+			ai_will_do = { factor = 1 }
+		}
+	}
+
+	BUL_Trifon_Trifonov = {
+	
+		name = BUL_Trifon_Trifonov
+		portraits = {
+			army = {
+				small = "GFX_idea_BUL_Trifon_Trifonov"
+			}
+		}
+	
+		advisor = {
+			slot = high_command
+			ledger = military
+			idea_token = BUL_Trifon_Trifonov
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+					has_government = fascism
+				}
+			}
+			visible = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+					has_government = fascism
+				}
+			}
+			traits = { AC_elastic_defence_doctrine }
+			ai_will_do = { factor = 1 }
+		}
+	}
+
+	BUL_Ferdinand_Kozovski = {
+		name = BUL_Ferdinand_Kozovski
+		portraits = {
+			army = {
+				small = "GFX_idea_BUL_Ferdinand_Kozovski"
+			}
+		}
+	
+		advisor = {
+			slot = high_command
+			ledger = military
+			idea_token = BUL_Ferdinand_Kozovski
+			allowed = { original_tag = BUL }
+			available = {
+				has_government = communism
+			}
+			visible = {
+				has_government = communism
+			}
+			traits = { AC_trenches_expert }
+			ai_will_do = { factor = 1 }
+		}
+	}
+
+	BUL_Stoyan_Trendafilov = {
+		name = BUL_Stoyan_Trendafilov
+	
+		portraits = {
+			army = {
+				small = "GFX_idea_BUL_Stoyan_Trendafilov"
+			}
+		}
+		
+		advisor = {
+			slot = high_command
+			ledger = military
+			idea_token = BUL_Stoyan_Trendafilov
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+					has_government = communism
+				}
+			}
+			visible = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+					has_government = communism
+				}
+			}
+			traits = { AC_army_armored_2 }
+			ai_will_do = { factor = 1 }
+		}
+	}
+
+	BUL_Vladimir_Stoychev = {
+		name = BUL_Vladimir_Stoychev
+		portraits = {
+			army = {
+				small = "GFX_idea_BUL_Vladimir_Stoychev"
+			}
+		}
+	
+		advisor = {
+			slot = high_command
+			ledger = military
+			idea_token = BUL_Vladimir_Stoychev
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+					has_government = communism
+				}
+			}
+			visible = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+					has_government = communism
+				}
+			}
+			traits = { AC_army_cavalry_2 }
+			ai_will_do = { factor = 1 }
+		}
+	}
+	
+	##################
+	# FIELD MARSHALS #
+	##################
+	
+	BUL_Nikola_Mihov = {
+		name = BUL_Nikola_Mihov
+		
+		portraits = {
+			army = {
+				large = "gfx/leaders/BUL/Portrait_Bulgaria_Nikola_Mihov.dds"
+				small = "GFX_idea_BUL_Nikola_Mihov"
+			}
+		}
+		
+		advisor = {
+			slot = army_chief
+			ledger = military
+			idea_token = BUL_Nikola_Mihov
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+					has_government = democratic
+				}
+			}
+			visible = {
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+					has_government = democratic
+				}
+			}
+			traits = { AC_school_of_fire }
+			ai_will_do = { factor = 1 }
+		}
+		
+		field_marshal = {
+			traits = { career_officer politically_connected trait_BUL_tsar_loyalist fortress_buster }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+			legacy_id = 1201
+		}
+	}
+	
+
+	####################
+	# CORPS COMMANDERS #
+	####################
+	
+	BUL_Georgi_Popov = {
+		name = BUL_Georgi_Popov
+		
+		portraits = {
+			army = {
+				large = "gfx/leaders/BUL/Portrait_Bulgaria_Georgi_Popov.dds"
+				small = "GFX_idea_BUL_Georgi_Popov"
+			}
+		}
+		
+		advisor = {
+			slot = army_chief
+			ledger = military
+			idea_token = BUL_Georgi_Popov
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+					has_government = communism
+				}
+			}
+			visible = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+					has_government = communism
+				}
+			}
+			traits = { AC_army_artillery_2 }
+			ai_will_do = { factor = 1 }
+		}
+		
+		corps_commander = {
+			traits = { infantry_officer war_hero skilled_staffer }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 4
+			legacy_id = 1202
+		}
+	}
+
+	BUL_Asen_Nikolov = {
+		name = BUL_Asen_Nikolov
+		portraits = {
+			army = {
+				large = "gfx/leaders/BUL/Portrait_Bulgaria_Asen_Nikolov.dds"
+				small = "GFX_idea_BUL_Asen_Nikolov"
+			}
+		}
+		
+		advisor = {
+			slot = army_chief
+			ledger = military
+			idea_token = BUL_Asen_Nikolov
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+					has_government = fascism
+				}
+			}
+			visible = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+					has_government = fascism
+				}
+			}
+			traits = { AC_army_infantry_1 }
+			ai_will_do = { factor = 1 }
+		}
+		
+		corps_commander = {
+			traits = { career_officer infantry_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = 1207
+		}
+	}
+
+
+	BUL_Nikola_Stoychev = {
+		name = BUL_Nikola_Stoychev
+		
+		portraits = {
+			army = {
+				large = "gfx/leaders/BUL/Portrait_Bulgaria_Nikola_Stoychev.dds"
+				small = "GFX_idea_BUL_Nikola_Stoychev"
+			}
+		}
+		
+		corps_commander = {
+			traits = { trait_cautious trait_BUL_tsar_loyalist }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = 1209
+		}
+	}
+
+	# Fatherland Front Coup
+	BUL_Damyan_Velchev = {
+		name = BUL_Damyan_Velchev
+		
+		portraits = {
+			army = {
+				large = "gfx/leaders/BUL/Portrait_Bulgaria_Damyan_Velchev.dds"
+				small = "GFX_idea_BUL_Damyan_Velchev"
+			}
+		}
+		
+		advisor = {
+			slot = armaments_minister
+			ledger = civilian
+			idea_token = BUL_Damyan_Velchev
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = communism
+				}
+			}
+			visible = {
+				OR = {
+					has_government = communism
+				}
+			}
+			traits = { AM_infantry_proponent }
+			ai_will_do = { factor = 1 }
+		}
+		
+		corps_commander = {
+			traits = { trait_reckless harsh_leader trait_BUL_zveno_member }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = 1210
+		}
+	}
+
+	# Commie/Neutral/Democratic
+	BUL_Angel_Dotsev = {
+		name = BUL_Angel_Dotsev
+		
+		portraits = {
+			army = {
+				large = "gfx/leaders/BUL/Portrait_Bulgaria_Angel_Dotsev.dds"
+			}
+		}
+		
+		corps_commander = {
+			traits = { organizer }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = 1211
+		}
+	}
+
+	# Neutral/Demo/Fascist
+	BUL_Nikola_Nakov = {
+		name = BUL_Nikola_Nakov
+		portraits = {
+			army = {
+				large = "gfx/leaders/BUL/Portrait_Bulgaria_Nikola_Nakov.dds" #Can become unit leader later
+				small = "GFX_idea_BUL_Nikola_Nakov"
+			}
+		}
+		
+		corps_commander = {
+			traits = { }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = 121111
+		}
+	}
+	
+	BUL_Konstantin_Lukash = {
+		name = BUL_Konstantin_Lukash
+		portraits = {
+			army = {
+				small = "GFX_idea_BUL_Konstantin_Lukash"
+				large = "gfx/leaders/BUL/Portrait_Bulgaria_Konstantin_Lukash.dds"
+			}
+		}
+		
+		advisor = {
+			slot = army_chief
+			ledger = military
+			idea_token = BUL_Damyan_Velchev
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+					has_government = fascism
+				}
+			}
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+					has_government = fascism
+				}
+			}
+			traits = { AC_guns_and_butter_doctrine }
+			ai_will_do = { factor = 1 }
+		}
+		
+		corps_commander = {
+			traits = { infantry_officer }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 1
+			legacy_id = 1208
+		}
+	}
+
+	BUL_Nikola_Hadzipetkov = {
+		name = BUL_Nikola_Hadzipetkov
+		portraits = {
+			army = {
+				small = "GFX_idea_BUL_Nikola_Hadzipetkov"
+				large = "gfx/leaders/BUL/Portrait_Bulgaria_Nikola_Hadzipetkov.dds"
+			}
+		}
+		
+		advisor = {
+			slot = army_chief
+			ledger = military
+			idea_token = BUL_Nikola_Hadzipetkov
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+					has_government = fascism
+				}
+			}
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+					has_government = fascism
+				}
+			}
+			traits = { AC_trenches_expert }
+			ai_will_do = { factor = 1 }
+		}
+			
+		corps_commander = {
+			traits = { brilliant_strategist infantry_officer organizer }
+			skill = 4
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 3
+			legacy_id = 1203
+		}
+	}
+
+	BUL_Kiril_Yanchulev = {
+		name = BUL_Kiril_Yanchulev
+		portraits = {
+			army = {
+				small = "GFX_idea_BUL_Kiril_Yanchulev"
+			}
+		}
+	
+		advisor = {
+			slot = army_chief
+			ledger = military
+			idea_token = BUL_Kiril_Yanchulev
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+					has_government = communism
+				}
+			}
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+					has_government = communism
+				}
+			}
+			traits = { army_chief_defensive_2 }
+			ai_will_do = { factor = 1 }
+		}
+	}
+
+	BUL_Vasil_Boydev = {
+		name = BUL_vasil_boydev
+		portraits = {
+			army = {
+				small = "GFX_idea_BUL_Vasil_Boydev"
+				large = "gfx/leaders/BUL/Portrait_Bulgaria_Vasil_Boydev.dds"
+			}
+		}
+		
+		advisor = {
+			slot = army_chief
+			ledger = military
+			idea_token = BUL_Kiril_Yanchulev
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+					has_government = fascism
+				}
+			}
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+					has_government = fascism
+				}
+			}
+			traits = { AC_elastic_defence_doctrine }
+			ai_will_do = { factor = 1 }
+		}
+		
+		corps_commander = {
+			traits = { cavalry_officer trait_BUL_tsar_loyalist }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = 1204
+		}
+	}
+	
+	BUL_Kiril_Stanchev = {
+		name = BUL_Kiril_Stanchev
+		portraits = {
+			army = {
+				small = "GFX_idea_BUL_Kiril_Stanchev"
+			}
+		}
+		
+		advisor = {
+			slot = army_chief
+			ledger = military
+			idea_token = BUL_Kiril_Yanchulev
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+					has_government = fascism
+				}
+			}
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+					has_government = fascism
+				}
+			}
+			traits = { AC_armored_spearhead_doctrine }
+			ai_will_do = { factor = 1 }
+		}
+	}
+	
+	BUL_Yordan_Peev = {
+		name = BUL_Yordan_Peev
+		portraits = {
+			army = {
+				small = "GFX_idea_BUL_Yordan_Peev"
+			}
+		}
+	
+		advisor = {
+			slot = army_chief
+			ledger = military
+			idea_token = BUL_Yordan_Peev
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+					has_government = fascism
+				}
+			}
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+					has_government = fascism
+				}
+			}
+			traits = { AC_decisive_battle_doctrine }
+			ai_will_do = { factor = 1 }
+		}
+	}
+	
+	BUL_Raycho_Slavkov = {
+		name = BUL_Raycho_Slavkov
+		portraits = {
+			army = {
+				small = "GFX_idea_BUL_Raycho_Slavkov"
+			}
+		}
+	
+		advisor = {
+			slot = army_chief
+			ledger = military
+			idea_token = BUL_Raycho_Slavkov
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			traits = { AC_school_of_psychology }
+			ai_will_do = { factor = 1 }
+		}
+	}
+	
+	BUL_Ivan_Kinov = {
+		name = BUL_Ivan_Kinov
+		portraits = {
+			army = {
+				small = "GFX_idea_BUL_Ivan_Kinov"
+			}
+		}
+	
+		advisor = {
+			slot = army_chief
+			ledger = military
+			idea_token = BUL_Ivan_Kinov
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = communist
+				}
+			}
+			available = {
+				OR = {
+					has_government = communist
+				}
+			}
+			traits = { AC_armored_spearhead_doctrine }
+			ai_will_do = { factor = 1 }
+		}
+	}
+	
+	BUL_Dimitar_Gichev = {
+		name = BUL_Dimitar_Gichev
+		portraits = {
+			army = {
+				small = "GFX_idea_BUL_Dimitar_Gichev"
+			}
+		}
+	
+		advisor = {
+			slot = army_chief
+			ledger = military
+			idea_token = BUL_Dimitar_Gichev
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = communist
+				}
+			}
+			available = {
+				OR = {
+					has_government = communist
+				}
+			}
+			traits = { AC_school_of_defense }
+			ai_will_do = { factor = 1 }
+		}
+	}
+	
+	BUL_Asen_Sirakov = {
+		name = BUL_Asen_Sirakov
+		portraits = {
+			army = {
+				small = "GFX_idea_BUL_Asen_Sirakov"
+			}
+		}
+	
+		advisor = {
+			slot = army_chief
+			ledger = military
+			idea_token = BUL_Asen_Sirakov
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = communist
+				}
+			}
+			available = {
+				OR = {
+					has_government = communist
+				}
+			}
+			traits = { AC_school_of_psychology }
+			ai_will_do = { factor = 1 }
+		}
+	}
+	
+	
+	
+	##################
+	# AIR COMMANDERS #
+	##################
+	
+	BUL_Dimitr_Ayryanov = {
+		name = BUL_Dimitr_Ayryanov
+		portraits = {
+			army = {
+				small = "GFX_idea_BUL_Dimitar_Ayryanov"
+			}
+		}
+		
+		advisor = {
+			slot = air_chief
+			ledger = military
+			idea_token = BUL_Dimitr_Ayryanov
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+					has_government = fascism
+				}
+			}
+			visible = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+					has_government = fascism
+				}
+			}
+			traits = { AFC_defense_aviation_doctrine }
+			ai_will_do = { factor = 1 }
+		}
+	}
+	
+	BUL_Chudomir_Toplodolski = {
+		name = BUL_Chudomir_Toplodolski
+		portraits = {
+			army = {
+				small = "GFX_idea_BUL_Chudomir_Toplodolski"
+			}
+		}
+		
+		advisor = {
+			slot = air_chief
+			ledger = military
+			idea_token = BUL_Chudomir_Toplodolski
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+					has_government = fascism
+				}
+			}
+			visible = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+					has_government = fascism
+				}
+			}
+			traits = { AFC_vertical_envelopment_doctrine }
+			ai_will_do = { factor = 1 }
+		}
+	}
+	
+	BUL_Stoyan_Stoyanov = {
+		name = BUL_Stoyan_Stoyanov
+		portraits = {
+			army = {
+				small = "GFX_idea_BUL_Stoyan_Stoyanov"
+			}
+		}
+		
+		advisor = {
+			slot = air_chief
+			ledger = military
+			idea_token = BUL_Stoyan_Stoyanov
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+					has_government = fascism
+				}
+			}
+			visible = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+					has_government = fascism
+				}
+			}
+			traits = { AFC_air_bomber_interception_2 }
+			ai_will_do = { factor = 1 }
+		}
+	}
+	
+	BUL_Georgi_Drenikov = {
+		name = BUL_Georgi_Drenikov
+		portraits = {
+			army = {
+				small = "GFX_idea_BUL_Georgi_Drenikov"
+			}
+		}
+		
+		advisor = {
+			slot = air_chief
+			ledger = military
+			idea_token = BUL_Georgi_Drenikov
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			visible = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			traits = { AFC_carpet_bombing_doctrine }
+			ai_will_do = { factor = 1 }
+		}
+	}
+
+	BUL_Gancho_Manchev = {
+		name = BUL_Gancho_Manchev
+		portraits = {
+			army = {
+				small = "GFX_idea_BUL_Gancho_Manchev"
+			}
+		}
+		
+		advisor = {
+			slot = air_chief
+			ledger = military
+			idea_token = BUL_Gancho_Manchev
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = communism
+				}
+			}
+			visible = {
+				OR = {
+					has_government = communism
+				}
+			}
+			traits = { AFC_air_chief_safety_2 }
+			ai_will_do = { factor = 1 }
+		}
+	}
+
+	BUL_Zachari_Zachariev = {
+		name = BUL_Zachari_Zachariev
+		portraits = {
+			army = {
+				small = "GFX_idea_BUL_Zachari_Zachariev"
+			}
+		}
+		
+		advisor = {
+			slot = air_chief
+			ledger = military
+			idea_token = BUL_Zachari_Zachariev
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = communism
+				}
+			}
+			visible = {
+				OR = {
+					has_government = communism
+				}
+			}
+			traits = { AFC_air_superiority_doctrine }
+			ai_will_do = { factor = 1 }
+		}
+		
+		advisor = {
+			slot = armaments_minister
+			idea_token = BUL_Zachari_Zachariev2
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = communism
+				}
+			}
+			visible = {
+				OR = {
+					has_government = communism
+				}
+			}
+			traits = { AM_air_superiority_proponent }
+			ai_will_do = { factor = 1 }
+		}
+	}
+	
+	BUL_Hristo_Krastev = {
+		name = BUL_Hristo_Krastev
+		portraits = {
+			army = {
+				small = "GFX_idea_BUL_Hristo_Krastev"
+			}
+		}
+		
+		advisor = {
+			slot = air_chief
+			ledger = military
+			idea_token = BUL_Hristo_Krastev
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = communism
+				}
+			}
+			visible = {
+				OR = {
+					has_government = communism
+				}
+			}
+			traits = { AFC_air_chief_ground_support_1 }
+			ai_will_do = { factor = 1 }
+		}
+	}
+	
+	BUL_Kiril_Kostov = {
+		name = BUL_Kiril_Kostov
+		portraits = {
+			army = {
+				small = "GFX_idea_BUL_Kiril_Kostov"
+			}
+		}
+		
+		advisor = {
+			slot = air_chief
+			ledger = military
+			idea_token = BUL_Kiril_Kostov
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = communism
+				}
+			}
+			visible = {
+				OR = {
+					has_government = communism
+				}
+			}
+			traits = { AFC_aviation_expert }
+			ai_will_do = { factor = 1 }
+		}
+	}
+	
+	###################
+	# NAVY COMMANDERS #
+	###################
+	
+	BUL_Atanas_Shalapatov = {
+		name = BUL_Atanas_Shalapatov
+		portraits = {
+			army = {
+				large = "gfx/leaders/BUL/Portrait_Bulgaria_Atanas_Shalapatov.dds"
+				small = "GFX_idea_BUL_Atanas_Shalapatov"
+			}
+		}
+		
+		advisor = {
+			slot = navy_chief
+			ledger = military
+			idea_token = BUL_Atanas_Shalapatov
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+					has_government = fascism
+				}
+			}
+			visible = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+					has_government = fascism
+				}
+			}
+			traits = { NC_navy_chief_decisive_battle_2 }
+			ai_will_do = { factor = 1 }
+		}
+		
+		navy_leader = {
+			traits = { old_guard_navy gentlemanly }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			maneuvering_skill = 2
+			coordination_skill = 2
+			legacy_id = -1
+		}
+	}
+	
+	BUL_Asen_Toshev = {
+		name = BUL_Asen_Toshev
+		portraits = {
+			army = {
+				small = "GFX_idea_BUL_Asen_Toshev"
+			}
+		}
+		
+		advisor = {
+			slot = navy_chief
+			ledger = military
+			idea_token = BUL_Asen_Toshev
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+					has_government = fascism
+				}
+			}
+			visible = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+					has_government = fascism
+				}
+			}
+			traits = { NC_open_seas_doctrine }
+			ai_will_do = { factor = 1 }
+		}
+	}
+
+	BUL_Ivan_Variklechkov = {
+		name = BUL_Ivan_Variklechkov
+		portraits = {
+			army = {
+				small = "GFX_idea_BUL_Ivan_Variklechkov"
+			}
+		}
+		
+		advisor = {
+			slot = navy_chief
+			ledger = military
+			idea_token = BUL_Ivan_Variklechkov
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+					has_government = communism
+				}
+			}
+			visible = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+					has_government = communism
+				}
+			}
+			traits = { NC_base_control_doctrine }
+			ai_will_do = { factor = 1 }
+		}
+	}
+	
+	BUL_Aleksandar_Russev = {
+		name = BUL_Aleksandar_Russev
+		portraits = {
+			army = {
+				small = "GFX_idea_BUL_Aleksandar_Russev"
+			}
+		}
+		
+		advisor = {
+			slot = navy_chief
+			ledger = military
+			idea_token = BUL_Aleksandar_Russev
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+					has_government = communism
+				}
+			}
+			visible = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+					has_government = communism
+				}
+			}
+			traits = { NC_indirect_approach_doctrine }
+			ai_will_do = { factor = 1 }
+		}
+	}
+	
+	BUL_Rumen_Ivanov = {
+		name = BUL_Rumen_Ivanov
+		portraits = {
+			army = {
+				small = "GFX_idea_BUL_Rumen_Ivanov"
+			}
+		}
+		
+		advisor = {
+			slot = navy_chief
+			ledger = military
+			idea_token = BUL_Rumen_Ivanov
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+					has_government = communism
+				}
+			}
+			visible = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+					has_government = communism
+				}
+			}
+			traits = { NC_navy_chief_commerce_raiding_2 }
+			ai_will_do = { factor = 1 }
+		}
+	}
+	
+
+	######################
+	# HEAD OF GOVERNMENT #
+	######################
+	
+	BUL_Ivan_Bagryanov = {  
+		name = BUL_Ivan_Bagryanov
+		
+		portraits = {
+			army = { 
+				small = "GFX_idea_BUL_Ivan_Bagryanov" 
+			}
+		}
+		
+		advisor = {
+			slot = head_of_government
+			idea_token = BUL_Ivan_Bagryanov
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			visible = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			traits = { HOG_old_general }
+			cost = 50
+			ai_will_do = { factor = 1.000 }
+		}
+		
+		advisor = {
+			slot = foreign_minister
+			idea_token = BUL_Ivan_Bagryanov2
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			visible = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			traits = { FM_iron_fisted_brute }
+			cost = 50
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	BUL_Konstantin_Muraviev = {  
+		name = BUL_Konstantin_Muraviev
+		
+		portraits = {
+			army = { 
+				small = "GFX_idea_BUL_Konstantin_Muraviev" 
+			}
+		}
+		
+		advisor = {
+			slot = head_of_government
+			idea_token = BUL_Konstantin_Muraviev
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			visible = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			traits = { HOG_naive_optimist }
+			cost = 50
+			ai_will_do = { factor = 1.000 }
+		}
+		
+		advisor = {
+			slot = foreign_minister
+			idea_token = BUL_Konstantin_Muraviev2
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			visible = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			traits = { FM_apologetic_clerk }
+			cost = 50
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	BUL_Kimon_Georgiev = {  
+		name = BUL_Kimon_Georgiev
+		
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BUL/Portrait_Bulgaria_Kimon_Georgiev.dds"
+			}
+			army = { 
+				small = "GFX_idea_BUL_Kimon_Georgiev" 
+			}
+		}
+		
+		country_leader = {
+			ideology = stalinism
+			traits = { HOS_power_hungry_demagogue }
+			expire = "1965.1.1"
+			id = -1
+		}
+		
+		advisor = {
+			slot = head_of_government
+			idea_token = BUL_Kimon_Georgiev
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = communism
+				}
+			}
+			visible = {
+				OR = {
+					has_government = communism
+				}
+			}
+			traits = { HOG_backstabber_backroom }
+			cost = 50
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	BUL_Nikola_Mushanov = {  
+		name = BUL_Nikola_Mushanov
+		
+		portraits = {
+			army = { 
+				small = "GFX_idea_BUL_Nikola_Mushanov" 
+			}
+		}
+		
+		advisor = {
+			slot = head_of_government
+			idea_token = BUL_Nikola_Mushanov
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			visible = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			traits = { HOG_silent_workhorse }
+			cost = 50
+			ai_will_do = { factor = 1.000 }
+		}
+		
+		advisor = {
+			slot = foreign_minister
+			idea_token = BUL_Nikola_Mushanov2
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			visible = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			traits = { FM_biased_intellectual }
+			cost = 50
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	BUL_Aleksandar_Tsankov = {  
+		name = BUL_Aleksandar_Tsankov
+		
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BUL/Portrait_Bulgaria_Aleksandar_Tsankov"
+			}
+			army = { 
+				small = "GFX_idea_BUL_Aleksandar_Tsankov" 
+			}
+		}
+		
+		country_leader = {
+			ideology = fascism
+			traits = { HOS_barking_buffoon }
+			expire = "1965.1.1"
+			id = -1
+		}
+		
+		advisor = {
+			slot = head_of_government
+			idea_token = BUL_Aleksandar_Tsankov
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+					has_government = fascism
+				}
+			}
+			visible = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+					has_government = fascism
+				}
+			}
+			traits = { HOG_backstabber_backroom }
+			cost = 50
+			ai_will_do = { factor = 1.000 }
+		}
+		
+		advisor = {
+			slot = foreign_minister
+			idea_token = BUL_Aleksandar_Tsankov2
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+					has_government = fascism
+				}
+			}
+			visible = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+					has_government = fascism
+				}
+			}
+			traits = { FM_ideological_crusader }
+			cost = 50
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	####################
+	# FOREIGN MINISTER #
+	####################
+	
+	BUL_Ivan_Popov = {  
+		name = BUL_Ivan_Popov
+		
+		portraits = {
+			army = { 
+				small = "GFX_idea_BUL_Ivan_Popov" 
+			}
+		}
+		
+		advisor = {
+			slot = foreign_minister
+			idea_token = BUL_Ivan_Popov
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			visible = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			traits = { FM_biased_intellectual }
+			cost = 50
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	BUL_Bogdan_Filov = {  
+		name = BUL_Bogdan_Filov
+		
+		portraits = {
+			army = { 
+				small = "GFX_idea_BUL_Bogdan_Filov" 
+			}
+		}
+		
+		advisor = {
+			slot = foreign_minister
+			idea_token = BUL_Bogdan_Filov
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+					has_government = fascism
+				}
+			}
+			visible = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+					has_government = fascism
+				}
+			}
+			traits = { FM_biased_intellectual }
+			cost = 50
+			ai_will_do = { factor = 1.000 }
+		}
+		
+		advisor = {
+			slot = armaments_minister
+			idea_token = BUL_Bogdan_Filov2
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+					has_government = fascism
+				}
+			}
+			visible = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+					has_government = fascism
+				}
+			}
+			traits = { AM_armaments_organizer }
+			cost = 50
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	BUL_Aleksandar_Nikolaev = {  
+		name = BUL_Aleksandar_Nikolaev
+		
+		portraits = {
+			army = { 
+				small = "GFX_idea_BUL_Aleksandar_Nikolaev" 
+			}
+		}
+		
+		advisor = {
+			slot = foreign_minister
+			idea_token = BUL_Aleksandar_Nikolaev
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			visible = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			traits = { FM_apologetic_clerk }
+			cost = 50
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	BUL_Dimitar_Shishmanov = {  
+		name = BUL_Dimitar_Shishmanov
+		
+		portraits = {
+			army = { 
+				small = "GFX_idea_BUL_Dimitar_Shishmanov" 
+			}
+		}
+		
+		advisor = {
+			slot = foreign_minister
+			idea_token = BUL_Dimitar_Shishmanov
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+					has_government = fascism
+				}
+			}
+			visible = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+					has_government = fascism
+				}
+			}
+			traits = { FM_cloak_n_dagger_schemer }
+			cost = 50
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	BUL_Parvan_Draganov = {  
+		name = BUL_Parvan_Draganov
+		
+		portraits = {
+			army = { 
+				small = "GFX_idea_BUL_Parvan_Draganov" 
+			}
+		}
+		
+		advisor = {
+			slot = foreign_minister
+			idea_token = BUL_Parvan_Draganov
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+					has_government = fascism
+				}
+			}
+			visible = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+					has_government = fascism
+				}
+			}
+			traits = { FM_general_staffer }
+			cost = 50
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	BUL_Atanas_Burov = {  
+		name = BUL_Atanas_Burov
+		
+		portraits = {
+			army = { 
+				small = "GFX_idea_BUL_Atanas_Burov" 
+			}
+		}
+		
+		advisor = {
+			slot = foreign_minister
+			idea_token = BUL_Atanas_Burov
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			visible = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			traits = { FM_great_compromiser }
+			cost = 50
+			ai_will_do = { factor = 1.000 }
+		}
+		
+		advisor = {
+			slot = minister_of_industry
+			idea_token = BUL_Atanas_Burov2
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			visible = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			traits = { MOI_captain_of_industry }
+			cost = 50
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	BUL_Georgi_Brasov = {  
+		name = BUL_Georgi_Brasov
+		
+		portraits = {
+			army = { 
+				small = "GFX_idea_BUL_Georgi_Brasov" 
+			}
+		}
+		
+		advisor = {
+			slot = foreign_minister
+			idea_token = BUL_Georgi_Brasov
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			visible = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			traits = { FM_smooth_talking_charmer }
+			cost = 50
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	BUL_Sava_Kirov = {  
+		name = BUL_Sava_Kirov
+		
+		portraits = {
+			army = { 
+				small = "GFX_idea_BUL_Sava_Kirov" 
+			}
+		}
+		
+		advisor = {
+			slot = foreign_minister
+			idea_token = BUL_Sava_Kirov
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			visible = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			traits = { FM_iron_fisted_brute }
+			cost = 50
+			ai_will_do = { factor = 1.000 }
+		}
+		
+		advisor = {
+			slot = minister_of_industry
+			idea_token = BUL_Sava_Kirov2
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			visible = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			traits = { MOI_laissez_faire_capitalist }
+			cost = 50
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	BUL_Dimitar_Peshev = {  
+		name = BUL_Dimitar_Peshev
+		
+		portraits = {
+			army = { 
+				small = "GFX_idea_BUL_Dimitar_Peshev" 
+			}
+		}
+		
+		advisor = {
+			slot = foreign_minister
+			idea_token = BUL_Dimitar_Peshev
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			visible = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			traits = { FM_compassionate_gentleman }
+			cost = 50
+			ai_will_do = { factor = 1.000 }
+		}
+		
+		advisor = {
+			slot = minister_of_security
+			idea_token = BUL_Dimitar_Peshev2
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			visible = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			traits = { MOS_compassionate_gentleman }
+			cost = 50
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	BUL_Simeon_Radev = {  
+		name = BUL_Simeon_Radev
+		
+		portraits = {
+			army = { 
+				small = "GFX_idea_BUL_Simeon_Radev" 
+			}
+		}
+		
+		advisor = {
+			slot = foreign_minister
+			idea_token = BUL_Simeon_Radev
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+					has_government = fascism
+				}
+			}
+			visible = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+					has_government = fascism
+				}
+			}
+			traits = { FM_great_compromiser }
+			cost = 50
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	BUL_Georgi_Kyoseivanov = {  
+		name = BUL_Georgi_Kyoseivanov
+		
+		portraits = {
+			army = { 
+				small = "GFX_idea_BUL_Georgi_Kyoseivanov" 
+			}
+		}
+		
+		advisor = {
+			slot = foreign_minister
+			idea_token = BUL_Georgi_Kyoseivanov
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+					has_government = fascism
+				}
+			}
+			visible = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+					has_government = fascism
+				}
+			}
+			traits = { FM_general_staffer }
+			cost = 50
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	BUL_Velizar_Velchkov = {  
+		name = BUL_Velizar_Velchkov
+		
+		portraits = {
+			army = { 
+				small = "GFX_idea_BUL_Velizar_Velchkov" 
+			}
+		}
+		
+		advisor = {
+			slot = foreign_minister
+			idea_token = BUL_Velizar_Velchkov
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = communist
+				}
+			}
+			visible = {
+				OR = {
+					has_government = communist
+				}
+			}
+			traits = { FM_ideological_crusader }
+			cost = 50
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	BUL_Georgi_Kulishev = {  
+		name = BUL_Georgi_Kulishev
+		
+		portraits = {
+			army = { 
+				small = "GFX_idea_BUL_Georgi_Kulishev" 
+			}
+		}
+		
+		advisor = {
+			slot = foreign_minister
+			idea_token = BUL_Georgi_Kulishev
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = communist
+				}
+			}
+			visible = {
+				OR = {
+					has_government = communist
+				}
+			}
+			traits = { FM_iron_fisted_brute }
+			cost = 50
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	BUL_Mincho_Neychev = {  
+		name = BUL_Mincho_Neychev
+		
+		portraits = {
+			army = { 
+				small = "GFX_idea_BUL_Mincho_Neychev" 
+			}
+		}
+		
+		advisor = {
+			slot = foreign_minister
+			idea_token = BUL_Mincho_Neychev
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = communist
+				}
+			}
+			visible = {
+				OR = {
+					has_government = communist
+				}
+			}
+			traits = { FM_smooth_talking_charmer }
+			cost = 50
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	BUL_Vasil_Kolarov = {  
+		name = BUL_Vasil_Kolarov
+		
+		portraits = {
+			army = { 
+				small = "GFX_idea_BUL_Vasil_Kolarov" 
+			}
+		}
+		
+		advisor = {
+			slot = foreign_minister
+			idea_token = BUL_Vasil_Kolarov
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = communist
+				}
+			}
+			visible = {
+				OR = {
+					has_government = communist
+				}
+			}
+			traits = { FM_apologetic_clerk }
+			cost = 50
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	BUL_Dimitar_Ganev = {  
+		name = BUL_Dimitar_Ganev
+		
+		portraits = {
+			army = { 
+				small = "GFX_idea_BUL_Dimitar_Ganev" 
+			}
+		}
+		
+		advisor = {
+			slot = foreign_minister
+			idea_token = BUL_Dimitar_Ganev
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = communist
+				}
+			}
+			visible = {
+				OR = {
+					has_government = communist
+				}
+			}
+			traits = { FM_great_compromiser }
+			cost = 50
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	BUL_Nikola_Momchilov = {  
+		name = BUL_Nikola_Momchilov
+		
+		portraits = {
+			army = { 
+				small = "GFX_idea_BUL_Nikola_Momchilov" 
+			}
+		}
+		
+		advisor = {
+			slot = foreign_minister
+			idea_token = BUL_Nikola_Momchilov
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = neutrality
+				}
+			}
+			visible = {
+				OR = {
+					has_government = neutrality
+				}
+			}
+			traits = { FM_gentleman_pacifist }
+			cost = 50
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	######################
+	# ARMAMENTS MINISTER #
+	######################
+	
+	BUL_Dimitar_Savov = {  
+		name = BUL_Dimitar_Savov
+		
+		portraits = {
+			army = { 
+				small = "GFX_idea_BUL_Dimitar_Savov" 
+			}
+		}
+		
+		advisor = {
+			slot = armaments_minister
+			idea_token = BUL_Dimitar_Savov
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			visible = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			traits = { AM_tank_proponent }
+			cost = 50
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	BUL_Dobri_Bozhilov = {  
+		name = BUL_Dobri_Bozhilov
+		
+		portraits = {
+			army = { 
+				small = "GFX_idea_BUL_Dobri_Bozhilov" 
+			}
+		}
+		
+		advisor = {
+			slot = armaments_minister
+			idea_token = BUL_Dobri_Bozhilov
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			visible = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			traits = { AM_infantry_proponent }
+			cost = 50
+			ai_will_do = { factor = 1.000 }
+		}
+		
+		advisor = {
+			slot = minister_of_industry
+			idea_token = BUL_Dobri_Bozhilov2
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			visible = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			traits = { MOI_expert_banker }
+			cost = 50
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	BUL_Georgi_Sapov = {  
+		name = BUL_Georgi_Sapov
+		
+		portraits = {
+			army = { 
+				small = "GFX_idea_BUL_Georgi_Sapov" 
+			}
+		}
+		
+		advisor = {
+			slot = armaments_minister
+			idea_token = BUL_Georgi_Sapov
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			visible = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			traits = { MOI_corrupt_kleptocrat }
+			cost = 50
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	BUL_Asen_Kesarovski = {  
+		name = BUL_Asen_Kesarovski
+		
+		portraits = {
+			army = { 
+				small = "GFX_idea_BUL_Asen_Kesarovski" 
+			}
+		}
+		
+		advisor = {
+			slot = armaments_minister
+			idea_token = BUL_Asen_Kesarovski
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
+			visible = {
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
+			traits = { AM_military_entrenpreneur }
+			cost = 50
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	BUL_Todor_Pavlov = {  
+		name = BUL_Todor_Pavlov
+		
+		portraits = {
+			army = { 
+				small = "GFX_idea_BUL_Todor_Pavlov" 
+			}
+		}
+		
+		advisor = {
+			slot = armaments_minister
+			idea_token = BUL_Todor_Pavlov
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = communism
+				}
+			}
+			visible = {
+				OR = {
+					has_government = communism
+				}
+			}
+			traits = { AM_infantry_proponent }
+			cost = 50
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	BUL_Tobri_Terpeshev = {  
+		name = BUL_Tobri_Terpeshev
+		
+		portraits = {
+			army = { 
+				small = "GFX_idea_BUL_Tobri_Terpeshev" 
+			}
+		}
+		
+		advisor = {
+			slot = armaments_minister
+			idea_token = BUL_Tobri_Terpeshev
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = communism
+				}
+			}
+			visible = {
+				OR = {
+					has_government = communism
+				}
+			}
+			traits = { AM_tank_proponent }
+			cost = 50
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	BUL_Dimo_Kazasov = {  
+		name = BUL_Dimo_Kazasov
+		
+		portraits = {
+			army = { 
+				small = "GFX_idea_BUL_Dimo_Kazasov" 
+			}
+		}
+		
+		advisor = {
+			slot = armaments_minister
+			idea_token = BUL_Dimo_Kazasov
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = communism
+				}
+			}
+			visible = {
+				OR = {
+					has_government = communism
+				}
+			}
+			traits = { AM_industrial_chemist }
+			cost = 50
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	########################
+	# MINISTER OF SECURITY #
+	########################
+	
+	BUL_Aleksandar_Stanishev = {  
+		name = BUL_Aleksandar_Stanishev
+		
+		portraits = {
+			army = { 
+				small = "GFX_idea_BUL_Aleksandar_Stanishev" 
+			}
+		}
+		
+		advisor = {
+			slot = minister_of_security
+			idea_token = BUL_Aleksandar_Stanishev
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = neutrality
+				}
+			}
+			visible = {
+				OR = {
+					has_government = neutrality
+				}
+			}
+			traits = { MOS_prince_of_terror }
+			cost = 50
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	BUL_Nikolay_Nikolaev = {  
+		name = BUL_Nikolay_Nikolaev
+		
+		portraits = {
+			army = { 
+				small = "GFX_idea_BUL_Nikolay_Nikolaev" 
+			}
+		}
+		
+		advisor = {
+			slot = minister_of_security
+			idea_token = BUL_Nikolay_Nikolaev
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			visible = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			traits = { MOI_crime_fighter }
+			cost = 50
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	BUL_Nikola_Nedev = {  
+		name = BUL_Nikola_Nedev
+		
+		portraits = {
+			army = { 
+				small = "GFX_idea_BUL_Nikola_Nedev" 
+			}
+		}
+		
+		advisor = {
+			slot = minister_of_security
+			idea_token = BUL_Nikola_Nedev
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			visible = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			traits = { MOS_silent_lawyer }
+			cost = 50
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	BUL_Docho_Hristov = {  
+		name = BUL_Docho_Hristov
+		
+		portraits = {
+			army = { 
+				small = "GFX_idea_BUL_Docho_Hristov" 
+			}
+		}
+		
+		advisor = {
+			slot = minister_of_security
+			idea_token = BUL_Docho_Hristov
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			visible = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			traits = { MOI_corrupt_kleptocrat }
+			cost = 50
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	BUL_Petar_Gabrovski = {  
+		name = BUL_Petar_Gabrovski
+		
+		portraits = {
+			army = { 
+				small = "GFX_idea_BUL_Petar_Gabrovski" 
+			}
+		}
+		
+		advisor = {
+			slot = minister_of_security
+			idea_token = BUL_Petar_Gabrovski
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
+			visible = {
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
+			traits = { MOI_backstabber }
+			cost = 50
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	BUL_Vergil_Dimov = {  
+		name = BUL_Vergil_Dimov
+		
+		portraits = {
+			army = { 
+				small = "GFX_idea_BUL_Vergil_Dimov" 
+			}
+		}
+		
+		advisor = {
+			slot = minister_of_security
+			idea_token = BUL_Vergil_Dimov
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			visible = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			traits = { MOS_man_of_the_people }
+			cost = 50
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	BUL_Petar_Midilev = {  
+		name = BUL_Petar_Midilev
+		
+		portraits = {
+			army = { 
+				small = "GFX_idea_BUL_Petar_Midilev" 
+			}
+		}
+		
+		advisor = {
+			slot = minister_of_security
+			idea_token = BUL_Petar_Midilev
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			visible = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			traits = { MOS_silent_lawyer }
+			cost = 50
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	BUL_Rashko_Atanasov = {  
+		name = BUL_Rashko_Atanasov
+		
+		portraits = {
+			army = { 
+				small = "GFX_idea_BUL_Rashko_Atanasov" 
+			}
+		}
+		
+		advisor = {
+			slot = minister_of_security
+			idea_token = BUL_Rashko_Atanasov
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			visible = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			traits = { MOS_prince_of_terror }
+			cost = 50
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	BUL_Kiril_Gunev = {  
+		name = BUL_Kiril_Gunev
+		
+		portraits = {
+			army = { 
+				small = "GFX_idea_BUL_Kiril_Gunev" 
+			}
+		}
+		
+		advisor = {
+			slot = minister_of_security
+			idea_token = BUL_Kiril_Gunev
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			visible = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			traits = { MOS_naval_intelligence_specialist }
+			cost = 50
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	BUL_Kiril_Stanchev = {  
+		name = BUL_Kiril_Stanchev
+		
+		portraits = {
+			army = { 
+				small = "GFX_idea_BUL_Kiril_Stanchev" 
+			}
+		}
+		
+		advisor = {
+			slot = minister_of_security
+			idea_token = BUL_Kiril_Gunev
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
+			visible = {
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
+			traits = { MOS_dismal_enigma }
+			cost = 50
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	BUL_Ivan_Rogosarski = {  
+		name = BUL_Ivan_Rogosarski
+		
+		portraits = {
+			army = { 
+				small = "GFX_idea_BUL_Ivan_Rogosarski" 
+			}
+		}
+		
+		advisor = {
+			slot = minister_of_security
+			idea_token = BUL_Ivan_Rogosarski
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
+			visible = {
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
+			traits = { MOS_logistics_specialist }
+			cost = 50
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	BUL_Anton_Yugov = {  
+		name = BUL_Anton_Yugov
+		
+		portraits = {
+			army = { 
+				small = "GFX_idea_BUL_Anton_Yugov" 
+			}
+		}
+		
+		advisor = {
+			slot = minister_of_security
+			idea_token = BUL_Anton_Yugov
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = communism
+				}
+			}
+			visible = {
+				OR = {
+					has_government = communism
+				}
+			}
+			traits = { MOS_prince_of_terror }
+			cost = 50
+			ai_will_do = { factor = 1.000 }
+		}
+		
+		advisor = {
+			slot = minister_of_industry
+			idea_token = BUL_Anton_Yugov2
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = communism
+				}
+			}
+			visible = {
+				OR = {
+					has_government = communism
+				}
+			}
+			traits = { MOI_keynesian_economy_proponent }
+			cost = 50
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	BUL_Georgi_Tsankov = {  
+		name = BUL_Georgi_Tsankov
+		
+		portraits = {
+			army = { 
+				small = "GFX_idea_BUL_Georgi_Tsankov" 
+			}
+		}
+		
+		advisor = {
+			slot = minister_of_security
+			idea_token = BUL_Georgi_Tsankov
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = communism
+				}
+			}
+			visible = {
+				OR = {
+					has_government = communism
+				}
+			}
+			traits = { MOS_chief_of_state_police }
+			cost = 50
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	BUL_Panko_Vrashnarrov = {  
+		name = BUL_Panko_Vrashnarrov
+		
+		portraits = {
+			army = { 
+				small = "GFX_idea_BUL_Panko_Vrashnarrov" 
+			}
+		}
+		
+		advisor = {
+			slot = minister_of_security
+			idea_token = BUL_Panko_Vrashnarrov
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = communism
+				}
+			}
+			visible = {
+				OR = {
+					has_government = communism
+				}
+			}
+			traits = { MOS_political_specialist }
+			cost = 50
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	BUL_Sava_Ganovski = {  
+		name = BUL_Sava_Ganovski
+		
+		portraits = {
+			army = { 
+				small = "GFX_idea_BUL_Sava_Ganovski" 
+			}
+		}
+		
+		advisor = {
+			slot = minister_of_security
+			idea_token = BUL_Sava_Ganovski
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = communism
+				}
+			}
+			visible = {
+				OR = {
+					has_government = communism
+				}
+			}
+			traits = { MOS_silent_lawyer }
+			cost = 50
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	
+	########################
+	# MINISTER OF INDUSTRY #
+	########################
+	
+	BUL_Krum_Kolev = {  
+		name = BUL_Krum_Kolev
+		
+		portraits = {
+			army = { 
+				small = "GFX_idea_BUL_Krum_Kolev" 
+			}
+		}
+		
+		advisor = {
+			slot = minister_of_industry
+			idea_token = BUL_Krum_Kolev
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			visible = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			traits = { MOI_efficient_sociopath }
+			cost = 50
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	BUL_Stanko_Nikoladorov = {  
+		name = BUL_Stanko_Nikoladorov
+		
+		portraits = {
+			army = { 
+				small = "GFX_idea_BUL_Stanko_Nikoladorov" 
+			}
+		}
+		
+		advisor = {
+			slot = minister_of_industry
+			idea_token = BUL_Stanko_Nikoladorov
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			visible = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			traits = { MOI_corrupt_kleptocrat }
+			cost = 50
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	BUL_Aleksandar_Georginov = {  
+		name = BUL_Aleksandar_Georginov
+		
+		portraits = {
+			army = { 
+				small = "GFX_idea_BUL_Aleksandar_Georginov" 
+			}
+		}
+		
+		advisor = {
+			slot = minister_of_industry
+			idea_token = BUL_Aleksandar_Georginov
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			visible = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			traits = { MOI_resource_industrialist }
+			cost = 50
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	BUL_Stefan_Stefanov = {  
+		name = BUL_Stefan_Stefanov
+		
+		portraits = {
+			army = { 
+				small = "GFX_idea_BUL_Stefan_Stefanov" 
+			}
+		}
+		
+		advisor = {
+			slot = minister_of_industry
+			idea_token = BUL_Stefan_Stefanov
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+					has_government = fascism
+				}
+			}
+			visible = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+					has_government = fascism
+				}
+			}
+			traits = { MOI_planned_economy_proponent }
+			cost = 50
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	BUL_Mikhail_Kalenderov = {  
+		name = BUL_Mikhail_Kalenderov
+		
+		portraits = {
+			army = { 
+				small = "GFX_idea_BUL_Mikhail_Kalenderov" 
+			}
+		}
+		
+		advisor = {
+			slot = minister_of_industry
+			idea_token = BUL_Mikhail_Kalenderov
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+					has_government = fascism
+				}
+			}
+			visible = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+					has_government = fascism
+				}
+			}
+			traits = { MOI_war_industrialist }
+			cost = 50
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+
+	BUL_Marko_Ryaskov = {  
+		name = BUL_Marko_Ryaskov
+		
+		portraits = {
+			army = { 
+				small = "GFX_idea_BUL_Marko_Ryaskov" 
+			}
+		}
+		
+		advisor = {
+			slot = minister_of_industry
+			idea_token = BUL_Marko_Ryaskov
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			visible = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			traits = { MOI_organizer_of_industry }
+			cost = 50
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	BUL_Stoycho_Moshanov = {  
+		name = BUL_Stoycho_Moshanov
+		
+		portraits = {
+			army = { 
+				small = "GFX_idea_BUL_Stoycho_Moshanov" 
+			}
+		}
+		
+		advisor = {
+			slot = minister_of_industry
+			idea_token = BUL_Stoycho_Moshanov
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			visible = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			traits = { MOI_balanced_budget_proponent }
+			cost = 50
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	BUL_Traicho_Kostov = {  
+		name = BUL_Traicho_Kostov
+		
+		portraits = {
+			army = { 
+				small = "GFX_idea_BUL_Traicho_Kostov" 
+			}
+		}
+		
+		advisor = {
+			slot = minister_of_industry
+			idea_token = BUL_Traicho_Kostov
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = communism
+				}
+			}
+			visible = {
+				OR = {
+					has_government = communism
+				}
+			}
+			traits = { MOI_planned_economy_proponent }
+			cost = 50
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	BUL_Chavdar_Kyuranov = {  
+		name = BUL_Chavdar_Kyuranov
+		
+		portraits = {
+			army = { 
+				small = "GFX_idea_BUL_Chavdar_Kyuranov" 
+			}
+		}
+		
+		advisor = {
+			slot = minister_of_industry
+			idea_token = BUL_Chavdar_Kyuranov
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = communism
+				}
+			}
+			visible = {
+				OR = {
+					has_government = communism
+				}
+			}
+			traits = { MOI_planned_economy_proponent }
+			cost = 50
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	BUL_Kiril_Petkov = {  
+		name = BUL_Kiril_Petkov
+		
+		portraits = {
+			army = { 
+				small = "GFX_idea_BUL_Kiril_Petkov" 
+			}
+		}
+		
+		advisor = {
+			slot = minister_of_industry
+			idea_token = BUL_Kiril_Petkov
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = communism
+				}
+			}
+			visible = {
+				OR = {
+					has_government = communism
+				}
+			}
+			traits = { MOI_resource_industrialist }
+			cost = 50
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	BUL_Hristo_Statev = {  
+		name = BUL_Hristo_Statev
+		
+		portraits = {
+			army = { 
+				small = "GFX_idea_BUL_Hristo_Statev" 
+			}
+		}
+		
+		advisor = {
+			slot = minister_of_industry
+			idea_token = BUL_Hristo_Statev
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = fascism
+				}
+			}
+			visible = {
+				OR = {
+					has_government = fascism
+				}
+			}
+			traits = { MOI_war_industrialist }
+			cost = 50
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	#######################
+	# MINISTER OF CULTURE #
+	#######################
+	
+	BUL_Teodor_Trayanov = {  
+		name = BUL_Teodor_Trayanov
+		
+		portraits = {
+			army = { 
+				small = "GFX_idea_BUL_Teodor_Trayanov" 
+			}
+		}
+		
+		advisor = {
+			slot = minister_of_culture
+			idea_token = BUL_Teodor_Trayanov
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = fascism
+					has_government = neutrality
+				}
+			}
+			visible = {
+				OR = {
+					has_government = fascism
+					has_government = neutrality
+				}
+			}
+			traits = { MOC_political_columnist }
+			cost = 50
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	BUL_Georgi_Kulishev = {  
+		name = BUL_Georgi_Kulishev
+		
+		portraits = {
+			army = { 
+				small = "GFX_idea_BUL_Georgi_Kulishev" 
+			}
+		}
+		
+		advisor = {
+			slot = minister_of_culture
+			idea_token = BUL_Georgi_Kulishev
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = communism
+				}
+			}
+			visible = {
+				OR = {
+					has_government = communism
+				}
+			}
+			traits = { MOC_press_propagandist }
+			cost = 50
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	BUL_Luben_Dimchev = {  
+		name = BUL_Luben_Dimchev
+		
+		portraits = {
+			army = { 
+				small = "GFX_idea_BUL_Luben_Dimchev" 
+			}
+		}
+		
+		advisor = {
+			slot = minister_of_culture
+			idea_token = BUL_Luben_Dimchev
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = communism
+				}
+			}
+			visible = {
+				OR = {
+					has_government = communism
+				}
+			}
+			traits = { MOC_political_commissar }
+			cost = 50
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	BUL_Valko_Chervenkov = {  
+		name = BUL_Valko_Chervenkov
+		
+		portraits = {
+			army = { 
+				small = "GFX_idea_BUL_Valko_Chervenkov" 
+			}
+		}
+		
+		advisor = {
+			slot = minister_of_culture
+			idea_token = BUL_Valko_Chervenkov
+			allowed = { original_tag = BUL }
+			available = {
+				OR = {
+					has_government = communism
+				}
+			}
+			visible = {
+				OR = {
+					has_government = communism
+				}
+			}
+			traits = { MOC_talented_censorer }
+			cost = 50
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	#############
+	# THEORISTS #
+	#############
+	
+	BUL_Asen_Zlatarov = {  
+		name = BUL_Asen_Zlatarov
+		
+		portraits = {
+			army = { 
+				small = "GFX_idea_BUL_Asen_Zlatarov" 
+			}
+		}
+		
+		advisor = {
+			slot = theorist
+			idea_token = BUL_Asen_Zlatarov
+			allowed = { original_tag = BUL }
+			traits = { THEO_chemical_physicist }
+			cost = 50
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	BUL_Georgi_Nadjakov = {  
+		name = BUL_Georgi_Nadjakov
+		
+		portraits = {
+			army = { 
+				small = "GFX_idea_BUL_Georgi_Nadjakov" 
+			}
+		}
+		
+		advisor = {
+			slot = theorist
+			idea_token = BUL_Georgi_Nadjakov
+			allowed = { original_tag = BUL }
+			traits = { THEO_theoretical_scientist }
+			cost = 50
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	BUL_Todor_Pavlov = {  
+		name = BUL_Todor_Pavlov
+		
+		portraits = {
+			army = { 
+				small = "GFX_idea_BUL_Todor_Pavlov" 
+			}
+		}
+		
+		advisor = {
+			slot = theorist
+			idea_token = BUL_Todor_Pavlov
+			allowed = { original_tag = BUL }
+			traits = { THEO_political_philosopher }
+			cost = 50
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+}
+

@@ -1,0 +1,64 @@
+state={
+	id=146
+	name="STATE_146"
+
+	state_category = town
+
+	history={
+		owner = FIN
+		add_core_of = FIN
+		add_core_of = KAR
+		buildings = {
+			infrastructure = 3 #was: 5
+			industrial_complex = 2
+
+			#Mannerheim Line
+			9100 = {
+				bunker = 2
+			}
+			9105 = {
+				bunker = 2
+			}
+			9206 = {
+				coastal_bunker = 1
+			}
+		}
+		victory_points = {
+			9206 3 
+		}
+		1941.1.1 = {
+			owner = SOV
+			controller = SOV
+		}
+		1942.1.1 = {
+			owner = FIN
+			controller = FIN
+		}
+		1944.1.1 = {
+			owner = FIN
+			controller = FIN
+			SOV = {
+				set_province_controller = 9150
+				set_province_controller = 9100
+				set_province_controller = 3060
+				set_province_controller = 9206
+			}
+			buildings = {
+				anti_air_building = 4
+				6052 = { bunker = 2 }
+				3133 = { bunker = 1 }
+				9206 = { bunker = 2 }
+				11162 = { bunker = 1 }
+			}
+		}
+
+	}
+
+	provinces={
+		2332 3050 3060 3133 3187 6052 6150 6153 9100 9105 9150 9176 9206 11046 11156 11162 
+	}
+	manpower=418635
+	buildings_max_level_factor=1.000
+
+	local_supplies=0.0 
+}

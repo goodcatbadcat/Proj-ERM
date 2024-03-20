@@ -1,0 +1,266 @@
+spriteTypes = {
+
+	#########################
+	### GENERIC COMPANIES ###
+	#########################
+	
+	spriteType = {
+		name = "GFX_idea_generic_tank_manufacturer_1"
+		texturefile = "gfx/interface/ideas/Companies/Generic/idea_generic_tank_manufacturer_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_tank_manufacturer_2"
+		texturefile = "gfx/interface/ideas/Companies/Generic/idea_generic_tank_manufacturer_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_tank_manufacturer_3"
+		texturefile = "gfx/interface/ideas/Companies/Generic/idea_generic_tank_manufacturer_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_motorized_equipment_manufacturer_1"
+		texturefile = "gfx/interface/ideas/Companies/Generic/idea_generic_motorized_equipment_manufacturer_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_motorized_equipment_manufacturer_2"
+		texturefile = "gfx/interface/ideas/Companies/Generic/idea_generic_motorized_equipment_manufacturer_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_motorized_equipment_manufacturer_3"
+		texturefile = "gfx/interface/ideas/Companies/Generic/idea_generic_motorized_equipment_manufacturer_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_air_manufacturer_1"
+		texturefile = "gfx/interface/ideas/Companies/Generic/idea_generic_air_manufacturer_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_air_manufacturer_2"
+		texturefile = "gfx/interface/ideas/Companies/Generic/idea_generic_air_manufacturer_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_air_manufacturer_3"
+		texturefile = "gfx/interface/ideas/Companies/Generic/idea_generic_air_manufacturer_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_infantry_equipment_manufacturer_1"
+		texturefile = "gfx/interface/ideas/Companies/Generic/idea_generic_infantry_equipment_manufacturer_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_infantry_equipment_manufacturer_2"
+		texturefile = "gfx/interface/ideas/Companies/Generic/idea_generic_infantry_equipment_manufacturer_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_infantry_equipment_manufacturer_3"
+		texturefile = "gfx/interface/ideas/Companies/Generic/idea_generic_infantry_equipment_manufacturer_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_artillery_manufacturer_1"
+		texturefile = "gfx/interface/ideas/Companies/Generic/idea_generic_artillery_manufacturer_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_artillery_manufacturer_2"
+		texturefile = "gfx/interface/ideas/Companies/Generic/idea_generic_artillery_manufacturer_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_artillery_manufacturer_3"
+		texturefile = "gfx/interface/ideas/Companies/Generic/idea_generic_artillery_manufacturer_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_industrial_concern_1"
+		texturefile = "gfx/interface/ideas/Companies/Generic/idea_generic_industrial_concern_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_industrial_concern_2"
+		texturefile = "gfx/interface/ideas/Companies/Generic/idea_generic_industrial_concern_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_industrial_concern_3"
+		texturefile = "gfx/interface/ideas/Companies/Generic/idea_generic_industrial_concern_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_refining_concern_1"
+		texturefile = "gfx/interface/ideas/Companies/Generic/idea_generic_refining_concern_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_electronics_concern_1"
+		texturefile = "gfx/interface/ideas/Companies/Generic/idea_generic_electronics_concern_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_electronics_concern_2"
+		texturefile = "gfx/interface/ideas/Companies/Generic/idea_generic_electronics_concern_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_electronics_concern_3"
+		texturefile = "gfx/interface/ideas/Companies/Generic/idea_generic_electronics_concern_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_naval_manufacturer_1"
+		texturefile = "gfx/interface/ideas/Companies/Generic/idea_generic_naval_manufacturer_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_naval_manufacturer_2"
+		texturefile = "gfx/interface/ideas/Companies/Generic/idea_generic_naval_manufacturer_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_naval_manufacturer_3"
+		texturefile = "gfx/interface/ideas/Companies/Generic/idea_generic_naval_manufacturer_3.dds"
+	}
+
+	#########################
+	### CONSCRIPTION LAWS ###
+	#########################
+
+	spriteType = {
+		name = "GFX_idea_disarmed_nation"
+		texturefile = "gfx/interface/ideas/Laws&Gov/Conscription/idea_disarmed_nation.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_volunteer_only"
+		texturefile = "gfx/interface/ideas/Laws&Gov/Conscription/idea_volunteer_only.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_limited_conscription"
+		texturefile = "gfx/interface/ideas/Laws&Gov/Conscription/idea_limited_conscription.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_extensive_conscription"
+		texturefile = "gfx/interface/ideas/Laws&Gov/Conscription/idea_extensive_conscription.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_service_by_requirement"
+		texturefile = "gfx/interface/ideas/Laws&Gov/Conscription/idea_service_by_requirement.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_all_adults_serve"
+		texturefile = "gfx/interface/ideas/Laws&Gov/Conscription/idea_all_adults_serve.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_scraping_the_barrel"
+		texturefile = "gfx/interface/ideas/Laws&Gov/Conscription/idea_scraping_the_barrel.dds"
+	}
+
+	#####################
+	### TRAINING LAWS ###
+	#####################
+
+	spriteType = {
+		name = "GFX_idea_minimal_training"
+		texturefile = "gfx/interface/ideas/Laws&Gov/Training/idea_minimal_training.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_basic_training"
+		texturefile = "gfx/interface/ideas/Laws&Gov/Training/idea_basic_training.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_advanced_training"
+		texturefile = "gfx/interface/ideas/Laws&Gov/Training/idea_advanced_training.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_specialist_training"
+		texturefile = "gfx/interface/ideas/Laws&Gov/Training/idea_specialist_training.dds"
+	}
+
+	##################
+	### PRESS LAWS ###
+	##################
+
+	spriteType = {
+		name = "GFX_idea_free_press"
+		texturefile = "gfx/interface/ideas/Laws&Gov/Press/idea_free_press.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_censored_press"
+		texturefile = "gfx/interface/ideas/Laws&Gov/Press/idea_censored_press.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_state_press"
+		texturefile = "gfx/interface/ideas/Laws&Gov/Press/idea_state_press.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_propaganda_press"
+		texturefile = "gfx/interface/ideas/Laws&Gov/Press/idea_propaganda_press.dds"
+	}
+
+	######################
+	### EDUCATION LAWS ###
+	######################
+
+	spriteType = {
+		name = "GFX_idea_minimal_education_investment"
+		texturefile = "gfx/interface/ideas/Laws&Gov/Education/idea_minimal_education_investment.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_average_education_investment"
+		texturefile = "gfx/interface/ideas/Laws&Gov/Education/idea_average_education_investment.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_large_education_investment"
+		texturefile = "gfx/interface/ideas/Laws&Gov/Education/idea_large_education_investment.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_massive_education_investment"
+		texturefile = "gfx/interface/ideas/Laws&Gov/Education/idea_massive_education_investment.dds"
+	}
+
+	####################
+    # INDUSTRIAL IDEAS #
+    ####################
+
+    spriteType = {
+        name = "GFX_idea_agrarian_society"
+        texturefile = "gfx/interface/ideas/Laws&Gov/industry/agrarian_society.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_pre_industrial_society"
+        texturefile = "gfx/interface/ideas/Laws&Gov/industry/pre_industrial_society.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_early_industry"
+        texturefile = "gfx/interface/ideas/Laws&Gov/industry/early_industry.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_heavy_industry"
+        texturefile = "gfx/interface/ideas/Laws&Gov/industry/heavy_industry.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_basic_industry"
+        texturefile = "gfx/interface/ideas/Laws&Gov/industry/basic_industry.dds"
+    }
+
+
+	####################
+	### ECONOMY LAWS ###
+	####################
+
+	spriteType = {
+		name = "GFX_idea_undisturbed_isolation"
+		texturefile = "gfx/interface/ideas/Laws&Gov/Economy/idea_undisturbed_isolation.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_isolation"
+		texturefile = "gfx/interface/ideas/Laws&Gov/Economy/idea_isolation.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_civilian_economy"
+		texturefile = "gfx/interface/ideas/Laws&Gov/Economy/idea_civilian_economy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_low_economic_mobilisation"
+		texturefile = "gfx/interface/ideas/Laws&Gov/Economy/idea_low_economic_mobilisation.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_partial_economic_mobilisation"
+		texturefile = "gfx/interface/ideas/Laws&Gov/Economy/idea_partial_economic_mobilisation.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_war_economy"
+		texturefile = "gfx/interface/ideas/Laws&Gov/Economy/idea_war_economy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_tot_economic_mobilisation"
+		texturefile = "gfx/interface/ideas/Laws&Gov/Economy/idea_tot_economic_mobilisation.dds"
+	}
+}

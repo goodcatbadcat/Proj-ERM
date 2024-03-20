@@ -1,0 +1,112 @@
+﻿##################
+# Swedish Events #
+##################
+
+add_namespace = sweden
+
+## Introduction Event ##
+country_event = {
+	id = sweden.0
+	immediate = { log = "[GetDateText]: [Root.GetName]: event sweden.0 FROM = [From.GetName]" }
+	title = sweden.0.t
+	desc = sweden.0.d
+	picture = GFX_report_event_
+
+	is_triggered_only = yes
+
+	option = {
+		name = sweden.0.a
+	}
+}
+
+# SWE: GER lost control of baltic, cut ties?
+country_event = {
+	id = sweden.1
+	title = sweden.1.t
+	desc = sweden.1.d
+	picture = GFX_report_event_
+
+	fire_only_once = yes
+
+	trigger = {	
+		tag = SWE
+		NOT = {
+			GER = {
+				AND = {
+					OR = {
+						controls_state = 190
+						controls_state = 189
+						controls_state = 808
+						controls_state = 809
+						controls_state = 12
+						controls_state = 13
+						controls_state = 811
+						controls_state = 812
+						controls_state = 813
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = { days = 1 }
+	
+	# Keep trading
+	option = {
+		name = sweden.1.a
+		ai_chance = { factor = 50 }
+	}
+	
+	# Stop trading
+	option = {
+		name = sweden.1.b
+		ai_chance = { factor = 50 }
+		add_opinion_modifier = {
+			target = GER
+			modifier = embargo
+		}
+		hidden_effect = {
+			news_event = { id = world_news.14 }
+			GER = { country_event = { id = sweden.101 hours = 1 } } 
+		}
+	}
+}
+
+# GER: Reacts Sweden Cuts Ties!
+country_event = {
+	id = sweden.101
+	title = sweden.101.t
+	desc = sweden.101.d
+	picture = GFX_report_event_
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = { days = 1 }
+	
+	# Damn them!
+	option = {
+		name = sweden.101.a
+		ai_chance = { factor = 100 }
+		add_stability = -0.05
+		add_opinion_modifier = {
+			target = SWE
+			modifier = faction_traitor
+		}
+	}
+	
+	# Declare war!
+	option = {
+		name = sweden.101.b
+		ai_chance = { factor = 0 }
+		add_political_power = -25
+		add_war_support = -0.10
+		GER = {
+			declare_war_on = {
+				target = SWE
+				type = topple_government
+			}
+		}
+	}
+}

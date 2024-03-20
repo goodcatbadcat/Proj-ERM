@@ -1,0 +1,2531 @@
+######################
+# DIVISION TEMPALTES #
+######################
+
+
+######################
+# INFANTRY TEMPALTES #
+######################
+
+
+## Infantry Division ##
+division_template = {
+	name = "Infantry Division"  	
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+		artillery_brigade = { x = 4 y = 0 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 } 
+		recon = { x = 0 y = 1 }
+		engineer = { x = 0 y = 2 }
+		signal_company = { x = 0 y = 3 }
+		field_hospital = { x = 0 y = 4 }
+	}
+}
+
+## Mountain Division ##
+division_template = {
+	name = "Mountain Division"  	
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+		mountaineers = { x = 2 y = 0 }
+		mountaineers = { x = 2 y = 1 }
+		mountaineers = { x = 2 y = 2 }
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+		artillery_brigade = { x = 4 y = 0 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 } 
+		recon = { x = 0 y = 1 }
+		engineer = { x = 0 y = 2 }
+		signal_company = { x = 0 y = 3 }
+		field_hospital = { x = 0 y = 4 }
+	}
+}
+
+## Garrison Division ##
+division_template = {
+	name = "Garrison"
+	is_locked = yes
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		military_police = { x = 0 y = 0 }    
+	}
+}
+
+## Paratrooper Division ##
+division_template = { 						
+	name = "Airborne Division"				
+
+	regiments = {
+		paratrooper = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 1 }
+		paratrooper = { x = 0 y = 2 }
+		paratrooper = { x = 0 y = 3 }
+		paratrooper = { x = 1 y = 0 }
+		paratrooper = { x = 1 y = 1 }
+		paratrooper = { x = 1 y = 2 }
+		paratrooper = { x = 1 y = 3 }
+		paratrooper = { x = 2 y = 0 }
+		paratrooper = { x = 2 y = 1 }
+		paratrooper = { x = 2 y = 2 }
+		paratrooper = { x = 2 y = 3 }
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+		artillery_brigade = { x = 3 y = 2 }
+		anti_tank_brigade = { x = 4 y = 0 }
+		anti_air_brigade = { x = 4 y = 0 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 } 
+		anti_tank = { x = 0 y = 1 }
+		anti_air = { x = 0 y = 2 }
+		recon = { x = 0 y = 3 }
+		field_hospital = { x = 0 y = 4 }
+	}
+}
+
+## National Guard Division ## 
+division_template = {
+	name = "National Guard Division" 
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 } 
+		anti_tank = { x = 0 y = 1 }
+		recon = { x = 0 y = 2 }
+		engineer = { x = 0 y = 3 }
+		field_hospital = { x = 0 y = 4 }
+	}
+}
+
+## Marine Division ## 
+division_template = {
+	name = "Marine Division" 	
+
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 0 y = 2 }
+		marine = { x = 0 y = 3 }
+		marine = { x = 1 y = 0 }
+		marine = { x = 1 y = 1 }
+		marine = { x = 1 y = 2 }
+		marine = { x = 1 y = 3 }
+		marine = { x = 2 y = 0 }
+		marine = { x = 2 y = 1 }
+		marine = { x = 2 y = 2 }
+		marine = { x = 2 y = 3 }
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+		artillery_brigade = { x = 3 y = 2 }
+		light_armor = { x = 4 y = 0 }
+	}
+	support = {
+		recon = { x = 0 y = 0 } 
+		engineer = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+		field_hospital = { x = 0 y = 3 } 
+	}
+	priority = 2
+}
+
+######################
+# MOTORIZED VARIANTS # 
+######################
+
+## Motorized Division ##
+division_template = {
+	name = "Motorized Division"  	
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+		mot_artillery_brigade = { x = 3 y = 0 }
+		mot_artillery_brigade = { x = 3 y = 1 }
+		mot_artillery_brigade = { x = 4 y = 0 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 } 
+		recon = { x = 0 y = 1 }
+		engineer = { x = 0 y = 2 }
+		signal_company = { x = 0 y = 3 }
+		field_hospital = { x = 0 y = 4 }
+	}
+}
+
+## Mechanized Division ##
+division_template = {
+	name = "Mechanized Division" 	# Represents both frontline and reserve motorized divisions (excluding London Divs)
+
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+	  	mechanized = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 2 }
+		mechanized = { x = 0 y = 3 }
+		mechanized = { x = 1 y = 0 }
+	    mechanized = { x = 1 y = 1 }
+		mechanized = { x = 1 y = 2 }
+		mechanized = { x = 1 y = 3 }
+		mechanized = { x = 2 y = 0 }
+	    mechanized = { x = 2 y = 1 }
+		mechanized = { x = 2 y = 2 }
+		mechanized = { x = 2 y = 3 }
+		medium_armor = { x = 3 y = 0 }
+		mot_artillery_brigade = { x = 4 y = 0 }
+		mot_artillery_brigade = { x = 4 y = 1 }
+		mot_artillery_brigade = { x = 4 y = 2 }
+		
+	}
+	support = {
+	 	engineer = { x = 0 y = 0 } 
+		recon = { x = 0 y = 1 }
+		signal_company = { x = 0 y = 2 }
+		maintenance_company = { x = 0 y = 3 }
+		field_hospital = { x = 0 y = 4 }
+	}
+}
+
+#############################
+# ARMORED DIVISION VARIANTS #
+##############################
+
+division_template = {
+	name = "Armored Division" 				
+
+	regiments = {
+		medium_armor = { x = 0 y = 0 }		
+	   	medium_armor = { x = 0 y = 1 }
+		medium_armor = { x = 0 y = 2 }		
+		medium_armor = { x = 0 y = 3 }	
+		medium_armor = { x = 1 y = 0 }		
+	   	medium_armor = { x = 1 y = 1 }
+		medium_armor = { x = 1 y = 2 }	
+		medium_armor = { x = 1 y = 3 }	
+		mechanized = { x = 2 y = 0 }
+	    mechanized = { x = 2 y = 1 }
+		mechanized = { x = 2 y = 2 }
+		mot_artillery_brigade = { x = 2 y = 3 }
+		mechanized = { x = 3 y = 0 }
+	    mechanized = { x = 3 y = 1 }
+		mechanized = { x = 3 y = 2 }
+		mot_artillery_brigade = { x = 3 y = 3 }
+		mot_artillery_brigade = { x = 4 y = 0 }
+		mot_artillery_brigade = { x = 4 y = 1 }
+	}
+	support = {
+	 	artillery = { x = 0 y = 0 } 
+		field_hospital = { x = 0 y = 1 }
+		recon = { x = 0 y = 2 }
+		logistics_company = { x = 0 y = 3 }
+		maintenance_company = { x = 0 y = 4 }
+	}
+}
+
+###################
+# ORDER OF BATTLE #
+###################
+
+units = {
+
+	############
+	# NORMANDY #
+	############
+	
+	# Carentan #
+	division = {		
+		name = "1st Division 'Big Red One'"
+		location = 3579
+		division_template = "Mechanized Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "2nd Division 'Indianhead'"
+		location = 3579
+		division_template = "Mechanized Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "28th Division 'Keystone'"
+		location = 3579
+		division_template = "Motorized Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "2nd Armored Division 'Hell on Wheels'"
+		location = 3579
+		division_template = "Armored Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		force_equipment_variants = { medium_tank_equipment_2 = { owner = "USA" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "4th Division 'Ivy'"
+		location = 3579
+		division_template = "Mechanized Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "9th Division 'Old Reliables'"
+		location = 3579
+		division_template = "Mechanized Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "79th Division 'Cross of Lorraine'"
+		location = 3579
+		division_template = "Mechanized Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 1.0
+	}
+	
+	# Granville #
+	division = {			
+		name = "29th Division 'Blue and Gray'"
+		location = 9550
+		division_template = "Motorized Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "30th Division 'Old Hickory'"
+		location = 9550
+		division_template = "Motorized Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+	
+	# St. Lo #
+	division = {			
+		name = "101st Airborne Division 'Screaming Eagles'"
+		location = 539
+		division_template = "Airborne Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "82nd Airborne Division 'All American'"
+		location = 539
+		division_template = "Airborne Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "90th Division 'Tough Ombres'"
+		location = 539
+		division_template = "Mechanized Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 1.0
+	}
+	
+	##################
+	# UNITED KINGDOM #
+	##################
+	
+	division = {			
+		name = "3rd Armored Division 'Spearhead'"
+		location = 3369
+		division_template = "Armored Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		force_equipment_variants = { medium_tank_equipment_2 = { owner = "USA" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 1.0
+	}
+	#
+	division = {			
+		name = "4th Armored Division 'Name Enough'"
+		location = 11471
+		division_template = "Armored Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		force_equipment_variants = { medium_tank_equipment_2 = { owner = "USA" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "5th Armored Division 'Victory'"
+		location = 11471
+		division_template = "Armored Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		force_equipment_variants = { medium_tank_equipment_2 = { owner = "USA" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 1.0
+	}
+	#
+	division = {			
+		name = "35th Division 'Santa Fe'"
+		location = 540
+		division_template = "Mechanized Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 1.0
+	}
+	#
+	division = {			
+		name = "83rd Division 'Thunderbolts'"
+		location = 9458
+		division_template = "Motorized Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "7th Armored Division 'Lucky Seventh'"
+		location = 9458
+		division_template = "Armored Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		force_equipment_variants = { medium_tank_equipment_2 = { owner = "USA" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 1.0
+	}
+	#
+	division = {			
+		name = "6th Armored Division 'Super Sixth'"
+		location = 7239
+		division_template = "Armored Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		force_equipment_variants = { medium_tank_equipment_2 = { owner = "USA" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 1.0
+	}
+	#
+	division = {			
+		name = "80th Division 'Blue Ridge'"
+		location = 6384
+		division_template = "Motorized Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+	#
+	division = {			
+		name = "5th Division 'Red Devils'"
+		location = 3379
+		division_template = "Mechanized Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 1.0
+	}
+	#
+	division = {			
+		name = "8th Division 'Pathfinders'"
+		location = 385
+		division_template = "Mechanized Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 1.0
+	}
+	
+	################
+	# ITALY REGION #
+	################
+	
+	## Garrisons ##
+	division = {			
+		name = "Palermo Garrison"
+		location = 10074
+		division_template = "Garrison"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "Naples Garrison"
+		location = 819
+		division_template = "Garrison"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "Anzio Garrison"
+		location = 11846
+		division_template = "Garrison"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "Rome Garrison"
+		location = 9904
+		division_template = "Garrison"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "Cagliari Garrison"
+		location = 11773
+		division_template = "Garrison"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	## Normal ##
+	division = {			
+		name = "1st Armored Division 'Old Ironsides'"
+		location = 11751
+		division_template = "Armored Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		force_equipment_variants = { medium_tank_equipment_2 = { owner = "USA" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "3rd Division 'Rock of the Marne'"
+		location = 11751
+		division_template = "Mechanized Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 1.0
+	}
+	#
+	division = {			
+		name = "34th Division 'Red Bulls'"
+		location = 9904
+		division_template = "National Guard Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "88th Division 'Blue Devils'"
+		location = 9904
+		division_template = "Mechanized Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "91st Division 'Pine Tree'"
+		location = 9904
+		division_template = "Mechanized Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 1.0
+	}
+	#
+	division = {			
+		name = "36th Division 'Arrowhead'"
+		location = 9794
+		division_template = "Mechanized Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "45th Division 'Thunderbird'"
+		location = 9794
+		division_template = "Mechanized Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "85th Division 'Custer'"
+		location = 3878
+		division_template = "Motorized Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	
+	###################
+	# FRENCH GARRISON #
+	###################
+	
+	division = {			
+		name = "Corsica Garrison"
+		location = 3838
+		division_template = "Garrison"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	
+	#########################
+	# NORTH AFRICA GARRISON #
+	#########################
+	
+	division = {			
+		name = "Algiers Garrison"
+		location = 1145
+		division_template = "Garrison"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	#
+	division = {			
+		name = "Orleansville Garrison"
+		location = 4046
+		division_template = "Garrison"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	#
+	division = {			
+		name = "Tunis Garrison"
+		location = 11969
+		division_template = "Garrison"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	#
+	division = {			
+		name = "Oran Garrison"
+		location = 7132
+		division_template = "Garrison"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	#
+	division = {			
+		name = "Casablanca Garrison"
+		location = 7069
+		division_template = "Garrison"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	
+	##############
+	# USA REGION #
+	##############
+	
+	## Albama ## (Sweet home)
+	
+	division = {			
+		name = "66th Division 'Black Panther'"
+		location = 7480
+		division_template = "Motorized Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 1.0
+	}
+	
+	## Arkansas ## (No this isn't a socialist country it ain't OUR KANSAS, it's ARRRRR-CAN-SAW)
+	division = {			
+		name = "16th Armored Division 'Armadillo'"
+		location = 12489
+		division_template = "Armored Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		force_equipment_variants = { medium_tank_equipment_2 = { owner = "USA" } }
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+	
+	## Alaska ## (Brrrr cold)
+	
+	division = {			
+		name = "1st Alaskan National Guard Division"
+		location = 13091
+		division_template = "National Guard Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	
+	## California ## (Taxes way too high, screwed up state in general but good weather)
+	
+	division = {			
+		name = "13th Armored Division 'The Black Cats'"
+		location = 9713
+		division_template = "Armored Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		force_equipment_variants = { medium_tank_equipment_2 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "1st California National Guard Division"
+		location = 610
+		division_template = "National Guard Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "2nd California National Guard Division"
+		location = 9713
+		division_template = "National Guard Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "3rd California National Guard Division"
+		location = 9671
+		division_template = "National Guard Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "4th California National Guard Division"
+		location = 9814
+		division_template = "National Guard Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "5th California National Guard Division"
+		location = 1562
+		division_template = "National Guard Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "6th California National Guard Division"
+		location = 9671
+		division_template = "National Guard Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	
+	## Delaware ## 
+	division = {			
+		name = "1st Delaware National Guard Division"
+		location = 9786
+		division_template = "National Guard Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "2nd Delaware National Guard Division"
+		location = 9786
+		division_template = "National Guard Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	
+	## Florida ## (Cursed place DONT go here)
+	division = {			
+		name = "1st Florida National Guard Division"
+		location = 1843
+		division_template = "National Guard Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "2nd Florida National Guard Division"
+		location = 1572
+		division_template = "National Guard Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "3rd Florida National Guard Division"
+		location = 7388
+		division_template = "National Guard Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	
+	## Georgia ## (Sweet Georgia)
+	
+	division = {			
+		name = "71st Division 'Red Circle'"
+		location = 3878
+		division_template = "Motorized Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "1st Georgia National Guard Division"
+		location = 12384
+		division_template = "National Guard Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "2nd Georgia National Guard Division"
+		location = 11975
+		division_template = "National Guard Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "3rd Georgia National Guard Division"
+		location = 11975
+		division_template = "National Guard Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	
+	## Louisiana ## (My ex gf ran away to here lol)
+	
+	division = {			
+		name = "10th Mountain Division 'Mountaineer'"
+		location = 7522
+		division_template = "National Guard Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "1st Louisiana National Guard Division"
+		location = 7522
+		division_template = "National Guard Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "2nd Louisiana National Guard Division"
+		location = 4507
+		division_template = "National Guard Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "3rd Louisiana National Guard Division"
+		location = 7555
+		division_template = "National Guard Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	
+	## Mississippi ## (God I hope I spelled that right I always forget, seriously who uses that many double letters in one name???)
+	
+	division = {			
+		name = "63rd Division 'Blood and Fire'"
+		location = 4464
+		division_template = "Mechanized Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.35
+		start_equipment_factor = 1.0
+	}
+	
+	
+	## New England ## 
+	
+	division = {			
+		name = "1st New England National Guard Division"
+		location = 9832
+		division_template = "National Guard Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "20th Armored Division 'Liberators'"
+		location = 6732
+		division_template = "Armored Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		force_equipment_variants = { medium_tank_equipment_2 = { owner = "USA" } }
+		start_experience_factor = 0.35
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "2nd New England National Guard Division"
+		location = 6732
+		division_template = "National Guard Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "3rd New England National Guard Division"
+		location = 6732
+		division_template = "National Guard Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "4th New England National Guard Division"
+		location = 12459
+		division_template = "National Guard Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "2nd New England National Guard Division"
+		location = 3732
+		division_template = "National Guard Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "3rd New England National Guard Division"
+		location = 9847
+		division_template = "National Guard Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	
+	## New Jersey ##
+	
+	division = {			
+		name = "11th Armored Division 'Thunderbolt'"
+		location = 6882
+		division_template = "Armored Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		force_equipment_variants = { medium_tank_equipment_2 = { owner = "USA" } }
+		start_experience_factor = 0.35
+		start_equipment_factor = 1.0
+	}
+	
+	## New York ##
+	
+	division = {			
+		name = "69th Division 'Fighting 69th'"
+		location = 3878
+		division_template = "Motorized Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "94th Division 'Neuf Quatres'"
+		location = 3878
+		division_template = "Motorized Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.35
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "95th Division 'Victory'"
+		location = 3878
+		division_template = "Motorized Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.35
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "102nd Division 'Ozarks'"
+		location = 3878
+		division_template = "Motorized Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.35
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "99th Division 'Checkerboard'"
+		location = 3878
+		division_template = "Motorized Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.35
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "97th Division 'Trident'"
+		location = 3878
+		division_template = "Mechanized Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.35
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "26th Division 'Yankee'"
+		location = 3878
+		division_template = "Mechanized Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.35
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "44th National Guard Division"
+		location = 3878
+		division_template = "Mechanized Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.35
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "84th Division 'Rail Splitters'"
+		location = 3878
+		division_template = "Mechanized Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.35
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "8th Division 'Thundering Herd'"
+		location = 3878
+		division_template = "Armored Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		force_equipment_variants = { medium_tank_equipment_2 = { owner = "USA" } }
+		start_experience_factor = 0.35
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "9th Division 'Phantom'"
+		location = 3878
+		division_template = "Armored Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		force_equipment_variants = { medium_tank_equipment_2 = { owner = "USA" } }
+		start_experience_factor = 0.35
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "12th Armored Division 'Hellcats'"
+		location = 12489
+		division_template = "Armored Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		force_equipment_variants = { medium_tank_equipment_2 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "10th Armored Division 'Tiger'"
+		location = 3878
+		division_template = "Armored Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		force_equipment_variants = { medium_tank_equipment_2 = { owner = "USA" } }
+		start_experience_factor = 0.35
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "17th Airborne Division 'Golden Talons'"
+		location = 3878
+		division_template = "Airborne Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.35
+		start_equipment_factor = 1.0
+	}
+	
+	## North Carolina ##
+	
+	division = {			
+		name = "13th Airborne Division 'Golden Unicorns'"
+		location = 539
+		division_template = "Airborne Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.20
+		start_equipment_factor = 1.0
+	}
+	
+	## Oklahoma ## 
+	
+	division = {			
+		name = "42nd Division 'Rainbow'" # GAYYYYYYYYYYYYYYYYY 
+		location = 1806
+		division_template = "National Guard Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.35
+		start_equipment_factor = 1.0
+	}
+	
+	## Oregon ## (Where im from)
+	division = {			
+		name = "104th Division 'Timberwolf Division'"
+		location = 12489
+		division_template = "Motorized Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "70th Division 'Trailblazers'"
+		location = 3513
+		division_template = "Motorized Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "1st Oregon National Guard Division"
+		location = 3513
+		division_template = "National Guard Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "2nd Oregon National Guard Division"
+		location = 12211
+		division_template = "National Guard Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "3rd Oregon National Guard Division"
+		location = 11495
+		division_template = "National Guard Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	
+	## Pennsylvania ## (Named after a rich british bro)
+	division = {			
+		name = "65th Division 'Battle-Axe'"
+		location = 6845
+		division_template = "Mechanized Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "1st Pennsylvania National Guard Division"
+		location = 6845
+		division_template = "National Guard Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "2nd Pennsylvania National Guard Division"
+		location = 6845
+		division_template = "National Guard Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "3rd Pennsylvania National Guard Division"
+		location = 11800
+		division_template = "National Guard Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	
+	## South Carolina ## (South of North Carolina ##
+	
+	division = {			
+		name = "106th Division 'Golden Lion'"
+		location = 7527
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "103rd Division 'Cactus Division'"
+		location = 7202
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "1st South Carolina National Guard Division"
+		location = 7202
+		division_template = "National Guard Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "2nd South Carolina National Guard Division"
+		location = 7202
+		division_template = "National Guard Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "3rd South Carolina National Guard Division"
+		location = 7527
+		division_template = "National Guard Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	
+	## Tennessee ## (Hey girl are you from Tennessee because you're a...nah nah not gonna go there mate worst pick up line ever)
+	division = {			
+		name = "14th Armored Division 'Liberators'"
+		location = 12489
+		division_template = "Armored Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		force_equipment_variants = { medium_tank_equipment_2 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "78th Division 'Lightning'"
+		location = 12489
+		division_template = "Motorized Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "100th Division 'Sons of Bitches'"
+		location = 12489
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	
+	## Texas ## (Everything is bigger here)
+	
+	division = {			
+		name = "75th Division"
+		location = 3878
+		division_template = "Mechanized Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "1st Texas National Guard Division"
+		location = 10337
+		division_template = "National Guard Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "2nd Texas National Guard Division"
+		location = 10337
+		division_template = "National Guard Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "3rd Texas National Guard Division"
+		location = 6785
+		division_template = "National Guard Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "4th Texas National Guard Division"
+		location = 10740
+		division_template = "National Guard Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "2nd Texas National Guard Division"
+		location = 12782
+		division_template = "National Guard Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "3rd Texas National Guard Division"
+		location = 3960
+		division_template = "National Guard Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	
+	## Virginia ## 
+	
+	division = {			
+		name = "1st Virginia National Guard Division"
+		location = 788
+		division_template = "National Guard Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "2nd Virginia National Guard Division"
+		location = 788
+		division_template = "National Guard Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "3rd Virginia National Guard Division"
+		location = 10412
+		division_template = "National Guard Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	
+	## Washington ## (Where im from)
+	division = {			
+		name = "1st Washington National Guard Division"
+		location = 7315
+		division_template = "National Guard Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "2nd Washington National Guard Division"
+		location = 7315
+		division_template = "National Guard Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "3rd Washington National Guard Division"
+		location = 10242
+		division_template = "National Guard Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	
+	## Washington D.C. ##
+	
+	division = {			
+		name = "89th Division 'The Rolling W'"
+		location = 3957
+		division_template = "Motorized Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.35
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "92nd Division 'Buffalo Soldiers'"
+		location = 3957
+		division_template = "Motorized Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.35
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "87th Division 'Golden Acorns'"
+		location = 3957
+		division_template = "Motorized Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.35
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "97th Division 'Trident'"
+		location = 3957
+		division_template = "Mechanized Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.35
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "86th Division 'Blackhawk'"
+		location = 3957
+		division_template = "Mechanized Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.35
+		start_equipment_factor = 1.0
+	}
+	
+	## Wisconsin ##
+	
+	division = {			
+		name = "76th Division 'Onaway Division'"
+		location = 12357
+		division_template = "Motorized Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	
+	########################
+	# PUERTO RICO GARRISON #
+	########################
+	
+	division = {			
+		name = "Puerto Rico Garrison"
+		location = 1440
+		division_template = "Garrison"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	
+	#########################
+	# PANAMA CANAL GARRISON #
+	#########################
+	
+	division = {			
+		name = "1st Channel Force"
+		location = 7617
+		division_template = "Garrison"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "2nd Channel Force"
+		location = 7617
+		division_template = "Garrison"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "3rd Channel Force"
+		location = 7617
+		division_template = "Garrison"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	
+	###################
+	# PACIFIC THEATRE #
+	###################
+	
+	## Hawaii ##
+	
+	division = {			
+		name = "Honolulu Division"
+		location = 4180
+		division_template = "Garrison"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "7th Division 'Bayonet'"
+		location = 4180
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "38th Division 'Cyclone'"
+		location = 4180
+		division_template = "National Guard Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "48th Division 'Lucky Devils'"
+		location = 4180
+		division_template = "National Guard Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "81st Division 'Wildcat'"
+		location = 12021
+		division_template = "National Guard Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "96th Division 'Deadeye'"
+		location = 12021
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "98th Division 'Iroquois'"
+		location = 12021
+		division_template = "National Guard Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 1.0
+	}
+	
+	## Johnston Island ##
+	
+	division = {			
+		name = "Johnston Island Garrison"
+		location = 13051
+		division_template = "Garrison"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	
+	## Midway Island ##
+	
+	division = {			
+		name = "Midway Garrison"
+		location = 13052
+		division_template = "Garrison"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	
+	## Palmyra ##
+	
+	division = {			
+		name = "Palmyra Garrison"
+		location = 13048
+		division_template = "Garrison"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	
+	## Jarvis Island ##
+	
+	division = {			
+		name = "Jarvis Island Garrison"
+		location = 13049
+		division_template = "Garrison"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	
+	## Christmas Island ##
+	
+	division = {			
+		name = "Christmas Island Garrison"
+		location = 13053
+		division_template = "Garrison"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	
+	## Phoenix Island ##
+	
+	division = {			
+		name = "Phoenix Island Garrison"
+		location = 13050
+		division_template = "Garrison"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	
+	#### SOLOMON ISLANDS #####
+	
+	## Guadalcanal ##
+	
+	division = {			
+		name = "43rd Division 'Winged Victory'"
+		location = 1269
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.65
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "25th Division 'Tropic Lightning'"
+		location = 1269
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.65
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "3rd Marine Division 'Fighting Third'"
+		location = 1269
+		division_template = "Marine Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.65
+		start_equipment_factor = 1.0
+	}
+	
+	## Malaita ##
+	
+	division = {			
+		name = "93rd Division 'The Blue Helmets'"
+		location = 1085
+		division_template = "National Guard Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.65
+		start_equipment_factor = 1.0
+	}
+	
+	## Torokina ##
+	
+	division = {			
+		name = "23rd Division 'Americal'"
+		location = 1358
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.65
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "37th Division 'Buckeye'"
+		location = 1358
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.65
+		start_equipment_factor = 1.0
+	}
+	
+	### Bismarck ###
+	
+	## Admiralty Islands ##
+	
+	division = {			
+		name = "Admiralty Islands Garrison"
+		location = 7339
+		division_template = "Garrison"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "1st Cavalry Division 'First Team'"
+		location = 4332
+		division_template = "Mechanized Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+	
+	### Papua New Guinea ###
+	
+	division = {			
+		name = "40th Division 'Sunshine'"
+		location = 12237
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.65
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "1st Marine Division 'The Old Breed'"
+		location = 12237
+		division_template = "Marine Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.65
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "5th Marine Division 'The Spearhead'"
+		location = 12237
+		division_template = "Marine Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.65
+		start_equipment_factor = 1.0
+	}
+	#
+	division = {			
+		name = "31st Division 'Dixie'"
+		location = 12237
+		division_template = "National Guard Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.65
+		start_equipment_factor = 1.0
+	}
+	#
+	division = {			
+		name = "33rd Division 'Prairie Lightning'"
+		location = 12371
+		division_template = "National Guard Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.65
+		start_equipment_factor = 1.0
+	}
+	#
+	division = {			
+		name = "6th Division 'Sightseeing Sixth'"
+		location = 10396
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.65
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "41st Division 'Sunsetters'"
+		location = 10396
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.65
+		start_equipment_factor = 1.0
+	}
+	#
+	division = {			
+		name = "24th Division 'Victory'"
+		location = 12400
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.65
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "32nd Division 'Les Terribles'"
+		location = 12400
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.65
+		start_equipment_factor = 1.0
+	}
+	
+	### Saipan ###
+	
+	division = {			
+		name = "77th Division 'Statue of Liberty'"
+		location = 3995
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "27th Division 'New York'"
+		location = 3995
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.65
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "2nd Marine Division 'Follow Me'"
+		location = 3995
+		division_template = "Marine Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.65
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "4th Marine Division 'Fighting Fourth'"
+		location = 3995
+		division_template = "Marine Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "USA" } }
+		start_experience_factor = 0.65
+		start_equipment_factor = 1.0
+	}
+	
+	### Marshall Islands ###
+	
+	division = {			
+		name = "Eniwetok Garrison"
+		location = 13046
+		division_template = "Garrison"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "Kwajalein Garrison"
+		location = 13046
+		division_template = "Garrison"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "Bikini Garrison"
+		location = 13045
+		division_template = "Garrison"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "Mili Garrison"
+		location = 13045
+		division_template = "Garrison"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	division = {			
+		name = "Majuro Garrison"
+		location = 13043
+		division_template = "Garrison"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	
+	## Attu Island ##
+	
+	division = {			
+		name = "Attu Island Garrison"
+		location = 13067
+		division_template = "Garrison"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "USA" } }
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+}
+
+###########
+# AIR OOB #
+###########
+
+air_wings = {
+
+	####################
+	# EUROPEAN THEATRE #
+	####################
+	
+	### BRITAIN ###
+
+	## Dover ##
+	127 = {
+		### 9th Air Force ###
+		fighter_equipment_3 = {
+			owner = "USA"
+			amount = 100
+		}	
+		name = "70th USAAF Interceptor Wing"
+		##
+		tac_bomber_equipment_3 = {
+			owner = "USA"
+			amount = 75
+		}	
+		name = "97th USAAF Tactical Bomber Wing"
+		##
+		tac_bomber_equipment_3 = {
+			owner = "USA"
+			amount = 75
+		}	
+		name = "98th USAAF Tactical Bomber Wing"
+		##
+		tac_bomber_equipment_3 = {
+			owner = "USA"
+			amount = 75
+		}	
+		name = "99th USAAF Tactical Bomber Wing"
+	}
+	
+	## London ##
+	126 = {
+		### 9th Air Force/Air Transports ###
+		transport_plane_equipment_1 = {
+			owner = "USA"
+			amount = 100
+		}	
+		name = "50th USAAF Troop Carrier Wing"
+		##
+		transport_plane_equipment_1 = {
+			owner = "USA"
+			amount = 100
+		}	
+		name = "52nd USAAF Troop Carrier Wing"
+		##
+		transport_plane_equipment_1 = {
+			owner = "USA"
+			amount = 100
+		}	
+		name = "53rd USAAF Troop Carrier Wing"
+		##
+	}
+	
+	## Norwich ##
+	125 = {
+		### 8th Air Force Escorts ###
+		fighter_equipment_2 = {
+			owner = "USA"
+			amount = 100
+		}	
+		name = "1st USAAF Interceptor Wing"
+		##
+		fighter_equipment_2 = {
+			owner = "USA"
+			amount = 100
+		}	
+		name = "4th USAAF Interceptor Wing"
+		##
+		fighter_equipment_2 = {
+			owner = "USA"
+			amount = 100
+		}	
+		name = "56th USAAF Interceptor Wing"
+		##
+		fighter_equipment_2 = {
+			owner = "USA"
+			amount = 100
+		}	
+		name = "352nd USAAF Interceptor Wing"
+		
+		
+		### 8th Air Force Bombers ###
+		strat_bomber_equipment_1 = {
+			owner = "USA"
+			amount = 50
+		}	
+		name = "25th USAAF Strategic Bomber Wing"
+		##
+		strat_bomber_equipment_1 = {
+			owner = "USA"
+			amount = 50
+		}	
+		name = "94th USAAF Strategic Bomber Wing"
+		##
+		strat_bomber_equipment_1 = {
+			owner = "USA"
+			amount = 50
+		}	
+		name = "91st USAAF Strategic Bomber Wing"
+		##
+		strat_bomber_equipment_1 = {
+			owner = "USA"
+			amount = 50
+		}	
+		name = "303rd USAAF Strategic Bomber Wing"
+		##
+	}
+	
+	### ITALY ###
+	
+	## Taranto ##
+	156 = {
+		### 15th Air Force ###
+		strat_bomber_equipment_1 = {
+			owner = "USA"
+			amount = 50
+		}	
+		name = "5th USAAF Strategic Bomber Wing"
+		##
+		strat_bomber_equipment_1 = {
+			owner = "USA"
+			amount = 50
+		}	
+		name = "47th USAAF Strategic Bomber Wing"
+		##
+		strat_bomber_equipment_1 = {
+			owner = "USA"
+			amount = 50
+		}	
+		name = "49th USAAF Strategic Bomber Wing"
+		##
+		strat_bomber_equipment_1 = {
+			owner = "USA"
+			amount = 50
+		}	
+		name = "55th USAAF Strategic Bomber Wing"
+		##
+	}
+	
+	## Rome ##
+	2 = {
+		### 9th Air Force ###
+		fighter_equipment_3 = {
+			owner = "USA"
+			amount = 100
+		}	
+		name = "57th USAAF Interceptor Wing"
+		##
+		fighter_equipment_3 = {
+			owner = "USA"
+			amount = 100
+		}	
+		name = "324th USAAF Interceptor Wing"
+		##
+		tac_bomber_equipment_3 = {
+			owner = "USA"
+			amount = 75
+		}	
+		name = "17th USAAF Tactical Bomber Wing"
+		##
+		tac_bomber_equipment_3 = {
+			owner = "USA"
+			amount = 75
+		}	
+		name = "310th USAAF Tactical Bomber Wing"
+	}
+	
+	#########
+	# INDIA #
+	#########
+	
+	## Assam ##
+	432 = {
+	
+		### 10th Air Force ###
+		fighter_equipment_2 = {
+			owner = "USA"
+			amount = 100
+		}	
+		name = "33rd USAAF Interceptor Wing"
+		##
+		fighter_equipment_2 = {
+			owner = "USA"
+			amount = 100
+		}	
+		name = "80th USAAF Interceptor Wing"
+		##
+		tac_bomber_equipment_3 = {
+			owner = "USA"
+			amount = 100
+		}	
+		name = "12th USAAF Tactical Bomber Wing"
+		##
+		strat_bomber_equipment_1 = {
+			owner = "USA"
+			amount = 50
+		}	
+		name = "7th USAAF Strategic Bomber Wing"
+	}
+	
+	
+	##############
+	# HOME FRONT #
+	##############
+	
+	## Georgia ##
+	365 = {
+	
+		### 10th Air Force ###
+		fighter_equipment_2 = {
+			owner = "USA"
+			amount = 100
+		}	
+		name = "71st USAAF Interceptor Wing"
+		##
+		fighter_equipment_2 = {
+			owner = "USA"
+			amount = 100
+		}	
+		name = "84th USAAF Interceptor Wing"
+		##
+		fighter_equipment_2 = {
+			owner = "USA"
+			amount = 100
+		}	
+		name = "100th USAAF Interceptor Wing"
+		##
+		fighter_equipment_2 = {
+			owner = "USA"
+			amount = 100
+		}	
+		name = "303rd USAAF Interceptor Wing"
+	}
+	
+	## New York ##
+	358 = {
+	
+		### 1st Air Force ###
+		strat_bomber_equipment_1 = {
+			owner = "USA"
+			amount = 100
+		}	
+		name = "445th USAAF Strategic Bomber Wing"
+		##
+		strat_bomber_equipment_1 = {
+			owner = "USA"
+			amount = 100
+		}	
+		name = "457th USAAF Strategic Bomber Wing"
+		##
+		strat_bomber_equipment_1 = {
+			owner = "USA"
+			amount = 100
+		}	
+		name = "467th USAAF Strategic Bomber Wing"
+		##
+		strat_bomber_equipment_1 = {
+			owner = "USA"
+			amount = 100
+		}	
+		name = "487th USAAF Strategic Bomber Wing"
+		##
+		strat_bomber_equipment_1 = {
+			owner = "USA"
+			amount = 100
+		}	
+		name = "491st USAAF Strategic Bomber Wing"
+		##
+		strat_bomber_equipment_1 = {
+			owner = "USA"
+			amount = 100
+		}	
+		name = "392nd USAAF Strategic Bomber Wing"
+		##
+		strat_bomber_equipment_1 = {
+			owner = "USA"
+			amount = 100
+		}	
+		name = "388th USAAF Strategic Bomber Wing"
+		##
+		strat_bomber_equipment_1 = {
+			owner = "USA"
+			amount = 100
+		}	
+		name = "385th USAAF Strategic Bomber Wing"
+		##
+		strat_bomber_equipment_1 = {
+			owner = "USA"
+			amount = 100
+		}	
+		name = "379th USAAF Strategic Bomber Wing"
+		##
+		strat_bomber_equipment_1 = {
+			owner = "USA"
+			amount = 100
+		}	
+		name = "322nd USAAF Strategic Bomber Wing"
+		
+		### 2nd Air Force ###
+		fighter_equipment_2 = {
+			owner = "USA"
+			amount = 100
+		}	
+		name = "355th USAAF Interceptor Wing"
+		##
+		fighter_equipment_2 = {
+			owner = "USA"
+			amount = 100
+		}	
+		name = "357th USAAF Interceptor Wing"
+		##
+		fighter_equipment_2 = {
+			owner = "USA"
+			amount = 100
+		}	
+		name = "356th USAAF Interceptor Wing"
+		##
+		fighter_equipment_2 = {
+			owner = "USA"
+			amount = 100
+		}	
+		name = "358th USAAF Interceptor Wing"
+		
+		### 5th Air Force ###
+		fighter_equipment_2 = {
+			owner = "USA"
+			amount = 100
+		}	
+		name = "1st Reserve Fighter Group"
+		##
+		strat_bomber_equipment_2 = {
+			owner = "USA"
+			amount = 50
+		}	
+		name = "5th Reserve Bomber Group"
+		##
+		strat_bomber_equipment_2 = {
+			owner = "USA"
+			amount = 50
+		}	
+		name = "6th Reserve Bomber Group"
+		##
+		strat_bomber_equipment_2 = {
+			owner = "USA"
+			amount = 50
+		}	
+		name = "7th Reserve Bomber Group"
+		##
+		transport_plane_equipment_1 = {
+			owner = "USA"
+			amount = 100
+		}	
+		name = "1st Reserve Transport"
+		##
+		transport_plane_equipment_1 = {
+			owner = "USA"
+			amount = 100
+		}	
+		name = "2nd Reserve Transport"
+		##
+		
+		### USAAF CONUS Reserve ###
+		strat_bomber_equipment_2 = {
+			owner = "USA"
+			amount = 50
+		}	
+		name = "1st Reserve Bomber Group"
+		##
+		strat_bomber_equipment_2 = {
+			owner = "USA"
+			amount = 50
+		}	
+		name = "2nd Reserve Bomber Group"
+		##
+		strat_bomber_equipment_2 = {
+			owner = "USA"
+			amount = 50
+		}	
+		name = "3rd Reserve Bomber Group"
+		##
+		strat_bomber_equipment_2 = {
+			owner = "USA"
+			amount = 50
+		}	
+		name = "4th Reserve Bomber Group"
+		##
+	}
+	
+	## New Mexico ##
+	376 = {
+	
+		### 4th Air Force ###
+		fighter_equipment_2 = {
+			owner = "USA"
+			amount = 100
+		}	
+		name = "305th Reserve Fighter Group"
+		##
+		fighter_equipment_2 = {
+			owner = "USA"
+			amount = 100
+		}	
+		name = "306th Reserve Fighter Group"
+		##
+		strat_bomber_equipment_1 = {
+			owner = "USA"
+			amount = 50
+		}	
+		name = "304th USAAF Strategic Bomber Wing"
+	}
+	
+	## Hawaii ##
+	629 = {
+	
+		### 1/CPAF ###
+		fighter_equipment_3 = {
+			owner = "USA"
+			amount = 100
+		}	
+		name = "VMF 124/123"
+		##
+		cas_equipment_2 = {
+			owner = "USA"
+			amount = 100
+		}	
+		name = "VMSB"
+		##
+	}
+	
+	###################
+	# PACIFIC THEATRE #
+	###################
+	
+	## Attu Island ##
+	650 = {
+	
+		### 11th Air Force ###
+		fighter_equipment_2 = {
+			owner = "USA"
+			amount = 100
+		}	
+		name = "11th USAAF Interceptor Wing"
+		##
+		strat_bomber_equipment_1 = {
+			owner = "USA"
+			amount = 100
+		}	
+		name = "9th USAAF Strategic Bomber Wing"
+	}
+	
+	## Kwajalein ##
+	633 = {
+	
+		### 2/CPAF ###
+		fighter_equipment_3 = {
+			owner = "USA"
+			amount = 100
+		}	
+		name = "VMF 111/224"
+		##
+		fighter_equipment_2 = {
+			owner = "USA"
+			amount = 100
+		}	
+		name = "VMF 311/331"
+		##
+		cas_equipment_2 = {
+			owner = "USA"
+			amount = 100
+		}	
+		name = "VMSB 231/245"
+		
+		### 4/CPAF ###
+		fighter_equipment_3 = {
+			owner = "USA"
+			amount = 100
+		}	
+		name = "VMF 114/122"
+		##
+		fighter_equipment_3 = {
+			owner = "USA"
+			amount = 100
+		}	
+		name = "VMF 134/541"
+		
+		### 7/SWPAF ###
+		fighter_equipment_3 = {
+			owner = "USA"
+			amount = 100
+		}	
+		name = "VMF 113/422"
+		##
+		tac_bomber_equipment_3 = {
+			owner = "USA"
+			amount = 100
+		}	
+		name = "VMB 151/612"
+	}
+	
+	## Saipan ##
+	646 = {
+	
+		### 3/CPAF ###
+		fighter_equipment_3 = {
+			owner = "USA"
+			amount = 100
+		}	
+		name = "VFN 532/534"
+		##
+		fighter_equipment_3 = {
+			owner = "USA"
+			amount = 100
+		}	
+		name = "VMF 225/321"
+		
+		### 7/SWPAF ###
+		fighter_equipment_3 = {
+			owner = "USA"
+			amount = 100
+		}	
+		name = "VMF 216/217"
+		##
+		nav_bomber_equipment_2 = {
+			owner = "USA"
+			amount = 100
+		}	
+		name = "VMTB 131/242"
+		
+		### 6th Air Force ###
+		fighter_equipment_3 = {
+			owner = "USA"
+			amount = 100
+		}	
+		name = "311th USAAF Interceptor Wing"
+		##
+		tac_bomber_equipment_3 = {
+			owner = "USA"
+			amount = 100
+		}	
+		name = "341st USAAF Tactical Bomber Wing"
+	}
+	
+	## Guadacanal ##
+	634 = {
+	
+		### 5/CPAF ###
+		fighter_equipment_3 = {
+			owner = "USA"
+			amount = 100
+		}	
+		name = "VMF 218/222"
+		##
+		cas_equipment_2 = {
+			owner = "USA"
+			amount = 100
+		}	
+		name = "VMSB 133/341"
+		##
+		cas_equipment_2 = {
+			owner = "USA"
+			amount = 100
+		}	
+		name = "VMSB 244/423"
+		
+		### 6/CPAF ###
+		fighter_equipment_3 = {
+			owner = "USA"
+			amount = 100
+		}	
+		name = "VMF 215/223"
+		##
+		fighter_equipment_3 = {
+			owner = "USA"
+			amount = 100
+		}	
+		name = "VMF 221/315"
+		##
+		cas_equipment_2 = {
+			owner = "USA"
+			amount = 100
+		}	
+		name = "VMSB 241/413"
+	}
+	
+	## Admiral Islands ##
+	737 = {
+	
+		### 13th Air Force Interceptors ###
+		fighter_equipment_2 = {
+			owner = "USA"
+			amount = 100
+		}	
+		name = "347th USAAF Interceptor Wing"
+		
+		### 3/SWPAF ###
+		fighter_equipment_3 = {
+			owner = "USA"
+			amount = 100
+		}	
+		name = "VMFN 115"
+		##
+		cas_equipment_2 = {
+			owner = "USA"
+			amount = 100
+		}	
+		name = "VMSB 142"
+		
+		### 4/SWPAF ###
+		fighter_equipment_3 = {
+			owner = "USA"
+			amount = 100
+		}	
+		name = "VMF 121/211"
+		##
+		fighter_equipment_3 = {
+			owner = "USA"
+			amount = 100
+		}	
+		name = "VMF 313"
+		##
+		tac_bomber_equipment_3 = {
+			owner = "USA"
+			amount = 100
+		}	
+		name = "VMFN 115"
+	}
+	
+	
+	## Port Moresby ##
+	523 = {
+	
+		### 13th Air Force (Heavy) ###
+		strat_bomber_equipment_2 = {
+			owner = "USA"
+			amount = 100
+		}	
+		name = "5th USAAF Strategic Bomber Wing"
+		##
+		strat_bomber_equipment_2 = {
+			owner = "USA"
+			amount = 100
+		}	
+		name = "42nd USAAF Strategic Bomber Wing"
+		##
+		transport_plane_equipment_1 = {
+			owner = "USA"
+			amount = 100
+		}	
+		name = "403rd USAAF Troop Carrier Wing"
+		
+		
+		### 2/SWPAF ###
+		fighter_equipment_3 = {
+			owner = "USA"
+			amount = 100
+		}	
+		name = "49th USAAF Interceptor Wing"
+		##
+		strat_bomber_equipment_2 = {
+			owner = "USA"
+			amount = 100
+		}	
+		name = "43rd USAAF Strategic Bomber Wing"
+		##
+		strat_bomber_equipment_2 = {
+			owner = "USA"
+			amount = 100
+		}	
+		name = "307th USAAF Strategic Bomber Wing"
+	}
+	
+	## Hollandia ##
+	669 = {
+	
+		### 1/SWPAF ###
+		fighter_equipment_1 = {
+			owner = "USA"
+			amount = 100
+		}	
+		name = "35th USAAF Interceptor Wing"
+		##
+		tac_bomber_equipment_3 = {
+			owner = "USA"
+			amount = 100
+		}	
+		name = "38th USAAF Tactical Bomber Wing"
+		##
+		tac_bomber_equipment_3 = {
+			owner = "USA"
+			amount = 100
+		}	
+		name = "34th USAAF Tactical Bomber Wing"
+		##
+	}
+}

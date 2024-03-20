@@ -1,0 +1,48 @@
+spriteTypes = {	
+
+	####################
+	# Decision Buttons #
+	####################
+
+	###########
+	# GENERIC #
+	###########
+
+
+	#####################
+	# Germany Decisions #
+	#####################
+
+	spriteType = {
+		name = "GFX_decision_cat_picture_GER_fuhrer_directive"
+		texturefile = "gfx/interface/decisions/GER/Decision_Category/GER_fuhrer_directive.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_picture_GER_operation_panzerfaust"
+		texturefile = "gfx/interface/decisions/GER/Decision_Category/GER_operation_panzerfaust.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_picture_GER_operation_margarethe_II"
+		texturefile = "gfx/interface/decisions/GER/Decision_Category/GER_operation_margarethe_II.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_picture_GER_emergency_fighter_program"
+		texturefile = "gfx/interface/decisions/GER/Decision_Category/GER_emergency_fighter_program.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_picture_GER_battle_of_berlin"
+		texturefile = "gfx/interface/decisions/GER/Decision_Category/GER_battle_of_berlin.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_picture_GER_flak_towers"
+		texturefile = "gfx/interface/decisions/GER/Decision_Category/GER_flak_towers.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_picture_GER_festung"
+		texturefile = "gfx/interface/decisions/GER/Decision_Category/GER_festung.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_picture_GER_east_west"
+		texturefile = "gfx/interface/decisions/GER/Decision_Category/GER_east_west.dds"
+	}
+}

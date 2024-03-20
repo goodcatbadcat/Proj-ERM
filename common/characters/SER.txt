@@ -1,0 +1,1113 @@
+characters = {
+
+	##################
+	# COUNTRY LEADER #
+	##################
+	
+	SER_Milan_Nedic = {
+		name = SER_Milan_Nedic
+		
+		portraits = {
+			civilian = { 
+				large = "gfx/leaders/SER/Portrait_Serbia_Milan_Nedic.dds"
+				small = "GFX_idea_SER_Milan_Nedic" 
+			}
+		}
+		
+		country_leader = {
+			ideology = fascism_ideology
+			traits = { HOS_unpopular_leader }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		
+		advisor = {
+			slot = head_of_government
+			ledger = civilian
+			idea_token = SER_Milan_Nedic
+			allowed = { original_tag = SER }
+			available = {
+				OR = {
+					has_government = fascism
+					has_government = neutrality
+				}
+			}
+			visible = {
+				OR = {
+					has_government = fascism
+					has_government = neutrality
+				}
+			}
+			traits = { HOG_old_general }
+			ai_will_do = { factor = 1 }
+			cost = 100
+		}
+		
+		advisor = {
+			slot = foreign_minister
+			ledger = civilian
+			idea_token = SER_Milan_Nedic2
+			allowed = { original_tag = ROM }
+			available = {
+				OR = {
+					has_government = fascism
+					has_government = neutrality
+				}
+			}
+			visible = {
+				OR = {
+					has_government = fascism
+					has_government = neutrality
+				}
+			}
+			traits = { FM_general_staffer }
+			ai_will_do = { factor = 1 }
+			cost = 100
+		}
+	}
+	
+	####################
+	# Corps Commanders #
+	####################
+	
+	SER_Dragomir_Jovanovic = {
+		name = SER_Dragomir_Jovanovic
+		
+		portraits = {
+			army = {
+				large = "GFX_Portrait_Serbia_Dragomir_Jovanovic"
+				small = "GFX_idea_SER_Dragomir_Jovanovic"
+			}
+		}
+		
+		advisor = {
+			slot = high_command
+			idea_token = SER_Dragomir_Jovanovic
+			allowed = { original_tag = SER }
+			available = { 
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
+			visible = { 
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
+			traits = { AC_army_entrenchment_2 }
+			cost = 100
+			ai_will_do = { factor = 1.000 }
+		}
+		
+		advisor = {
+			slot = minister_of_security
+			idea_token = SER_Dragomir_Jovanovic2
+			allowed = { original_tag = SER }
+			available = { 
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
+			visible = { 
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
+			traits = { MOS_chief_of_secret_police }
+			cost = 100
+			ai_will_do = { factor = 1.000 }
+		}
+		
+		corps_commander = {
+			traits = { AC_school_of_fire }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+	
+	SER_Borivoje_Jonic = {
+		name = SER_Borivoje_Jonic
+		
+		portraits = {
+			army = {
+				large = "GFX_Portrait_Serbia_Borivoje_Jonic"
+				small = "GFX_idea_SER_Borivoje_Jonic"
+			}
+		}
+		
+		advisor = {
+			slot = high_command
+			idea_token = SER_Borivoje_Jonic
+			allowed = { original_tag = SER }
+			available = { 
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
+			visible = { 
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
+			traits = { AC_school_of_defense }
+			cost = 100
+			ai_will_do = { factor = 1.000 }
+		}
+		
+		corps_commander = {
+			traits = { infantry_officer }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+	
+	SER_Kosta_Musicki = {
+		name = SER_Kosta_Musicki
+		
+		portraits = {
+			army = {
+				large = "GFX_Portrait_Serbia_Kosta_Musicki"
+				small = "GFX_idea_SER_Kosta_Musicki"
+			}
+		}
+		
+		advisor = {
+			slot = high_command
+			idea_token = SER_Kosta_Musicki
+			allowed = { original_tag = SER }
+			available = { 
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
+			visible = { 
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
+			traits = { AC_school_of_psychology }
+			cost = 100
+			ai_will_do = { factor = 1.000 }
+		}
+		
+		corps_commander = {
+			traits = { infantry_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+	
+	SER_Miodrag_Damjanovic = {
+		name = SER_Miodrag_Damjanovic
+		
+		portraits = {
+			army = {
+				large = "GFX_Portrait_Serbia_Miodrag_Damjanovic"
+				small = "GFX_idea_SER_Miodrag_Damjanovic"
+			}
+		}
+		
+		advisor = {
+			slot = army_chief
+			idea_token = SER_Miodrag_Damjanovic
+			allowed = { original_tag = SER }
+			available = { 
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
+			visible = { 
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
+			traits = { AC_security_warfare_doctrine }
+			cost = 100
+			ai_will_do = { factor = 1.000 }
+		}
+		
+		corps_commander = {
+			traits = { infantry_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+	
+	SER_Dura_Dokic = {
+		name = SER_Dura_Dokic
+		
+		portraits = {
+			army = {
+				large = "GFX_Portrait_Serbia_Dura_Dokic"
+				small = "GFX_idea_SER_Dura_Dokic"
+			}
+		}
+		
+		advisor = {
+			slot = army_chief
+			idea_token = SER_Dura_Dokic
+			allowed = { original_tag = SER }
+			available = { 
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
+			visible = { 
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
+			traits = { AC_school_of_maneuver }
+			cost = 100
+			ai_will_do = { factor = 1.000 }
+		}
+		
+		advisor = {
+			slot = armaments_minister
+			idea_token = SER_Dura_Dokic2
+			allowed = { original_tag = SER }
+			available = { 
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
+			visible = { 
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
+			traits = { AM_military_entrenpreneur }
+			cost = 100
+			ai_will_do = { factor = 1.000 }
+		}
+		
+		corps_commander = {
+			traits = { infantry_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = -1
+		}
+	}
+	
+	SER_Mihailo_Olcan = {
+		name = SER_Mihailo_Olcan
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_SER_Mihailo_Olcan"
+			}
+		}
+		
+		advisor = {
+			slot = army_chief
+			idea_token = SER_Mihailo_Olcan
+			allowed = { original_tag = SER }
+			available = { 
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
+			visible = { 
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
+			traits = { AC_army_chief_organizational_2 }
+			cost = 100
+			ai_will_do = { factor = 1.000 }
+		}
+		
+		advisor = {
+			slot = armaments_minister
+			idea_token = SER_Mihailo_Olcan2
+			allowed = { original_tag = SER }
+			available = { 
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
+			visible = { 
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
+			traits = { AM_infantry_proponent }
+			cost = 100
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	###################
+	# NAVAL COMMANDER #
+	###################
+	
+	# Fuck it Serbia ain't ever getting a Navy, not in this mod he ain't gonna be a commander!
+	# Also Prica? Must've been a prick
+	SER_Dragutin_Prica = {
+		name = SER_Dragutin_Prica
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_SER_Dragutin_Prica"
+			}
+		}
+		
+		advisor = {
+			slot = navy_chief
+			idea_token = SER_Dragutin_Prica
+			allowed = { original_tag = SER }
+			available = { 
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
+			visible = { 
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
+			traits = { NC_navy_chief_maneuver_2 }
+			cost = 100
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	#############
+	# AIR CHIEF #
+	#############
+	
+	SER_Dusan_Simovic = {
+		name = SER_Dusan_Simovic
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_SER_Dusan_Simovic"
+			}
+		}
+		
+		advisor = {
+			slot = air_chief
+			idea_token = SER_Dusan_Simovic
+			allowed = { original_tag = SER }
+			available = { 
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
+			visible = { 
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
+			traits = { AFC_defense_aviation_doctrine }
+			cost = 100
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	SER_Borivoje_Mirkovic = {
+		name = SER_Borivoje_Mirkovic
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_SER_Borivoje_Mirkovic"
+			}
+		}
+		
+		advisor = {
+			slot = air_chief
+			idea_token = SER_Borivoje_Mirkovic
+			allowed = { original_tag = SER }
+			available = { 
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
+			visible = { 
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
+			traits = { AFC_air_superiority_doctrine }
+			cost = 100
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	####################
+	# Foreign Minister #
+	####################
+	
+	SER_Josif_Kostic = {
+		name = SER_Josif_Kostic
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_SER_Josif_Kostic"
+			}
+		}
+		
+		advisor = {
+			slot = foreign_minister
+			idea_token = SER_Josif_Kostic
+			allowed = { original_tag = SER }
+			available = { 
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
+			visible = { 
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
+			traits = { FM_biased_intellectual }
+			cost = 100
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	######################
+	# Armaments Minister #
+	######################
+	
+	SER_Milorad_Nedeljkovic = {
+		name = SER_Milorad_Nedeljkovic
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_SER_Milorad_Nedeljkovic"
+			}
+		}
+		
+		advisor = {
+			slot = armaments_minister
+			idea_token = SER_Milorad_Nedeljkovic
+			allowed = { original_tag = SER }
+			available = { 
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
+			visible = { 
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
+			traits = { AM_armaments_organizer }
+			cost = 100
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	########################
+	# Minister of Security #
+	########################
+	
+	SER_Milan_Acimovic = {
+		name = SER_Milan_Acimovic
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_SER_Milan_Acimovic"
+			}
+		}
+		
+		advisor = {
+			slot = minister_of_security
+			idea_token = SER_Milan_Acimovic
+			allowed = { original_tag = SER }
+			available = { 
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
+			visible = { 
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
+			traits = { MOS_political_specialist }
+			cost = 100
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	SER_Tanasije_Dinic = {
+		name = SER_Tanasije_Dinic
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_SER_Tanasije_Dinic"
+			}
+		}
+		
+		advisor = {
+			slot = minister_of_security
+			idea_token = SER_Tanasije_Dinic
+			allowed = { original_tag = SER }
+			available = { 
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
+			visible = { 
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
+			traits = { MOS_dismal_enigma }
+			cost = 100
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	SER_Dimitrije_Ljotic = {
+		name = SER_Dimitrije_Ljotic
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_SER_Dimitrije_Ljotic"
+			}
+		}
+		
+		advisor = {
+			slot = minister_of_security
+			idea_token = SER_Dimitrije_Ljotic
+			allowed = { original_tag = SER }
+			available = { 
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
+			visible = { 
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
+			traits = { MOS_silent_lawyer }
+			cost = 100
+			ai_will_do = { factor = 1.000 }
+		}
+		
+		advisor = {
+			slot = theorist
+			idea_token = SER_Dimitrije_Ljotic2
+			allowed = { original_tag = SER }
+			available = { 
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
+			visible = { 
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
+			traits = { THEO_political_philosopher }
+			cost = 100
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	SER_Cedomir_Marjanovic = {
+		name = SER_Cedomir_Marjanovic
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_SER_Cedomir_Marjanovic"
+			}
+		}
+		
+		advisor = {
+			slot = minister_of_security
+			idea_token = SER_Cedomir_Marjanovic
+			allowed = { original_tag = SER }
+			available = { 
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
+			visible = { 
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
+			traits = { MOS_compassionate_gentleman }
+			cost = 100
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	SER_Bogoljub_Kujundzic = {
+		name = SER_Bogoljub_Kujundzic
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_SER_Bogoljub_Kujundzic"
+			}
+		}
+		
+		advisor = {
+			slot = minister_of_security
+			idea_token = SER_Bogoljub_Kujundzic
+			allowed = { original_tag = SER }
+			available = { 
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
+			visible = { 
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
+			traits = { MOS_ruthless_organizer }
+			cost = 100
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	SER_Dobrosav_Veselinovic = {
+		name = SER_Dobrosav_Veselinovic
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_SER_Bogoljub_Kujundzic"
+			}
+		}
+		
+		advisor = {
+			slot = minister_of_security
+			idea_token = SER_Dobrosav_Veselinovic
+			allowed = { original_tag = SER }
+			available = { 
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
+			visible = { 
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
+			traits = { MOS_prince_of_terror }
+			cost = 100
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	########################
+	# MINISTER OF INDUSTRY #
+	########################
+	
+	SER_Ognjen_Kuzmanovic = {
+		name = SER_Ognjen_Kuzmanovic
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_SER_Ognjen_Kuzmanovic"
+			}
+		}
+		
+		advisor = {
+			slot = minister_of_industry
+			idea_token = SER_Ognjen_Kuzmanovic
+			allowed = { original_tag = SER }
+			available = { 
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
+			visible = { 
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
+			traits = { MOI_captain_of_industry }
+			cost = 100
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	SER_Dusan_Letica = {
+		name = SER_Dusan_Letica
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_SER_Dusan_Letica"
+			}
+		}
+		
+		advisor = {
+			slot = minister_of_industry
+			idea_token = SER_Dusan_Letica
+			allowed = { original_tag = SER }
+			available = { 
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
+			visible = { 
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
+			traits = { MOI_planned_economy_proponent }
+			cost = 100
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	SER_Ljubisa_M_Bojic = {
+		name = SER_Ljubisa_M_Bojic
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_SER_Ljubisa_M_Bojic"
+			}
+		}
+		
+		advisor = {
+			slot = minister_of_industry
+			idea_token = SER_Ljubisa_M_Bojic
+			allowed = { original_tag = SER }
+			available = { 
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
+			visible = { 
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
+			traits = { MOI_balanced_budget_proponent }
+			cost = 100
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	SER_Jovan_Mijuskovic = {
+		name = SER_Jovan_Mijuskovic
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_SER_Jovan_Mijuskovic"
+			}
+		}
+		
+		advisor = {
+			slot = minister_of_industry
+			idea_token = SER_Jovan_Mijuskovic
+			allowed = { original_tag = SER }
+			available = { 
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
+			visible = { 
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
+			traits = { MOI_keynesian_economy_proponent }
+			cost = 100
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	SER_Stojimir_Dobrosavljevic = {
+		name = SER_Stojimir_Dobrosavljevic
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_SER_Stojimir_Dobrosavljevic"
+			}
+		}
+		
+		advisor = {
+			slot = minister_of_industry
+			idea_token = SER_Stojimir_Dobrosavljevic
+			allowed = { original_tag = SER }
+			available = { 
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
+			visible = { 
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
+			traits = { MOI_laissez_faire_capitalist }
+			cost = 100
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	SER_Milos_Radosavljevic = {
+		name = SER_Milos_Radosavljevic
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_SER_Milos_Radosavljevic"
+			}
+		}
+		
+		advisor = {
+			slot = minister_of_industry
+			idea_token = SER_Milos_Radosavljevic
+			allowed = { original_tag = SER }
+			available = { 
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
+			visible = { 
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
+			traits = { MOI_resource_industrialist }
+			cost = 100
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	SER_Dusan_Djordjevic = {
+		name = SER_Dusan_Djordjevic
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_SER_Dusan_Djordjevic"
+			}
+		}
+		
+		advisor = {
+			slot = minister_of_industry
+			idea_token = SER_Dusan_Djordjevic
+			allowed = { original_tag = SER }
+			available = { 
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
+			visible = { 
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
+			traits = { MOI_corrupt_kleptocrat }
+			cost = 100
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	#######################
+	# MINISTER OF CULTURE #
+	#######################
+	
+	SER_Milos_Trivunac = {
+		name = SER_Milos_Trivunac
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_SER_Milos_Trivunac"
+			}
+		}
+		
+		advisor = {
+			slot = minister_of_culture
+			idea_token = SER_Milos_Trivunac
+			allowed = { original_tag = SER }
+			available = { 
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
+			visible = { 
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
+			traits = { MOC_charismatic_speaker }
+			cost = 100
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	SER_Velibor_Jonic = {
+		name = SER_Velibor_Jonic
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_SER_Velibor_Jonic"
+			}
+		}
+		
+		advisor = {
+			slot = minister_of_culture
+			idea_token = SER_Velibor_Jonic
+			allowed = { original_tag = SER }
+			available = { 
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
+			visible = { 
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
+			traits = { MOC_press_propagandist }
+			cost = 100
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	SER_Djordje_Peric = {
+		name = SER_Djordje_Peric
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_SER_Djordje_Peric"
+			}
+		}
+		
+		advisor = {
+			slot = minister_of_culture
+			idea_token = SER_Djordje_Peric
+			allowed = { original_tag = SER }
+			available = { 
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
+			visible = { 
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
+			traits = { MOC_talented_censorer }
+			cost = 100
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	SER_Ratko_Parezanin = {
+		name = SER_Ratko_Parezanin
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_SER_Ratko_Parezanin"
+			}
+		}
+		
+		advisor = {
+			slot = minister_of_culture
+			idea_token = SER_Ratko_Parezanin
+			allowed = { original_tag = SER }
+			available = { 
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
+			visible = { 
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
+			traits = { MOC_political_columnist }
+			cost = 100
+			ai_will_do = { factor = 1.000 }
+		}
+	}
+	
+	############
+	# THEORIST #
+	############
+}

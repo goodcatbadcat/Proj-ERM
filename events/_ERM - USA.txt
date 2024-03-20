@@ -1,0 +1,71 @@
+﻿#################
+# Soviet Events #
+#################
+
+add_namespace = ERM_USA
+
+## Introduction Event ##
+country_event = {
+	id = ERM_USA.0
+	immediate = { log = "[GetDateText]: [Root.GetName]: event ERM_USA.0 FROM = [From.GetName]" }
+	title = ERM_USA.0.t
+	desc = ERM_USA.0.d
+	picture = GFX_report_event_
+
+	is_triggered_only = yes
+
+	option = {
+		name = ERM_USA.0.a
+	}
+}
+
+# USA: Morgenthau Plan Leaked
+country_event = {
+	id = ERM_USA.1
+	title = ERM_USA.1.t
+	desc = ERM_USA.1.d
+	picture = GFX_report_event_
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+		date > 1944.9.21
+	}
+
+	mean_time_to_happen = { days = 1 }
+	
+	# Damn!
+	option = {
+		name = ERM_USA.1.a
+		set_global_flag = USA_morgenthau_plan_leaked
+		GER = { country_event = { id = ERM_USA.101 hours = 1 } }
+		add_political_power = -25
+	}
+}
+
+# GER Reacts: Morgenthau Plan Leaked
+country_event = {
+	id = ERM_USA.101
+	title = ERM_USA.101.t
+	desc = ERM_USA.101.d
+	picture = GFX_report_event_
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = { days = 1 }
+	
+	# That jew Morgenthau wants to turn us into a potato patch!
+	option = {
+		name = ERM_USA.101.a
+		add_war_support = 0.05
+		hidden_effect = {
+			news_event = { id = world_news.10 }
+		}
+	}
+}
+
+
+

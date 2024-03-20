@@ -1,0 +1,380 @@
+SpriteType = {
+        name = "GFX_GER_appoint_speer"
+        texturefile = "gfx/interface/goals/GER/GER_appoint_speer.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_bitter_end_defense"
+        texturefile = "gfx/interface/goals/GER/GER_bitter_end_defense.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_central_planning_board"
+        texturefile = "gfx/interface/goals/GER/GER_central_planning_board.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_goebbels_speer_alliance"
+        texturefile = "gfx/interface/goals/GER/GER_goebbels_speer_alliance.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_increase_synthetic_production"
+        texturefile = "gfx/interface/goals/GER/GER_increase_synthetic_production.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_organisation_todt"
+        texturefile = "gfx/interface/goals/GER/GER_organisation_todt.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_propaganda_dissemination_1"
+        texturefile = "gfx/interface/goals/GER/GER_propaganda_dissemination_1.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_propaganda_dissemination_2"
+        texturefile = "gfx/interface/goals/GER/GER_propaganda_dissemination_2.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_propaganda_dissemination_3"
+        texturefile = "gfx/interface/goals/GER/GER_propaganda_dissemination_3.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_propaganda_dissemination_4"
+        texturefile = "gfx/interface/goals/GER/GER_propaganda_dissemination_4.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_propaganda_films_1"
+        texturefile = "gfx/interface/goals/GER/GER_propaganda_films_1.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_propaganda_films_2"
+        texturefile = "gfx/interface/goals/GER/GER_propaganda_films_2.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_propaganda_films_3"
+        texturefile = "gfx/interface/goals/GER/GER_propaganda_films_3.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_propaganda_films_4"
+        texturefile = "gfx/interface/goals/GER/GER_propaganda_films_4.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_german_propaganda_machine"
+        texturefile = "gfx/interface/goals/GER/GER_german_propaganda_machine.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_synthetic_factories_1"
+        texturefile = "gfx/interface/goals/GER/GER_synthetic_factories_1.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_synthetic_factories_2"
+        texturefile = "gfx/interface/goals/GER/GER_synthetic_factories_2.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_synthetic_factories_3"
+        texturefile = "gfx/interface/goals/GER/GER_synthetic_factories_3.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_synthetic_factories_4"
+        texturefile = "gfx/interface/goals/GER/GER_synthetic_factories_4.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_total_war"
+        texturefile = "gfx/interface/goals/GER/GER_total_war.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_volkssturm"
+        texturefile = "gfx/interface/goals/GER/GER_volkssturm.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_prioritize_navy"
+        texturefile = "gfx/interface/goals/GER/GER_prioritize_navy.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_prioritize_air"
+        texturefile = "gfx/interface/goals/GER/GER_prioritize_air.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_allocate_coal_to_steel"
+        texturefile = "gfx/interface/goals/GER/GER_allocate_coal_to_steel.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_prioritize_armor"
+        texturefile = "gfx/interface/goals/GER/GER_prioritize_armor.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_move_to_total_war"
+        texturefile = "gfx/interface/goals/GER/GER_move_to_total_war.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_total_economic_mobilisation"
+        texturefile = "gfx/interface/goals/GER/GER_total_economic_mobilisation.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_underground_plants_3"
+        texturefile = "gfx/interface/goals/GER/GER_underground_plants_3.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_underground_plants_2"
+        texturefile = "gfx/interface/goals/GER/GER_underground_plants_2.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_underground_plants_1"
+        texturefile = "gfx/interface/goals/GER/GER_underground_plants_1.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_women_industry"
+        texturefile = "gfx/interface/goals/GER/GER_women_industry.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_use_slave_labor"
+        texturefile = "gfx/interface/goals/GER/GER_use_slave_labor.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_slave_labor_initiative"
+        texturefile = "gfx/interface/goals/GER/GER_slave_labor_initiative.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_labor_shortage_solution"
+        texturefile = "gfx/interface/goals/GER/GER_labor_shortage_solution.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_harsh_slave_labor_law"
+        texturefile = "gfx/interface/goals/GER/GER_harsh_slave_labor_law.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_defense_of_reich_campaign"
+        texturefile = "gfx/interface/goals/GER/GER_defense_of_reich_campaign.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_flak_towers"
+        texturefile = "gfx/interface/goals/GER/GER_flak_towers.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_night_fighter_groups"
+        texturefile = "gfx/interface/goals/GER/GER_night_fighter_groups.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_rocket_interceptors_effort"
+        texturefile = "gfx/interface/goals/GER/GER_rocket_interceptors_effort.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_luftwaffe_ground_forces"
+        texturefile = "gfx/interface/goals/GER/GER_luftwaffe_ground_forces.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_adaptive_leadership"
+        texturefile = "gfx/interface/goals/GER/GER_adaptive_leadership.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_artillery1"
+        texturefile = "gfx/interface/goals/GER/GER_artillery1.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_artillery2"
+        texturefile = "gfx/interface/goals/GER/GER_artillery2.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_direct_commission"
+        texturefile = "gfx/interface/goals/GER/GER_direct_commission.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_festungs"
+        texturefile = "gfx/interface/goals/GER/GER_festungs.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_foreign_volunteers"
+        texturefile = "gfx/interface/goals/GER/GER_foreign_volunteers.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_improve_defensive_tactics"
+        texturefile = "gfx/interface/goals/GER/GER_improve_defensive_tactics.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_kriegsmarine_infantry"
+        texturefile = "gfx/interface/goals/GER/GER_kriegsmarine_infantry.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_national_redoubt"
+        texturefile = "gfx/interface/goals/GER/GER_national_redoubt.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_panzer_reform"
+        texturefile = "gfx/interface/goals/GER/GER_panzer_reform.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_rapid_officer_training"
+        texturefile = "gfx/interface/goals/GER/GER_rapid_officer_training.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_recall_reservists"
+        texturefile = "gfx/interface/goals/GER/GER_recall_reservists.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_resource_conservation_effort"
+        texturefile = "gfx/interface/goals/GER/GER_resource_conservation_effort.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_rocket_artillery1"
+        texturefile = "gfx/interface/goals/GER/GER_rocket_artillery1.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_rocket_artillery2"
+        texturefile = "gfx/interface/goals/GER/GER_rocket_artillery2.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_SS_Officers_Wehrmacht"
+        texturefile = "gfx/interface/goals/GER/GER_SS_Officers_Wehrmacht.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_volksgrenadier"
+        texturefile = "gfx/interface/goals/GER/GER_volksgrenadier.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_war_city_berlin"
+        texturefile = "gfx/interface/goals/GER/GER_war_city_berlin.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_wartime_commissions"
+        texturefile = "gfx/interface/goals/GER/GER_wartime_commissions.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_back_friedrich_fromm"
+        texturefile = "gfx/interface/goals/GER/GER_back_friedrich_fromm.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_back_ludwig_beck"
+        texturefile = "gfx/interface/goals/GER/GER_back_ludwig_beck.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_back_heinz_guderian"
+        texturefile = "gfx/interface/goals/GER/GER_back_heinz_guderian.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_nazi_counter_coup"
+        texturefile = "gfx/interface/goals/GER/GER_nazi_counter_coup.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_operation_valkyrie"
+        texturefile = "gfx/interface/goals/GER/GER_operation_valkyrie.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_guderian_plan"
+        texturefile = "gfx/interface/goals/GER/GER_guderian_plan.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_establish_new_leadership"
+        texturefile = "gfx/interface/goals/GER/GER_establish_new_leadership.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_establish_new_intelligence_service"
+        texturefile = "gfx/interface/goals/GER/GER_establish_new_intelligence_service.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_diplomatic_offensive"
+        texturefile = "gfx/interface/goals/GER/GER_diplomatic_offensive.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_covert_contact_allies"
+        texturefile = "gfx/interface/goals/GER/GER_covert_contact_allies.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_consolidate_power"
+        texturefile = "gfx/interface/goals/GER/GER_consolidate_power.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_join_allies"
+        texturefile = "gfx/interface/goals/GER/GER_join_allies.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_optimize_industrial_output"
+        texturefile = "gfx/interface/goals/GER/GER_optimize_industrial_output.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_ss_purge"
+        texturefile = "gfx/interface/goals/GER/GER_ss_purge.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_purge_valkyrie_conspirators"
+        texturefile = "gfx/interface/goals/GER/GER_purge_valkyrie_conspirators.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_rally_public_support"
+        texturefile = "gfx/interface/goals/GER/GER_rally_public_support.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_restructure_military_leadership"
+        texturefile = "gfx/interface/goals/GER/GER_restructure_military_leadership.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_scorched_earth_policy"
+        texturefile = "gfx/interface/goals/GER/GER_scorched_earth_policy.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_securing_loyalties"
+        texturefile = "gfx/interface/goals/GER/GER_securing_loyalties.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_separate_peace_allies"
+        texturefile = "gfx/interface/goals/GER/GER_separate_peace_allies.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_space_propaganda1"
+        texturefile = "gfx/interface/goals/GER/GER_space_propaganda1.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_space_propaganda2"
+        texturefile = "gfx/interface/goals/GER/GER_space_propaganda2.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_guderian_takes_command"
+        texturefile = "gfx/interface/goals/GER/GER_guderian_takes_command.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_women_in_workforce"
+        texturefile = "gfx/interface/goals/GER/GER_women_in_workforce.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_anti_tank_training"
+        texturefile = "gfx/interface/goals/GER/GER_anti_tank_training.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_bolster_eastern_front"
+        texturefile = "gfx/interface/goals/GER/GER_bolster_eastern_front.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_dismantle_camps"
+        texturefile = "gfx/interface/goals/GER/GER_dismantle_camps.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_defensive_innovations"
+        texturefile = "gfx/interface/goals/GER/GER_defensive_innovations.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_entrenchment_strategies"
+        texturefile = "gfx/interface/goals/GER/GER_entrenchment_strategies.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_ideological_training"
+        texturefile = "gfx/interface/goals/GER/GER_ideological_training.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_mobile_infantry_reform"
+        texturefile = "gfx/interface/goals/GER/GER_mobile_infantry_reform.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_propaganda_overdrive"
+        texturefile = "gfx/interface/goals/GER/GER_propaganda_overdrive.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_rally_public_support2"
+        texturefile = "gfx/interface/goals/GER/GER_rally_public_support2.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_sacrafice_for_fatherland"
+        texturefile = "gfx/interface/goals/GER/GER_sacrafice_for_fatherland.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_ss_expansion"
+        texturefile = "gfx/interface/goals/GER/GER_ss_expansion.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_urban_warfare_preparedness"
+        texturefile = "gfx/interface/goals/GER/GER_urban_warfare_preparedness.tga"
+    }

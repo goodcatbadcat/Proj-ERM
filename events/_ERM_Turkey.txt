@@ -1,0 +1,72 @@
+﻿##################
+# Turkish Events #
+##################
+
+add_namespace = turkey
+
+## Introduction Event ##
+country_event = {
+	id = turkey.0
+	immediate = { log = "[GetDateText]: [Root.GetName]: event sweden.0 FROM = [From.GetName]" }
+	title = turkey.0.t
+	desc = turkey.0.d
+	picture = GFX_report_event_
+
+	is_triggered_only = yes
+
+	option = {
+		name = turkey.0.a
+	}
+}
+
+# GER: We invite you to join the Axis, do you accept?
+country_event = {
+	id = turkey.1
+	title = turkey.1.t
+	desc = turkey.1.d
+	picture = GFX_report_event_
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = { days = 1 }
+	
+	# Join the Axis
+	option = {
+		name = turkey.1.a
+		ai_chance = { factor = 50 }
+		GER = { add_to_faction = TUR }
+		news_event = { id = world_news.15 }
+		set_global_flag = TUR_joins_axis
+	}
+	
+	# We prefer to keep our neutrality
+	option = {
+		name = turkey.1.b
+		ai_chance = { factor = 50 }
+		GER = { country_event = { id = turkey.1001 hours = 1 } }
+		set_global_flag = TUR_chooses_neutrality
+	}
+}
+
+# TUR: We Decline to Join the Axis!
+country_event = {
+	id = turkey.1001
+	title = turkey.1001.t
+	desc = turkey.1001.d
+	picture = GFX_report_event_
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = { days = 1 }
+	
+	# 
+	option = {
+		name = turkey.1001.a
+		add_opinion_modifier = { target = TUR modifier = GEN_declined_join_arms }
+	}
+}
+

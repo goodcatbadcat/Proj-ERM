@@ -1,0 +1,155 @@
+﻿#################
+# Soviet Events #
+#################
+
+add_namespace = soviet_union
+
+## Introduction Event ##
+country_event = {
+	id = soviet_union.0
+	immediate = { log = "[GetDateText]: [Root.GetName]: event soviet_union.0 FROM = [From.GetName]" }
+	title = soviet_union.0.t
+	desc = soviet_union.0.d
+	picture = GFX_report_event_
+
+	is_triggered_only = yes
+
+	option = {
+		name = soviet_union.0.a
+	}
+}
+
+# SOV: We've reached the first German territory!
+country_event = {
+	id = soviet_union.1
+	title = soviet_union.1.t
+	desc = soviet_union.1.d
+	picture = GFX_report_event_soviet_troops_east_prussia
+
+	fire_only_once = yes
+
+	trigger = {	
+		tag = SOV
+		has_war_with = GER
+		AND = {
+			OR = {
+				controls_province = 3288
+				controls_province = 281
+				controls_province = 3384
+				controls_province = 9327
+				controls_province = 11386
+				controls_province = 9372
+				controls_province = 6375
+				controls_province = 9346
+				controls_province = 6347
+				controls_province = 3295
+				controls_province = 243
+				controls_province = 279
+				controls_province = 3381
+				controls_province = 17
+				controls_province = 9532
+				controls_province = 11558
+				controls_province = 479
+				controls_province = 506
+				controls_province = 6464
+				controls_province = 9457
+				controls_province = 6512
+				controls_province = 3485
+				controls_province = 6534
+				controls_province = 11517
+				controls_province = 3514
+				controls_province = 514
+				controls_province = 573
+				controls_province = 6559
+				controls_province = 9471
+				controls_province = 9441
+				controls_province = 11404
+				controls_province = 586
+				controls_province = 3571
+				controls_province = 11497
+				controls_province = 532
+				controls_province = 732
+				controls_province = 6723
+				controls_province = 6552
+				controls_province = 9527
+				controls_province = 3718
+				controls_province = 6739
+				controls_province = 3700
+				controls_province = 9661
+				controls_province = 11630
+				controls_province = 9646
+				controls_province = 653
+				controls_province = 11612
+				controls_province = 3674
+				controls_province = 6673
+				controls_province = 671
+				controls_province = 11618
+				controls_province = 9633
+			}
+		}
+	}
+
+	mean_time_to_happen = { days = 1 }
+	
+	#
+	option = {
+		name = soviet_union.1.a
+		add_war_support = 0.05
+		add_political_power = 25
+		set_global_flag = SOV_reached_german_territory
+	}
+}
+
+# Parade German Troops Moscow
+country_event = {
+	id = ERM_soviet_union.2
+	title = ERM_soviet_union.2.t
+	desc = ERM_soviet_union.2.d
+	picture = GFX_report_event_operation_panzerfaust
+
+	fire_only_once = yes
+
+	trigger = {	
+		tag = SOV
+		AND = {
+			GER = {
+				casualties > 57000
+			}
+		}
+	}
+
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = ERM_soviet_union.2.a
+		add_war_support = 0.05
+		add_political_power = 50
+		news_event = { id = world_news.22 }
+	}
+}
+
+# Note of Protest to Bulgaria
+country_event = {
+	id = ERM_soviet_union.3
+	title = ERM_soviet_union.3.t
+	desc = ERM_soviet_union.3.d
+	picture = GFX_report_event_operation_panzerfaust
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = SOV
+		AND = {
+			BUL = {
+				is_in_faction_with = GER
+			}
+		}
+	}
+
+	mean_time_to_happen = { days = 10 }
+	
+	option = {
+		name = ERM_soviet_union.3.a
+		news_event = { id = world_news.23 }
+	}
+}

@@ -1,0 +1,202 @@
+on_actions = {
+	on_state_control_changed = {
+		if = {
+			limit = {
+				tag = GER
+				divisions_in_state = { state = FROM.FROM size > 0 }
+				FROM = {
+					original_tag = GER
+					has_government = fascism
+				}
+			}
+			FROM.FROM = {
+				set_state_flag = nazi_state_withdrawn
+				random_list = {
+					20 = {
+						set_state_flag = nazi_state_withdrawn1
+					}
+					20 = {
+						set_state_flag = nazi_state_withdrawn2
+					}
+					20 = {
+						set_state_flag = nazi_state_withdrawn3
+					}
+					20 = {
+						set_state_flag = nazi_state_withdrawn4
+					}
+					20 = {
+						set_state_flag = nazi_state_withdrawn5
+					}
+				}
+				state_event = { id = ERM_germany.46 trigger_for = controller }
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			if = {
+				limit = {
+					USA = {
+						is_ai = yes
+					}
+				}
+				USA = { 
+					add_timed_idea = {
+						add_ideas = { allies_on_offense }
+						idea = operation_overlord_bonus
+						days = 75
+					}
+				}
+			}
+			if = {
+				limit = {
+					ENG = {
+						is_ai = yes
+					}
+				}
+				ENG = { 
+					add_ideas = { allies_on_offense }
+					add_timed_idea = {
+						idea = operation_overlord_bonus
+						days = 75
+					}
+				}
+			}
+			if = {
+				limit = {
+					SOV = {
+						is_ai = yes
+					}
+				}
+				SOV = { 
+					add_timed_idea = {
+						add_ideas = { allies_on_offense }
+						idea = operation_bagration_bonus
+						days = 50
+					}
+				}
+			}
+			SOV = {
+				TAN = {
+					add_to_war = {
+						targeted_alliance = SOV
+						enemy = GER
+					}
+				}
+				MON = {
+					add_to_war = {
+						targeted_alliance = SOV
+						enemy = GER
+					}
+				}
+				YUG = {
+					add_to_war = {
+						targeted_alliance = SOV
+						enemy = GER
+					}
+				}
+				ALB = {
+					add_to_war = {
+						targeted_alliance = SOV
+						enemy = GER
+					}
+				}
+			}
+			GER = {
+				### GAME HISTORY ###
+				
+				set_global_flag = GER_operation_margarethe
+				
+				create_faction = Axis
+				
+				add_to_faction = ITA
+				add_to_faction = CRO
+				add_to_faction = HUN
+				add_to_faction = ROM
+				add_to_faction = BUL
+				add_to_faction = SLO
+				
+				set_state_controller = 44
+				
+				### EVENT ###
+				country_event = {
+					id = ERM_germany.0
+				}
+			}
+			HOL = {
+				set_state_controller = 309
+			}
+			ENG = {
+				set_state_controller = 559
+				set_state_controller = 844
+			}
+			ETH = {
+				set_state_controller = 835
+				set_state_controller = 908
+				set_state_controller = 842
+				set_state_controller = 843
+				set_state_controller = 841
+				set_state_controller = 840
+				set_state_controller = 271
+				set_state_controller = 839
+				set_state_controller = 838
+				set_state_controller = 837
+				set_state_controller = 836
+			}
+			BEL = {
+				set_state_controller = 295
+				set_state_controller = 538
+				set_state_controller = 718
+				set_state_controller = 768
+				set_state_controller = 888
+				set_state_controller = 890
+				set_state_controller = 889
+				set_state_controller = 769
+			}
+			FRA = {
+				set_state_controller = 1
+			}
+			USA = {
+				set_state_controller = 114
+				set_state_controller = 101
+			}
+			USA = {
+				create_faction = Allies
+				
+				# Europe
+				add_to_faction = ENG
+				add_to_faction = NOR
+				add_to_faction = BEL
+				add_to_faction = HOL
+				add_to_faction = FRA
+				add_to_faction = LUX
+				add_to_faction = GRE
+				add_to_faction = DEN
+				add_to_faction = POL
+				
+				# Commonwealth
+				add_to_faction = CAN
+				add_to_faction = AST
+				add_to_faction = NZL
+				add_to_faction = SAF
+				add_to_faction = MAL
+				
+				# North America
+				add_to_faction = MEX
+
+				# LATAM
+				add_to_faction = BRA
+
+				# Asia
+				add_to_faction = IRQ
+				add_to_faction = BHU
+				add_to_faction = NEP
+				add_to_faction = PHI
+				add_to_faction = INS
+				
+				# Africa
+				add_to_faction = ETH
+			}
+		}
+	}
+}

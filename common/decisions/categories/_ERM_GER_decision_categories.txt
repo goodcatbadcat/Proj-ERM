@@ -1,0 +1,153 @@
+##########################
+#### GERMAN DECISIONS ####
+##########################
+
+#########################
+# Operation Panzerfaust #
+#########################
+
+GER_operation_panzerfaust = {
+	icon = decision_gre_faction_management_category
+	picture = GFX_decision_cat_picture_GER_operation_panzerfaust
+
+	allowed = {
+		original_tag = GER
+	}
+	
+	visible = {
+		has_global_flag = HUN_negotiating_with_SOV
+		HUN = {
+			has_war_with = SOV
+			is_in_faction_with = GER
+		}
+		NOT = {
+			HUN = {
+				has_capitulated = yes
+			}
+		}
+	}
+}
+
+###########################
+# Operation Margarethe II #
+###########################
+
+GER_operation_margarethe_II = {
+	icon = decision_gre_faction_management_category
+	picture = GFX_decision_cat_picture_GER_operation_margarethe_II
+
+	allowed = {
+		original_tag = GER
+	}
+	
+	visible = {
+		has_global_flag = ROM_coup_plans
+		ROM = {
+			has_war_with = SOV
+			is_in_faction_with = GER
+		}
+		NOT = {
+			ROM = {
+				has_capitulated = yes
+			}
+		}
+	}
+}
+
+###############################
+# Emergency Fighter Programme #
+###############################
+
+GER_emergency_fighter_programme = {
+	icon = decision_gre_faction_management_category
+	picture = GFX_decision_cat_picture_GER_emergency_fighter_program
+
+	allowed = {
+		original_tag = GER
+	}
+	
+	visible = {
+		date > 1944.7.3
+	}
+}
+
+######################
+# East or West Focus #
+######################
+
+GER_reinforce_east_or_west = {
+	icon = decision_gre_faction_management_category
+	picture = GFX_decision_cat_picture_GER_east_west
+
+	allowed = {
+		original_tag = GER
+	}
+	
+	visible = {
+		original_tag = GER
+		has_war_with = USA
+		has_war_with = SOV
+		has_country_flag = GER_east_vs_west
+		NOT = {
+			OR = {
+				has_country_flag = GER_reinforces_east
+				has_country_flag = GER_reinforces_west
+			}
+		}
+	}
+}
+
+###############
+# Flak Towers #
+###############
+
+GER_flak_towers = {
+	icon = decision_gre_faction_management_category
+	picture = GFX_decision_cat_picture_GER_flak_towers
+
+	allowed = {
+		original_tag = GER
+	}
+	
+	visible = {
+		original_tag = GER
+		has_completed_focus = GER_flak_towers
+		has_war = yes
+	}
+}
+
+#####################
+# FUHRER DIRECTIVES #
+#####################
+
+GER_fuhrer_directive = {
+	icon = decision_gre_faction_management_category
+	picture = GFX_decision_cat_picture_GER_fuhrer_directive
+
+	allowed = {
+		original_tag = GER
+	}
+	
+	visible = {
+		original_tag = GER
+		has_war = yes
+	}
+}
+
+######################
+# ESTABLISH FESTUNGS #
+######################
+
+GER_festung_category = {
+	icon = decision_gre_faction_management_category
+	picture = GFX_decision_cat_picture_GER_festung
+
+	allowed = {
+		original_tag = GER
+	}
+	
+	visible = {
+		original_tag = GER
+		has_war = yes
+	}
+}

@@ -1,0 +1,128 @@
+leader_traits = {
+
+###################################################################
+###################### FOREIGN MINISTER ###########################
+###################################################################
+
+	FM_biased_intellectual = {
+		random = yes
+		sprite = 13
+		opinion_gain_monthly_factor = 0.001
+		political_power_factor = 0.05
+		trade_opinion_factor = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	FM_gentleman_pacifist = {
+		sprite = 13
+		random = yes
+		ai_focus_peaceful_factor = 0.5
+		opinion_gain_monthly_same_ideology_factor = 1.0
+		trade_opinion_factor = 0.10
+		
+		decryption = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	FM_cloak_n_dagger_schemer = {
+		sprite = 13
+		random = yes
+		ai_call_ally_desire_factor = 30
+		ai_focus_aggressive_factor = 0.5
+		decryption = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	FM_smooth_talking_charmer = {
+		random = yes
+		sprite = 13
+		trade_opinion_factor = 0.25
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	FM_ideological_crusader = {
+		random = yes
+		sprite = 13
+		opinion_gain_monthly_same_ideology_factor = 1.0
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	FM_compassionate_gentleman = {
+		random = yes
+		sprite = 13
+		opinion_gain_monthly_factor = 0.15
+		political_power_gain = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	FM_compassionate_woman = {
+		random = yes
+		sprite = 13
+		opinion_gain_monthly_factor = 0.15
+		political_power_gain = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	FM_iron_fisted_brute = {
+		sprite = 13 
+		ai_focus_aggressive_factor = 0.5
+		justify_war_goal_time = -0.25
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	FM_apologetic_clerk = {
+		random = yes
+		sprite = 13
+		political_power_factor = -0.10
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	FM_general_staffer = {
+		sprite = 13
+		justify_war_goal_time = -0.1
+		ai_get_ally_desire_factor = 30
+		ai_focus_defense_factor = 0.25
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	FM_great_compromiser = {
+		sprite = 13
+		ai_get_ally_desire_factor = 10
+		ai_focus_peaceful_factor = 0.5
+		trade_opinion_factor = 0.2
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

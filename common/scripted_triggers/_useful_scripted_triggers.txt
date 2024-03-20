@@ -1,0 +1,305 @@
+# this is a check to see if a major has at least 50 factories
+# which means it's not just a faction leader (which anyone can be)
+is_actual_major = {
+	AND = {
+		is_major = yes
+		OR = {
+			AND = {
+				num_of_factories > 49
+				date < 1914.1.1
+			}
+			AND = {
+				num_of_factories > 74
+				NOT = { date < 1940.1.1 }
+				date < 1915.1.1
+			}
+			AND = {
+				num_of_factories > 99
+				NOT = { date < 1942.1.1 }
+				date < 1916.1.1
+			}
+			AND = {
+				num_of_factories > 124
+				NOT = { date < 1944.1.1 }
+				date < 1917.1.1
+			}
+			num_of_factories > 149
+			tag = GER
+			tag = USA
+			tag = ENG
+			tag = AUH
+			tag = RUS
+			tag = ITA
+			tag = FRA
+			tag = JAP
+		}
+	}
+}
+
+allies_breached_west_wall = {
+	AND = {
+		OR = {
+			50 = {
+				OR = {
+					is_controlled_by = USA
+					CONTROLLER = {
+						is_in_faction_with = USA
+					}
+				}
+			}
+			42 = {
+				OR = {
+					is_controlled_by = USA
+					CONTROLLER = {
+						is_in_faction_with = USA
+					}
+				}
+			}
+			51 = {
+				OR = {
+					is_controlled_by = USA
+					CONTROLLER = {
+						is_in_faction_with = USA
+					}
+				}
+			}
+			36 = {
+				OR = {
+					is_controlled_by = USA
+					CONTROLLER = {
+						is_in_faction_with = USA
+					}
+				}
+			}
+		}
+	}
+}
+
+germany_holds_vistula = {
+	AND = {
+		GER = {
+			controls_province = 362
+			controls_province = 389
+			controls_province = 3324
+			controls_province = 279
+			controls_province = 243
+			controls_province = 6401
+			controls_province = 548
+			controls_province = 11492
+			controls_province = 3544
+			controls_province = 6511
+			controls_province = 3458 
+			controls_province = 562
+			controls_province = 3497
+			controls_province = 11430
+			controls_province = 9427
+			controls_province = 6464
+		}
+	}
+}
+
+germany_holds_pommern = {
+	AND = {
+		GER ={
+			controls_province = 9263
+			controls_province = 11316
+			controls_province = 11288 
+			controls_province = 9306
+			controls_province = 9277
+			controls_province = 6309
+			controls_province = 6390
+		}
+	}
+}
+
+germany_holds_oder = {
+	AND = {
+		GER ={
+			controls_province = 6282
+			controls_province = 3207
+			controls_province = 9496 
+			controls_province = 3572
+			controls_province = 3438
+			controls_province = 6595
+			controls_province = 552
+			controls_province = 9570
+			controls_province = 6512
+			controls_province = 9457
+			controls_province = 3583
+		}
+	}
+}
+
+allies_west_foothold = {
+	AND = {
+		OR = {
+			15 = {
+				OR = {
+					is_controlled_by = USA
+					CONTROLLER = {
+						is_in_faction_with = USA
+					}
+				}
+			}
+			785 = {
+				OR = {
+					is_controlled_by = USA
+					CONTROLLER = {
+						is_in_faction_with = USA
+					}
+				}
+			}
+			14 = {
+				OR = {
+					is_controlled_by = USA
+					CONTROLLER = {
+						is_in_faction_with = USA
+					}
+				}
+			}
+			30 = {
+				OR = {
+					is_controlled_by = USA
+					CONTROLLER = {
+						is_in_faction_with = USA
+					}
+				}
+			}
+			23 = {
+				OR = {
+					is_controlled_by = USA
+					CONTROLLER = {
+						is_in_faction_with = USA
+					}
+				}
+			}
+			19 = {
+				OR = {
+					is_controlled_by = USA
+					CONTROLLER = {
+						is_in_faction_with = USA
+					}
+				}
+			}
+			735 = {
+				OR = {
+					is_controlled_by = USA
+					CONTROLLER = {
+						is_in_faction_with = USA
+					}
+				}
+			}
+			21 = {
+				OR = {
+					is_controlled_by = USA
+					CONTROLLER = {
+						is_in_faction_with = USA
+					}
+				}
+			}
+			22 = {
+				OR = {
+					is_controlled_by = USA
+					CONTROLLER = {
+						is_in_faction_with = USA
+					}
+				}
+			}
+			851 = {
+				OR = {
+					is_controlled_by = USA
+					CONTROLLER = {
+						is_in_faction_with = USA
+					}
+				}
+			}
+			6 = {
+				OR = {
+					is_controlled_by = USA
+					CONTROLLER = {
+						is_in_faction_with = USA
+					}
+				}
+			}
+			35 = {
+				OR = {
+					is_controlled_by = USA
+					CONTROLLER = {
+						is_in_faction_with = USA
+					}
+				}
+			}
+			7 = {
+				OR = {
+					is_controlled_by = USA
+					CONTROLLER = {
+						is_in_faction_with = USA
+					}
+				}
+			}
+			36 = {
+				OR = {
+					is_controlled_by = USA
+					CONTROLLER = {
+						is_in_faction_with = USA
+					}
+				}
+			}
+		}
+	}
+}
+
+allies_reached_rhine = {
+	AND = {
+		OR = {
+			51 = {
+				OR = {
+					is_controlled_by = USA
+					CONTROLLER = {
+						is_in_faction_with = USA
+					}
+				}
+			}
+			57 = {
+				OR = {
+					is_controlled_by = USA
+					CONTROLLER = {
+						is_in_faction_with = USA
+					}
+				}
+			}
+			55 = {
+				OR = {
+					is_controlled_by = USA
+					CONTROLLER = {
+						is_in_faction_with = USA
+					}
+				}
+			}
+			50 = {
+				OR = {
+					is_controlled_by = USA
+					CONTROLLER = {
+						is_in_faction_with = USA
+					}
+				}
+			}
+			42 = {
+				OR = {
+					is_controlled_by = USA
+					CONTROLLER = {
+						is_in_faction_with = USA
+					}
+				}
+			}
+			28 = {
+				OR = {
+					is_controlled_by = USA
+					CONTROLLER = {
+						is_in_faction_with = USA
+					}
+				}
+			}
+		}
+	}
+}

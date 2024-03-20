@@ -1,0 +1,2055 @@
+##############################
+# BRITISH DIVISION TEMPLATES #
+##############################
+
+division_template = {
+	name = "Infantry Division"			
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }	
+		infantry = { x = 1 y = 3 }	
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 2 y = 3 }
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+		artillery_brigade = { x = 3 y = 2 }
+	}
+	support = {
+       	artillery = { x = 0 y = 0 } 
+		anti_tank = { x = 0 y = 1 }
+		recon = { x = 0 y = 2 }
+		engineer = { x = 0 y = 3 }
+		field_hospital = { x = 0 y = 4 }
+	}
+	priority = 25
+}
+
+division_template = {
+	name = "Garrison Division"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+        military_police = { x = 0 y = 0 }
+	}
+	priority = 10
+}
+
+## Paratroopers ## 
+division_template = { 						
+	name = "Airborne Division"				
+
+	regiments = {
+		paratrooper = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 1 }
+		paratrooper = { x = 0 y = 2 }
+		paratrooper = { x = 0 y = 3 }
+		paratrooper = { x = 1 y = 0 }
+		paratrooper = { x = 1 y = 1 }
+		paratrooper = { x = 1 y = 2 }
+		paratrooper = { x = 1 y = 3 }
+		paratrooper = { x = 2 y = 0 }
+		paratrooper = { x = 2 y = 1 }
+		paratrooper = { x = 2 y = 2 }
+		paratrooper = { x = 2 y = 3 }
+		paratrooper = { x = 3 y = 0 }
+		paratrooper = { x = 3 y = 1 }
+		paratrooper = { x = 3 y = 2 }
+		paratrooper = { x = 3 y = 3 }
+		artillery_brigade = { x = 4 y = 0 }
+		artillery_brigade = { x = 4 y = 1 }
+		anti_tank_brigade = { x = 4 y = 2 }
+		anti_air_brigade = { x = 4 y = 3 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 } 
+		anti_tank = { x = 0 y = 1 }
+		recon = { x = 0 y = 2 }
+		engineer = { x = 0 y = 3 }
+		anti_air = { x = 0 y = 4 }
+	}
+	priority = 2
+}
+
+## Marine Division ## 
+division_template = {
+	name = "Royal Marine Division" 	
+
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 0 y = 2 }
+		marine = { x = 0 y = 3 }
+		marine = { x = 1 y = 0 }
+		marine = { x = 1 y = 1 }
+		marine = { x = 1 y = 2 }
+		marine = { x = 1 y = 3 }
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+		artillery_brigade = { x = 3 y = 2 }
+		light_armor = { x = 4 y = 0 }
+	}
+	support = {
+		recon = { x = 0 y = 0 } 
+		engineer = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+		field_hospital = { x = 0 y = 3 } 
+	}
+	priority = 5
+}
+
+######################
+# MOTORISED VARIANTS #
+######################
+
+division_template = {
+	name = "Motorised Division"			
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 0 y = 3 }
+        motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }	
+		motorized = { x = 1 y = 3 }	
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+		motorized = { x = 2 y = 3 }
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+		artillery_brigade = { x = 3 y = 2 }
+	}
+	support = {
+       	artillery = { x = 0 y = 0 } 
+		anti_tank = { x = 0 y = 1 }
+		recon = { x = 0 y = 2 }
+		engineer = { x = 0 y = 3 }
+		field_hospital = { x = 0 y = 4 }
+	}
+	priority = 50
+}
+
+division_template = {
+	name = "Mechanized Division"			
+
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 2 }
+		mechanized = { x = 0 y = 3 }
+        mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+		mechanized = { x = 1 y = 2 }	
+		mechanized = { x = 1 y = 3 }	
+		mechanized = { x = 2 y = 0 }
+		mechanized = { x = 2 y = 1 }
+		mechanized = { x = 2 y = 2 }
+		mechanized = { x = 2 y = 3 }
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+		artillery_brigade = { x = 3 y = 2 }
+	}
+	support = {
+       	artillery = { x = 0 y = 0 } 
+		anti_tank = { x = 0 y = 1 }
+		recon = { x = 0 y = 2 }
+		engineer = { x = 0 y = 3 }
+		field_hospital = { x = 0 y = 4 }
+	}
+	priority = 35
+}
+
+####################
+# ARMORED VARIANTS #
+####################
+
+division_template = {
+	name = "Armored Division" 		
+
+	regiments = {
+		heavy_armor = { x = 0 y = 0 }	
+	   	medium_armor = { x = 0 y = 1 }
+		medium_armor = { x = 0 y = 2 }	
+		medium_armor = { x = 0 y = 3 }	
+		mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+		mechanized = { x = 1 y = 2 }
+		mechanized = { x = 1 y = 3 }
+	    medium_tank_destroyer_brigade = { x = 2 y = 0 }
+		medium_sp_anti_air_brigade = { x = 2 y = 1 }
+		mot_artillery_brigade = { x = 3 y = 0 }
+	    mot_artillery_brigade = { x = 3 y = 1 }
+		mot_artillery_brigade = { x = 3 y = 2 }
+		mot_anti_tank_brigade = { x = 4 y = 0 }
+		mot_anti_tank_brigade = { x = 4 y = 1 }
+	}
+	support = {
+       	artillery = { x = 0 y = 0 } 
+		engineer = { x = 0 y = 1 }
+		recon = { x = 0 y = 2 }
+		maintenance_company = { x = 0 y = 3 }
+		signal_company = { x = 0 y = 4 }
+	}
+	priority = 50
+}
+
+division_template = {
+	name = "Heavy Tank Brigade"			
+
+	regiments = {
+		heavy_armor = { x = 0 y = 0 }
+		heavy_armor = { x = 0 y = 1 }
+		heavy_armor = { x = 0 y = 2 }
+		heavy_armor = { x = 0 y = 3 }
+        motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }	
+		artillery_brigade = { x = 2 y = 0 }
+		artillery_brigade = { x = 2 y = 1 }
+	}
+	support = {
+       	artillery = { x = 0 y = 0 } 
+		engineer = { x = 0 y = 1 }
+		recon = { x = 0 y = 2 }
+		maintenance_company = { x = 0 y = 3 }
+		signal_company = { x = 0 y = 4 }
+	}
+	priority = 10
+}
+
+division_template = {
+	name = "Mixed Armored Division"			
+
+	regiments = {
+		medium_armor = { x = 0 y = 0 }
+		medium_armor = { x = 0 y = 1 }
+		medium_armor = { x = 0 y = 2 }
+		medium_armor = { x = 0 y = 3 }
+        motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }	
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+	}
+	support = {
+       	artillery = { x = 0 y = 0 } 
+		engineer = { x = 0 y = 1 }
+		recon = { x = 0 y = 2 }
+		maintenance_company = { x = 0 y = 3 }
+		signal_company = { x = 0 y = 4 }
+	}
+	priority = 35
+}
+
+####################
+# CAVALRY VARIANTS #
+####################
+
+## Cavalry Division ##
+division_template = {
+	name = "Cavalry Division"
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+		cavalry = { x = 2 y = 2 }
+	}
+	support = {
+	 	artillery = { x = 0 y = 0 } 
+		recon = { x = 0 y = 1 }
+	}
+	priority = 0
+}
+
+## Cavalry Brigade ##
+division_template = {
+	name = "Cavalry Brigade"
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+	}
+	support = {
+	 	military_police = { x = 0 y = 0 } 
+	}
+	priority = 0
+}
+
+##########################
+# EXPEDITIONARY VARIANTS #
+##########################
+
+###########
+# BELGIAN #
+###########
+
+## Motorised ##
+division_template = {
+	name = "Belgian Motorised Brigade"			
+	is_locked = yes
+	
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		artillery_brigade = { x = 1 y = 0 }
+		
+	}
+	support = {
+       	anti_tank = { x = 0 y = 0 } 
+		recon = { x = 0 y = 1 }
+		field_hospital = { x = 0 y = 2 }
+	}
+	priority = 0
+}
+
+############
+# CANADIAN #
+############
+
+## Motorised ##
+division_template = {
+	name = "Canadian Motorised Division"			
+	is_locked = yes
+	
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+        motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }	
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+		artillery_brigade = { x = 3 y = 2 }
+		mot_anti_tank_brigade = { x = 4 y = 0 }
+		mot_anti_air_brigade = { x = 4 y = 1 }
+		
+	}
+	support = {
+       	artillery = { x = 0 y = 0 } 
+		anti_tank = { x = 0 y = 1 }
+		recon = { x = 0 y = 2 }
+		engineer = { x = 0 y = 3 }
+		field_hospital = { x = 0 y = 4 }
+	}
+	priority = 0
+}
+
+
+## Armored ##
+division_template = {
+	name = "Canadian Armored Division"			
+	is_locked = yes
+	
+	regiments = {
+		medium_armor = { x = 0 y = 0 }
+		medium_armor = { x = 0 y = 1 }
+		medium_armor = { x = 0 y = 2 }
+		medium_armor = { x = 0 y = 3 }
+        motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }	
+		motorized = { x = 1 y = 3 }	
+		artillery_brigade = { x = 2 y = 0 }
+		artillery_brigade = { x = 2 y = 1 }
+		artillery_brigade = { x = 2 y = 3 }
+		mot_anti_tank_brigade = { x = 3 y = 0 }
+		mot_anti_air_brigade = { x = 3 y = 1 }
+	}
+	support = {
+       	artillery = { x = 0 y = 0 } 
+		engineer = { x = 0 y = 1 }
+		recon = { x = 0 y = 2 }
+		maintenance_company = { x = 0 y = 3 }
+		signal_company = { x = 0 y = 4 }
+	}
+	priority = 0
+}
+
+#########
+# DUTCH #
+#########
+
+## Motorised ##
+division_template = {
+	name = "Dutch Motorised Brigade"			
+	is_locked = yes
+	
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		artillery_brigade = { x = 1 y = 0 }
+		
+	}
+	support = {
+       	anti_tank = { x = 0 y = 0 } 
+		recon = { x = 0 y = 1 }
+		field_hospital = { x = 0 y = 2 }
+	}
+	priority = 0
+}
+
+###############
+# NEW ZEALAND #
+###############
+
+## Armored ##
+division_template = {
+	name = "NZ Armored Division"			
+	is_locked = yes
+	regiments = {
+		medium_armor = { x = 0 y = 0 }
+		medium_armor = { x = 0 y = 1 }
+		medium_armor = { x = 0 y = 2 }
+		medium_armor = { x = 0 y = 3 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }	
+		infantry = { x = 1 y = 3 }	
+		artillery_brigade = { x = 2 y = 0 }
+		artillery_brigade = { x = 2 y = 1 }
+	}
+	support = {
+       	artillery = { x = 0 y = 0 } 
+		engineer = { x = 0 y = 1 }
+		recon = { x = 0 y = 2 }
+		maintenance_company = { x = 0 y = 3 }
+		signal_company = { x = 0 y = 4 }
+	}
+	priority = 0
+}
+
+##########
+# POLISH #
+##########
+
+## Armored ##
+division_template = {
+	name = "Polish Armored Division"			
+	is_locked = yes
+	regiments = {
+		medium_armor = { x = 0 y = 0 }
+		medium_armor = { x = 0 y = 1 }
+		medium_armor = { x = 0 y = 2 }
+		medium_armor = { x = 0 y = 3 }
+        motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }	
+		artillery_brigade = { x = 2 y = 0 }
+		artillery_brigade = { x = 2 y = 1 }
+		mot_anti_tank_brigade = { x = 3 y = 0 }
+		mot_anti_air_brigade = { x = 3 y = 1 }
+	}
+	support = {
+       	artillery = { x = 0 y = 0 } 
+		engineer = { x = 0 y = 1 }
+		recon = { x = 0 y = 2 }
+		maintenance_company = { x = 0 y = 3 }
+		signal_company = { x = 0 y = 4 }
+	}
+	priority = 0
+}
+
+## Motorised ##
+
+division_template = {
+	name = "Polish Motorised Division"			
+	is_locked = yes
+	
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+        motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }	
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+		mot_artillery_brigade = { x = 3 y = 0 }
+		mot_artillery_brigade = { x = 3 y = 1 }
+		mot_artillery_brigade = { x = 4 y = 0 }
+		mot_anti_air_brigade = { x = 4 y = 1 }
+	}
+	support = {
+       	artillery = { x = 0 y = 0 } 
+		anti_tank = { x = 0 y = 1 }
+		recon = { x = 0 y = 2 }
+		engineer = { x = 0 y = 3 }
+		signal_company = { x = 0 y = 4 }
+	}
+	priority = 0
+}
+
+## Paratroopers ## 
+division_template = { 						
+	name = "Polish Airborne Division"				
+	is_locked = yes
+	regiments = {
+		paratrooper = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 1 }
+		paratrooper = { x = 0 y = 2 }
+		paratrooper = { x = 1 y = 0 }
+		paratrooper = { x = 1 y = 1 }
+		paratrooper = { x = 1 y = 2 }
+		paratrooper = { x = 2 y = 0 }
+		paratrooper = { x = 2 y = 1 }
+		paratrooper = { x = 2 y = 2 }
+		mot_artillery_brigade = { x = 4 y = 0 }
+		mot_anti_tank_brigade = { x = 4 y = 1 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 } 
+		anti_tank = { x = 0 y = 1 }
+		recon = { x = 0 y = 2 }
+		signal_company = { x = 0 y = 3 }
+		field_hospital = { x = 0 y = 4 }
+	}
+	priority = 0
+}
+
+###################
+# ORDER OF BATTLE #
+###################
+
+units = {
+
+	###########
+	# BRITAIN #
+	###########
+	
+	division = {	
+		name = "45th 'Wessex' Motorized Div."
+		location = 6489
+		division_template = "Motorised Division"		
+		force_equipment_variants = { infantry_equipment_3 = { owner = "ENG" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 1.0
+	}	
+	division = {	
+		name = "47th 'London' Motorized Div."
+		location = 6489
+		division_template = "Motorised Division"		
+		force_equipment_variants = { infantry_equipment_3 = { owner = "ENG" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 1.0
+	}	
+	division = {	
+		name = "48th 'South Midlands' Motorized Div."
+		location = 6489
+		division_template = "Motorised Division"		
+		force_equipment_variants = { infantry_equipment_3 = { owner = "ENG" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 1.0
+	}	
+	##
+	division = {	
+		name = "61st 'South Midland' Motorized Div."
+		location = 540
+		division_template = "Motorised Division"		
+		force_equipment_variants = { infantry_equipment_3 = { owner = "ENG" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 1.0
+	}	
+	##
+	division = {	
+		name = "59th 'Staffordshire' Motorized Div."
+		location = 9458
+		division_template = "Motorised Division"		
+		force_equipment_variants = { infantry_equipment_3 = { owner = "ENG" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 1.0
+	}	
+	division = {	
+		name = "76th Motorized Div."
+		location = 9458
+		division_template = "Motorised Division"		
+		force_equipment_variants = { infantry_equipment_3 = { owner = "ENG" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 1.0
+	}	
+	division = {	
+		name = "80th 'Reserve' Motorized Div."
+		location = 9458
+		division_template = "Motorised Division"		
+		force_equipment_variants = { infantry_equipment_3 = { owner = "ENG" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 1.0
+	}	
+	##
+	division = {	
+		name = "Guards Armored Division"
+		location = 3501
+		division_template = "Armored Division"	
+		force_equipment_variants = { infantry_equipment_3 = { owner = "ENG" } }
+		force_equipment_variants = { medium_tank_equipment_2 = { owner = "ENG" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 1.0
+	}	
+	##
+	division = {	
+		name = "1st Polish Armored Division"
+		location = 6103
+		division_template = "Polish Armored Division"	
+		force_equipment_variants = { infantry_equipment_3 = { owner = "ENG" } }
+		force_equipment_variants = { medium_tank_equipment_2 = { owner = "ENG" } }			
+		start_experience_factor = 0.85
+		start_equipment_factor = 1.0
+	}
+	division = {	
+		name = "Polish Parachute Brigade"
+		location = 6103
+		division_template = "Polish Airborne Division"	
+		force_equipment_variants = { infantry_equipment_3 = { owner = "ENG" } }	
+		start_experience_factor = 0.85
+		start_equipment_factor = 1.0
+	}	
+	division = {	
+		name = "1st Airborne Division 'Red Devils'"
+		location = 6103
+		division_template = "Airborne Division"		
+		force_equipment_variants = { infantry_equipment_3 = { owner = "ENG" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 1.0
+	}
+	division = {	
+		name = "77th Motorized Div."
+		location = 6103
+		division_template = "Motorised Division"		
+		force_equipment_variants = { infantry_equipment_3 = { owner = "ENG" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 1.0
+	}
+	##
+	division = {	
+		name = "2nd Canadian Infantry Division (mot)"
+		location = 6221
+		division_template = "Canadian Motorised Division"	
+		force_equipment_variants = { infantry_equipment_3 = { owner = "ENG" } }	
+		start_experience_factor = 0.45
+		start_equipment_factor = 1.0
+	}
+	division = {	
+		name = "4th Canadian Armored Division"
+		location = 6221
+		division_template = "Canadian Armored Division"	
+		force_equipment_variants = { infantry_equipment_3 = { owner = "ENG" } }	
+		force_equipment_variants = { medium_tank_equipment_2 = { owner = "ENG" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 1.0
+	}
+	##
+	division = {	
+		name = "38th 'Welsh' Motorized Div."
+		location = 6384
+		division_template = "Motorised Division"		
+		force_equipment_variants = { infantry_equipment_3 = { owner = "ENG" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 1.0
+	}
+	division = {	
+		name = "53rd 'Welsh' Motorized Div."
+		location = 6384
+		division_template = "Motorised Division"		
+		force_equipment_variants = { infantry_equipment_3 = { owner = "ENG" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 1.0
+	}
+	division = {	
+		name = "55th 'West Lancashire' Motorized Div."
+		location = 6384
+		division_template = "Motorised Division"		
+		force_equipment_variants = { infantry_equipment_3 = { owner = "ENG" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 1.0
+	}
+	##
+	division = {	
+		name = "9th Armored Division"
+		location = 9269
+		division_template = "Armored Division"	
+		force_equipment_variants = { infantry_equipment_3 = { owner = "ENG" } }
+		force_equipment_variants = { medium_tank_equipment_2 = { owner = "ENG" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 1.0
+	}
+	division = {	
+		name = "Royal Netherlands Infantry Brigade (mot)"
+		location = 9269 
+		division_template = "Dutch Motorised Brigade"		
+		force_equipment_variants = { infantry_equipment_3 = { owner = "ENG" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 1.0
+	}
+	division = {	
+		name = "1st Belgian Infantry Brigade 'Piron Brigade'"
+		location = 9269 
+		division_template = "Belgian Motorised Brigade"		
+		force_equipment_variants = { infantry_equipment_3 = { owner = "ENG" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 1.0
+	}
+	##
+	division = {	
+		name = "52nd 'Lowlands' Motorized Div."
+		location = 9392
+		division_template = "Motorised Division"		
+		force_equipment_variants = { infantry_equipment_3 = { owner = "ENG" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 1.0
+	}
+	
+	############
+	# NORMANDY #
+	############
+	
+	## Caen ##
+	division = {	
+		name = "15th 'Scottish' Motorized Div."
+		location = 11535
+		division_template = "Motorised Division"		
+		force_equipment_variants = { infantry_equipment_3 = { owner = "ENG" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 1.0
+	}	
+	division = {	
+		name = "43rd 'Wessex' Motorized Div."
+		location = 11535
+		division_template = "Motorised Division"		
+		force_equipment_variants = { infantry_equipment_3 = { owner = "ENG" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 1.0
+	}
+	division = {	
+		name = "49th 'West Riding' Motorized Div."
+		location = 11535
+		division_template = "Motorised Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "ENG" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 1.0
+	}
+	division = {	
+		name = "50th 'Northumbrian' Motorized Div."
+		location = 6599
+		division_template = "Motorised Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "ENG" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 1.0
+	}
+	division = {	
+		name = "51st 'Highland' Motorized Div."
+		location = 6599
+		division_template = "Motorised Division"	
+		force_equipment_variants = { infantry_equipment_3 = { owner = "ENG" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 1.0
+	}
+	division = {	
+		name = "3rd Motorized Infantry Division"
+		location = 6599
+		division_template = "Mixed Armored Division"	
+		force_equipment_variants = { infantry_equipment_3 = { owner = "ENG" } }
+		force_equipment_variants = { medium_tank_equipment_2 = { owner = "ENG" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 1.0
+	}	
+	division = {	
+		name = "6th Airborne Division 'Red Devils'"
+		location = 6599
+		division_template = "Airborne Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "ENG" } }
+		start_experience_factor = 0.75
+		start_equipment_factor = 1.0
+	}	
+	division = {	
+		name = "7th Armored Division 'Desert Rats'"
+		location = 11535
+		division_template = "Armored Division"
+		force_equipment_variants = { infantry_equipment_3 = { owner = "ENG" } }
+		force_equipment_variants = { medium_tank_equipment_2 = { owner = "ENG" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 1.0
+	}	
+	division = {	
+		name = "11th Armored Division"
+		location = 6599
+		division_template = "Armored Division"		
+		force_equipment_variants = { infantry_equipment_3 = { owner = "ENG" } }
+		force_equipment_variants = { medium_tank_equipment_2 = { owner = "ENG" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 1.0
+	}	
+	division = {	
+		name = "31st Army Tank Brigade"
+		location = 11535
+		division_template = "Armored Division"		
+		force_equipment_variants = { infantry_equipment_3 = { owner = "ENG" } }
+		force_equipment_variants = { medium_tank_equipment_2 = { owner = "ENG" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 1.0
+	}
+	
+
+	#########
+	# ITALY #
+	#########
+	
+	## Garrisons ##
+	division = {	
+		name = "Naples Garrison"
+		location = 819
+		division_template = "Garrison Division"	
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+		start_experience_factor = 0.35
+		start_equipment_factor = 1.0
+	}
+	division = {	
+		name = "Messina Garrison"
+		location = 4159
+		division_template = "Garrison Division"		
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+		start_experience_factor = 0.35
+		start_equipment_factor = 1.0
+	}
+	division = {	
+		name = "Taranto Garrison"
+		location = 11837
+		division_template = "Garrison Division"		
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+		start_experience_factor = 0.35
+		start_equipment_factor = 1.0
+	}
+	division = {	
+		name = "Abruzzo Garrison"
+		location = 6831
+		division_template = "Garrison Division"		
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+		start_experience_factor = 0.35
+		start_equipment_factor = 1.0
+	}
+	## Normal ##
+	division = {	
+		name = "5th Motorized Div."
+		location = 6831
+		division_template = "Motorised Division"	
+		force_equipment_variants = { infantry_equipment_3 = { owner = "ENG" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 1.0
+	}
+	#
+	division = {	
+		name = "6th Armored Division"
+		location = 11790
+		division_template = "Armored Division"	
+		force_equipment_variants = { infantry_equipment_3 = { owner = "ENG" } }
+		force_equipment_variants = { medium_tank_equipment_2 = { owner = "ENG" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 1.0
+	}
+	division = {	
+		name = "6th 'South African' Armored Division"
+		location = 11790
+		division_template = "Armored Division"	
+		force_equipment_variants = { infantry_equipment_3 = { owner = "ENG" } }
+		force_equipment_variants = { medium_tank_equipment_2 = { owner = "ENG" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 1.0
+	}
+	division = {	
+		name = "2nd NZ Armored Expeditionary Force"
+		location = 11790
+		division_template = "NZ Armored Division"	
+		force_equipment_variants = { infantry_equipment_3 = { owner = "ENG" } }
+		force_equipment_variants = { medium_tank_equipment_2 = { owner = "ENG" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 1.0
+	}
+	division = {	
+		name = "78th Motorized Div."
+		location = 11790
+		division_template = "Mixed Armored Division"	
+		force_equipment_variants = { infantry_equipment_3 = { owner = "ENG" } }
+		force_equipment_variants = { medium_tank_equipment_2 = { owner = "ENG" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 1.0
+	}
+	division = {	
+		name = "4th Motorized Div."
+		location = 11790
+		division_template = "Motorised Division"	
+		force_equipment_variants = { infantry_equipment_3 = { owner = "ENG" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 1.0
+	}
+	division = {	
+		name = "18th 'East Anglican' Infantry Div."
+		location = 11790
+		division_template = "Motorised Division"	
+		force_equipment_variants = { infantry_equipment_3 = { owner = "ENG" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 1.0
+	}
+	division = {	
+		name = "8th Indian Motorized Div."
+		location = 11790
+		division_template = "Motorised Division"	
+		force_equipment_variants = { infantry_equipment_3 = { owner = "ENG" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 1.0
+	}
+	division = {	
+		name = "10th Indian Motorized Div."
+		location = 11790
+		division_template = "Motorised Division"	
+		force_equipment_variants = { infantry_equipment_3 = { owner = "ENG" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 1.0
+	}
+	#
+	division = {	
+		name = "1st Armored Division 'Royal Hussars'"
+		location = 9838
+		division_template = "Armored Division"	
+		force_equipment_variants = { infantry_equipment_3 = { owner = "ENG" } }
+		force_equipment_variants = { medium_tank_equipment_2 = { owner = "ENG" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 1.0
+	}
+	division = {	
+		name = "5th Canadian Armored Division 'Mighty Maroon Machine'"
+		location = 9838
+		division_template = "Canadian Armored Division"	
+		force_equipment_variants = { infantry_equipment_3 = { owner = "ENG" } }
+		force_equipment_variants = { medium_tank_equipment_2 = { owner = "ENG" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 1.0
+	}
+	division = {	
+		name = "2nd Polish Armored Division"
+		location = 9838
+		division_template = "Polish Armored Division"	
+		force_equipment_variants = { infantry_equipment_3 = { owner = "ENG" } }
+		force_equipment_variants = { medium_tank_equipment_2 = { owner = "ENG" } }
+		start_experience_factor = 0.75
+		start_equipment_factor = 1.0
+	}
+	division = {	
+		name = "4th Indian Motorized Div."
+		location = 9838
+		division_template = "Motorised Division"	
+		force_equipment_variants = { infantry_equipment_3 = { owner = "ENG" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 1.0
+	}
+	division = {	
+		name = "1st Canadian Infantry Division (mot)"
+		location = 9838
+		division_template = "Canadian Motorised Division"	
+		force_equipment_variants = { infantry_equipment_3 = { owner = "ENG" } }
+		start_experience_factor = 0.45
+		start_equipment_factor = 1.0
+	}
+	division = {	
+		name = "3rd Polish Infantry Division 'Carpathia'"
+		location = 9838
+		division_template = "Polish Motorised Division"	
+		force_equipment_variants = { infantry_equipment_3 = { owner = "ENG" } }
+		start_experience_factor = 0.85
+		start_equipment_factor = 1.0
+	}
+	division = {	
+		name = "5th Polish Infantry Division 'Krestowa'"
+		location = 9838
+		division_template = "Polish Motorised Division"	
+		force_equipment_variants = { infantry_equipment_3 = { owner = "ENG" } }
+		start_experience_factor = 0.85
+		start_equipment_factor = 1.0
+	}
+	
+	######################
+	# COLONIAL GARRISONS #
+	######################
+	
+	## Cyprus Garrison ##
+	division = {	
+		name = "Cyprus Command"
+		location = 7193
+		division_template = "Garrison Division"		
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+		start_experience_factor = 0.35
+		start_equipment_factor = 1.0
+	}
+	
+	## Gibraltar Garrison ##
+	division = {	
+		name = "Gibraltar Command"
+		location = 4135
+		division_template = "Garrison Division"		
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+		start_experience_factor = 0.35
+		start_equipment_factor = 1.0
+	}	
+	
+	## Malta Garrison ##
+	division = {	
+		name = "Malta Command"
+		location = 12003
+		division_template = "Garrison Division"		
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+		start_experience_factor = 0.35
+		start_equipment_factor = 1.0
+	}	
+	
+	## Belize Garrison ##
+	division = {	
+		name = "Belize Command"
+		location = 2077
+		division_template = "Garrison Division"		
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+		start_experience_factor = 0.35
+		start_equipment_factor = 1.0
+	}	
+	
+	## Jamaica Garrison ##
+	division = {	
+		name = "Jamaica Command"
+		location = 12304
+		division_template = "Garrison Division"		
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+		start_experience_factor = 0.35
+		start_equipment_factor = 1.0
+	}	
+	
+	## Fiji Garrison ##
+	division = {	
+		name = "Fiji Command"
+		location = 4450
+		division_template = "Garrison Division"		
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+		start_experience_factor = 0.35
+		start_equipment_factor = 1.0
+	}
+
+	## Guyana Garrison ##
+	division = {	
+		name = "Guyana Command"
+		location = 4982
+		division_template = "Garrison Division"		
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+		start_experience_factor = 0.35
+		start_equipment_factor = 1.0
+	}	
+
+	## Ceylon Garrison ##
+	division = {	
+		name = "Ceylon Command"
+		location = 10201
+		division_template = "Garrison Division"		
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+		start_experience_factor = 0.35
+		start_equipment_factor = 1.0
+	}	
+	
+	## Male Garrison ##
+	division = {	
+		name = "Male Command"
+		location = 4967
+		division_template = "Garrison Division"		
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+		start_experience_factor = 0.35
+		start_equipment_factor = 1.0
+	}	
+	
+	## Diego Garcia Garrison ##
+	division = {	
+		name = "Diego Garcia Command"
+		location = 13019
+		division_template = "Garrison Division"		
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+		start_experience_factor = 0.35
+		start_equipment_factor = 1.0
+	}
+
+	## Aden Garrison ##
+	division = {	
+		name = "Aden Command"
+		location = 5074
+		division_template = "Garrison Division"		
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+		start_experience_factor = 0.35
+		start_equipment_factor = 1.0
+	}
+	
+	## Abu Dhabi Garrison ##
+	division = {	
+		name = "Abu Dhabi Command"
+		location = 7960
+		division_template = "Garrison Division"		
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+		start_experience_factor = 0.35
+		start_equipment_factor = 1.0
+	}
+	
+	## Doha Garrison ##
+	division = {	
+		name = "Doha Command"
+		location = 8051
+		division_template = "Garrison Division"		
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+		start_experience_factor = 0.35
+		start_equipment_factor = 1.0
+	}
+	
+	## Kuwait Garrison ##
+	division = {	
+		name = "Kuwait Command"
+		location = 8085
+		division_template = "Garrison Division"		
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+		start_experience_factor = 0.35
+		start_equipment_factor = 1.0
+	}
+	
+	## Baghdad Garrison ##
+	division = {	
+		name = "Baghdad Command"
+		location = 2097
+		division_template = "Garrison Division"		
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+		start_experience_factor = 0.35
+		start_equipment_factor = 1.0
+	}
+	
+	## Tripoli Garrison ##
+	division = {	
+		name = "Tripoli Command"
+		location = 1149
+		division_template = "Garrison Division"		
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+		start_experience_factor = 0.35
+		start_equipment_factor = 1.0
+	}
+	
+	## Benghazi Garrison ##
+	division = {	
+		name = "Benghazi Command"
+		location = 11954
+		division_template = "Garrison Division"		
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+		start_experience_factor = 0.35
+		start_equipment_factor = 1.0
+	}
+	
+	## Tobruk Garrison ##
+	division = {	
+		name = "Tobruk Command"
+		location = 1130
+		division_template = "Garrison Division"		
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+		start_experience_factor = 0.35
+		start_equipment_factor = 1.0
+	}
+}
+
+###########
+# AIR OOB #
+###########
+
+air_wings = {
+
+	## Dover ##
+	127 = {
+		### No.2 Air Command ###
+		fighter_equipment_3 = {
+			owner = "ENG"
+			amount = 100
+		}	
+		name = "No.303 Squadron"
+		##
+		tac_bomber_equipment_3 = {
+			owner = "ENG"
+			amount = 50
+		}	
+		name = "No.219 Squadron"
+		##
+		tac_bomber_equipment_3 = {
+			owner = "ENG"
+			amount = 50
+		}	
+		name = "No.29 Squadron"
+		##
+		
+		### 14th Group ###
+		fighter_equipment_2 = {
+			owner = "ENG"
+			amount = 100
+		}	
+		name = "No.118 Squadron"
+		
+		### 11th Group ###
+		fighter_equipment_3 = {
+			owner = "ENG"
+			amount = 100
+		}	
+		name = "No.1 Squadron"
+		##
+		fighter_equipment_3 = {
+			owner = "ENG"
+			amount = 100
+		}	
+		name = "No.64 Squadron"
+		##
+		fighter_equipment_3 = {
+			owner = "ENG"
+			amount = 100
+		}	
+		name = "No.313 Squadron"
+		##
+		fighter_equipment_3 = {
+			owner = "ENG"
+			amount = 100
+		}	
+		name = "No.501 Squadron"
+		
+		### No.4 Air Command ###
+		fighter_equipment_3 = {
+			owner = "ENG"
+			amount = 100
+		}	
+		name = "No.441 Squadron RCAF"
+		##
+		
+		### 2nd TAF/2###
+		fighter_equipment_2 = {
+			owner = "ENG"
+			amount = 100
+		}	
+		name = "No.65 Squadron"
+		##
+		fighter_equipment_2 = {
+			owner = "ENG"
+			amount = 100
+		}	
+		name = "No.181 Squadron"
+		##
+		fighter_equipment_2 = {
+			owner = "ENG"
+			amount = 100
+		}	
+		name = "No.401 Squadron RCAF"
+		##
+		fighter_equipment_3 = {
+			owner = "ENG"
+			amount = 100
+		}	
+		name = "No.412 Squadron RCAF"
+		##
+		
+		### 13th Group ###
+		fighter_equipment_3 = {
+			owner = "ENG"
+			amount = 100
+		}	
+		name = "No.504 Squadron"
+		##
+	}
+	
+	## Bristol ##
+	338 = {
+		### No.3 Air Command ###
+		fighter_equipment_3 = {
+			owner = "ENG"
+			amount = 100
+		}	
+		name = "No.416 Squadron RCAF"
+		##
+		fighter_equipment_3 = {
+			owner = "ENG"
+			amount = 100
+		}	
+		name = "No.80 Squadron"
+		##
+		fighter_equipment_3 = {
+			owner = "ENG"
+			amount = 100
+		}	
+		name = "No.308 Squadron"
+		##
+		fighter_equipment_3 = {
+			owner = "ENG"
+			amount = 100
+		}	
+		name = "No.331 Squadron"
+		##
+		fighter_equipment_2 = {
+			owner = "ENG"
+			amount = 100
+		}	
+		name = "No.245 Squadron"
+		##
+		fighter_equipment_2 = {
+			owner = "ENG"
+			amount = 100
+		}	
+		name = "No.132 Squadron"
+		##
+		fighter_equipment_2 = {
+			owner = "ENG"
+			amount = 100
+		}	
+		name = "No.183 Squadron"
+		##
+		fighter_equipment_2 = {
+			owner = "ENG"
+			amount = 100
+		}	
+		name = "No.332 Squadron"
+		##
+		fighter_equipment_2 = {
+			owner = "ENG"
+			amount = 100
+		}	
+		name = "No.694 Squadron"
+		##
+		tac_bomber_equipment_3 = {
+			owner = "ENG"
+			amount = 50
+		}	
+		name = "No.264 Squadron"
+		
+		
+		### 2nd TAF/1 ###
+		fighter_equipment_2 = {
+			owner = "ENG"
+			amount = 100
+		}	
+		name = "No.3 Squadron"
+		##
+		fighter_equipment_2 = {
+			owner = "ENG"
+			amount = 100
+		}	
+		name = "No.33 Squadron"
+		##
+		fighter_equipment_3 = {
+			owner = "ENG"
+			amount = 100
+		}
+		name = "No.137 Squadron"
+		##
+		fighter_equipment_3 = {
+			owner = "ENG"
+			amount = 100
+		}
+		name = "No.184 Squadron"
+	}
+	
+	## Plymouth ##
+	123 = {
+		### No.6 Air Command ###
+		strat_bomber_equipment_2 = {
+			owner = "ENG"
+			amount = 50
+		}	
+		name = "No.625 Squadron"
+		
+		### 1st Group ###
+		strat_bomber_equipment_2 = {
+			owner = "ENG"
+			amount = 50
+		}	
+		name = "No.12 Squadron"
+		##
+		strat_bomber_equipment_2 = {
+			owner = "ENG"
+			amount = 50
+		}	
+		name = "No.103 Squadron"
+		##
+		strat_bomber_equipment_2 = {
+			owner = "ENG"
+			amount = 50
+		}	
+		name = "No.576 Squadron"
+		##
+		strat_bomber_equipment_1 = {
+			owner = "ENG"
+			amount = 50
+		}	
+		name = "No.300 Squadron"
+		##
+	}
+	
+	## London ##
+	126 = {
+	
+		### No.1 Air Command ###
+		fighter_equipment_2 = {
+			owner = "ENG"
+			amount = 100
+		}
+		name = "No.610 Squadron"
+		
+		### 8th Group ###
+		strat_bomber_equipment_2 = {
+			owner = "ENG"
+			amount = 50
+		}
+		name = "No.156 Squadron"
+		##
+		strat_bomber_equipment_2 = {
+			owner = "ENG"
+			amount = 50
+		}
+		name = "No.582 Squadron"
+		##
+		strat_bomber_equipment_2 = {
+			owner = "ENG"
+			amount = 50
+		}
+		name = "No.692 Squadron"
+		##
+		strat_bomber_equipment_1 = {
+			owner = "ENG"
+			amount = 50
+		}
+		name = "No.7 Squadron"
+		##
+		
+		### 10th Group ###
+		fighter_equipment_2 = {
+			owner = "ENG"
+			amount = 100
+		}
+		name = "No.126 Squadron"
+		##
+		fighter_equipment_2 = {
+			owner = "ENG"
+			amount = 100
+		}
+		name = "No.165 Squadron"
+		##
+		tac_bomber_equipment_3 = {
+			owner = "ENG"
+			amount = 50
+		}
+		name = "No.406 Squadron"
+		##
+		tac_bomber_equipment_3 = {
+			owner = "ENG"
+			amount = 50
+		}
+		name = "No.464 Squadron"
+		##
+	}
+	
+	## Norwich ##
+	125 = {
+	
+		### No.7 Air Command ###
+		strat_bomber_equipment_2 = {
+			owner = "ENG"
+			amount = 50
+		}
+		name = "No.10 Squadron"
+		
+		### 4th Group ###
+		strat_bomber_equipment_2 = {
+			owner = "ENG"
+			amount = 50
+		}
+		name = "No.76 Squadron"
+		##
+		strat_bomber_equipment_2 = {
+			owner = "ENG"
+			amount = 50
+		}
+		name = "No.346 Squadron"
+		##
+		strat_bomber_equipment_1 = {
+			owner = "ENG"
+			amount = 50
+		}
+		name = "No.78 Squadron"
+	}
+	
+	## Sheffield ##
+	130 = {
+	
+		### No.8 Air Command ###
+		strat_bomber_equipment_2 = {
+			owner = "ENG"
+			amount = 50
+		}
+		name = "No.467 Squadron"
+		##
+		strat_bomber_equipment_2 = {
+			owner = "ENG"
+			amount = 50
+		}
+		name = "No.619 Squadron"
+		
+		
+		### No.9 Air Command ###
+		strat_bomber_equipment_1 = {
+			owner = "ENG"
+			amount = 50
+		}
+		name = "No.432 Squadron"
+		
+		### 5th Group ###
+		strat_bomber_equipment_2 = {
+			owner = "ENG"
+			amount = 50
+		}
+		name = "No.9 Squadron"
+		##
+		strat_bomber_equipment_2 = {
+			owner = "ENG"
+			amount = 50
+		}
+		name = "No.49 Squadron"
+		##
+		strat_bomber_equipment_2 = {
+			owner = "ENG"
+			amount = 50
+		}
+		name = "No.61 Squadron"
+		##
+		strat_bomber_equipment_2 = {
+			owner = "ENG"
+			amount = 50
+		}
+		name = "No.106 Squadron"
+		
+		
+		### 6th Group ###
+		strat_bomber_equipment_2 = {
+			owner = "ENG"
+			amount = 50
+		}
+		name = "No.408 Squadron"
+		##
+		strat_bomber_equipment_2 = {
+			owner = "ENG"
+			amount = 50
+		}
+		name = "No.424 Squadron"
+		##
+		strat_bomber_equipment_1 = {
+			owner = "ENG"
+			amount = 50
+		}
+		name = "No.427 Squadron"
+		##
+		strat_bomber_equipment_1 = {
+			owner = "ENG"
+			amount = 50
+		}
+		name = "No.429 Squadron"
+	}
+	
+	## Liverpool ##
+	130 = {
+	
+		### 12th Group ###
+		fighter_equipment_2 = {
+			owner = "ENG"
+			amount = 100
+		}
+		name = "No.168 Squadron"
+		##
+		tac_bomber_equipment_2 = {
+			owner = "ENG"
+			amount = 50
+		}
+		name = "No.25 Squadron"
+		
+		### 3rd Group ###
+		strat_bomber_equipment_2 = {
+			owner = "ENG"
+			amount = 100
+		}
+		name = "No.218 Squadron"
+		##
+		strat_bomber_equipment_2 = {
+			owner = "ENG"
+			amount = 100
+		}
+		name = "No.115 Squadron"
+		##
+		strat_bomber_equipment_1 = {
+			owner = "ENG"
+			amount = 100
+		}
+		name = "No.15 Squadron"
+		
+		### No. 603 Squadron ###
+		fighter_equipment_2 = {
+			owner = "ENG"
+			amount = 100
+		}
+		name = "No.603 Squadron"
+	}
+	
+	## Lanark ##
+	133 = {
+	
+		### 38th Group ###
+		nav_bomber_equipment_2 = {
+			owner = "ENG"
+			amount = 100
+		}	
+		name = "No.190 Squadron"
+		##
+		nav_bomber_equipment_2 = {
+			owner = "ENG"
+			amount = 100
+		}	
+		name = "No.297 Squadron"
+		##
+		nav_bomber_equipment_2 = {
+			owner = "ENG"
+			amount = 100
+		}	
+		name = "No.570 Squadron"
+		##
+	}
+	
+	#################
+	# ASIAN THEATRE #
+	#################
+	
+	## Australia ##
+	520 = {
+	
+		### ANZAC Air Forces ###
+		fighter_equipment_3 = {
+			owner = "ENG"
+			amount = 100
+		}	
+		name = "No.452 Squadron"
+		##
+		fighter_equipment_3 = {
+			owner = "ENG"
+			amount = 100
+		}	
+		name = "No.455 Squadron"
+		##
+		fighter_equipment_3 = {
+			owner = "ENG"
+			amount = 100
+		}	
+		name = "No.454 Squadron"
+	}
+	
+	###########
+	## India ##
+	###########
+	
+	## East Bengal ##
+	430 = {
+	
+		### 4/SEAC Air Forces ###
+		nav_bomber_equipment_2 = {
+			owner = "ENG"
+			amount = 50
+		}	
+		name = "No.27 Squadron"
+		##
+		nav_bomber_equipment_2 = {
+			owner = "ENG"
+			amount = 50
+		}	
+		name = "No.47 Squadron"
+		##
+		nav_bomber_equipment_2 = {
+			owner = "ENG"
+			amount = 50
+		}	
+		name = "No.88 Squadron"
+		##
+		nav_bomber_equipment_2 = {
+			owner = "ENG"
+			amount = 50
+		}	
+		name = "No.176 Squadron"
+		##
+		nav_bomber_equipment_2 = {
+			owner = "ENG"
+			amount = 50
+		}	
+		name = "No.177 Squadron"
+		##
+		nav_bomber_equipment_2 = {
+			owner = "ENG"
+			amount = 50
+		}	
+		name = "No.211 Squadron"
+		##
+	}
+	
+	## Calcutta ##
+	431 = {
+		
+		strat_bomber_equipment_2 = {
+			owner = "ENG"
+			amount = 30
+		}	
+		name = "No.200 Squadron"
+		##
+		strat_bomber_equipment_2 = {
+			owner = "ENG"
+			amount = 25
+		}	
+		name = "No.203 Squadron"
+		##
+		strat_bomber_equipment_2 = {
+			owner = "ENG"
+			amount = 30
+		}	
+		name = "No.215 Squadron"
+		##
+		strat_bomber_equipment_2 = {
+			owner = "ENG"
+			amount = 25
+		}	
+		name = "No.99 Squadron"
+		##
+		strat_bomber_equipment_2 = {
+			owner = "ENG"
+			amount = 30
+		}	
+		name = "No.159 Squadron"
+		##
+		strat_bomber_equipment_2 = {
+			owner = "ENG"
+			amount = 25
+		}	
+		name = "No.292 Squadron"
+		##
+		strat_bomber_equipment_2 = {
+			owner = "ENG"
+			amount = 30
+		}	
+		name = "No.355 Squadron"
+		##
+		strat_bomber_equipment_2 = {
+			owner = "ENG"
+			amount = 25
+		}	
+		name = "No.356 Squadron"
+		##
+	}
+	
+	## Assam ##
+	432 = {
+	
+		### 1/SEAC Air Forces ###
+		fighter_equipment_2 = {
+			owner = "ENG"
+			amount = 100
+		}	
+		name = "No.17/67/81 Squadron"
+		##
+		fighter_equipment_2 = {
+			owner = "ENG"
+			amount = 75
+		}	
+		name = "No.136/155 Squadron"
+		##
+		fighter_equipment_2 = {
+			owner = "ENG"
+			amount = 75
+		}	
+		name = "No.607/615 Squadron"
+		##
+		
+		### 2/SEAC Air Forces ###
+		fighter_equipment_2 = {
+			owner = "ENG"
+			amount = 50
+		}	
+		name = "No.5 Squadron"
+		##
+		fighter_equipment_2 = {
+			owner = "ENG"
+			amount = 50
+		}	
+		name = "No.11 Squadron"
+		##
+		fighter_equipment_2 = {
+			owner = "ENG"
+			amount = 50
+		}	
+		name = "No.20 Squadron"
+		##
+		fighter_equipment_2 = {
+			owner = "ENG"
+			amount = 50
+		}	
+		name = "No.28 Squadron"
+		##
+		fighter_equipment_2 = {
+			owner = "ENG"
+			amount = 50
+		}	
+		name = "No.30 Squadron"
+		##
+		CAS_equipment_2 = {
+			owner = "ENG"
+			amount = 50
+		}	
+		name = "No.42 Squadron"
+		##
+		CAS_equipment_2 = {
+			owner = "ENG"
+			amount = 50
+		}	
+		name = "No.34 Squadron"
+		##
+		CAS_equipment_2 = {
+			owner = "ENG"
+			amount = 50
+		}	
+		name = "No.60 Squadron"
+		##
+		CAS_equipment_2 = {
+			owner = "ENG"
+			amount = 50
+		}	
+		name = "No.79 Squadron"
+		##
+		
+		### No.5 Air Command ###
+		tac_bomber_equipment_3 = {
+			owner = "ENG"
+			amount = 75
+		}	
+		name = "No.45 Squadron"
+		##
+		CAS_equipment_2 = {
+			owner = "ENG"
+			amount = 100
+		}	
+		name = "No.113/123/134 Squadron"
+		##
+		CAS_equipment_2 = {
+			owner = "ENG"
+			amount = 100
+		}	
+		name = "No.135/146/152 Squadron"
+		##
+		CAS_equipment_2 = {
+			owner = "ENG"
+			amount = 100
+		}	
+		name = "No.258/261/273 Squadron"
+		##
+		CAS_equipment_2 = {
+			owner = "ENG"
+			amount = 100
+		}	
+		name = "No.82/84/110 Squadron"
+		##
+		
+		### 5/SEAC Air Forces ###
+		transport_plane_equipment_1 = {
+			owner = "ENG"
+			amount = 100
+		}	
+		name = "No. 31/62/117 Squadron"
+		##
+		transport_plane_equipment_1 = {
+			owner = "ENG"
+			amount = 100
+		}	
+		name = "No. 194/435/436 Squadron"
+	}
+		
+	
+	##########################
+	# NOMINALLY SAF COMAD    #
+	# BUT TRANSFERRING TO UK #
+	# 		FOR NOW          #
+	##########################
+	
+	#################
+	# ITALIAN FRONT #
+	#################
+	
+	## Taranto ##
+	156 = {
+	
+		### 2nd SAAF Airforce ###
+		fighter_equipment_2 = {
+			owner = "ENG"
+			amount = 100
+		}	
+		name = "No.4 SAAF Interceptor Group"
+		##
+		fighter_equipment_2 = {
+			owner = "ENG"
+			amount = 100
+		}	
+		name = "No.5 SAAF Interceptor Group"
+		##
+		fighter_equipment_2 = {
+			owner = "ENG"
+			amount = 100
+		}	
+		name = "No.11 SAAF Interceptor Group"
+		##
+		fighter_equipment_2 = {
+			owner = "ENG"
+			amount = 100
+		}	
+		name = "No.40 SAAF Interceptor Group"
+		
+		
+		### No.2 SAAF Air Command ###
+		tac_bomber_equipment_3 = {
+			owner = "ENG"
+			amount = 100
+		}	
+		name = "No.21 SAAF Tactical Bomber Group"
+		##
+		tac_bomber_equipment_1 = {
+			owner = "ENG"
+			amount = 100
+		}	
+		name = "No.17 SAAF Tactical Bomber Group"
+		
+		
+		### No.25 SAAF Marine Bomb Group ###
+		nav_bomber_equipment_2 = {
+			owner = "ENG"
+			amount = 100
+		}	
+		name = "No.25 SAAF Marine Bomb Group"
+	}
+	
+	## Rome ##
+	2 = {
+	
+		### No.15 SAAF Air Command ###
+		tac_bomber_equipment_3 = {
+			owner = "ENG"
+			amount = 100
+		}	
+		name = "No.21 SAAF Tactical Bomber Group"
+		##
+		tac_bomber_equipment_1 = {
+			owner = "ENG"
+			amount = 100
+		}	
+		name = "No.20 SAAF Tactical Bomber Group"
+		
+		### 1st SAAF Airforce ###
+		fighter_equipment_2 = {
+			owner = "ENG"
+			amount = 100
+		}	
+		name = "No.1 SAAF Interceptor Group"
+		##
+		fighter_equipment_2 = {
+			owner = "ENG"
+			amount = 100
+		}	
+		name = "No.2 SAAF Interceptor Group"
+		##
+		fighter_equipment_2 = {
+			owner = "ENG"
+			amount = 100
+		}	
+		name = "No.3 SAAF Interceptor Group"
+		##
+		fighter_equipment_2 = {
+			owner = "ENG"
+			amount = 100
+		}	
+		name = "No.7 SAAF Interceptor Group"
+		##
+	}
+	
+	##########
+	# AFRICA #
+	##########
+	
+	## Algiers ##
+	459 = {
+	
+		### No.24 SAAF Marine Bomb Group ###
+		nav_bomber_equipment_2 = {
+			owner = "ENG"
+			amount = 100
+		}	
+		name = "No.24 SAAF Marine Bomb Group"
+	}
+	
+	## Benghazi ##
+	450 = {
+	
+		### No.24 SAAF Tactical Bomber Group ###
+		tac_bomber_equipment_3 = {
+			owner = "ENG"
+			amount = 100
+		}	
+		name = "No.24 SAAF Tactical Bomber Group"
+	}
+	
+	## Alexandria ##
+	447 = {
+	
+		### No.16 SAAF Tactical Bomber Group ###
+		tac_bomber_equipment_2 = {
+			owner = "ENG"
+			amount = 100
+		}	
+		name = "No.16 SAAF Tactical Bomber Group"
+	}
+	
+	## Cyprus ##
+	183 = {
+	
+		### No.41 SAAF Interceptor Group ###
+		fighter_equipment_3 = {
+			owner = "ENG"
+			amount = 100
+		}	
+		name = "No.41 SAAF Interceptor Group"
+	}
+}
+

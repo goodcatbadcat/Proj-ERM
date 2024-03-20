@@ -1,0 +1,2438 @@
+﻿#################
+# German Events #
+#################
+
+add_namespace = ERM_germany
+
+## Introduction Event ##
+country_event = {
+	id = ERM_germany.0
+	immediate = { log = "[GetDateText]: [Root.GetName]: event ERM_germany.0 FROM = [From.GetName]" }
+	title = ERM_germany.0.t
+	desc = ERM_germany.0.d
+	picture = GFX_report_event_GER_1944
+
+	is_triggered_only = yes
+
+	option = {
+		name = ERM_germany.0.a
+	}
+}
+
+# Operation Panzerfaust
+country_event = {
+	id = ERM_germany.1
+	title = ERM_germany.1.t
+	desc = ERM_germany.1.d
+	picture = GFX_report_event_operation_panzerfaust
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = ERM_germany.1.a
+		add_stability = 0.05
+		news_event = { id = world_news.3 }
+	}
+}
+
+# Operation Margarethe II
+country_event = {
+	id = ERM_germany.2
+	title = ERM_germany.2.t
+	desc = ERM_germany.2.d
+	picture = GFX_report_event_operation_margarethe_ii
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = ERM_germany.2.a
+		add_stability = 0.05
+		news_event = { id = world_news.5 }
+	}
+}
+
+# Finland Betrays Us! (Letter from Mannerheim)
+country_event = {
+	id = ERM_germany.3
+	title = ERM_germany.3.t
+	desc = ERM_germany.3.d
+	picture = GFX_report_event_moscow_armistice
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		has_global_flag = FIN_SOV_moscow_armistice
+	}
+
+	mean_time_to_happen = { days = 1 }
+	
+	# Damn Them!
+	option = {
+		name = ERM_germany.3.a
+		GER = { country_event = { id = ERM_germany.4 hours = 1 } }
+	}
+}
+
+# Lappland Evacuation
+country_event = {
+	id = ERM_germany.4
+	title = ERM_germany.4.t
+	desc = ERM_germany.4.d
+	picture = GFX_report_event_lappland_evacuation
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = { days = 1 }
+	
+	# Slow Evacuation of Lappland
+	option = {
+		name = ERM_germany.4.a
+		hidden_effect = {
+			news_event = { id = world_news.11 }
+			set_global_flag = GER_lappland_evacuation_slow
+		}
+	}
+	# Quick Evacuation
+	option = {
+		name = ERM_germany.4.b
+		FIN = { transfer_state = 148 }
+		add_equipment_to_stockpile = {
+			type = infantry_equipment_3
+			amount = -5000
+			producer = GER
+		}
+		add_equipment_to_stockpile = {
+			type = artillery_equipment_3
+			amount = -5000
+			producer = GER
+		}
+		hidden_effect = {
+			set_global_flag = GER_lappland_evacuation_quick
+			news_event = { id = world_news.10 }
+		}
+	}
+}
+
+# Soviets Overran Lappland!
+country_event = {
+	id = ERM_germany.5
+	title = ERM_germany.5.t
+	desc = ERM_germany.5.d
+	picture = GFX_report_event_lappland_evacuation_failed
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		GER = { owns_state = 148 }
+		has_global_flag = GER_FIN_lappland_war
+		has_global_flag = GER_lappland_evacuation_slow
+		AND = { 
+			SOV = { controls_state = 148 } 
+		}
+		NOT = {
+			has_global_flag = GER_lappland_evacuation_quick
+			has_global_flag = GER_FIN_lappland_war_over
+		}
+	}
+
+	mean_time_to_happen = { days = 1 }
+	
+	# Damn
+	option = {
+		name = ERM_germany.5.a
+		add_equipment_to_stockpile = {
+			type = infantry_equipment_3
+			amount = -3500
+			producer = GER
+		}
+		add_equipment_to_stockpile = {
+			type = artillery_equipment_3
+			amount = -3400
+			producer = GER
+		}
+		GER = {
+			white_peace = FIN
+		}
+		FIN = {
+			transfer_state = 148
+		}
+	}
+}
+
+# Lappland Evacuation Complete 1 
+country_event = {
+	id = ERM_germany.6
+	title = ERM_germany.6.t
+	desc = ERM_germany.6.d
+	picture = GFX_report_event_lappland_evacuation_complete
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		has_war_with = FIN
+		has_global_flag = GER_FIN_lappland_war 
+		has_global_flag = GER_lappland_evacuation_slow
+		NOT = {
+			SOV = { controls_state = 148 }
+			has_global_flag = GER_FIN_lappland2
+			has_global_flag = GER_FIN_lappland_war_over
+		}
+	}
+
+	mean_time_to_happen = { days = 90 }
+	
+	# Great
+	option = {
+		name = ERM_germany.6.a
+		add_equipment_to_stockpile = {
+			type = infantry_equipment_3
+			amount = 5000
+			producer = GER
+		}
+		add_equipment_to_stockpile = {
+			type = artillery_equipment_3
+			amount = 5000
+			producer = GER
+		}
+		GER = {
+			white_peace = FIN
+		}
+		FIN = {
+			transfer_state = 148
+		}
+		hidden_effect = {
+			set_global_flag = GER_FIN_lappland_war_over
+			news_event = { id = world_news.13 }
+		}
+	}
+}
+
+# Lappland Evacuation Complete 2
+country_event = {
+	id = ERM_germany.7
+	title = ERM_germany.7.t
+	desc = ERM_germany.7.d
+	picture = GFX_report_event_lappland_evacuation_complete
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		has_war_with = FIN
+		has_global_flag = GER_FIN_lappland_war 
+		has_global_flag = GER_lappland_evacuation_slow
+		FIN = {
+			controls_state = 148
+		}
+		NOT = {
+			SOV = { controls_state = 148 }
+			has_global_flag = GER_FIN_lappland_war_over
+		}
+	}
+
+	mean_time_to_happen = { days = 1 }
+	
+	# So much for being brothers 
+	option = {
+		name = ERM_germany.7.a
+		add_equipment_to_stockpile = {
+			type = infantry_equipment_3
+			amount = 5000
+			producer = GER
+		}
+		add_equipment_to_stockpile = {
+			type = artillery_equipment_3
+			amount = 5000
+			producer = GER
+		}
+		GER = {
+			white_peace = FIN
+		}
+		FIN = {
+			transfer_state = 148
+		}
+		hidden_effect = {
+			set_global_flag = GER_FIN_lappland_war_over
+			set_global_flag = GER_FIN_lappland2
+			news_event = { id = world_news.13 }
+		}
+	}
+}
+
+# GER Reacts: Romanian Support to Remain in War Wavering
+country_event = {
+	id = ERM_germany.8
+	title = ERM_germany.8.t
+	desc = ERM_germany.8.d
+	picture = GFX_report_event_romanian_army
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		has_global_flag = ROM_coup_plans
+		AND = {
+			ROM = {
+				is_in_faction_with = GER
+				has_war_with = SOV
+			}
+		}
+	}
+
+	mean_time_to_happen = { days = 10 }
+	
+	# We must take action
+	option = {
+		name = ERM_germany.8.a
+	}
+}
+
+# GER Reacts: Miklos Horthy Engages in Peace Talks
+country_event = {
+	id = ERM_germany.9
+	title = ERM_germany.9.t
+	desc = ERM_germany.9.d
+	picture = GFX_report_event_horthy_negotiates
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		has_global_flag = HUN_negotiating_with_SOV
+		AND = {
+			HUN = {
+				is_in_faction_with = GER
+				has_war_with = SOV
+			}
+		}
+	}
+
+	mean_time_to_happen = { days = 10 }
+	
+	# We must take action
+	option = { 
+		name = ERM_germany.9.a
+	}
+}
+
+# GER warning: Keep Courland
+country_event = {
+	id = ERM_germany.10
+	title = ERM_germany.10.t
+	desc = ERM_germany.10.d
+	picture = GFX_report_event_courland
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		has_war_with = SOV
+		AND = {
+			OR = {
+				SOV = {
+					controls_state = 810
+					controls_state = 808
+				}
+			}
+		}
+		NOT = {
+			SOV = {
+				controls_state = 190
+			}
+		}
+	}
+
+	mean_time_to_happen = { days = 10 }
+	
+	option = {
+		name = ERM_germany.10.a
+		GER = {
+			add_ideas = { GER_courland_training_bases }
+		}
+	}
+}
+
+# GER Reacts: First Soviet Troops on German Territory!
+country_event = {
+	id = ERM_germany.11
+	title = ERM_germany.11.t
+	desc = ERM_germany.11.d
+	picture = GFX_report_event_soviet_troops_east_prussia
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		has_war_with = SOV
+		AND = {
+			has_global_flag = SOV_reached_german_territory
+		}
+	}
+
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = ERM_germany.11.a
+		GER = {
+			add_ideas = { GER_bolshevik_beast }
+			add_war_support = 0.10
+			add_stability = -0.10
+			add_political_power = -50
+		}
+		hidden_effect = {
+			add_ideas = { GER_bolshevik_beast2 }
+		}
+	}
+}
+
+# GER: Evacuate Civilians from Eastern Germany?
+country_event = {
+	id = ERM_germany.12
+	title = ERM_germany.12.t
+	desc = ERM_germany.12.d
+	picture = GFX_report_event_evacuate_civilians
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		has_war_with = SOV
+		has_global_flag = SOV_reached_german_territory
+	}
+
+	mean_time_to_happen = { days = 8 }
+	
+	# Evacuate them!
+	option = {
+		name = ERM_germany.12.a
+		ai_chance = { factor = 100 }
+		GER = {
+			add_ideas = { GER_refugee_crisis }
+			add_convoys = -100
+		}
+	}
+	
+	# We can't spare the convoys!
+	option = {
+		name = ERM_germany.12.b
+		ai_chance = { factor = 0 }
+		GER = {
+			add_political_power = -250
+			add_stability = -0.30
+			add_war_support = -0.30
+		}
+	}
+}
+
+# GER: Rommel Injured
+country_event = {
+	id = ERM_germany.13
+	title = ERM_germany.13.t
+	desc = ERM_germany.13.d
+	picture = GFX_report_event_rommel_injured
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		date > 1944.7.19
+		AND = {
+			OR = {
+				USA = {
+					controls_state = 15
+				}
+				FRA = {
+					controls_state = 15
+				}
+				ENG = {
+					controls_state = 15
+				}
+			}
+		}
+		NOT = {
+			date > 1944.10.1
+		}
+	}
+
+	mean_time_to_happen = { days = 3 }
+	
+	# We can't let the public know
+	option = {
+		name = ERM_germany.13.a
+		every_unit_leader = {
+			limit = {
+				has_id = 3
+			}
+			add_timed_unit_leader_trait = {
+				trait = wounded
+				days = 60
+			}
+		}
+	}
+}
+
+# GER: Rommel Dies
+country_event = {
+	id = ERM_germany.1301
+	title = ERM_germany.1301.t
+	desc = ERM_germany.1301.d
+	picture = GFX_report_event_rommel_funeral
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		date > 1944.10.18
+		AND = {
+			GER = {
+				has_capitulated = no
+				has_war = yes
+			}
+		}
+		NOT = {
+			date > 1944.10.1
+		}
+	}
+
+	mean_time_to_happen = { days = 3 }
+	
+	# Rest in Peace
+	option = {
+		name = ERM_germany.1301.a
+		add_stability = 0.025
+		add_political_power = 25
+		every_unit_leader = {
+			limit = {
+				has_id = 3
+			}
+			remove_unit_leader = yes
+		}
+		remove_ideas = {
+			GER_Erwin_Rommel
+			GER_Erwin_Rommel2
+		}
+	}
+}
+
+# GER: Rommel Dies
+country_event = {
+	id = ERM_germany.1301
+	title = ERM_germany.1301.t
+	desc = ERM_germany.1301.d
+	picture = GFX_report_event_rommel_funeral
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		date > 1944.10.18
+		AND = {
+			GER = {
+				has_capitulated = no
+				has_war = yes
+			}
+		}
+		NOT = {
+			date > 1944.10.1
+		}
+	}
+
+	mean_time_to_happen = { days = 3 }
+	
+	# Rest in Peace
+	option = {
+		name = ERM_germany.1301.a
+		add_stability = 0.025
+		add_political_power = 25
+		every_unit_leader = {
+			limit = {
+				has_id = 3
+			}
+			remove_unit_leader = yes
+		}
+		remove_ideas = {
+			GER_Erwin_Rommel
+			GER_Erwin_Rommel2
+		}
+	}
+}
+
+# GER: Operation Valkyrie
+country_event = {
+	id = ERM_germany.14
+	title = ERM_germany.14.t
+	desc = ERM_germany.14.d
+	picture = GFX_report_event_valkyrie_prelude
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		date > 1944.7.15
+		AND = {
+			GER = {
+				has_capitulated = no
+				has_war = yes
+			}
+		}
+		NOT = {
+			date > 1944.10.1
+		}
+	}
+
+	mean_time_to_happen = { days = 1 }
+	
+	# The Führer shall not be betrayed!
+	option = {
+		name = ERM_germany.14.a
+		set_country_flag = GER_decline_support_valkyrie
+	}
+	# Germany must chart a new path if it shall survive
+	option = {
+		name = ERM_germany.14.b
+		set_country_flag = GER_accept_support_valkyrie
+	}
+}
+
+# GER: July 20th Plot Fails
+country_event = {
+	id = ERM_germany.15
+	title = ERM_germany.15.t
+	desc = ERM_germany.15.d
+	picture = GFX_report_event_july_20_plot
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		date > 1944.7.20
+		has_country_flag = GER_decline_support_valkyrie
+		AND = {
+			GER = {
+				has_capitulated = no
+				has_war = yes
+			}
+		}
+		NOT = {
+			date > 1944.10.1
+		}
+	}
+
+	mean_time_to_happen = { days = 1 }
+	
+	# Such treachery...Let the arrests begin!
+	option = {
+		name = ERM_germany.15.a
+		set_global_flag = GER_valkyrie_failed
+		add_stability = -0.10
+		add_political_power = -50
+		remove_ideas = { GER_Guenther_Korten }
+		retire_character = GER_Guenther_Korten
+		news_event = { id = world_news.16 }
+	}
+}
+
+# GER: July 20th Plot Show Trials
+country_event = {
+	id = ERM_germany.1501
+	title = ERM_germany.1501.t
+	desc = ERM_germany.1501.d
+	picture = GFX_report_event_valkyrie_show_trials
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		date > 1944.7.25
+		has_global_flag = GER_valkyrie_failed
+		AND = {
+			GER = {
+				has_capitulated = no
+				has_war = yes
+			}
+		}
+		NOT = {
+			date > 1944.10.1
+		}
+	}
+
+	mean_time_to_happen = { days = 1 }
+	
+	# They shall all have the noose!
+	option = {
+		name = ERM_germany.1501.a
+		add_stability = 0.05
+		add_political_power = 25
+		remove_ideas = {
+			GER_Gunther_von_Kluge
+			GER_Wilhelm_Canaris
+			GER_Hans_Oster
+			GER_Georg_Hansen
+			GER_Arthur_Nebe
+			GER_Erwin_Rommel
+		}
+	}
+}
+
+# GER: July 20th Plot Show Trials
+country_event = {
+	id = ERM_germany.1502
+	title = ERM_germany.1502.t
+	desc = ERM_germany.1502.d
+	picture = GFX_report_event_valkyrie_show_trials
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		has_global_flag = GER_civil_war_over
+		AND = {
+			GER = {
+				has_capitulated = no
+				has_war = yes
+			}
+		}
+		NOT = {
+			date > 1944.10.1
+		}
+	}
+
+	mean_time_to_happen = { days = 5 }
+	
+	# They shall all have the noose!
+	option = {
+		name = ERM_germany.1502.a
+		add_stability = 0.10
+		add_political_power = 50
+		remove_ideas = {
+			GER_Gunther_von_Kluge
+			GER_Wilhelm_Canaris
+			GER_Hans_Oster
+			GER_Georg_Hansen
+			GER_Arthur_Nebe
+			GER_Erwin_Rommel
+		}
+	}
+}
+
+# GER: Hitler DEAD! Valkyrie Coup Success Aftermath
+country_event = {
+	id = ERM_germany.16
+	title = ERM_germany.16.t
+	desc = ERM_germany.16.d
+	picture = GFX_report_event_valkyrie_aftermath
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		has_country_flag = GER_accept_support_valkyrie
+	}
+
+	mean_time_to_happen = { days = 5 }
+	
+	# Back Fromm
+	option = {
+		name = ERM_germany.16.a
+		GER = { country_event = { id = ERM_germany.20 hours = 1 } }
+		news_event = { id = world_news.17 }
+		add_ideas = {
+			GER_power_vacuum1
+			GER_unrecognized_gov
+		}
+		kill_country_leader = yes
+		promote_character = {
+			character = GER_Friedrich_Fromm
+			ideology = national_socialism
+		}
+		set_country_flag = GER_back_fromm
+		add_political_power = -150
+	}
+	
+	# Back Beck
+	option = {
+		name = ERM_germany.16.b
+		GER = { country_event = { id = ERM_germany.21 hours = 1 } }
+		news_event = { id = world_news.18 }
+		add_ideas = {
+			GER_power_vacuum1
+			GER_unrecognized_gov
+		}
+		kill_country_leader = yes
+		promote_character = {
+			character = GER_Ludwig_Beck
+			ideology = national_socialism
+		}
+		set_country_flag = GER_back_beck
+		add_political_power = -150
+	}
+	
+	# Back Guderian
+	option = {
+		name = ERM_germany.16.c
+		GER = { country_event = { id = ERM_germany.22 hours = 1 } }
+		news_event = { id = world_news.19 }
+		add_ideas = {
+			GER_power_vacuum1
+			GER_unrecognized_gov
+		}
+		kill_country_leader = yes
+		promote_character = {
+			character = GER_Heinz_Guderian
+			ideology = national_socialism
+		}
+		set_country_flag = GER_back_guderian
+		add_political_power = -150
+		GPG = { transfer_state = 64 }
+		GER = {
+			declare_war_on = {
+				target = GPG
+				type = annex_everything
+			}
+		}
+	}
+	# Nazi Counter Coup
+	option = {
+		name = ERM_germany.16.e
+		set_country_flag = GER_back_nazis
+		GER = { country_event = { id = ERM_germany.23 hours = 1 } }
+		news_event = { id = world_news.20 }
+		kill_country_leader = yes
+		promote_character = {
+			character = GER_Nazi_Provisional_Government
+			ideology = national_socialism
+		}
+		add_ideas = {
+			GER_power_vacuum1
+		}
+		add_political_power = -100
+	}
+}
+
+# GER: Reinforce East or West?
+country_event = {
+	id = ERM_germany.17
+	title = ERM_germany.17.t
+	desc = ERM_germany.17.d
+	picture = GFX_report_event_festung_breslau 
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		date > 1944.1.1
+	}
+
+	mean_time_to_happen = { days = 3 }
+	
+	# The East is a bigger threat!
+	option = {
+		name = ERM_germany.17.a
+		set_country_flag = GER_east_vs_west
+	}
+}
+
+# GER: Goering Drug Event
+country_event = {
+	id = ERM_germany.18
+	title = ERM_germany.18.t
+	desc = ERM_germany.18.d
+	picture = GFX_report_event_goering_drugs
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER 
+		date > 1944.1.1
+		has_war = yes
+	}
+
+	mean_time_to_happen = { days = 60 }
+	
+	# Drugs are a hell of a thing
+	option = {
+		name = ERM_germany.18.a
+	}
+	# Great idea
+	option = {
+		name = ERM_germany.18.b
+		add_ideas = { GER_goering_drugs }
+	}
+}
+
+# GER: Volkssturm Created
+country_event = {
+	id = ERM_germany.19
+	title = ERM_germany.19.t
+	desc = ERM_germany.19.d
+	picture = GFX_report_event_GER_volkssturm
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = { days = 3 }
+	
+	#
+	option = {
+		name = ERM_germany.19.a
+	}
+}
+
+# GER: Back Beck
+country_event = {
+	id = ERM_germany.20
+	title = ERM_germany.20.t
+	desc = ERM_germany.20.d
+	picture = GFX_report_event_
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = { days = 3 }
+	
+	# 
+	option = {
+		name = ERM_germany.20.a
+		GER = { country_event = { id = ERM_germany.47 } }
+	}
+}
+
+# GER: Back Fromm
+country_event = {
+	id = ERM_germany.21
+	title = ERM_germany.21.t
+	desc = ERM_germany.21.d
+	picture = GFX_report_event_
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = { days = 3 }
+	
+	# 
+	option = {
+		name = ERM_germany.21.a
+		GER = { country_event = { id = ERM_germany.47 } }
+	}
+}
+
+# GER: Back Guderian
+country_event = {
+	id = ERM_germany.22
+	title = ERM_germany.22.t
+	desc = ERM_germany.22.d
+	picture = GFX_report_event_guderian_counter_coup
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = { days = 3 }
+	
+	# 
+	option = {
+		name = ERM_germany.22.a
+		GER = { country_event = { id = ERM_germany.47 } }
+	}
+}
+
+
+# GER: Back Nazis
+country_event = {
+	id = ERM_germany.23
+	title = ERM_germany.23.t
+	desc = ERM_germany.23.d
+	picture = GFX_report_event_
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = { days = 3 }
+	
+	# 
+	option = {
+		name = ERM_germany.23.a
+		GER = { country_event = { id = ERM_germany.47 } }
+		GER = { country_event = { id = ERM_germany.48 } }
+	}
+}
+
+# Shooting of the Movie Kolberg
+country_event = {
+	id = ERM_germany.24
+	title = ERM_germany.24.t
+	desc = ERM_germany.24.d
+	picture = GFX_report_event_movie_shoot
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		date = 1944.9.16
+		has_war = yes
+		NOT = { surrender_progress > 0.50 }
+	}
+
+	mean_time_to_happen = { days = 1 }
+	
+	# 
+	option = {
+		name = ERM_germany.24.a
+		add_political_power = -25
+	}
+}
+
+# Kolberg Movie Finished
+country_event = {
+	id = ERM_germany.25
+	title = ERM_germany.25.t
+	desc = ERM_germany.25.d
+	picture = GFX_report_event_kolberg_movie
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		date = 1945.1.30
+		has_war = yes
+		NOT = { has_capitulated = yes }
+	}
+
+	mean_time_to_happen = { days = 1 }
+	
+	# 
+	option = {
+		name = ERM_germany.25.a
+		add_war_support = 0.05
+	}
+}
+
+# Unmanned rocket project has been resumed
+country_event = {
+	id = ERM_germany.26
+	title = ERM_germany.26.t
+	desc = ERM_germany.26.d
+	picture = GFX_report_event_a10_resumed
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		has_war = yes
+		NOT = { surrender_progress > 0.50 }
+		focus_progress = {
+			focus = GER_space_propaganda1
+			progress > 0.01
+		}
+	}
+
+	mean_time_to_happen = { days = 1 }
+	
+	# 
+	option = {
+		name = ERM_germany.26.a
+		# ADD IDEA TO INCREASE FUNDING NEEDED FOR PROGRAM
+	}
+}
+
+# Testing with Monkeys Began
+country_event = {
+	id = ERM_germany.27
+	title = ERM_germany.27.t
+	desc = ERM_germany.27.d
+	picture = GFX_report_event_a10_monkey
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		has_war = yes
+		NOT = { surrender_progress > 0.50 }
+		focus_progress = {
+			focus = GER_space_propaganda1
+			progress > 0.50
+		}
+	}
+
+	mean_time_to_happen = { days = 1 }
+	
+	# 
+	option = {
+		name = ERM_germany.27.a
+	}
+}
+
+# Minor Setbacks
+country_event = {
+	id = ERM_germany.28
+	title = ERM_germany.28.t
+	desc = ERM_germany.28.d
+	picture = GFX_report_event_a10_setback
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		has_war = yes
+		NOT = { surrender_progress > 0.50 }
+		focus_progress = {
+			focus = GER_space_propaganda1
+			progress > 0.50
+		}
+	}
+
+	mean_time_to_happen = { days = 1 }
+	
+	# 
+	option = {
+		name = ERM_germany.28.a
+		add_political_power = -50
+	}
+}
+
+# Project Ready to Move to Final Step
+country_event = {
+	id = ERM_germany.29
+	title = ERM_germany.29.t
+	desc = ERM_germany.29.d
+	picture = GFX_report_event_rocket_construction
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = { days = 1 }
+	
+	# 
+	option = {
+		name = ERM_germany.29.a
+	}
+}
+
+# Program Needs More Funding
+country_event = {
+	id = ERM_germany.30
+	title = ERM_germany.30.t
+	desc = ERM_germany.30.d
+	picture = GFX_report_event_a10_funding
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		has_war = yes
+		NOT = { surrender_progress > 0.50 }
+		focus_progress = {
+			focus = GER_space_propaganda2
+			progress > 0.25
+		}
+	}
+
+	mean_time_to_happen = { days = 1 }
+	
+	# 
+	option = {
+		name = ERM_germany.30.a
+		IF = {
+			limit = { has_idea = GER_V2_Program }
+				swap_ideas = {
+				remove_idea = GER_V2_Program
+				add_idea = GER_V2_Program2
+			 }
+		}
+	}
+}
+
+# A10 Program Success First Man in Space
+country_event = {
+	id = ERM_germany.31
+	title = ERM_germany.31.t
+	desc = ERM_germany.31.d
+	picture = GFX_report_event_a10_success
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = { days = 1 }
+	
+	# 
+	option = {
+		name = ERM_germany.31.a
+		news_event = { id = world_news.21 }
+	}
+}
+
+# Guderian Takes Effective Command
+country_event = {
+	id = ERM_germany.32
+	title = ERM_germany.32.t
+	desc = ERM_germany.32.d
+	picture = GFX_report_event_guderian_takes_command
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = { days = 1 }
+	
+	# 
+	option = {
+		name = ERM_germany.32.a
+	}
+}
+
+# Wilhelm GustLoff Sunk
+country_event = {
+	id = ERM_germany.33
+	title = ERM_germany.33.t
+	desc = ERM_germany.33.d
+	picture = GFX_report_event_wilhelm_gustoff
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		has_war_with = SOV
+		has_global_flag = 
+		AND = {
+			controls_state = 85
+			NOT = {
+				OR = {
+					GER = {
+						controls_state = 5
+						controls_state = 807
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = { days = 1 }
+	
+	# 
+	option = {
+		name = ERM_germany.33.a
+		add_war_support = -0.025
+	}
+}
+
+# Warsaw Uprising
+country_event = {
+	id = ERM_germany.34
+	title = ERM_germany.34.t
+	desc = ERM_germany.34.d
+	picture = GFX_report_event_wilhelm_gustoff
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		has_war_with = SOV
+		GER = {
+			controls_state = 10
+			controls_province = 3544
+		}
+		AND = {
+			OR = {
+				SOV = {
+					controls_state = 97
+					controls_state = 92
+					controls_state = 90
+					controls_state = 87
+					controls_state = 98
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = { days = 1 }
+	
+	# 
+	option = {
+		name = ERM_germany.34.a
+		POL = { load_oob = POL_warsaw_uprising }
+		SOV = { country_event = { id = ERM_germany.35 } }
+	}
+}
+
+# SOV Reacts: Help Warsaw Uprising?
+country_event = {
+	id = ERM_germany.35
+	title = ERM_germany.35.t
+	desc = ERM_germany.35.d
+	picture = GFX_report_event_wilhelm_gustoff
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		has_war_with = SOV
+		GER = {
+			controls_state = 10
+			controls_province = 3544
+		}
+		AND = {
+			OR = {
+				SOV = {
+					controls_state = 97
+					controls_state = 92
+					controls_state = 90
+					controls_state = 87
+					controls_state = 98
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = { days = 1 }
+	
+	# We won't help them
+	option = {
+		name = ERM_germany.35.a
+		ai_will_do = { factor = 1 }
+		add_political_power = 50
+		set_country_flag = SOV_no_help_POL
+	}
+	# Give them aid
+	option = {
+		name = ERM_germany.35.b
+		ai_will_do = { factor = 0 }
+		set_country_flag = SOV_help_POL
+		add_political_power = -50
+		send_equipment = {
+			equipment = infantry_equipment
+			amount = 5000
+			target = POL
+		}
+	}
+}
+
+
+# Concentration/Slave Camps Dismantled
+country_event = {
+	id = ERM_germany.36
+	title = ERM_germany.36.t
+	desc = ERM_germany.36.d
+	picture = GFX_report_event_operation_panzerfaust
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = ERM_germany.36.a
+	}
+}
+
+# Covert Communications Western Allies
+country_event = {
+	id = ERM_germany.37
+	title = ERM_germany.37.t
+	desc = ERM_germany.37.d
+	picture = GFX_report_event_operation_panzerfaust
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = ERM_germany.37.a
+		set_global_flag = GER_covert_allies_communication
+	}
+}
+
+# Allies React: Covert Communications Western Allies
+country_event = {
+	id = ERM_germany.38
+	title = ERM_germany.38.t
+	desc = ERM_germany.38.d
+	picture = GFX_report_event_operation_panzerfaust
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = ENG
+		tag = USA
+		has_global_flag = GER_covert_allies_communication
+	}
+
+	mean_time_to_happen = { days = 1 }
+	
+	# Unconditional Surrender ONLY
+	option = {
+		name = ERM_germany.38.a
+		ai_chance = { factor = 1 }
+		GER = { country_event = { id = ERM_germany.39 hours = 1 } }
+	}
+	# We agree if you withdraw from west
+	option = {
+		name = ERM_germany.38.b
+		ai_chance = { factor = 0 }
+		GER = { country_event = { id = ERM_germany.40 hours = 1 } }
+	}
+}
+
+# GER Reacts: Unconditional Surrender Only
+country_event = {
+	id = ERM_germany.39
+	title = ERM_germany.39.t
+	desc = ERM_germany.39.d
+	picture = GFX_report_event_operation_panzerfaust
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = { days = 1 }
+	
+	# We have to wait until they are more divided
+	option = {
+		name = ERM_germany.39.a
+	}
+}
+
+# GER Reacts: Peace Deal Reached
+country_event = {
+	id = ERM_germany.40
+	title = ERM_germany.40.t
+	desc = ERM_germany.40.d
+	picture = GFX_report_event_operation_panzerfaust
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = { days = 1 }
+	
+	# We Agree
+	option = {
+		name = ERM_germany.40.a
+		GER = {
+			white_peace = ENG
+			white_peace = FRA
+			white_peace = USA
+			white_peace = BEL
+			white_peace = DEN
+			white_peace = GRE
+			white_peace = LUX
+			white_peace = NOR
+			white_peace = SAF
+			white_peace = NZL
+			white_peace = YUG
+			white_peace = INR
+		}
+		hidden_effect = {
+			annex_country = {
+				target = LUX
+				transfer_troops = no
+			}
+			ITA = {
+				set_state_controller = 160
+			}
+			GRE = {
+				every_core_state = {
+					set_state_controller = THIS
+					set_state_controller = THIS
+				}
+			}
+			FRA = {
+				every_core_state = {
+					set_state_controller = THIS
+					set_state_controller = THIS
+				}
+				set_state_controller = 513
+				set_state_controller = 460
+				set_state_controller = 459
+				set_state_controller = 462
+				set_state_controller = 514
+				set_state_controller = 458
+				set_state_controller = 665
+			}
+			ENG = {
+				set_state_controller = 448
+				set_state_controller = 661
+				set_state_controller = 449
+				set_state_controller = 662
+				set_state_controller = 450
+				set_state_controller = 450
+				set_state_controller = 663
+				set_state_controller = 451
+				set_state_controller = 273
+				set_state_controller = 559
+				set_state_controller = 844
+				set_state_controller = 550
+			}
+			ETH = {
+				set_state_controller = 550
+			}
+			ALB = {
+				set_state_controller = 805
+				set_state_controller = 44
+			}
+			YUG = {
+				annex_country = {
+					target = CRO
+					transfer_troops = no
+				}
+				annex_country = {
+					target = SER
+					transfer_troops = no
+				}
+				every_core_state = {
+					set_state_controller = THIS
+					set_state_controller = THIS
+				}
+				set_state_controller = 163
+			}
+			GER = {
+				set_state_controller = 853
+				set_state_controller = 102
+			}
+		}
+	}
+	# We plan on keeping all we've gained
+	option = {
+		name = ERM_germany.40.b
+	}
+}
+
+# GER Reacts: Peace if we withdraw
+country_event = {
+	id = ERM_germany.41
+	title = ERM_germany.41.t
+	desc = ERM_germany.41.d
+	picture = GFX_report_event_operation_panzerfaust
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = { days = 1 }
+	
+	# We Agree
+	option = {
+		name = ERM_germany.41.a
+		GER = {
+			white_peace = ENG
+			white_peace = FRA
+			white_peace = USA
+			white_peace = BEL
+			white_peace = DEN
+			white_peace = GRE
+			white_peace = LUX
+			white_peace = NOR
+			white_peace = SAF
+			white_peace = NZL
+			white_peace = YUG
+			white_peace = INR
+		}
+		hidden_effect = {
+			annex_country = {
+				target = LUX
+				transfer_troops = no
+			}
+			ITA = {
+				set_state_controller = 160
+			}
+			GRE = {
+				every_core_state = {
+					set_state_controller = THIS
+					set_state_controller = THIS
+				}
+			}
+			FRA = {
+				every_core_state = {
+					set_state_controller = THIS
+					set_state_controller = THIS
+				}
+				set_state_controller = 513
+				set_state_controller = 460
+				set_state_controller = 459
+				set_state_controller = 462
+				set_state_controller = 514
+				set_state_controller = 458
+				set_state_controller = 665
+			}
+			ENG = {
+				set_state_controller = 448
+				set_state_controller = 661
+				set_state_controller = 449
+				set_state_controller = 662
+				set_state_controller = 450
+				set_state_controller = 450
+				set_state_controller = 663
+				set_state_controller = 451
+				set_state_controller = 273
+				set_state_controller = 559
+				set_state_controller = 844
+				set_state_controller = 550
+			}
+			ETH = {
+				set_state_controller = 550
+			}
+			ALB = {
+				set_state_controller = 805
+				set_state_controller = 44
+			}
+			YUG = {
+				annex_country = {
+					target = CRO
+					transfer_troops = no
+				}
+				annex_country = {
+					target = SER
+					transfer_troops = no
+				}
+				every_core_state = {
+					set_state_controller = THIS
+					set_state_controller = THIS
+				}
+				set_state_controller = 163
+			}
+			GER = {
+				set_state_controller = 853
+				set_state_controller = 102
+			}
+		}
+	}
+	# We plan on keeping all we've gained
+	option = {
+		name = ERM_germany.41.a
+	}
+}
+
+# GER Reacts:
+country_event = {
+	id = ERM_germany.42
+	title = ERM_germany.42.t
+	desc = ERM_germany.42.d
+	picture = GFX_report_event_operation_panzerfaust
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = { days = 1 }
+	
+	# 
+	option = {
+		name = ERM_germany.42.a
+	}
+}
+
+# GER Reacts:
+country_event = {
+	id = ERM_germany.43
+	title = ERM_germany.43.t
+	desc = ERM_germany.43.d
+	picture = GFX_report_event_operation_panzerfaust
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = { days = 1 }
+	
+	# 
+	option = {
+		name = ERM_germany.43.a
+	}
+}
+
+# GER Reacts:
+country_event = {
+	id = ERM_germany.44
+	title = ERM_germany.44.t
+	desc = ERM_germany.44.d
+	picture = GFX_report_event_operation_panzerfaust
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = { days = 1 }
+	
+	# 
+	option = {
+		name = ERM_germany.44.a
+	}
+}
+
+# GER Reacts: Scorched Earth Policy
+country_event = {
+	id = ERM_germany.45
+	title = ERM_germany.45.t
+	desc = ERM_germany.45.d
+	picture = GFX_report_event_operation_panzerfaust
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = { days = 1 }
+	
+	
+	option = {
+		name = ERM_germany.45.a
+		set_global_flag = GER_scorched_earth_SOV
+		every_state = {
+			limit = {
+				is_core_of = GER
+				is_controlled_by = GER
+			}
+			add_state_flag = GER_scorched_earth_policy
+		}
+	}
+}
+
+
+# Scorched Earth Policy Event
+state_event = {
+	id = ERM_germany.46
+	title = ERM_germany.46.t
+	desc = ERM_germany.46.d
+	picture = GFX_report_event_GER_scorched_earth
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			random_state = {
+				limit = {
+					OR = {
+						has_state_flag = nazi_state_withdrawn
+					}
+				}
+				clr_state_flag = nazi_state_withdrawn
+				save_event_target_as = nazi_state_withdrawn
+			}
+			event_target:nazi_state_withdrawn = {
+				if = {
+					limit = {
+						has_state_flag = nazi_state_withdrawn1
+					}
+					damage_building = { type = industrial_complex damage = 0.5 }
+					damage_building = { type = arms_factory damage = 0.5 }
+					damage_building = { type = infrastructure damage = 0.5 }
+				}
+				if = {
+					limit = {
+						has_state_flag = nazi_state_withdrawn2
+					}
+					damage_building = { type = industrial_complex damage = 0.8 }
+					damage_building = { type = arms_factory damage = 0.8 }
+					damage_building = { type = infrastructure damage = 0.8 }
+				}
+				if = {
+					limit = {
+						has_state_flag = nazi_state_withdrawn3
+					}
+					damage_building = { type = industrial_complex damage = 1.2 }
+					damage_building = { type = arms_factory damage = 1.2 }
+					damage_building = { type = infrastructure damage = 1.2 }
+				}
+				if = {
+					limit = {
+						has_state_flag = nazi_state_withdrawn4
+					}
+					damage_building = { type = industrial_complex damage = 1.8 }
+					damage_building = { type = arms_factory damage = 1.8 }
+					damage_building = { type = infrastructure damage = 1.8 }
+				}
+				if = {
+					limit = {
+						has_state_flag = nazi_state_withdrawn5
+					}
+					damage_building = { type = industrial_complex damage = 2.5 }
+					damage_building = { type = arms_factory damage = 2.5 }
+					damage_building = { type = infrastructure damage = 2.5 }
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = ERM_germany.46.a
+		effect_tooltip = {
+			event_target:nazi_state_withdrawn = {
+				if = {
+					limit = {
+						has_state_flag = nazi_state_withdrawn1
+					}
+					damage_building = { type = industrial_complex damage = 0.5 }
+					damage_building = { type = arms_factory damage = 0.5 }
+					damage_building = { type = infrastructure damage = 0.5 }
+				}
+				if = {
+					limit = {
+						has_state_flag = nazi_state_withdrawn2
+					}
+					damage_building = { type = industrial_complex damage = 0.8 }
+					damage_building = { type = arms_factory damage = 0.8 }
+					damage_building = { type = infrastructure damage = 0.8 }
+				}
+				if = {
+					limit = {
+						has_state_flag = nazi_state_withdrawn3
+					}
+					damage_building = { type = industrial_complex damage = 1.2 }
+					damage_building = { type = arms_factory damage = 1.2 }
+					damage_building = { type = infrastructure damage = 1.2 }
+				}
+				if = {
+					limit = {
+						has_state_flag = nazi_state_withdrawn4
+					}
+					damage_building = { type = industrial_complex damage = 1.8 }
+					damage_building = { type = arms_factory damage = 1.8 }
+					damage_building = { type = infrastructure damage = 1.8 }
+				}
+				if = {
+					limit = {
+						has_state_flag = nazi_state_withdrawn5
+					}
+					damage_building = { type = industrial_complex damage = 2.5 }
+					damage_building = { type = arms_factory damage = 2.5 }
+					damage_building = { type = infrastructure damage = 2.5 }
+				}
+			}
+		}
+		event_target:nazi_state_withdrawn = {
+			if = {
+				limit = {
+					has_state_flag = nazi_state_withdrawn1
+				}
+				hidden_effect = { clr_state_flag = nazi_state_withdrawn1 }
+			}
+			if = {
+				limit = {
+					has_state_flag = nazi_state_withdrawn2
+				}
+				hidden_effect = { clr_state_flag = nazi_state_withdrawn2 }
+			}
+			if = {
+				limit = {
+					has_state_flag = nazi_state_withdrawn3
+				}
+				hidden_effect = { clr_state_flag = nazi_state_withdrawn3 }
+			}
+			if = {
+				limit = {
+					has_state_flag = nazi_state_withdrawn4
+				}
+				hidden_effect = { clr_state_flag = nazi_state_withdrawn4 }
+			}
+			if = {
+				limit = {
+					has_state_flag = nazi_state_withdrawn5
+				}
+				hidden_effect = { clr_state_flag = nazi_state_withdrawn5 }
+			}
+		}
+	}
+}
+
+# Power Vacuum
+country_event = {
+	id = ERM_germany.47
+	title = ERM_germany.47.t
+	desc = ERM_germany.47.d
+	picture = GFX_report_event_relchstag
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = { days = 2 }
+	
+	# 
+	option = {
+		name = ERM_germany.47.a
+		add_stability = -0.05
+		add_war_support = -0.05
+		IF = {
+			limit = {
+				NOT = {
+					has_country_leader = {
+						name = "Heinz Guderian"
+						ruling_only = yes
+					}
+				}
+			}
+			GER = { country_event = { id = ERM_germany.49 } }
+		}
+	}
+}
+
+# The Wolf's Lair is Sealed
+country_event = {
+	id = ERM_germany.48
+	title = ERM_germany.48.t
+	desc = ERM_germany.48.d
+	picture = GFX_report_event_july_20_plot
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = { days = 2 }
+	
+	# We must investigate
+	option = {
+		name = ERM_germany.48.a
+		GER = { country_event = { id = ERM_germany.51 } }
+	}
+}
+
+# Valkyrie Coup Attempt!
+country_event = {
+	id = ERM_germany.49
+	title = ERM_germany.49.t
+	desc = ERM_germany.49.d
+	picture = GFX_report_event_GER_valkyrie_coup_attempt
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = { days = 2 }
+	
+	# We must investigate
+	option = {
+		name = ERM_germany.49.a
+		set_country_flag = GER_mini_civil_war
+		GPG = { transfer_state = 64 }
+		GER = {
+			declare_war_on = {
+				target = GPG
+				type = annex_everything
+			}
+		}
+	}
+}
+
+# Valkyrie Coup Put Down!
+country_event = {
+	id = ERM_germany.50
+	title = ERM_germany.50.t
+	desc = ERM_germany.50.d
+	picture = GFX_report_event_GER_valkyrie_coup_over
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		OR = {
+			has_country_flag = GER_mini_civil_war 
+			has_country_leader = {
+				name = "Heinz Guderian"
+				ruling_only = yes
+			}
+		}
+		GER = { controls_state = 64 }
+	}
+
+	mean_time_to_happen = { days = 2 }
+	
+	# We must investigate
+	option = {
+		name = ERM_germany.50.a
+		set_country_flag = GER_civil_war_over
+		hidden_effect = {
+			GER = { transfer_state = 64 }
+		}
+	}
+}
+
+# Emergency Meeting at the Reichstag
+country_event = {
+	id = ERM_germany.51
+	title = ERM_germany.51.t
+	desc = ERM_germany.51.d
+	picture = GFX_report_event_relchstag
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = { days = 2 }
+	
+	# Who shall take over?
+	option = {
+		name = ERM_germany.51.a
+		set_country_flag = GER_meeting_reichstag
+	}
+}
+
+# Tensions between SS and Wehrmacht
+country_event = {
+	id = ERM_germany.52
+	title = ERM_germany.52.t
+	desc = ERM_germany.52.d
+	picture = GFX_report_event_SS_wehrmacht
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		OR = {
+			has_country_flag = GER_meeting_reichstag
+			has_country_flag = GER_back_guderian
+		}
+	}
+
+	mean_time_to_happen = { days = 8 }
+	
+	# We must investigate
+	option = {
+		name = ERM_germany.52.a
+	}
+}
+
+# The Successor
+country_event = {
+	id = ERM_germany.53
+	title = ERM_germany.53.t
+	desc = ERM_germany.53.d
+	picture = GFX_report_event_GER_new_leader
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		has_country_flag = GER_meeting_reichstag
+	}
+
+	mean_time_to_happen = { days = 20 }
+	
+	# Goering must lead the Reich
+	option = {
+		name = ERM_germany.53.a
+		set_country_flag = GER_goering_fuhrer
+	}
+	# Goebbels must lead the Reich
+	option = {
+		name = ERM_germany.53.b
+		set_country_flag = GER_goebbels_fuhrer
+	}
+	# Bormann must lead the Reich
+	option = {
+		name = ERM_germany.53.c
+		set_country_flag = GER_bormann_fuhrer
+	}
+	# Himmler must lead the Reich
+	option = {
+		name = ERM_germany.53.e
+		set_country_flag = GER_himmler_fuhrer
+	}
+	#
+}
+
+# Hitlers Funeral
+country_event = {
+	id = ERM_germany.5301
+	title = ERM_germany.5301.t
+	desc = ERM_germany.5301.d
+	picture = GFX_report_event_hitler_funeral
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		OR = {
+			has_country_flag = GER_himmler_fuhrer
+			has_country_flag = GER_goebbels_fuhrer
+			has_country_flag = GER_goering_fuhrer
+			has_country_flag = GER_bormann_fuhrer
+			has_country_flag = GER_back_guderian
+		}
+	}
+
+	mean_time_to_happen = { days = 20 }
+	
+	# We must investigate
+	option = {
+		name = ERM_germany.5301.a
+	}
+}
+
+# Guderian Visits the Frontlines
+# Guderian's visit to the frontlines increases morale, providing a temporary bonus to the fighting spirit of the troops.
+country_event = {
+	id = ERM_germany.54
+	title = ERM_germany.54.t
+	desc = ERM_germany.54.d
+	picture = GFX_report_event_guderian_inspects
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		has_war = yes
+		has_country_leader = {
+			name = "Heinz Guderian"
+			ruling_only = yes
+		}
+	}
+
+	mean_time_to_happen = { days = 60 }
+	
+	# We must investigate
+	option = {
+		name = ERM_germany.54.a
+	}
+}
+
+#Cult of Guderian": Propaganda machinery works to elevate Guderian's status as a national hero, increasing national unity but causing some concerns among other top officials.
+country_event = {
+	id = ERM_germany.55
+	title = ERM_germany.55.t
+	desc = ERM_germany.55.d
+	picture = GFX_report_event_cult_of_guderian
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		has_war = yes
+		has_country_leader = {
+			name = "Heinz Guderian"
+			ruling_only = yes
+		}
+	}
+
+	mean_time_to_happen = { days = 90 }
+	
+	# We must investigate
+	option = {
+		name = ERM_germany.55.a
+	}
+}
+
+#"Failed Assassination Attempt on Guderian": A failed assassination attempt on Guderian leads to increased security measures and a crackdown on dissent.
+country_event = {
+	id = ERM_germany.56
+	title = ERM_germany.56.t
+	desc = ERM_germany.56.d
+	picture = GFX_report_event_guderian_assassination_attempt
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		has_war = yes
+		has_country_leader = {
+			name = "Heinz Guderian"
+			ruling_only = yes
+		}
+	}
+
+	mean_time_to_happen = { days = 65 }
+	
+	# We must investigate
+	option = {
+		name = ERM_germany.56.a
+	}
+}
+
+#"Guderian Speaks to the Troops": Guderian personally addresses German soldiers, offering a temporary morale boost.
+country_event = {
+	id = ERM_germany.57
+	title = ERM_germany.57.t
+	desc = ERM_germany.57.d
+	picture = GFX_report_event_guderian_talks_soldiers
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		has_war = yes
+		has_country_leader = {
+			name = "Heinz Guderian"
+			ruling_only = yes
+		}
+		surrender_progress > 0.01
+	}
+
+	mean_time_to_happen = { days = 8 }
+	
+	# We must investigate
+	option = {
+		name = ERM_germany.57.a
+	}
+}
+
+# Arrest Goering
+country_event = {
+	id = ERM_germany.58
+	title = ERM_germany.58.t
+	desc = ERM_germany.58.d
+	picture = GFX_report_event_goering_arrest
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		has_war = yes
+		has_country_leader = {
+			name = "Heinz Guderian"
+			ruling_only = yes
+		}
+		has_country_flag = GER_civil_war_over
+	}
+
+	mean_time_to_happen = { days = 5 }
+	
+	# He is still useful
+	option = {
+		name = ERM_germany.58.a
+		ai_chance = { factor = 0 }
+	}
+	# He is best replaced
+	option = {
+		name = ERM_germany.58.a
+		ai_chance = { factor = 1 }
+		retire_character = GER_Hermann_Goering
+	}
+}
+
+# REAL EVENT: Goebbels visits Front lines similar benefits as above
+country_event = {
+	id = ERM_germany.59
+	title = ERM_germany.59.t
+	desc = ERM_germany.59.d
+	picture = GFX_report_event_
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		surrender_progress > 0.60
+		has_character = GER_Joseph_Goebbels
+	}
+
+	mean_time_to_happen = { days = 8 }
+	
+	# We must investigate
+	option = {
+		name = ERM_germany.59.a
+	}
+}
+
+#"Western Allies Reach the Rhine": News of the Allies reaching the Rhine reaches causing a temporary hit to national morale.
+country_event = {
+	id = ERM_germany.60
+	title = ERM_germany.60.t
+	desc = ERM_germany.60.d
+	picture = GFX_report_event_allies_reach_rhine
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		allies_reached_rhine = yes
+		has_war = yes
+	}
+
+	mean_time_to_happen = { days = 8 }
+	
+	# Damn!
+	option = {
+		name = ERM_germany.60.a
+		add_stability = -0.15
+		add_political_power = -50
+	}
+}
+
+#"The People's Response": Various parts of German society react to the coup in different ways, possibly leading to protests, strikes, or displays of support.
+country_event = {
+	id = ERM_germany.61
+	title = ERM_germany.61.t
+	desc = ERM_germany.61.d
+	picture = GFX_report_event_peoples_response
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		OR = {
+			has_country_flag = GER_back_beck
+			has_country_flag = GER_back_fromm
+			has_country_flag = GER_back_guderian
+			has_country_flag = GER_back_nazis
+		}
+		AND = {
+			has_country_flag = GER_civil_war_over
+		}
+	}
+
+	mean_time_to_happen = { days = 8 }
+	
+	# We must investigate
+	option = {
+		name = ERM_germany.61.a
+		add_stability = -0.05
+		add_political_power = -25
+	}
+}
+
+#"Establishment of Transitional Government": The Valkyrie plotters establish a transitional government to stabilize the nation.
+country_event = {
+	id = ERM_germany.62
+	title = ERM_germany.62.t
+	desc = ERM_germany.62.d
+	picture = GFX_report_event_valkyrie_prelude
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		OR = {
+			has_country_flag = GER_back_beck
+			has_country_flag = GER_back_fromm
+		}
+	}
+
+	mean_time_to_happen = { days = 8 }
+	
+	# We must investigate
+	option = {
+		name = ERM_germany.62.a
+		set_country_flag = GER_transitional_government
+	}
+}
+
+#The Question of the SS": The government has to decide what to do with the SS.
+# MUST GET THIS EVENT BEFORE BEING ABLE TO PURGE SS!!!!!!
+country_event = {
+	id = ERM_germany.63
+	title = ERM_germany.63.t
+	desc = ERM_germany.63.d
+	picture = GFX_report_event_SS_wehrmacht
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		has_completed_focus = GER_consolidate_power
+	}
+
+	mean_time_to_happen = { days = 8 }
+	
+	# We must work to disband it
+	option = {
+		name = ERM_germany.63.a
+		set_country_flag = GER_purge_SS
+	}
+	# We could still make use of it
+	option = {
+		name = ERM_germany.63.b
+		set_country_flag = GER_no_purge_SS
+	}
+}
+
+# Fate of Hitlers Assosciates
+# If not there should be a negative event, attempted Nazi Counter Coup X days after
+country_event = {
+	id = ERM_germany.64
+	title = ERM_germany.64.t
+	desc = ERM_germany.64.d
+	picture = GFX_report_event_nazi_associates
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		has_country_flag = GER_transitional_government
+	}
+
+	mean_time_to_happen = { days = 3 }
+	
+	# Arrest Them
+	option = {
+		name = ERM_germany.64.a
+	}
+	# Let them be
+	option = {
+		name = ERM_germany.64.b
+	}
+}
+
+# Nazi Counter Coup
+country_event = {
+	id = ERM_germany.65
+	title = ERM_germany.65.t
+	desc = ERM_germany.65.d
+	picture = GFX_report_event_nazi_coup
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		has_country_flag = 
+	}
+
+	mean_time_to_happen = { days = 8 }
+	
+	# Damn!
+	option = {
+		name = ERM_germany.65.a
+		add_political_power = -100
+		add_stability = -0.10
+		add_war_support = -0.10
+	}
+}
+
+# Albanian National Liberation Army
+country_event = {
+	id = ERM_germany.66
+	title = ERM_germany.66.t
+	desc = ERM_germany.66.d
+	picture = GFX_report_event_nazi_coup
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		AND = {
+			OR = {
+				BUL = { has_war_with = GER }
+				BUL = { NOT = { is_in_faction_with = GER } }
+				NOT = { GER = { controls_state = 105 } }
+				NOT = { GER = { controls_state = 802 } }
+				NOT = { GER = { controls_state = 185 } }
+			}
+		}
+	}
+
+	mean_time_to_happen = { days = 8 }
+	
+	# Damn!
+	option = {
+		name = ERM_germany.66.a
+		hidden_effect = {
+			ALB = { load_oob = ALB_1944 }
+		}
+	}
+}
+

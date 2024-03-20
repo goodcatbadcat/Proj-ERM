@@ -1,0 +1,373 @@
+spriteTypes = {
+
+
+    ###################
+    ## ITAMAN EVENTS ##
+    ###################
+
+    spriteType = {
+        name = "GFX_report_event_"
+        texturefile = "gfx/event_pictures/Report_Events/Germany/report_event_.dds"
+    }
+
+    #########################
+    ## ITAMAN EMPIRE IDEAS ##
+    #########################
+
+    spriteType = {
+        name = "GFX_idea_ITA_Last_Stand_Fascism"
+        texturefile = "gfx/interface/ideas/national_ideas/ITA/ITA_Last_Stand_Fascism.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_ITA_German_Puppet"
+        texturefile = "gfx/interface/ideas/national_ideas/ITA/ITA_German_Puppet.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_ITA_Unpopular_Government"
+        texturefile = "gfx/interface/ideas/national_ideas/ITA/ITA_Unpopular_Government.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_ITA_funding_from_GER"
+        texturefile = "gfx/interface/ideas/national_ideas/ITA/ITA_funding_from_GER.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_ITA_limited_army"
+        texturefile = "gfx/interface/ideas/national_ideas/ITA/ITA_limited_army.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_ITA_Civil_War"
+        texturefile = "gfx/interface/ideas/national_ideas/ITA/ITA_Civil_War.dds"
+    }
+    ########################
+    ### ITAMAN MINISTERS ###
+    ########################
+
+    ## HoS ##
+    SpriteType = {
+        name = "GFX_idea_ITA_Benito_Mussolini"
+        texturefile = "gfx/interface/ideas/ministers/ITA/idea_ITA_Benito_Mussolini.dds"
+
+    }
+    
+    ## HoG ##
+  
+    
+    ## FM ##
+
+    SpriteType = {
+        name = "GFX_idea_ITA_Serafino_Mazzolini"
+        texturefile = "gfx/interface/ideas/ministers/ITA/idea_ITA_Serafino_Mazzolini.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_ITA_Filippo_Anfuso"
+        texturefile = "gfx/interface/ideas/ministers/ITA/idea_ITA_Filippo_Anfuso.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_ITA_Ubaldo_Alberto_Mellini"
+        texturefile = "gfx/interface/ideas/ministers/ITA/idea_ITA_Ubaldo_Alberto_Mellini.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_ITA_Vito_Mussolini"
+        texturefile = "gfx/interface/ideas/ministers/ITA/idea_ITA_Vito_Mussolini.dds"
+        
+    }
+    
+    ## AM ##
+
+    SpriteType = {
+        name = "GFX_idea_ITA_Angelo_Tarchi"
+        texturefile = "gfx/interface/ideas/ministers/ITA/idea_ITA_Angelo_Tarchi.dds"
+        
+    }
+
+     SpriteType = {
+        name = "GFX_idea_ITA_Giovanni_Agnelli"
+        texturefile = "gfx/interface/ideas/ministers/ITA/idea_ITA_Giovanni_Agnelli.dds"
+        
+    }
+
+     SpriteType = {
+        name = "GFX_idea_ITA_Giuseppe_Spinelli"
+        texturefile = "gfx/interface/ideas/ministers/ITA/idea_ITA_Giuseppe_Spinelli.dds"
+        
+    }
+   
+    ## MoS ##
+
+    SpriteType = {
+        name = "GFX_idea_ITA_Guido_Buffarini_Guidi"
+        texturefile = "gfx/interface/ideas/ministers/ITA/idea_ITA_Guido_Buffarini_Guidi.dds"
+        
+    }
+
+     SpriteType = {
+        name = "GFX_idea_ITA_Alessandro_Pavolini"
+        texturefile = "gfx/interface/ideas/ministers/ITA/idea_ITA_Alessandro_Pavolini.dds"
+        
+    }
+
+     SpriteType = {
+        name = "GFX_idea_ITA_Renzo_Montagna"
+        texturefile = "gfx/interface/ideas/ministers/ITA/idea_ITA_Renzo_Montagna.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_ITA_Piero_Pisenti"
+        texturefile = "gfx/interface/ideas/ministers/ITA/idea_ITA_Piero_Pisenti.dds"
+        
+    }
+
+     SpriteType = {
+        name = "GFX_idea_ITA_Carlo_Emanuele_Basile"
+        texturefile = "gfx/interface/ideas/ministers/ITA/idea_ITA_Carlo_Emanuele_Basile.dds"
+        
+    }
+
+     SpriteType = {
+        name = "GFX_idea_ITA_Paolo_Zerbino"
+        texturefile = "gfx/interface/ideas/ministers/ITA/idea_ITA_Paolo_Zerbino.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_ITA_Candelore_De_Leo"
+        texturefile = "gfx/interface/ideas/ministers/ITA/idea_ITA_Candelore_De_Leo.dds"
+        
+    }
+    
+   
+    ## MoI ##
+    
+     SpriteType = {
+        name = "GFX_idea_ITA_Domenico_Pellegrini_Giampietro"
+        texturefile = "gfx/interface/ideas/ministers/ITA/idea_ITA_Domenico_Pellegrini_Giampietro.dds"
+        
+    }
+
+     SpriteType = {
+        name = "GFX_idea_ITA_Edoardo_Moroni"
+        texturefile = "gfx/interface/ideas/ministers/ITA/idea_ITA_Edoardo_Moroni.dds"
+        
+    }
+
+     SpriteType = {
+        name = "GFX_idea_ITA_Manlio_Sargenti"
+        texturefile = "gfx/interface/ideas/ministers/ITA/idea_ITA_Manlio_Sargenti.dds"
+        
+    }
+
+     SpriteType = {
+        name = "GFX_idea_ITA_Silvio_Gai"
+        texturefile = "gfx/interface/ideas/ministers/ITA/idea_ITA_Silvio_Gai.dds"
+        
+    }
+ 
+    
+    ## MoC ##
+
+    SpriteType = {
+        name = "GFX_idea_ITA_Ferdinando_Mezzasoma"
+        texturefile = "gfx/interface/ideas/ministers/ITA/idea_ITA_Ferdinando_Mezzasoma.dds"
+        
+    }
+
+     SpriteType = {
+        name = "GFX_idea_ITA_Alfredo_Cucco"
+        texturefile = "gfx/interface/ideas/ministers/ITA/idea_ITA_Alfredo_Cucco.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_ITA_Giorgio_Almirante"
+        texturefile = "gfx/interface/ideas/ministers/ITA/idea_ITA_Giorgio_Almirante.dds"
+        
+    }
+
+     SpriteType = {
+        name = "GFX_idea_ITA_Giovanni_Preziosi"
+        texturefile = "gfx/interface/ideas/ministers/ITA/idea_ITA_Giovanni_Preziosi.dds"
+        
+    }
+    
+   
+    
+    ## Theorist ##
+
+    SpriteType = {
+        name = "GFX_idea_ITA_Renato_Ricci"
+        texturefile = "gfx/interface/ideas/ministers/ITA/idea_ITA_Renato_Ricci.dds"
+        
+    }
+
+     SpriteType = {
+        name = "GFX_idea_ITA_Nicola_Bombacci"
+        texturefile = "gfx/interface/ideas/ministers/ITA/idea_ITA_Nicola_Bombacci.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_ITA_Carlo_Faggioni"
+        texturefile = "gfx/interface/ideas/ministers/ITA/idea_ITA_Carlo_Faggioni.dds"
+        
+    }
+
+     SpriteType = {
+        name = "GFX_idea_ITA_Georgio_Pini"
+        texturefile = "gfx/interface/ideas/ministers/ITA/idea_ITA_Georgio_Pini.dds"
+        
+    }
+
+    
+   
+    ## Army Chief ##
+
+     SpriteType = {
+        name = "GFX_idea_ITA_Rodolfo_Graziani"
+        texturefile = "gfx/interface/ideas/ministers/ITA/idea_ITA_Rodolfo_Graziani.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_ITA_Arrigo_Tessari"
+        texturefile = "gfx/interface/ideas/ministers/ITA/idea_ITA_Arrigo_Tessari.dds"
+        
+    }
+
+     SpriteType = {
+        name = "GFX_idea_ITA_Ernesto_Botto"
+        texturefile = "gfx/interface/ideas/ministers/ITA/idea_ITA_Ernesto_Botto.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_ITA_Manlio_Molfese"
+        texturefile = "gfx/interface/ideas/ministers/ITA/idea_ITA_Manlio_Molfese.dds"
+        
+    }
+
+     SpriteType = {
+        name = "GFX_idea_ITA_Tito_Falconi"
+        texturefile = "gfx/interface/ideas/ministers/ITA/idea_ITA_Tito_Falconi.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_ITA_Ruggero_Bonomi"
+        texturefile = "gfx/interface/ideas/ministers/ITA/idea_ITA_Ruggero_.dds"
+        
+    }
+    
+
+    ## Naval Chief ##
+
+     SpriteType = {
+        name = "GFX_idea_ITA_Giuseppe_Sparzani"
+        texturefile = "gfx/interface/ideas/ministers/ITA/idea_ITA_Giuseppe_Sparzani.dds"
+        
+    }
+    
+  
+    SpriteType = {
+        name = "GFX_idea_ITA_Junio_Valerio_Borghese"
+        texturefile = "gfx/interface/ideas/ministers/ITA/idea_ITA_Junio_Valerio_Borghese.dds"
+        
+    }
+    
+  
+    SpriteType = {
+        name = "GFX_idea_ITA_Ferruccio_Ferrini"
+        texturefile = "gfx/interface/ideas/ministers/ITA/idea_ITA_Ferruccio_Ferrini.dds"
+        
+    }
+
+    ## Army Chief ##
+
+     SpriteType = {
+        name = "GFX_idea_ITA_Gastone_Gambara"
+        texturefile = "gfx/interface/ideas/ministers/ITA/idea_ITA_Gastone_Gambara.dds"
+        
+    }
+
+    ## High Command ##
+
+     SpriteType = {
+        name = "GFX_idea_ITA_Niccolo_Nicchiarelli"
+        texturefile = "gfx/interface/ideas/ministers/ITA/idea_ITA_Niccolo_Nicchiarelli.dds"
+        
+    }
+    
+  
+    SpriteType = {
+        name = "GFX_idea_ITA_Mario_Carloni"
+        texturefile = "gfx/interface/ideas/ministers/ITA/idea_ITA_Mario_Carloni.dds"
+        
+    }
+
+     SpriteType = {
+        name = "GFX_idea_ITA_Alfonso_Ollearo"
+        texturefile = "gfx/interface/ideas/ministers/ITA/idea_ITA_Alfonso_Ollearo.dds"
+        
+    }
+    
+    #####################
+    # ITALIAN COMPANIES #
+    #####################
+
+    ## Armor ##
+    spriteType = {
+        name = "GFX_idea_ITA_Fiat"
+        texturefile = "gfx/interface/ideas/companies/ITA/idea_ITA_Fiat.dds"
+    }
+    ## Materiel Manufacturer ##
+    spriteType = {
+        name = "GFX_idea_ITA_Beretta"
+        texturefile = "gfx/interface/ideas/companies/ITA/idea_ITA_Beretta.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ITA_ITA_Lancia"
+        texturefile = "gfx/interface/ideas/companies/ITA/idea_ITA_.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ITA_Breda"
+        texturefile = "gfx/interface/ideas/companies/ITA/idea_ITA_Breda.dds"
+    }
+    ## Air ##
+    spriteType = {
+        name = "GFX_idea_ITA_Macchi"
+        texturefile = "gfx/interface/ideas/companies/ITA/idea_ITA_Macchi.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ITA_Savoia_Marchetti"
+        texturefile = "gfx/interface/ideas/companies/ITA/idea_ITA_Savoia_Marchetti.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ITA_Caproni"
+        texturefile = "gfx/interface/ideas/companies/ITA/idea_ITA_Caproni.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ITA_Piaggio"
+        texturefile = "gfx/interface/ideas/companies/ITA/idea_ITA_Piaggio.dds"
+    }
+    ## Industry ##
+    spriteType = {
+        name = "GFX_idea_ITA_Danieli"
+        texturefile = "gfx/interface/ideas/companies/ITA/idea_ITA_Danieli.dds"
+    }
+    ## Naval ##
+    spriteType = {
+        name = "GFX_idea_ITA_CRDA"
+        texturefile = "gfx/interface/ideas/companies/ITA/idea_ITA_CRDA.dds"
+    }
+}

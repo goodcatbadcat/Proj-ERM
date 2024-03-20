@@ -1,0 +1,158 @@
+spriteTypes = {
+
+
+    #####################
+    ## SERBIAN EVENTS ##
+    #####################
+
+            SpriteType = {
+        name = "GFX_report_event_"
+        texturefile = "gfx/event_pictures/Romania/report_event_.dds"
+    }
+
+    ###################
+    ## SERBIAN IDEAS ##
+    ###################
+
+            SpriteType = {
+        name = "GFX_idea_ROM_"
+        texturefile = "gfx/interface/ideas/national_ideas/ROM/idea_ROM_.dds"
+    }
+
+    #########################
+    ### SERBIAN MINISTERS ###
+    #########################
+
+    SpriteType = {
+        name = "GFX_idea_SER_Milan_Nedic"
+        texturefile = "gfx/interface/ideas/ministers/SER/idea_SER_Milan_Nedic.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_SER_Dragomir_Jovanovic"
+        texturefile = "gfx/interface/ideas/ministers/SER/idea_SER_Dragomir_Jovanovic.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_SER_Borivoje_Jonic"
+        texturefile = "gfx/interface/ideas/ministers/SER/idea_SER_Borivoje_Jonic.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_SER_Kosta_Musicki"
+        texturefile = "gfx/interface/ideas/ministers/SER/idea_SER_Kosta_Musicki.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_SER_Miodrag_Damjanovic"
+        texturefile = "gfx/interface/ideas/ministers/SER/idea_SER_Miodrag_Damjanovic.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_SER_Dura_Dokic"
+        texturefile = "gfx/interface/ideas/ministers/SER/idea_SER_Dura_Dokic.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_SER_Mihailo_Olcan"
+        texturefile = "gfx/interface/ideas/ministers/SER/idea_SER_Mihailo_Olcan.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_SER_Dragutin_Prica"
+        texturefile = "gfx/interface/ideas/ministers/SER/idea_SER_Dragutin_Prica.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_SER_Dusan_Simovic"
+        texturefile = "gfx/interface/ideas/ministers/SER/idea_SER_Dusan_Simovic.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_SER_Borivoje_Mirkovic"
+        texturefile = "gfx/interface/ideas/ministers/SER/idea_SER_Borivoje_Mirkovic.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_SER_Josif_Kostic"
+        texturefile = "gfx/interface/ideas/ministers/SER/idea_SER_Josif_Kostic.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_SER_Milorad_Nedeljkovic"
+        texturefile = "gfx/interface/ideas/ministers/SER/idea_SER_Milorad_Nedeljkovic.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_SER_Milan_Acimovic"
+        texturefile = "gfx/interface/ideas/ministers/SER/idea_SER_Milan_Acimovic.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_SER_Tanasije_Dinic"
+        texturefile = "gfx/interface/ideas/ministers/SER/idea_SER_Tanasije_Dinic.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_SER_Dimitrije_Ljotic"
+        texturefile = "gfx/interface/ideas/ministers/SER/idea_SER_Dimitrije_Ljotic.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_SER_Cedomir_Marjanovic"
+        texturefile = "gfx/interface/ideas/ministers/SER/idea_SER_Cedomir_Marjanovic.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_SER_Bogoljub_Kujundzic"
+        texturefile = "gfx/interface/ideas/ministers/SER/idea_SER_Bogoljub_Kujundzic.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_SER_Bogoljub_Kujundzic"
+        texturefile = "gfx/interface/ideas/ministers/SER/idea_SER_Bogoljub_Kujundzic.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_SER_Ognjen_Kuzmanovic"
+        texturefile = "gfx/interface/ideas/ministers/SER/idea_SER_Ognjen_Kuzmanovic.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_SER_Dusan_Letica"
+        texturefile = "gfx/interface/ideas/ministers/SER/idea_SER_Dusan_Letica.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_SER_Ljubisa_M_Bojic"
+        texturefile = "gfx/interface/ideas/ministers/SER/idea_SER_Ljubisa_M_Bojic.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_SER_Jovan_Mijuskovic"
+        texturefile = "gfx/interface/ideas/ministers/SER/idea_SER_Jovan_Mijuskovic.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_SER_Stojimir_Dobrosavljevic"
+        texturefile = "gfx/interface/ideas/ministers/SER/idea_SER_Stojimir_Dobrosavljevic.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_SER_Milos_Radosavljevic"
+        texturefile = "gfx/interface/ideas/ministers/SER/idea_SER_Milos_Radosavljevic.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_SER_Dusan_Djordjevic"
+        texturefile = "gfx/interface/ideas/ministers/SER/idea_SER_Dusan_Djordjevic.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_SER_Milos_Trivunac"
+        texturefile = "gfx/interface/ideas/ministers/SER/idea_SER_Milos_Trivunac.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_SER_Velibor_Jonic"
+        texturefile = "gfx/interface/ideas/ministers/SER/idea_SER_Velibor_Jonic.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_SER_Djordje_Peric"
+        texturefile = "gfx/interface/ideas/ministers/SER/idea_SER_Djordje_Peric.dds"
+    }
+    SpriteType = {
+        name = "GFX_idea_SER_Ratko_Parezanin"
+        texturefile = "gfx/interface/ideas/ministers/SER/idea_SER_Ratko_Parezanin.dds"
+    }
+
+    
+    ######################
+    # SERBIAN COMPANIES #
+    ######################
+
+    ## Armor ##
+
+    ## Materiel Manufacturer ##
+   
+    ## Air ##
+   
+    ## Industry ##
+    
+    ## Naval ##
+
+}

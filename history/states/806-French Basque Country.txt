@@ -1,0 +1,40 @@
+
+state={
+	id=806
+	name="STATE_806"
+
+	history={
+		owner = FRA
+		victory_points = {
+			9710 3 
+		}
+		add_core_of = NAV
+		buildings = {
+			infrastructure = 3 #was: 6
+
+		}
+		add_core_of = FRA
+		1941.1.1 = {
+			owner = FRA
+			controller = GER
+		}
+		1944.1.1 = {
+			buildings = {
+				9710 = {
+					naval_base = 2
+					coastal_bunker = 3
+				}
+				anti_air_building = 2 
+			}
+		}
+	}
+
+	provinces={
+		743 9710 11697 
+	}
+	manpower=280723
+	buildings_max_level_factor=1.000
+	state_category=town
+
+	local_supplies=0.0 
+}

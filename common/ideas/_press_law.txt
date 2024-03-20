@@ -1,0 +1,127 @@
+ideas = {
+
+	press_law = { 
+		law = yes
+		use_list_view = yes
+		
+		free_press = {
+						
+			cost = 150
+			removal_cost = 75
+			
+			available = {
+				has_democratic_government = no
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+
+			modifier = { 
+				stability_factor = -0.05
+				drift_defence_factor = -0.1
+				justify_war_goal_time = 0.75
+			}
+			
+			cancel_if_invalid = no
+		}
+
+		censored_press = {
+						
+			cost = 150
+			removal_cost = -1
+			
+			available = {
+				AND = {
+					has_democratic_government = no
+					OR = {
+						has_democratic_government = yes
+						has_war = yes
+						surrender_progress > 0.15
+					}
+				}
+			}
+			
+			ai_will_do = {
+				factor = 150
+				
+				modifier = {
+					factor = 5 
+					
+					OR = {
+						has_democratic_government = no
+					}
+				}
+				modifier = {
+					factor = 2
+					surrender_progress > 0.15
+					has_democratic_government = yes
+					has_war = yes
+				}
+			}
+
+			modifier = { 
+				drift_defence_factor = -0.05
+				justify_war_goal_time = 0.25
+			}
+			
+			cancel_if_invalid = no
+		}
+		
+		state_press = {
+						
+			cost = 150
+			removal_cost = 150
+			
+			available = {
+				NOT = {
+					has_democratic_government = no
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+
+			modifier = {
+				stability_factor = 0.05
+				drift_defence_factor = 0.05
+				army_morale_factor = 0.05
+			}
+			
+
+			cancel_if_invalid = no
+		}
+		
+		propaganda_press = {
+						
+			cost = 150
+			removal_cost = -1
+			
+			available = {
+				NOT = {
+					has_democratic_government = yes
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+				
+				modifier = {
+					factor = 50
+					has_democratic_government = no
+				}
+			}
+
+			modifier = {
+				stability_factor = 0.1
+				drift_defence_factor = 0.1
+				army_morale_factor = 0.075
+				justify_war_goal_time = -0.10
+			}
+			
+			cancel_if_invalid = no
+			default = yes
+		}
+	}
+}

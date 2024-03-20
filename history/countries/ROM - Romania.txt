@@ -1,0 +1,960 @@
+﻿#################
+# ROMANIA SETUP #
+#################
+
+capital = 46 # Bucharest 
+
+set_stability = 0.45
+set_war_support = 0.20
+set_convoys = 10
+set_fuel_ratio = 1.0
+
+########
+# ARMY #
+########
+
+oob = "ROM_1936"
+
+#################
+# Starting Tech #
+#################
+
+set_research_slots = 3
+
+set_technology = { 
+
+	############
+	# Infantry #
+	############
+	
+	# Support Weapons
+	
+	# Infantry Weapons
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	
+	# Infantry Equipment
+	
+	# Motorised
+	
+	# Marines
+	
+	# Mountaineers
+	tech_mountaineers = 1
+
+	######################
+	# Support Battalions #
+	######################
+	
+	tech_support = 1	
+	basic_train = 1 	
+	
+	# Engineer
+	tech_engineers = 1
+	
+	# Recon
+	
+	# Military Police
+	
+	# Maintenance
+	
+	# Logistics
+	
+	# Signal
+	
+	# Field Hospital
+	
+	#############
+	# Artillery #
+	#############
+	
+	# Artillery
+	gw_artillery = 1
+	
+	# Howitzer
+	
+	# Anti-Air
+	interwar_antiair = 1
+	
+	# AT
+	interwar_antitank = 1
+	
+	# Mortar
+	
+	#################
+	# Land Doctrine #
+	#################
+	
+	# Grand Battle Plan
+	trench_warfare = 1
+	
+	##################
+	# Naval Doctrine #
+	##################
+	
+	# Trade Interdiction
+	
+	#################
+	# Air Equipment #
+	#################
+	
+	# Interceptor
+	early_fighter = 1
+	fighter1 = 1
+	
+	# Multi-Role
+	
+	# Tactical Bomber
+	early_bomber = 1
+	
+	# Strategic Bomber
+	
+	# Naval Bomber
+	
+	################
+	# Air Doctrine #
+	################
+	
+	# Ground Support
+	
+	################################
+	# Engineering / Secret Weapons #
+	################################
+	
+	# Electrical and Mechanical
+	
+	# Decryption & Encryption
+	
+	############
+	# Industry #
+	############
+	
+	# Machine Tools
+	
+	# Industry [Concentrated vs Dispersed ]
+	
+	# Construction
+	
+	# Synthetics
+}
+
+##############
+# ARMOR TECH #
+##############
+
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+	
+		## Tank Prot. ##
+		gwtank = 1
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = { 
+	
+		## Light Tank ##
+		gwtank_chassis = 1
+		
+	}
+}
+
+##############
+# Naval Tech #
+##############
+
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		#########
+		# Naval #
+		#########
+		
+		# Misc
+		transport = 1
+		
+		# Destroyer
+		early_destroyer = 1
+		
+		# Light Cruiser
+		early_light_cruiser = 1
+		
+		# Heavy Cruiser
+		
+		# Battleship
+		
+		# Battlecruiser
+		
+		# Carrier
+		
+		# Submarine
+		early_submarine = 1
+		
+	}
+	set_naval_oob = "ROM_1936_NON_MTG"
+}
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		#########
+		# Naval #
+		#########
+		
+		# Various Eqpt.
+		
+		# Depth Charge
+		basic_depth_charges = 1
+		
+		# Naval Mine
+		basic_naval_mines = 1
+		
+		# Destroyer
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		
+		# Cruiser
+		early_ship_hull_cruiser = 1
+		
+		# Battleship
+		
+		# Carrier
+		
+		# Submarine
+		early_ship_hull_submarine = 1
+		
+		# Torpedo Eqpt.
+		basic_torpedo = 1
+		
+		# Naval Gunnery Eqpt.
+		basic_battery = 1
+		basic_light_battery = 1
+		
+		# Landing Craft
+		mtg_transport = 1
+		
+		# Fire Drills
+		
+		# Bracket Shooting
+		
+	}
+	set_naval_oob = "ROM_1936_MTG"
+}
+
+#############
+# DLC SETUP #
+#############
+
+if = {
+	limit = {
+		has_dlc = "Death or Dishonor"
+	}
+	add_ideas = {
+		ROM_king_carol_ii_hedonist
+	}
+	give_guarantee = CZE
+	give_guarantee = GRE
+	give_guarantee = TUR
+	give_guarantee = YUG
+}
+if = {
+	limit = {
+		AND = {  
+			NOT = { has_dlc = "Death or Dishonor" }
+			has_dlc = "Battle for the Bosporus"
+		}
+	}
+	give_guarantee = GRE
+	give_guarantee = TUR
+	give_guarantee = YUG
+}
+
+if = {
+	limit = {
+		has_dlc = "Death or Dishonor"
+	}
+	ROM = {
+		#Pick from list of the sane events first
+		random_list = {
+			100 = { country_event = { id = DOD_romania.81 days = 2 random_days = 20 } }
+		}
+	}
+}
+
+if = {
+	limit = {
+		#has_dlc = Battle for the Bosporus
+	}
+	add_opinion_modifier = { 
+		target = GRE
+		modifier = BFTB_balkan_pact_ally
+	}
+	add_opinion_modifier = { 
+		target = TUR
+		modifier = BFTB_balkan_pact_ally
+	}
+	add_opinion_modifier = { 
+		target = YUG
+		modifier = BFTB_balkan_pact_ally
+	}
+	add_opinion_modifier = { 
+		target = BUL
+		modifier = BFTB_balkan_pact_enemy
+	}
+	add_opinion_modifier = { 
+		target = HUN
+		modifier = BFTB_balkan_pact_enemy
+	}
+}
+
+#################
+# END DLC SETUP #
+#################
+
+############
+# Politics #
+############
+
+set_popularities = {
+	fascism = 25
+	neutrality = 40
+	democratic = 20
+	communism = 15
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 72
+	elections_allowed = no
+}
+
+###########
+# LEADERS #
+###########
+
+## Paternal Autocrat ##
+recruit_character = ROM_Ion_Antonescu
+## Democratic ##
+recruit_character = ROM_Mihai_I
+## Fascist ##
+recruit_character = ROM_Horia_Sima
+## Communist ##
+recruit_character = ROM_Gheorghe_Gheorghiu_Dej
+
+##################
+# FIELD MARSHALS #
+##################
+
+recruit_character = ROM_Petre_Dumitrescu
+
+####################
+# CORPS COMMANDERS #
+####################
+
+recruit_character = ROM_Constantin_Sanatescu
+recruit_character = ROM_Ioan_Mihail_Racovita
+recruit_character = ROM_Illie_Steflea
+recruit_character = ROM_Martin_Ceausu
+recruit_character = ROM_Gheorghe_Mihail
+recruit_character = ROM_Nicolae_Radescu
+recruit_character = ROM_Ion_Gigurtu
+recruit_character = ROM_Platon_Chirnoaga
+recruit_character = ROM_Radu_Korne
+recruit_character = ROM_Georghe_Sinaia_Ionescu
+
+####################
+# NAVAL COMMANDERS #
+####################
+
+recruit_character = ROM_Horia_Macellariu
+recruit_character = ROM_Nicolae_Caranfil
+recruit_character = ROM_Ioan_Georgescu
+recruit_character = ROM_Nicolae_Sova
+recruit_character = ROM_Nicolai_Duca_di_Silvania
+
+#############
+# AIR CHIEF #
+#############
+
+recruit_character = ROM_Emil_Gheorghiu
+recruit_character = ROM_Dante_Vizante
+recruit_character = ROM_Gheorghe_Jienescu
+recruit_character = ROM_Paul_Teodorescu
+recruit_character = ROM_Gheorghe_Vasiliu
+
+##############
+# NAVY CHIEF #
+##############
+
+recruit_character = JAP_Daigo_Tadashige
+recruit_character = JAP_Hasegawa_Kiyoshi
+recruit_character = JAP_Ozawa_Jisaburo
+recruit_character = JAP_Toyoda_Soemu
+recruit_character = JAP_Yoshida_Zengo
+
+######################
+# HEAD OF GOVERNMENT #
+######################
+
+recruit_character = ROM_Petru_Groza
+
+####################
+# FOREIGN MINSITER #
+####################
+
+recruit_character = ROM_Mihai_Antonescu
+recruit_character = ROM_Mikhail_Sturdza
+recruit_character = ROM_Istrate_Micescu
+recruit_character = ROM_Mihail_Manoilescu
+recruit_character = ROM_Grigore_Niclesco_Buzesti
+recruit_character = ROM_Constantin_Visoianu
+recruit_character = ROM_Gheorghe_Tatarescu
+recruit_character = ROM_Constantin_Argetoianu
+recruit_character = ROM_Ana_Pauker
+recruit_character = ROM_Simon_Bughici
+recruit_character = ROM_Grigore_Preoteasa
+
+######################
+# ARMAMENTS MINSITER #
+######################
+
+recruit_character = ROM_Gheorghe_Ptopeanu
+recruit_character = ROM_Gheorghe_Dobre
+recruit_character = ROM_Nicolai_Stoenescu
+recruit_character = ROM_Constantin_Papanace
+recruit_character = ROM_Iosif_Iacobici
+recruit_character = ROM_Constantin_Pantazi
+recruit_character = ROM_Ion_N_Fintescu
+recruit_character = ROM_Vasile_Iasinschi
+recruit_character = ROM_Nicolae_Petrascu
+recruit_character = ROM_Radu_Irimescu
+
+########################
+# MINISTER OF SECURITY #
+########################
+
+recruit_character = ROM_David_Popescu
+recruit_character = ROM_Alexandru_Nicolschi
+recruit_character = ROM_Petre_Antonescu
+recruit_character = ROM_Eugen_Cristescu
+recruit_character = ROM_Romulus_Opris
+recruit_character = ROM_Radu_Mironovici
+recruit_character = ROM_Gheorghe_Pintilie
+
+########################
+# MINISTER OF INDUSTRY #
+########################
+
+recruit_character = ROM_Constantin_IC_Bratianu
+recruit_character = ROM_Chivu_Stoica
+recruit_character = ROM_Gheron_Netta
+recruit_character = ROM_Caius_Brediceanu
+recruit_character = ROM_Alexandru_D_Neagu
+recruit_character = ROM_Ion_Boiteanu
+recruit_character = ROM_Mihail_Manoilescu
+recruit_character = ROM_Ion_Gigurtu
+recruit_character = ROM_Corneliu_Georgescu
+recruit_character = ROM_Stan_Ghitescu
+recruit_character = ROM_George_Cretzianu
+recruit_character = ROM_Mircea_Cancicov
+recruit_character = ROM_Ion_C_Marinescu
+
+#######################
+# MINISTER OF CULTURE #
+#######################
+
+recruit_character = ROM_Mihail_Roller
+recruit_character = ROM_Nichifor_Crainic
+recruit_character = ROM_Dumitru_Caracostea
+recruit_character = ROM_Traian_Braileanu
+recruit_character = ROM_Illie_Garneata
+recruit_character = ROM_Nae_Ionescu
+
+#############
+# THEORISTS #
+#############
+
+recruit_character = ROM_Nicolae_Stonescu
+recruit_character = ROM_Horia_Hulubei
+recruit_character = ROM_Grigore_C_Moisil
+recruit_character = ROM_Elie_Carafoli
+recruit_character = ROM_Micrea_Sabau
+
+##############
+# OPERATIVES #
+##############
+
+
+##############
+# 1944 SETUP #
+##############
+
+1944.1.1 = {
+
+	#################
+	# COUNTRY SETUP #
+	#################
+	
+	add_political_power = 150
+	
+	set_stability = -0.10
+	set_war_support = -0.25
+	set_convoys = 5
+	set_fuel_ratio = 0.65
+	
+	########
+	# ARMY #
+	########
+	
+	oob = "ROM_1944"
+	
+	################
+	# IDEAS / LAWS #
+	################
+	
+	add_ideas = {
+		
+		## Ministers ##
+		
+		# HOS
+		ROM_Ion_Antonescu
+		
+		# HOG
+		ROM_Mihai_I
+		
+		# FM	
+		ROM_Mihai_Antonescu
+		
+		# MoS
+		ROM_Eugen_Cristescu
+		
+		# AM
+		ROM_Gheorghe_Dobre
+		
+		#MoI
+		ROM_Mircea_Cancicov
+		
+		# MoC
+		ROM_Mihai_Antonescu3
+		
+		# Theorist
+		ROM_Iosif_Iacobici2
+		
+		# Army Chief
+		ROM_Ion_Antonescu2
+		
+		# Air Chief
+		ROM_Emil_Gheorghiu
+		
+		# Navy Chief
+		ROM_Horia_Macellariu
+		
+		# High Command
+		ROM_Illie_Steflea
+		ROM_Martin_Ceausu
+		ROM_Ioan_Mihail_Racovita
+	
+		## Laws ##
+		
+		# Economy 
+		war_economy
+		
+		# Conscription
+		extensive_conscription
+		
+		# Exports
+		closed_economy
+		
+		# Education
+		average_education_investment
+		
+		# Press
+		propaganda_press
+		
+		# Army Training
+		basic_training
+		
+		## Companies ##
+	}
+	
+	#############
+	# FOCUSOIDS #
+	#############
+	
+	complete_national_focus = ROM_preserve_greater_Romania
+	unlock_national_focus = ROM_trade_treaty_with_germany
+	unlock_national_focus = ROM_invite_german_advisors
+	complete_national_focus = ROM_license_german_equipment
+	unlock_national_focus = ROM_join_axis
+	complete_national_focus = ROM_german_romanian_oil_exploitation_company
+	complete_national_focus = ROM_demand_transnistria
+	unlock_national_focus = ROM_civil_works
+	complete_national_focus = ROM_agrarian_reform
+	complete_national_focus = ROM_danubian_transport_network
+	unlock_national_focus = ROM_invite_foreign_motor_companies
+	unlock_national_focus = ROM_invest_in_the_iar
+	complete_national_focus = ROM_expand_ploesti_oil_production
+	unlock_national_focus = ROM_institute_royal_dictatorship
+	unlock_national_focus = ROM_revise_the_constitution
+	complete_national_focus = ROM_fortify_the_borders
+	complete_national_focus = ROM_flexible_foreign_policy
+	unlock_national_focus = ROM_appoint_german_friendly_government
+	unlock_national_focus = ROM_iron_guard
+	unlock_national_focus = ROM_force_abdication
+	unlock_national_focus = ROM_the_royal_foundation
+	
+	# Airforce
+	complete_national_focus = ROM_expand_the_air_force
+	complete_national_focus = ROM_white_squadron_focus
+	complete_national_focus = ROM_acquire_licenses
+	unlock_national_focus = ROM_air_defense
+	unlock_national_focus = ROM_acquire_fighters
+	#Army
+	complete_national_focus = ROM_army_maneuvers
+	unlock_national_focus = ROM_royal_guards_divisions
+	complete_national_focus = ROM_reserve_divisions
+	complete_national_focus = ROM_acquire_modern_tanks
+	complete_national_focus = ROM_mobile_tank_destroyers
+	complete_national_focus = ROM_the_maresal
+	unlock_national_focus = ROM_the_zb_53
+	complete_national_focus = ROM_army_war_college
+	unlock_national_focus = ROM_vanatori_de_munte
+	unlock_national_focus = ROM_artillery_modernization
+	complete_national_focus = ROM_mountain_artillery
+	# Navy
+	unlock_national_focus = ROM_expand_the_galati_shipyards
+	complete_national_focus = ROM_coastal_defense_navy
+	complete_national_focus = ROM_modern_destroyers
+	complete_national_focus = ROM_coastal_defense_ships
+	complete_national_focus = ROM_torpedo_boats
+	
+	##############
+	# TECHNOLOGY #
+	##############
+	
+	set_technology = {
+
+		############
+		# Infantry #
+		############
+		
+		# Support Weapons
+		support_weapons = 1 
+		support_weapons2 = 1 
+		
+		# Infantry Weapons
+		infantry_weapons = 1
+		infantry_weapons1 = 1
+		infantry_weapons2 = 1 
+		
+		# Infantry Equipment
+		
+		# Motorised
+		
+		# Mechanized
+		
+		# Trench Warfare
+		
+		# Marines
+		marines = 1 
+		
+		# Paratroops
+		
+		# Mountaineers
+		tech_mountaineers = 1
+		tech_mountaineers2 = 1 
+		
+		# Special Forces
+
+		######################
+		# Support Battalions #
+		######################
+		
+		tech_support = 1	
+	    basic_train = 1 	
+	
+		# Engineer
+		tech_engineers = 1
+		tech_engineers2 = 1 
+		
+		# Recon
+		tech_recon = 1
+		
+		# Military Police
+		tech_military_police = 1 
+		
+		# Maintenance
+		
+		# Logistics
+		tech_logistics_company = 1 
+		
+		# Signal
+		tech_signal_company = 1 
+		
+		# Field Hospital
+		
+		#############
+		# Artillery #
+		#############
+		
+		# Artillery
+		gw_artillery = 1
+		interwar_artillery = 1
+		artillery1 = 1 
+		
+		# Rocket Artillery
+		
+		# Anti-Air
+		interwar_antiair = 1
+		antiair1 = 1 
+		
+		# Anti-Tank
+		interwar_antitank = 1 
+		antitank1 = 1 
+		
+		#################
+		# Land Doctrine #
+		#################
+		
+		# Trench Warfare
+		trench_warfare = 1 
+		grand_battle_plan = 1 
+		prepared_defense = 1 
+		grand_assault = 1 
+		infantry_offensive = 1 
+		
+		##################
+		# Naval Doctrine #
+		##################
+		
+		# Fleet in Being
+		fleet_in_being = 1 
+		battlefleet_concentration = 1 
+		convoy_sailing = 1 
+		submarine_operations = 1 
+		
+		#################
+		# Air Equipment #
+		#################
+		
+		# Interceptor
+		early_fighter = 1
+		fighter1 = 1
+		fighter2 = 1 
+		
+		# Heavy Fighter
+		
+		# Multi-Role
+		
+		# Tactical Bomber
+		early_bomber = 1
+		tactical_bomber1 = 1
+		
+		# Strategic Bomber
+		
+		# Naval Bomber
+		
+		# Carrier Fighter
+		
+		# Carrier CAS
+		
+		# Carrier Bomber
+		
+		################
+		# Air Doctrine #
+		################
+		
+		# Force Rotation
+		force_rotation = 1 
+		fighter_baiting = 1 
+		low_echelon_support = 1 
+		
+		
+		################################
+		# Engineering / Secret Weapons #
+		################################
+		
+		# Radio
+		radio = 1 
+		
+		# Electrical and Mechanical
+		electronic_mechanical_engineering = 1
+		
+		# Decryption & Encryption
+		basic_encryption = 1 
+		improved_encryption = 1 
+		
+		# Rocketry
+		
+		# Jet Engine
+		
+		# Nuclear Research
+		
+		############
+		# Industry #
+		############
+		
+		# Machine Tools
+		basic_machine_tools = 1 
+		improved_machine_tools = 1 
+		
+		# Assembly
+		
+		# Industry [Concentrated vs Dispersed]
+		concentrated_industry = 1 
+		concentrated_industry2 = 1 
+		concentrated_industry3 = 1 
+		
+		# Construction
+		construction1 = 1 
+		construction2 = 1
+		
+		# Excavation
+		excavation1 = 1 
+		excavation2 = 1 
+		
+		# Synthetics
+	}
+	if = {
+		limit = { not = { has_dlc = "Man the Guns" } }
+		set_technology = {
+			basic_submarine = 1
+		}
+		set_naval_oob = "ROM_1936_NON_MTG"
+	}
+	if = {
+		limit = { has_dlc = "Man the Guns" }
+		set_technology = {
+		}
+		set_naval_oob = "ROM_1936_MTG"
+	}
+}
+
+##############
+# ARMOR TECH #
+##############
+
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+	
+		## Tank Prot. ##
+		gwtank = 1
+		
+		## Light Tank ##
+		basic_light_tank = 1
+		basic_light_td = 1 
+		basic_light_art = 1 
+		basic_light_spaa = 1 
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = { 
+	
+		## Light Tank ##
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+		
+		## Armor ##
+		armor_tech_1 = 1
+		
+		## Engine ##
+		engine_tech_1 = 1
+	}
+}
+
+#################
+# SHIP VARIANTS #
+#################
+
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	### Ship Variants ###
+	create_equipment_variant = {
+		name = "Regele Ferdinand Class"
+		type = destroyer_1
+		upgrades = {
+			ship_torpedo_upgrade = 1
+			destroyer_engine_upgrade = 1
+			ship_ASW_upgrade = 1
+			ship_anti_air_upgrade = 1
+		}
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	# Submarines #
+	create_equipment_variant = {
+		name = "Delfinul Class"				
+		type = ship_hull_submarine_2
+		name_group = ROM_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = ship_mine_layer_sub
+		}
+	}
+	# Destroyers #
+	create_equipment_variant = {
+		name = "Marasti Class"				
+		type = ship_hull_light_1
+		name_group = ROM_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_mine_layer_1
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Regele Ferdinand Class"	
+		type = ship_hull_light_1
+		name_group = ROM_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_mine_layer_1
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+	}
+}
+
+# 1939 Start #
+1939.1.1 = {
+	if = {
+		limit = { not = { has_dlc = "Man the Guns" } }
+		# Ship variants #
+	}
+	if = {
+		limit = { has_dlc = "Man the Guns" }
+	}
+}

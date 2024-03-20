@@ -1,0 +1,23 @@
+﻿######################
+# Introduction Event #
+######################
+
+add_namespace = erm.intro
+
+##########################
+### Introduction Event ###
+##########################
+
+country_event = { # Introduction Event
+	id = erm.intro.1
+	title = erm.intro.1.t
+	desc = erm.intro.1.d
+	picture = GFX_report_event
+
+	is_triggered_only = yes
+
+	option = {
+		name = erm.intro.a
+	}
+
+}

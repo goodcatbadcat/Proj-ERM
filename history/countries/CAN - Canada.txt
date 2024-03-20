@@ -1,0 +1,1088 @@
+﻿################
+# CANADA SETUP #
+################
+
+capital = 276 # Ottawa
+
+set_country_flag = monroe_doctrine
+set_stability = 0.8
+set_war_support = 0.1
+set_convoys = 60
+set_fuel_ratio = 0.85
+
+########
+# ARMY #
+########
+
+oob = "CAN_1936"
+
+#################
+# Starting Tech #
+#################
+set_technology = { 
+
+	############
+	# Infantry #
+	############
+	
+	# Support Weapons
+	
+	# Infantry Weapons
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	
+	# Infantry Equipment
+	
+	# Motorised
+	motorised_infantry = 1
+	
+	# Marines
+	marines = 1 
+	
+	# Mountaineers
+
+	######################
+	# Support Battalions #
+	######################
+	
+	tech_support = 1	
+	basic_train = 1 	
+	
+	# Engineer
+	tech_engineers = 1
+	
+	# Recon
+	tech_recon = 1
+	
+	# Military Police
+	
+	# Maintenance
+	
+	# Logistics
+	
+	# Signal
+	
+	# Field Hospital
+	
+	#############
+	# Artillery #
+	#############
+	
+	# Artillery
+	gw_artillery = 1
+	
+	# AT
+	
+	# Anti-Air
+	interwar_antiair = 1
+	
+	#################
+	# Land Doctrine #
+	#################
+	
+	# Mobile Warfare
+	trench_warfare = 1
+	
+	##################
+	# Naval Doctrine #
+	##################
+	
+	# Trade Interdiction
+	fleet_in_being = 1
+	
+	#################
+	# Air Equipment #
+	#################
+	
+	# Interceptor
+	early_fighter = 1
+	fighter1 = 1
+	
+	# Multi-Role
+	CAS1 = 1
+	
+	# Tactical Bomber
+	early_bomber = 1
+	tactical_bomber1 = 1
+	
+	# Strategic Bomber
+	strategic_bomber1 = 1
+	
+	# Naval Bomber
+	naval_bomber1 = 1
+	
+	# CV
+	cv_early_fighter = 1 
+	cv_naval_bomber1 = 1 
+	
+	################
+	# Air Doctrine #
+	################
+	
+	# Ground Support
+	air_superiority = 1 
+	
+	################################
+	# Engineering / Secret Weapons #
+	################################
+	
+	# Radio
+	
+	# Electrical and Mechanical 
+	
+	# Decryption & Encryption
+	
+	############
+	# Industry #
+	############
+	
+	# Machine Tools
+	
+	# Industry [Concentrated vs Dispersed ]
+	
+	# Construction
+	
+	# Synthetics
+	fuel_silos = 1
+	fuel_refining = 1
+}
+
+##############
+# ARMOR TECH #
+##############
+
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+	
+		## Tank Prot. ##
+		gwtank = 1
+		
+		## Light Tank ##
+		basic_light_tank = 1
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = { 
+	
+		## Light Tank ##
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+	}
+}
+
+##############
+# Naval Tech #
+##############
+
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		#########
+		# Naval #
+		#########
+		
+		# Misc
+		transport = 1
+		
+		# Destroyer
+		early_destroyer = 1
+		basic_destroyer = 1
+		
+		# Light Cruiser
+		early_light_cruiser = 1
+		
+		# Heavy Cruiser
+		early_heavy_cruiser = 1
+		
+		# Battleship
+		early_battleship = 1
+		
+		# Battlecruiser
+		
+		# Carrier
+		
+		# Submarine
+		early_submarine = 1
+		
+	}
+	set_naval_oob = "CAN_1936_NON_MTG"
+}
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		#########
+		# Naval #
+		#########
+		
+		# Various Eqpt.
+		sonar = 1
+		basic_depth_charges = 1
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		smoke_generator = 1
+		
+		# Destroyer
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		
+		# Cruiser
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		
+		basic_cruiser_armor_scheme = 1
+		
+		# Battleship
+		pre_dreadnoughts = 1
+		early_ship_hull_heavy = 1
+		
+		# Carrier
+		
+		# Submarine
+		early_ship_hull_submarine = 1
+		
+		# Torpedo Eqpt.
+		basic_torpedo = 1
+		
+		# Naval Gunnery Eqpt.
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		
+		basic_secondary_battery = 1
+		
+		# Landing Craft
+		mtg_transport = 1
+		
+		# Fire Drills
+		
+		# Bracket Shooting
+		improved_secondary_battery = 1
+		basic_fire_control_system = 1
+		
+	}
+	set_naval_oob = "CAN_1936_MTG"
+}
+
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	set_technology = {
+		armored_car1 = 1
+	}
+}
+
+if = {
+	limit = { has_dlc = "Together for Victory" }
+	set_cosmetic_tag = CAN_UK
+	add_to_tech_sharing_group = commonwealth_research
+}
+
+if = { 
+	limit = { NOT = { has_dlc = "Together for Victory" } }
+	set_cosmetic_tag = CAN_ALY
+}
+
+##################
+# END TECH SETUP #
+##################
+
+############
+# Politics #
+############
+
+set_popularities = {
+	fascism = 0
+	neutrality = 0
+	democratic = 100
+	communism = 0
+}
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1940.3.26"
+	election_frequency = 72
+	elections_allowed = yes
+}
+
+create_country_leader = {
+	name = "Mackenzie King"
+	desc = "POLITICS_MACKENZIE_KING_DESC"
+	picture = "Portrait_Canada_Mackenzie_King.dds"
+	expire = "1965.1.1"
+	ideology = democratic
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Adrien Arcand"
+	desc = "POLITICS_ADRIEN_ARCAND_DESC"
+	picture = "GFX_CAN_adrien_arcand"
+	expire = "1965.1.1"
+	ideology = fascism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+    name = "Tim Buck"
+    desc = "POLITICS_TIM_BUCK_DESC"
+    picture = "Portrait_Canada_Tim_Buck.dds"
+    expire = "1965.1.1"
+    ideology = communism
+    traits = {
+        #
+    }
+}
+
+create_country_leader = {
+	name = "J. S. Woodsworth"
+	desc = "POLITICS_JS_WOODSWORTH_DESC"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+	expire = "1965.1.1"
+	ideology = democratic
+	traits = {
+		#
+	}
+}
+
+##############
+# COMMANDERS #
+##############
+
+create_corps_commander = {
+	name = "Thomas Victor Anderson"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	traits = {  }
+	skill = 4
+    attack_skill = 2
+    defense_skill = 3
+    planning_skill = 3
+    logistics_skill = 5
+}
+
+create_field_marshal = {
+	name = "Charles Foulkes"
+	gfx = "GFX_CAN_charles_foulkes"
+	traits = { }
+	skill = 4
+    attack_skill = 4
+    defense_skill = 2
+    planning_skill = 4
+    logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Percival John Montague"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	traits = { }
+	skill = 3
+    attack_skill = 1
+    defense_skill = 1
+    planning_skill = 3
+    logistics_skill = 5
+}
+create_corps_commander = {
+	name = "Bert Hoffmeister"
+	gfx = "GFX_CAN_bert_hoffmeister"
+	traits = { hill_fighter }
+	skill = 4
+    attack_skill = 4
+    defense_skill = 3
+    planning_skill = 3
+    logistics_skill = 3
+}
+
+create_navy_leader = {
+	name = "Leonard W. Murray"
+	gfx = "GFX_CAN_leonard_warren_murray"
+	traits = { }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 3
+	maneuvering_skill = 3
+	coordination_skill = 3
+}
+
+create_navy_leader = {
+	name = "H.T. Baillie-Grohman"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_2.dds"
+	traits = { spotter }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	maneuvering_skill = 3
+	coordination_skill = 4
+}
+create_navy_leader = {
+	name = "James D. Prentice"
+	gfx = "GFX_CAN_james_prentice"
+	traits = { spotter }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 2
+}
+create_navy_leader = {
+	name = "Harry DeWolf"
+	gfx = "GFX_CAN_harry_dewolf"
+	traits = { superior_tactician bold }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 5
+}
+
+##############
+# 1944 SETUP #
+##############
+1944.1.1 = {
+
+	#################
+	# COUNTRY SETUP #
+	#################
+	
+	add_political_power = 150
+	
+	set_stability = 0.78
+	set_war_support = 0.74
+	set_convoys = 150
+	
+	########
+	# ARMY #
+	########
+	
+	oob = "CAN_1944"
+	
+	################
+	# IDEAS / LAWS #
+	################
+	
+	add_ideas = {
+		
+		## Ministers ##
+		
+		# FM	
+		
+		# MoS
+		
+		# AM
+		
+		# MoC
+		
+		# Theorist
+		
+		# Army Chief
+		
+		# Air Chief
+		
+		# Navy Chief
+		
+		# High Command
+		
+	
+		## Laws ##
+		
+		# Economy 
+		war_economy
+		
+		# Conscription
+		limited_conscription
+		
+		# Exports
+		limited_exports
+		
+		# Education
+		massive_education_investment
+		
+		# Press
+		censored_press
+		
+		# Army Training
+		advanced_training
+		
+		## Companies ##
+	}
+	
+	
+	###########
+	# FOCUSES #
+	###########
+	
+	if = {
+		limit = { has_dlc = "Together for Victory" }
+		complete_national_focus = CAN_army_modernization
+		complete_national_focus = CAN_canadian_infantry_corps
+		complete_national_focus = CAN_cmp_truck
+		complete_national_focus = CAN_rcaf_station_borden
+		complete_national_focus = CAN_halifax_shipyards
+		complete_national_focus = CAN_destroyer_effort
+		complete_national_focus = CAN_rowell_sirois_commission
+		complete_national_focus = CAN_crown_corporations
+		complete_national_focus = CAN_national_housing_act
+		
+		else = {
+			#generic focuses
+			complete_national_focus = army_effort
+			complete_national_focus = equipment_effort
+			complete_national_focus = motorization_effort
+			complete_national_focus = aviation_effort
+			complete_national_focus = naval_effort
+			complete_national_focus = large_navy
+			complete_national_focus = industrial_effort
+			complete_national_focus = construction_effort
+			complete_national_focus = production_effort
+		}
+	}
+
+	###################
+	# TECHNOLOGY 1944 #
+	###################
+	
+	set_technology = {
+
+		############
+		# Infantry #
+		############
+		
+		# Support Weapons
+		support_weapons = 1 
+		support_weapons2 = 1 
+		support_weapons3 = 1 
+		
+		# Infantry Weapons
+		infantry_weapons = 1
+		infantry_weapons1 = 1
+		infantry_weapons2 = 1  
+		
+		# Infantry Equipment
+		
+		# Motorised
+		motorised_infantry = 1
+		
+		# Mechanized
+		mechanised_infantry = 1 
+		
+		# Trench Warfare
+		
+		# Marines
+		marines = 1
+		marines2 = 1 
+		
+		# Paratroops
+		paratroopers = 1 
+		paratroopers2 = 1 
+		
+		# Mountaineers
+		tech_mountaineers = 1
+		tech_mountaineers2 = 1 
+		
+		# Special Forces
+		tech_special_forces = 1 
+		advanced_special_forces = 1 
+
+		######################
+		# Support Battalions #
+		######################
+		
+		tech_support = 1	
+	    basic_train = 1 	
+	
+		# Engineer
+		tech_engineers = 1
+		tech_engineers2 = 1 
+		
+		# Recon
+		tech_recon = 1
+		tech_recon2 = 1 
+		tech_recon3 = 1 
+		
+		# Military Police
+		tech_military_police = 1 
+		
+		# Maintenance
+		tech_maintenance_company = 1 
+		tech_maintenance_company2 = 1 
+		
+		# Logistics
+		tech_logistics_company = 1 
+		tech_logistics_company2 = 1 
+		tech_logistics_company3 = 1 
+		
+		# Signal
+		tech_signal_company = 1 
+		tech_signal_company2 = 1 
+		tech_signal_company3 = 1 
+		
+		# Field Hospital
+		tech_field_hospital = 1 
+		tech_field_hospital2 = 1 
+		tech_field_hospital3 = 1 
+		
+		#############
+		# Artillery #
+		#############
+		
+		# Artillery
+		gw_artillery = 1
+		interwar_artillery = 1
+		artillery1 = 1 
+		artillery2 = 1
+		artillery3 = 1 
+		
+		# Rocket Artillery
+		
+		# Anti-Air
+		interwar_antiair = 1
+		antiair1 = 1 
+		antiair2 = 1 
+		antiair3 = 1 
+		
+		# Anti-Tank
+		interwar_antitank = 1 
+		antitank1 = 1 
+		antitank2 = 1 
+		antitank3 = 1 
+		
+		#################
+		# Land Doctrine #
+		#################
+		
+		# Trench Warfare
+		trench_warfare = 1 
+		grand_battle_plan = 1 
+		prepared_defense = 1 
+		grand_assault = 1  
+		
+		##################
+		# Naval Doctrine #
+		##################
+		
+		# Base Strike
+		fleet_in_being = 1 
+		battlefleet_concentration = 1 
+		convoy_sailing = 1 
+		submarine_operations = 1 
+		
+		#################
+		# Air Equipment #
+		#################
+		
+		# Interceptor
+		early_fighter = 1
+		fighter1 = 1
+		fighter2 = 1 
+		
+		# Heavy Fighter
+		
+		# Multi-Role
+		CAS1 = 1
+		
+		# Tactical Bomber
+		early_bomber = 1
+		tactical_bomber1 = 1
+		
+		# Strategic Bomber
+		strategic_bomber1 = 1
+		
+		# Naval Bomber
+		naval_bomber1 = 1
+		naval_bomber2 = 1 
+		
+		# Carrier Fighter
+		
+		# Carrier CAS
+		
+		# Carrier Bomber
+		
+		################
+		# Air Doctrine #
+		################
+		
+		# Air Superiority
+		air_superiority = 1 
+		infrastructure_destruction = 1 
+		home_defence = 1 
+		naval_strike_tactics = 1 
+		
+		################################
+		# Engineering / Secret Weapons #
+		################################
+		
+		# Radio
+		radio = 1 
+		radio_detection = 1 
+		decimetric_radar = 1 
+		
+		# Electrical and Mechanical
+		electronic_mechanical_engineering = 1
+		mechanical_computing = 1 
+		computing_machine = 1 
+		
+		# Decryption & Encryption
+		basic_encryption = 1 
+		improved_encryption = 1 
+		basic_decryption = 1 
+		improved_decryption = 1 
+		
+		# Rocketry
+		
+		# Jet Engine
+		
+		# Nuclear Research
+		
+		############
+		# Industry #
+		############
+		
+		# Machine Tools
+		basic_machine_tools = 1 
+		improved_machine_tools = 1 
+		advanced_machine_tools = 1 
+		
+		# Assembly
+		assembly_line_production = 1 
+		streamlined_line = 1 
+		
+		# Industry [Concentrated vs Dispersed]
+		dispersed_industry = 1 
+		dispersed_industry2 = 1 
+		dispersed_industry3 = 1 
+		
+		# Construction
+		construction1 = 1 
+		construction2 = 1
+		construction3 = 1 		
+		
+		# Excavation
+		excavation1 = 1 
+		excavation2 = 1 
+		excavation3 = 1 
+		
+		# Synthetics
+		synth_oil_experiments = 1
+		oil_processing = 1 
+		rubber_processing = 1 
+		fuel_silos = 1
+		fuel_refining = 1
+		fuel_refining2 = 1 
+		fuel_refining3 = 1 
+	}
+	
+	## DOD EQPT CONVERSION ##
+	if = {
+		limit = {
+			has_dlc = "Death or Dishonor"
+		}
+		set_technology = {
+			improved_equipment_conversion = 1 
+		}
+	}
+	
+	##############
+	# ARMOR TECH #
+	##############
+
+	if = {
+		limit = {
+			NOT = { has_dlc = "No Step Back" }
+		}
+		set_technology = {
+		
+			## Tank Prototype ##
+			gwtank = 1
+			
+			## Tank Light ##
+			basic_light_tank = 1
+			basic_light_td = 1 
+			basic_light_art = 1 
+			basic_light_spaa = 1 
+			improved_light_tank = 1
+			improved_light_td = 1 
+			improved_light_art = 1 
+			improved_light_spaa = 1 
+			
+			## Tank Medium ##
+			basic_medium_tank = 1 
+			basic_medium_td = 1 
+			basic_medium_art = 1 
+			basic_medium_spaa = 1 
+			improved_medium_tank = 1 
+		}
+	}
+	if = {
+		limit = {
+			has_dlc = "No Step Back"
+		}
+		set_technology = {
+		
+			## Light Tank ##
+			gwtank_chassis = 1
+			basic_light_tank_chassis = 1
+			improved_light_tank_chassis = 1
+			
+			## Medium Tank ##
+			basic_medium_tank_chassis = 1 
+			improved_medium_tank_chassis = 1
+			
+			## Armor ##
+			armor_tech_1 = 1 
+			armor_tech_2 = 1 
+			
+			## Engine ##
+			engine_tech_1 = 1
+			engine_tech_2 = 1 
+		}
+	}
+	
+	##############
+	# Naval Tech #
+	##############
+
+	if = {
+		limit = {
+			not = { has_dlc = "Man the Guns" }
+		}
+		set_technology = {
+			#########
+			# Naval #
+			#########
+			
+			# Misc
+			transport = 1
+			
+			# Destroyer
+			early_destroyer = 1
+			basic_destroyer = 1
+			
+			# Light Cruiser
+			early_light_cruiser = 1
+			basic_light_cruiser = 1
+			
+			# Heavy Cruiser
+			early_heavy_cruiser = 1
+			basic_heavy_cruiser = 1
+			
+			# Battleship
+			early_battleship = 1
+			
+			# Battlecruiser
+			
+			# Carrier
+			
+			# Submarine
+			early_submarine = 1
+			
+		}
+		set_naval_oob = "CAN_1944_NON_MTG"
+	}
+
+	if = {
+		limit = {
+			has_dlc = "Man the Guns"
+		}
+		set_technology = {
+			#########
+			# Naval #
+			#########
+			
+			# Various Eqpt.
+			degaussing = 1 
+			smoke_generator = 1 
+			
+			# Sonar
+			sonar = 1
+			improved_sonar = 1
+
+			# Depth Charge
+			basic_depth_charges = 1
+			improved_depth_charges = 1 
+
+			# Mines
+			basic_naval_mines = 1
+
+			# Damage Control
+			damage_control_1 = 1 
+			
+			# Destroyer
+			early_ship_hull_light = 1
+			basic_ship_hull_light = 1
+			
+			# Cruiser
+			early_ship_hull_cruiser = 1
+			basic_ship_hull_cruiser = 1
+			
+			basic_cruiser_armor_scheme = 1
+			
+			# Battleship
+			pre_dreadnoughts = 1
+			early_ship_hull_heavy = 1
+			
+			# Carrier
+			
+			# Submarine
+			early_ship_hull_submarine = 1
+			
+			# Torpedo Eqpt.
+			basic_torpedo = 1
+			
+			# Naval Gunnery Eqpt.
+			basic_light_shell = 1 
+			basic_medium_shell = 1 
+			basic_heavy_shell = 1 
+			basic_battery = 1
+			basic_light_battery = 1
+			basic_medium_battery = 1
+			basic_heavy_battery = 1
+			
+			# Landing Craft
+			mtg_transport = 1
+			mtg_landing_craft = 1 
+			mtg_tank_landing_craft = 1 
+			
+			# Fire Drills
+	
+			
+			# Second Battery Eqpt.
+			basic_secondary_battery = 1
+			dp_secondary_battery = 1 
+			
+			# Bracket Shooting
+			
+			# Fire Control
+			basic_fire_control_system = 1 
+			fire_control_methods_1 = 1 
+			
+		}
+		set_naval_oob = "CAN_1944_MTG"
+	}
+
+	if = {
+		limit = {
+			has_dlc = "La Resistance"
+		}
+		set_technology = {
+			armored_car1 = 1
+			armored_car2 = 1 
+		}
+	}
+	
+	#################
+	# END TECH TREE #
+	#################
+}
+
+	
+
+#################
+# SHIP VARIANTS #
+#################
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	### Ship Variants ###
+	create_equipment_variant = {
+		name = "Sanguenay Class"
+		type = destroyer_1
+		upgrades = {
+			ship_torpedo_upgrade = 1
+			destroyer_engine_upgrade = 1
+			ship_ASW_upgrade = 1
+			ship_anti_air_upgrade = 1
+		}
+	}
+}
+
+if = {
+	limit = { has_dlc = "Man the Guns" } 
+	### Ship Variants ###
+	# Destroyers #
+	create_equipment_variant = {
+		name = "S Class"
+		type = ship_hull_light_1
+		name_group = CAN_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Sanguenay Class"
+		type = ship_hull_light_1
+		name_group = CAN_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_2
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_2
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = empty
+		}
+	}
+}
+
+# 1939 Start #
+1939.1.1 = {
+	if = {
+		limit = { not = { has_dlc = "Man the Guns" } }
+		# Ship variants #
+		create_equipment_variant = {
+			name = "Athabaskan Class"
+			type = destroyer_1
+			upgrades = {
+				ship_torpedo_upgrade = 2
+				destroyer_engine_upgrade = 2
+				ship_ASW_upgrade = 2
+				ship_anti_air_upgrade = 2
+			}
+		}
+	}
+	if = {
+		limit = { has_dlc = "Man the Guns" }
+		# Destroyers #
+		create_equipment_variant = {
+			name = "Iroquois Class"
+			type = ship_hull_light_2
+			name_group = CAN_DD_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_light_battery_2
+				fixed_ship_anti_air_slot = ship_anti_air_1
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = ship_sonar_2
+				fixed_ship_engine_slot = light_ship_engine_2
+				fixed_ship_torpedo_slot = ship_torpedo_1
+				mid_1_custom_slot = ship_light_battery_2
+				rear_1_custom_slot = ship_depth_charge_2
+			}
+		}
+	}
+}

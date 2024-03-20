@@ -1,0 +1,63 @@
+ideas = {
+
+	#################
+	# Endsieg Ideas #
+	#################
+
+	country = {
+	
+		USA_strategic_bombing_campaign  = {
+			
+			allowed = { always = no }
+			
+			removal_cost = -1
+			
+			modifier = {
+				air_strategic_bomber_bombing_factor = 0.5
+				air_strategic_bomber_night_penalty = -0.25
+			}
+		}
+	}
+		
+	########################
+	# General Allies Ideas #
+	########################
+	
+	hidden_ideas = {
+	
+	# Timed for ~ 2 Months
+	operation_overlord_bonus = {		
+		removal_cost = -1
+		
+		allowed = { always = no } # Only if Allies are AI
+
+		targeted_modifier = {
+			tag = GER
+			attack_bonus_against = 0.50
+			defense_bonus_against = 0.75
+		}
+	}
+	
+	allies_on_offense = {		
+		removal_cost = -1
+		
+		allowed = { always = no } # Only if Allies are AI
+
+		modifier = {
+			ai_focus_aggressive_factor = 1.0
+		}
+	}
+	
+	
+	# Timed for ~ 2 Months
+	operation_bagration_bonus = {		
+		removal_cost = -1
+		
+		allowed = { always = no } # Only if Allies are AI
+
+		targeted_modifier = {
+			tag = GER
+			attack_bonus_against = 0.50
+		}
+	}
+}

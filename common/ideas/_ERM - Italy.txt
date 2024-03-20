@@ -1,0 +1,403 @@
+ideas = {
+	country = {
+		
+		##########################
+		# KINGDOM OF ITALY IDEAS #
+		##########################
+		victor_emmanuel = {
+			
+			
+			allowed = {
+				original_tag = "ITA"
+			}
+
+			available = {
+				NOT = {
+					has_government = paternal_autocrat #remove if King in power
+				}
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+				NOT = {
+					any_other_country = {
+						original_tag = ITA
+						has_government = fascism
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.05				
+			}
+		}
+		vittoria_mutilata = {			
+			
+			allowed = {
+				original_tag = "ITA"
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					OR = {
+						has_government = communism
+						has_government = social_conservative
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				communism_acceptance = -10
+				left_wing_radical_acceptance = -10
+				social_conservative_acceptance = -10
+				fascism_acceptance = 10
+				ai_focus_aggressive_factor = 0.5
+				justify_war_goal_time = -0.05
+			}
+		}
+
+		ITA_german_millitary_cooperation_focus = {
+
+			picture = german_advisors
+
+			allowed = {
+				original_tag = ITA
+			}
+
+			allowed_civil_war = {
+				OR = {
+					AND = {
+						has_government = fascism
+						GER = {
+							has_government = fascism
+						}
+					}
+					AND = {
+						has_government = communism
+						GER = {
+							has_government = communism
+						}
+					}
+					AND = {
+						has_government = social_conservative
+						GER = {
+							has_government = social_conservative
+						}
+					}
+				}
+			}
+
+			removal_cost = -1
+
+			research_bonus = {
+				land_doctrine = 0.05
+			}
+			research_bonus = {
+				air_doctrine = 0.05
+			}				
+		}
+		
+		#################################
+		# ITALIAN SOCIAL REPUBLIC IDEAS #
+		#################################
+		
+		ITA_Last_Stand_Fascism = {			
+			
+			allowed = {
+				original_tag = "ITA"
+				has_government = fascism
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				surrender_limit = 0.5
+				army_core_defence_factor = 0.1
+				minimum_training_level = -0.15
+				ai_focus_defense_factor = 0.5
+			}
+		}
+		
+		ITA_German_Puppet = {			
+			
+			allowed = {
+				original_tag = "ITA"
+				has_government = fascism
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				drift_defence_factor = 0.50
+				war_support_weekly = -0.0025
+				stability_weekly_factor = -0.0025
+				political_power_factor = -0.10
+				cic_to_overlord_factor = 0.3
+				mic_to_overlord_factor = 0.3
+				extra_trade_to_overlord_factor = 0.3
+				overlord_trade_cost_factor = -0.3
+			}
+		}
+		
+		ITA_Unpopular_Government = {			
+			
+			allowed = {
+				original_tag = "ITA"
+				has_government = fascism
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.10
+				war_support_factor = -0.10
+				industrial_capacity_factory = -0.30	
+				industrial_capacity_dockyard = -0.30
+				political_power_factor = -0.20
+				industry_repair_factor = -0.25
+				industry_free_repair_factor = -0.25
+				resistance_activity = 0.5
+				conscription_factor = -0.10
+			}
+		}
+		
+		ITA_funding_from_GER = {			
+			
+			allowed = {
+				original_tag = "ITA"
+				has_government = fascism
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				license_purchase_cost_factor = -0.5
+				production_speed_buildings_factor = 0.10
+			}
+			
+			equipment_bonus = {
+				artillery_equipment = {
+					build_cost_ic = -0.30 
+					instant = yes
+				}
+				infantry_equipment = {
+					build_cost_ic = -0.30 
+					instant = yes
+				}
+				fighter_equipment = {
+					build_cost_ic = -0.10 
+					instant = yes
+				}
+			}	
+		}
+		
+		ITA_limited_army = {			
+			
+			allowed = {
+				original_tag = "ITA"
+				has_government = fascism
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = -0.75
+			}
+		}
+		
+		ITA_Civil_War = {			
+			
+			allowed = {
+				original_tag = "ITA"
+				has_government = fascism
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				local_supplies = -0.10
+				political_power_factor = -0.10
+				army_morale_factor = -0.10
+				army_org_factor = -0.05
+				land_reinforce_rate = -0.15
+				recruitable_population_factor = -0.50
+			}
+		}
+	}
+	
+	tank_manufacturer = {
+	
+		designer = yes
+	
+		ITA_Fiat = {
+			
+			
+			allowed = {
+				original_tag = ITA
+			}
+			
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { tank_manufacturer }
+		}
+	}
+	
+	
+	
+	materiel_manufacturer = {
+			
+		designer = yes
+		
+		ITA_Beretta = {
+			
+			
+			allowed = {
+				original_tag = ITA
+			}
+			
+
+			
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+		}
+		
+		ITA_Lancia = {
+			
+			
+			allowed = {
+				original_tag = ITA
+			}
+			
+			
+			research_bonus = {
+				motorized_equipment = 0.15
+			}
+			
+			traits = { motorized_equipment_manufacturer }
+		}
+		
+		ITA_Breda = {
+			
+			
+			allowed = {
+				original_tag = ITA
+			}
+			
+
+			
+			research_bonus = {
+				artillery = 0.15
+			}
+			
+			traits = { artillery_manufacturer }
+		}
+	}
+	
+	
+	aircraft_manufacturer = {	
+		
+		designer = yes
+		
+		ITA_Macchi = {
+			
+			
+			allowed = {
+				original_tag = ITA
+			}
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { light_aircraft_manufacturer }
+		}
+		
+		ITA_Savoia_Marchetti = {
+			
+			
+			allowed = {
+				original_tag = ITA
+			}
+
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { medium_aircraft_manufacturer }
+		}
+		
+		ITA_Caproni = {
+						
+			allowed = {
+				original_tag = ITA
+			}
+						
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { naval_aircraft_manufacturer }
+		}
+		
+		ITA_Piaggio = {
+						
+			allowed = {
+				original_tag = ITA
+			}
+						
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { heavy_aircraft_manufacturer }
+		}
+	}
+	
+	industrial_concern = {
+	
+		ITA_Danieli = {
+			
+			allowed = {
+				original_tag = ITA
+			}
+			
+			research_bonus = {
+				industry = 0.15
+				
+			}
+			
+			traits = { industrial_concern }
+		}		
+	}
+	
+	
+	naval_manufacturer = {
+	
+		designer = yes
+		
+		ITA_CRDA = {
+						
+			allowed = {
+				original_tag = ITA
+			}
+						
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { naval_manufacturer }
+		}
+	}
+}

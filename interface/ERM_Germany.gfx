@@ -1,0 +1,1522 @@
+spriteTypes = {
+
+    ##################
+    ## GERMAN IDEAS ##
+    ##################
+    spriteType = {
+        name = "GFX_idea_GER_national_redoubt"
+        texturefile = "gfx/interface/ideas/national_ideas/GER/GER_national_redoubt.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_GER_emergency_fighter_program"
+        texturefile = "gfx/interface/ideas/national_ideas/GER/GER_emergency_fighter_program.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_GER_V2_Program"
+        texturefile = "gfx/interface/ideas/national_ideas/GER/GER_V2_Program.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_GER_AT_training"
+        texturefile = "gfx/interface/ideas/national_ideas/GER/GER_AT_training.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_GER_hermann_meyer"
+        texturefile = "gfx/interface/ideas/national_ideas/GER/GER_hermann_meyer.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_GER_foreign_capital"
+        texturefile = "gfx/interface/ideas/national_ideas/GER/GER_foreign_capital.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_GER_volkssturm"
+        texturefile = "gfx/interface/ideas/national_ideas/GER/GER_volkssturm.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_GER_goering_drugs"
+        texturefile = "gfx/interface/ideas/national_ideas/GER/GER_goering_drugs.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_GER_panzer_reform"
+        texturefile = "gfx/interface/ideas/national_ideas/GER/GER_panzer_reform.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_GER_fuhrer_directives"
+        texturefile = "gfx/interface/ideas/national_ideas/GER/GER_fuhrer_directives.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_GER_reinforce_west"
+        texturefile = "gfx/interface/ideas/national_ideas/GER/GER_reinforce_west.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_GER_reinforce_east"
+        texturefile = "gfx/interface/ideas/national_ideas/GER/GER_reinforce_east.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_GER_volksgrenadier"
+        texturefile = "gfx/interface/ideas/national_ideas/GER/GER_volksgrenadier.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_GER_officer_shortage"
+        texturefile = "gfx/interface/ideas/national_ideas/GER/GER_officer_shortage.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_GER_defense_of_reich"
+        texturefile = "gfx/interface/ideas/national_ideas/GER/GER_defense_of_reich.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_GER_women_workforce"
+        texturefile = "gfx/interface/ideas/national_ideas/GER/GER_women_workforce.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_GER_slave_labor"
+        texturefile = "gfx/interface/ideas/national_ideas/GER/GER_slave_labor.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_GER_resource_conservation_effort"
+        texturefile = "gfx/interface/ideas/national_ideas/GER/GER_resource_conservation_effort.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_GER_defense_reich_campaign"
+        texturefile = "gfx/interface/ideas/national_ideas/GER/GER_defense_reich_campaign.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_GER_luftwaffe_ground_force"
+        texturefile = "gfx/interface/ideas/national_ideas/GER/GER_luftwaffe_ground_force.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_GER_goebbels_speer_alliance"
+        texturefile = "gfx/interface/ideas/national_ideas/GER/GER_goebbels_speer_alliance.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_GER_kriegsmarine_infantry"
+        texturefile = "gfx/interface/ideas/national_ideas/GER/GER_kriegsmarine_infantry.dds"
+    }
+
+
+    ###################
+    ## GERMAN EVENTS ##
+    ###################
+    spriteType = {
+        name = "GFX_"
+        texturefile = "gfx/event_pictures/Germany/.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_valkyrie_aftermath"
+        texturefile = "gfx/event_pictures/Germany/report_event_valkyrie_aftermath.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_a10_funding"
+        texturefile = "gfx/event_pictures/Germany/report_event_a10_funding.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_a10_resumed"
+        texturefile = "gfx/event_pictures/Germany/report_event_a10_resumed.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_a10_monkey"
+        texturefile = "gfx/event_pictures/Germany/report_event_a10_monkey.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_a10_setback"
+        texturefile = "gfx/event_pictures/Germany/report_event_a10_setback.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_kolberg_movie"
+        texturefile = "gfx/event_pictures/Germany/report_event_kolberg_movie.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_guderian_takes_command"
+        texturefile = "gfx/event_pictures/Germany/report_event_guderian_takes_command.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_movie_shoot"
+        texturefile = "gfx/event_pictures/Germany/report_event_movie_shoot.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_rocket_construction"
+        texturefile = "gfx/event_pictures/Germany/report_event_rocket_construction.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_warsaw_uprising"
+        texturefile = "gfx/event_pictures/Germany/report_event_warsaw_uprising.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_wilhelm_gustoff"
+        texturefile = "gfx/event_pictures/Germany/report_event_wilhelm_gustoff.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_a10_success"
+        texturefile = "gfx/event_pictures/Germany/report_event_a10_success.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_soviet_troops_east_prussia"
+        texturefile = "gfx/event_pictures/Germany/report_event_soviet_troops_east_prussia.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_soviet_troops_east_prussia"
+        texturefile = "gfx/event_pictures/Germany/report_event_soviet_troops_east_prussia.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_guderian_counter_coup"
+        texturefile = "gfx/event_pictures/Germany/report_event_guderian_counter_coup.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_GER_1944"
+        texturefile = "gfx/event_pictures/Germany/report_event_GER_1944.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_GER_volkssturm"
+        texturefile = "gfx/event_pictures/Germany/report_event_GER_volkssturm.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_operation_panzerfaust"
+        texturefile = "gfx/event_pictures/Germany/report_event_operation_panzerfaust.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_goering_drugs"
+        texturefile = "gfx/event_pictures/Germany/report_event_goering_drugs.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_soviet_troops_east_prussia"
+         texturefile = "gfx/event_pictures/Germany/report_event_soviet_troops_east_prussia.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_romanian_army"
+        texturefile = "gfx/event_pictures/Germany/report_event_romanian_army.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_horthy_negotiates"
+        texturefile = "gfx/event_pictures/Germany/report_event_horthy_negotiates.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_rommel_injured"
+        texturefile = "gfx/event_pictures/Germany/report_event_rommel_injured.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_courland"
+        texturefile = "gfx/event_pictures/Germany/report_event_courland.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_rommel_funeral"
+        texturefile = "gfx/event_pictures/Germany/report_event_rommel_funeral.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_black_baron_dead"
+        texturefile = "gfx/event_pictures/Germany/report_event_black_baron_dead.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_black_baron_lives"
+        texturefile = "gfx/event_pictures/Germany/report_event_black_baron_lives.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_evacuate_civilians"
+        texturefile = "gfx/event_pictures/Germany/report_event_evacuate_civilians.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_lappland_evacuation"
+        texturefile = "gfx/event_pictures/Germany/report_event_lappland_evacuation.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_lappland_evacuation_complete"
+        texturefile = "gfx/event_pictures/Germany/report_event_lappland_evacuation_complete.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_lappland_evacuation_failed"
+        texturefile = "gfx/event_pictures/Germany/report_event_lappland_evacuation_failed.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_war_city_berlin"
+        texturefile = "gfx/event_pictures/Germany/report_event_war_city_berlin.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_operation_margarethe_ii"
+        texturefile = "gfx/event_pictures/Germany/report_event_operation_margarethe_ii.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_july_20_plot"
+        texturefile = "gfx/event_pictures/Germany/report_event_july_20_plot.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_valkyrie_show_trials"
+        texturefile = "gfx/event_pictures/Germany/report_event_valkyrie_show_trials.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_valkyrie_prelude"
+        texturefile = "gfx/event_pictures/Germany/report_event_valkyrie_prelude.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_festung_breslau"
+        texturefile = "gfx/event_pictures/Germany/report_event_festung_breslau.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_allies_reach_rhine"
+        texturefile = "gfx/event_pictures/Germany/report_event_allies_reach_rhine.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_nazi_coup"
+        texturefile = "gfx/event_pictures/Germany/report_event_nazi_coup.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_nazi_associates"
+        texturefile = "gfx/event_pictures/Germany/report_event_nazi_associates.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_peoples_response"
+        texturefile = "gfx/event_pictures/Germany/report_event_peoples_response.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_guderian_visits_front"
+        texturefile = "gfx/event_pictures/Germany/report_event_guderian_visits_front.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_goering_arrest"
+        texturefile = "gfx/event_pictures/Germany/report_event_goering_arrest.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_guderian_talks_soldiers"
+        texturefile = "gfx/event_pictures/Germany/report_event_guderian_talks_soldiers.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_guderian_assassination_attempt"
+        texturefile = "gfx/event_pictures/Germany/report_event_guderian_assassination_attempt.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_cult_of_guderian"
+        texturefile = "gfx/event_pictures/Germany/report_event_cult_of_guderian.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_guderian_inspects"
+        texturefile = "gfx/event_pictures/Germany/report_event_guderian_inspects.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_hitler_funeral"
+        texturefile = "gfx/event_pictures/Germany/report_event_hitler_funeral.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_GER_scorched_earth"
+        texturefile = "gfx/event_pictures/Germany/report_event_GER_scorched_earth.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_GER_valkyrie_coup_attempt"
+        texturefile = "gfx/event_pictures/Germany/report_event_GER_valkyrie_coup_attempt.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_relchstag"
+        texturefile = "gfx/event_pictures/Germany/report_event_relchstag.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_GER_valkyrie_coup_over"
+        texturefile = "gfx/event_pictures/Germany/report_event_GER_valkyrie_coup_over.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_SS_wehrmacht"
+        texturefile = "gfx/event_pictures/Germany/report_event_SS_wehrmacht.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_GER_new_leader"
+        texturefile = "gfx/event_pictures/Germany/report_event_GER_new_leader.dds"
+    }
+    spriteType = {
+        name = "GFX_ "
+        texturefile = "gfx/event_pictures/Germany/.dds"
+    }
+
+
+    #########################
+    ## GERMAN EMPIRE IDEAS ##
+    #########################
+
+    spriteType = {
+        name = "GFX_idea_GER_bolshevik_beast"
+        texturefile = "gfx/interface/ideas/national_ideas/GER/GER_bolshevik_beast.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_GER_refugee_crisis"
+        texturefile = "gfx/interface/ideas/national_ideas/GER/GER_refugee_crisis.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_GER_central_planning_board"
+        texturefile = "gfx/interface/ideas/national_ideas/GER/GER_central_planning_board.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_GER_underground_factories"
+        texturefile = "gfx/interface/ideas/national_ideas/GER/GER_underground_factories.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_GER_organisation_todt"
+        texturefile = "gfx/interface/ideas/national_ideas/GER/GER_organisation_todt.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_GER_defensive_works"
+        texturefile = "gfx/interface/ideas/national_ideas/GER/GER_defensive_works.dds"
+    }
+
+
+    ########################
+    ### GERMAN MINISTERS ###
+    ########################
+
+    ## HoS ##
+    SpriteType = {
+        name = "GFX_idea_GER_Adolf_Hitler"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Adolf_Hitler.dds"
+
+    }
+    
+    ## HoG ##
+    
+    SpriteType = {
+        name = "GFX_idea_GER_Martin_Bormann"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Martin_Bormann.dds"
+
+    }
+    
+    ## FM ##
+
+    SpriteType = {
+        name = "GFX_idea_GER_Joachim_von_Ribbentrop"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Joachim_von_Ribbentrop.dds"
+
+    }
+
+    SpriteType = {
+        name = "GFX_idea_GER_Alfred_Rosenberg"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Alfred_Rosenberg.dds"
+
+    }
+    
+    SpriteType = {
+        name = "GFX_idea_GER_Ernst_von_Weizsaecker"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Ernst_von_Weizsaecker.dds"
+
+    }
+    
+    SpriteType = {
+        name = "GFX_idea_GER_Herman_Esser"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Herman_Esser.dds"
+
+    }
+    
+    SpriteType = {
+        name = "GFX_idea_GER_Martin_Franz_J_Luther"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Martin_Franz_J_Luther.dds"
+
+    }
+    
+    ## AM ##
+    SpriteType = {
+        name = "GFX_idea_GER_Albert_Speer"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Albert_Speer.dds"
+
+    }
+    
+    SpriteType = {
+        name = "GFX_idea_GER_Hermann_Goering"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Hermann_Goering.dds"
+
+    }
+    
+    SpriteType = {
+        name = "GFX_idea_GER_Karl_Doenitz"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Karl_Doenitz.dds"
+
+    }
+    
+    SpriteType = {
+        name = "GFX_idea_GER_Walter_Funk"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Walter_Funk.dds"
+
+    }
+    
+    SpriteType = {
+        name = "GFX_idea_GER_Gustav_Krupp"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Gustav_Krupp.dds"
+
+    }
+    
+    SpriteType = {
+        name = "GFX_idea_GER_Richard_Walther_Darre"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Richard_Walther_Darre.dds"
+
+    }
+    
+    SpriteType = {
+        name = "GFX_idea_GER_Karl_Daluege"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Karl_Daluege.dds"
+
+    }
+    
+    SpriteType = {
+        name = "GFX_idea_GER_Max_Amann"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Max_Amann.dds"
+
+    }
+    
+    SpriteType = {
+        name = "GFX_idea_GER_Johann_Schwerin_von_Krosigk"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Johann_Schwerin_von_Krosigk.dds"
+
+    }
+    
+    SpriteType = {
+        name = "GFX_idea_GER_Oswald_Pohl"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Oswald_Pohl.dds"
+
+    }
+    
+    SpriteType = {
+        name = "GFX_idea_GER_Robert_Ley"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Robert_Ley.dds"
+
+    }
+    
+    SpriteType = {
+        name = "GFX_idea_GER_Hans_Georg_von_Friedeburg"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Hans_Georg_von_Friedeburg.dds"
+
+    }
+    
+    SpriteType = {
+        name = "GFX_idea_GER_Franz_Xaver_Ritter_von_Epp"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Franz_Xaver_Ritter_von_Epp.dds"
+
+    }
+    
+    SpriteType = {
+        name = "GFX_idea_GER_Franz_Seldte"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Franz_Seldte.dds"
+
+    }
+    
+    SpriteType = {
+        name = "GFX_idea_GER_Konstantin_Hierl"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Konstantin_Hierl.dds"
+
+    }
+    
+    SpriteType = {
+        name = "GFX_idea_GER_Konstantin_Hierl"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Konstantin_Hierl.dds"
+
+    }
+    
+    SpriteType = {
+        name = "GFX_idea_GER_Fritz_Sauckel"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Fritz_Sauckel.dds"
+
+    }
+    
+    ## MoS ##
+    
+    SpriteType = {
+        name = "GFX_idea_GER_Heinrich_Himmler"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Heinrich_Himmler.dds"
+
+    }
+    
+    SpriteType = {
+        name = "GFX_idea_GER_Wilhelm_Frick"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Wilhelm_Frick.dds"
+
+    }
+    
+    SpriteType = {
+        name = "GFX_idea_GER_Adolf_Meyer"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Adolf_Meyer.dds"
+
+    }
+    
+    SpriteType = {
+        name = "GFX_idea_GER_Heinrich_Mueller"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Heinrich_Mueller.dds"
+
+    }
+    
+    SpriteType = {
+        name = "GFX_idea_GER_Arthur_Seyss_Inquart"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Arthur_Seyss_Inquart.dds"
+
+    }
+    
+    SpriteType = {
+        name = "GFX_idea_GER_Franz_Alfred_Six"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Franz_Alfred_Six.dds"
+
+    }
+    
+    SpriteType = {
+        name = "GFX_idea_GER_Dietrich_von_Choltitz"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Dietrich_von_Choltitz.dds"
+
+    }
+    
+    SpriteType = {
+        name = "GFX_idea_GER_Franz_Guertner"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Franz_Guertner.dds"
+
+    }
+    
+    SpriteType = {
+        name = "GFX_idea_GER_Ernst_Kaltenbrunner"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Ernst_Kaltenbrunner.dds"
+
+    }
+    
+    SpriteType = {
+        name = "GFX_idea_GER_Martin_Bormann2"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Martin_Bormann2.dds"
+
+    }
+    
+    SpriteType = {
+        name = "GFX_idea_GER_Oskar_von_Hindenburg"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Oskar_von_Hindenburg.dds"
+
+    }
+    
+    SpriteType = {
+        name = "GFX_idea_GER_Hans_Oster"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Hans_Oster.dds"
+
+    }
+    
+    SpriteType = {
+        name = "GFX_idea_GER_Georg_Hansen"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Georg_Hansen.dds"
+
+    }
+    
+    SpriteType = {
+        name = "GFX_idea_GER_Hans_Gisevius"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Hans_Gisevius.dds"
+
+    }
+    
+    SpriteType = {
+        name = "GFX_idea_GER_Konrad_Patzig"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Konrad_Patzig.dds"
+
+    }
+    
+    ## MoI ##
+    
+    SpriteType = {
+        name = "GFX_idea_GER_Alfried_Krupp"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Alfried_Krupp.dds"
+
+    }
+    
+    SpriteType = {
+        name = "GFX_idea_GER_Otto_Georg_Thierack"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Otto_Georg_Thierack.dds"
+
+    }
+    
+    SpriteType = {
+        name = "GFX_idea_GER_Walter_Schellenberg"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Walter_Schellenberg.dds"
+
+    }
+    
+    SpriteType = {
+        name = "GFX_idea_GER_Otto_Wagener"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Otto_Wagener.dds"
+
+    }
+    
+    SpriteType = {
+        name = "GFX_idea_GER_Adolf_Wagner"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Adolf_Wagner.dds"
+
+    }
+    
+    SpriteType = {
+        name = "GFX_idea_GER_Fritz_Thyssen"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Fritz_Thyssen.dds"
+
+    }
+    
+    SpriteType = {
+        name = "GFX_idea_GER_Arthur_Nebe"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Arthur_Nebe.dds"
+
+    }
+    
+    SpriteType = {
+        name = "GFX_idea_GER_Emil_Maurice"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Emil_Maurice.dds"
+
+    }
+    
+    SpriteType = {
+        name = "GFX_idea_GER_Herman_Esser"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Herman_Esser.dds"
+
+    }
+    
+    SpriteType = {
+        name = "GFX_idea_GER_Roland_Freisler"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Roland_Freisler.dds"
+
+    }
+    
+    SpriteType = {
+        name = "GFX_idea_GER_Friedrich_Flick"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Friedrich_Flick.dds"
+
+    }
+    
+    ## MoC ##
+    
+    SpriteType = {
+        name = "GFX_idea_GER_Joseph_Goebbels"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Joseph_Goebbels.dds"
+
+    }
+    
+    ## Theorist ##
+    
+    SpriteType = {
+        name = "GFX_idea_GER_Werner_von_Braun"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Werner_von_Braun.dds"
+
+    }
+    
+    SpriteType = {
+        name = "GFX_idea_GER_Werner_Heisenberg"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Werner_Heisenberg.dds"
+
+    }
+    
+    SpriteType = {
+        name = "GFX_idea_GER_Heinz_Guderian"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Heinz_Guderian.dds"
+
+    }
+    
+    SpriteType = {
+        name = "GFX_idea_GER_Erich_von_Manstein"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Erich_von_Manstein.dds"
+
+    }
+    
+    SpriteType = {
+        name = "GFX_idea_GER_Wolfram_von_Richthofen"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Wolfram_von_Richthofen.dds"
+
+    }
+    
+    SpriteType = {
+        name = "GFX_idea_GER_Walther_Wever"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Walther_Wever.dds"
+
+    }
+    
+    SpriteType = {
+        name = "GFX_idea_GER_Ernst_Udet"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Ernst_Udet.dds"
+
+    }
+    
+    SpriteType = {
+        name = "GFX_idea_GER_Alfred_Saalwachter"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Alfred_Saalwachter.dds"
+
+    }
+    
+    SpriteType = {
+        name = "GFX_idea_GER_Otto_Ciliax"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Otto_Ciliax.dds"
+
+    }
+    
+    ## Army Chief ##
+    
+    SpriteType = {
+        name = "GFX_idea_GER_Adolf_Hitler2"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Adolf_Hitler2.dds"
+
+    }
+    
+    SpriteType = {
+        name = "GFX_idea_GER_Wilhelm_Keitel"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Wilhelm_Keitel.dds"
+
+    }
+    
+    SpriteType = {
+        name = "GFX_idea_GER_Erwin_von_Witzleben"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Erwin_von_Witzleben.dds"
+
+    }
+    
+    SpriteType = {
+        name = "GFX_idea_GER_Fedor_von_Bock"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Fedor_von_Bock.dds"
+
+    }
+    
+    SpriteType = {
+        name = "GFX_idea_GER_Julius_Ringel"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Julius_Ringel.dds"
+
+    }
+    
+    SpriteType = {
+        name = "GFX_idea_GER_Erwin_Rommel"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Erwin_Rommel.dds"
+
+    }
+    
+    SpriteType = {
+        name = "GFX_idea_GER_Erich_Hoepner"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Erich_Hoepner.dds"
+
+    }
+    
+    SpriteType = {
+        name = "GFX_idea_GER_Hermann_Goering2"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Hermann_Goering2.dds"
+
+    }
+    
+    SpriteType = {
+        name = "GFX_idea_GER_Hugo_Sperrle"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Hugo_Sperrle.dds"
+
+    }
+    
+    SpriteType = {
+        name = "GFX_idea_GER_Robert_Ritter_von_Greim"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Robert_Ritter_von_Greim.dds"
+
+    }
+    
+    SpriteType = {
+        name = "GFX_idea_GER_Karl_Koller"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Karl_Koller.dds"
+
+    }
+    
+    SpriteType = {
+        name = "GFX_idea_GER_Albert_Kesselring"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Albert_Kesselring.dds"
+
+    }
+    
+    SpriteType = {
+        name = "GFX_idea_GER_Karl_Doenitz2"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Karl_Doenitz2.dds"
+
+    }
+    
+    SpriteType = {
+        name = "GFX_idea_GER_Hans_Georg_von_Friedeburg"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Hans_Georg_von_Friedeburg.dds"
+
+    }
+    
+    SpriteType = {
+        name = "GFX_idea_GER_Alfred_Saalwaechter"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Alfred_Saalwaechter.dds"
+
+    }
+    
+    SpriteType = {
+        name = "GFX_idea_GER_Adolf_Heusinger"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Adolf_Heusinger.dds"
+
+    }
+    
+    SpriteType = {
+        name = "GFX_idea_GER_Alfred_Jodl"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Alfred_Jodl.dds"
+
+    }
+    
+    SpriteType = {
+        name = "GFX_idea_GER_Heinz_Guderian2"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Heinz_Guderian2.dds"
+
+    }
+    
+    SpriteType = {
+        name = "GFX_idea_GER_Fritz_Bayerlein"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Fritz_Bayerlein.dds"
+
+    }
+    
+    SpriteType = {
+        name = "GFX_idea_GER_Erich_Hoepner2"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Erich_Hoepner2.dds"
+
+    }
+    
+    SpriteType = {
+        name = "GFX_idea_GER_Erwin_Rommel2"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Erwin_Rommel2.dds"
+
+    }
+    
+    SpriteType = {
+        name = "GFX_idea_GER_Julius_Ringel2"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Julius_Ringel2.dds"
+
+    }
+    
+    SpriteType = {
+        name = "GFX_idea_GER_Guenther_Blumentritt"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Guenther_Blumentritt.dds"
+
+    }
+    
+    SpriteType = {
+        name = "GFX_idea_GER_Gerd_von_Rundstedt"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Gerd_von_Rundstedt.dds"
+
+    }
+
+    SpriteType = {
+        name = "GFX_idea_GER_Alfred_Saalwachter2"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Alfred_Saalwachter2.dds"
+
+    }
+
+    SpriteType = {
+        name = "GFX_idea_GER_Hans_Georg_von_Friedeburg2"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Hans_Georg_von_Friedeburg2.dds"
+
+    }
+    
+    SpriteType = {
+        name = "GFX_idea_GER_Werner_Naumann"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Werner_Naumann.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_GER_Karl_Hanke"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Karl_Hanke.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_GER_Otto_Dietrich"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Otto_Dietrich.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_GER_Carl_Froelich"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Carl_Froelich.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_GER_Gunther_von_Kluge"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Gunther_von_Kluge.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_GER_Ewald_von_Kleist"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Ewald_von_Kleist.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_GER_Kurt_Tank"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Kurt_Tank.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_GER_Johannes_Plendl"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Johannes_Plendl.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_GER_Wilhelm_Marschall"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Wilhelm_Marschall.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_GER_Otto_Schniewind"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Otto_Schniewind.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_GER_Erhard_Milch"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Erhard_Milch.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_GER_Erhard_Milch"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Erhard_Milch.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_GER_Josef_Kammhuber"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Josef_Kammhuber.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_GER_Hans_Juergen_Stumpff"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Hans_Juergen_Stumpff.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_GER_Alexander_Loehr"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Alexander_Loehr.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_GER_Lothar_Rendulic"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Lothar_Rendulic.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_GER_Kurt_Student"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Kurt_Student.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_GER_Gotthard_Heinrici"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Gotthard_Heinrici.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_GER_Georg_Hans_Reinhardt"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Georg_Hans_Reinhardt.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_GER_Ferdinand_Schoerner"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Ferdinand_Schoerner.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_GER_Erhard_Raus"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Erhard_Raus.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_GER_Maximilian_von_Weichs"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Maximilian_von_Weichs.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_GER_Walter_Model"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Walter_Model.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_GER_Guenther_Korten"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_GER_Guenther_Korten.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_"
+        texturefile = "gfx/interface/ideas/ministers/GER/idea_.dds"
+        
+    }
+    
+
+
+    ####################
+    # GERMAN COMPANIES #
+    ####################
+
+    ## Armaments ##
+    spriteType = {
+        name = "GFX_idea_GER_Opel"
+        texturefile = "gfx/interface/ideas/companies/GER/idea_GER_Opel.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_GER_Mauser"
+        texturefile = "gfx/interface/ideas/companies/GER/idea_GER_Mauser.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_GER_Rheinmetall"
+        texturefile = "gfx/interface/ideas/companies/GER/idea_GER_Rheinmetall.dds"
+    }
+    
+    ## Industry ##
+    spriteType = {
+        name = "GFX_idea_GER_Siemens"
+        texturefile = "gfx/interface/ideas/companies/GER/idea_GER_Siemens.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_GER_Krupp"
+        texturefile = "gfx/interface/ideas/companies/GER/idea_GER_Krupp.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_GER_IG_Faben"
+        texturefile = "gfx/interface/ideas/companies/GER/idea_GER_IG_Faben.dds"
+    }
+    
+    ## Air ##
+    spriteType = {
+        name = "GFX_idea_GER_Dornier"
+        texturefile = "gfx/interface/ideas/companies/GER/idea_GER_Dornier.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_GER_Junkers"
+        texturefile = "gfx/interface/ideas/companies/GER/idea_GER_Junkers.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_GER_Messerschmitt"
+        texturefile = "gfx/interface/ideas/companies/GER/idea_GER_Messerschmitt.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_GER_Focke_Wulf"
+        texturefile = "gfx/interface/ideas/companies/GER/idea_GER_Focke_Wulf.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_GER_Heinkel"
+        texturefile = "gfx/interface/ideas/companies/GER/idea_GER_Heinkel.dds"
+    }
+    
+    ## Naval ##
+    spriteType = {
+        name = "GFX_idea_GER_Germaniawerft"
+        texturefile = "gfx/interface/ideas/companies/GER/idea_GER_Germaniawerft.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_GER_Blohm_und_Voss"
+        texturefile = "gfx/interface/ideas/companies/GER/idea_GER_Blohm_und_Voss.dds"
+    }
+    
+    ## Armor ##
+    spriteType = {
+        name = "GFX_idea_GER_MAN"
+        texturefile = "gfx/interface/ideas/companies/GER/idea_GER_MAN.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_GER_Henschel"
+        texturefile = "gfx/interface/ideas/companies/GER/idea_GER_Henschel.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_GER_Porsche"
+        texturefile = "gfx/interface/ideas/companies/GER/idea_GER_Porsche.dds"
+    }
+
+    ##########################
+    ### GERMAN FOCUS GOALS ###
+    ##########################
+
+    SpriteType = {
+        name = "GFX_GER_appoint_speer"
+        texturefile = "gfx/interface/goals/GER/GER_appoint_speer.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_bitter_end_defense"
+        texturefile = "gfx/interface/goals/GER/GER_bitter_end_defense.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_central_planning_board"
+        texturefile = "gfx/interface/goals/GER/GER_central_planning_board.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_goebbels_speer_alliance"
+        texturefile = "gfx/interface/goals/GER/GER_goebbels_speer_alliance.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_increase_synthetic_production"
+        texturefile = "gfx/interface/goals/GER/GER_increase_synthetic_production.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_organisation_todt"
+        texturefile = "gfx/interface/goals/GER/GER_organisation_todt.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_propaganda_dissemination_1"
+        texturefile = "gfx/interface/goals/GER/GER_propaganda_dissemination_1.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_propaganda_dissemination_2"
+        texturefile = "gfx/interface/goals/GER/GER_propaganda_dissemination_2.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_propaganda_dissemination_3"
+        texturefile = "gfx/interface/goals/GER/GER_propaganda_dissemination_3.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_propaganda_dissemination_4"
+        texturefile = "gfx/interface/goals/GER/GER_propaganda_dissemination_4.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_propaganda_films_1"
+        texturefile = "gfx/interface/goals/GER/GER_propaganda_films_1.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_propaganda_films_2"
+        texturefile = "gfx/interface/goals/GER/GER_propaganda_films_2.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_propaganda_films_3"
+        texturefile = "gfx/interface/goals/GER/GER_propaganda_films_3.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_propaganda_films_4"
+        texturefile = "gfx/interface/goals/GER/GER_propaganda_films_4.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_german_propaganda_machine"
+        texturefile = "gfx/interface/goals/GER/GER_german_propaganda_machine.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_synthetic_factories_1"
+        texturefile = "gfx/interface/goals/GER/GER_synthetic_factories_1.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_synthetic_factories_2"
+        texturefile = "gfx/interface/goals/GER/GER_synthetic_factories_2.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_synthetic_factories_3"
+        texturefile = "gfx/interface/goals/GER/GER_synthetic_factories_3.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_synthetic_factories_4"
+        texturefile = "gfx/interface/goals/GER/GER_synthetic_factories_4.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_total_war"
+        texturefile = "gfx/interface/goals/GER/GER_total_war.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_volkssturm"
+        texturefile = "gfx/interface/goals/GER/GER_volkssturm.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_prioritize_navy"
+        texturefile = "gfx/interface/goals/GER/GER_prioritize_navy.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_prioritize_air"
+        texturefile = "gfx/interface/goals/GER/GER_prioritize_air.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_allocate_coal_to_steel"
+        texturefile = "gfx/interface/goals/GER/GER_allocate_coal_to_steel.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_prioritize_armor"
+        texturefile = "gfx/interface/goals/GER/GER_prioritize_armor.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_move_to_total_war"
+        texturefile = "gfx/interface/goals/GER/GER_move_to_total_war.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_total_economic_mobilisation"
+        texturefile = "gfx/interface/goals/GER/GER_total_economic_mobilisation.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_underground_plants_3"
+        texturefile = "gfx/interface/goals/GER/GER_underground_plants_3.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_underground_plants_2"
+        texturefile = "gfx/interface/goals/GER/GER_underground_plants_2.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_underground_plants_1"
+        texturefile = "gfx/interface/goals/GER/GER_underground_plants_1.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_women_industry"
+        texturefile = "gfx/interface/goals/GER/GER_women_industry.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_use_slave_labor"
+        texturefile = "gfx/interface/goals/GER/GER_use_slave_labor.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_slave_labor_initiative"
+        texturefile = "gfx/interface/goals/GER/GER_slave_labor_initiative.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_labor_shortage_solution"
+        texturefile = "gfx/interface/goals/GER/GER_labor_shortage_solution.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_harsh_slave_labor_law"
+        texturefile = "gfx/interface/goals/GER/GER_harsh_slave_labor_law.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_defense_of_reich_campaign"
+        texturefile = "gfx/interface/goals/GER/GER_defense_of_reich_campaign.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_flak_towers"
+        texturefile = "gfx/interface/goals/GER/GER_flak_towers.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_night_fighter_groups"
+        texturefile = "gfx/interface/goals/GER/GER_night_fighter_groups.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_rocket_interceptors_effort"
+        texturefile = "gfx/interface/goals/GER/GER_rocket_interceptors_effort.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_luftwaffe_ground_forces"
+        texturefile = "gfx/interface/goals/GER/GER_luftwaffe_ground_forces.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_adaptive_leadership"
+        texturefile = "gfx/interface/goals/GER/GER_adaptive_leadership.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_artillery1"
+        texturefile = "gfx/interface/goals/GER/GER_artillery1.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_artillery2"
+        texturefile = "gfx/interface/goals/GER/GER_artillery2.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_direct_commission"
+        texturefile = "gfx/interface/goals/GER/GER_direct_commission.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_festungs"
+        texturefile = "gfx/interface/goals/GER/GER_festungs.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_foreign_volunteers"
+        texturefile = "gfx/interface/goals/GER/GER_foreign_volunteers.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_improve_defensive_tactics"
+        texturefile = "gfx/interface/goals/GER/GER_improve_defensive_tactics.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_kriegsmarine_infantry"
+        texturefile = "gfx/interface/goals/GER/GER_kriegsmarine_infantry.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_national_redoubt"
+        texturefile = "gfx/interface/goals/GER/GER_national_redoubt.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_panzer_reform"
+        texturefile = "gfx/interface/goals/GER/GER_panzer_reform.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_rapid_officer_training"
+        texturefile = "gfx/interface/goals/GER/GER_rapid_officer_training.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_recall_reservists"
+        texturefile = "gfx/interface/goals/GER/GER_recall_reservists.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_resource_conservation_effort"
+        texturefile = "gfx/interface/goals/GER/GER_resource_conservation_effort.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_rocket_artillery1"
+        texturefile = "gfx/interface/goals/GER/GER_rocket_artillery1.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_rocket_artillery2"
+        texturefile = "gfx/interface/goals/GER/GER_rocket_artillery2.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_SS_Officers_Wehrmacht"
+        texturefile = "gfx/interface/goals/GER/GER_SS_Officers_Wehrmacht.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_volksgrenadier"
+        texturefile = "gfx/interface/goals/GER/GER_volksgrenadier.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_war_city_berlin"
+        texturefile = "gfx/interface/goals/GER/GER_war_city_berlin.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_wartime_commissions"
+        texturefile = "gfx/interface/goals/GER/GER_wartime_commissions.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_back_friedrich_fromm"
+        texturefile = "gfx/interface/goals/GER/GER_back_friedrich_fromm.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_back_ludwig_beck"
+        texturefile = "gfx/interface/goals/GER/GER_back_ludwig_beck.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_back_heinz_guderian"
+        texturefile = "gfx/interface/goals/GER/GER_back_heinz_guderian.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_nazi_counter_coup"
+        texturefile = "gfx/interface/goals/GER/GER_nazi_counter_coup.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_operation_valkyrie"
+        texturefile = "gfx/interface/goals/GER/GER_operation_valkyrie.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_guderian_plan"
+        texturefile = "gfx/interface/goals/GER/GER_guderian_plan.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_establish_new_leadership"
+        texturefile = "gfx/interface/goals/GER/GER_establish_new_leadership.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_establish_new_intelligence_service"
+        texturefile = "gfx/interface/goals/GER/GER_establish_new_intelligence_service.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_diplomatic_offensive"
+        texturefile = "gfx/interface/goals/GER/GER_diplomatic_offensive.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_covert_contact_allies"
+        texturefile = "gfx/interface/goals/GER/GER_covert_contact_allies.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_consolidate_power"
+        texturefile = "gfx/interface/goals/GER/GER_consolidate_power.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_join_allies"
+        texturefile = "gfx/interface/goals/GER/GER_join_allies.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_optimize_industrial_output"
+        texturefile = "gfx/interface/goals/GER/GER_optimize_industrial_output.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_ss_purge"
+        texturefile = "gfx/interface/goals/GER/GER_ss_purge.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_purge_valkyrie_conspirators"
+        texturefile = "gfx/interface/goals/GER/GER_purge_valkyrie_conspirators.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_rally_public_support"
+        texturefile = "gfx/interface/goals/GER/GER_rally_public_support.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_restructure_military_leadership"
+        texturefile = "gfx/interface/goals/GER/GER_restructure_military_leadership.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_scorched_earth_policy"
+        texturefile = "gfx/interface/goals/GER/GER_scorched_earth_policy.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_securing_loyalties"
+        texturefile = "gfx/interface/goals/GER/GER_securing_loyalties.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_separate_peace_allies"
+        texturefile = "gfx/interface/goals/GER/GER_separate_peace_allies.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_space_propaganda1"
+        texturefile = "gfx/interface/goals/GER/GER_space_propaganda1.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_space_propaganda2"
+        texturefile = "gfx/interface/goals/GER/GER_space_propaganda2.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_guderian_takes_command"
+        texturefile = "gfx/interface/goals/GER/GER_guderian_takes_command.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_women_in_workforce"
+        texturefile = "gfx/interface/goals/GER/GER_women_in_workforce.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_anti_tank_training"
+        texturefile = "gfx/interface/goals/GER/GER_anti_tank_training.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_bolster_eastern_front"
+        texturefile = "gfx/interface/goals/GER/GER_bolster_eastern_front.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_dismantle_camps"
+        texturefile = "gfx/interface/goals/GER/GER_dismantle_camps.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_defensive_innovations"
+        texturefile = "gfx/interface/goals/GER/GER_defensive_innovations.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_entrenchment_strategies"
+        texturefile = "gfx/interface/goals/GER/GER_entrenchment_strategies.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_ideological_training"
+        texturefile = "gfx/interface/goals/GER/GER_ideological_training.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_mobile_infantry_reform"
+        texturefile = "gfx/interface/goals/GER/GER_mobile_infantry_reform.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_propaganda_overdrive"
+        texturefile = "gfx/interface/goals/GER/GER_propaganda_overdrive.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_rally_public_support2"
+        texturefile = "gfx/interface/goals/GER/GER_rally_public_support2.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_sacrifice_for_fatherland"
+        texturefile = "gfx/interface/goals/GER/GER_sacrifice_for_fatherland.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_ss_expansion"
+        texturefile = "gfx/interface/goals/GER/GER_ss_expansion.tga"
+    }
+    SpriteType = {
+        name = "GFX_GER_urban_warfare_preparedness"
+        texturefile = "gfx/interface/goals/GER/GER_urban_warfare_preparedness.tga"
+    }
+    SpriteType = {
+        name = "GFX_"
+        texturefile = "gfx/interface/goals/GER/.tga"
+    }
+    SpriteType = {
+        name = "GFX_"
+        texturefile = "gfx/interface/goals/GER/.tga"
+    }
+    SpriteType = {
+        name = "GFX_"
+        texturefile = "gfx/interface/goals/GER/.tga"
+    }
+}

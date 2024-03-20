@@ -1,0 +1,25 @@
+﻿l_english:
+
+## Training Laws ##
+idea_group_training_laws:0 "Training Laws"
+training_law:0 "Training Law"
+minimal_training:0 "Minimal Training"
+basic_training:0 "Basic Training"
+advanced_training:0 "Advanced Training"
+specialist_training:0 "Specialist Training"
+
+## Press Laws ##
+idea_group_press_law:0 "Press Laws"
+press_law:0 "Press Law"
+free_press:0 "Free Press"
+censored_press:0 "Censored Press"
+state_press:0 "State Press"
+propaganda_press:0 "Propaganda Press"
+
+## Education Laws ##
+idea_group_education_investment:0 "Education Investment"
+education_investment:0 "Education Investment"
+minimal_education_investment:0 "Minimal Education Investment"
+average_education_investment:0 "Average Education Investment"
+large_education_investment:0 "Large Education Investment"
+massive_education_investment:0 "Massive Education Investment"

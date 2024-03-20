@@ -1,0 +1,58 @@
+state={
+	id=7
+	name="STATE_7"
+	resources={
+		steel=4.000
+	}
+
+	history={
+		owner = HOL
+		add_core_of = HOL
+		victory_points = { 391 40 } # Amsterdam
+		victory_points = { 3211 10 } # The Hague
+		victory_points = { 9498 15 } # Rotterdam
+		buildings = {
+			infrastructure = 2
+			arms_factory = 4
+			industrial_complex = 3
+			dockyard = 3
+			air_base = 5
+			3314 = { naval_base = 5 }
+			9498 = { naval_base = 10 }
+		}
+		1941.1.1 = {
+			owner = HOL
+			controller = GER
+			buildings = {
+				industrial_complex = 1
+				arms_factory = 2
+			}
+		}
+		1943.1.1 = {
+			buildings = {
+				radar_station = 1 
+				anti_air_building = 5 
+				391 = { bunker = 1 }
+				9498 = { coastal_bunker = 1 }
+				3211 = { coastal_bunker = 1 }
+			}
+		}		
+		1944.12.12 = {
+			controller = GER
+			owner = HOL
+			USA = {
+				set_province_controller = 9498
+			}
+		}
+
+	}
+
+	provinces={
+		68 391 3211 3314 9498 
+	}
+	manpower=4123000
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+
+	local_supplies=0.0 
+}

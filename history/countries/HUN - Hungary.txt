@@ -1,0 +1,721 @@
+﻿#################
+# HUNGARY SETUP #
+#################
+
+capital = 43 # Budapest 
+
+set_stability = 0.71
+set_war_support = 0.25
+set_fuel_ratio = 0.75
+
+########
+# ARMY #
+########
+
+oob = "HUN_1936"
+
+#################
+# Starting Tech #
+#################
+
+set_research_slots = 3
+
+set_technology = { 
+
+	############
+	# Infantry #
+	############
+	
+	# Support Weapons
+	
+	# Infantry Weapons
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	
+	# Infantry Equipment
+	
+	# Motorised
+	
+	# Marines
+	
+	# Mountaineers
+	tech_mountaineers = 1
+
+	######################
+	# Support Battalions #
+	######################
+	
+	tech_support = 1	
+	basic_train = 1 	
+	
+	# Engineer
+	tech_engineers = 1
+	
+	# Recon
+	tech_recon = 1 
+	
+	# Military Police
+	
+	# Maintenance
+	
+	# Logistics
+	
+	# Signal
+	
+	# Field Hospital
+	
+	#############
+	# Artillery #
+	#############
+	
+	# Artillery
+	gw_artillery = 1
+	
+	# Anti-Air
+	interwar_antiair = 1
+	
+	# AT
+	interwar_antitank = 1
+	
+	
+	#################
+	# Land Doctrine #
+	#################
+	
+	# Grand Battle Plan
+	trench_warfare = 1
+	
+	##################
+	# Naval Doctrine #
+	##################
+	
+	#################
+	# Air Equipment #
+	#################
+	
+	# Interceptor
+	early_fighter = 1
+	fighter1 = 1
+	
+	# Multi-Role
+	
+	# Tactical Bomber
+	early_bomber = 1
+	
+	# Strategic Bomber
+	
+	# Naval Bomber
+	
+	################
+	# Air Doctrine #
+	################
+	
+	# Air Supereurity
+	air_superiority = 1
+	
+	################################
+	# Engineering / Secret Weapons #
+	################################
+	
+	# Radio
+	radio = 1 
+	
+	# Electrical and Mechanical
+	electronic_mechanical_engineering = 1 
+	
+	# Decryption & Encryption
+	
+	############
+	# Industry #
+	############
+	
+	# Machine Tools
+	
+	# Industry [Concentrated vs Dispersed ]
+	
+	# Construction
+	
+	# Synthetics
+	fuel_silos = 1
+	fuel_refining = 1
+}
+
+##############
+# ARMOR TECH #
+##############
+
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+	
+		## Tank Prot. ##
+		gwtank = 1
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = { 
+	
+		## Light Tank ##
+		gwtank_chassis = 1
+		
+	}
+}
+
+#############
+# DLC SETUP #
+#############
+
+if = {
+	limit = {
+		#has_dlc = Battle for the Bosporus
+	}
+	add_opinion_modifier = { 
+		target = CZE
+		modifier = BFTB_incongruous_neighbors
+	}
+	add_opinion_modifier = { 
+		target = ROM
+		modifier = BFTB_incongruous_neighbors
+	}
+	add_opinion_modifier = { 
+		target = YUG
+		modifier = BFTB_incongruous_neighbors
+	}
+}
+
+############
+# POLITICS #
+############
+
+############
+# Politics #
+############
+
+set_popularities = {
+	fascism = 36
+	neutrality = 50
+	democratic = 10
+	communism = 5
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1920.3.1"
+	election_frequency = 72
+	elections_allowed = no
+}
+
+###################
+# Country Leaders #
+###################
+recruit_character = HUN_Miklos_Horthy
+recruit_character = HUN_Ferenc_Szalasi
+recruit_character = HUN_Otto_von_Habsburg
+recruit_character = HUN_Matyas_Rakosi
+recruit_character = HUN_Arpad_Szakasits
+
+######################
+# Head of Government #
+######################
+recruit_character = HUN_Dome_Sztojay
+recruit_character = HUN_Miklos_Kallay
+
+####################
+# Foreign Minister #
+####################
+recruit_character = HUN_Gabor_Kemeny
+recruit_character = HUN_Arpad_Henney
+recruit_character = HUN_Lajos_Walko
+recruit_character = HUN_Bela_Imredy
+recruit_character = HUN_Laszlo_Bardossy
+recruit_character = HUN_Csia_Sandor
+recruit_character = HUN_Jeno_Ghyczy
+
+######################
+# Armaments Minister #
+######################
+recruit_character = HUN_Emil_Kovarcz
+recruit_character = HUN_Bela_Jurscsek
+recruit_character = HUN_Vilmos_Hellebronth
+
+########################
+# Minister of Security #
+########################
+recruit_character = HUN_Andor_Jaross
+recruit_character = HUN_Jozsef_Szell
+recruit_character = HUN_Gabor_Vajna
+recruit_character = HUN_Laszlo_Endre
+recruit_character = HUN_Laszlo_Budinszky
+recruit_character = HUN_Laszlo_Ferenczy
+recruit_character = HUN_Laszlo_Baky
+recruit_character = HUN_Andras_Kun
+recruit_character = HUN_Balint_Homan
+recruit_character = HUN_Miklos_Bonczos
+recruit_character = HUN_Istvan_Antal
+
+########################
+# Minister of Industry #
+########################
+recruit_character = HUN_Lajos_Remenyi_Schneller
+recruit_character = HUN_Emil_Szakvary
+recruit_character = HUN_Fabinyi_Tihamer
+recruit_character = HUN_Fidel_Palffy
+recruit_character = HUN_Lajos_Szasz
+
+#######################
+# Minister of Culture #
+#######################
+recruit_character = HUN_Endre_Bajcsy_Zsilinszky
+recruit_character = HUN_Ferenc_Kassai_Schalmayer
+recruit_character = HUN_Jeno_Szollosi
+recruit_character = HUN_Jozsef_Nyiro
+recruit_character = HUN_Ferenc_Rajniss
+
+#############
+# Theorists #
+#############
+recruit_character = HUN_Shvoy_Kalman
+recruit_character = HUN_Gyorgy_Jendrassik
+recruit_character = HUN_Sandor_Szalay
+recruit_character = HUN_Zoltan_Boszormeny
+recruit_character = HUN_Victor_Szebehely
+recruit_character = HUN_Kalman_Tihanyi
+
+##################
+# Field Marshals #
+##################
+recruit_character = HUN_Ferenc_Feketehalmy_Czeydner
+recruit_character = HUN_Lajos_Keresztes_Fischer
+recruit_character = HUN_Lajos_Veress
+
+####################
+# Corps Commanders #
+####################
+recruit_character = HUN_Bela_Miklos_de_Dalnok
+recruit_character = HUN_Dezso_Laszlo
+recruit_character = HUN_Geza_Lakatos
+recruit_character = HUN_Gusztav_Hennyey
+recruit_character = HUN_Henrik_Werth
+recruit_character = HUN_Ivan_Hindy
+recruit_character = HUN_Janos_Voros
+recruit_character = HUN_Jenos_Major
+recruit_character = HUN_Jeno_Ratz
+recruit_character = HUN_Jozsef_Heszlenyi
+recruit_character = HUN_Karoly_Beregfy
+recruit_character = HUN_Lajos_Csatay
+recruit_character = HUN_Vilmos_Nagy
+recruit_character = HUN_Zoltan_Szugyi
+
+#############
+# Air Chief #
+#############
+recruit_character = HUN_Kalman_Ternegg_Ratz
+recruit_character = HUN_Emil_Juszty
+recruit_character = HUN_Edgar_Keksz
+recruit_character = HUN_Sandor_Illy
+recruit_character = HUN_Istvan_Banfalvy
+recruit_character = HUN_Sandor_Magyarosy
+recruit_character = HUN_Bela_Rakosi # Replace
+
+##############
+# Navy Chief #
+##############
+recruit_character = HUN_Odon_Trunkwalter
+recruit_character = HUN_Kalman_Hardy
+recruit_character = HUN_Guido_Tasnady
+
+##############
+# 1944 SETUP #
+##############
+
+1944.1.1 = {
+	
+	#################
+	# COUNTRY SETUP #
+	#################
+
+	add_political_power = 150
+	
+	set_war_support = 0.10
+	set_stability = 0.05
+	set_fuel_ratio = 0.78
+	
+	########
+	# ARMY #
+	########
+	
+	oob = "HUN_1944"
+	
+	################
+	# IDEAS / LAWS #
+	################
+	
+	add_ideas = {
+		
+		###############
+		## Ministers ##
+		###############
+		
+		# HoG
+		HUN_Dome_Sztojay
+		
+		# FM	
+		HUN_Dome_Sztojay2
+		
+		# MoS
+		HUN_Andor_Jaross
+		
+		# AM
+		HUN_Lajos_Csatay2
+		
+		# MoI
+		HUN_Lajos_Remenyi_Schneller
+		
+		# MoC
+		HUN_Endre_Bajcsy_Zsilinszky
+		
+		# Theorist
+		HUN_Gyorgy_Jendrassik
+		
+		# Army Chief
+		HUN_Janos_Voros
+		
+		# Air Chief
+		HUN_Bela_Rakosi # (Replaced 1 August by Banfalvy till Panzerfaust)
+		
+		# Navy Chief
+		HUN_Kalman_Hardy
+		
+		# High Command
+		HUN_Lajos_Csatay
+		HUN_Janos_Voros2
+		HUN_Geza_Lakatos2
+	
+		## Laws ##
+		
+		# Economy 
+		war_economy
+		
+		# Conscription
+		extensive_conscription
+		
+		# Exports
+		limited_exports
+		
+		# Education
+		average_education_investment
+		
+		# Press
+		censored_press
+		
+		# Army Training
+		basic_training
+		
+		## Companies ##
+	}
+	
+	#############
+	# DLC SETUP #
+	#############
+
+	##############
+	# TECHNOLOGY #
+	##############
+	
+	set_technology = {
+
+		############
+		# Infantry #
+		############
+		
+		# Support Weapons
+		support_weapons = 1 
+		support_weapons2 = 1 
+		support_weapons3 = 1
+		
+		# Infantry Weapons
+		infantry_weapons = 1
+		infantry_weapons1 = 1
+		infantry_weapons2 = 1 
+		
+		# Infantry Equipment
+		
+		# Motorised
+		motorised_infantry = 1
+		
+		# Mechanized
+		
+		# Mechanized
+		
+		# Paratroops
+		
+		# Mountaineers
+		tech_mountaineers = 1
+		tech_mountaineers2 = 1 
+		
+		# Special Forces
+
+		######################
+		# Support Battalions #
+		######################
+		
+		tech_support = 1	
+	    basic_train = 1 	
+	
+		# Engineer
+		tech_engineers = 1
+		tech_engineers2 = 1 
+		
+		# Recon
+		tech_recon = 1
+		tech_recon2 = 1 
+		
+		# Military Police
+		tech_military_police = 1 
+		
+		# Maintenance
+		tech_maintenance_company = 1 
+		
+		# Logistics
+		tech_logistics_company = 1 
+		tech_logistics_company2 = 1 
+		
+		# Signal
+		tech_signal_company = 1 
+		
+		# Field Hospital
+		tech_field_hospital = 1 
+		tech_field_hospital2 = 1 
+		
+		#############
+		# Artillery #
+		#############
+		
+		# Artillery
+		gw_artillery = 1
+		interwar_artillery = 1
+		artillery1 = 1 
+		artillery2 = 1 
+		artillery3 = 1 
+		
+		# Rocket Artillery
+		
+		# Anti-Air
+		interwar_antiair = 1
+		antiair1 = 1 
+		antiair2 = 1 
+		
+		# Anti-Tank
+		interwar_antitank = 1 
+		antitank1 = 1 
+		antitank2 = 1 
+		
+		#################
+		# Land Doctrine #
+		#################
+		
+		# Trench Warfare
+		trench_warfare = 1 
+		grand_battle_plan = 1 
+		prepared_defense = 1 
+		grand_assault = 1 
+		infantry_offensive = 1 
+		
+		##################
+		# Naval Doctrine #
+		##################
+		
+		#################
+		# Air Equipment #
+		#################
+		
+		# Interceptor
+		early_fighter = 1
+		fighter1 = 1
+		fighter2 = 1 
+		
+		# Heavy Fighter
+		
+		# Multi-Role
+		CAS1 = 1
+		
+		# Tactical Bomber
+		early_bomber = 1
+		tactical_bomber1 = 1
+		
+		# Strategic Bomber
+		strategic_bomber1 = 1
+		
+		# Naval Bomber
+		
+		# Carrier Fighter
+		
+		# Carrier CAS
+		
+		# Carrier Bomber
+		
+		################
+		# Air Doctrine #
+		################
+		
+		# Air Superiority
+		air_superiority = 1 
+		infrastructure_destruction = 1 
+		home_defence = 1 
+		
+		################################
+		# Engineering / Secret Weapons #
+		################################
+		
+		# Radio
+		radio = 1 
+		radio_detection = 1 
+		
+		# Electrical and Mechanical
+		electronic_mechanical_engineering = 1
+		mechanical_computing = 1 
+		computing_machine = 1 
+		
+		# Decryption & Encryption
+		basic_encryption = 1 
+		improved_encryption = 1 
+		
+		# Rocketry
+		
+		# Jet Engine
+		
+		# Nuclear Research
+		
+		############
+		# Industry #
+		############
+		
+		# Machine Tools
+		basic_machine_tools = 1 
+		improved_machine_tools = 1 
+		advanced_machine_tools = 1 
+		
+		# Assembly
+		
+		# Industry [Concentrated vs Dispersed]
+		concentrated_industry = 1 
+		concentrated_industry2 = 1 
+		concentrated_industry3 = 1 
+		
+		# Construction
+		construction1 = 1 
+		construction2 = 1
+		construction3 = 1 
+		
+		# Excavation
+		excavation1 = 1 
+		excavation2 = 1 
+		excavation3 = 1 
+		
+		# Synthetics
+		fuel_silos = 1
+		oil_processing = 1
+		improved_oil_processing = 1	
+		fuel_refining = 1
+	}
+	
+	##############
+	# ARMOR TECH #
+	##############
+
+	if = {
+		limit = {
+			NOT = { has_dlc = "No Step Back" }
+		}
+		set_technology = {
+		
+			## Prot. Tank ##
+			gwtank = 1
+		
+			## Light Tank ##
+			basic_light_tank = 1
+			basic_light_td = 1 
+			basic_light_art = 1 
+			basic_light_spaa = 1 
+			
+			## Medium Tank ##
+			basic_medium_tank = 1 
+			basic_medium_td = 1 
+			basic_medium_art = 1 
+			basic_medium_spaa = 1 
+			
+			## Heavy Tank ##
+			basic_heavy_tank = 1 
+			basic_heavy_td = 1 
+			basic_heavy_art = 1 
+			basic_heavy_spaa = 1 
+		}
+	}
+
+	if = {
+		limit = {
+			has_dlc = "No Step Back"
+		}
+		set_technology = { 
+		
+			## Light Tank ##
+			gwtank_chassis = 1
+			basic_light_tank_chassis = 1
+			improved_light_tank_chassis = 1 
+			
+			## Medium Tank ##
+			basic_medium_tank_chassis = 1 
+			
+			## Heavy Tank ##
+			basic_heavy_tank_chassis = 1
+			
+			## Armor ##
+			armor_tech_1 = 1 
+			armor_tech_2 = 1 
+			
+			## Engine ##
+			engine_tech_1 = 1
+		}
+	}
+}
+
+
+############
+# VARIANTS #
+############
+
+if = {
+	limit = {
+		
+		has_dlc = "No Step Back"
+		
+	}
+	set_technology = {
+		basic_light_tank_chassis = 1
+
+	}
+
+	create_equipment_variant = {
+		name = "Toldi 38M"
+		type = light_tank_chassis_1
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_small_cannon
+			turret_type_slot = tank_light_two_man_tank_turret
+			suspension_type_slot = tank_torsion_bar_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_diesel_engine
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 3
+			tank_nsb_armor_upgrade = 2
+		}
+		icon = "gfx/interface/equipmentdesigner/tanks/designer/generic/generic_light_BAA_camo.dds"
+	}
+}

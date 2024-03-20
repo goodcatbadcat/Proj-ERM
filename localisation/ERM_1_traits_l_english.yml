@@ -1,0 +1,550 @@
+﻿l_english:
+
+
+##############
+#
+
+GER_Hermann_Goering_desc:0 "Lol"
+
+#################
+# Head of State #
+#################
+
+HOS_paranoid_megalomaniac:0 "Paranoid Megalomaniac"
+HOS_paranoid_megalomaniac_desc:0 "The Paranoid Megalomaniac has severe trust issues and sometimes loses touch with reality with delusions of omnipotence but none-the-less keep a tight and organized grip on their country and push it to maximum efficiency."
+##
+HOS_triumphant_revolutionary:0 "Triumphant Revolutionary"
+HOS_triumphant_revolutionary_desc:0 ""
+###
+HOS_permanent_revolutionary:0 "Permanent Revolutionary"
+HOS_permanent_revolutionary_desc:0 ""
+###
+HOS_cornered_fox:0 "Cornered Fox"
+HOS_cornered_fox_desc:0 "The Cornored Fox has no shortage of enemies on every side of his border, but he is not afraid to fight back and may bite back quite hard to preserve what he has."
+###
+HOS_staunch_constitutionalist:0 "Staunch Constitutionalist"
+HOS_staunch_constitutionalist_desc:0 ""
+###
+HOS_dislikes_germany:0 "Dislikes German Empire"
+HOS_dislikes_germany_desc:0 "This individual simply dislikes the German Empire, who knows why maybe it's their imperialist tendencies which threaten the autonomy of their nation or perhaps they are just jealous of their cool spiked helmets."
+###
+HOS_indomitable_perseverance:0 "Indomitable Perseverance"
+HOS_indomitable_perseverance_desc:0 ""
+###
+HOS_old_guard:0 "Old Guard"
+HOS_old_guard_desc:0 "The Old Guard has been in power for a many decades now and his head is far in the past when politics used to work much differently. Although he may not be so sharp a politician as he used to be the people still adore and have grown to have loyalty and trust in him."
+###
+HOS_divided_leadership:0 "Divided Leadership"
+HOS_divided_leadership_desc:0 "This nation has no one true leader yet, there are many vying for power and trying to outmaneuver eachother in order to get to the top, because of this the army is divided with loyalities to multiple people and politics cannot continue undisturbed."
+###
+HOS_corrupt:0 ""
+HOS_corrupt_desc:0 "This person is corrupted, they may have at one point been true to their cause but assosciation with bad figures, a thirst for power, or personal financial problems may have caused them to take funds or bypass laws for their own good."
+###
+HOS_inexperienced_imperialist:0 "Inexperienced Imperialist"
+HOS_inexperienced_imperialist_desc:0 "The Inexperienced Imperialist does not know how to govern his Empire, he has not been properly educated or simply may not care enough or have any interest in how to govern it."
+###
+HOS_stout_defender:0 "Stout Defender"
+HOS_stout_defender_desc:0 "The Stout Defender priotizes the defense of their nation above all else, perhaps they are too keen on manitaing neutrality or they have a troublesome neighbor with amibitious goals."
+###
+HOS_warmonger:0 "Warmonger"
+HOS_warmonger_desc:0 "The Warmonger prioritizes the offensive capabilities of their nation above all else, they are looking keenly towards their neighbors constantly and deciding which piece of land to bite off for their own good."
+###
+HOS_president_king:0 "President-King"
+HOS_president_king_desc:0 "The President King is a ruler who is not an autocrat per se, but he is also not a man who fully believes in the checks and balances of democracy. None-the-less this is not a bad thing."
+###
+HOS_dictator:0 "Dictator"
+HOS_dictator_desc:0 "The Dictator is someone who has total control over their country, and have probably obtained it by force and likely that is the only way they will be removed too."
+###
+HOS_unpopular_leader:0 "Unpopular Leader"
+HOS_unpopular_leader_desc:0 "The Unpopular Leader is simply unpopular with the people, who knows how he got into power, maybe there was no good choices during the election, or perhaps he made promises he couldn't keep and lost his unpopularity."
+###
+HOS_popular_figurehead:0 "Popular Figurehead"
+HOS_popular_figurehead_desc:0 "The Popular Figurehead has little power due to the system of government in his country. But due to his popularity, any firm statement of his will have to be taken into consideration by those who have power in the country."
+###
+HOS_power_hungry_demagogue:0 "Power-Hungry Demagogue"
+HOS_power_hungry_demagogue_desc:0 "The Power-Hungry Demagogue is an angry vengeful man full of hatred. However he possesses a demonic charisma that enchants the frustrated masses. He has but one real purpose and that is to control and shape the world into one of his liking."
+###
+HOS_stern_imperialist:0 "Stern Imperialist"
+HOS_stern_imperialist_desc:0 "The Stern Imperialist is a staunch nationalist. He is neither charming nor an administrative genius. However he has one big asset, namely his fanatical determination to improve his nation's status. He will use any means to achieve that goal, be it political or military."
+###
+HOS_barking_buffoon:0 "Barking Buffoon"
+HOS_barking_buffoon_desc:0 "The Barking Buffoon is a great political dramatic actor. People see him as a strong and competent leader who will save the nation and restore it to its historical greatness. But behind his mask of bombastic rhetoric hides a weak-minded, vain simpleton. Those who really know him, know he is an incompetent man."
+###
+HOS_ruthless_powermonger:0 "Ruthless Powermonger"
+HOS_ruthless_powermonger_desc:0 "The Ruthless Powermonger treats his country and his people as personal possessions. He is completely unscrupulous and he will let nothing stand between him and his goals. Sometimes he can develop a streak of paranoia which will endanger friend and foe alike."
+###
+HOS_autocratic_charmer:0 "Autocratic Charmer"
+HOS_autocratic_charmer_desc:0 "The Autocratic Charmer uses his charisma and ruthlessness to stay in power. He charms friend and foe alike and is an excellent negotiator. However, day-to-day governing is not his style and corruption flourishes under his rule."
+###
+HOS_weary_stiffneck:0 "Weary Stiffneck"
+HOS_weary_stiffneck_desc:0 "The Weary Stiff-Neck is not the right man for this job. He tries to compensate for this with an aristocractic manner and stiff-necked acting. When it comes to politics he is weary and indecisive, always fearing that his lack of talent will show through his façade."
+###
+HOS_die_hard_reformer:0 "Die Hard Reformer"
+HOS_die_hard_reformer_desc:0 "The Die-Hard Reformer wants to promote his political values and preferred system of government to other countries. He is willing to intervene politically and military to achieve his goals."
+###
+HOS_benevolent_gentleman:0 "Benevolent Gentleman"
+HOS_benevolent_gentleman_desc:0 "The Benevolent Gentleman is charismatic and a master at winning elections. However, he lacks the character to be truly successful at the nation's helm. When things get rough, he merely smiles and waits out the winds of political opinion."
+###
+HOS_supreme_gentleman:0 "Supreme Gentleman"
+HOS_supreme_gentleman_desc:0 "The Supreme Gentleman is charismatic, good looking, a master at winning elections and people's love and support. He is also not half bad at being in a strong position of power."
+###
+HOS_armchair_general:0 "Armchair General"
+HOS_armchair_general_desc:0 "The Armchair General sees himself as an expert on the case of military matters but himself has little to none experience leading to many easily avoidable mistakes if he simply left the job of commanding to the right people."
+
+######################
+# Head of Government #
+######################
+
+HOG_brown_eminence:0 "The Brown Eminence"
+HOG_brown_eminence_desc:0 "The Brown Eminence is an arbitrary rude and authoritarian man who has expanded his position such to where he controls who gets to be in contact with the leader and what he hears."
+##
+HOG_silent_workhorse:0 "Silent Workhorse"
+HOG_silent_workhorse_desc:0 "The Silent Workhorse compensates for his lack of charisma with hard work and competence. He rarely takes pride of place, instead letting the Head of State shine in the sun while he gets the job done."
+###
+HOG_naive_optimist:0 "Naive Optimist"
+HOG_naive_optimist_desc:0 "The Naive Optimist is a competent administrator and politician. However, he often succumbs to wishful thinking and fails to grasp the traps which have been laid for him."
+###
+HOG_happy_amateur:0 "Happy Amateur"
+HOG_happy_amateur_desc:0 "The Happy Amateur got his position by pure chance and knows nothing of politics or government. However overwhelmed by the surprise of being in office, his ever-smiling face gives him an aura of confidence. Luckily for him, the people are unaware of his staggering incompetence."
+###
+HOG_backstabber_backroom:0 "Backstabber Backroom"
+HOG_backstabber_backroom_desc:0 "The Backroom Backstabber is a political veteran with years of experience as a party whip and senior party member. No intrigue will oust him and no foreign government can topple him. Foreign governments have to be very cautious around him though."
+###
+HOG_smiling_oilman:0 "Smiling Oilman"
+HOG_smiling_oilman_desc:0 "The Smiling Oilman is a self-made man and a former CEO of a large Oil Company. His experience, and some say his money, have brought him into office. However, he lacks political skill and is a novice in the international arena. At least he is thick-skinned, competent and a fast learner."
+###
+HOG_old_general:0 "Old General"
+HOG_old_general_desc:0 "The Old General was appointed because of his powerbase and sometimes because of his glorious past. Not very interested or skilled in politics, he pursues his foremost interest: the state of the Army."
+###
+HOG_old_admiral:0 "Old Admiral"
+HOG_old_admiral_desc:0 "The Old Admiral was appointed because of his powerbase and sometimes because of his glorious past. Not very interested or skilled in politics, he pursues his foremost interest: the state of the Navy."
+###
+HOG_old_air_marshal:0 "Old Air Marshal"
+HOG_old_air_marshal_desc:0 "The Air Marshal was appointed because of his powerbase and sometimes because of his glorious past. Not very interested or skilled in politics, he pursues his foremost interest: the state of the Air Force."
+###
+HOG_political_protege:0 "Political Protégé"
+HOG_political_protege_desc:0 "The Political Protégé is a political crony, a confidant of the Head of State. He is neither very liked nor very competent. He was chosen because he was loyal and had a large net of contacts."
+###
+HOG_corporate_suit:0 "Corporate Suit"
+HOG_corporate_suit_desc:0 "The Corporate Suit has spent his life in the business world, far away from politics. He was originally brought in as an independent minister, but due his competence and cooperation skills he has reached the top. He has formed a large network of contacts, but he is out of place in politics."
+###
+HOG_ambitious_union_boss:0 "Ambitious Union Boss"
+HOG_ambitious_union_boss_desc:0 "The Ambitious Union Boss is a harsh man who turned to politics to get the power to change things. He is still a man of the working class but his new environment has curbed his radicalism. He is a tough negotiator but lacks administrative skill. His background is also a liability in some circumstances."
+###
+HOG_resigned_generalissimo:0 "Resigned Generalissimo"
+HOG_resigned_generalissimo_desc:0 "The Resigned Generalissimo came to power to save his country from the ruin of anarchy and popular sentiment. He is tired of political bickering and tries to run the country as he used to command his regiment. Still, he is a competent and decisive man."
+###
+HOG_respected_war_hero:0 "Respected War Hero"
+HOG_respected_war_hero_desc:0 "The Respected War Hero came to power to save his country from the ruin of anarchy and popular sentiment. He is tired of political bickering and tries to run the country as he used to run command his regiment. Still he is a competent and decisive man and is well liked by the people who know him for the good deeds he did for their country."
+###
+HOG_insignificant_layman:0 "Insignificant Layman"
+HOG_insignificant_layman_desc:0 "The Insignificant Layman lacks any kind of ambition or political interest. The only reason people do not move against him is that he is fairly harmless and there is no better replacement."
+
+####################
+# Foreign Minister #
+####################
+
+FM_biased_intellectual:0 "Biased Intellectual"
+FM_biased_intellectual_desc:0 "The Biased Intellectual is a refined academic intellectual, whose scholarly work has biased his judgement of other countries and people. The Biased Intellectual is often arrogant and witty about those he dislikes but fawning and ingratiating towards those he likes."
+###
+FM_cloak_n_dagger_schemer:0 "Cloak n' Dagger Schemer"
+FM_cloak_n_dagger_schemer_desc:0 "The Cloak-and-Dagger Schemer is a secretive person. He prefers unorthodox plans and constantly seeks weaknesses to exploit among his slower victims. Often the Cloak-and-Dagger Schemer has a background in the Secret Service and that experience makes him sly and uninformative. Basically the Cloak-and-Dagger Schemer is not a great diplomat but he is so unpredictable that in the end he often gets what he wants."
+###
+FM_smooth_talking_charmer:0 "Smooth Talking Charmer"
+FM_smooth_talking_charmer_desc:0 "The Smooth Talking Charmer prides himself in his ability negotiate for his nation regarding important trade deals. He consistantly makes friends around the globe and is viewed as a trustworthy person to do business with allowing him to secure deals most others couldn't."
+###
+FM_ideological_crusader:0 "Ideological Crusader"
+FM_ideological_crusader_desc:0 "The Ideological Crusader views himself as a devoted proponent of his political system, but to others he is an extremist. If a Fascist, he judges all non-Fascists as weak and decadent. If a Democrat, he would rather lose a war than comply with any demands from a non-Democrat. If a Communist, he views Democrats as evil capitalists and Fascists as evil pseudo-capitalists. When it comes to ideology it is impossible to argue with him since he has already found his salvation."
+###
+FM_iron_fisted_brute:0 "Iron Fisted Brute"
+FM_iron_fisted_brute_desc:0 "The Iron-Fisted Brute is a simple man who has risen throught the ranks of the military or the party. He views the world in black and white: those who eat and those who are eaten. Often brutish and sometimes a sociopath, the Iron-Fisted Brute makes policies without remorse."
+###
+FM_apologetic_clerk:0 "Apologetic Clerk"
+FM_apologetic_clerk_desc:0 "The Apologetic Clerk is often a brilliant man, but either lacks inner strength or is so filled with doubt over the political system of his own country that he can seldom stay consistent. An Apologetic Clerk might also be a man who truly believes in the righteousness of his political system, but unfortunately also believes that the other side will win the war."
+###
+FM_general_staffer:0 "General Staffer"
+FM_general_staffer_desc:0 "The General Staffer is a former military man, perhaps a former teacher of strategy in the General Staff. He has now resettled in the field of Foreign Affairs, a subject that was always his 'hobby'. The General Staffer most likely follows his old military notion of politics and is focused on diplomacy through military might. However, by doing that, the General Staffer is often deemed a simple-minded man, lacking in imagination and boring."
+###
+FM_great_compromiser:0 "Great Compromiser"
+FM_great_compromiser_desc:0 "The Great Compromiser is an easy-going and amiable fellow liked by most. Often he is a sage-like old man and a professional diplomat with many years of service, tactful and experienced. He has the ability to forge lasting friendships and to bind the wills of many into one, striving towards the same goal."
+###
+FM_compassionate_gentleman:0 "Compassionate Gentleman"
+FM_compassionate_gentleman_desc:0 "The Compassionate Gentleman is a jovial man who wishes to please all. The population like him, but he is known to be soft on crimes and terrorism."
+
+
+######################
+# Armaments Minister #
+######################
+
+AM_armaments_organizer:0 "Armaments Organizer"
+AM_armaments_organizer_desc:0 "The Armaments Organizer is not only a capable administrator and politician but he is also excellent at the organization of industry for war-time use. He knows how to quickly speed up the conversion of civilian industry to military when it needs to be done."
+###
+AM_infantry_proponent:0 "Infantry Proponent"
+AM_infantry_proponent_desc:0 "The Infantry Proponent is not only an able administrator and politician, but he also is meddling in the area of Grand Strategy. He believes that Infantry is still the most important fighting force."
+###
+AM_tank_proponent:0 "Tank Proponent"
+AM_tank_proponent_desc:0 "The Tank Proponent is not only an able administrator and politician, but he also is meddling in the area of Grand Strategy. He believes that tanks are now the most vital weapon of war."
+###
+AM_submarine_proponent:0 "Submarine Proponent"
+AM_submarine_proponent_desc:0 "The Submarine Proponent is not only an able administrator and politician, but he also is meddling in the area of Grand Strategy. He believes that submarines are now the decisive weapon of naval warfare."
+###
+AM_air_superiority_proponent:0 "Air Superiority Proponent"
+AM_air_superiority_proponent_desc:0 "The Air Superiority Proponent is not only an able administrator and politician, but he also is meddling in the area of Grand Strategy. He believes that control of the air is now most important aspect of war"
+###
+AM_battlefield_support_proponent:0 "Battlefield Support Proponent"
+AM_battlefield_support_proponent_desc:0 ""
+###
+AM_battlefleet_proponent:0 "Battlefleet Proponent"
+AM_battlefleet_proponent_desc:0 "The Battlefleet Proponent is not only an able administrator and politician, he is also a meddler in Grand Strategy. He believes that battleships are what the country needs."
+###
+AM_strategic_bomber_proponent:0 "Strategic Bomber Proponent"
+AM_strategic_bomber_proponent_desc:0 "The Strategic Air Proponent is not only an able administrator and politician, but he also is meddling in the area of Grand Strategy. He believes that bombing the enemy's industry is now the way to win the war."
+###
+AM_naval_aviation_proponent:0 "Naval Aviation Proponent"
+AM_naval_aviation_proponent_desc:0 "The Air-to-Sea Proponent is not only an able administrator and politician, but he also is meddling in the area of Grand Strategy. He believes that bombing is now the best way to defeat the enemy's navy."
+###
+AM_carrier_proponent:0 "Carrier Proponent"
+AM_carrier_proponent_desc:0 "The Battlefleet Proponent is not only an able administrator and politician, he is also a meddler in Grand Strategy. He believes that carriers are what the country needs."
+###
+AM_military_entrepreneur:0 "Military Entrepreneur"
+AM_military_entrepreneur_desc:0 "The Military Entrepreneur is a former military man, possibly an old fighter. He knows his priority and that is to get the guns and the butter to the troops at the front. This priority often leads to the neglect of the finer points of science"
+
+
+########################
+# Minister of Industry #
+########################
+
+MOI_laissez_faire_capitalist:0 "Laissez Faire Capitalist"
+MOI_laissez_faire_capitalist_desc:0 "The Laissez-Faire Capitalist is a specialist in market economics. It is his firmest opinion that little government intervention is needed, but that the good old invisible hand will best direct the resources of the Nation, war or no war."
+###
+MOI_oil_baron:0 "Oil Baron"
+MOI_oil_baron_desc:0 "The Oil Baron is a magnate in the oil industry and he knows precisely how to squeeze every last barrel out of the ground making each site as efficient as possible. God knows why he's in politics but he is here so why not use him?"
+###
+MOI_administrative_genius:0 "Administrative Genius"
+MOI_administrative_genius_desc:0 "The Administrative Genius is an ardent labourer, who uses his personnel and modern techniques to the utmost to improve the war effort. The Administrative Genius is often a young engineer or scientist, free-thinking and innovative. He always tries to be 'objective' and 'impartial' to further the common good."
+###
+MOI_captain_of_industry:0 "Captain of Industry"
+MOI_captain_of_industry_desc:0 "The nations industry is his ship and he is it's Captain, he is the Captain of Industry, he is able to make full use of the industry and oversees the industrial sector making sure everything is going along smoothly and properly according to the time tables set. There will be no delays in construction with this man."
+###
+MOI_resource_industrialist:0 "Resource Industrialist"
+MOI_resource_industrialist_desc:0 "The Resource Industrialist is usually a civilian from the heavy industry sector who has been appointed to govern the nation's industrial efforts. He always tries to run the country as he would the coal mine back home, improving and expanding its base. As such he is a great organiser, but he sometimes tends to neglect the finer points of the armaments industry."
+###
+MOI_corrupt_kleptocrat:0 "Corrupt Kleptocrat"
+MOI_corrupt_kleptocrat_desc:0 "The Corrupt Kleptocrat is a competent administrator, but he is thoroughly corrupt so military aid and military supplies regularly end up in the pockets of the minister and his cronies. [Aka Hillary Clinton minus the competent part]"
+###
+MOI_fortification_engineer:0 "Fortification Engineer"
+MOI_fortification_engineer_desc:0 "The Fortification Engineer is an ardent labourer who uses his personal knowledge in the construction of fortified bunkers to the best use. He knows where and how set up defensive systems and he makes sure that there are no delays or waste of resources on his watch."
+###
+MOI_war_industrialist:0 "War Industrialist"
+MOI_war_industrialist_desc:0 "The War Industrialist is only interested in one thing and one thing only, the production of arms. He is counting on war and conflict to supply his pockets full of money and will put his all into readying for the outbreak of war."
+###
+MOI_crime_fighter:0 "Crime Fighter"
+MOI_crime_fighter_desc:0 "The Crime Fighter has devoted his life to combating crime. The people like his firm grip and feel reassured that they are safe."
+###
+MOI_efficient_sociopath:0 "Efficient Sociopath"
+MOI_efficient_sociopath_desc:0 "The Efficient Sociopath has no remorse and uses any means necessary to further his goals. However, he always works in the shadows, trying to hide his personal perversions and the excess violence of his minions from the population and his fellow ministers."
+
+########################
+# Minister of Security #
+########################
+
+MOS_SS_Reichsfuehrer:0 "Reichsführer-SS"
+MOS_SS_Reichsfuehrer_desc:0 "The Reichsführer SS was the highest rank of the SS and wields enormous personal power. He is reponsible for all internal security and oversees labor camps. "
+##
+MOS_silent_lawyer:0 "Silent Lawyer"
+MOS_silent_lawyer_desc:0 "The Silent Lawyer directs his department with little imagination and creativity, but he is just."
+###
+MOS_man_of_the_people:0 "Man of the People" 
+MOS_man_of_the_people_desc:0 "The Man of the People knows how to talk to both high and low in society. For him it is a crusade to ease the burden of the poor. However, he is in an awkward position when trying to help people in the occupied zones, and his hands are bound by the military."
+###
+MOS_dismal_enigma:0 "Dismal Enigma"
+MOS_dismal_enigma_desc:0 "The Dismal Enigma is a man of secrets, and if he were not able to produce an 'Ace of Intelligence' from time to time he would have had lost his job ages ago."
+###
+MOS_crooked_kleptocrat:0 "Crooked Kleptocrat"
+MOS_crooked_kleptocrat_desc:0 "The Crooked Kleptocrat ignores the crimes of the high and low and cares little about insurrections but other ministers are loyal towards him because of their chances for self-enrichment. [Also Hillary Clinton]"
+###
+MOS_anti_communist:0 "Anti-Communist"
+MOS_anti_communist_desc:0 "The Anti-Communist is a die-hard commie hater, he will not reason with any socialist sympathizers or any kind of socialist thought. To him they are all enemies of the state and he will dispose of them in whatever manner possible."
+###
+MOS_political_specialist:0 "Political Specialist"
+MOS_political_specialist_desc:0 "The Political Specialist uses his 'technical embassy personnel' to fight a secret war of counter-intelligence with the enemy."
+###
+MOS_technical_specialist:0 "Technical Specialist"
+MOS_technical_specialist_desc:0 "The Technical Specialist concentrates his effort on the study of the modernization of foreign equipment and units to draw conclusions on how to best defeat them."
+###
+MOS_logistics_specialist:0 "Logistics Specialist"
+MOS_logistics_specialist_desc:0 "The Logistics Specialist uses the old General Staff technique of monitoring the movement of supplies to learn where a new threat is mounting."
+###
+MOS_industrial_specialist:0 "Industrial Specialist"
+MOS_industrial_specialist_desc:0 "The Industrial Specialist concentrates his efforts on studying open industrial and economic sources of the enemy and thus often learns what will come by analysing what they are producing at the moment."
+###
+MOS_naval_intelligence_specialist:0 "Naval Intelligence Specialist"
+MOS_naval_intelligence_specialist_desc:0 "The Naval Intelligence Specialist uses the old Naval Staff technique of monitoring the basing of ships to learn where a new threat is mounting."
+###
+MOS_prince_of_terror:0 "Prince of Terror"
+MOS_prince_of_terror_desc:0 "The Prince of Terror lives by the rule: it is better to be feared than to be loved. However, extreme violence may actually increase dissent, a factor the Prince of Terror is unable to see."
+
+#######################
+# Minister of Culture #
+#######################
+
+MOC_master_of_propaganda:0 "Master of Propaganda"
+MOC_master_of_propaganda_desc:0 "The Master of Propaganda is like it says, a master of tricking the public into falling right into his arms. He works for the state and only the state and delivers on what they ask of him to, his charm and wit could trick anyone into believing his words."
+###
+MOC_charismatic_speaker:0 "Charismatic Speaker"
+MOC_charismatic_speaker_desc:0 "The Charismatic Speaker has a grand way with words, he is intelligent and gregarious, and he knows what to say to get people to cheer for and believe in him. His charisma is beyond what the normal person has and he is easily able to arouse the masses to his side."
+###
+MOC_talented_censorer:0 "Talented Censorer"
+MOC_talented_censorer_desc:0 "The Talented Censorer is good at filtering out the perhaps 'unneccessary truth' as he would call it, with his abilities he is able to relay the goings on of the world to the public in the most 'truthful' manner possible. After all ignoring events isn't lying, it's just ignoring them, you can't be lied to if you don't know the lie."
+###
+MOC_master_of_war_propaganda:0 "Master of War Propaganda"
+MOC_master_of_war_propaganda_desc:0 "The Master of War Propaganda is extremely skilled in raising the jinogist sentiment amongst the public, he could get anyone to support a war with his skills, even if it was with Vietnam."
+###
+MOC_political_film_maker:0 "Political Film Maker"
+MOC_political_film_maker_desc:0 "The Political Film Maker is a master at composing and putting together film into propaganda movies showing the public what the state wants to see and arousing them to support a particular cause the film conveys."
+
+
+############
+# Theorist #
+############
+
+THEO_economic_theorist:0 "Economic Theorist"
+THEO_economic_theorist_desc:0 ""
+###
+THEO_theoretical_scientist:0 "Theoretical Scientist"
+THEO_theoretical_scientist_desc:0 "The Theoretical Scientist is a brilliant old professor picked out from the nation's leading university. He is of course a specialist in science both theoretical and applied. However he sometimes has a hard time prioritizing military matters, when great exploits in the civilian sectors can be attained. This often makes him a proponent of the more neutral areas of Electronics and Communication, but sometimes if he is eccentric enough, Secret Weapons are his preferred field."
+###
+THEO_military_theorist:0 "Military Theorist"
+THEO_military_theorist_desc:0 ""
+###
+THEO_air_warfare_theorist:0 "Air Warfare Theorist"
+THEO_air_warfare_theorist_desc:0 ""
+###
+THEO_naval_aviation_pioneer:0 "Naval Aviation Pioneer"
+THEO_naval_aviation_pioneer_desc:0 ""
+###
+THEO_grand_fleet_proponent:0 "Grand Fleet Proponent"
+THEO_grand_fleet_proponent_desc:0 ""
+###
+THEO_submarine_specialist:0 "Submarine Specialist"
+THEO_submarine_specialist_desc:0 ""
+
+####################
+# Universal Traits #
+####################
+
+# Can be used for any position
+
+UNI_undistinguished_suit:0 "Undistinguished Suit"
+UNI_undistinguished_suit_desc:0 "The Undistinguished Suit has spent his life in the business world, far away from politics. He was originally brought in as an independent minister but now has somehow reached the top. He is out of place in politics but has a large network of contacts which allows him to stay here."
+###
+UNI_lone_wolf:0 "Lone Wolf"
+UNI_lone_wolf_desc:0 "The Lone Wolf is a good and capable politican however his anti-social behavior by nature and do-it-all by himself behavior has left him with no close friends in politics and he is in general not well liked due to the former behavior. In politics you may be good at governing the nation but nobody in politics can stay without friends."
+###
+UNI_practicing_drug_addict:0 "Practicing Drug Addict"
+UNI_practicing_drug_addict_desc:0 "The Practicing Drug Addict is addited to one of the many drugs on the market, he may have one been a competent politician but a personal trauma or injury has turned him into a shell of his former self."
+###
+UNI_deceitful_jew:0 "Deceitful Jew"
+UNI_deceitful_jew_desc:0 "The Deceitful Jew is good at outmaneuvering his politicial opponents and is generally disliked for his cultural background but nobody can deny his use and what things he can achieve."
+###
+UNI_knowledgeable_workaholic:0 "Knowledgeable Workaholic"
+UNI_knowledgeable_workaholic_desc:0 "The Knowledgeable Workaholic is one completely and totally devoted to working for the nation and it's people, he barely takes any time off or has any breaks to him his life is the nation and nothing will separate him from that."
+###
+UNI_irresponsible_alcoholic:0 "Irresponsible Alcoholic"
+UNI_irresponsible_alcoholic_desc:0 "The Irresponsible Alcoholic is addicted to drinking and is constantly on another bender nowhere to be found, he is still somewhat useful and competent but definitely not as much as he used to be. Whatever it was a personal trauma or depression, has turned him into a shell of his former self."
+
+
+####################################
+# ARMY, NAVY, AIR COMMANDER TRAITS #
+####################################
+
+AC_school_of_defense:0 "School of Defense"
+AC_school_of_defense_desc:0 "This Chief of Staff teaches that Fortifications, Militia and Strategic Depth are the essence of modern warfare."
+AC_school_of_psychology:0 "School of Psychology"
+AC_school_of_psychology_desc:0 "This Chief of Staff teaches that morale and small-unit leadership are the essence of modern warfare."
+AC_school_of_mass_combat:0 "School of Mass Combat"
+AC_school_of_mass_combat_desc:0 "This Chief of Staff believes in the People's War and teaches that mass formations and guerrilla tactics are the essence of modern warfare."
+AC_school_of_maneuver:0 "School of Maneuver"
+AC_school_of_maneuver_desc:0 "This Chief of Staff teaches that Manoeuvre and Speed are the essence of modern warfare."
+AC_school_of_fire_support:0 "School of Fire Support"
+AC_school_of_fire_support_desc:0 "This Chief of Staff teaches that Fire Support is the essence of modern warfare."
+AC_guns_and_butter_doctrine:0 "Guns n' Butter Doctrine"
+AC_guns_and_butter_doctrine_desc: "This Chief of the Army directs the utilization of the ground forces according to the doctrine of Guns and Butter. This means allowing the operational commanders freedom of command while ensuring the best possible supplies and training for the Army are essential for wearing down the enemy and for winning the war. This is the best army minister to use when you are having Transportation Capacity problems because he reduces supply usage which reduces a hit on your TC."
+AC_armored_spearhead_doctrine:0 "Armored Spearhead Doctrine"
+AC_armored_spearhead_doctrine_desc:0 "This Chief of the Army directs the utilization of the ground forces according to the doctrine of Armoured Spearheads. This means that spearheading speedy offensives with tank units followed up with encircling infantry are essential for wearing down the enemy and for winning the war."
+AC_decisive_battle_doctrine:0 "Decisive Battle Doctrine"
+AC_decisive_battle_doctrine_desc:0 "This Chief of the Army directs the utilization of the ground forces according to the doctrine of Decisive Battle. This means that concentrating large amounts of superior attacking troops and forcing the enemy to commit inferior troops are essential for wearing down the enemy and for winning the war."
+AC_trenches_expert:0 "Trenches Expert"
+AC_trenches_expert_desc:0 "This Chiefo f the Army directs the utilization of the ground forces according to the doctrine of Static Defense. This means that deployign several defensive lines with fortified infantry and substantial artillery assets in the rear are essential for wearing down the enemy and winning the war."
+AC_doctrine_of_autonomy:0 "Doctrine of Autonomy"
+AC_doctrine_of_autonomy_desc:0 "This Chief of the Staff believes in the Doctrine of Autonomy. This means that allowing the operational commanders freedom of command is essential for winning the war."
+AC_static_defence_doctrine:0 "Static Defence Doctrine"
+AC_static_defence_doctrine_desc:0 "This Chief of the Army directs the utilization of the ground forces according to the doctrine of Static Defence. This means that deploying several defensive lines with fortified infantry and substantial artillery assets in the rear are essential for wearing down the enemy and for winning the war."
+AC_elastic_defence_doctrine:0 "Elastic Defence Doctrine"
+AC_elastic_defence_doctrine_desc:0 "This Chief of the Army directs the utilization of the ground forces by the doctrine of Elastic Defence. This means that deploying a thin defensive line with heavily armed infantry and deploying replacements and assault teams in the second lines are essential for wearing down the enemy and for winning the war."
+AC_army_Chief_defensive_1:1 "Army Defense\n(Specialist)"
+AC_army_Chief_defensive_2:2 "Army Defense\n(Expert)"
+AC_army_Chief_defensive_3:1 "Army Defense\n(Genius)"
+AC_army_Chief_offensive_1:1 "Army Offense\n(Specialist)"
+AC_army_Chief_offensive_2:1 "Army Offense\n(Expert)"
+AC_army_Chief_offensive_3:1 "Army Offense\n(Genius)"
+AC_army_Chief_planning_1:1 "Army Planning\n(Specialist)"
+AC_army_Chief_planning_2:1 "Army Planning\n(Expert)"
+AC_army_Chief_planning_3:1 "Army Planning\n(Genius)"
+AC_army_Chief_drill_1:1 "Army Drill\n(Specialist)"
+AC_army_Chief_drill_2:1 "Army Drill\n(Expert)"
+AC_army_Chief_drill_3:1 "Army Drill\n(Genius)"
+AC_army_Chief_reform_1:1 "Army Reformer\n(Specialist)"
+AC_army_Chief_reform_2:1 "Army Reformer\n(Expert)"
+AC_army_Chief_reform_3:1 "Army Reformer\n(Genius)"
+AC_army_Chief_organizational_1:1 "Army Organization\n(Specialist)"
+AC_army_Chief_organizational_2:1 "Army Organization\n(Expert)"
+AC_army_Chief_organizational_3:1 "Army Organization\n(Genius)"
+AC_army_Chief_morale_1:1 "Army Morale\n(Specialist)"
+AC_army_Chief_morale_2:1 "Army Morale\n(Expert)"
+AC_army_Chief_morale_3:1 "Army Morale\n(Genius)"
+AC_army_Chief_maneuver_1:1 "Army Maneuver\n(Specialist)"
+AC_army_Chief_maneuver_2:1 "Army Maneuver\n(Expert)"
+AC_army_Chief_maneuver_3:1 "Army Maneuver\n(Genius)"
+AC_army_Chief_old_guard:0 "Old Guard"
+AC_army_entrenchment_1:1 "Entrenchment\n(Specialist)"
+AC_army_entrenchment_2:1 "Entrenchment\n(Expert)"
+AC_army_entrenchment_3:1 "Entrenchment\n(Genius)"
+AC_army_armored_1:1 "Armor\n(Specialist)"
+AC_army_armored_2:1 "Armor\n(Expert)"
+AC_army_armored_3:1 "Armor\n(Genius)"
+AC_army_artillery_1:1 "Artillery\n(Specialist)"
+AC_army_artillery_2:1 "Artillery\n(Expert)"
+AC_army_artillery_3:1 "Artillery\n(Genius)"
+AC_army_infantry_1:1 "Infantry\n(Specialist)"
+AC_army_infantry_2:1 "Infantry\n(Expert)"
+AC_army_infantry_3:1 "Infantry\n(Genius)"
+AC_army_commando_1:1 "Commando\n(Specialist)"
+AC_army_commando_2:1 "Commando\n(Expert)"
+AC_army_commando_3:1 "Commando\n(Genius)"
+AC_army_cavalry_1:1 "Cavalry\n(Specialist)"
+AC_army_cavalry_2:1 "Cavalry\n(Expert)"
+AC_army_cavalry_3:1 "Cavalry\n(Genius)"
+AC_army_regrouping_1:1 "Army Regrouping\n(Specialist)"
+AC_army_regrouping_2:1 "Army Regrouping\n(Expert)"
+AC_army_regrouping_3:1 "Army Regrouping\n(Genius)"
+AC_army_concealment_1:1 "Concealment\n(Specialist)"
+AC_army_concealment_2:1 "Concealment\n(Expert)"
+AC_army_concealment_3:1 "Concealment\n(Genius)"
+AC_army_logistics_1:1 "Army Logistics\n(Specialist)"
+AC_army_logistics_2:1 "Army Logistics\n(Expert)"
+AC_army_logistics_3:1 "Army Logistics\n(Genius)"
+AFC_carpet_bombing_doctrine:0 "Carpet Bombing Doctrine"
+AFC_carpet_bombing_doctrine_desc:0 "This Chief of the Air Force directs the utilization of the Air forces according to the doctrine of Carpet Bombing. This means that in order to win the war it is essential to grind down the enemy transportation network and industrial plants, and to demoralize his population by terror bombing."
+AFC_naval_aviation_doctrine:0 "Naval Aviation Doctrine"
+AFC_naval_aviation_doctrine_desc:0 "This Chief of the Air Force directs the utilization of the air force according to the doctrine of Naval Aviation. This means that in order to win the war it is essential to work closely with the Navy and destroy the enemy Navy, preferably by bombing it to pieces."
+AFC_air_superiority_doctrine:0 "Air Superiority Doctrine"
+AFC_air_superiority_doctrine_desc:0 "This Chief of the Air Force directs the utilization of the air force according to the doctrine of Air Superiority. This means that in order to win the war it is essential to control the skies above the battlefield."
+AFC_army_aviation_doctrine:0 "Army Aviation Doctrine"
+AFC_army_aviation_doctrine_desc:0 "This Chief of the Air Force directs the utilization of the Air forces according to the doctrine of Army Aviation. This means that in order to win the war it is essential to work closely with the Army and destroy the enemy land forces, preferably by bombing them to pieces."
+AFC_vertical_envelopment_doctrine:0 "Vertical Envelopment Doctrine"
+AFC_vertical_envelopment_doctrine_desc:0 "This Chief of the Air Force directs the utilization of the Air forces according to the doctrine of Vertical Envelopment. This means that in order to win the war it is essential to seize strategic terrain or bridgeheads by air to quickly enable the Army to achieve a breakthrough."
+AFC_iron_knight:0 "Iron Knight"
+AFC_iron_knight_desc:0 "A war hero with a complex character being self-indulgent, ruthless, brutal and egotistical yet capable of self-effacement and weak-willed yet fiercly calculating. He is very contradictory and complex."
+AFC_air_superiority_1:0 "Air Superiority Proponent"
+AFC_air_superiority_2:0 "Air Superiority Proponent"
+AFC_air_superiority_3:0 "Air Superiority Proponent"
+AFC_chief_reform_1:1 "Air Reformer\n(Specialist)"
+AFC_chief_reform_2:1 "Air Reformer\n(Expert)"
+AFC_chief_reform_3:1 "Air Reformer\n(Genius)"
+AFC_chief_safety_1:1 "Air Safety\n(Specialist)"
+AFC_chief_safety_2:1 "Air Safety\n(Expert)"
+AFC_chief_safety_3:1 "Air Safety\n(Genius)"
+AFC_chief_night_operations_1:1 "Night Operations\n(Specialist)"
+AFC_chief_night_operations_2:1 "Night Operations\n(Expert)"
+AFC_chief_night_operations_3:1 "Night Operations\n(Genius)"
+AFC_chief_ground_support_1:1 "Ground Support\n(Specialist)"
+AFC_chief_ground_support_2:1 "Ground Support\n(Expert)"
+AFC_chief_ground_support_3:1 "Ground Support\n(Genius)"
+AFC_chief_all_weather_1:1 "All-Weather\n(Specialist)"
+AFC_chief_all_weather_2:1 "All-Weather\n(Expert)"
+AFC_chief_all_weather_3:1 "All-Weather\n(Genius)"
+AFC_chief_old_guard:0 "Old Guard"
+AFC_air_air_combat_training_1:1 "Air Combat Training\n(Specialist)"
+AFC_air_air_combat_training_2:1 "Air Combat Training\n(Expert)"
+AFC_air_air_combat_training_3:1 "Air Combat Training\n(Genius)"
+AFC_air_naval_strike_1:1 "Naval Strike\n(Specialist)"
+AFC_air_naval_strike_2:1 "Naval Strike\n(Expert)"
+AFC_air_naval_strike_3:1 "Naval Strike\n(Genius)"
+AFC_air_bomber_interception_1:1 "Bomber Interception\n(Specialist)"
+AFC_air_bomber_interception_2:1 "Bomber Interception\n(Expert)"
+AFC_air_bomber_interception_3:1 "Bomber Interception\n(Genius)"
+AFC_air_air_superiority_1:1 "Air Superiority\n(Specialist)"
+AFC_air_air_superiority_2:1 "Air Superiority\n(Expert)"
+AFC_air_air_superiority_3:1 "Air Superiority\n(Genius)"
+AFC_air_close_air_support_1:1 "Close Air Support\n(Specialist)"
+AFC_air_close_air_support_2:1 "Close Air Support\n(Expert)"
+AFC_air_close_air_support_3:1 "Close Air Support\n(Genius)"
+AFC_air_strategic_bombing_1:1 "Strategic Bombing\n(Specialist)"
+AFC_air_strategic_bombing_2:1 "Strategic Bombing\n(Expert)"
+AFC_air_strategic_bombing_3:1 "Strategic Bombing\n(Genius)"
+AFC_air_tactical_bombing_1:1 "Tactical Bombing\n(Specialist)"
+AFC_air_tactical_bombing_2:1 "Tactical Bombing\n(Expert)"
+AFC_air_tactical_bombing_3:1 "Tactical Bombing\n(Genius)"
+AFC_air_airborne_1:1 "Airborne Assault\n(Specialist)"
+AFC_air_airborne_2:1 "Airborne Assault\n(Expert)"
+AFC_air_airborne_3:1 "Airborne Assault\n(Genius)"
+NC_indirect_approach_doctrine:0 "Indirect Approach Doctrine"
+NC_indirect_approach_doctrine_desc:0 "This Chief of the Navy directs the utilization of the Naval forces according to the doctrine of Indirect Approach. This means that in order to win the war it is essential to avoid decisive battle and instead destroy the enemy's convoys and warships piecemeal."
+NC_open_seas_doctrine:0 "Open Seas Doctrine"
+NC_open_seas_doctrine_desc:0 "This Chief of the Navy directs the utilization of the Naval forces according to the doctrine of Open Seas. This means that the control of sea lanes to far-flung resources is essential for winning the war."
+NC_base_control_doctrine:0 "Base Control Doctrine"
+NC_base_control_doctrine_desc:0 "This Chief of the Navy directs the utilization of the Naval forces according to the doctrine of Base Control. This means that in order to win the war it is essential to strike directly at the enemy bases (ports and islands), and take control of them with air and land forces."
+NC_power_projection_doctrine:0 "Power Projection Doctrine"
+NC_power_projection_doctrine_desc:0 "This Chief of the Navy directs the utilization of the Naval forces according to the doctrine of Power Projection, which means that by concentrating all power from aircraft, torpedoes and artillery fire into a suitable area a good chance for winning the war is ensured."
+NC_decisive_naval_battle_doctrine:0 "Decisive Naval Battle Doctrine"
+NC_decisive_naval_battle_doctrine_desc:0 "This Chief of the Navy directs the utilization of the Naval forces according to the doctrine of Decisive Battle. This means that in order to win the war it is essential to amass a large battle fleet and destroy the enemy's force on the High Seas."
+NC_chief_naval_aviation_1:1 "Naval Aviation\n(Specialist)"
+NC_chief_naval_aviation_2:1 "Naval Aviation\n(Expert)"
+NC_chief_naval_aviation_3:1 "Naval Aviation\n(Genius)"
+NC_chief_decisive_battle_1:1 "Decisive Battle\n(Specialist)"
+NC_chief_decisive_battle_2:1 "Decisive Battle\n(Expert)"
+NC_chief_decisive_battle_3:1 "Decisive Battle\n(Genius)"
+NC_chief_commerce_raiding_1:1 "Commerce Raiding\n(Specialist)"
+NC_chief_commerce_raiding_2:1 "Commerce Raiding\n(Expert)"
+NC_chief_commerce_raiding_3:1 "Commerce Raiding\n(Genius)"
+NC_chief_reform_1:1 "Naval Reformer\n(Specialist)"
+NC_chief_reform_2:1 "Naval Reformer\n(Expert)"
+NC_chief_reform_3:1 "Naval Reformer\n(Genius)"
+NC_chief_maneuver_1:1 "Naval Maneuver\n(Specialist)"
+NC_chief_maneuver_2:1 "Naval Maneuver\n(Expert)"
+NC_chief_maneuver_3:1 "Naval Maneuver\n(Genius)"
+NC_chief_old_guard:0 "Old Guard"
+NC_anti_submarine_1:1 "Anti-Submarine\n(Specialist)"
+NC_anti_submarine_2:1 "Anti-Submarine\n(Expert)"
+NC_anti_submarine_3:1 "Anti-Submarine\n(Genius)"
+NC_naval_air_defense_1:1 "Naval Air Defense\n(Specialist)"
+NC_naval_air_defense_2:1 "Naval Air Defense\n(Expert)"
+NC_naval_air_defense_3:1 "Naval Air Defense\n(Genius)"
+NC_fleet_logistics_1:1 "Fleet Logistics\n(Specialist)"
+NC_fleet_logistics_2:1 "Fleet Logistics\n(Expert)"
+NC_fleet_logistics_3:1 "Fleet Logistics\n(Genius)"
+NC_amphibious_assault_1:1 "Amphibious Assault\n(Specialist)"
+NC_amphibious_assault_2:1 "Amphibious Assault\n(Expert)"
+NC_amphibious_assault_3:1 "Amphibious Assault\n(Genius)"
+NC_submarine_1:1 "Submarines\n(Specialist)"
+NC_submarine_2:1 "Submarines\n(Expert)"
+NC_submarine_3:1 "Submarines\n(Genius)"
+NC_destroyer_1:1 "Destroyers\n(Specialist)"
+NC_destroyer_2:1 "Destroyers\n(Expert)"
+NC_destroyer_3:1 "Destroyers\n(Genius)"
+NC_cruiser_1:1 "Cruisers\n(Specialist)"
+NC_cruiser_2:1 "Cruisers\n(Expert)"
+NC_cruiser_3:1 "Cruisers\n(Genius)"
+NC_battleship_1:1 "Battleships\n(Specialist)"
+NC_battleship_2:1 "Battleships\n(Expert)"
+NC_battleship_3:1 "Battleships\n(Genius)"
+NC_capital_ship_1:1 "Capital Ships\n(Specialist)"
+NC_capital_ship_2:1 "Capital Ships\n(Expert)"
+NC_capital_ship_3:1 "Capital Ships\n(Genius)"
+NC_screen_1:1 "Screens\n(Specialist)"
+NC_screen_2:1 "Screens\n(Expert)"
+NC_screen_3:1 "Screens\n(Genius)"
+NC_carrier_1:1 "Carriers\n(Specialist)"
+NC_carrier_2:1 "Carriers\n(Expert)"
+NC_carrier_3:1 "Carriers\n(Genius)"

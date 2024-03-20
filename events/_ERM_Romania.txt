@@ -1,0 +1,449 @@
+﻿###################
+# Romanian Events #
+###################
+
+add_namespace = romania
+
+# Planning 1944 Coup d'état
+country_event = {
+	id = romania.1
+	title = romania.1.t
+	desc = romania.1.d
+	picture = GFX_report_event_
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = ROM
+		ROM = {
+			is_in_faction_with = GER
+			has_war_with = SOV
+			surrender_progress > 0.05
+		}
+		NOT = {
+			has_capitulated = yes
+			OR = {
+				has_global_flag = GER_operation_margarethe_II
+			}
+		}
+	}
+
+	mean_time_to_happen = { days = 1 }
+	
+	# Plan the Coup
+	option = {
+		name = romania.1.a
+		ai_chance = {
+			factor = 100
+		}
+		add_political_power = -50
+		add_equipment_to_stockpile = {
+			type = infantry_equipment_3
+			amount = -7500
+		}
+		set_global_flag = ROM_coup_plans
+	}
+	# Stay loyal to Germany!
+	option = {
+		name = romania.1.b
+		ai_chance = {
+			factor = 0
+		}
+		add_stability = -0.35
+		add_war_support = -0.35
+	}
+}
+
+# 1944 Coup d'etat
+country_event = {
+	id = romania.2
+	title = romania.2.t
+	desc = romania.2.d
+	picture = GFX_report_event_romania_coup
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = ROM
+		ROM = {
+			is_in_faction_with = GER
+			has_war_with = SOV
+			surrender_progress > 0.25
+		}
+		AND = {
+			has_global_flag = ROM_coup_plans
+		}
+		NOT = {
+			has_capitulated = yes
+			OR = {
+				has_global_flag = GER_operation_margarethe_II
+			}
+		}
+	}
+
+	mean_time_to_happen = { days = 1 }
+	
+	immediate = {
+		ROM = {
+			leave_faction = yes
+			every_enemy_country = {
+				white_peace = ROM 
+			}
+		}
+	}
+	
+	
+	# Carry Out Coup
+	option = {
+		name = romania.2.a
+		set_global_flag = ROM_monarchist_coup
+		ROM = {
+			set_popularities = {
+				neutrality = 0
+				fascism = 0
+				democratic = 100
+				communism = 0
+			}
+			set_politics = {
+				ruling_party = democratic
+				last_election = "1940.1.1"
+				election_frequency = 72
+				elections_allowed = no
+			}
+			recruit_character = ROM_Gheorghe_Mihail
+			recruit_character = ROM_Nicolae_Radescu
+			retire_character = ROM_Radu_Korne
+			retire_character = ROM_Mihai_Antonescu
+			retire_character = ROM_Constantin_Pantazi
+			retire_character = ROM_Eugen_Cristescu
+		}
+		ROM = {
+			add_ideas = {
+				# HoG
+				ROM_Nicolae_Radescu2
+				# FM
+				ROM_Constantin_Visoianu
+				# AM
+				ROM_Mihail_Romniceanu
+				# MoS
+				ROM_Nicolae_Radescu3
+				# MoC
+				ROM_Dumitru_Caracostea
+				# MoI
+				ROM_Constantin_IC_Bratianu
+				# Air Chief
+				ROM_Gheorghe_Vasiliu
+				# Army Chief
+				ROM_Georghe_Sinaia_Ionescu
+				# Navy Chief
+				ROM_Nicolai_Duca_di_Silvania
+				# High Command
+				ROM_Nicolae_Radescu
+				ROM_Martin_Ceausu
+				ROM_Constantin_Sanatescu2
+			}
+		}
+		SOV = { add_to_faction = ROM }
+		ROM = {
+			add_to_war = { 
+				targeted_alliance = SOV
+				enemy = GER
+				hostility_reason = asked_to_join
+			}
+		}
+		hidden_effect = {
+			SOV = { country_event = { id = romania.205 hours = 1 } }
+			GER = { country_event = { id = romania.202 hours = 1 } }
+			country_event = { id = world_news.4 hours = 1 } 
+		}
+	}
+}
+
+# SOV: Reacts to ROM asking for weapons
+country_event = {
+	id = romania.201
+	title = romania.201.t
+	desc = romania.201.d
+	picture = GFX_report_event_romania_coup
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = { days = 1 }
+	
+	# Give them weapons
+	option = {
+		name = romania.201.a
+		ai_chance = {
+			factor = 100
+		}
+		add_equipment_to_stockpile = {
+			type = infantry_equipment_2
+			amount = -7500
+		}
+		ROM = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_2
+				amount = 7500
+				producer = SOV
+			}
+		}
+		ROM = { country_event = { id = romania.204 hours = 1 } }
+	}
+	# Don't give them weapons
+	option = {
+		name = romania.201.b
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+# GER: Romania has betrayed us!
+country_event = {
+	id = romania.202
+	title = romania.202.t
+	desc = romania.202.d
+	picture = GFX_report_event_romania_coup
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = { days = 1 }
+	
+	# Bomb them in retaliation
+	option = {
+		name = romania.202.a
+		ai_chance = { factor = 100 }
+		46 = {
+			damage_building = {
+				type = infrastructure
+				damage = 2
+			}
+			damage_building = {
+				type = industrial_complex
+				damage = 1
+			}
+			damage_building = {
+				type = arms_factory
+				damage = 3
+			}
+		}
+		ROM = { country_event = { id = romania.203 hours = 1 } }
+		add_opinion_modifier = {
+			target = ROM
+			modifier = faction_traitor
+		}
+	}
+	
+	# Let them be
+	option = {
+		name = romania.202.b
+		ai_chance = { factor = 0 }
+		add_opinion_modifier = {
+			target = ROM
+			modifier = faction_traitor
+		}
+	}
+}
+
+# ROM: Germany bombs us!
+country_event = {
+	id = romania.203
+	title = romania.203.t
+	desc = romania.203.d
+	picture = GFX_report_event_
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = romania.203.a
+	}
+}
+
+# ROM: SOV has given us weapons
+country_event = {
+	id = romania.204
+	title = romania.204.t
+	desc = romania.204.d
+	picture = GFX_report_event_
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = { days = 1 }
+	
+	# Coo coo...
+	option = {
+		name = romania.205.a
+	}
+}
+
+# SOV: Reacts to ROM Coup d'etat
+country_event = {
+	id = romania.205
+	title = romania.205.t
+	desc = romania.205.d
+	picture = GFX_report_event_romania_coup
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = { days = 1 }
+	
+	# Accept them on our side
+	option = {
+		name = romania.205.a
+		ai_chance = { factor = 100 }
+		ROM = { country_event = { id = romania.206 hours = 1 } }
+		set_global_flag = SOV_accepts_ROM
+	}
+	# It is too late to switch sides
+	option = {
+		name = romania.205.b
+		ai_chance = { factor = 0 }
+		ROM = { country_event = { id = romania.207 hours = 1 } }
+		set_global_flag = SOV_denies_ROM
+	}
+}
+
+# ROM Reacts: SOV agree to switching sides
+country_event = {
+	id = romania.206
+	title = romania.206.t
+	desc = romania.206.d
+	picture = GFX_report_event_romania_coup
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = { days = 1 }
+	
+	# Accept them on our side
+	option = {
+		name = romania.206.a
+		SOV = {
+			add_to_faction = ROM 
+			add_to_war = { 
+				targeted_alliance = SOV
+				enemy = GER
+				hostility_reason = asked_to_join
+			}
+		}
+	}
+}
+
+# ROM Reacts: SOV Denies switching sides
+country_event = {
+	id = romania.207
+	title = romania.207.t
+	desc = romania.207.d
+	picture = GFX_report_event_romania_coup
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = { days = 1 }
+	
+	# Accept them on our side
+	option = {
+		name = romania.207.a
+		GER = {
+            declare_war_on = {
+                target = ROM
+                type = topple_government
+			}
+		}
+	}
+}
+
+# ROM: GER Activates Operation Margarethe II
+country_event = {
+	id = romania.3
+	title = romania.3.t
+	desc = romania.3.d
+	picture = GFX_report_event_HUN_operation_panzerfaust
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = romania.3.a
+		ROM = {
+			remove_ideas = {
+				# HoG
+				ROM_Mihai_I
+				# FM
+				ROM_Mihai_Antonescu
+				# AM
+				ROM_Gheorghe_Dobre
+				# MoS 
+				ROM_Eugen_Cristescu
+				# MoI
+				ROM_Mircea_Cancicov
+				# MoC
+				ROM_Mihai_Antonescu3
+				# Army Chief
+				ROM_Ion_Antonescu2
+				# High Command
+				ROM_Martin_Ceausu
+				ROM_Illie_Steflea
+			}
+			recruit_character = ROM_Constantin_Petrovicescu
+			add_ideas = {
+				# HoG
+				ROM_Horia_Sima
+				# FM
+				ROM_Mikhail_Sturdza
+				# AM
+				ROM_Vasile_Iasinschi
+				# MoS
+				ROM_Romulus_Opris
+				# MoI
+				ROM_Corneliu_Georgescu
+				# MoC
+				ROM_Illie_Garneata
+				# Army Chief
+				ROM_Platon_Chirnoaga2
+				# High Command
+				ROM_Constantin_Petrovicescu2
+				ROM_Ion_Gigurtu2
+			}
+		}
+		hidden_effect = {
+			country_event = { id = romania.4 hours = 12 }
+		}
+	}
+}
+
+# ROM: Anti-Fascist Purge
+country_event = {
+	id = romania.4
+	title = romania.4.t
+	desc = romania.4.d
+	picture = GFX_report_event_HUN_operation_panzerfaust
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = romania.4.a
+		political_power = -75
+	}
+}

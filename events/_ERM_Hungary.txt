@@ -1,0 +1,532 @@
+﻿####################
+# Hungarian Events #
+####################
+
+add_namespace = ERM_hungary
+
+# Negotiate Surrender with Russia?
+country_event = {
+	id = ERM_hungary.1
+	title = ERM_hungary.1.t
+	desc = ERM_hungary.1.d
+	picture = GFX_report_event_
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = HUN
+		has_war_with = SOV
+		AND = {
+			surrender_progress > 0.03
+		}
+		NOT = {
+			has_capitulated = yes
+			OR = {
+				has_global_flag = GER_operation_panzerfaust
+			}
+		}
+	}
+
+	mean_time_to_happen = { days = 1 }
+	
+	# Negotiate Surrender
+	option = {
+		name = ERM_hungary.1.a
+		ai_chance = {
+			factor = 100
+		}
+		SOV = { country_event = { id = ERM_hungary.2 hours = 480 } }
+		set_global_flag = HUN_negotiating_with_SOV
+	}
+	# Stay loyal to Germany!
+	option = {
+		name = ERM_hungary.1.b
+		ai_chance = {
+			factor = 0
+		}
+		add_stability = -0.20
+		add_war_support = -0.20
+	}
+}
+
+# SOV: Hungary negotiating surrender with us 
+country_event = {
+	id = ERM_hungary.2
+	title = ERM_hungary.2.t
+	desc = ERM_hungary.2.d
+	picture = GFX_report_event_
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = { days = 30 }
+	
+	# Accept Their Surrender
+	option = {
+		name = ERM_hungary.2.a
+		ai_chance = {
+			factor = 0
+		}
+		set_global_flag = SOV_accept_surrender_HUN
+	}
+	# Accept Their Surrender But They Have to Switch Sides
+	option = {
+		name = ERM_hungary.2.b
+		ai_chance = {
+			factor = 100
+		}
+		set_global_flag = SOV_accept_surrender_HUN_TERMS
+	}
+	# Roll them over!
+	option = {
+		name = ERM_hungary.2.c
+		ai_chance = {
+			factor = 0
+		}
+		SOV = { 
+			country_event = { id = ERM_hungary.203 } 
+		}
+	}
+}
+
+
+# Soviets Accepted Our Surrender
+country_event = {
+	id = ERM_hungary.201
+	title = ERM_hungary.201.t
+	desc = ERM_hungary.201.d
+	picture = GFX_report_event_
+	
+	fire_only_once = yes
+
+	trigger = {
+		has_global_flag = SOV_accept_surrender_HUN
+		NOT = {
+			has_capitulated = yes
+			OR = {
+				has_global_flag = GER_operation_panzerfaust
+			}
+		}
+	}
+
+	mean_time_to_happen = { days = 1 }
+	
+	# Lay Down Arms
+	option = {
+		name = ERM_hungary.201.a
+		HUN = {
+			leave_faction = yes
+			white_peace = SOV
+			white_peace = ENG
+			give_military_access = SOV
+		}
+		hidden_effect = {
+			GER = { 
+				country_event = { id = ERM_hungary.20101 } 
+			}
+			news_event = { id = world_news.1 }
+		}
+	}
+}
+
+# Germany: Hungary Has Betrayed us!
+country_event = {
+	id = ERM_hungary.20101
+	title = ERM_hungary.20101.t
+	desc = ERM_hungary.20101.d
+	picture = GFX_report_event_
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = { days = 1 }
+	
+	# Crush Them
+	option = {
+		name = ERM_hungary.20101.a
+		ai_chance = {
+			factor = 100
+		}
+		GER = {
+			declare_war_on = {
+				target = HUN
+				type = topple_government
+			}
+		}
+	}
+	# Let Them Be
+	option = {
+		name = ERM_hungary.20101.b
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+# HUN: Soviets Accepted Our Surrender But We Have to Switch Sides
+country_event = {
+	id = ERM_hungary.202
+	title = ERM_hungary.202.t
+	desc = ERM_hungary.202.d
+	picture = GFX_report_event_
+	
+	fire_only_once = yes
+
+	trigger = {
+		has_global_flag = SOV_accept_surrender_HUN_TERMS
+		NOT = {
+			has_capitulated = yes
+			OR = {
+				has_global_flag = GER_operation_panzerfaust
+			}
+		}
+	}
+
+	mean_time_to_happen = { days = 1 }
+	
+	# Accept the terms
+	option = {
+		name = ERM_hungary.202.a
+		ai_chance = {
+			factor = 100
+		}
+		HUN = {
+			leave_faction = yes
+			white_peace = SOV
+			white_peace = ENG
+			give_military_access = SOV
+		}
+		SOV = {
+			add_to_faction = HUN
+		}
+		HUN = {
+			add_to_war = { 
+				targeted_alliance = SOV 
+				enemy = GER
+				hostility_reason = asked_to_join
+			}
+		}
+		hidden_effect = {
+			set_global_flag = HUN_switch_sides_allies
+			GER = { 
+				country_event = { id = ERM_hungary.20201 } 
+			}
+			news_event = { id = world_news.2 }
+		}
+	}
+	
+	# Don't accept terms
+	option = {
+		name = ERM_hungary.202.b
+		ai_chance = {
+			factor = 0
+		}
+		add_political_power = -100
+		add_stability = -0.10
+		add_war_support = -0.10
+		hidden_effect = {
+			SOV = { 
+				country_event = { id = ERM_hungary.20202 } 
+			}
+		}
+	}
+}
+
+# GER: Hungary betrayed us!
+country_event = {
+	id = ERM_hungary.20201
+	title = ERM_hungary.20201.t
+	desc = ERM_hungary.20201.d
+	picture = GFX_report_event_
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = ERM_hungary.20201.a
+	}
+}
+
+# SOV: Hungary denies terms!
+country_event = {
+	id = ERM_hungary.20202
+	title = ERM_hungary.20202.t
+	desc = ERM_hungary.20202.d
+	picture = GFX_report_event_
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = ERM_hungary.20202.a
+	}
+}
+
+# HUN: SOV chooses to roll us over!
+country_event = {
+	id = ERM_hungary.203
+	title = ERM_hungary.203.t
+	desc = ERM_hungary.203.d
+	picture = GFX_report_event_
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = ERM_hungary.203.a
+		add_war_support = 0.25
+	}
+}
+
+# HUN: GER Activates Operation Panzerfaust
+country_event = {
+	id = ERM_hungary.3
+	title = ERM_hungary.3.t
+	desc = ERM_hungary.3.d
+	picture = GFX_report_event_HUN_operation_panzerfaust
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = ERM_hungary.3.a
+		HUN = {
+			remove_ideas = {
+				# HoG
+				HUN_Geza_Lakatos
+				# FM
+				HUN_Gusztav_Hennyey
+				# AM
+				HUN_Lajos_Csatay2
+				# MoS 
+				HUN_Miklos_Bonczos
+				# MoC
+				HUN_Endre_Bajcsy_Zsilinszky
+				# Air Chief
+				HUN_Istvan_Banfalvy
+				# Army Chief
+				HUN_Janos_Voros
+				# High Command
+				HUN_Lajos_Csatay
+				HUN_Janos_Voros2
+				HUN_Geza_Lakatos2
+			}
+			add_ideas = {
+				# HoG
+				HUN_Ferenc_Szalasi
+				# FM
+				HUN_Gabor_Kemeny
+				# AM
+				HUN_Emil_Kovarcz
+				# MoS
+				HUN_Gabor_Vajna
+				# MoC
+				HUN_Ferenc_Kassai_Schalmayer
+				# Air Chief
+				HUN_Sandor_Illy
+				# Army Chief
+				HUN_Ferenc_Feketehalmy_Czeydner
+				# Navy Chief
+				HUN_Odon_Trunkwalter
+				# High Command
+				HUN_Karoly_Beregfy
+				HUN_Dezso_Laszlo
+				HUN_Ivan_Hindy
+			}
+		}
+		hidden_effect = {
+			country_event = { id = ERM_hungary.4 hours = 12 }
+		}
+	}
+}
+
+# HUN: Purges Begin
+country_event = {
+	id = ERM_hungary.4
+	title = ERM_hungary.4.t
+	desc = ERM_hungary.4.d
+	picture = GFX_report_event_hungary_arrests
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = ERM_hungary.4.a
+		add_stability = -0.05
+		add_war_support = 0.05
+		add_political_power = 100
+		#########
+		# PURGE #
+		#########
+		HUN = {
+			retire_character = HUN_Lajos_Keresztes_Fischer
+			retire_character = HUN_Lajos_Veress
+			retire_character = HUN_Geza_Lakatos
+			retire_character = HUN_Gusztav_Hennyey
+			retire_character = HUN_Henrik_Werth
+			retire_character = HUN_Janos_Voros
+			retire_character = HUN_Lajos_Csatay
+			retire_character = HUN_Vilmos_Nagy
+		}
+	}
+}
+
+# HUN: August 1944 Coup by Horty and Lakatos 
+country_event = {
+	id = ERM_hungary.5
+	title = ERM_hungary.5.t
+	desc = ERM_hungary.5.d
+	picture = GFX_report_event_budapest_1944
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = HUN
+		AND = {
+			OR = {
+				surrender_progress > 0.02
+				date > 1944.8.29
+			}
+		}
+	}
+
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = ERM_hungary.5.a
+		set_global_flag = HUN_august_coup
+		add_political_power = 100
+		add_stability = 0.10
+		remove_ideas = {
+			HUN_Dome_Sztojay
+			HUN_Dome_Sztojay2
+			HUN_Bela_Rakosi
+			HUN_Andor_Jaross
+		}
+		add_ideas = {
+			HUN_Geza_Lakatos
+			HUN_Gusztav_Hennyey
+			HUN_Istvan_Banfalvy
+			HUN_Miklos_Bonczos
+		}
+	}
+}
+
+# HUN: Bela Miklos Defects to Soviets
+country_event = {
+	id = ERM_hungary.6
+	title = ERM_hungary.6.t
+	desc = ERM_hungary.6.d
+	picture = GFX_report_event_bela_miklos
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = HUN
+		AND = {
+			OR = {
+				surrender_progress > 0.01
+				date > 1944.8.1
+			}
+		}
+	}
+
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = ERM_hungary.6.a
+		add_stability = -0.01
+		HUN = {
+			retire_character = HUN_Bela_Miklos_de_Dalnok
+		}
+	}
+}
+
+# 
+country_event = {
+	id = ERM_hungary.7
+	title = ERM_hungary.7.t
+	desc = ERM_hungary.7.d
+	picture = GFX_report_event_
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = ERM_hungary.7.a
+	}
+}
+
+# 
+country_event = {
+	id = ERM_hungary.8
+	title = ERM_hungary.8.t
+	desc = ERM_hungary.8.d
+	picture = GFX_report_event_
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = ERM_hungary.8.a
+	}
+}
+
+# 
+country_event = {
+	id = ERM_hungary.9
+	title = ERM_hungary.9.t
+	desc = ERM_hungary.9.d
+	picture = GFX_report_event_
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = ERM_hungary.9.a
+	}
+}
+
+# 
+country_event = {
+	id = ERM_hungary.10
+	title = ERM_hungary.10.t
+	desc = ERM_hungary.10.d
+	picture = GFX_report_event_
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = ERM_hungary.10.a
+	}
+}

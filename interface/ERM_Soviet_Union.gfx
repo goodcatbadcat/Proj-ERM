@@ -1,0 +1,488 @@
+spriteTypes = {
+
+
+    ###################
+    ## SOVIET EVENTS ##
+    ###################
+
+    spriteType = {
+        name = "GFX_report_event_"
+        texturefile = "gfx/event_pictures/Report_Events/Germany/report_event_.dds"
+    }
+
+    ########################
+    ## SOVIET UNION IDEAS # #
+    ########################
+
+    spriteType = {
+        name = "GFX_idea_SOV_"
+        texturefile = "gfx/interface/ideas/national_ideas/SOV/SOV_.dds"
+    }
+
+    ########################
+    ### SOVIET MINISTERS ###
+    ########################
+
+    ## HoS ##
+
+    SpriteType = {
+        name = "GFX_idea_SOV_IV_Stalin"
+        texturefile = "gfx/interface/ideas/ministers/SOV/idea_SOV_IV_Stalin.dds"
+
+    }
+    
+    ## HoG ##
+
+    SpriteType = {
+        name = "GFX_idea_SOV_Andrei_A_Zhdanov"
+        texturefile = "gfx/interface/ideas/ministers/SOV/idea_SOV_Andrei_A_Zhdanov.dds"
+
+    }
+
+    ## Army Chief ##
+
+
+    SpriteType = {
+        name = "GFX_idea_SOV_Nikolai_A_Bulganin"
+        texturefile = "gfx/interface/ideas/ministers/SOV/idea_SOV_Nikolai_A_Bulganin.dds"
+
+    }
+     SpriteType = {
+        name = "GFX_idea_SOV_Alexander_M_Vasilevskiy"
+        texturefile = "gfx/interface/ideas/ministers/SOV/idea_SOV_Alexander_M_Vasilevskiy.dds"
+
+    }
+     SpriteType = {
+        name = "GFX_idea_SOV_Boris_M_Shaposhnikov"
+        texturefile = "gfx/interface/ideas/ministers/SOV/idea_SOV_Boris_M_Shaposhnikov.dds"
+
+    }
+    SpriteType = {
+        name = "GFX_idea_SOV_Georgiy_K_Zhukov"
+        texturefile = "gfx/interface/ideas/ministers/SOV/idea_SOV_Georgiy_K_Zhukov.dds"
+
+    }
+    SpriteType = {
+        name = "GFX_idea_SOV_Semyon_K_Timoshenko"
+        texturefile = "gfx/interface/ideas/ministers/SOV/idea_SOV_Semyon_K_Timoshenko.dds"
+
+    }
+    SpriteType = {
+        name = "GFX_idea_SOV_Kirill_A_Meretskov"
+        texturefile = "gfx/interface/ideas/ministers/SOV/idea_SOV_Kirill_A_Meretskov.dds"
+
+    }
+    SpriteType = {
+        name = "GFX_idea_SOV_Konstantin_K_Rokossovsky"
+        texturefile = "gfx/interface/ideas/ministers/SOV/idea_SOV_Konstantin_K_Rokossovsky.dds"
+
+    }
+    SpriteType = {
+        name = "GFX_"
+        texturefile = "gfx/interface/ideas/ministers/SOV/.dds"
+
+    }
+
+    ## High Command ##
+
+    SpriteType = {
+        name = "GFX_idea_SOV_Ivan_S_Konev"
+        texturefile = "gfx/interface/ideas/ministers/SOV/idea_SOV_Ivan_S_Konev.dds"
+
+    }
+    SpriteType = {
+        name = "GFX_idea_SOV_Kliment_Y_Voroshilov"
+        texturefile = "gfx/interface/ideas/ministers/SOV/idea_SOV_Kliment_Y_Voroshilov.dds"
+
+    }
+    SpriteType = {
+        name = "GFX_idea_SOV_Leonid_A_Govorov"
+        texturefile = "gfx/interface/ideas/ministers/SOV/idea_SOV_Leonid_A_Govorov.dds"
+
+    }
+    SpriteType = {
+        name = "GFX_idea_SOV_Ivan_D_Chernyakhovsky"
+        texturefile = "gfx/interface/ideas/ministers/SOV/idea_SOV_Ivan_D_Chernyakhovsky.dds"
+
+    }
+    SpriteType = {
+        name = "GFX_idea_SOV_Rodion_Y_Malinovsky"
+        texturefile = "gfx/interface/ideas/ministers/SOV/idea_SOV_Rodion_Y_Malinovsky.dds"
+
+    }
+    SpriteType = {
+        name = "GFX_idea_SOV_Vasily_I_Chuikov"
+        texturefile = "gfx/interface/ideas/ministers/SOV/idea_SOV_Vasily_I_Chuikov.dds"
+
+    }
+    SpriteType = {
+        name = "GFX_idea_SOV_Zinovy_M_Pomerantsev"
+        texturefile = "gfx/interface/ideas/ministers/SOV/idea_SOV_Zinovy_M_Pomerantsev.dds"
+
+    }
+    SpriteType = {
+        name = "GFX_idea_SOV_Nikolai_K_Baibakov"
+        texturefile = "gfx/interface/ideas/ministers/SOV/idea_SOV_Nikolai_K_Baibakov.dds"
+
+    }
+    SpriteType = {
+        name = "GFX_idea_SOV_Sergei_A_Khudyakov"
+        texturefile = "gfx/interface/ideas/ministers/SOV/idea_SOV_Sergei_A_Khudyakov.dds"
+
+    }
+    SpriteType = {
+        name = "GFX_idea_SOV_Vladimir_A_Kasatonov"
+        texturefile = "gfx/interface/ideas/ministers/SOV/idea_SOV_Vladimir_A_Kasatonov.dds"
+
+    }
+
+
+     ## Air Chief ##
+
+    SpriteType = {
+        name = "GFX_idea_SOV_Alexander_A_Novikov"
+        texturefile = "gfx/interface/ideas/ministers/SOV/idea_SOV_Alexander_A_Novikov.dds"
+
+    }
+    SpriteType = {
+        name = "GFX_idea_SOV_Alexander_E_Golovanov"
+        texturefile = "gfx/interface/ideas/ministers/SOV/idea_SOV_Alexander_E_Golovanov.dds"
+
+    }
+    SpriteType = {
+        name = "GFX_idea_SOV_YV_Vladimiroch"
+        texturefile = "gfx/interface/ideas/ministers/SOV/idea_SOV_YV_Vladimiroch.dds"
+
+    }
+    SpriteType = {
+        name = "GFX_idea_SOV_Pavel_F_Zhigarev"
+        texturefile = "gfx/interface/ideas/ministers/SOV/idea_SOV_Pavel_F_Zhigarev.dds"
+
+    }
+    SpriteType = {
+        name = "GFX_idea_SOV_Sergei_A_Khudyakov"
+        texturefile = "gfx/interface/ideas/ministers/SOV/idea_SOV_Sergei_A_Khudyakov.dds"
+
+    }
+    SpriteType = {
+        name = "GFX_idea_SOV_Zinovy_M_Pomerantsev"
+        texturefile = "gfx/interface/ideas/ministers/SOV/idea_SOV_Zinovy_M_Pomerantsev.dds"
+
+    }
+    SpriteType = {
+        name = "GFX_idea_SOV_Nikolai_A_Sokolov_Sokolonok"
+        texturefile = "gfx/interface/ideas/ministers/SOV/idea_SOV_Nikolai_A_Sokolov_Sokolonok.dds"
+
+    }
+    SpriteType = {
+        name = "GFX_idea_SOV_Alexei_I_Shakhurin"
+        texturefile = "gfx/interface/ideas/ministers/SOV/idea_SOV_Alexei_I_Shakhurin.dds"
+
+    }
+    SpriteType = {
+        name = "GFX_idea_SOV_Stepan_Y_Krasovsky"
+        texturefile = "gfx/interface/ideas/ministers/SOV/idea_SOV_Stepan_Y_Krasovsky.dds"
+
+    }
+
+    ## Naval Chief ##
+
+    SpriteType = {
+        name = "GFX_idea_SOV_Arseny_G_Golovko"
+        texturefile = "gfx/interface/ideas/ministers/SOV/idea_SOV_Arseny_G_Golovko.dds"
+
+    }
+    SpriteType = {
+        name = "GFX_idea_SOV_Filipp_S_Oktyabrsky"
+        texturefile = "gfx/interface/ideas/ministers/SOV/idea_SOV_Filipp_S_Oktyabrsky.dds"
+
+    }
+    SpriteType = {
+        name = "GFX_idea_SOV_Gordey_I_Levchenko"
+        texturefile = "gfx/interface/ideas/ministers/SOV/idea_SOV_Gordey_I_Levchenko.dds"
+
+    }
+    SpriteType = {
+        name = "GFX_idea_SOV_Nikolai_G_Kuznetsov"
+        texturefile = "gfx/interface/ideas/ministers/SOV/idea_SOV_Nikolai_G_Kuznetsov.dds"
+
+    }
+    SpriteType = {
+        name = "GFX_idea_SOV_Sergei_G_Gorshkov"
+        texturefile = "gfx/interface/ideas/ministers/SOV/idea_SOV_Sergei_G_Gorshkov.dds"
+
+    }
+    SpriteType = {
+        name = "GFX_idea_SOV_Vladimir_A_Kasatonov"
+        texturefile = "gfx/interface/ideas/ministers/SOV/idea_SOV_Vladimir_A_Kasatonov.dds"
+
+    }
+    SpriteType = {
+        name = "GFX_idea_SOV_Vladimir_F_Tributs"
+        texturefile = "gfx/interface/ideas/ministers/SOV/idea_SOV_Vladimir_F_Tributs.dds"
+
+    }
+
+    ## FM ##
+
+    SpriteType = {
+        name = "GFX_idea_SOV_Vyacheslav_M_Molotov"
+        texturefile = "gfx/interface/ideas/ministers/SOV/idea_SOV_Vyacheslav_M_Molotov.dds"
+
+    }
+    SpriteType = {
+        name = "GFX_idea_SOV_Maxim_M_Litvinov"
+        texturefile = "gfx/interface/ideas/ministers/SOV/idea_SOV_Maxim_M_Litvinov.dds"
+
+    }
+    SpriteType = {
+        name = "GFX_idea_SOV_Andrey_J_Vyshinsky"
+        texturefile = "gfx/interface/ideas/ministers/SOV/idea_SOV_Andrey_J_Vyshinsky.dds"
+
+    }
+    SpriteType = {
+        name = "GFX_idea_SOV_Anastas_I_Mikoyan"
+        texturefile = "gfx/interface/ideas/ministers/SOV/idea_SOV_Anastas_I_Mikoyan.dds"
+
+    }
+    SpriteType = {
+        name = "GFX_idea_SOV_Ivan_M_Maisky"
+        texturefile = "gfx/interface/ideas/ministers/SOV/idea_SOV_Ivan_M_Maisky.dds"
+
+    }
+ 
+    
+    ## AM ##
+
+    SpriteType = {
+        name = "GFX_idea_SOV_Lazar_M_Kaganovich"
+        texturefile = "gfx/interface/ideas/ministers/SOV/idea_SOV_Lazar_M_Kaganovich.dds"
+
+    }
+    SpriteType = {
+        name = "GFX_idea_SOV_Boris_L_Vannikov"
+        texturefile = "gfx/interface/ideas/ministers/SOV/idea_SOV_Boris_L_Vannikov.dds"
+
+    }
+    SpriteType = {
+        name = "GFX_idea_SOV_Mikhail_V_Khrunichev"
+        texturefile = "gfx/interface/ideas/ministers/SOV/idea_SOV_Mikhail_V_Khrunichev.dds"
+
+    }
+    SpriteType = {
+        name = "GFX_idea_SOV_Nikolai_L_Dukhov"
+        texturefile = "gfx/interface/ideas/ministers/SOV/idea_SOV_Nikolai_L_Dukhov.dds"
+
+    }
+    SpriteType = {
+        name = "GFX_idea_SOV_Arseny_G_Zverev"
+        texturefile = "gfx/interface/ideas/ministers/SOV/idea_SOV_Arseny_G_Zverev.dds"
+
+    }
+    SpriteType = {
+        name = "GFX_idea_SOV_Iosif_Y_Kotin"
+        texturefile = "gfx/interface/ideas/ministers/SOV/idea_SOV_Iosif_Y_Kotin.dds"
+
+    }
+    SpriteType = {
+        name = "GFX_idea_SOV_Alexander_S_Yakovlev"
+        texturefile = "gfx/interface/ideas/ministers/SOV/idea_SOV_Alexander_S_Yakovlev.dds"
+
+    }
+  
+    ## MoS ##
+    
+   SpriteType = {
+        name = "GFX_idea_SOV_Lavrentiy_P_Beria"
+        texturefile = "gfx/interface/ideas/ministers/SOV/idea_SOV_Lavrentiy_P_Beria.dds"
+
+    }
+    SpriteType = {
+        name = "GFX_idea_SOV_Filipp_I_Golikov"
+        texturefile = "gfx/interface/ideas/ministers/SOV/idea_SOV_Filipp_I_Golikov.dds"
+
+    }
+    SpriteType = {
+        name = "GFX_idea_SOV_Sergei_G_Gendin"
+        texturefile = "gfx/interface/ideas/ministers/SOV/idea_SOV_Sergei_G_Gendin.dds"
+
+    }
+    SpriteType = {
+        name = "GFX_idea_SOV_Sergei_N_Kruglov"
+        texturefile = "gfx/interface/ideas/ministers/SOV/idea_SOV_Sergei_N_Kruglov.dds"
+
+    }
+    SpriteType = {
+        name = "GFX_idea_SOV_Alexei_P_Panfilov"
+        texturefile = "gfx/interface/ideas/ministers/SOV/idea_SOV_Alexei_P_Panfilov.dds"
+
+    }
+    SpriteType = {
+        name = "GFX_idea_SOV_Vsevolod_N_Merkulov"
+        texturefile = "gfx/interface/ideas/ministers/SOV/idea_SOV_Vsevolod_N_Merkulov.dds"
+
+    }
+    SpriteType = {
+        name = "GFX_idea_SOV_Bogdan_Z_Kobulov"
+        texturefile = "gfx/interface/ideas/ministers/SOV/idea_SOV_Bogdan_Z_Kobulov.dds"
+
+    }
+    SpriteType = {
+        name = "GFX_idea_SOV_Ivan_A_Serov"
+        texturefile = "gfx/interface/ideas/ministers/SOV/idea_SOV_Ivan_A_Serov.dds"
+
+    }
+    
+    ## MoI ##
+
+    SpriteType = {
+        name = "GFX_idea_SOV_Nikolai_A_Voznesensky"
+        texturefile = "gfx/interface/ideas/ministers/SOV/idea_SOV_Nikolai_A_Voznesensky.dds"
+
+    }
+    SpriteType = {
+        name = "GFX_idea_SOV_Alexei_N_Kosygin"
+        texturefile = "gfx/interface/ideas/ministers/SOV/idea_SOV_Alexei_N_Kosygin.dds"
+
+    }
+    SpriteType = {
+        name = "GFX_idea_SOV_Mikhail_I_Rodionov"
+        texturefile = "gfx/interface/ideas/ministers/SOV/idea_SOV_Mikhail_I_Rodionov.dds"
+
+    }
+    SpriteType = {
+        name = "GFX_idea_SOV_Nikolai_K_Baibakov"
+        texturefile = "gfx/interface/ideas/ministers/SOV/idea_SOV_Nikolai_K_Baibakov.dds"
+
+    }
+    SpriteType = {
+        name = "GFX_idea_SOV_Georgy_M_Malenkov"
+        texturefile = "gfx/interface/ideas/ministers/SOV/idea_SOV_Georgy_M_Malenkov.dds"
+
+    }
+    SpriteType = {
+        name = "GFX_idea_SOV_Maksim_Z_Saburov"
+        texturefile = "gfx/interface/ideas/ministers/SOV/idea_SOV_Maksim_Z_Saburov.dds"
+
+    }
+    
+   
+    ## MoC ##
+
+    SpriteType = {
+        name = "GFX_idea_SOV_Ilya_G_Ehrenburg"
+        texturefile = "gfx/interface/ideas/ministers/SOV/idea_SOV_Ilya_G_Ehrenburg.dds"
+
+    }
+    SpriteType = {
+        name = "GFX_idea_SOV_Pyotr_N_Pospelov"
+        texturefile = "gfx/interface/ideas/ministers/SOV/idea_SOV_Pyotr_N_Pospelov.dds"
+
+    }
+    SpriteType = {
+        name = "GFX_idea_SOV_Nikita_S_Khrushchev"
+        texturefile = "gfx/interface/ideas/ministers/SOV/idea_SOV_Nikita_S_Khrushchev.dds"
+
+    }
+    SpriteType = {
+        name = "GFX_idea_SOV_Konstantin_U_Chernenko"
+        texturefile = "gfx/interface/ideas/ministers/SOV/idea_SOV_Konstantin_U_Chernenko.dds"
+
+    }
+    SpriteType = {
+        name = "GFX_idea_SOV_Georgy_F_Aleksandrov"
+        texturefile = "gfx/interface/ideas/ministers/SOV/idea_SOV_Georgy_F_Aleksandrov.dds"
+
+    }
+    SpriteType = {
+        name = "GFX_idea_SOV_Aleksandr_S_Shcherbakov"
+        texturefile = "gfx/interface/ideas/ministers/SOV/idea_SOV_Aleksandr_S_Shcherbakov.dds"
+
+    }
+   
+    
+    ## Theorist ##
+
+    SpriteType = {
+        name = "GFX_idea_SOV_Igor_V_Kurchatov"
+        texturefile = "gfx/interface/ideas/ministers/SOV/idea_SOV_Igor_V_Kurchatov.dds"
+
+    }
+    SpriteType = {
+        name = "GFX_idea_SOV_Sergei_V_Ilyushin"
+        texturefile = "gfx/interface/ideas/ministers/SOV/idea_SOV_Sergei_V_Ilyushin.dds"
+
+    }
+    SpriteType = {
+        name = "GFX_idea_SOV_Nikolai_N_Polikarpov"
+        texturefile = "gfx/interface/ideas/ministers/SOV/idea_SOV_Nikolai_N_Polikarpov.dds"
+
+    }
+    SpriteType = {
+        name = "GFX_idea_SOV_Boris_Y_Chertok"
+        texturefile = "gfx/interface/ideas/ministers/SOV/idea_SOV_Boris_Y_Chertok.dds"
+
+    }
+    SpriteType = {
+        name = "GFX_idea_SOV_Igor_I_Ilichev"
+        texturefile = "gfx/interface/ideas/ministers/SOV/idea_SOV_Igor_I_Ilichev.dds"
+
+    }
+    SpriteType = {
+        name = "GFX_idea_SOV_Kirill_I_Shchelkin"
+        texturefile = "gfx/interface/ideas/ministers/SOV/idea_SOV_Kirill_I_Shchelkin.dds"
+
+    }
+    SpriteType = {
+        name = "GFX_idea_SOV_Yulii_B_Khariton"
+        texturefile = "gfx/interface/ideas/ministers/SOV/idea_SOV_Yulii_B_Khariton.dds"
+
+    }
+    SpriteType = {
+        name = "GFX_idea_SOV_Abram_F_Ioffe"
+        texturefile = "gfx/interface/ideas/ministers/SOV/idea_SOV_Abram_F_Ioffe.dds"
+
+    }
+    SpriteType = {
+        name = "GFX_idea_SOV_Pyotr_L_Kapitsa"
+        texturefile = "gfx/interface/ideas/ministers/SOV/idea_SOV_Pyotr_L_Kapitsa.dds"
+
+    }
+    SpriteType = {
+        name = "GFX_idea_SOV_Andrei_N_Tupolev"
+        texturefile = "gfx/interface/ideas/ministers/SOV/idea_SOV_Andrei_N_Tupolev.dds"
+
+    }
+    SpriteType = {
+        name = "GFX_idea_SOV_Vladimir_M_Petlyakov"
+        texturefile = "gfx/interface/ideas/ministers/SOV/idea_SOV_Vladimir_M_Petlyakov.dds"
+
+    }
+    SpriteType = {
+        name = "GFX_idea_SOV_Dimitri_F_Ustinov"
+        texturefile = "gfx/interface/ideas/ministers/SOV/idea_SOV_Dimitri_F_Ustinov.dds"
+
+    }
+
+
+    ####################
+    # SOVIET COMPANIES #
+    ####################
+
+    ## Armaments ##
+    spriteType = {
+        name = "GFX_idea_"
+        texturefile = "gfx/interface/ideas/companies/SOV/idea_.dds"
+    }
+    
+    ## Industry ##
+   
+    
+    ## Air ##
+    
+    
+    ## Naval ##
+   
+    
+    ## Armor ##
+}

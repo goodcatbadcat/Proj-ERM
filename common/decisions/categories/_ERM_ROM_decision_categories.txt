@@ -1,0 +1,25 @@
+##########################
+#### GERMAN DECISIONS ####
+##########################
+
+#########################
+# Operation Panzerfaust #
+#########################
+
+ROM_ask_SOV_arms = {
+	icon = decision_gre_faction_management_category
+	picture = GFX_decision_cat_picture_GER_operation_panzerfaust
+
+	allowed = {
+		original_tag = ROM
+	}
+	
+	visible = {
+		has_global_flag = SOV_accepts_ROM
+		ROM = {
+			has_war_with = GER
+			is_in_faction_with = SOV
+		}
+	}
+}
+

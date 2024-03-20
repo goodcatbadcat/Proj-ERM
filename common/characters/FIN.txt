@@ -1,0 +1,2320 @@
+characters = {
+
+	###################
+	# COUNTRY LEADERS #
+	###################
+	
+	FIN_Risto_Ryti = {
+		name = FIN_Risto_Ryti
+		
+		portraits = {
+			civilian = { large = "gfx/leaders/FIN/Portrait_Finland_Risto_Ryti.dds" }
+			army = { small = "GFX_idea_FIN_Risto_Ryti" }
+		}
+		
+		country_leader = {
+			ideology = moderatism
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+
+	FIN_Aimo_Aaltonen = {
+		name = FIN_Aimo_Aaltonen
+		
+		portraits = {
+			civilian = { large = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds" }
+		}
+		
+		country_leader = {
+			ideology = stalinism
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+
+	FIN_Vilho_Annala = {
+		name = FIN_Vilho_Annala
+		
+		portraits = {
+			civilian = { large = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds" }
+		}
+		
+		country_leader = {
+			ideology = fascism_ideology
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+
+	FIN_Kyosti_Kallio = {
+		name = FIN_Kyosti_Kallio
+		
+		portraits = {
+			civilian = { 
+				large = "gfx/leaders/FIN/Portrait_Finland_Kyosti_Kallio.dds" 
+				small = "GFX_idea_FIN_Kyosti_Kallio"
+			}
+		}
+		
+		country_leader = {
+			ideology = moderatism
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		
+		advisor = {
+			slot = minister_of_industry
+			ledger = civilian
+			idea_token = FIN_Kyosti_Kallio
+			allowed = { original_tag = FIN }
+			available = {
+				has_government = neutrality
+				has_war = no
+			}
+			visible = {
+				has_government = neutrality
+			}
+			traits = { MOI_balanced_budget_proponent }
+			ai_will_do = { factor = 1 }
+			cost = 100
+		}
+	}
+	
+	##################
+	# FIELD MARSHALS #
+	##################
+	
+	FIN_CGE_Mannerheim = {
+		name = FIN_CGE_Mannerheim
+		
+		portraits = {
+			army = {
+				large = "gfx/leaders/FIN/Portrait_Finland_CGE_Mannerheim.dds"
+				small = "GFX_idea_FIN_CGE_Mannerheim"
+			}
+		}
+		
+		country_leader = {
+			has_government = social_conservative_subtype
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		
+		advisor = {
+			slot = army_chief
+			ledger = army
+			idea_token = FIN_CGE_Mannerheim
+			allowed = { original_tag = FIN }
+			traits = { AC_school_of_defense }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			cost = 200
+			ai_will_do = { factor = 1 }
+		}	
+		
+		advisor = {
+			slot = high_command
+			ledger = army
+			idea_token = FIN_CGE_Mannerheim2
+			allowed = { original_tag = FIN }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { AC_decisive_battle_doctrine }
+			cost = 200
+			ai_will_do = { factor = 1 }
+		}	
+		
+		field_marshal = {
+			traits = { war_hero trait_cautious career_officer infantry_officer infantry_leader infantry_expert inflexible_strategist trickster winter_specialist defensive_doctrine thorough_planner unyielding_defender inspirational_leader organisational_leader organizer trickster adaptable commando scavenger ambusher skirmisher expert_improviser guerilla_fighter }
+			skill = 6
+			attack_skill = 4
+			defense_skill = 5
+			planning_skill = 5
+			logistics_skill = 5
+			legacy_id = 500
+		}
+	}
+
+	################
+	# HIGH COMMAND #
+	################
+	
+	FIN_Kaarle_Vaino_Voionmaa = {
+		name = FIN_Kaarle_Vaino_Voionmaa
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_FIN_Kaarle_Vaino_Voionmaa"
+			}
+		}
+		
+		advisor = {
+			slot = high_command
+			ledger = army
+			idea_token = FIN_Kaarle_Vaino_Voionmaa
+			allowed = { original_tag = FIN }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { AC_guns_and_butter_doctrine }
+			cost = 200
+			ai_will_do = { factor = 1 }
+		}
+	}
+	
+	####################
+	# CORPS COMMANDERS #
+	####################
+	
+	FIN_Aksel_Airo = {
+		name = FIN_Aksel_Airo
+		
+		portraits = {
+			army = {
+				large = "gfx/leaders/FIN/Portrait_Finland_Aksel_Airo.dds"
+				small = "GFX_idea_FIN_Aksel_Airo"
+			}
+		}
+		
+		corps_commander = {
+			traits = { career_officer infantry_officer infantry_leader winter_specialist organizer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 5
+			logistics_skill = 5
+			legacy_id = 501
+		}
+		
+		advisor = {
+			slot = high_command
+			ledger = army
+			idea_token = FIN_Aksel_Airo
+			allowed = { original_tag = FIN }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { AC_army_chief_organizational_3 }
+			cost = 200
+			ai_will_do = { factor = 1 }
+		}
+	}
+	
+	FIN_Akseli_Anttila = {
+		name = FIN_Akseli_Anttila
+		
+		portraits = {
+			army = {
+				large = "gfx/leaders/FIN/Portrait_Finland_Akseli_Anttila.dds"
+				small = "GFX_idea_FIN_Akseli_Anttila"
+			}
+		}
+		
+		corps_commander = {
+			traits = { career_officer infantry_officer infantry_leader winter_specialist organizer trickster urban_assault_specialist }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 4
+			legacy_id = 502
+		}
+		
+		advisor = {
+			slot = army_chief
+			ledger = army
+			idea_token = FIN_Aksel_Airo
+			allowed = { original_tag = FIN }
+			available = {
+				has_socialist_government = yes
+			}
+			visible = {
+				has_socialist_government = yes
+			}
+			traits = { AC_school_of_fire }
+			cost = 200
+			ai_will_do = { factor = 1 }
+		}
+	}
+	
+	FIN_Erik_Heinrichs = {
+		name = FIN_Erik_Heinrichs
+		
+		portraits = {
+			army = {
+				large = "gfx/leaders/FIN/Portrait_Finland_Erik_Heinrichs.dds"
+				small = "GFX_idea_FIN_Erik_Heinrichs"
+			}
+		}
+		
+		corps_commander = {
+			traits = { career_officer infantry_officer infantry_leader infantry_expert winter_specialist ranger urban_assault_specialist }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 2
+			legacy_id = 503
+		}
+		
+		advisor = {
+			slot = army_chief
+			ledger = army
+			idea_token = FIN_Aksel_Airo
+			allowed = { original_tag = FIN }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { AC_trenches_expert }
+			cost = 200
+			ai_will_do = { factor = 1 }
+		}
+	}
+	
+	FIN_Harald_Ohquist = {
+		name = FIN_Harald_Ohquist
+		
+		portraits = {
+			army = {
+				large = "gfx/leaders/FIN/Portrait_Finland_Harald_Ohquist.dds"
+				small = "GFX_idea_FIN_Harald_Ohquist"
+			}
+		}
+		
+		corps_commander = {
+			traits = { career_officer infantry_officer infantry_leader winter_specialist trickster skirmisher }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 3
+			legacy_id = 504
+		}
+		
+		advisor = {
+			slot = high_command
+			ledger = army
+			idea_token = FIN_Harald_Ohquist
+			allowed = { original_tag = FIN }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { AC_army_chief_drill_3 }
+			cost = 200
+			ai_will_do = { factor = 1 }
+		}
+	}
+	
+	FIN_Hugo_Osterman = {
+		name = FIN_Hugo_Osterman
+		
+		portraits = {
+			army = {
+				large = "gfx/leaders/FIN/Portrait_Finland_Hugo_Osterman.dds"
+				small = "GFX_idea_FIN_Hugo_Osterman"
+			}
+		}
+		
+		corps_commander = {
+			traits = { career_officer infantry_officer infantry_leader winter_specialist }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 3
+			legacy_id = 505
+		}
+		
+		advisor = {
+			slot = army_chief
+			ledger = army
+			idea_token = FIN_Hugo_Osterman
+			allowed = { original_tag = FIN }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { AC_school_of_mass_combat }
+			cost = 200
+			ai_will_do = { factor = 1 }
+		}
+	}
+	
+	FIN_Johan_W_Hagglund = {
+		name = FIN_Johan_W_Hagglund
+		
+		portraits = {
+			army = {
+				large = "gfx/leaders/FIN/Portrait_Finland_Johan_W_Hagglund.dds"
+				small = "GFX_idea_FIN_Johan_W_Hagglund"
+			}
+		}
+		
+		corps_commander = {
+			traits = { trait_cautious career_officer infantry_officer infantry_leader winter_specialist }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 3
+			legacy_id = 506
+		}
+		
+		advisor = {
+			slot = high_command
+			ledger = army
+			idea_token = FIN_Johan_W_Hagglund
+			allowed = { original_tag = FIN }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { AC_army_chief_reform_2 }
+			cost = 200
+			ai_will_do = { factor = 1 }
+		}
+	}
+	
+	FIN_K_Lennart_Oesch = {
+		name = FIN_K_Lennart_Oesch
+		
+		portraits = {
+			army = {
+				large = "gfx/leaders/FIN/Portrait_Finland_Karl_Lennart_Oesch.dds"
+				small = "GFX_idea_FIN_K_Lennart_Oesch"
+			}
+		}
+		
+		corps_commander = {
+			traits = { career_officer infantry_officer infantry_leader infantry_expert winter_specialist inflexible_strategist organizer skilled_staffer trickster commando ambusher skirmisher camouflage_expert guerilla_fighter }
+			skill = 3
+			attack_skill = 5
+			defense_skill = 5
+			planning_skill = 4
+			logistics_skill = 4
+			legacy_id = 507
+		}
+		
+		advisor = {
+			slot = high_command
+			ledger = army
+			idea_token = FIN_K_Lennart_Oesch
+			allowed = { original_tag = FIN }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { AC_elastic_defence_doctrine }
+			cost = 200
+			ai_will_do = { factor = 1 }
+		}
+	}
+	
+	FIN_Wiljo_Tuompo = {
+		name = FIN_Wiljo_Tuompo
+		
+		portraits = {
+			army = {
+				large = "gfx/leaders/FIN/Portrait_Finland_Wiljo_Tuompo.dds"
+				small = "GFX_idea_FIN_Wiljo_Tuompo"
+			}
+		}
+		
+		corps_commander = {
+			traits = { career_officer infantry_officer infantry_leader infantry_expert trait_mountaineer adaptable ranger ambusher}
+			skill = 4
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 2
+			legacy_id = 508
+		}
+		
+		advisor = {
+			slot = high_command
+			ledger = army
+			idea_token = FIN_Wiljo_Tuompo
+			allowed = { original_tag = FIN }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { AC_army_infantry_2 }
+			cost = 200
+			ai_will_do = { factor = 1 }
+		}
+	}
+
+	FIN_Vilho_Petter_Nenonen = {
+		name = FIN_Vilho_Petter_Nenonen
+		
+		portraits = {
+			army = {
+					large = "gfx/leaders/FIN/Vilho_Petter_Nenonen.dds"
+					small = "GFX_idea_FIN_Vilho_P_Nenonen"
+				}
+		}
+		
+		corps_commander = {
+			traits = { career_officer infantry_officer infantry_leader commando winter_specialist bearer_of_artillery inflexible_strategist trickster }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 5
+			planning_skill = 4
+			logistics_skill = 2
+			legacy_id = 509
+		}
+		
+		advisor = {
+			slot = high_command
+			ledger = army
+			idea_token = FIN_Wiljo_Tuompo
+			allowed = { original_tag = FIN }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { AC_army_artillery_3 }
+			cost = 200
+			ai_will_do = { factor = 1 }
+		}
+	}
+	
+	##################
+	# AIR COMMANDERS #
+	##################
+	
+	FIN_Jarl_F_Lundqvist = {
+		name = FIN_Jarl_F_Lundqvist
+
+		portraits = {
+			army = {
+				small = "GFX_idea_FIN_Jarl_F_Lundqvist"
+			}
+		}
+
+		advisor = {
+			slot = air_chief
+			ledger = air
+			idea_token = FIN_Jarl_F_Lundqvist
+			allowed = { original_tag = FIN }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { AFC_defense_aviation_doctrine }
+			ai_will_do = { factor = 1 }
+			cost = 100
+		}
+	}
+	
+	FIN_Ricahrd_Lorentz = {
+		name = FIN_Ricahrd_Lorentz
+
+		portraits = {
+			army = {
+				small = "GFX_idea_FIN_Ricahrd_Lorentz"
+			}
+		}
+
+		advisor = {
+			slot = air_chief
+			ledger = air
+			idea_token = FIN_Ricahrd_Lorentz
+			allowed = { original_tag = FIN }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { AFC_air_innovator }
+			ai_will_do = { factor = 1 }
+			cost = 100
+		}
+	}
+	
+	FIN_Toivo_Somerto = {
+		name = FIN_Toivo_Somerto
+
+		portraits = {
+			army = {
+				small = "GFX_idea_FIN_Toivo_Somerto"
+			}
+		}
+
+		advisor = {
+			slot = air_chief
+			ledger = air
+			idea_token = FIN_Toivo_Somerto
+			allowed = { original_tag = FIN }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { AFC_air_superiority_doctrine }
+			ai_will_do = { factor = 1 }
+			cost = 100
+		}
+	}
+	
+	FIN_Frans_E_Helminen = {
+		name = FIN_Frans_E_Helminen
+
+		portraits = {
+			army = {
+				small = "GFX_idea_FIN_Frans_E_Helminen"
+			}
+		}
+
+		advisor = {
+			slot = air_chief
+			ledger = air
+			idea_token = FIN_Frans_E_Helminen
+			allowed = { original_tag = FIN }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { AFC_air_bomber_interception_3 }
+			ai_will_do = { factor = 1 }
+			cost = 100
+		}
+	}
+	
+	FIN_Reino_Artola = {
+		name = FIN_Reino_Artola
+
+		portraits = {
+			army = {
+				small = "GFX_idea_FIN_Reino_Artola"
+			}
+		}
+
+		advisor = {
+			slot = air_chief
+			ledger = air
+			idea_token = FIN_Reino_Artola
+			allowed = { original_tag = FIN }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { AFC_carpet_bombing_doctrine }
+			ai_will_do = { factor = 1 }
+			cost = 100
+		}
+	}
+	
+	###################
+	# NAVY COMMANDERS #
+	###################
+	
+	FIN_Claes_Horola = {
+		name = FIN_Claes_Horola
+
+		portraits = {
+			army = {
+				small = "GFX_idea_FIN_Claes_Horola"
+			}
+		}
+
+		advisor = {
+			slot = navy_chief
+			ledger = navy
+			idea_token = FIN_Claes_Horola
+			allowed = { original_tag = FIN }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { NC_open_seas_doctrine }
+			ai_will_do = { factor = 1 }
+			cost = 100
+		}
+	}
+	
+	FIN_Eero_Raholda = {
+		name = FIN_Eero_Raholda
+
+		portraits = {
+			army = {
+				large = "gfx/leaders/FIN/Portrait_Finland_Eero_Raholda.dds"
+				small = "GFX_idea_FIN_Eero_Raholda"
+			}
+		}
+		
+		navy_leader = {
+			traits = { navy_career_officer blockade_runner spotter destroyer_leader concealment_expert mine_layer }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 3
+			maneuvering_skill = 4
+			coordination_skill = 5
+			legacy_id = 510
+		}
+
+		advisor = {
+			slot = navy_chief
+			ledger = navy
+			idea_token = FIN_Eero_Raholda
+			allowed = { original_tag = FIN }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { NC_indirect_approach_doctrine }
+			ai_will_do = { factor = 1 }
+			cost = 100
+		}
+	}
+	
+	FIN_Vaino_Valve = {
+		name = FIN_Vaino_Valve
+
+		portraits = {
+			army = {
+				large = "gfx/leaders/FIN/Portrait_Finland_Vaino_Valve.dds"
+				small = "GFX_idea_FIN_Vaino_Valve"
+			}
+		}
+		
+		navy_leader = {
+			traits = { navy_career_officer fleet_protector blockade_runner spotter ironside cruiser_captain mine_sweeper safety_first }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 5
+			maneuvering_skill = 4
+			coordination_skill = 4
+			legacy_id = 511
+		}
+
+		advisor = {
+			slot = navy_chief
+			ledger = navy
+			idea_token = FIN_Vaino_Valve
+			allowed = { original_tag = FIN }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { NC_indirect_approach_doctrine }
+			ai_will_do = { factor = 1 }
+			cost = 100
+		}
+		
+		advisor = {
+			slot = armaments_minister
+			ledger = civilian
+			idea_token = FIN_Vaino_Valve2
+			allowed = { original_tag = FIN }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { AM_battlefleet_proponent }
+			ai_will_do = { factor = 1 }
+			cost = 100
+		}
+		
+		advisor = {
+			slot = theorist
+			ledger = civilian
+			idea_token = FIN_Vaino_Valve3
+			allowed = { original_tag = FIN }
+			available = {
+				has_government = neutrality
+				has_government = neutrality
+			}
+			visible = {
+				has_government = neutrality
+				has_government = neutrality
+			}
+			traits = { THEO_grand_fleet_proponent }
+			ai_will_do = { factor = 1 }
+			cost = 100
+		}
+	}
+
+	######################
+	# HEAD OF GOVERNMENT #
+	######################
+	
+	FIN_Edwin_J_H_Linkomies = {
+		name = FIN_Edwin_J_H_Linkomies
+
+		portraits = {
+			army = {
+				small = "GFX_idea_FIN_Edwin_J_H_Linkomies"
+			}
+		}
+
+		advisor = {
+			slot = head_of_government
+			ledger = civilian
+			idea_token = FIN_Edwin_J_H_Linkomies
+			allowed = { original_tag = FIN }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { HOG_naive_optimist }
+			ai_will_do = { factor = 1 }
+			cost = 100
+		}
+		
+		advisor = {
+			slot = minister_of_industry
+			ledger = civilian
+			idea_token = FIN_Edwin_J_H_Linkomies2
+			allowed = { original_tag = FIN }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { MOI_administrative_genius }
+			ai_will_do = { factor = 1 }
+			cost = 100
+		}
+	}
+	
+	FIN_Antti_Hackzell = { # Had stroke on 14th sept
+		name = FIN_Antti_Hackzell
+
+		portraits = {
+			army = {
+				small = "GFX_idea_FIN_Antti_Hackzell"
+			}
+		}
+
+		advisor = {
+			slot = head_of_government
+			ledger = civilian
+			idea_token = FIN_Antti_Hackzell
+			allowed = { original_tag = FIN }
+			available = {
+				has_government = neutrality
+			}
+			visible = {
+				has_government = neutrality
+			}
+			traits = { HOG_silent_workhorse }
+			ai_will_do = { factor = 1 }
+			cost = 100
+		}
+	}
+	
+	####################
+	# FOREIGN MINISTER #
+	####################
+	
+	FIN_Carl_Ramsay = {
+		name = FIN_Carl_Ramsay
+
+		portraits = {
+			army = {
+				small = "GFX_idea_FIN_Carl_Ramsay"
+			}
+		}
+
+		advisor = {
+			slot = foreign_minister
+			ledger = civilian
+			idea_token = FIN_Carl_Ramsay
+			allowed = { original_tag = FIN }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { FM_iron_fisted_brute }
+			ai_will_do = { factor = 1 }
+			cost = 100
+		}
+	}
+	
+	FIN_Rolf_J_Witting = {
+		name = FIN_Rolf_J_Witting
+
+		portraits = {
+			army = {
+				small = "GFX_idea_FIN_Rolf_J_Witting"
+			}
+		}
+
+		advisor = {
+			slot = foreign_minister
+			ledger = civilian
+			idea_token = FIN_Rolf_J_Witting
+			allowed = { original_tag = FIN }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { FM_cloak_n_dagger_schemer }
+			ai_will_do = { factor = 1 }
+			cost = 100
+		}
+	}
+	
+	FIN_Arvi_Oksala = {
+		name = FIN_Arvi_Oksala
+
+		portraits = {
+			army = {
+				small = "GFX_idea_FIN_Arvi_Oksala"
+			}
+		}
+
+		advisor = {
+			slot = foreign_minister
+			ledger = civilian
+			idea_token = FIN_Arvi_Oksala
+			allowed = { original_tag = FIN }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { FM_general_staffer }
+			ai_will_do = { factor = 1 }
+			cost = 100
+		}
+	}
+	
+	FIN_Carl_Enckell = {
+		name = FIN_Carl_Enckell
+
+		portraits = {
+			army = {
+				small = "GFX_idea_FIN_Carl_Enckell"
+			}
+		}
+
+		advisor = {
+			slot = foreign_minister
+			ledger = civilian
+			idea_token = FIN_Carl_Enckell
+			allowed = { original_tag = FIN }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { FM_biased_intellectual }
+			ai_will_do = { factor = 1 }
+			cost = 100
+		}
+	}
+	
+	FIN_Vaino_Tanner = {
+		name = FIN_Vaino_Tanner
+
+		portraits = {
+			army = {
+				small = "GFX_idea_FIN_Vaino_Tanner"
+			}
+		}
+
+		advisor = {
+			slot = foreign_minister
+			ledger = civilian
+			idea_token = FIN_Vaino_Tanner
+			allowed = { original_tag = FIN }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { FM_great_compromiser }
+			ai_will_do = { factor = 1 }
+			cost = 100
+		}
+	}
+	
+	FIN_Eljas_Erkko = {
+		name = FIN_Eljas_Erkko
+
+		portraits = {
+			army = {
+				small = "GFX_idea_FIN_Eljas_Erkko"
+			}
+		}
+
+		advisor = {
+			slot = foreign_minister
+			ledger = civilian
+			idea_token = FIN_Eljas_Erkko
+			allowed = { original_tag = FIN }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { FM_cloak_n_dagger_schemer }
+			ai_will_do = { factor = 1 }
+			cost = 100
+		}
+		
+		advisor = {
+			slot = minister_of_culture
+			ledger = civilian
+			idea_token = FIN_Eljas_Erkko2
+			allowed = { original_tag = FIN }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { MOC_political_columnist }
+			ai_will_do = { factor = 1 }
+			cost = 100
+		}
+	}
+	
+	FIN_Rudolf_Holsti = {
+		name = FIN_Rudolf_Holsti
+
+		portraits = {
+			army = {
+				small = "GFX_idea_FIN_Rudolf_Holsti"
+			}
+		}
+
+		advisor = {
+			slot = foreign_minister
+			ledger = civilian
+			idea_token = FIN_Rudolf_Holsti
+			allowed = { original_tag = FIN }
+			available = {
+				has_government = neutrality
+			}
+			visible = {
+				has_government = neutrality
+			}
+			traits = { FM_gentleman_pacifist }
+			ai_will_do = { factor = 1 }
+			cost = 100
+		}
+	}
+	
+	######################
+	# ARMAMENTS MINISTER #
+	######################
+	
+	FIN_Urho_Castren = {
+		name = FIN_Urho_Castren
+
+		portraits = {
+			army = {
+				small = "GFX_idea_FIN_Urho_Castren"
+			}
+		}
+
+		advisor = {
+			slot = armaments_minister
+			ledger = civilian
+			idea_token = FIN_Urho_Castren
+			allowed = { original_tag = FIN }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { AM_infantry_proponent }
+			ai_will_do = { factor = 1 }
+			cost = 100
+		}
+	}
+	
+	FIN_Leonard_Grandell = {
+		name = FIN_Leonard_Grandell
+
+		portraits = {
+			army = {
+				small = "GFX_idea_FIN_Leonard_Grandell"
+			}
+		}
+
+		advisor = {
+			slot = armaments_minister
+			ledger = civilian
+			idea_token = FIN_Leonard_Grandell
+			allowed = { original_tag = FIN }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { AM_armaments_organizer }
+			ai_will_do = { factor = 1 }
+			cost = 100
+		}
+		
+		advisor = {
+			slot = army_chief
+			ledger = army
+			idea_token = FIN_Leonard_Grandell2
+			allowed = { original_tag = FIN }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { AC_school_of_fire }
+			ai_will_do = { factor = 1 }
+			cost = 100
+		}
+	}
+	
+	########################
+	# MINISTER OF SECURITY #
+	########################
+	
+	FIN_Oskari_Lehtonen = {
+		name = FIN_Oskari_Lehtonen
+
+		portraits = {
+			army = {
+				small = "GFX_idea_FIN_Oskari_Lehtonen"
+			}
+		}
+
+		advisor = {
+			slot = minister_of_security
+			ledger = civilian
+			idea_token = FIN_Oskari_Lehtonen
+			allowed = { original_tag = FIN }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { MOS_silent_lawyer }
+			ai_will_do = { factor = 1 }
+			cost = 100
+		}
+	}
+	
+	FIN_Urho_Kekkonen = {
+		name = FIN_Urho_Kekkonen
+
+		portraits = {
+			army = {
+				small = "GFX_idea_FIN_Urho_Kekkonen"
+			}
+		}
+
+		advisor = {
+			slot = minister_of_security
+			ledger = civilian
+			idea_token = FIN_Urho_Kekkonen
+			allowed = { original_tag = FIN }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { MOS_compassionate_gentleman }
+			ai_will_do = { factor = 1 }
+			cost = 100
+		}
+	}
+	
+	FIN_Ernst_von_Born = {
+		name = FIN_Ernst_von_Born
+
+		portraits = {
+			army = {
+				small = "GFX_idea_FIN_Ernst_von_Born"
+			}
+		}
+
+		advisor = {
+			slot = minister_of_security
+			ledger = civilian
+			idea_token = FIN_Ernst_von_Born
+			allowed = { original_tag = FIN }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { MOS_silent_lawyer }
+			ai_will_do = { factor = 1 }
+			cost = 100
+		}
+	}
+	
+	FIN_Leo_R_Ehrnrooth = {
+		name = FIN_Leo_R_Ehrnrooth
+
+		portraits = {
+			army = {
+				small = "GFX_idea_FIN_Leo_R_Ehrnrooth"
+			}
+		}
+
+		advisor = {
+			slot = minister_of_security
+			ledger = civilian
+			idea_token = FIN_Leo_R_Ehrnrooth
+			allowed = { original_tag = FIN }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { MOS_man_of_the_people }
+			ai_will_do = { factor = 1 }
+			cost = 100
+		}
+	}
+	
+	FIN_Toivo_Horelli = {
+		name = FIN_Toivo_Horelli
+
+		portraits = {
+			army = {
+				small = "GFX_idea_FIN_Toivo_Horelli"
+			}
+		}
+
+		advisor = {
+			slot = minister_of_security
+			ledger = civilian
+			idea_token = FIN_Toivo_Horelli
+			allowed = { original_tag = FIN }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { MOS_prince_of_terror }
+			ai_will_do = { factor = 1 }
+			cost = 100
+		}
+	}
+	
+	FIN_Arno_Anthoni = {
+		name = FIN_Arno_Anthoni
+
+		portraits = {
+			army = {
+				small = "GFX_idea_FIN_Arno_Anthoni"
+			}
+		}
+
+		advisor = {
+			slot = minister_of_security
+			ledger = civilian
+			idea_token = FIN_Arno_Anthoni
+			allowed = { original_tag = FIN }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { MOS_chief_of_state_police }
+			ai_will_do = { factor = 1 }
+			cost = 100
+		}
+	}
+	
+	FIN_Paavo_Kastari = {
+		name = FIN_Paavo_Kastari
+
+		portraits = {
+			army = {
+				small = "GFX_idea_FIN_Paavo_Kastari"
+			}
+		}
+
+		advisor = {
+			slot = minister_of_security
+			ledger = civilian
+			idea_token = FIN_Paavo_Kastari
+			allowed = { original_tag = FIN }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { MOS_chief_of_state_police }
+			ai_will_do = { factor = 1 }
+			cost = 100
+		}
+	}
+	
+	FIN_Esko_Riekki = {
+		name = FIN_Esko_Riekki
+
+		portraits = {
+			army = {
+				small = "GFX_idea_FIN_Esko_Riekki"
+			}
+		}
+
+		advisor = {
+			slot = minister_of_security
+			ledger = civilian
+			idea_token = FIN_Esko_Riekki
+			allowed = { original_tag = FIN }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { MOS_crime_fighter }
+			ai_will_do = { factor = 1 }
+			cost = 100
+		}
+	}
+	
+	FIN_Johan_W_Rangell = {
+		name = FIN_Johan_W_Rangell
+
+		portraits = {
+			army = {
+				small = "GFX_idea_FIN_Johan_W_Rangell"
+			}
+		}
+
+		advisor = {
+			slot = minister_of_security
+			ledger = civilian
+			idea_token = FIN_Johan_W_Rangell
+			allowed = { original_tag = FIN }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { MOS_man_of_the_people }
+			ai_will_do = { factor = 1 }
+			cost = 100
+		}
+	}
+	
+	FIN_Toivo_M_Kivimaki = {
+		name = FIN_Toivo_M_Kivimaki
+
+		portraits = {
+			army = {
+				small = "GFX_idea_FIN_Toivo_M_Kivimaki"
+			}
+		}
+
+		advisor = {
+			slot = minister_of_security
+			ledger = civilian
+			idea_token = FIN_Toivo_M_Kivimaki
+			allowed = { original_tag = FIN }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { MOS_logistics_specialist }
+			ai_will_do = { factor = 1 }
+			cost = 100
+		}
+	}
+	
+	FIN_Bruno_Suviranta = {
+		name = FIN_Bruno_Suviranta
+
+		portraits = {
+			army = {
+				small = "GFX_idea_FIN_Bruno_Suviranta"
+			}
+		}
+
+		advisor = {
+			slot = minister_of_security
+			ledger = civilian
+			idea_token = FIN_Bruno_Suviranta
+			allowed = { original_tag = FIN }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { MOS_dismal_enigma }
+			ai_will_do = { factor = 1 }
+			cost = 100
+		}
+	}
+	
+	FIN_Hjalmar_J_Procope = {
+		name = FIN_Hjalmar_J_Procope
+
+		portraits = {
+			army = {
+				small = "GFX_idea_FIN_Hjalmar_J_Procope"
+			}
+		}
+
+		advisor = {
+			slot = minister_of_security
+			ledger = civilian
+			idea_token = FIN_Hjalmar_J_Procope
+			allowed = { original_tag = FIN }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { MOS_political_specialist }
+			ai_will_do = { factor = 1 }
+			cost = 100
+		}
+	}
+	
+	FIN_Yrjo_Puhakka = {
+		name = FIN_Yrjo_Puhakka
+
+		portraits = {
+			army = {
+				small = "GFX_idea_FIN_Yrjo_Puhakka"
+			}
+		}
+
+		advisor = {
+			slot = minister_of_security
+			ledger = civilian
+			idea_token = FIN_Yrjo_Puhakka
+			allowed = { original_tag = FIN }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { MOS_dismal_enigma }
+			ai_will_do = { factor = 1 }
+			cost = 100
+		}
+	}
+	
+	FIN_Johan_Arajuuri = {
+		name = FIN_Johan_Arajuuri
+
+		portraits = {
+			army = {
+				small = "GFX_idea_FIN_Johan_Arajuuri"
+			}
+		}
+
+		advisor = {
+			slot = minister_of_security
+			ledger = civilian
+			idea_token = FIN_Johan_Arajuuri
+			allowed = { original_tag = FIN }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { MOS_dismal_enigma }
+			ai_will_do = { factor = 1 }
+			cost = 100
+		}
+	}
+	
+	########################
+	# MINISTER OF INDUSTRY #
+	########################
+	
+	FIN_Tyko_Reinikka = {
+		name = FIN_Tyko_Reinikka
+
+		portraits = {
+			army = {
+				small = "GFX_idea_FIN_Tyko_Reinikka"
+			}
+		}
+
+		advisor = {
+			slot = minister_of_industry
+			ledger = civilian
+			idea_token = FIN_Tyko_Reinikka
+			allowed = { original_tag = FIN }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { MOI_expert_banker }
+			ai_will_do = { factor = 1 }
+			cost = 100
+		}
+	}
+	
+	FIN_Juho_Niukkanen = {
+		name = FIN_Juho_Niukkanen
+
+		portraits = {
+			army = {
+				small = "GFX_idea_FIN_Juho_Niukkanen"
+			}
+		}
+
+		advisor = {
+			slot = minister_of_industry
+			ledger = civilian
+			idea_token = FIN_Juho_Niukkanen
+			allowed = { original_tag = FIN }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { MOI_administrative_genius }
+			ai_will_do = { factor = 1 }
+			cost = 100
+		}
+	}
+	
+	FIN_Aimo_Cajander = {
+		name = FIN_Aimo_Cajander
+
+		portraits = {
+			army = {
+				small = "GFX_idea_FIN_Aimo_Cajander"
+			}
+		}
+
+		advisor = {
+			slot = minister_of_industry
+			ledger = civilian
+			idea_token = FIN_Aimo_Cajander
+			allowed = { original_tag = FIN }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { MOI_resource_industrialist }
+			ai_will_do = { factor = 1 }
+			cost = 100
+		}
+	}
+	
+	FIN_Kyosti_Jarvinen = {
+		name = FIN_Kyosti_Jarvinen
+
+		portraits = {
+			army = {
+				small = "GFX_idea_FIN_Kyosti_Jarvinen"
+			}
+		}
+
+		advisor = {
+			slot = minister_of_industry
+			ledger = civilian
+			idea_token = FIN_Kyosti_Jarvinen
+			allowed = { original_tag = FIN }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { MOI_expert_banker }
+			ai_will_do = { factor = 1 }
+			cost = 100
+		}
+	}
+	
+	FIN_Juho_K_Paasikivi = {
+		name = FIN_Juho_K_Paasikivi
+
+		portraits = {
+			army = {
+				small = "GFX_idea_FIN_Juho_K_Paasikivi"
+			}
+		}
+
+		advisor = {
+			slot = minister_of_industry
+			ledger = civilian
+			idea_token = FIN_Juho_K_Paasikivi
+			allowed = { original_tag = FIN }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { MOI_resource_industrialist }
+			ai_will_do = { factor = 1 }
+			cost = 100
+		}
+	}
+	
+	FIN_Karl_Rudolf_Walden = {
+		name = FIN_Karl_Rudolf_Walden
+
+		portraits = {
+			army = {
+				small = "GFX_idea_FIN_Karl_Rudolf_Walden"
+			}
+		}
+
+		advisor = {
+			slot = minister_of_industry
+			ledger = civilian
+			idea_token = FIN_Karl_Rudolf_Walden
+			allowed = { original_tag = FIN }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { MOI_resource_industrialist }
+			ai_will_do = { factor = 1 }
+			cost = 100
+		}
+	}
+	
+	FIN_Berndt_Rainer_von_Fieandt = {
+		name = FIN_Berndt_Rainer_von_Fieandt
+
+		portraits = {
+			army = {
+				small = "GFX_idea_FIN_Berndt_Rainer_von_Fieandt"
+			}
+		}
+
+		advisor = {
+			slot = minister_of_industry
+			ledger = civilian
+			idea_token = FIN_Berndt_Rainer_von_Fieandt
+			allowed = { original_tag = FIN }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { MOI_laissez_faire_capitalist }
+			ai_will_do = { factor = 1 }
+			cost = 100
+		}
+	}
+	
+	#######################
+	# MINISTER OF CULTURE #
+	#######################
+	
+	#############
+	# THEORISTS #
+	#############
+	
+	FIN_Georg_A_de_Gripenberg = {
+		name = FIN_Georg_A_de_Gripenberg
+
+		portraits = {
+			army = {
+				small = "GFX_idea_FIN_Georg_A_de_Gripenberg"
+			}
+		}
+
+		advisor = {
+			slot = theorist
+			ledger = civilian
+			idea_token = FIN_Georg_A_de_Gripenberg
+			allowed = { original_tag = FIN }
+			available = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			visible = {
+				AND = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+			traits = { THEO_industrial_specialist }
+			ai_will_do = { factor = 1 }
+			cost = 100
+		}
+	}
+	
+	FIN_Vilho_Vaisala = {
+		name = FIN_Vilho_Vaisala
+
+		portraits = {
+			army = {
+				small = "GFX_idea_FIN_Vilho_Vaisala"
+			}
+		}
+
+		advisor = {
+			slot = theorist
+			ledger = civilian
+			idea_token = FIN_Vilho_Vaisala
+			allowed = { original_tag = FIN }
+			traits = { THEO_theoretical_scientist }
+			ai_will_do = { factor = 1 }
+			cost = 100
+		}
+	}
+	
+	FIN_Jorma_Sarvanto = {
+		name = FIN_Jorma_Sarvanto
+
+		portraits = {
+			army = {
+				small = "GFX_idea_FIN_Jorma_Sarvanto"
+			}
+		}
+
+		advisor = {
+			slot = theorist
+			ledger = civilian
+			idea_token = FIN_Jorma_Sarvanto
+			allowed = { original_tag = FIN }
+			traits = { THEO_air_warfare_theorist }
+			ai_will_do = { factor = 1 }
+			cost = 100
+		}
+	}
+	
+	FIN_Jarl_A_Wasastjerna = {
+		name = FIN_Jarl_A_Wasastjerna
+
+		portraits = {
+			army = {
+				small = "GFX_idea_FIN_Jarl_A_Wasastjerna"
+			}
+		}
+
+		advisor = {
+			slot = theorist
+			ledger = civilian
+			idea_token = FIN_Jarl_A_Wasastjerna
+			allowed = { original_tag = FIN }
+			traits = { THEO_theoretical_scientist }
+			ai_will_do = { factor = 1 }
+			cost = 100
+		}
+	}
+}
+

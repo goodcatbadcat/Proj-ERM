@@ -1,0 +1,422 @@
+spriteTypes = {
+
+
+    ####################
+    ## FINNISH EVENTS ##
+    ####################
+
+    spriteType = {
+        name = "GFX_report_event_ribbentrop_ryti"
+        texturefile = "gfx/event_pictures/Finland/report_event_ribbentrop_ryti.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_moscow_armistice"
+        texturefile = "gfx/event_pictures/Finland/report_event_moscow_armistice.dds"
+    }
+
+    ###################
+    ## FINNISH IDEAS ##
+    ###################
+
+    spriteType = {
+        name = "GFX_idea_FIN_sisu"
+        texturefile = "gfx/interface/ideas/national_ideas/FIN/FIN_sisu.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_FIN_continuation_war"
+        texturefile = "gfx/interface/ideas/national_ideas/FIN/FIN_continuation_war.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_FIN_GER_support"
+        texturefile = "gfx/interface/ideas/national_ideas/FIN/FIN_GER_support.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_FIN_neutrality"
+        texturefile = "gfx/interface/ideas/national_ideas/FIN/FIN_neutrality.dds"
+    }
+
+    spriteType = {
+        name = "GFX_"
+        texturefile = "gfx/interface/ideas/national_ideas/FIN/.dds"
+    }
+
+    spriteType = {
+        name = "GFX_"
+        texturefile = "gfx/interface/ideas/national_ideas/FIN/.dds"
+    }
+
+    spriteType = {
+        name = "GFX_"
+        texturefile = "gfx/interface/ideas/national_ideas/FIN/.dds"
+    }
+
+    spriteType = {
+        name = "GFX_"
+        texturefile = "gfx/interface/ideas/national_ideas/FIN/.dds"
+    }
+
+    spriteType = {
+        name = "GFX_"
+        texturefile = "gfx/interface/ideas/national_ideas/FIN/.dds"
+    }
+
+    spriteType = {
+        name = "GFX_"
+        texturefile = "gfx/interface/ideas/national_ideas/FIN/.dds"
+    }
+
+
+
+    #########################
+    ### FINNISH MINISTERS ###
+    #########################
+
+    SpriteType = {
+        name = "GFX_idea_FIN_Aimo_Cajander"
+        texturefile = "gfx/interface/ideas/ministers/FIN/idea_FIN_Aimo_Cajander.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_FIN_Aksel_Airo"
+        texturefile = "gfx/interface/ideas/ministers/FIN/idea_FIN_Aksel_Airo.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_FIN_Akseli_Anttila"
+        texturefile = "gfx/interface/ideas/ministers/FIN/idea_FIN_Akseli_Anttila.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_FIN_Antti_Hackzell"
+        texturefile = "gfx/interface/ideas/ministers/FIN/idea_FIN_Antti_Hackzell.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_FIN_Arno_Anthoni"
+        texturefile = "gfx/interface/ideas/ministers/FIN/idea_FIN_Arno_Anthoni.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_FIN_Arvi_Oksala"
+        texturefile = "gfx/interface/ideas/ministers/FIN/idea_FIN_Arvi_Oksala.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_FIN_Berndt_Rainer_von_Fieandt"
+        texturefile = "gfx/interface/ideas/ministers/FIN/idea_FIN_Berndt_Rainer_von_Fieandt.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_FIN_Bruno_Suviranta"
+        texturefile = "gfx/interface/ideas/ministers/FIN/idea_FIN_Bruno_Suviranta.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_FIN_Carl_Enckell"
+        texturefile = "gfx/interface/ideas/ministers/FIN/idea_FIN_Carl_Enckell.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_FIN_Carl_Ramsay"
+        texturefile = "gfx/interface/ideas/ministers/FIN/idea_FIN_Carl_Ramsay.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_FIN_CGE_Mannerheim"
+        texturefile = "gfx/interface/ideas/ministers/FIN/idea_FIN_CGE_Mannerheim.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_FIN_Edwin_J_H_Linkomies"
+        texturefile = "gfx/interface/ideas/ministers/FIN/idea_FIN_Edwin_J_H_Linkomies.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_FIN_Eero_Raholda"
+        texturefile = "gfx/interface/ideas/ministers/FIN/idea_FIN_Eero_Raholda.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_FIN_Eljas_Erkko"
+        texturefile = "gfx/interface/ideas/ministers/FIN/idea_FIN_Eljas_Erkko.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_FIN_Erik_Heinrichs"
+        texturefile = "gfx/interface/ideas/ministers/FIN/idea_FIN_Erik_Heinrichs.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_FIN_Ernst_von_Born"
+        texturefile = "gfx/interface/ideas/ministers/FIN/idea_FIN_Ernst_von_Born.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_FIN_Esko_Riekki"
+        texturefile = "gfx/interface/ideas/ministers/FIN/idea_FIN_Esko_Riekki.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_FIN_Frans_E_Helminen"
+        texturefile = "gfx/interface/ideas/ministers/FIN/idea_FIN_Frans_E_Helminen.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_FIN_Georg_A_de_Gripenberg"
+        texturefile = "gfx/interface/ideas/ministers/FIN/idea_FIN_Georg_A_de_Gripenberg.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_FIN_Harald_Ohquist"
+        texturefile = "gfx/interface/ideas/ministers/FIN/idea_FIN_Harald_Ohquist.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_FIN_Hjalmar_J_Procope"
+        texturefile = "gfx/interface/ideas/ministers/FIN/idea_FIN_Hjalmar_J_Procope.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_FIN_Hugo_Osterman"
+        texturefile = "gfx/interface/ideas/ministers/FIN/idea_FIN_Hugo_Osterman.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_FIN_Jarl_A_Wasastjerna"
+        texturefile = "gfx/interface/ideas/ministers/FIN/idea_FIN_Jarl_A_Wasastjerna.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_FIN_Jarl_F_Lundqvist"
+        texturefile = "gfx/interface/ideas/ministers/FIN/idea_FIN_Jarl_F_Lundqvist.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_FIN_Johan_Arajuuri"
+        texturefile = "gfx/interface/ideas/ministers/FIN/idea_FIN_Johan_Arajuuri.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_FIN_Johan_W_Hagglund"
+        texturefile = "gfx/interface/ideas/ministers/FIN/idea_FIN_Johan_W_Hagglund.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_FIN_Johan_W_Rangell"
+        texturefile = "gfx/interface/ideas/ministers/FIN/idea_FIN_Johan_W_Rangell.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_FIN_Jorma_Sarvanto"
+        texturefile = "gfx/interface/ideas/ministers/FIN/idea_FIN_Jorma_Sarvanto.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_FIN_Juho_K_Paasikivi"
+        texturefile = "gfx/interface/ideas/ministers/FIN/idea_FIN_Juho_K_Paasikivi.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_FIN_Juho_Niukkanen"
+        texturefile = "gfx/interface/ideas/ministers/FIN/idea_FIN_Juho_Niukkanen.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_FIN_K_Lennart_Oesch"
+        texturefile = "gfx/interface/ideas/ministers/FIN/idea_FIN_K_Lennart_Oesch.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_FIN_Kaarle_Vaino_Voionmaa"
+        texturefile = "gfx/interface/ideas/ministers/FIN/idea_FIN_Kaarle_Vaino_Voionmaa.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_FIN_Karl_Rudolf_Walden"
+        texturefile = "gfx/interface/ideas/ministers/FIN/idea_FIN_Karl_Rudolf_Walden.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_FIN_Kyosti_Jarvinen"
+        texturefile = "gfx/interface/ideas/ministers/FIN/idea_FIN_Kyosti_Jarvinen.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_FIN_Kyosti_Kallio"
+        texturefile = "gfx/interface/ideas/ministers/FIN/idea_FIN_Kyosti_Kallio.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_FIN_Leo_R_Ehrnrooth"
+        texturefile = "gfx/interface/ideas/ministers/FIN/idea_FIN_Leo_R_Ehrnrooth.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_FIN_Leonard_Grandell"
+        texturefile = "gfx/interface/ideas/ministers/FIN/idea_FIN_Leonard_Grandell.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_FIN_Oskari_Lehtonen"
+        texturefile = "gfx/interface/ideas/ministers/FIN/idea_FIN_Oskari_Lehtonen.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_FIN_Paavo_Kastari"
+        texturefile = "gfx/interface/ideas/ministers/FIN/idea_FIN_Paavo_Kastari.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_FIN_Reino_Artola"
+        texturefile = "gfx/interface/ideas/ministers/FIN/idea_FIN_Reino_Artola.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_FIN_Ricahrd_Lorentz"
+        texturefile = "gfx/interface/ideas/ministers/FIN/idea_FIN_Ricahrd_Lorentz.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_FIN_Rolf_J_Witting"
+        texturefile = "gfx/interface/ideas/ministers/FIN/idea_FIN_Rolf_J_Witting.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_FIN_Rudolf_Holsti"
+        texturefile = "gfx/interface/ideas/ministers/FIN/idea_FIN_Rudolf_Holsti.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_FIN_Toivo_Horelli"
+        texturefile = "gfx/interface/ideas/ministers/FIN/idea_FIN_Toivo_Horelli.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_FIN_Toivo_M_Kivimaki"
+        texturefile = "gfx/interface/ideas/ministers/FIN/idea_FIN_Toivo_M_Kivimaki.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_FIN_Toivo_Somerto"
+        texturefile = "gfx/interface/ideas/ministers/FIN/idea_FIN_Toivo_Somerto.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_FIN_Tyko_Reinikka"
+        texturefile = "gfx/interface/ideas/ministers/FIN/idea_FIN_Tyko_Reinikka.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_FIN_Urho_Castren"
+        texturefile = "gfx/interface/ideas/ministers/FIN/idea_FIN_Urho_Castren.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_FIN_Urho_Kekkonen"
+        texturefile = "gfx/interface/ideas/ministers/FIN/idea_FIN_Urho_Kekkonen.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_FIN_Vaino_Tanner"
+        texturefile = "gfx/interface/ideas/ministers/FIN/idea_FIN_Vaino_Tanner.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_FIN_Vaino_Valve"
+        texturefile = "gfx/interface/ideas/ministers/FIN/idea_FIN_Vaino_Valve.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_FIN_Vilho_P_Nenonen"
+        texturefile = "gfx/interface/ideas/ministers/FIN/idea_FIN_Vilho_P_Nenonen.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_FIN_Vilho_Vaisala"
+        texturefile = "gfx/interface/ideas/ministers/FIN/idea_FIN_Vilho_Vaisala.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_FIN_Wiljo_Tuompo"
+        texturefile = "gfx/interface/ideas/ministers/FIN/idea_FIN_Wiljo_Tuompo.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_idea_FIN_Yrjo_Puhakka"
+        texturefile = "gfx/interface/ideas/ministers/FIN/idea_FIN_Yrjo_Puhakka.dds"
+        
+    }
+
+    SpriteType = {
+        name = "GFX_"
+        texturefile = "gfx/interface/ideas/ministers/FIN/.dds"
+        
+    }
+    
+    #####################
+    # FINNISH COMPANIES #
+    #####################
+
+    ## Armor ##
+    spriteType = {
+        name = "GFX_idea_FIN_"
+        texturefile = "gfx/interface/ideas/companies/FIN/idea_FIN_.dds"
+    }
+}

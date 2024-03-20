@@ -1,0 +1,627 @@
+ideas = {
+
+	country = {
+	
+		MISC_surprise_attack = {
+			
+			allowed = {
+				has_war = yes
+			}
+			
+			modifier = {
+				army_speed_factor = -0.25
+				army_defence_factor = -0.1
+				army_org_factor = -0.15
+			}
+		}
+				
+				
+	
+		MISC_ger_military_mission = {
+			
+			allowed = {
+				always = yes
+			}
+					
+			modifier = {
+				army_org_factor = 0.05
+				army_morale_factor = 0.05
+			}
+			research_bonus = {
+				land_doctrine = -0.05
+			}
+		}
+	
+		MISC_munitionettes = {
+			
+			allowed = {
+				always = yes
+			}
+							
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+	
+		MISC_totalization_process = {
+		
+			allowed = {
+				always = yes
+			}
+							
+			modifier = {
+				line_change_production_efficiency_factor = 0.25
+				equipment_conversion_speed = 0.35
+				conversion_cost_civ_to_mil_factor = -0.5
+			}
+		}
+			
+		##########################
+		# HOME/WAR FRONT BONUSES #
+		##########################
+			
+		MISC_home_front1 = {
+			
+			allowed = {
+				always = yes
+			}
+							
+			modifier = {
+				industrial_capacity_factory = 0.05
+				production_speed_buildings_factor = 0.05
+				line_change_production_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				local_resources_factor = 0.05
+				war_support_weekly = 0.0025
+				stability_weekly = 0.0025
+				civilian_factory_use = 5
+				political_power_gain = 0.25
+				surrender_limit = 0.1
+				drift_defence_factor = 0.25
+			}
+		}
+			
+		#######
+		#/////#
+		#######
+		
+		MISC_home_front2 = {
+			
+			allowed = {
+				always = yes
+			}
+							
+			modifier = {
+				industrial_capacity_factory = 0.075
+				production_speed_buildings_factor = 0.075
+				line_change_production_efficiency_factor = 0.075
+				production_factory_efficiency_gain_factor = 0.075
+				local_resources_factor = 0.075
+				war_support_weekly = 0.003
+				stability_weekly = 0.003
+				civilian_factory_use = 7
+				political_power_gain = 0.3
+				surrender_limit = 0.1
+				drift_defence_factor = 0.25
+			}
+		}
+			
+		#######
+		#/////#
+		#######
+			
+		MISC_home_front3 = {
+			
+			allowed = {
+				always = yes
+			}
+							
+			modifier = {
+				industrial_capacity_factory = 0.1
+				production_speed_buildings_factor = 0.1
+				line_change_production_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				local_resources_factor = 0.1
+				war_support_weekly = 0.0035
+				stability_weekly = 0.0035
+				civilian_factory_use = 9
+				political_power_gain = 0.35
+				surrender_limit = 0.15
+				drift_defence_factor = 0.25
+			}
+		}
+		
+		#######
+		#/////#
+		#######
+			
+		MISC_home_front4 = {
+			
+			allowed = {
+				always = yes
+			}
+							
+			modifier = {
+				industrial_capacity_factory = 0.125
+				production_speed_buildings_factor = 0.125
+				line_change_production_efficiency_factor = 0.125
+				production_factory_efficiency_gain_factor = 0.125
+				local_resources_factor = 0.125
+				war_support_weekly = 0.004
+				stability_weekly = 0.004
+				civilian_factory_use = 12
+				political_power_gain = 0.45
+				surrender_limit = 0.20
+				drift_defence_factor = 0.25
+			}
+		}
+			
+		#######
+		#/////#
+		#######
+			
+		MISC_home_front5 = {
+			
+			allowed = {
+				always = yes
+			}
+							
+			modifier = {
+				industrial_capacity_factory = 0.15
+				production_speed_buildings_factor = 0.15
+				line_change_production_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.15
+				local_resources_factor = 0.15
+				war_support_weekly = 0.005
+				stability_weekly = 0.005
+				civilian_factory_use = 15
+				political_power_gain = 0.5
+				surrender_limit = 0.25
+				drift_defence_factor = 0.25
+			}
+		}
+			
+		#######
+		#/////#
+		#######
+			
+		MISC_war_front1 = {
+			
+			allowed = {
+				always = yes
+			}
+							
+			modifier = {
+				war_support_weekly = -0.0025
+				stability_weekly = -0.0025
+				production_factory_max_efficiency_factor = 0.05
+				line_change_production_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+				production_factory_start_efficiency_factor = 0.05
+				production_speed_industrial_complex_factor = 0.05
+				consumer_goods_factor = -0.05
+			}
+		}
+			
+		#######
+		#/////#
+		#######
+			
+		MISC_war_front2 = {
+		
+			allowed = {
+				always = yes
+			}
+							
+			modifier = {
+				stability_weekly = -0.003
+				war_support_weekly = -0.003
+				production_factory_max_efficiency_factor = 0.1
+				line_change_production_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				production_factory_start_efficiency_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+				consumer_goods_factor = -0.1
+			}
+		}
+			
+		#######
+		#/////#
+		#######
+			
+		MISC_war_front3 = {
+			
+			allowed = {
+				always = yes
+			}
+							
+			modifier = {
+				stability_weekly = -0.0035
+				war_support_weekly = -0.0035
+				production_factory_max_efficiency_factor = 0.175
+				line_change_production_efficiency_factor = 0.175
+				industrial_capacity_factory = 0.175
+				industrial_capacity_dockyard = 0.175
+				production_factory_start_efficiency_factor = 0.175
+				production_speed_industrial_complex_factor = 0.175
+				consumer_goods_factor = -0.15
+			}
+		}
+			
+		#######
+		#/////#
+		#######
+			
+		MISC_war_front4 = {
+			
+			allowed = {
+				always = yes
+			}
+							
+			modifier = {
+				stability_weekly = -0.004
+				war_support_weekly = -0.004
+				production_factory_max_efficiency_factor = 0.225
+				line_change_production_efficiency_factor = 0.225
+				industrial_capacity_factory = 0.225
+				industrial_capacity_dockyard = 0.225
+				production_factory_start_efficiency_factor = 0.225
+				production_speed_industrial_complex_factor = 0.225
+				consumer_goods_factor = -0.2
+			}
+		}
+			
+		#######
+		#/////#
+		#######
+			
+		MISC_war_front5 = {
+			
+			allowed = {
+				always = yes
+			}
+							
+			modifier = {
+				stability_weekly = -0.005
+				war_support_weekly = -0.005
+				production_factory_max_efficiency_factor = 0.275
+				line_change_production_efficiency_factor = 0.275
+				industrial_capacity_factory = 0.275
+				industrial_capacity_dockyard = 0.275
+				production_factory_start_efficiency_factor = 0.275
+				production_speed_industrial_complex_factor = 0.275
+				consumer_goods_factor = -0.25
+			}
+		}
+			
+		#######
+		#/////#
+		#######
+			
+		#########################
+		# END OF HOME/WAR FRONT #
+		#########################
+			
+		MISC_war_exhaustion = {
+			
+			allowed = {
+				always = yes
+			}
+
+			picture = war_exhaustion
+							
+			modifier = {
+				conscription_factor = -0.15
+				army_morale_factor = -0.25
+				army_org_factor = -0.25
+				production_speed_buildings_factor = -0.25
+				training_time_army_factor = 1
+				land_reinforce_rate = -0.5
+				stability_factor = -0.1
+			}
+		}
+
+		hundred_days = {
+			
+			allowed = {
+				always = yes
+			}
+
+			picture = hundred_days
+							
+			modifier = {
+				army_morale_factor = 0.30
+				army_org_factor = 0.30
+				land_reinforce_rate = 0.30
+				stability_factor = 0.1
+			}
+		}
+
+		desertion = {
+			
+			allowed = {
+				always = yes
+			}
+
+			picture = desertion
+							
+			modifier = {
+				conscription_factor = -0.15
+				army_morale_factor = -0.075
+				army_org_factor = -0.075
+				land_reinforce_rate = -0.1
+				stability_factor = -0.025
+			}
+		}
+
+		vardar_offensive = {
+			
+			allowed = {
+				always = yes
+			}
+
+			picture = vardar_offensive
+							
+			modifier = {
+				army_morale_factor = 0.30
+				army_org_factor = 0.30
+				land_reinforce_rate = 0.30
+				stability_factor = 0.1
+			}
+		}
+
+		USA_support = {
+			
+			allowed = {
+				always = yes
+			}
+
+			picture = americans_are_here
+							
+			modifier = {
+				army_morale_factor = 0.2
+				army_org_factor = 0.2
+				land_reinforce_rate = 0.30
+			}
+			equipment_bonus = {
+				rations = {
+					build_cost_ic = -0.25
+					instant = yes
+				}
+			}
+		}
+		
+		MISC_aegian_blockade = {
+			
+			allowed = {
+				always = yes
+			}
+
+			picture = unrestricted_sub_warfare
+							
+			modifier = {
+				stability_weekly = -0.0025
+				war_support_weekly = -0.0025
+			}
+			equipment_bonus = {
+				rations = {
+					build_cost_ic = 0.35
+					instant = yes
+				}
+			}
+		}
+		
+		MISC_adriatic_blockade = {
+			
+			allowed = {
+				always = yes
+			}
+
+			picture = unrestricted_sub_warfare
+							
+			modifier = {
+				stability_weekly = -0.0015
+				war_support_weekly = -0.0015
+			}
+			equipment_bonus = {
+				rations = {
+					build_cost_ic = 0.15
+					instant = yes
+				}
+			}
+		}
+		
+		MISC_baltic_sea_blockade = {
+			
+			allowed = {
+				always = yes
+			}
+
+			picture = unrestricted_sub_warfare
+							
+			modifier = {
+				stability_weekly = -0.001
+				war_support_weekly = -0.001
+			}
+			targeted_modifier = {
+				tag = GER
+				trade_cost_for_target_factor = 0.5
+			}
+			equipment_bonus = {
+				rations = {
+					build_cost_ic = 0.15
+					instant = yes
+				}
+			}
+		}
+		
+		MISC_black_sea_blockade = {
+			
+			allowed = {
+				always = yes
+			}
+
+			picture = unrestricted_sub_warfare
+							
+			modifier = {
+				stability_weekly = -0.001
+				war_support_weekly = -0.001
+			}
+			equipment_bonus = {
+				rations = {
+					build_cost_ic = 0.15
+					instant = yes
+				}
+			}
+		}
+		
+		MISC_north_sea_blockade = {
+			
+			allowed = {
+				always = yes
+			}
+
+			picture = unrestricted_sub_warfare
+							
+			modifier = {
+				army_morale_factor = -0.05
+				stability_weekly = -0.0025
+				war_support_weekly = -0.0025
+			}
+			targeted_modifier = {
+				tag = GER
+				trade_cost_for_target_factor = 0.5
+			}
+			equipment_bonus = {
+				rations = {
+					build_cost_ic = 0.45
+					instant = yes
+				}
+			}
+		}
+		
+		MISC_increase_unrestricted_sub_warfare = {
+			
+			allowed = {
+				GER = {
+					has_war_with = USA
+					has_war_with = ENG
+					has_war_with = FRA
+				}
+			}
+
+			picture = unrestricted_sub_warfare
+							
+			modifier = {
+				army_morale_factor = -0.075
+				stability_weekly = -0.0025
+				war_support_weekly = -0.0025
+			}
+			targeted_modifier = {
+				tag = ENG
+				trade_cost_for_target_factor = 0.35
+			}
+			targeted_modifier = {
+				tag = FRA
+				trade_cost_for_target_factor = 0.35
+			}
+			targeted_modifier = {
+				tag = USA
+				trade_cost_for_target_factor = 0.35
+			}
+			equipment_bonus = {
+				rations = {
+					build_cost_ic = 0.35
+					instant = yes
+				}
+			}
+		}
+		
+
+		MISC_unrestricted_sub_warfare = {
+			
+			allowed = {
+				GER = {
+					has_war_with = ENG
+					has_war_with = FRA
+				}
+			}
+
+			picture = unrestricted_sub_warfare
+							
+			modifier = {
+				army_morale_factor = -0.05
+				stability_weekly = -0.0035
+				war_support_weekly = -0.0025
+			}
+			targeted_modifier = {
+				tag = ENG
+				trade_cost_for_target_factor = 0.35
+			}
+			targeted_modifier = {
+				tag = FRA
+				trade_cost_for_target_factor = 0.35
+			}
+			equipment_bonus = {
+				rations = {
+					build_cost_ic = 0.25
+					instant = yes
+				}
+			}
+		}
+		
+		MISC_increase_unrestricted_sub_warfare = {
+			
+			allowed = {
+				GER = {
+					has_war_with = ENG
+					has_war_with = FRA
+				}
+			}
+
+			picture = unrestricted_sub_warfare
+							
+			modifier = {
+				army_morale_factor = -0.05
+				stability_weekly = -0.0045
+				war_support_weekly = -0.0035
+			}
+			targeted_modifier = {
+				tag = ENG
+				trade_cost_for_target_factor = 0.45
+			}
+			targeted_modifier = {
+				tag = FRA
+				trade_cost_for_target_factor = 0.45
+			}
+			equipment_bonus = {
+				rations = {
+					build_cost_ic = 0.35
+					instant = yes
+				}
+			}
+		}
+
+		fall_of_russia = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_morale_factor = 0.10
+				army_org_factor = 0.10
+				land_reinforce_rate = 0.10
+				stability_factor = 0.1
+			}
+		}
+	}
+}

@@ -1,0 +1,2185 @@
+﻿#####################
+# World News Events #
+#####################
+
+#########################################
+# Had to re-do this bugger bottom up :/ #
+#########################################
+
+add_namespace = world_news
+
+# Hungary Surrenders, gives MIL access to SOV
+news_event = {
+	id = world_news.1
+	title = world_news.1.t
+	desc = world_news.1.d
+	picture = GFX_news_event_HUN_surrender_SOV
+
+	major = yes
+
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.1.a
+	}
+}
+
+# Hungary Switches Sides to Join Allies
+news_event = {
+	id = world_news.2
+	title = world_news.2.t
+	desc = world_news.2.d
+	picture = GFX_news_event_HUN_surrender_SOV
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.2.a
+	}
+}
+
+# Operation Panzerfaust
+news_event = {
+	id = world_news.3
+	title = world_news.3.t
+	desc = world_news.3.d
+	picture = GFX_news_event_operation_panzerfaust
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.3.a
+	}
+}
+
+# Kings Michaels Coup 1944
+news_event = {
+	id = world_news.4
+	title = world_news.4.t
+	desc = world_news.4.d
+	picture = GFX_news_event_romania_coup_1944
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.4.a
+	}
+}
+
+# Operation Margarethe II
+news_event = {
+	id = world_news.5
+	title = world_news.5.t
+	desc = world_news.5.d
+	picture = GFX_news_event_operation_margarethe_ii
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.5.a
+	}
+}
+
+# Ryti-Ribbentrop Agreement Signed
+news_event = {
+	id = world_news.6
+	title = world_news.6.t
+	desc = world_news.6.d
+	picture = GFX_news_event_ryti_ribbentrop
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.6.a
+	}
+}
+
+# Moscow Armistice Signed
+news_event = {
+	id = world_news.7
+	title = world_news.7.t
+	desc = world_news.7.d
+	picture = GFX_news_event_moscow_armistice
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.7.a
+	}
+}
+
+# Finland peace talks fall through
+news_event = {
+	id = world_news.8
+	title = world_news.8.t
+	desc = world_news.8.d
+	picture = GFX_news_event_SOV_FIN_talks_fail
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.8.a
+	}
+}
+
+# Risto Ryti Resigns!
+news_event = {
+	id = world_news.9
+	title = world_news.9.t
+	desc = world_news.9.d
+	picture = GFX_news_event_risto_ryti
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.9.a
+	}
+}
+
+# Lappland Evacuation Begins (Slow)
+news_event = {
+	id = world_news.10
+	title = world_news.10.t
+	desc = world_news.10.d
+	picture = GFX_news_event_lappland_evac_slow
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.1.a
+	}
+}
+
+# Germans leave Lappland quickly
+news_event = {
+	id = world_news.11
+	title = world_news.11.t
+	desc = world_news.11.d
+	picture = GFX_news_event_lappland_evac_quick
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.11.a
+	}
+}
+
+# Lappland War Begins
+news_event = {
+	id = world_news.12
+	title = world_news.12.t
+	desc = world_news.12.d
+	picture = GFX_news_event_lappland_war
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.12.a
+	}
+}
+
+# Lappland War Ends
+news_event = {
+	id = world_news.13
+	title = world_news.13.t
+	desc = world_news.13.d
+	picture = GFX_news_event_lappland_war_over
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.13.a
+	}
+}
+
+# Sweden Stops Trading with Germany
+news_event = {
+	id = world_news.14
+	title = world_news.14.t
+	desc = world_news.14.d
+	picture = GFX_news_event_sweden
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.14.a
+	}
+}
+
+# Turkey Joins the Axis
+news_event = {
+	id = world_news.15
+	title = world_news.15.t
+	desc = world_news.15.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.15.a
+	}
+}
+
+# July 20th Plot Fails
+news_event = {
+	id = world_news.16
+	title = world_news.16.t
+	desc = world_news.16.d
+	picture = GFX_news_event_july_20_plot
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.16.a
+	}
+}
+
+# Valkyrie Succeeds: Friedrich Fromm
+news_event = {
+	id = world_news.17
+	title = world_news.17.t
+	desc = world_news.17.d
+	picture = GFX_news_event_valkyrie_coup_success
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.17.a
+	}
+}
+
+# Valkyrie Succeeds: Ludwig Beck
+news_event = {
+	id = world_news.18
+	title = world_news.18.t
+	desc = world_news.18.d
+	picture = GFX_news_event_valkyrie_coup_success
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.18.a
+	}
+}
+
+# Valkyrie Succeeds: Heinz Guderian
+news_event = {
+	id = world_news.19
+	title = world_news.19.t
+	desc = world_news.19.d
+	picture = GFX_news_event_guderian_coup
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.19.a
+	}
+}
+
+# Valkyrie Succeeds: Notsee Counter Coup
+news_event = {
+	id = world_news.20
+	title = world_news.20.t
+	desc = world_news.20.d
+	picture = GFX_news_event_july_20_plot
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.20.a
+	}
+}
+
+# Nazi Man in Space
+news_event = {
+	id = world_news.21
+	title = world_news.21.t
+	desc = world_news.21.d
+	picture = GFX_news_event_first_man_space
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.21.a
+	}
+}
+
+# German Troops Paraded Moscow
+news_event = {
+	id = world_news.22
+	title = world_news.22.t
+	desc = world_news.22.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.22.a
+	}
+}
+
+#
+news_event = {
+	id = world_news.23
+	title = world_news.23.t
+	desc = world_news.23.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.23.a
+	}
+}
+
+#
+news_event = {
+	id = world_news.24
+	title = world_news.24.t
+	desc = world_news.24.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.24.a
+	}
+}
+
+# 
+news_event = {
+	id = world_news.25
+	title = world_news.25.t
+	desc = world_news.25.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.25.a
+	}
+}
+
+# 
+news_event = {
+	id = world_news.26
+	title = world_news.26.t
+	desc = world_news.26.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.26.a
+	}
+}
+
+# 
+news_event = {
+	id = world_news.27
+	title = world_news.27.t
+	desc = world_news.27.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.27.a
+	}
+}
+
+# 
+news_event = {
+	id = world_news.28
+	title = world_news.28.t
+	desc = world_news.28.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.28.a
+	}
+}
+
+# Pro-Huerta German backed Coup wins
+news_event = {
+	id = world_news.29
+	title = world_news.29.t
+	desc = world_news.29.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.29.a
+	}
+}
+
+# Pro-Huerta GER backed coup discovered
+news_event = {
+	id = world_news.30
+	title = world_news.30.t
+	desc = world_news.30.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.30.a
+	}
+}
+
+# GER resumes Unrestricted Sub Warfare
+news_event = {
+	id = world_news.31
+	title = world_news.31.t
+	desc = world_news.31.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.31.a
+	}
+}
+
+# GER Prince assumes throne IRE
+news_event = {
+	id = world_news.32
+	title = world_news.32.t
+	desc = world_news.32.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.3.a
+	}
+}
+
+# GER invades Commie FIN
+news_event = {
+	id = world_news.33
+	title = world_news.33.t
+	desc = world_news.33.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.33.a
+	}
+}
+
+# GER creates FIN puppet
+news_event = {
+	id = world_news.34
+	title = world_news.34.t
+	desc = world_news.34.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.34.a
+	}
+}
+
+# GER prince FIN King becomes
+news_event = {
+	id = world_news.35
+	title = world_news.35.t
+	desc = world_news.35.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.35.a
+	}
+}
+
+# GER Allows Free Elec FIN
+news_event = {
+	id = world_news.36
+	title = world_news.36.t
+	desc = world_news.36.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.36.a
+	}
+}
+
+# Germany Declares War SOV RUS
+news_event = {
+	id = world_news.37
+	title = world_news.37.t
+	desc = world_news.37.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.37.a
+	}
+}
+
+# WHR allies GER
+news_event = {
+	id = world_news.38
+	title = world_news.38.t
+	desc = world_news.38.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.38.a
+	}
+}
+
+# GER Annex CRIMEA
+news_event = {
+	id = world_news.39
+	title = world_news.39.t
+	desc = world_news.39.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.39.a
+	}
+}
+
+# GER Transfer CRIMEA RUS
+news_event = {
+	id = world_news.40
+	title = world_news.40.t
+	desc = world_news.40.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.40.a
+	}
+}
+
+# SOV joins CP
+news_event = {
+	id = world_news.41
+	title = world_news.41.t
+	desc = world_news.41.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.41.a
+	}
+}
+
+# GER Restore Order RUS
+news_event = {
+	id = world_news.42
+	title = world_news.42.t
+	desc = world_news.42.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.42.a
+	}
+}
+
+# ENG-GER Naval Race Continues
+news_event = {
+	id = world_news.43
+	title = world_news.43.t
+	desc = world_news.43.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.43.a
+	}
+}
+
+# ENG-GER Naval Race Over
+news_event = {
+	id = world_news.44
+	title = world_news.44.t
+	desc = world_news.44.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.44.a
+	}
+}
+
+# SIA Joins CP
+news_event = {
+	id = world_news.45
+	title = world_news.45.t
+	desc = world_news.45.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.45.a
+	}
+}
+
+# MEX joins CP
+news_event = {
+	id = world_news.46
+	title = world_news.46.t
+	desc = world_news.46.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.46.a
+	}
+}
+
+# GER Invades HOL
+news_event = {
+	id = world_news.47
+	title = world_news.47.t
+	desc = world_news.47.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.47.a
+	}
+}
+
+# GER bombs ENG ZEP
+news_event = {
+	id = world_news.48
+	title = world_news.48.t
+	desc = world_news.48.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.48.a
+	}
+}
+
+# Mass Reconstruction in East Russia post Brest-Litovsk
+news_event = {
+	id = world_news.49
+	title = world_news.49.t
+	desc = world_news.49.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.49.a
+	}
+}
+
+# GER creates Hindenburg Line
+news_event = {
+	id = world_news.50
+	title = world_news.50.t
+	desc = world_news.50.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.50.a
+	}
+}
+
+# GER breaks North Sea blockade
+news_event = {
+	id = world_news.51
+	title = world_news.51.t
+	desc = world_news.51.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.51.a
+	}
+}
+
+# Lusitania
+news_event = {
+	id = world_news.52
+	title = world_news.52.t
+	desc = world_news.52.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.52.a
+	}
+}
+
+# Kaiserschlacht/Spring Off.
+news_event = {
+	id = world_news.53
+	title = world_news.53.t
+	desc = world_news.53.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.53.a
+	}
+}
+
+# WHR captures Imperial Gold Train
+news_event = {
+	id = world_news.54
+	title = world_news.54.t
+	desc = world_news.54.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.54.a
+	}
+}
+
+# WHR Recognized by West
+news_event = {
+	id = world_news.55
+	title = world_news.55.t
+	desc = world_news.55.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.55.a
+	}
+}
+
+# EWR/WWR United
+news_event = {
+	id = world_news.56
+	title = world_news.56.t
+	desc = world_news.56.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.56.a
+	}
+}
+
+# EWR poised to attack Moscow
+news_event = {
+	id = world_news.57
+	title = world_news.57.t
+	desc = world_news.57.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.57.a
+	}
+}
+
+# PARG wins vs Kolchak
+news_event = {
+	id = world_news.58
+	title = world_news.58.t
+	desc = world_news.58.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.58.a
+	}
+}
+
+# Kolchak does coup in Omsk
+news_event = {
+	id = world_news.59
+	title = world_news.59.t
+	desc = world_news.59.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.59.a
+	}
+}
+
+# WHR United at last
+news_event = {
+	id = world_news.60
+	title = world_news.60.t
+	desc = world_news.60.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.60.a
+	}
+}
+
+# Baron takes control of Bruhngolia
+news_event = {
+	id = world_news.61
+	title = world_news.61.t
+	desc = world_news.61.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.61.a
+	}
+}
+
+# Kolchak dies
+news_event = {
+	id = world_news.62
+	title = world_news.62.t
+	desc = world_news.62.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.62.a
+	}
+}
+
+# Great Siberian Ice March
+news_event = {
+	id = world_news.63
+	title = world_news.63.t
+	desc = world_news.63.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.63.a
+	}
+}
+
+# WWR posed attack Moscow
+news_event = {
+	id = world_news.64
+	title = world_news.64.t
+	desc = world_news.64.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.64.a
+	}
+}
+
+# Denikin Takes Power WWR
+news_event = {
+	id = world_news.65
+	title = world_news.65.t
+	desc = world_news.65.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.65.a
+	}
+}
+
+# Krasnov Takes Power WWR
+news_event = {
+	id = world_news.66
+	title = world_news.66.t
+	desc = world_news.66.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.66.a
+	}
+}
+
+# ROM takes AUH Transfer Deal
+news_event = {
+	id = world_news.67
+	title = world_news.67.t
+	desc = world_news.67.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.67.a
+	}
+}
+
+# ROM Takes AUH Transfer Deal
+news_event = {
+	id = world_news.68
+	title = world_news.68.t
+	desc = world_news.68.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.68.a
+	}
+}
+
+# ROM Joins CP
+news_event = {
+	id = world_news.69
+	title = world_news.69.t
+	desc = world_news.69.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.69.a
+	}
+}
+
+# 
+news_event = {
+	id = world_news.70
+	title = world_news.70.t
+	desc = world_news.70.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.70.a
+	}
+}
+
+
+# 
+news_event = {
+	id = world_news.71
+	title = world_news.71.t
+	desc = world_news.71.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.71.a
+	}
+}
+
+# 
+news_event = {
+	id = world_news.72
+	title = world_news.72.t
+	desc = world_news.72.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.72.a
+	}
+}
+
+# 
+news_event = {
+	id = world_news.73
+	title = world_news.73.t
+	desc = world_news.73.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.73.a
+	}
+}
+
+# 
+news_event = {
+	id = world_news.74
+	title = world_news.74.t
+	desc = world_news.74.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.74.a
+	}
+}
+
+# 
+news_event = {
+	id = world_news.75
+	title = world_news.75.t
+	desc = world_news.75.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.75.a
+	}
+}
+
+# 
+news_event = {
+	id = world_news.76
+	title = world_news.76.t
+	desc = world_news.76.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.76.a
+	}
+}
+
+# 
+news_event = {
+	id = world_news.77
+	title = world_news.77.t
+	desc = world_news.77.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.77.a
+	}
+}
+
+# 
+news_event = {
+	id = world_news.78
+	title = world_news.78.t
+	desc = world_news.78.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.78.a
+	}
+}
+
+# 
+news_event = {
+	id = world_news.79
+	title = world_news.79.t
+	desc = world_news.79.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.79.a
+	}
+}
+
+# 
+news_event = {
+	id = world_news.80
+	title = world_news.80.t
+	desc = world_news.80.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.80.a
+	}
+}
+
+
+# 
+news_event = {
+	id = world_news.81
+	title = world_news.81.t
+	desc = world_news.81.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.81.a
+	}
+}
+
+# 
+news_event = {
+	id = world_news.82
+	title = world_news.82.t
+	desc = world_news.82.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.82.a
+	}
+}
+
+# 
+news_event = {
+	id = world_news.83
+	title = world_news.83.t
+	desc = world_news.83.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.83.a
+	}
+}
+
+# 
+news_event = {
+	id = world_news.84
+	title = world_news.84.t
+	desc = world_news.84.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.84.a
+	}
+}
+
+# 
+news_event = {
+	id = world_news.85
+	title = world_news.85.t
+	desc = world_news.85.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.85.a
+	}
+}
+
+# 
+news_event = {
+	id = world_news.86
+	title = world_news.86.t
+	desc = world_news.86.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.86.a
+	}
+}
+
+# 
+news_event = {
+	id = world_news.87
+	title = world_news.87.t
+	desc = world_news.87.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.87.a
+	}
+}
+
+# 
+news_event = {
+	id = world_news.88
+	title = world_news.88.t
+	desc = world_news.88.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.88.a
+	}
+}
+
+# 
+news_event = {
+	id = world_news.89
+	title = world_news.89.t
+	desc = world_news.89.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.89.a
+	}
+}
+
+# 
+news_event = {
+	id = world_news.90
+	title = world_news.90.t
+	desc = world_news.90.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.90.a
+	}
+}
+
+
+# 
+news_event = {
+	id = world_news.91
+	title = world_news.91.t
+	desc = world_news.91.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.91.a
+	}
+}
+
+# 
+news_event = {
+	id = world_news.92
+	title = world_news.92.t
+	desc = world_news.92.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.92.a
+	}
+}
+
+# 
+news_event = {
+	id = world_news.93
+	title = world_news.93.t
+	desc = world_news.93.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.93.a
+	}
+}
+
+# 
+news_event = {
+	id = world_news.94
+	title = world_news.94.t
+	desc = world_news.94.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.94.a
+	}
+}
+
+# 
+news_event = {
+	id = world_news.95
+	title = world_news.95.t
+	desc = world_news.95.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.95.a
+	}
+}
+
+# 
+news_event = {
+	id = world_news.96
+	title = world_news.96.t
+	desc = world_news.96.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.96.a
+	}
+}
+
+# 
+news_event = {
+	id = world_news.97
+	title = world_news.97.t
+	desc = world_news.97.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.97.a
+	}
+}
+
+# 
+news_event = {
+	id = world_news.98
+	title = world_news.98.t
+	desc = world_news.98.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.98.a
+	}
+}
+
+# 
+news_event = {
+	id = world_news.99
+	title = world_news.99.t
+	desc = world_news.99.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.99.a
+	}
+}
+
+# 
+news_event = {
+	id = world_news.100
+	title = world_news.100.t
+	desc = world_news.100.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.100.a
+	}
+}
+
+# 
+news_event = {
+	id = world_news.101
+	title = world_news.101.t
+	desc = world_news.101.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.101.a
+	}
+}
+
+# 
+news_event = {
+	id = world_news.102
+	title = world_news.102.t
+	desc = world_news.102.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.102.a
+	}
+}
+
+# 
+news_event = {
+	id = world_news.103
+	title = world_news.103.t
+	desc = world_news.103.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.103.a
+	}
+}
+
+# 
+news_event = {
+	id = world_news.104
+	title = world_news.104.t
+	desc = world_news.104.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.104.a
+	}
+}
+
+# 
+news_event = {
+	id = world_news.105
+	title = world_news.105.t
+	desc = world_news.105.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.105.a
+	}
+}
+
+# 
+news_event = {
+	id = world_news.106
+	title = world_news.106.t
+	desc = world_news.106.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.106.a
+	}
+}
+
+# 
+news_event = {
+	id = world_news.107
+	title = world_news.107.t
+	desc = world_news.107.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.107.a
+	}
+}
+
+# 
+news_event = {
+	id = world_news.108
+	title = world_news.108.t
+	desc = world_news.108.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.108.a
+	}
+}
+
+# 
+news_event = {
+	id = world_news.109
+	title = world_news.109.t
+	desc = world_news.109.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.109.a
+	}
+}
+
+# 
+news_event = {
+	id = world_news.110
+	title = world_news.110.t
+	desc = world_news.110.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.110.a
+	}
+}
+
+
+# 
+news_event = {
+	id = world_news.111
+	title = world_news.111.t
+	desc = world_news.111.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.111.a
+	}
+}
+
+# 
+news_event = {
+	id = world_news.112
+	title = world_news.112.t
+	desc = world_news.112.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.112.a
+	}
+}
+
+# 
+news_event = {
+	id = world_news.113
+	title = world_news.113.t
+	desc = world_news.113.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.113.a
+	}
+}
+
+# 
+news_event = {
+	id = world_news.114
+	title = world_news.114.t
+	desc = world_news.114.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.114.a
+	}
+}
+
+# 
+news_event = {
+	id = world_news.115
+	title = world_news.115.t
+	desc = world_news.115.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.115.a
+	}
+}
+
+# 
+news_event = {
+	id = world_news.116
+	title = world_news.116.t
+	desc = world_news.116.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.116.a
+	}
+}
+
+# 
+news_event = {
+	id = world_news.117
+	title = world_news.117.t
+	desc = world_news.117.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.117.a
+	}
+}
+
+# 
+news_event = {
+	id = world_news.118
+	title = world_news.118.t
+	desc = world_news.118.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.118.a
+	}
+}
+
+# 
+news_event = {
+	id = world_news.119
+	title = world_news.119.t
+	desc = world_news.119.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.119.a
+	}
+}
+
+# 
+news_event = {
+	id = world_news.120
+	title = world_news.120.t
+	desc = world_news.120.d
+	picture = GFX_news_event_
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = world_news.120.a
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+

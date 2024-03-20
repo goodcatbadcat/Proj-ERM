@@ -1,0 +1,894 @@
+﻿################
+# BRAZIL SETUP #
+################
+
+capital = 500 # Rio de Janeiro 
+
+set_convoys = 40
+set_stability = 0.40
+set_war_support = 0.20
+
+set_country_flag = monroe_doctrine
+
+########
+# ARMY #
+########
+
+oob = "BRA_1936"
+
+#################
+# Starting Tech #
+#################
+
+set_research_slots = 3
+
+set_technology = { 
+
+	############
+	# Infantry #
+	############
+	
+	# Support Weapons
+	
+	# Infantry Weapons
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	
+	# Infantry Equipment
+	
+	# Motorised
+	
+	# Marines
+	
+	# Mountaineers
+	tech_mountaineers = 1
+
+	######################
+	# Support Battalions #
+	######################
+	
+	tech_support = 1	
+	basic_train = 1 	
+	
+	# Engineer
+	tech_engineers = 1
+	
+	# Recon
+	
+	# Military Police
+	
+	# Maintenance
+	
+	# Logistics
+	
+	# Signal
+	
+	# Field Hospital
+
+	#############
+	# Artillery #
+	#############
+	
+	# Artillery
+	gw_artillery = 1
+	
+	# Anti-Air
+	interwar_antiair = 1
+	
+	# AT
+	interwar_antitank = 1
+	
+	# Mortar
+	
+	#################
+	# Land Doctrine #
+	#################
+	
+	# Grand Battle Plan
+	trench_warfare = 1
+	
+	##################
+	# Naval Doctrine #
+	##################
+	
+	# Trade Interdiction
+	
+	#################
+	# Air Equipment #
+	#################
+	
+	# Interceptor
+	early_fighter = 1
+	fighter1 = 1
+	
+	# Multi-Role
+	
+	# Tactical Bomber
+	early_bomber = 1
+	
+	# Strategic Bomber
+	
+	# Naval Bomber
+	
+	################
+	# Air Doctrine #
+	################
+	
+	# Ground Support
+	
+	################################
+	# Engineering / Secret Weapons #
+	################################
+	
+	# Electrical and Mechanical
+	
+	# Decryption & Encryption
+	
+	############
+	# Industry #
+	############
+	
+	# Machine Tools
+	
+	# Industry [Concentrated vs Dispersed ]
+	
+	# Construction
+	
+	# Synthetics
+}
+
+##############
+# ARMOR TECH #
+##############
+
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+	
+		## Tank Prot. ##
+		gwtank = 1
+		
+		## Light Tank ##
+		basic_light_tank = 1
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = { 
+	
+		## Light Tank ##
+		gwtank_chassis = 1
+		
+	}
+}
+
+##############
+# Naval Tech #
+##############
+
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		#########
+		# Naval #
+		#########
+		
+		# Misc
+		transport = 1
+		
+		# Destroyer
+		early_destroyer = 1
+		
+		# Light Cruiser
+		early_light_cruiser = 1
+		
+		# Heavy Cruiser
+		early_heavy_cruiser = 1
+		
+		# Battleship
+		early_battleship = 1
+		
+		# Battlecruiser
+		
+		# Carrier
+		
+		# Submarine
+		early_submarine = 1
+		
+	}
+	set_naval_oob = "BRA_1936_NON_MTG"
+}
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		#########
+		# Naval #
+		#########
+		
+		# Various Eqpt.
+		basic_depth_charges = 1
+		basic_naval_mines = 1
+		
+		coastal_defense_ships = 1 
+		
+		# Destroyer
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		
+		# Cruiser
+		early_ship_hull_cruiser = 1
+		
+		# Battleship
+		pre_dreadnoughts = 1
+		early_ship_hull_heavy = 1
+		
+		# Carrier
+		
+		# Submarine
+		early_ship_hull_submarine = 1
+		
+		# Torpedo Eqpt.
+		basic_torpedo = 1
+		
+		# Naval Gunnery Eqpt.
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		
+		# Landing Craft
+		mtg_transport = 1
+		
+		# Fire Drills
+		
+		# Bracket Shooting
+		
+	}
+	set_naval_oob = "BRA_1936_MTG"
+}
+
+############
+# Politics #
+############
+
+set_popularities = {
+	fascism = 5
+	neutrality = 70
+	democratic = 15
+	communism = 10
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1934.1.1"
+	election_frequency = 72
+	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Getúlio Vargas"
+	desc = "POLITICS_GETULIO_VARGAS_DESC"
+	picture = "Portrait_Brazil_Getulio_Vargas.dds"
+	expire = "1965.1.1"
+	ideology = neutrality
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Plínio Salgado"
+	desc = "POLITICS_PLINIO_SALGADO_DESC"
+	picture = "Portrait_Brazil_Plinio_Salgado.dds"
+	expire = "1965.1.1"
+	ideology = fascism
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Luís Carlos Prestes"
+	desc = "POLITICS_LUIS_CARLOS_PRESTES_DESC"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+	expire = "1965.1.1"
+	ideology = communism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Armando Sales"
+	desc = "POLITICS_ARMANDO_SALES_DESC"
+	picture = "gfx/leaders/South America/Portrait_South_America_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = democratic
+	traits = {
+		#
+	}
+}
+
+##############
+# COMMANDERS #
+##############
+
+create_corps_commander = {
+	name = "Eurico Gaspar Dutra"
+	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_1.dds"
+	traits = { ranger  }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Mascarenhas de Morais"
+	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_5.dds"
+	traits = {  jungle_rat }
+	skill = 4
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_navy_leader = {
+	name = "Augusto Rademaker"
+	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_navy_3.dds"
+	traits = {  }
+	skill = 3
+}
+
+##############
+# 1944 SETUP #
+##############
+
+1944.1.1 = {
+
+	#################
+	# COUNTRY SETUP #
+	#################
+	
+	add_political_power = 150
+	
+	set_stability = 0.50
+	set_war_support = 0.39
+	
+	########
+	# ARMY #
+	########
+	
+	oob = "BRA_1944"
+	
+	################
+	# IDEAS / LAWS #
+	################
+	
+	add_ideas = {
+		
+		## Ministers ##
+		
+		# FM	
+		
+		# MoS
+		
+		# AM
+		
+		# MoC
+		
+		# Theorist
+		
+		# Army Chief
+		
+		# Air Chief
+		
+		# Navy Chief
+		
+		# High Command
+		
+	
+		## Laws ##
+		
+		# Economy 
+		partial_economic_mobilisation
+		
+		# Conscription
+		limited_conscription
+		
+		# Exports
+		limited_exports
+		
+		# Education
+		average_education_investment
+		
+		# Press
+		state_press
+		
+		# Army Training
+		basic_training
+		
+		## Companies ##
+	}
+	
+	###########
+	# FOCUSES #
+	###########
+	
+	## Generic ##
+	complete_national_focus = army_effort
+	complete_national_focus = equipment_effort
+	complete_national_focus = motorization_effort
+	complete_national_focus = aviation_effort
+	complete_national_focus = naval_effort
+	complete_national_focus = large_navy
+	complete_national_focus = industrial_effort
+	complete_national_focus = construction_effort
+	complete_national_focus = production_effort
+	
+	##############
+	# TECHNOLOGY #
+	##############
+	
+	set_technology = {
+
+		############
+		# Infantry #
+		############
+		
+		# Support Weapons
+		support_weapons = 1 
+		support_weapons2 = 1 
+		
+		# Infantry Weapons
+		infantry_weapons = 1
+		infantry_weapons1 = 1
+		infantry_weapons2 = 1 
+		
+		# Infantry Equipment
+		
+		# Motorised
+		motorised_infantry = 1
+		
+		# Mechanized
+		
+		# Trench Warfare
+		
+		# Marines
+		marines = 1 
+		
+		# Paratroops
+		
+		# Mountaineers
+		tech_mountaineers = 1
+		tech_mountaineers2 = 1 
+		
+		# Special Forces
+
+		######################
+		# Support Battalions #
+		######################
+		
+		tech_support = 1	
+	    basic_train = 1 	
+	
+		# Engineer
+		tech_engineers = 1
+		tech_engineers2 = 1 
+		
+		# Recon
+		tech_recon = 1
+		
+		# Military Police
+		tech_military_police = 1 
+		
+		# Maintenance
+		
+		# Logistics
+		tech_logistics_company = 1 
+		
+		# Signal
+		tech_signal_company = 1 
+		
+		# Field Hospital
+		
+		#############
+		# Artillery #
+		#############
+		
+		# Artillery
+		gw_artillery = 1
+		interwar_artillery = 1
+		artillery1 = 1 
+		
+		# Rocket Artillery
+		
+		# Anti-Air
+		interwar_antiair = 1
+		antiair1 = 1 
+		
+		# Anti-Tank
+		interwar_antitank = 1 
+		antitank1 = 1 
+		
+		#################
+		# Land Doctrine #
+		#################
+		
+		# Trench Warfare
+		
+		trench_warfare = 1 
+		grand_battle_plan = 1 
+		prepared_defense = 1 
+		grand_assault = 1 
+		infantry_offensive = 1 
+		
+		##################
+		# Naval Doctrine #
+		##################
+		
+		# Fleet in Being
+		
+		fleet_in_being = 1 
+		battlefleet_concentration = 1 
+		convoy_sailing = 1 
+		submarine_operations = 1 
+		
+		#################
+		# Air Equipment #
+		#################
+		
+		# Interceptor
+		early_fighter = 1
+		fighter1 = 1
+		fighter2 = 1 
+		
+		# Heavy Fighter
+		
+		# Multi-Role
+		
+		# Tactical Bomber
+		early_bomber = 1
+		tactical_bomber1 = 1
+		
+		# Strategic Bomber
+		
+		# Naval Bomber
+		
+		# Carrier Fighter
+		
+		# Carrier CAS
+		
+		# Carrier Bomber
+		
+		################
+		# Air Doctrine #
+		################
+		
+		# Force Rotation
+		
+		force_rotation = 1 
+		fighter_baiting = 1 
+		low_echelon_support = 1 
+		
+		
+		################################
+		# Engineering / Secret Weapons #
+		################################
+		
+		# Radio
+		radio = 1 
+		
+		# Electrical and Mechanical
+		electronic_mechanical_engineering = 1
+		
+		# Decryption & Encryption
+		basic_encryption = 1 
+		improved_encryption = 1 
+		
+		# Rocketry
+		
+		# Jet Engine
+		
+		# Nuclear Research
+		
+		############
+		# Industry #
+		############
+		
+		# Machine Tools
+		basic_machine_tools = 1 
+		improved_machine_tools = 1 
+		
+		# Assembly
+		
+		# Industry [Concentrated vs Dispersed]
+		concentrated_industry = 1 
+		concentrated_industry2 = 1 
+		concentrated_industry3 = 1 
+		
+		# Construction
+		construction1 = 1 
+		construction2 = 1
+		
+		# Excavation
+		excavation1 = 1 
+		excavation2 = 1 
+		
+		# Synthetics
+	}
+	
+	##############
+	# ARMOR TECH #
+	##############
+
+	if = {
+		limit = {
+			NOT = { has_dlc = "No Step Back" }
+		}
+		set_technology = {
+		
+			## Prot. Tank ##
+			gwtank = 1
+		
+			## Light Tank ##
+			basic_light_tank = 1
+			basic_light_td = 1 
+			basic_light_art = 1 
+			basic_light_spaa = 1 
+		}
+	}
+
+	if = {
+		limit = {
+			has_dlc = "No Step Back"
+		}
+		set_technology = { 
+		
+			## Light Tank ##
+			gwtank_chassis = 1
+			basic_light_tank_chassis = 1
+			
+			## Armor ##
+			armor_tech_1 = 1 
+			
+			## Engine ##
+			engine_tech_1 = 1 
+		}
+	}
+	
+	##############
+	# Naval Tech #
+	##############
+
+	if = {
+		limit = {
+			not = { has_dlc = "Man the Guns" }
+		}
+		set_technology = {
+			#########
+			# Naval #
+			#########
+			
+			# Misc
+			transport = 1
+			
+			# Destroyer
+			early_destroyer = 1
+			basic_destroyer = 1
+			
+			# Light Cruiser
+			early_light_cruiser = 1
+			basic_light_cruiser = 1
+			
+			# Heavy Cruiser
+			early_heavy_cruiser = 1
+			basic_heavy_cruiser = 1
+			
+			# Battleship
+			early_battleship = 1
+			basic_battleship = 1
+			
+			# Battlecruiser
+			
+			# Carrier
+			
+			# Submarine
+			early_submarine = 1
+			basic_submarine = 1
+			
+		}
+		set_naval_oob = "BRA_1944_NON_MTG"
+	}
+
+	if = {
+		limit = {
+			has_dlc = "Man the Guns"
+		}
+		set_technology = {
+			#########
+			# Naval #
+			#########
+			
+			# Various Eqpt.
+			degaussing = 1 
+			smoke_generator = 1 
+			
+			# Sonar
+			sonar = 1
+			
+			# Depth Charge
+			basic_depth_charges = 1
+			improved_depth_charges = 1 
+			
+			# Mines
+			basic_naval_mines = 1
+			improved_naval_mines = 1 
+			
+			# Damage Control
+			damage_control_1 = 1 
+
+			# Destroyer
+			early_ship_hull_light = 1
+			basic_ship_hull_light = 1
+			
+			# Cruiser
+			early_ship_hull_cruiser = 1
+			basic_ship_hull_cruiser = 1
+			
+			basic_cruiser_armor_scheme = 1
+			
+			# Battleship
+			pre_dreadnoughts = 1
+			early_ship_hull_heavy = 1
+			basic_ship_hull_heavy = 1
+			
+			basic_heavy_armor_scheme = 1 
+			
+			# Carrier
+			
+			# Submarine
+			early_ship_hull_submarine = 1
+			basic_ship_hull_submarine = 1
+			
+			# Torpedo Eqpt.
+			basic_torpedo = 1
+			
+			# Naval Gunnery Eqpt.
+			basic_light_shell = 1 
+			improved_light_shell = 1 
+			basic_medium_shell = 1 
+			improved_medium_shell = 1 
+			basic_heavy_shell = 1 
+			improved_medium_shell = 1 
+			basic_battery = 1
+			basic_light_battery = 1
+			basic_medium_battery = 1
+			basic_heavy_battery = 1
+			
+			# Landing Craft
+			mtg_transport = 1
+			mtg_landing_craft = 1 
+			
+			# Fire Drills
+	
+			
+			# Second Battery Eqpt.
+			basic_secondary_battery = 1
+			improved_secondary_battery = 1
+			
+			# Bracket Shooting
+			
+			# Fire Control
+			basic_fire_control_system = 1 
+			improved_fire_control_system = 1 
+			
+		}
+		set_naval_oob = "BRA_1944_MTG"
+	}
+}
+
+
+#################
+# SHIP VARIANTS #
+#################
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	create_equipment_variant = {
+		name = "Minas Geras Class"
+		type = ship_hull_heavy_1
+		name_group = BRA_BB_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_bb_1
+			front_1_custom_slot = empty
+			mid_1_custom_slot = ship_secondaries_1
+			mid_2_custom_slot = ship_secondaries_1
+			rear_1_custom_slot = ship_heavy_battery_1
+		}
+	}
+	create_equipment_variant = {
+		name = "Bahia Class"
+		type = ship_hull_cruiser_1
+		name_group = BRA_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = ship_light_battery_1
+			rear_1_custom_slot = empty
+		}
+	}
+	create_equipment_variant = {
+		name = "Para Class"
+		type = ship_hull_light_1
+		name_group = BRA_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Humaytá Class"
+		type = ship_hull_submarine_2
+		name_group = BRA_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_2
+			rear_1_custom_slot = ship_mine_layer_sub
+		}
+	}
+}
+
+# 1939 Start #
+1939.1.1 = {
+	if = {
+		limit = {
+			has_dlc = "Man the Guns"
+		}
+		create_equipment_variant = {
+			name = "Tupi Class"
+			type = ship_hull_submarine_2
+			name_group = BRA_SS_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_torpedo_slot = ship_torpedo_sub_1
+				fixed_ship_engine_slot = sub_ship_engine_1
+				rear_1_custom_slot = empty
+			}
+		}
+	}
+}

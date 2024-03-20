@@ -1,0 +1,45 @@
+state= {
+	id=99
+	name="STATE_99"
+	manpower = 1672235
+	resources={
+		aluminium=6 # was: 10
+	}
+	
+	state_category = town
+
+	history=
+	{
+		owner = DEN
+		victory_points = {
+			6364 3 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 3
+			air_base = 2
+			394 = {
+				naval_base = 3
+			}
+			6364 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = DEN
+		1941.1.1 = {
+			owner = DEN
+			controller = GER
+			buildings = {
+				air_base = 4
+				anti_air_building = 1 
+				arms_factory = 1
+				industrial_complex = 0 
+			}
+		}
+	}
+	provinces = {
+		316 394 399 3206 3277 3341 6235 6364 13259 13262 13263
+	}
+
+	local_supplies = 0.0 
+}

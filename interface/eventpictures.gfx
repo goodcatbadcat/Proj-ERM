@@ -1,0 +1,182 @@
+spriteTypes = {
+
+
+    #######################
+    ## WORLD NEWS EVENTS ##
+    #######################
+
+    spriteType = {
+        name = "GFX_news_event_operation_panzerfaust"
+        texturefile = "gfx/event_news_pictures/news_event_operation_panzerfaust.dds"
+    }
+    spriteType = {
+        name = "GFX_news_event_operation_margarethe_ii"
+        texturefile = "gfx/event_news_pictures/news_event_operation_margarethe_ii.dds"
+    }
+    spriteType = {
+        name = "GFX_news_event_july_20_plot"
+        texturefile = "gfx/event_news_pictures/news_event_july_20_plot.dds"
+    }
+    spriteType = {
+        name = "GFX_news_event_risto_ryti"
+        texturefile = "gfx/event_news_pictures/news_event_risto_ryti.dds"
+    }
+    spriteType = {
+        name = "GFX_news_event_ryti_ribbentrop"
+        texturefile = "gfx/event_news_pictures/news_event_ryti_ribbentrop.dds"
+    }
+    spriteType = {
+        name = "GFX_news_event_SOV_FIN_talks_fail"
+        texturefile = "gfx/event_news_pictures/news_event_SOV_FIN_talks_fail.dds"
+    }
+    spriteType = {
+        name = "GFX_news_event_moscow_armistice"
+        texturefile = "gfx/event_news_pictures/news_event_moscow_armistice.dds"
+    }
+    spriteType = {
+        name = "GFX_news_event_lappland_war_over"
+        texturefile = "gfx/event_news_pictures/news_event_lappland_war_over.dds"
+    }
+    spriteType = {
+        name = "GFX_news_event_lappland_war"
+        texturefile = "gfx/event_news_pictures/news_event_lappland_war.dds"
+    }
+    spriteType = {
+        name = "GFX_news_event_lappland_evac_slow"
+        texturefile = "gfx/event_news_pictures/news_event_lappland_evac_slow.dds"
+    }
+    spriteType = {
+        name = "GFX_news_event_lappland_evac_quick"
+        texturefile = "gfx/event_news_pictures/news_event_lappland_evac_quick.dds"
+    }
+    spriteType = {
+        name = "GFX_news_event_HUN_surrender_SOV"
+        texturefile = "gfx/event_news_pictures/news_event_HUN_surrender_SOV.dds"
+    }
+    spriteType = {
+        name = "GFX_news_event_romania_coup_1944"
+        texturefile = "gfx/event_news_pictures/news_event_romania_coup_1944.dds"
+    }
+    spriteType = {
+        name = "GFX_news_event_sweden"
+        texturefile = "gfx/event_news_pictures/news_event_sweden.dds"
+    }
+    spriteType = {
+        name = "GFX_news_event_guderian_coup"
+        texturefile = "gfx/event_news_pictures/news_event_guderian_coup.dds"
+    }
+    spriteType = {
+        name = "GFX_news_event_valkyrie_coup_success"
+        texturefile = "gfx/event_news_pictures/news_event_valkyrie_coup_success.dds"
+    }
+    spriteType = {
+        name = "GFX_news_event_first_man_space"
+        texturefile = "gfx/event_news_pictures/news_event_first_man_space.dds"
+    }
+    spriteType = {
+        name = "GFX_"
+        texturefile = "gfx/event_news_pictures/.dds"
+    }
+    spriteType = {
+        name = "GFX_"
+        texturefile = "gfx/event_news_pictures/.dds"
+    }
+    spriteType = {
+        name = "GFX_"
+        texturefile = "gfx/event_news_pictures/.dds"
+    }
+    spriteType = {
+        name = "GFX_"
+        texturefile = "gfx/event_news_pictures/.dds"
+    }
+    spriteType = {
+        name = "GFX_"
+        texturefile = "gfx/event_news_pictures/.dds"
+    }
+    spriteType = {
+        name = "GFX_"
+        texturefile = "gfx/event_news_pictures/.dds"
+    }
+    spriteType = {
+        name = "GFX_"
+        texturefile = "gfx/event_news_pictures/.dds"
+    }
+    spriteType = {
+        name = "GFX_"
+        texturefile = "gfx/event_news_pictures/.dds"
+    }
+    spriteType = {
+        name = "GFX_"
+        texturefile = "gfx/event_news_pictures/.dds"
+    }
+    spriteType = {
+        name = "GFX_"
+        texturefile = "gfx/event_news_pictures/.dds"
+    }
+    spriteType = {
+        name = "GFX_"
+        texturefile = "gfx/event_news_pictures/.dds"
+    }
+    spriteType = {
+        name = "GFX_"
+        texturefile = "gfx/event_news_pictures/.dds"
+    }
+    spriteType = {
+        name = "GFX_"
+        texturefile = "gfx/event_news_pictures/.dds"
+    }
+    spriteType = {
+        name = "GFX_"
+        texturefile = "gfx/event_news_pictures/.dds"
+    }
+    spriteType = {
+        name = "GFX_"
+        texturefile = "gfx/event_news_pictures/.dds"
+    }
+    spriteType = {
+        name = "GFX_"
+        texturefile = "gfx/event_news_pictures/.dds"
+    }
+    spriteType = {
+        name = "GFX_"
+        texturefile = "gfx/event_news_pictures/.dds"
+    }
+    spriteType = {
+        name = "GFX_"
+        texturefile = "gfx/event_news_pictures/.dds"
+    }
+    spriteType = {
+        name = "GFX_"
+        texturefile = "gfx/event_news_pictures/.dds"
+    }
+    spriteType = {
+        name = "GFX_"
+        texturefile = "gfx/event_news_pictures/.dds"
+    }
+    spriteType = {
+        name = "GFX_"
+        texturefile = "gfx/event_news_pictures/.dds"
+    }
+    spriteType = {
+        name = "GFX_"
+        texturefile = "gfx/event_news_pictures/.dds"
+    }
+    spriteType = {
+        name = "GFX_"
+        texturefile = "gfx/event_news_pictures/.dds"
+    }
+    spriteType = {
+        name = "GFX_"
+        texturefile = "gfx/event_news_pictures/.dds"
+    }
+    spriteType = {
+        name = "GFX_"
+        texturefile = "gfx/event_news_pictures/.dds"
+    }
+    spriteType = {
+        name = "GFX_"
+        texturefile = "gfx/event_news_pictures/.dds"
+    }
+}
+
+    

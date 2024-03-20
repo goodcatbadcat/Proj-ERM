@@ -1,0 +1,418 @@
+﻿####################
+# TANNU TUVA SETUP #
+####################
+
+capital = 329 # Kyzyl
+
+set_stability = 0.65
+set_war_support = 0.25
+
+add_ideas = {
+
+	## LAWS ##
+	limited_conscription
+}
+
+########
+# ARMY #
+########
+
+oob = "TAN_1936"
+
+#################
+# Starting Tech #
+#################
+
+set_research_slots = 1
+
+set_technology = { 
+
+	############
+	# Infantry #
+	############
+	
+	# Support Weapons
+	
+	# Infantry Weapons
+	infantry_weapons = 1
+	
+	# Infantry Equipment
+	
+	# Motorised
+	
+	# Marines
+	
+	# Mountaineers
+	tech_mountaineers = 1
+
+	######################
+	# Support Battalions #
+	######################
+	
+	tech_support = 1	
+	basic_train = 1 	
+	
+	# Engineer
+	
+	# Recon
+	
+	# Military Police
+	
+	# Maintenance
+	
+	# Logistics
+	
+	# Signal
+	
+	# Field Hospital
+	
+	#############
+	# Artillery #
+	#############
+	
+	# Artillery
+	gw_artillery = 1
+	
+	# Howitzer
+	
+	# Anti-Air
+	
+	# AT
+	
+	# Mortar
+	
+	#################
+	# Land Doctrine #
+	#################
+	
+	# Grand Battle Plan
+	trench_warfare = 1
+	
+	##################
+	# Naval Doctrine #
+	##################
+	
+	# Trade Interdiction
+	
+	#################
+	# Air Equipment #
+	#################
+	
+	# Interceptor
+	early_fighter = 1
+	
+	# Multi-Role
+	
+	# Tactical Bomber
+	
+	# Strategic Bomber
+	
+	# Naval Bomber
+	
+	################
+	# Air Doctrine #
+	################
+	
+	# Ground Support
+	
+	################################
+	# Engineering / Secret Weapons #
+	################################
+	
+	# Electrical and Mechanical
+	
+	# Decryption & Encryption
+	
+	############
+	# Industry #
+	############
+	
+	# Machine Tools
+	
+	# Industry [Concentrated vs Dispersed ]
+	
+	# Construction
+	
+	# Synthetics
+}
+
+############
+# Politics #
+############
+
+set_popularities = {
+	fascism = 0
+	neutrality = 0
+	democratic = 0
+	communism = 100
+}
+
+set_politics = {
+	ruling_party = communism
+	last_election = "1932.1.1"
+	election_frequency = 72
+	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Salchak Toka"
+	desc = "POLITICS_SALCHAK_TOKA_DESC"
+	picture = "gfx/leaders/TAN/portrait_tan_salchak_toka.dds"
+	expire = "1965.1.1"
+	ideology = communism
+	traits = {
+		#
+	}
+}
+
+#############
+# YEAR 1944 #
+#############
+
+1944.1.1 = {
+
+	#################
+	# COUNTRY SETUP #
+	#################
+	
+	set_fuel_ratio = 0.85
+	add_political_power = 150
+	set_stability = 0.80
+	set_war_support = 0.50
+
+	########
+	# ARMY #
+	########
+	
+	oob = "TAN_1944"
+	
+	##############
+	# Ideas/Laws #
+	##############
+	
+	add_ideas = {
+	
+		## Ministers ##
+		
+		# FM
+		
+		# MoS
+		
+		# AM
+		
+		# MoC
+		
+		# Theorist
+		
+		# Army Chief
+		
+		# Air Chief
+		
+		# Navy Chief
+		
+		# High Command 
+		
+		## Laws ##
+			
+		# Economy 
+		war_economy
+		
+		# Conscription
+		extensive_conscription
+		
+		# Exports
+		closed_economy
+		
+		# Education
+		average_education_investment
+		
+		# Press
+		propaganda_press
+		
+		# Army Training
+		basic_training
+		
+		# Companies 
+		
+	}
+
+	###########
+	# FOCUSES #
+	###########
+	
+	## Generic ##
+	complete_national_focus = army_effort
+	complete_national_focus = equipment_effort
+	complete_national_focus = motorization_effort
+	complete_national_focus = aviation_effort
+	complete_national_focus = construction_effort_2
+	complete_national_focus = production_effort_2
+	complete_national_focus = infrastructure_effort
+	complete_national_focus = industrial_effort
+	complete_national_focus = construction_effort
+	complete_national_focus = production_effort
+	
+	##############
+	# TECHNOLOGY #
+	##############
+	
+	set_technology = {
+
+		############
+		# Infantry #
+		############
+		
+		# Support Weapons
+		support_weapons = 1 
+		
+		# Infantry Weapons
+		infantry_weapons = 1
+		infantry_weapons1 = 1
+		
+		# Infantry Equipment
+		
+		# Motorised
+		
+		# Mechanized
+		
+		# Trench Warfare
+		
+		# Marines
+		
+		# Paratroops
+		
+		# Mountaineers
+		tech_mountaineers = 1
+		
+		# Special Forces
+
+		######################
+		# Support Battalions #
+		######################
+		
+		tech_support = 1	
+	    basic_train = 1 	
+	
+		# Engineer
+		
+		# Recon
+		tech_recon = 1
+		
+		# Military Police
+		
+		# Maintenance
+		
+		# Logistics
+		
+		# Signal
+		
+		# Field Hospital
+		
+		#############
+		# Artillery #
+		#############
+		
+		# Artillery
+		gw_artillery = 1
+		interwar_artillery = 1
+		
+		# Rocket Artillery
+		
+		# Anti-Air
+		interwar_antiair = 1
+		
+		# Anti-Tank
+		interwar_antitank = 1 
+		
+		#################
+		# Land Doctrine #
+		#################
+		
+		# Trench Warfare
+		
+		trench_warfare = 1 
+		grand_battle_plan = 1 
+		prepared_defense = 1 
+		grand_assault = 1 
+		
+		##################
+		# Naval Doctrine #
+		##################
+
+		#################
+		# Air Equipment #
+		#################
+		
+		# Interceptor
+		early_fighter = 1
+		fighter1 = 1
+		
+		# Heavy Fighter
+		
+		# Multi-Role
+		
+		# Tactical Bomber
+		early_bomber = 1
+		
+		# Strategic Bomber
+		
+		# Naval Bomber
+		
+		# Carrier Fighter
+		
+		# Carrier CAS
+		
+		# Carrier Bomber
+		
+		################
+		# Air Doctrine #
+		################
+		
+		# Air Supererurity
+		
+		air_superiority = 1 
+		infrastructure_destruction = 1 
+		home_defence = 1 
+		
+		################################
+		# Engineering / Secret Weapons #
+		################################
+		
+		# Radio
+		
+		# Electrical and Mechanical
+		
+		# Decryption & Encryption
+		
+		# Rocketry
+		
+		# Jet Engine
+		
+		# Nuclear Research
+		
+		############
+		# Industry #
+		############
+		
+		# Machine Tools
+		basic_machine_tools = 1 
+		
+		# Assembly
+		
+		# Industry [Concentrated vs Dispersed]
+		dispersed_industry = 1 
+		dispersed_industry2 = 1 
+		dispersed_industry3 = 1 
+		
+		# Construction
+		construction1 = 1 
+		construction2 = 1
+		
+		# Excavation
+		excavation1 = 1 
+		excavation2 = 1 
+		
+		# Synthetics
+	}
+}
+	

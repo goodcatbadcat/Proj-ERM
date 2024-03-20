@@ -1,0 +1,231 @@
+
+# Special Thanks to Doruk for the coding example. Their Money Mod is here:https://steamcommunity.com/sharedfiles/filedetails/?id=1345963675
+
+guiTypes = {
+	containerWindowType = {
+		name = "money_equipment_container"
+		position = {x=280 y=100}
+		size = { width=1108 height=720 }
+
+		fade_time = 300
+		fade_type = linear
+		moveable = yes
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_browser_bg"
+		}
+
+		instantTextboxType = {
+			name = "money_headline"
+			position = {x=19 y=15}
+			font = "hoi_36header"
+			text = "Purchase Options"
+			maxWidth = 500
+			maxHeight = 23
+			format = left
+		}
+		
+		iconType = {
+			name = "text_back" 
+			position = {x=29 y=64}	
+			spriteType = "GFX_generic_bg_307x113"
+		}
+	}
+		
+	containerWindowType = {
+		name = "money_container"
+		position = { x = 130 y = 40 } #990
+		instantTextBoxType = {
+			name ="money_text"
+			position = { x= -18 y = 20 }
+			font = "hoi_20b"
+			text = "MONEY_MAIN"
+			format = left
+			maxWidth = 188
+			maxHeight = 24
+			fixedsize = yes
+			
+			#pdx_tooltip = "MONEY_TOOLTIP" 
+		}
+		
+		iconType = {
+			name ="oil_icon"
+			spriteType = "GFX_strategic_resource_oil_small"
+			position = { x= -25 y = -39 }
+		}
+
+		instantTextBoxType = {
+			name ="oil_text"
+			position = { x = -3 y = -30  }
+			font = "Arial12"
+			text = "OIL_TEXT"
+			format = left
+			maxWidth = 20
+			maxHeight = 20
+			fixedsize = yes
+			
+			pdx_tooltip = "OIL_TEXT_TIP" 
+		}
+
+		iconType = {
+			name ="aluminium_icon"
+			spriteType = "GFX_strategic_resource_aluminium_small"
+			position = { x= 13 y = -40 }
+		}		
+
+		instantTextBoxType = {
+			name ="ALUMINIUM_TEXT"
+			position = { x = 42 y = -30 }
+			font = "Arial12"
+			text = "ALUMINIUM_TEXT"
+			format = left
+			maxWidth = 20
+			maxHeight = 20
+			fixedsize = yes
+			
+			pdx_tooltip = "ALUMINIUM_TEXT_TIP" 
+		}	
+
+		iconType = {
+			name ="rubber_icon"
+			spriteType = "GFX_strategic_resource_rubber_small"
+			position = { x= 59 y = -40 }
+		}
+
+		instantTextBoxType = {
+			name ="RUBBER_TEXT"
+			position = { x = 88 y = -30 }
+			font = "Arial12"
+			text = "RUBBER_TEXT"
+			format = left
+			maxWidth = 20
+			maxHeight = 20
+			fixedsize = yes
+			
+			pdx_tooltip = "RUBBER_TEXT_TIP" 
+		}
+
+		iconType = {
+			name ="tungsten_icon"
+			spriteType = "GFX_strategic_resource_tungsten_small"
+			position = { x= 100 y = -40 }
+		}		
+
+		instantTextBoxType = {
+			name ="TUNGSTEN_TEXT"
+			position = { x = 130 y = -30 }
+			font = "Arial12"
+			text = "TUNGSTEN_TEXT"
+			format = left
+			maxWidth = 20  
+			maxHeight = 20
+			fixedsize = yes
+			
+			pdx_tooltip = "TUNGSTEN_TEXT_TIP" 
+		}		
+		
+		iconType = {
+			name ="steel_icon"
+			spriteType = "GFX_strategic_resource_steel_small"
+			position = { x= 146 y = -36 }
+		}		
+		
+		instantTextBoxType = {
+			name ="steel_text"
+			position = { x = 172 y = -30 }
+			font = "Arial12"
+			text = "STEEL_TEXT"
+			format = left
+			maxWidth = 20
+			maxHeight = 20
+			fixedsize = yes
+			
+			pdx_tooltip = "STEEL_TEXT_TIP" 
+		}	
+		
+		iconType = {
+			name ="chrome_icon"
+			spriteType = "GFX_strategic_resource_chrome_small"
+			position = { x= 187 y = -40 }
+		}		
+
+		instantTextBoxType = {
+			name ="CHROMIUM_TEXT"
+			position = { x = 216 y = -30 }
+			font = "Arial12"
+			text = "CHROMIUM_TEXT"
+			format = left
+			maxWidth = 20
+			maxHeight = 20
+			fixedsize = yes
+			
+			pdx_tooltip = "CHROMIUM_TEXT_TIP" 
+		}
+
+		iconType = {
+			name ="grain_icon"
+			spriteType = "GFX_strategic_resource_grain_small"
+			position = { x= 225 y = -40 }
+		}		
+
+		instantTextBoxType = {
+			name ="GRAIN_TEXT"
+			position = { x = 253 y = -30 }
+			font = "Arial12"
+			text = "GRAIN_TEXT"
+			format = left
+			maxWidth = 20
+			maxHeight = 20
+			fixedsize = yes
+			
+			pdx_tooltip = "GRAIN_TEXT_TIP" 
+		}
+
+		iconType = {
+			name ="copper_icon"
+			spriteType = "GFX_strategic_resource_copper_small"
+			position = { x= 260 y = -40 }
+		}		
+
+		instantTextBoxType = {
+			name ="COPPER_TEXT"
+			position = { x = 285 y = -30 }
+			font = "Arial12"
+			text = "COPPER_TEXT"
+			format = left
+			maxWidth = 20
+			maxHeight = 20
+			fixedsize = yes
+			
+			pdx_tooltip = "COPPER_TEXT_TIP" 
+		}
+
+		instantTextBoxType = {
+			name ="IC_TEXT"
+			position = { x = 374 y = -30 }
+			font = "Arial12"
+			text = "IC_TEXT"
+			format = left
+			maxWidth = 80
+			maxHeight = 20
+			fixedsize = yes
+			
+			#pdx_tooltip = "CHROMIUM_TEXT_TIP" 
+		}
+
+		instantTextBoxType = {
+			name ="Consumer_TEXT"
+			position = { x = 545 y = -30 }
+			font = "Arial12"
+			text = "Consumer_TEXT"
+			format = left
+			maxWidth = 45
+			maxHeight = 20
+			fixedsize = yes
+			
+			#pdx_tooltip = "CHROMIUM_TEXT_TIP"   
+		}		
+	}
+
+}

@@ -1,0 +1,244 @@
+﻿##############################
+# FINNISH DIVISION TEMPLATES #
+##############################
+
+
+#####################
+# INFANTRY VARIANTS #
+#####################
+
+division_template = {
+	name = "Divisione Fanteria"		# Infantry Division
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		artillery_brigade = { x = 2 y = 0 }
+		artillery_brigade = { x = 2 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		anti_tank = { x = 0 y = 2 }
+		field_hospital = { x = 0 y = 3 }
+	}
+	priority = 100
+}
+
+division_template = {
+	name = "Brigata Fanteria"		# Infantry Brigade
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		artillery_brigade = { x = 1 y = 0 }
+		artillery_brigade = { x = 1 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		anti_tank = { x = 0 y = 2 }
+		field_hospital = { x = 0 y = 3 }
+	}
+	priority = 25
+}
+
+division_template = {
+	name = "Divisione Alpina"		# Mountaineer Division
+
+	regiments = {
+		mountaineer = { x = 0 y = 0 }
+		mountaineer = { x = 0 y = 1 }
+		mountaineer = { x = 0 y = 2 }
+		mountaineer = { x = 1 y = 0 }
+		mountaineer = { x = 1 y = 1 }
+		mountaineer = { x = 1 y = 2 }
+		artillery_brigade = { x = 2 y = 0 }
+		artillery_brigade = { x = 2 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		anti_tank = { x = 0 y = 2 }
+		field_hospital = { x = 0 y = 3 }
+	}
+	priority = 100
+}
+
+## Marine Division ## 
+division_template = {
+	name = "Divisione Marinai" 	
+
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 0 y = 2 }
+		marine = { x = 1 y = 0 }
+		marine = { x = 1 y = 1 }
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 } 
+		engineer = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+		field_hospital = { x = 0 y = 3 } 
+	}
+	priority = 5
+}
+
+## Garrison Troops ##
+division_template = {
+	name = "Guarnigione Brigata"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+	}
+	priority = 0
+}
+
+####################
+# CAVALRY VARIANTS #
+####################
+
+division_template = {
+	name = "Cavalleria Divisione" 		# Cavalry Division
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+		artillery_brigade = { x = 2 y = 0 }
+		artillery_brigade = { x = 2 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		anti_tank = { x = 0 y = 2 }
+		field_hospital = { x = 0 y = 3 }
+	}
+}
+
+######################
+# MOTORIZED VARIANTS #
+######################
+
+division_template = {
+	name = "Motorizzato Divisione"			
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }	
+		artillery_brigade = { x = 3 y = 0 }
+		anti_tank_brigade = { x = 3 y = 1 }
+	}
+	support = {
+       	artillery = { x = 0 y = 0 } 
+		anti_tank = { x = 0 y = 1 }
+		recon = { x = 0 y = 2 }
+		engineer = { x = 0 y = 3 }
+	}
+	priority = 10
+}
+
+###################
+# ORDER OF BATTLE #
+###################
+
+units = {
+
+	#################
+	# ITALIAN FRONT #
+	#################
+	
+	division = {
+		name = "1a Divisione Alpina 'Monterosa'"
+		location = 6973
+		division_template = "Divisione Alpina"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ITA" } }
+		start_experience_factor = 0.65
+		start_equipment_factor = 0.90
+	}
+	division = {
+		name = "2a Divisione 'Littorio'"
+		location = 6926
+		division_template = "Divisione Fanteria"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ITA" } }
+		start_experience_factor = 0.65
+		start_equipment_factor = 0.90
+	}
+	division = {
+		name = "3a Divisione 'San Marco'"
+		location = 910
+		division_template = "Divisione Marinai"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ITA" } }
+		start_experience_factor = 0.65
+		start_equipment_factor = 0.90
+	}
+	division = {
+		name = "4a Divisione 'Italia'"
+		location = 967
+		division_template = "Motorizzato Divisione"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ITA" } }
+		start_experience_factor = 0.65
+		start_equipment_factor = 0.90
+	}
+}
+
+###########
+# AIR OOB #
+###########
+
+air_wings = {
+
+	# Milan #
+	159 = {
+		### 2° Gruppo Caccia "Gigi Tre Osei ###
+		fighter_equipment_3 = {
+			owner = "ITA"
+			amount = 50
+		}	
+		name = "1ª Squadriglia 'Gigi Tre Osei'"
+		##
+		fighter_equipment_2 = {
+			owner = "ITA"
+			amount = 75
+		}	
+		name = "2ª Squadriglia 'Diavoli Rossi'"
+		##
+		fighter_equipment_2 = {
+			owner = "ITA"
+			amount = 75
+		}	
+		name = "3ª Squadriglia 'Diavoli'"
+		##
+	}
+	
+	# Emilia Romagna #
+	161 = {
+		### Gruppo Aerosiluranti Buscaglia Faggioni ###
+		nav_bomber_equipment_1 = {
+			owner = "ITA"
+			amount = 50
+		}
+	}
+}

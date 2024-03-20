@@ -1,0 +1,922 @@
+﻿##################
+# BULGARIA SETUP #
+##################
+
+capital = 48 # Sofia
+
+set_convoys = 5 
+
+########
+# ARMY #
+########
+
+oob = "BUL_1936"
+
+#################
+# Starting Tech #
+#################
+
+set_research_slots = 3
+
+set_technology = { 
+
+	############
+	# Infantry #
+	############
+	
+	# Support Weapons
+	
+	# Infantry Weapons
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	
+	# Infantry Equipment
+	
+	# Motorised
+	
+	# Marines
+	
+	# Mountaineers
+	tech_mountaineers = 1
+
+	######################
+	# Support Battalions #
+	######################
+	
+	tech_support = 1	
+	basic_train = 1 	
+	
+	# Engineer
+	tech_engineers = 1
+	
+	# Recon
+	
+	# Military Police
+	
+	# Maintenance
+	
+	# Logistics
+	
+	# Signal
+	
+	# Field Hospital
+	
+	#############
+	# Artillery #
+	#############
+	
+	# Artillery
+	gw_artillery = 1
+	
+	# Howitzer
+	
+	# Anti-Air
+	interwar_antiair = 1
+	
+	# AT
+	interwar_antitank = 1
+	
+	# Mortar
+	
+	#################
+	# Land Doctrine #
+	#################
+	
+	# Grand Battle Plan
+	trench_warfare = 1
+	
+	##################
+	# Naval Doctrine #
+	##################
+	
+	# Trade Interdiction
+	
+	#################
+	# Air Equipment #
+	#################
+	
+	# Interceptor
+	early_fighter = 1
+	fighter1 = 1
+	
+	# Multi-Role
+	
+	# Tactical Bomber
+	early_bomber = 1
+	
+	# Strategic Bomber
+	
+	# Naval Bomber
+	
+	################
+	# Air Doctrine #
+	################
+	
+	# Air Superiority
+	air_superiority = 1 
+	
+	################################
+	# Engineering / Secret Weapons #
+	################################
+	
+	# Electrical and Mechanical
+	
+	# Decryption & Encryption
+	
+	############
+	# Industry #
+	############
+	
+	# Machine Tools
+	
+	# Industry [Concentrated vs Dispersed ]
+	
+	# Construction
+	
+	# Synthetics
+}
+
+##############
+# ARMOR TECH #
+##############
+
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+	
+		## Tank Prot. ##
+		gwtank = 1
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = { 
+	
+		## Light Tank ##
+		gwtank_chassis = 1
+		
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	set_technology = {
+		armored_car1 = 1
+	}
+}
+
+##############
+# Naval Tech #
+##############
+
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		#########
+		# Naval #
+		#########
+		
+		# Misc
+		transport = 1
+		
+		# Destroyer
+		early_destroyer = 1
+		
+		# Light Cruiser
+		
+		# Heavy Cruiser
+		
+		# Battleship
+		
+		# Battlecruiser
+		
+		# Carrier
+		
+		# Submarine
+		early_submarine = 1
+		
+	}
+	set_naval_oob = "BUL_1936_NON_MTG"
+}
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		#########
+		# Naval #
+		#########
+		
+		# Various Eqpt.
+		
+		# Destroyer
+		early_ship_hull_light = 1
+		
+		# Cruiser
+		
+		# Battleship
+		
+		# Carrier
+		
+		# Submarine
+		early_ship_hull_submarine = 1
+		
+		# Torpedo Eqpt.
+		basic_torpedo = 1
+		
+		# Naval Gunnery Eqpt.
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		
+		# Landing Craft
+		mtg_transport = 1
+		
+		# Fire Drills
+		
+		# Bracket Shooting
+		
+	}
+	set_naval_oob = "BUL_1936_MTG"
+}
+
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	set_technology = {
+		armored_car1 = 1
+	}
+}
+
+
+if = { #DLC
+	limit = {
+		has_dlc = "Battle for the Bosporus"
+	}
+
+
+	########################
+	# DLC INTERNAL AFFAIRS #
+	########################
+	
+	set_country_flag = BUL_factions_unlocked_flag
+	set_variable = { BUL_zveno_loyalty = 15 }
+	set_variable = { BUL_zveno_popularity = 50 }
+	set_variable = { BUL_bs_loyalty = 25 }
+	set_variable = { BUL_bs_popularity = 60 }
+	set_variable = { BUL_bzns_loyalty = 30 }
+	set_variable = { BUL_bzns_popularity = 70 }
+	set_variable = { BUL_nsm_loyalty = 60 }
+	set_variable = { BUL_nsm_popularity = 40 }
+	set_variable = { BUL_faction_interaction_cost_standard = 20 }
+	set_variable = { BUL_broad_socialist_opression_cost_standard = 20 }
+	set_variable = { BUL_faction_days_remove_very_low = 7 } #Allow Speech, Discredit, Repress
+	set_variable = { BUL_faction_days_remove_low = 14 } #Joint Act, Ban Media, Anti-faction Speech
+	set_variable = { BUL_faction_days_remove_medium = 21 } #Bolster Zveno, Imprison leaders
+	set_variable = { BUL_faction_days_remove_high = 30 } #Legalize, Fund, Appoint, Raid, Destroy
+	set_variable = { BUL_faction_days_remove_very_high = 60 } #Integrate
+	set_variable = { BUL_faction_days_reenable_low = 7 } #Allow Speech, Discredit
+	set_variable = { BUL_faction_days_reenable_medium = 14 } #Joint Act, Anti-faction Speech
+	set_variable = { BUL_faction_days_reenable_high = 60 } #Fund
+	set_variable = { BUL_faction_days_reenable_very_high = 120 } #Raid
+	set_variable = { BUL_faction_low_increase = 5 }
+	set_variable = { BUL_faction_medium_increase = 10 }
+	set_variable = { BUL_faction_high_increase = 15 }
+	set_variable = { BUL_faction_low_decrease = -5 }
+	set_variable = { BUL_faction_medium_decrease = -10 }
+	set_variable = { BUL_faction_high_decrease = -15 }
+	set_variable = { BUL_zveno_coup_timer_delay_low = 7 } #Time to be added to zveno coup timer when completing certain internal faction decisions related to the Zveno
+	set_variable = { BUL_zveno_coup_timer_delay_medium = 15 } #Time to be added to zveno coup timer when completing certain internal faction decisions related to the Zveno
+	set_variable = { BUL_zveno_coup_timer_delay_high = 30 } #Time to be added to zveno coup timer when completing certain internal faction decisions related to the Zveno
+	set_variable = { BUL_ff_missions_base_days_to_add = 60 } #Base amount of days to be added to Impending FF Coup mission
+	set_variable = { BUL_ff_missions_popularity_factor = 1 } #More popularity means more days to add
+	set_variable = { BUL_ff_missions_loyalty_factor = 1 } #More loyalty means less days to add
+	set_variable = { BUL_ff_preventive_actions_against_coup = 0 } #This will be used to reduce the chances of the FF staging the coup after they have planned it
+	set_variable = { BUL_ff_preventive_actions_base_value = 5 } #The value added to the variable above every time a decision to prevent the coup is taken
+	set_variable = { BUL_ff_preventive_actions_cap_value = 50 } #This is a cap to the player's ability to prevent the coup
+	set_variable = { BUL_purchase_equipment_cost = 25 }
+	set_variable = { BUL_foreign_military_agreements_cost = 50 }
+	set_variable = { BUL_german_civ_industries_cost = 75 }
+	set_variable = { BUL_british_civ_industries_cost = 75 }
+	set_variable = { BUL_soviet_civ_industries_cost = 75 }
+	set_variable = { BUL_foreign_industry_consumer_goods_modifier = 0 } #Used by Foreign Industry Dynamic Modifier
+	set_variable = { BUL_foreign_industry_production_efficiency_modifier = -0.05 } #Used by Foreign Industry Dynamic Modifier
+	set_variable = { BUL_foreign_industry_construction_speed_modifier = -0.1 } #Used by Foreign Industry Dynamic Modifier
+	set_variable = { BUL_german_industrial_investments = 0 }
+	set_variable = { BUL_british_industrial_investments = 0 }
+	set_variable = { BUL_soviet_industrial_investments = 0 }
+	set_variable = { BUL_industrial_investments_basic_cap = 3 }
+	set_variable = { BUL_industrial_investments_medium_cap = 5 }
+	set_variable = { BUL_industrial_investments_max_cap = 10 }
+	#IMRO
+	set_variable = { BUL_imro_garrisons_mp_value = 5000 }
+	#Purchase foreign equipment
+	set_variable = { BUL_quantity_purchased_infantry_equipment = 1000 }
+	set_variable = { BUL_quantity_purchased_artillery = 100 }
+	set_variable = { BUL_quantity_purchased_motorized = 100 }
+	set_variable = { BUL_quantity_purchased_mechanized = 50 }
+	set_variable = { BUL_quantity_purchased_armored_car = 50 }
+	set_variable = { BUL_quantity_purchased_light_armor = 40 }
+	set_variable = { BUL_quantity_purchased_medium_armor = 20 }
+	set_variable = { BUL_quantity_purchased_heavy_armor = 10 }
+	set_variable = { BUL_quantity_purchased_fighter = 40 }
+	set_variable = { BUL_quantity_purchased_naval_bomber = 30 }
+	set_variable = { BUL_quantity_purchased_tactical_bomber = 20 }
+	#Plot Against Boris
+	set_variable = { BUL_regicide_execution_time = 90 }
+	#Free Balkan States dynamic modifier (NS)
+	set_variable = { BUL_our_duty_in_the_balkans_consumer_goods_modifier = -0.01 }
+	set_variable = { BUL_our_duty_in_the_balkans_stability_modifier = 0.05 }
+	#Monthly extra chance of Boris dieing of "natural causes" (increased by 5 each month from 1943.1.1)
+	set_variable = { BUL_tsar_boris_death_monthly_probability_factor = 0 }
+
+	randomize_variable = {
+		var = BUL_tsars_destination
+		distribution = uniform
+		min = 2
+		max = 13
+	}
+	round_variable = BUL_tsars_destination
+	randomize_variable = {
+		var = BUL_march_destination
+		distribution = uniform
+		min = 2
+		max = 13
+	}
+	round_variable = BUL_march_destination
+	48 = { set_state_flag = BUL_initial_bulgarian_state_flag }
+	212 = { set_state_flag = BUL_initial_bulgarian_state_flag }
+	801 = { set_state_flag = BUL_initial_bulgarian_state_flag }
+	211  = { set_state_flag = BUL_initial_bulgarian_state_flag }
+	77 = { set_state_flag = BUL_historical_bulgarian_claim_flag }
+	803 = { set_state_flag = BUL_historical_bulgarian_claim_flag }
+	106 = { set_state_flag = BUL_historical_bulgarian_claim_flag }
+	731 = { set_state_flag = BUL_historical_bulgarian_claim_flag }
+	184 = { set_state_flag = BUL_historical_bulgarian_claim_flag }
+
+	#International Relations
+	add_opinion_modifier = { 
+		target = GRE
+		modifier = BFTB_incongruous_neighbors
+	}
+	add_opinion_modifier = { 
+		target = ROM
+		modifier = BFTB_incongruous_neighbors
+	}
+	add_opinion_modifier = { 
+		target = TUR
+		modifier = BFTB_incongruous_neighbors
+	}
+	add_opinion_modifier = { 
+		target = YUG
+		modifier = BFTB_incongruous_neighbors
+	}
+}
+
+############
+# POLITICS #
+############
+
+set_popularities = {
+	fascism = 20
+	neutrality = 40
+	democratic = 15
+	communism = 25
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 72
+	elections_allowed = no
+}
+
+##############
+# CHARACTERS #
+##############
+
+## HOS ##
+
+recruit_character = BUL_Kiril_Preslavski
+
+## HOG ##
+
+recruit_character = BUL_Ivan_Bagryanov
+recruit_character = BUL_Konstantin_Muraviev
+recruit_character = BUL_Kimon_Georgiev
+recruit_character = BUL_Nikola_Mushanov
+recruit_character = BUL_Aleksandar_Tsankov
+
+## FM ##
+
+recruit_character = BUL_Ivan_Popov
+recruit_character = BUL_Bogdan_Filov
+recruit_character = BUL_Aleksandar_Nikolaev
+recruit_character = BUL_Dimitar_Shishmanov
+recruit_character = BUL_Parvan_Draganov
+recruit_character = BUL_Atanas_Burov
+recruit_character = BUL_Georgi_Brasov
+recruit_character = BUL_Sava_Kirov
+recruit_character = BUL_Dimitar_Peshev
+recruit_character = BUL_Simeon_Radev
+recruit_character = BUL_Georgi_Kyoseivanov
+recruit_character = BUL_Velizar_Velchkov
+recruit_character = BUL_Georgi_Kulishev
+recruit_character = BUL_Mincho_Neychev
+recruit_character = BUL_Vasil_Kolarov
+recruit_character = BUL_Dimitar_Ganev
+recruit_character = BUL_Nikola_Momchilov
+
+## AM ##
+
+recruit_character = BUL_Dimitar_Savov
+recruit_character = BUL_Dobri_Bozhilov
+recruit_character = BUL_Georgi_Sapov
+recruit_character = BUL_Asen_Kesarovski
+recruit_character = BUL_Todor_Pavlov
+recruit_character = BUL_Tobri_Terpeshev
+recruit_character = BUL_Dimo_Kazasov
+
+## MOS ##
+
+recruit_character = BUL_Aleksandar_Stanishev
+recruit_character = BUL_Nikolay_Nikolaev
+recruit_character = BUL_Nikola_Nedev
+recruit_character = BUL_Docho_Hristov
+recruit_character = BUL_Petar_Gabrovski
+recruit_character = BUL_Vergil_Dimov
+recruit_character = BUL_Petar_Midilev
+recruit_character = BUL_Rashko_Atanasov
+recruit_character = BUL_Kiril_Gunev
+recruit_character = BUL_Kiril_Stanchev
+recruit_character = BUL_Ivan_Rogosarski
+recruit_character = BUL_Anton_Yugov
+recruit_character = BUL_Georgi_Tsankov
+recruit_character = BUL_Panko_Vrashnarrov
+recruit_character = BUL_Sava_Ganovski
+
+## MOI ##
+
+recruit_character = BUL_Krum_Kolev
+recruit_character = BUL_Stanko_Nikoladorov
+recruit_character = BUL_Aleksandar_Georginov
+recruit_character = BUL_Stefan_Stefanov
+recruit_character = BUL_Mikhail_Kalenderov
+recruit_character = BUL_Marko_Ryaskov
+recruit_character = BUL_Stoycho_Moshanov
+recruit_character = BUL_Traicho_Kostov
+recruit_character = BUL_Chavdar_Kyuranov
+recruit_character = BUL_Kiril_Petkov
+recruit_character = BUL_Hristo_Statev
+
+## MOC ##
+
+recruit_character = BUL_Teodor_Trayanov
+recruit_character = BUL_Georgi_Kulishev
+recruit_character = BUL_Luben_Dimchev
+recruit_character = BUL_Valko_Chervenkov
+
+## THEORISTS ##
+
+recruit_character = BUL_Asen_Zlatarov
+recruit_character = BUL_Georgi_Nadjakov
+recruit_character = BUL_Todor_Pavlov
+
+## ARMY ##
+
+recruit_character = BUL_Teodosi_Dakalov
+recruit_character = BUL_Todor_Georgiev
+recruit_character = BUL_Russi_Rusev
+recruit_character = BUL_Ivan_Valkov
+recruit_character = BUL_Ivan_Marinov
+recruit_character = BUL_Ivan_Sapundzhiev
+recruit_character = BUL_Atanas_Zhilkov
+recruit_character = BUL_Trifon_Trifonov
+recruit_character = BUL_Ferdinand_Kozovski
+recruit_character = BUL_Stoyan_Trendafilov
+recruit_character = BUL_Vladimir_Stoychev
+recruit_character = BUL_Nikola_Mihov
+recruit_character = BUL_Georgi_Popov
+recruit_character = BUL_Asen_Nikolov
+recruit_character = BUL_Nikola_Stoychev
+recruit_character = BUL_Damyan_Velchev
+recruit_character = BUL_Angel_Dotsev
+recruit_character = BUL_Nikola_Nakov
+recruit_character = BUL_Konstantin_Lukash
+recruit_character = BUL_Nikola_Hadzipetkov
+recruit_character = BUL_Kiril_Yanchulev
+recruit_character = BUL_Vasil_Boydev
+recruit_character = BUL_Kiril_Stanchev
+recruit_character = BUL_Yordan_Peev
+recruit_character = BUL_Raycho_Slavkov
+recruit_character = BUL_Ivan_Kinov
+recruit_character = BUL_Dimitar_Gichev
+recruit_character = BUL_Asen_Sirakov
+
+## AIR ##
+
+recruit_character = BUL_Dimitr_Ayryanov
+recruit_character = BUL_Chudomir_Toplodolski
+recruit_character = BUL_Stoyan_Stoyanov
+recruit_character = BUL_Georgi_Drenikov
+recruit_character = BUL_Gancho_Manchev
+recruit_character = BUL_Zachari_Zachariev
+recruit_character = BUL_Hristo_Krastev
+recruit_character = BUL_Kiril_Kostov
+
+## NAVY ##
+
+recruit_character = BUL_Atanas_Shalapatov
+recruit_character = BUL_Asen_Toshev
+recruit_character = BUL_Georgi_Petsov
+recruit_character = BUL_Ivan_Variklechkov
+recruit_character = BUL_Aleksandar_Russev
+recruit_character = BUL_Rumen_Ivanov
+
+##############
+# OPERATIVES #
+##############
+
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	create_operative_leader = { #DLC
+		name = "Vladimir Zaimov"
+		GFX = GFX_portrait_bul_vladimir_zaimov
+		traits = { operative_infiltrator operative_commando }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		nationalities = { BUL }
+	}
+}
+
+
+
+
+##############
+# 1944 SETUP #
+##############
+
+1944.1.1 = {
+	
+	#################
+	# COUNTRY SETUP #
+	#################
+	
+	add_political_power = 150
+	
+	set_war_support = 0.40
+	set_stability = 0.50
+	set_fuel_ratio = 0.25
+	
+	create_country_leader = { #DLC
+		name = "Prince Regent Kiril"
+		desc = "POLITICS_REGENT_KIRIL_DESC"
+		picture = "Portrait_Bulgaria_Prince_Kiril.dds"
+		expire = "1965.1.1"
+		ideology = paternal_autocrat_subtype
+		traits = {
+		}
+	}
+	
+	########
+	# ARMY #
+	########
+	
+	oob = "BUL_1944"
+	
+	################
+	# IDEAS / LAWS #
+	################
+	
+	add_ideas = {
+		
+		## Ministers ##
+		
+		# HOG
+		BUL_Ivan_Bagryanov
+		
+		# FM	
+		BUL_Ivan_Popov
+		
+		# MoS
+		BUL_Aleksandar_Stanishev
+		
+		# AM
+		BUL_Dimitar_Savov
+		
+		# MOI
+		BUL_Krum_Kolev
+		
+		# MoC
+		BUL_Teodor_Trayanov
+		
+		# Theorist
+		BUL_Asen_Zlatarov
+		
+		# Army Chief
+		BUL_Nikola_Mihov
+		
+		# Air Chief
+		BUL_Dimitr_Ayryanov
+		
+		# Navy Chief
+		BUL_Atanas_Shalapatov
+		
+		# High Command
+		BUL_Teodosi_Dakalov
+		BUL_Russi_Rusev
+		BUL_Ivan_Valkov
+		
+	
+		## Laws ##
+		
+		# Economy 
+		war_economy
+		
+		# Conscription
+		extensive_conscription
+		
+		# Exports
+		limited_exports
+		
+		# Education
+		massive_education_investment
+		
+		# Press
+		censored_press
+		
+		# Army Training
+		advanced_training
+		
+		## Companies ##
+	}
+
+	###########
+	# FOCUSES #
+	###########
+	
+	##############
+	# TECHNOLOGY #
+	##############
+	
+	set_technology = {
+
+		############
+		# Infantry #
+		############
+		
+		# Support Weapons
+		support_weapons = 1 
+		support_weapons2 = 1 
+		
+		# Infantry Weapons
+		infantry_weapons = 1
+		infantry_weapons1 = 1
+		infantry_weapons2 = 1 
+		
+		# Infantry Equipment
+		
+		# Motorised
+		
+		# Mechanized
+		
+		# Trench Warfare
+		
+		# Marines
+		marines = 1 
+		
+		# Paratroops
+		
+		# Mountaineers
+		tech_mountaineers = 1
+		tech_mountaineers2 = 1 
+		
+		# Special Forces
+
+		######################
+		# Support Battalions #
+		######################
+		
+		tech_support = 1	
+		basic_train = 1 	
+	
+		# Engineer
+		tech_engineers = 1
+		tech_engineers2 = 1 
+		
+		# Recon
+		tech_recon = 1
+		
+		# Military Police
+		tech_military_police = 1 
+		
+		# Maintenance
+		
+		# Logistics
+		tech_logistics_company = 1 
+		
+		# Signal
+		tech_signal_company = 1 
+		
+		# Field Hospital
+		
+		#############
+		# Artillery #
+		#############
+		
+		# Artillery
+		gw_artillery = 1
+		interwar_artillery = 1
+		artillery1 = 1 
+		
+		# Rocket Artillery
+		
+		# Anti-Air
+		interwar_antiair = 1
+		antiair1 = 1 
+		
+		# Anti-Tank
+		interwar_antitank = 1 
+		antitank1 = 1 
+		
+		#################
+		# Land Doctrine #
+		#################
+		
+		# Trench Warfare
+		
+		trench_warfare = 1 
+		grand_battle_plan = 1 
+		prepared_defense = 1 
+		grand_assault = 1 
+		infantry_offensive = 1 
+		
+		##################
+		# Naval Doctrine #
+		##################
+		
+		#################
+		# Air Equipment #
+		#################
+		
+		# Interceptor
+		early_fighter = 1
+		fighter1 = 1
+		fighter2 = 1 
+		
+		# Heavy Fighter
+		
+		# Multi-Role
+		
+		# Tactical Bomber
+		early_bomber = 1
+		tactical_bomber1 = 1
+		
+		# Strategic Bomber
+		
+		# Naval Bomber
+		
+		# Carrier Fighter
+		
+		# Carrier CAS
+		
+		# Carrier Bomber
+		
+		################
+		# Air Doctrine #
+		################
+		
+		# Air Superiority
+		air_superiority = 1 
+		infrastructure_destruction = 1 
+		home_defence = 1 
+		naval_strike_tactics = 1 
+		fighter_sweeps = 1 
+		
+		
+		################################
+		# Engineering / Secret Weapons #
+		################################
+		
+		# Radio
+		radio = 1 
+		
+		# Electrical and Mechanical
+		electronic_mechanical_engineering = 1
+		
+		# Decryption & Encryption
+		basic_encryption = 1 
+		improved_encryption = 1 
+		
+		# Rocketry
+		
+		# Jet Engine
+		
+		# Nuclear Research
+		
+		############
+		# Industry #
+		############
+		
+		# Machine Tools
+		basic_machine_tools = 1 
+		improved_machine_tools = 1 
+		
+		# Assembly
+		
+		# Industry [Concentrated vs Dispersed]
+		concentrated_industry = 1 
+		concentrated_industry2 = 1 
+		concentrated_industry3 = 1 
+		
+		# Construction
+		construction1 = 1 
+		construction2 = 1
+		
+		# Excavation
+		excavation1 = 1 
+		excavation2 = 1 
+		
+		# Synthetics
+	}
+	
+
+	if = {
+		limit = {
+			has_dlc = "La Resistance"
+		}
+		set_technology = {
+			armored_car1 = 1
+		}
+	}
+	
+	##############
+	# ARMOR TECH #
+	##############
+
+	if = {
+		limit = {
+			NOT = { has_dlc = "No Step Back" }
+		}
+		set_technology = {
+		
+			# Tank Prototype
+			gwtank = 1
+			
+			# Tank Light
+			basic_light_tank = 1
+			basic_light_td = 1 
+			basic_light_art = 1 
+			basic_light_spaa = 1 
+			improved_light_tank = 1
+			improved_light_td = 1 
+			improved_light_art = 1 
+			improved_light_spaa = 1 
+			
+			# Tank Medium
+			basic_medium_tank = 1 
+			basic_medium_td = 1 
+			basic_medium_art = 1 
+			basic_medium_spaa = 1 
+		}
+	}
+
+	if = {
+		limit = {
+			has_dlc = "No Step Back"
+		}
+		set_technology = { 
+		
+			## Light Tank ##
+			gwtank_chassis = 1
+			basic_light_tank_chassis = 1
+			improved_light_tank_chassis = 1
+			
+			## Medium Tank ##
+			basic_medium_tank_chassis = 1 
+			
+			## Armor ##
+			armor_tech_1 = 1 
+			
+			## Engine ##
+			engine_tech_1 = 1
+		}
+	}
+	
+	#################
+	# END TECH TREE #
+	#################
+}

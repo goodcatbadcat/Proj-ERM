@@ -1,0 +1,654 @@
+﻿########################
+# CZECHOSLOVAKIA SETUP #
+########################
+
+capital = 9 # Prague
+
+set_stability = 0.45
+set_war_support = 0.20
+set_fuel_ratio = 0.65
+
+########
+# ARMY #
+########
+
+oob = "CZE_1936"
+
+#################
+# Starting Tech #
+#################
+
+set_research_slots = 3
+
+set_technology = { 
+
+	############
+	# Infantry #
+	############
+	
+	# Support Weapons
+	
+	# Infantry Weapons
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	
+	# Infantry Equipment
+	motorised_infantry = 1
+	
+	# Motorised
+	
+	# Marines
+	
+	# Mountaineers
+	tech_mountaineers = 1
+
+	######################
+	# Support Battalions #
+	######################
+	
+	tech_support = 1	
+	basic_train = 1 	
+	
+	# Engineer
+	tech_engineers = 1
+	
+	# Recon
+	tech_recon = 1 
+	
+	# Military Police
+	
+	# Maintenance
+	
+	# Logistics
+	
+	# Signal
+	
+	# Field Hospital
+	
+	#############
+	# Artillery #
+	#############
+	
+	# Artillery
+	gw_artillery = 1
+	
+	# Anti-Air
+	interwar_antiair = 1
+	
+	# AT
+	interwar_antitank = 1
+	
+	#################
+	# Land Doctrine #
+	#################
+	
+	# Grand Battle Plan
+	trench_warfare = 1
+	
+	##################
+	# Naval Doctrine #
+	##################
+	
+	#################
+	# Air Equipment #
+	#################
+	
+	# Interceptor
+	early_fighter = 1
+	fighter1 = 1
+	
+	# Multi-Role
+	
+	# Tactical Bomber
+	early_bomber = 1
+	
+	# Strategic Bomber
+	
+	# Naval Bomber
+	
+	################
+	# Air Doctrine #
+	################
+	
+	# Air Supereurity
+	air_superiority = 1
+	
+	################################
+	# Engineering / Secret Weapons #
+	################################
+	
+	# Radio
+	radio = 1 
+	
+	# Electrical and Mechanical
+	electronic_mechanical_engineering = 1 
+	
+	# Decryption & Encryption
+	
+	############
+	# Industry #
+	############
+	
+	# Machine Tools
+	
+	# Industry [Concentrated vs Dispersed ]
+	
+	# Construction
+	
+	# Synthetics
+	fuel_silos = 1
+	fuel_refining = 1
+}
+
+##############
+# ARMOR TECH #
+##############
+
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+	
+		## Tank Prot. ##
+		gwtank = 1
+		
+		## Light Tank ##
+		basic_light_tank = 1
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = { 
+	
+		## Light Tank ##
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+	}
+}
+
+############
+# POLITICS #
+############
+
+set_popularities = {
+	populist = 0
+	fascist = 0
+	national_socialist = 3
+	paternal_autocrat = 5
+	social_conservative = 20
+	market_liberal = 0
+	social_liberal = 18
+	social_democrat = 35
+	leninist = 10
+	stalinist = 0
+	anarchist = 0
+	left_wing_radical = 9
+}
+
+set_politics = {
+	ruling_party = social_conservative
+	last_election = "1935.12.18"
+	election_frequency = 72
+	elections_allowed = yes
+}
+
+create_country_leader = {
+	name = "Edvard Beneš"
+	desc = "POLITICS_EDVARD_BENES_DESC"
+	picture = "Portrait_Czech_Edvard_Benes.dds"
+	expire = "1965.1.1"
+	ideology = social_conservative_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Jaroslav Krejčí"
+	desc = "POLITICS_JAROSLAV_KREJCI_DESC"
+	picture = "Portrait_Czech_Jaroslav_Krejci.dds"
+	expire = "1965.1.1"
+	ideology = national_socialist_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Klement Gottwald"
+	desc = "POLITICS_KLEMENT_GOTTWALD_DESC"
+	picture = "Portrait_Czech_Klement_Gottwald.dds"
+	expire = "1965.1.1"
+	ideology = stalinis_subtype
+	traits = {
+		#
+	}
+}
+
+##############
+# COMMANDERS #
+##############
+
+create_field_marshal = {
+	name = "Vojtěch Luža"
+	gfx = "GFX_Portrait_czechoslovakia_vojtech_luza"
+	traits = { fast_planner offensive_doctrine }
+	skill = 3
+    attack_skill = 4
+    defense_skill = 2
+    planning_skill = 3
+    logistics_skill = 1
+}
+
+create_field_marshal = {
+	name = "Josef Šnejdárek"
+	gfx = "GFX_Portrait_czechoslovakia_josef_snejdarek"
+	traits = { thorough_planner defensive_doctrine }
+	skill = 3
+    attack_skill = 3
+    defense_skill = 4
+    planning_skill = 2
+    logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Richard Tesařík"
+	gfx = "GFX_Portrait_czechoslovakia_richard_tesarik"
+	traits = { armor_officer }
+	skill = 2
+    attack_skill = 4
+    defense_skill = 1
+    planning_skill = 1
+    logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Sergej Vojcechovský"
+	gfx = "GFX_Portrait_czechoslovakia_sergej_vojcechovsky"
+	traits = { winter_specialist }
+	skill = 3
+    attack_skill = 4
+    defense_skill = 3
+    planning_skill = 2
+    logistics_skill = 1
+}
+
+#############
+# DLC SETUP #
+#############
+if = {
+	limit = {
+		has_dlc = "Death or Dishonor"
+	}
+	add_ideas = {
+		CZE_skoda_works
+		CZE_divided_nation
+}
+	give_guarantee = YUG
+	give_guarantee = ROM
+}
+
+if = {
+	limit = {
+		NOT = { has_dlc = "Death or Dishonor" }
+	}
+	add_ideas = {
+		CZE_fortification_focus
+	}
+}
+
+#################
+# END DLC SETUP #
+#################
+
+
+##############
+# 1944 SETUP #
+##############
+
+1944.1.1 = {
+	
+	#################
+	# COUNTRY SETUP #
+	#################
+	
+	CZE = {
+		become_exiled_in = { 
+			target = ENG 
+			legitimacy = 90 
+		}
+	}
+	
+	##############
+	# FOCUS TREE #
+	##############
+	
+	##############
+	# TECHNOLOGY #
+	##############
+	
+	set_technology = {
+
+		############
+		# Infantry #
+		############
+		
+		# Support Weapons
+		support_weapons = 1 
+		support_weapons2 = 1 
+		support_weapons3 = 1
+		
+		# Infantry Weapons
+		infantry_weapons = 1
+		infantry_weapons1 = 1
+		infantry_weapons2 = 1 
+		
+		# Infantry Equipment
+		
+		# Motorised
+		motorised_infantry = 1
+		
+		# Mechanized
+		mechanised_infantry = 1 
+		
+		# Mechanized
+		
+		# Paratroops
+		
+		# Mountaineers
+		tech_mountaineers = 1
+		tech_mountaineers2 = 1 
+		
+		# Special Forces
+
+		######################
+		# Support Battalions #
+		######################
+		
+		tech_support = 1	
+	    basic_train = 1 	
+	
+		# Engineer
+		tech_engineers = 1
+		tech_engineers2 = 1 
+		
+		# Recon
+		tech_recon = 1
+		tech_recon2 = 1 
+		
+		# Military Police
+		tech_military_police = 1 
+		
+		# Maintenance
+		tech_maintenance_company = 1 
+		
+		# Logistics
+		tech_logistics_company = 1 
+		tech_logistics_company2 = 1 
+		
+		# Signal
+		tech_signal_company = 1 
+		
+		# Field Hospital
+		tech_field_hospital = 1 
+		tech_field_hospital2 = 1 
+		
+		#############
+		# Artillery #
+		#############
+		
+		# Artillery
+		gw_artillery = 1
+		interwar_artillery = 1
+		artillery1 = 1 
+		artillery2 = 1 
+		artillery3 = 1 
+		
+		# Rocket Artillery
+		
+		# Anti-Air
+		interwar_antiair = 1
+		antiair1 = 1 
+		antiair2 = 1 
+		
+		# Anti-Tank
+		interwar_antitank = 1 
+		antitank1 = 1 
+		antitank2 = 1 
+		
+		#################
+		# Land Doctrine #
+		#################
+		
+		# Trench Warfare
+		trench_warfare = 1 
+		grand_battle_plan = 1 
+		prepared_defense = 1 
+		grand_assault = 1 
+		infantry_offensive = 1 
+		
+		##################
+		# Naval Doctrine #
+		##################
+		
+		#################
+		# Air Equipment #
+		#################
+		
+		# Interceptor
+		early_fighter = 1
+		fighter1 = 1
+		fighter2 = 1 
+		
+		# Heavy Fighter
+		
+		# Multi-Role
+		CAS1 = 1
+		
+		# Tactical Bomber
+		early_bomber = 1
+		tactical_bomber1 = 1
+		
+		# Strategic Bomber
+		strategic_bomber1 = 1
+		
+		# Naval Bomber
+		
+		# Carrier Fighter
+		
+		# Carrier CAS
+		
+		# Carrier Bomber
+		
+		################
+		# Air Doctrine #
+		################
+		
+		# Air Superiority
+		air_superiority = 1 
+		infrastructure_destruction = 1 
+		home_defence = 1 
+		
+		################################
+		# Engineering / Secret Weapons #
+		################################
+		
+		# Radio
+		radio = 1 
+		radio_detection = 1 
+		decimetric_radar = 1 
+		
+		# Electrical and Mechanical
+		electronic_mechanical_engineering = 1
+		mechanical_computing = 1 
+		computing_machine = 1 
+		
+		# Decryption & Encryption
+		basic_encryption = 1 
+		improved_encryption = 1 
+		
+		# Rocketry
+		
+		# Jet Engine
+		
+		# Nuclear Research
+		
+		############
+		# Industry #
+		############
+		
+		# Machine Tools
+		basic_machine_tools = 1 
+		improved_machine_tools = 1 
+		advanced_machine_tools = 1 
+		
+		# Assembly
+		
+		# Industry [Concentrated vs Dispersed]
+		concentrated_industry = 1 
+		concentrated_industry2 = 1 
+		concentrated_industry3 = 1 
+		
+		# Construction
+		construction1 = 1 
+		construction2 = 1
+		construction3 = 1 
+		
+		# Excavation
+		excavation1 = 1 
+		excavation2 = 1 
+		excavation3 = 1 
+		
+		# Synthetics
+		fuel_silos = 1
+		oil_processing = 1
+		improved_oil_processing = 1	
+		fuel_refining = 1
+	}
+	
+	##############
+	# ARMOR TECH #
+	##############
+
+	if = {
+		limit = {
+			NOT = { has_dlc = "No Step Back" }
+		}
+		set_technology = {
+		
+			## Tank Prototype ##
+			gwtank = 1
+			
+			## Tank Light ##
+			basic_light_tank = 1
+			basic_light_td = 1 
+			basic_light_art = 1 
+			basic_light_spaa = 1 
+			improved_light_tank = 1
+			improved_light_td = 1 
+			improved_light_art = 1 
+			improved_light_spaa = 1 
+			
+			## Tank Medium ##
+			basic_medium_tank = 1 
+			basic_medium_td = 1 
+			basic_medium_art = 1 
+			basic_medium_spaa = 1 
+			
+			## Tank Heavy ##
+			basic_heavy_tank = 1
+			basic_heavy_td = 1 
+		}
+	}
+	if = {
+		limit = {
+			has_dlc = "No Step Back"
+		}
+		set_technology = {
+		
+			## Light Tank ##
+			gwtank_chassis = 1
+			basic_light_tank_chassis = 1
+			improved_light_tank_chassis = 1
+			
+			## Medium Tank ##
+			basic_medium_tank_chassis = 1 
+			
+			## Heavy Tank ##
+			basic_heavy_tank_chassis = 1
+			
+			## Armor ##
+			armor_tech_1 = 1 
+			
+			## Engine ##
+			engine_tech_1 = 1
+			engine_tech_2 = 1  
+		}
+	}
+}
+
+############
+# VARIANTS #
+############
+
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	create_equipment_variant = {
+		name = "Tancik vz. 33"
+		type = light_tank_chassis_1
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_heavy_machine_gun
+			turret_type_slot = tank_light_fixed_superstructure_turret
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 1
+			tank_nsb_armor_upgrade = 1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "LT vz. 35"
+		type = light_tank_chassis_1
+		parent_version = 1
+		modules = {
+			main_armament_slot = tank_high_velocity_cannon
+			turret_type_slot = tank_light_two_man_tank_turret
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = tank_radio_1
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 2
+			tank_nsb_armor_upgrade = 2
+		}
+	}
+	create_equipment_variant = {
+		name = "TNH"
+		type = light_tank_chassis_2
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_high_velocity_cannon
+			turret_type_slot = tank_light_two_man_tank_turret
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = tank_radio_1
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 2
+			tank_nsb_armor_upgrade = 3
+		}
+	}
+}
+	

@@ -1,0 +1,913 @@
+﻿################
+# SERVIA SETUP # Serbia Stronk
+################
+
+capital = 107 # Beograde
+
+#################
+# Starting Tech #
+#################
+
+set_research_slots = 3
+
+set_technology = { 
+
+	############
+	# Infantry #
+	############
+	
+	# Support Weapons
+	
+	# Infantry Weapons
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	
+	# Infantry Equipment
+	
+	# Motorised
+	
+	# Marines
+	
+	# Mountaineers
+	tech_mountaineers = 1
+
+	######################
+	# Support Battalions #
+	######################
+	
+	tech_support = 1	
+	basic_train = 1 	
+	
+	# Engineer
+	tech_engineers = 1
+	
+	# Recon
+	
+	# Military Police
+	
+	# Maintenance
+	
+	# Logistics
+	
+	# Signal
+	
+	# Field Hospital
+	
+	#############
+	# Artillery #
+	#############
+	
+	# Artillery
+	gw_artillery = 1
+	
+	# Howitzer
+	
+	# Anti-Air
+	interwar_antiair = 1
+	
+	# AT
+	interwar_antitank = 1
+	
+	# Mortar
+	
+	#################
+	# Land Doctrine #
+	#################
+	
+	# Grand Battle Plan
+	trench_warfare = 1
+	
+	##################
+	# Naval Doctrine #
+	##################
+	
+	# Trade Interdiction
+	
+	#################
+	# Air Equipment #
+	#################
+	
+	# Interceptor
+	early_fighter = 1
+	fighter1 = 1
+	
+	# Multi-Role
+	
+	# Tactical Bomber
+	early_bomber = 1
+	
+	# Strategic Bomber
+	
+	# Naval Bomber
+	
+	################
+	# Air Doctrine #
+	################
+	
+	# Ground Support
+	
+	################################
+	# Engineering / Secret Weapons #
+	################################
+	
+	# Electrical and Mechanical
+	
+	# Decryption & Encryption
+	
+	############
+	# Industry #
+	############
+	
+	# Machine Tools
+	
+	# Industry [Concentrated vs Dispersed ]
+	
+	# Construction
+	
+	# Synthetics
+}
+
+##############
+# ARMOR TECH #
+##############
+
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+	
+		## Tank Prot. ##
+		gwtank = 1
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = { 
+	
+		## Light Tank ##
+		gwtank_chassis = 1
+		
+	}
+}
+
+##############
+# Naval Tech #
+##############
+
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		#########
+		# Naval #
+		#########
+		
+		# Misc
+		transport = 1
+		
+		# Destroyer
+		early_destroyer = 1
+		
+		# Light Cruiser
+		early_light_cruiser = 1
+		
+		# Heavy Cruiser
+		early_heavy_cruiser = 1
+		
+		# Battleship
+		early_battleship = 1
+		
+		# Battlecruiser
+		
+		# Carrier
+		
+		# Submarine
+		early_submarine = 1
+		
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		#########
+		# Naval #
+		#########
+		
+		# Various Eqpt.
+		sonar = 1
+		basic_depth_charges = 1
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		coastal_defense_ships = 1 
+		
+		# Destroyer
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		
+		# Cruiser
+		early_ship_hull_cruiser = 1
+		
+		# Battleship
+		pre_dreadnoughts = 1
+		
+		# Carrier
+		
+		# Submarine
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		
+		# Torpedo Eqpt.
+		basic_torpedo = 1
+		
+		# Naval Gunnery Eqpt.
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		
+		# Landing Craft
+		mtg_transport = 1
+		
+		# Fire Drills
+		
+		# Bracket Shooting
+		
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	set_technology = {
+		armored_car1 = 1
+	}
+}
+
+############
+# Politics #
+############
+
+set_popularities = {
+	fascism = 35
+	neutrality = 30
+	democratic = 5
+	communism = 30
+}
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "1942.1.1"
+	election_frequency = 72
+	elections_allowed = no
+}
+
+##############
+# CHARACTERS #
+##############
+
+## HOS ##
+
+recruit_character = SER_Milan_Nedic
+
+## HOG ##
+
+## FM ##
+
+recruit_character = SER_Josif_Kostic
+
+## AM ##
+
+recruit_character = SER_Milorad_Nedeljkovic
+
+## MOS ##
+
+recruit_character = SER_Milan_Acimovic
+recruit_character = SER_Tanasije_Dinic
+recruit_character = SER_Dimitrije_Ljotic
+recruit_character = SER_Cedomir_Marjanovic
+recruit_character = SER_Bogoljub_Kujundzic
+recruit_character = SER_Dobrosav_Veselinovic
+
+## MOI ##
+
+recruit_character = SER_Ognjen_Kuzmanovic
+recruit_character = SER_Dusan_Letica
+recruit_character = SER_Ljubisa_M_Bojic
+recruit_character = SER_Jovan_Mijuskovic
+recruit_character = SER_Stojimir_Dobrosavljevic
+recruit_character = SER_Milos_Radosavljevic
+recruit_character = SER_Dusan_Djordjevic
+
+## MOC ##
+
+recruit_character = SER_Milos_Trivunac
+recruit_character = SER_Velibor_Jonic
+recruit_character = SER_Djordje_Peric
+recruit_character = SER_Ratko_Parezanin
+
+## COMMANDERS ##
+
+## ARMY ##
+
+recruit_character = SER_Dragomir_Jovanovic
+recruit_character = SER_Borivoje_Jonic
+recruit_character = SER_Kosta_Musicki
+recruit_character = SER_Miodrag_Damjanovic
+recruit_character = SER_Dura_Dokic
+recruit_character = SER_Mihailo_Olcan
+
+## AIR ##
+
+recruit_character = SER_Dusan_Simovic
+recruit_character = SER_Borivoje_Mirkovic
+
+## NAVY ##
+
+recruit_character = SER_Dragutin_Prica
+
+##############
+# 1944 SETUP #
+##############
+
+1944.1.1 = {
+
+	#################
+	# COUNTRY SETUP #
+	#################
+	
+	set_cosmetic_tag = SER_GER_fascism
+	
+	add_political_power = 150
+	
+	set_stability = 0.25
+	set_war_support = 0.10
+	set_fuel_ratio = 0.10
+	
+	########
+	# ARMY #
+	########
+	
+	oob = "SER_1944"
+	
+	################
+	# IDEAS / LAWS #
+	################
+	
+	add_ideas = {
+		
+		## Ministers ##
+		
+		# HOG
+		SER_Milan_Nedic
+		
+		# FM	
+		SER_Josif_Kostic
+		
+		# MoS
+		SER_Dimitrije_Ljotic
+		
+		# AM
+		SER_Milorad_Nedeljkovic
+		
+		# MOI
+		SER_Ognjen_Kuzmanovic
+		
+		# MoC
+		SER_Milos_Trivunac
+		
+		# Theorist
+		
+		# Army Chief
+		SER_Dura_Dokic
+		
+		# Air Chief
+		SER_Dusan_Simovic
+		
+		# Navy Chief
+		SER_Dragutin_Prica
+		
+		# High Command
+		SER_Dragomir_Jovanovic
+		SER_Borivoje_Jonic
+		SER_Kosta_Musicki
+		
+	
+		## Laws ##
+		
+		# Economy 
+		war_economy
+		
+		# Conscription
+		extensive_conscription
+		
+		# Exports
+		limited_exports
+		
+		# Education
+		average_education_investment
+		
+		# Press
+		censored_press
+		
+		# Army Training
+		basic_training
+		
+		## Companies ##
+	}
+	
+	###########
+	# FOCUSES #
+	###########
+	
+	complete_national_focus = army_effort
+	complete_national_focus = equipment_effort
+	complete_national_focus = motorization_effort
+	complete_national_focus = aviation_effort
+	complete_national_focus = naval_effort
+	complete_national_focus = flexible_navy
+	complete_national_focus = industrial_effort
+	complete_national_focus = construction_effort
+	complete_national_focus = production_effort
+	
+	##############
+	# TECHNOLOGY #
+	##############
+	
+	set_technology = {
+
+		############
+		# Infantry #
+		############
+		
+		# Support Weapons
+		support_weapons = 1 
+		support_weapons2 = 1 
+		
+		# Infantry Weapons
+		infantry_weapons = 1
+		infantry_weapons1 = 1
+		infantry_weapons2 = 1 
+		
+		# Infantry Equipment
+		
+		# Motorised
+		
+		# Mechanized
+		
+		# Trench Warfare
+		
+		# Marines
+		marines = 1 
+		
+		# Paratroops
+		
+		# Mountaineers
+		tech_mountaineers = 1
+		tech_mountaineers2 = 1 
+		
+		# Special Forces
+
+		######################
+		# Support Battalions #
+		######################
+		
+		tech_support = 1	
+	basic_train = 1 	
+	
+		# Engineer
+		tech_engineers = 1
+		tech_engineers2 = 1 
+		
+		# Recon
+		tech_recon = 1
+		
+		# Military Police
+		tech_military_police = 1 
+		
+		# Maintenance
+		
+		# Logistics
+		tech_logistics_company = 1 
+		
+		# Signal
+		tech_signal_company = 1 
+		
+		# Field Hospital
+		
+		#########
+		# Armor #
+		#########
+		
+		# Tank Prototype
+		gwtank = 1
+		
+		# Tank Light
+		basic_light_tank = 1
+		
+		# Tank Medium
+		
+		
+		# Tank Heavy
+		
+		
+		#############
+		# Artillery #
+		#############
+		
+		# Artillery
+		gw_artillery = 1
+		interwar_artillery = 1
+		artillery1 = 1 
+		
+		# Rocket Artillery
+		
+		# Anti-Air
+		interwar_antiair = 1
+		antiair1 = 1 
+		
+		# Anti-Tank
+		interwar_antitank = 1 
+		antitank1 = 1 
+		
+		#################
+		# Land Doctrine #
+		#################
+		
+		# Trench Warfare
+		trench_warfare = 1 
+		grand_battle_plan = 1 
+		prepared_defense = 1 
+		grand_assault = 1 
+		infantry_offensive = 1 
+		
+		##################
+		# Naval Doctrine #
+		##################
+		
+		# Fleet in Being
+		fleet_in_being = 1 
+		battlefleet_concentration = 1 
+		convoy_sailing = 1 
+		submarine_operations = 1 
+		
+		#################
+		# Air Equipment #
+		#################
+		
+		# Interceptor
+		early_fighter = 1
+		fighter1 = 1
+		fighter2 = 1 
+		
+		# Heavy Fighter
+		
+		# Multi-Role
+		
+		# Tactical Bomber
+		early_bomber = 1
+		tactical_bomber1 = 1
+		
+		# Strategic Bomber
+		
+		# Naval Bomber
+		
+		# Carrier Fighter
+		
+		# Carrier CAS
+		
+		# Carrier Bomber
+		
+		################
+		# Air Doctrine #
+		################
+		
+		# Force Rotation
+		
+		force_rotation = 1 
+		fighter_baiting = 1 
+		low_echelon_support = 1 
+		
+		
+		################################
+		# Engineering / Secret Weapons #
+		################################
+		
+		# Radio
+		radio = 1 
+		
+		# Electrical and Mechanical
+		electronic_mechanical_engineering = 1
+		
+		# Decryption & Encryption
+		basic_encryption = 1 
+		improved_encryption = 1 
+		
+		# Rocketry
+		
+		# Jet Engine
+		
+		# Nuclear Research
+		
+		############
+		# Industry #
+		############
+		
+		# Machine Tools
+		basic_machine_tools = 1 
+		improved_machine_tools = 1 
+		
+		# Assembly
+		
+		# Industry [Concentrated vs Dispersed]
+		concentrated_industry = 1 
+		concentrated_industry2 = 1 
+		concentrated_industry3 = 1 
+		
+		# Construction
+		construction1 = 1 
+		construction2 = 1
+		
+		# Excavation
+		excavation1 = 1 
+		excavation2 = 1 
+		
+		# Synthetics
+	}
+	
+	##############
+	# Naval Tech #
+	##############
+
+	if = {
+		limit = {
+			not = { has_dlc = "Man the Guns" }
+		}
+		set_technology = {
+			#########
+			# Naval #
+			#########
+			
+			# Misc
+			transport = 1
+			
+			# Destroyer
+			early_destroyer = 1
+			basic_destroyer = 1
+			
+			# Light Cruiser
+			early_light_cruiser = 1
+			basic_light_cruiser = 1
+			
+			# Heavy Cruiser
+			early_heavy_cruiser = 1
+			basic_heavy_cruiser = 1
+			
+			# Battleship
+			early_battleship = 1
+			basic_battleship = 1
+			
+			# Battlecruiser
+			
+			# Carrier
+			
+			# Submarine
+			early_submarine = 1
+			basic_submarine = 1
+			
+		}
+	}
+
+	if = {
+		limit = {
+			has_dlc = "Man the Guns"
+		}
+		set_technology = {
+			#########
+			# Naval #
+			#########
+			
+			# Various Eqpt.
+			sonar = 1
+			basic_depth_charges = 1
+			improved_depth_charges = 1 
+			basic_naval_mines = 1
+
+			# Destroyer
+			early_ship_hull_light = 1
+			basic_ship_hull_light = 1
+			
+			# Cruiser
+			early_ship_hull_cruiser = 1
+			basic_ship_hull_cruiser = 1
+			
+			basic_cruiser_armor_scheme = 1
+			
+			# Battleship
+			pre_dreadnoughts = 1
+			early_ship_hull_heavy = 1
+			
+			
+			# Carrier
+			
+			# Submarine
+			early_ship_hull_submarine = 1
+			basic_ship_hull_submarine = 1
+			
+			# Torpedo Eqpt.
+			basic_torpedo = 1
+			magnetic_detonator = 1 
+			
+			# Naval Gunnery Eqpt.
+			basic_light_shell = 1 
+			basic_medium_shell = 1 
+			basic_heavy_shell = 1 
+			basic_battery = 1
+			basic_light_battery = 1
+			basic_medium_battery = 1
+			
+			# Landing Craft
+			mtg_transport = 1
+			
+			# Fire Drills
+	
+			
+			# Second Battery Eqpt.
+			basic_secondary_battery = 1
+			improved_secondary_battery = 1
+			
+			# Bracket Shooting
+			
+			# Fire Control
+			basic_fire_control_system = 1 
+			improved_fire_control_system = 1 
+			
+		}
+	}
+	
+	##############
+	# ARMOR TECH #
+	##############
+
+	if = {
+		limit = {
+			NOT = { has_dlc = "No Step Back" }
+		}
+		set_technology = {
+		
+			## Light Tank ##
+			gwtank = 1
+			basic_light_tank = 1
+			
+			## Medium Tank ##
+			basic_medium_tank = 1 
+		}
+	}
+
+	if = {
+		limit = {
+			has_dlc = "No Step Back"
+		}
+		set_technology = { 
+			## Light Tank ##
+			gwtank_chassis = 1
+			basic_light_tank_chassis = 1
+			
+			## Armor ##
+			armor_tech_1 = 1 
+			
+			## Engine ##
+			engine_tech_1 = 1 
+		}
+	}
+
+	if = {
+		limit = {
+			has_dlc = "La Resistance"
+		}
+		set_technology = {
+			armored_car1 = 1
+		}
+	}
+	
+	#################
+	# END TECH TREE #
+	#################
+}
+	
+	
+
+#################
+# SHIP VARIANTS #
+#################
+
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	### Ship Variants ###
+	create_equipment_variant = {
+		name = "Dubrovnik Class"
+		type = destroyer_1
+		upgrades = {
+			ship_torpedo_upgrade = 1
+			destroyer_engine_upgrade = 1
+			ship_ASW_upgrade = 1
+			ship_anti_air_upgrade = 1
+		}
+	}
+	create_equipment_variant = {
+		name = "Dalmacija Class"
+		type = heavy_cruiser_1
+		upgrades = {
+			ship_reliability_upgrade = 1
+			ship_engine_upgrade = 1
+			ship_armor_upgrade = 1
+			ship_gun_upgrade = 1
+		}
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	# Submarines #
+	create_equipment_variant = {
+		name = "Hrabri Class"				
+		type = ship_hull_submarine_2
+		name_group = YUG_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = empty
+		}
+	}
+	# Destroyers #
+	create_equipment_variant = {
+		name = "Dubrovnik Class"				
+		type = ship_hull_light_2
+		name_group = YUG_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_mine_layer_1
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+	}
+	# Cruisers #
+	create_equipment_variant = {
+		name = "Dalmacija Class"				
+		type = ship_hull_cruiser_coastal_defense_ship
+		name_group = YUG_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = empty
+			fixed_ship_secondaries_slot = empty
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+	}
+}
+
+# 1939 Start #
+1939.1.1 = {
+	if = {
+		limit = { not = { has_dlc = "Man the Guns" } }
+		# Ship variants #
+	}
+	if = {
+		limit = { has_dlc = "Man the Guns" }
+		# Destroyers #
+		create_equipment_variant = {
+			name = "Beograd Class"	
+			type = ship_hull_light_2
+			name_group = YUG_DD_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_light_battery_2
+				fixed_ship_anti_air_slot = ship_anti_air_1
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = light_ship_engine_2
+				fixed_ship_torpedo_slot = ship_torpedo_1
+				mid_1_custom_slot = ship_mine_layer_1
+				rear_1_custom_slot = ship_depth_charge_1
+			}
+		}
+	}
+}

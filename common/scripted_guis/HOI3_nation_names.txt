@@ -1,0 +1,11 @@
+scripted_gui = {
+
+	hoi3_nation_names = {
+		parent_window_token = top_bar
+		window_name = "hoi3_nation_name_container"
+		context_type = player_context
+		visible = { 
+			always = yes
+		}		
+	}
+}

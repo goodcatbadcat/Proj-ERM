@@ -1,0 +1,338 @@
+﻿##############################
+# BRITISH 1944 MTG NAVAL OOB #
+##############################
+
+units = {
+
+	################
+	### Plymouth ###
+	################
+	
+	fleet = {
+		
+		################################
+		#### 1st Destroyer Squadron ####
+		################################
+		
+		name = "1st Destroyer Squadron"
+		naval_base = 540 # Plymouth 
+		
+		#############################
+		## 15th Destroyer Flotilla ##
+		#############################
+		
+		task_force = {
+			name = "15th Destroyer Flotilla"
+			location = 540 # Plymouth
+			
+			###########
+			# W Class #
+			###########
+			
+			ship = { 
+				name = "HMS Wolverine" 
+				definition = destroyer 
+				start_experience_factor = 0.55
+				equipment = { ship_hull_light_3 = { amount = 1 owner = ENG version_name = "W Class" } } 
+			}
+			ship = { 
+				name = "HMS Wanderer" 
+				definition = destroyer 
+				start_experience_factor = 0.55
+				equipment = { ship_hull_light_3 = { amount = 1 owner = ENG version_name = "W Class" } } 
+			}
+			ship = { 
+				name = "HMS Witherington" 
+				definition = destroyer 
+				start_experience_factor = 0.55
+				equipment = { ship_hull_light_3 = { amount = 1 owner = ENG version_name = "W Class" } } 
+			}
+			ship = { 
+				name = "HMS Whitehall" 
+				definition = destroyer 
+				start_experience_factor = 0.55
+				equipment = { ship_hull_light_3 = { amount = 1 owner = ENG version_name = "W Class" } } 
+			}
+			ship = { 
+				name = "HMS Volunteer" 
+				definition = destroyer 
+				start_experience_factor = 0.55
+				equipment = { ship_hull_light_3 = { amount = 1 owner = ENG version_name = "W Class" } } 
+			}
+			ship = { 
+				name = "HMS Witch" 
+				definition = destroyer 
+				start_experience_factor = 0.55
+				equipment = { ship_hull_light_3 = { amount = 1 owner = ENG version_name = "W Class" } } 
+			}
+			ship = { 
+				name = "HMS Verity" 
+				definition = destroyer 
+				start_experience_factor = 0.55
+				equipment = { ship_hull_light_3 = { amount = 1 owner = ENG version_name = "W Class" } } 
+			}
+		}
+		
+		#############################
+		## 16th Destroyer Flotilla ##
+		#############################
+		
+		task_force = {
+			name = "16th Destroyer Flotilla"
+			location = 540 # Plymouth
+			
+			##############
+			# Hunt Class #
+			##############
+			
+			ship = { 
+				name = "HMS Eglinton" 
+				definition = destroyer 
+				start_experience_factor = 0.55
+				equipment = { ship_hull_light_3 = { amount = 1 owner = ENG version_name = "Hunt Class" } } 
+			}
+			ship = { 
+				name = "HMS Atherstone" 
+				definition = destroyer 
+				start_experience_factor = 0.55
+				equipment = { ship_hull_light_3 = { amount = 1 owner = ENG version_name = "Hunt Class" } } 
+			}
+			
+			###############
+			# Scott Class #
+			###############
+			
+			ship = { 
+				name = "HMS Douglas" 
+				definition = destroyer 
+				start_experience_factor = 0.55
+				equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "Scott Class" } } 
+			}
+			ship = { 
+				name = "HMS Campbell" 
+				definition = destroyer 
+				start_experience_factor = 0.55
+				equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "Scott Class" } } 
+			}
+			ship = { 
+				name = "HMS Mackay" 
+				definition = destroyer 
+				start_experience_factor = 0.55
+				equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "Scott Class" } } 
+			}
+			ship = { 
+				name = "HMS Malcom" 
+				definition = destroyer 
+				start_experience_factor = 0.55
+				equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "Scott Class" } } 
+			}
+			ship = { 
+				name = "HMS Montrose" 
+				definition = destroyer 
+				start_experience_factor = 0.55
+				equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "Scott Class" } } 
+			}
+			ship = { 
+				name = "HMS Stuart" 
+				definition = destroyer 
+				start_experience_factor = 0.55
+				equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "Scott Class" } } 
+			}
+		}
+	}
+	
+	fleet = {
+	
+		################################
+		#### 2nd Destroyer Squadron ####
+		################################
+		
+		name = "2nd Destroyer Squadron"
+		naval_base = 540 # Plymouth 
+		
+		#############################
+		## 23rd Destroyer Flotilla ##
+		#############################
+		
+		task_force = {
+			name = "23rd Destroyer Flotilla"
+			location = 540 # Plymouth
+			
+			###########
+			# S Class #
+			###########
+			
+			ship = { 
+				name = "HMS Saumarez" 
+				definition = destroyer 
+				start_experience_factor = 0.55
+				equipment = { ship_hull_light_3 = { amount = 1 owner = ENG version_name = "S Class" } } 
+			}
+			ship = { # Sunk June 1944
+				name = "HMS Swift" 
+				definition = destroyer 
+				start_experience_factor = 0.55
+				equipment = { ship_hull_light_3 = { amount = 1 owner = ENG version_name = "S Class" } } 
+			}
+			ship = { 
+				name = "HMS Savage" 
+				definition = destroyer 
+				start_experience_factor = 0.55
+				equipment = { ship_hull_light_3 = { amount = 1 owner = ENG version_name = "S Class" } } 
+			}
+			ship = { 
+				name = "HMS Scorpion" 
+				definition = destroyer 
+				start_experience_factor = 0.55
+				equipment = { ship_hull_light_3 = { amount = 1 owner = ENG version_name = "S Class" } } 
+			}
+			ship = { 
+				name = "HMS Scourge" 
+				definition = destroyer 
+				start_experience_factor = 0.55
+				equipment = { ship_hull_light_3 = { amount = 1 owner = ENG version_name = "S Class" } } 
+			}
+			ship = { 
+				name = "HMS Success" # Transferred to Norwegian Navy in Exile 1943
+				definition = destroyer 
+				start_experience_factor = 0.55
+				equipment = { ship_hull_light_3 = { amount = 1 owner = ENG version_name = "S Class" } } 
+			}
+			
+			######################
+			# La Melpomène Class #
+			######################
+			
+			ship = { 
+				name = "HMS La Melpomène" 
+				definition = destroyer 
+				start_experience_factor = 0.55
+				equipment = { ship_hull_light_2 = { amount = 1 owner = ENG version_name = "La Melpomène Class" } } 
+			}
+			ship = { 
+				name = "HMS La Flore" 
+				definition = destroyer 
+				start_experience_factor = 0.55
+				equipment = { ship_hull_light_2 = { amount = 1 owner = ENG version_name = "La Melpomène Class" } } 
+			}
+			ship = { 
+				name = "HMS La Cordeliere" 
+				definition = destroyer 
+				start_experience_factor = 0.55
+				equipment = { ship_hull_light_2 = { amount = 1 owner = ENG version_name = "La Melpomène Class" } } 
+			}
+			ship = { 
+				name = "HMS L'Incomprise" 
+				definition = destroyer 
+				start_experience_factor = 0.55
+				equipment = { ship_hull_light_2 = { amount = 1 owner = ENG version_name = "La Melpomène Class" } } 
+			}
+			ship = { 
+				name = "HMS Branlebas" 
+				definition = destroyer 
+				start_experience_factor = 0.55
+				equipment = { ship_hull_light_2 = { amount = 1 owner = ENG version_name = "La Melpomène Class" } } 
+			}
+			ship = { 
+				name = "HMS Bouclier" 
+				definition = destroyer 
+				start_experience_factor = 0.55
+				equipment = { ship_hull_light_2 = { amount = 1 owner = ENG version_name = "La Melpomène Class" } } 
+			}
+		}
+		
+		#############################
+		## 22nd Destroyer Flotilla ##
+		#############################
+		
+		task_force = {
+			name = "22nd Destroyer Flotilla"
+			location = 540 # Plymouth
+			
+			################
+			# Tribal Class #
+			################
+			
+			ship = { 
+				name = "HMS Eskimo" 
+				definition = destroyer 
+				start_experience_factor = 0.55
+				equipment = { ship_hull_light_2 = { amount = 1 owner = ENG version_name = "Tribal Class" } } 
+			}
+			ship = { 
+				name = "HMS Nubian" 
+				definition = destroyer 
+				start_experience_factor = 0.55
+				equipment = { ship_hull_light_2 = { amount = 1 owner = ENG version_name = "Tribal Class" } } 
+			}
+			ship = { 
+				name = "HMS Tartar" 
+				definition = destroyer 
+				start_experience_factor = 0.55
+				equipment = { ship_hull_light_2 = { amount = 1 owner = ENG version_name = "Tribal Class" } } 
+			}
+			ship = { 
+				name = "HMS Ashanti" 
+				definition = destroyer 
+				start_experience_factor = 0.55
+				equipment = { ship_hull_light_2 = { amount = 1 owner = ENG version_name = "Tribal Class" } } 
+			}
+		}
+		
+		#############################
+		## 24th Destroyer Flotilla ##
+		#############################
+		
+		task_force = {
+			name = "24th Destroyer Flotilla"
+			location = 540 # Plymouth
+			
+			###########
+			# T Class #
+			###########
+			
+			ship = { 
+				name = "HMS Troubridge" 
+				definition = destroyer 
+				start_experience_factor = 0.55
+				equipment = { ship_hull_light_3 = { amount = 1 owner = ENG version_name = "T Class" } } 
+			}
+			ship = { 
+				name = "HMS Teazer" 
+				definition = destroyer 
+				start_experience_factor = 0.55
+				equipment = { ship_hull_light_3 = { amount = 1 owner = ENG version_name = "T Class" } } 
+			}
+			ship = { 
+				name = "HMS Termagant" 
+				definition = destroyer 
+				start_experience_factor = 0.55
+				equipment = { ship_hull_light_3 = { amount = 1 owner = ENG version_name = "T Class" } } 
+			}
+			ship = { 
+				name = "HMS Terpsichore" 
+				definition = destroyer 
+				start_experience_factor = 0.55
+				equipment = { ship_hull_light_3 = { amount = 1 owner = ENG version_name = "T Class" } } 
+			}
+			ship = { 
+				name = "HMS Tumult" 
+				definition = destroyer 
+				start_experience_factor = 0.55
+				equipment = { ship_hull_light_3 = { amount = 1 owner = ENG version_name = "T Class" } } 
+			}
+			ship = { 
+				name = "HMS Tuscan" 
+				definition = destroyer 
+				start_experience_factor = 0.55
+				equipment = { ship_hull_light_3 = { amount = 1 owner = ENG version_name = "T Class" } } 
+			}
+			ship = { 
+				name = "HMS Tyrian" 
+				definition = destroyer 
+				start_experience_factor = 0.55
+				equipment = { ship_hull_light_3 = { amount = 1 owner = ENG version_name = "T Class" } } 
+			}
+		}
+	}
+}

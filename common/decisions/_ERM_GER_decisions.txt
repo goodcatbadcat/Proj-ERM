@@ -1,0 +1,2867 @@
+########################
+########################
+### GERMAN DECISIONS ###
+########################
+########################
+
+###############################
+# Emergency Fighter Programme #
+###############################
+
+GER_emergency_fighter_programme = {
+
+	GER_emergency_fighter_program = {
+		icon = decision_gre_faction_management_category
+		
+		allowed = {
+			original_tag = GER
+		}
+		
+		available = {
+			has_war = yes
+			has_political_power > 50
+		}
+		
+		fire_only_once = yes
+		
+		ai_will_do = { factor = 100 }
+		
+		complete_effect = {
+			add_political_power = -50
+			set_country_flag = GER_emergency_fighter_programme
+			add_ideas = { GER_emergency_fighter_program }
+		}
+	}
+}
+			
+		
+		
+#########################
+# OPERATION PANZERFAUST #
+#########################
+
+GER_operation_panzerfaust = {
+
+	GER_operation_panzerfaust = {
+		icon = decision_gre_faction_management_category
+
+		allowed = {
+			original_tag = GER
+		}
+
+		available = {
+			has_war = yes
+			HUN = {
+				is_in_faction_with = GER
+			}
+		}
+
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 1000
+		}
+
+		complete_effect = {
+			country_event = ERM_germany.1
+			set_global_flag = GER_operation_panzerfaust
+			GER = {
+				add_political_power = -50
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_3
+					amount = -2500
+				}
+			}
+			GER = {
+				if = {
+					limit = {
+						OR = {
+							has_dlc = "Together for Victory"
+							has_dlc = "Man the Guns"
+						}
+					}
+					set_autonomy = {
+						target = HUN
+						autonomy_state = autonomy_puppet
+						end_wars = no
+						end_civil_wars = no
+					}
+					else = {
+						puppet = HUN
+					}
+				}
+			}
+			HUN = {
+				set_popularities = {
+					neutrality = 0
+					fascism = 100
+					democratic = 0
+					communism = 0
+				}
+				set_politics = {
+					ruling_party = fascism
+					last_election = "1944.1.1"
+					election_frequency = 72
+					elections_allowed = no
+				}
+				country_event = ERM_hungary.3
+			}
+		}
+	}
+}
+
+###########################
+# OPERATION MARGARETHE II #
+###########################
+
+GER_operation_margarethe_II = {
+
+	GER_operation_margarethe_II = {
+		icon = decision_gre_faction_management_category
+
+		allowed = {
+			original_tag = GER
+		}
+
+		available = {
+			has_war = yes
+			ROM = {
+				is_in_faction_with = GER
+			}
+			GER = {
+				divisions_in_state = {
+					type = any
+					size > 5
+					state = 46
+				}
+				divisions_in_state = {
+					type = any
+					size > 1
+					state = 81
+				}
+				divisions_in_state = {
+					type = any
+					size > 1
+					state = 84
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			country_event = germany.2
+			set_global_flag = GER_operation_margarethe_II
+			GER = {
+				add_political_power = -100
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_3
+					amount = -5000
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_2
+					amount = -5000
+				}
+			}
+			GER = {
+				if = {
+					limit = {
+						OR = {
+							has_dlc = "Together for Victory"
+							has_dlc = "Man the Guns"
+						}
+					}
+					set_autonomy = {
+						target = ROM
+						autonomy_state = autonomy_puppet
+						end_wars = no
+						end_civil_wars = no
+					}
+					else = {
+						puppet = ROM
+					}
+				}
+			}
+			ROM = {
+				set_popularities = {
+					neutrality = 0
+					fascism = 100
+					democratic = 0
+					communism = 0
+				}
+
+				set_politics = {
+					ruling_party = fascism
+					last_election = "1940.1.1"
+					election_frequency = 72
+					elections_allowed = no
+				}
+				country_event = romania.3
+				set_cosmetic_tag = ROM_GER
+			}
+		}
+	}
+}
+
+######################
+# EAST VS WEST FOCUS #
+######################
+
+GER_reinforce_east_or_west = {
+
+	GER_reinforce_east = {
+		icon = decision_gre_faction_management_category
+
+		allowed = {
+			original_tag = GER
+		}
+
+		available = {
+			has_war_with = SOV
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			set_global_flag = GER_operation_margarethe_II
+			GER = {
+				add_ideas = { GER_reinforce_east }
+			}
+			set_country_flag = GER_reinforces_east
+		}
+	}
+	
+	GER_reinforce_west = {
+		icon = decision_gre_faction_management_category
+
+		allowed = {
+			original_tag = GER
+		}
+
+		available = {
+			has_war_with = USA
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			set_global_flag = GER_operation_margarethe_II
+			GER = {
+				add_ideas = { GER_reinforce_west }
+			}
+			set_country_flag = GER_reinforces_west
+		}
+	}
+}
+
+######################
+# EAST VS WEST FOCUS #
+######################
+
+GER_flak_towers = {
+
+	GER_flak_tower_munich = {
+		icon = decision_gre_faction_management_category
+
+		allowed = {
+			original_tag = GER
+		}
+
+		available = {
+			has_war = yes
+			has_political_power > 150
+			NOT = { has_country_flag = GER_munich_tower }
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			set_country_flag = GER_munich_tower
+			add_political_power = -150
+			52 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 4
+					instant_build = yes
+				}	
+			}
+		}
+	}
+	
+	GER_flak_tower_bremen = {
+		icon = decision_gre_faction_management_category
+
+		allowed = {
+			original_tag = GER
+		}
+
+		available = {
+			has_war = yes
+			has_political_power > 150
+			NOT = { has_country_flag = GER_bremen_tower }
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			set_country_flag = GER_bremen_tower
+			add_political_power = -150
+			59 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 4
+					instant_build = yes
+				}	
+			}
+		}
+	}
+	
+	GER_flak_tower_frankfurt = {
+		icon = decision_gre_faction_management_category
+
+		allowed = {
+			original_tag = GER
+		}
+
+		available = {
+			has_war = yes
+			has_political_power > 150
+			NOT = { has_country_flag = GER_frankfurt_tower }
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			set_country_flag = GER_frankfurt_tower
+			add_political_power = -150
+			55 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 4
+					instant_build = yes
+				}	
+			}
+		}
+	}
+	
+	GER_flak_tower_koln = {
+		icon = decision_gre_faction_management_category
+
+		allowed = {
+			original_tag = GER
+		}
+
+		available = {
+			has_war = yes
+			has_political_power > 150
+			NOT = { has_country_flag = GER_koln_tower }
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			set_country_flag = GER_koln_tower
+			add_political_power = -150
+			51 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 4
+					instant_build = yes
+				}	
+			}
+		}
+	}
+	
+	GER_flak_tower_stuttgart = {
+		icon = decision_gre_faction_management_category
+
+		allowed = {
+			original_tag = GER
+		}
+
+		available = {
+			has_war = yes
+			has_political_power > 150
+			NOT = { has_country_flag = GER_stuttgart_tower }
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			set_country_flag = GER_stuttgart_tower
+			add_political_power = -150
+			50 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 3
+					instant_build = yes
+				}	
+			}
+		}
+	}
+	
+	GER_flak_tower_nuremberg = {
+		icon = decision_gre_faction_management_category
+
+		allowed = {
+			original_tag = GER
+		}
+
+		available = {
+			has_war = yes
+			has_political_power > 150
+			NOT = { has_country_flag = GER_nuremberg_tower }
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			set_country_flag = GER_nuremberg_tower
+			add_political_power = -150
+			54 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 4
+					instant_build = yes
+				}	
+			}
+		}
+	}
+	
+	GER_flak_tower_dresden = {
+		icon = decision_gre_faction_management_category
+
+		allowed = {
+			original_tag = GER
+		}
+
+		available = {
+			has_war = yes
+			has_political_power > 150
+			NOT = { has_country_flag = GER_dresden_tower }
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			set_country_flag = GER_dresden_tower
+			add_political_power = -150
+			65 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 4
+					instant_build = yes
+				}	
+			}
+		}
+	}
+	
+	GER_flak_tower_lubeck = {
+		icon = decision_gre_faction_management_category
+
+		allowed = {
+			original_tag = GER
+		}
+
+		available = {
+			has_war = yes
+			has_political_power > 150
+			NOT = { has_country_flag = GER_lubeck_tower }
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			set_country_flag = GER_lubeck_tower
+			add_political_power = -150
+			61 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 4
+					instant_build = yes
+				}	
+			}
+		}
+	}
+	
+	GER_flak_tower_stettin = {
+		icon = decision_gre_faction_management_category
+
+		allowed = {
+			original_tag = GER
+		}
+
+		available = {
+			has_war = yes
+			has_political_power > 150
+			NOT = { has_country_flag = GER_stettin_tower }
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			set_country_flag = GER_stettin_tower
+			add_political_power = -150
+			63 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 4
+					instant_build = yes
+				}	
+			}
+		}
+	}
+	
+	GER_flak_tower_erfurt = {
+		icon = decision_gre_faction_management_category
+
+		allowed = {
+			original_tag = GER
+		}
+
+		available = {
+			has_war = yes
+			has_political_power > 150
+			NOT = { has_country_flag = GER_erfurt_tower }
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			set_country_flag = GER_erfurt_tower
+			add_political_power = -150
+			60 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 4
+					instant_build = yes
+				}	
+			}
+		}
+	}
+	
+	GER_flak_tower_regensburg = {
+		icon = decision_gre_faction_management_category
+
+		allowed = {
+			original_tag = GER
+		}
+
+		available = {
+			has_war = yes
+			has_political_power > 150
+			NOT = { has_country_flag = GER_regensburg_tower }
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			set_country_flag = GER_regensburg_tower
+			add_political_power = -150
+			53 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 4
+					instant_build = yes
+				}	
+			}
+		}
+	}
+	
+	GER_flak_tower_strassburg = {
+		icon = decision_gre_faction_management_category
+
+		allowed = {
+			original_tag = GER
+		}
+
+		available = {
+			has_war = yes
+			has_political_power > 150
+			NOT = { has_country_flag = GER_strassburg_tower }
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			set_country_flag = GER_strassburg_tower
+			add_political_power = -150
+			28 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 4
+					instant_build = yes
+				}	
+			}
+		}
+	}
+	
+	GER_flak_tower_linz = {
+		icon = decision_gre_faction_management_category
+
+		allowed = {
+			original_tag = GER
+		}
+
+		available = {
+			has_war = yes
+			has_political_power > 150
+			NOT = { has_country_flag = GER_linz_tower }
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			set_country_flag = GER_linz_tower
+			add_political_power = -150
+			152 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 4
+					instant_build = yes
+				}	
+			}
+		}
+	}
+}
+	
+	
+#####################
+# FUHRER DIRECTIVES #
+#####################
+
+GER_fuhrer_directive = {
+
+	GER_shipping_protection_directive = {
+		icon = decision_gre_faction_management_category
+
+		allowed = {
+			original_tag = GER
+		}
+
+		available = {
+			OR = {
+				has_war_with = ENG
+				has_war_with = USA
+			}
+			NOT = { has_country_flag = GER_fuhrer_directive_56 }
+			date > 1944.7.12
+			has_political_power > 50
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			set_country_flag = GER_fuhrer_directive_56
+			add_political_power = -50
+			if = {
+				limit = {
+					has_ideas = GER_fuhrer_directives
+				}
+				swap_ideas = {
+					remove_idea = GER_fuhrer_directives
+					add_idea = GER_fuhrer_directives2
+				}
+			}
+			set_country_flag = GER_fuhrer_directive_56
+		}
+	}
+	
+	GER_defense_of_reich_directive = {
+		icon = decision_gre_faction_management_category
+
+		allowed = {
+			original_tag = GER
+		}
+
+		available = {
+			tag = GER
+			has_war = yes
+			NOT = { has_country_flag = GER_defense_of_reich_directive }
+			AND = {
+				OR = {
+					allies_west_foothold = yes
+					has_global_flag = SOV_reached_german_territory
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			set_country_flag = GER_defense_of_reich_directive
+			add_political_power = -50
+			GER = {
+				add_ideas = { GER_defense_of_reich }
+			}
+		}
+	}
+	
+	GER_fuhrer_directive_67 = {
+		icon = decision_gre_faction_management_category
+
+		allowed = {
+			original_tag = GER
+		}
+
+		available = {
+			tag = GER
+			has_war = yes
+			has_ideas = { GER_fuhrer_directive2 }
+			NOT = { has_country_flag = GER_isolated_units_directive }
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			set_country_flag = GER_isolated_units_directive
+			add_political_power = -50
+			if = {
+				limit = {
+					has_ideas = GER_fuhrer_directives2
+				}
+				swap_ideas = {
+					remove_idea = GER_fuhrer_directives2
+					add_idea = GER_fuhrer_directives3
+				}
+			}
+		}
+	}
+	
+	GER_fuhrer_directive_68 = {
+		icon = decision_gre_faction_management_category
+
+		allowed = {
+			original_tag = GER
+		}
+
+		available = {
+			tag = GER
+			has_war = yes
+			NOT = { has_country_flag = GER_fuhrer_command_directive }
+			has_ideas = { GER_fuhrer_directive3 }
+			surrender_progress > 0.01
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			set_country_flag = GER_fuhrer_command_directive
+			add_political_power = -50
+			if = {
+				limit = {
+					has_ideas = GER_fuhrer_directives3
+				}
+				swap_ideas = {
+					remove_idea = GER_fuhrer_directives4
+					add_idea = GER_fuhrer_directives4
+				}
+			}
+		}
+	}
+	
+	GER_defense_of_alps = {
+		icon = decision_gre_faction_management_category
+
+		allowed = {
+			original_tag = GER
+		}
+
+		available = {
+			tag = GER
+			has_war = yes
+			has_political_power > 50
+			NOT = { has_country_flag = GER_defense_of_alps }
+			OR = {
+				161 = {
+					controller = FRA
+					controller = ENG
+				}
+				ITA = { NOT = { is_in_faction_with = GER } }
+			}
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			set_country_flag = GER_defense_of_alps
+			add_political_power = -75
+			39 = {
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = 6675
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = 11598
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = 9630
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = 656
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = 11615
+				}
+			}
+			153 = {
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = 671
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = 668
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = 6673
+				}
+			}
+			160 = {
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = 3657
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = 9613
+				}
+			}
+			152 = {
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = 3674
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = 11612
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = 3673
+				}
+			}
+			736 = {
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = 11595
+				}
+			}
+		}
+	}
+	
+	GER_defense_northern_coast = {
+		icon = decision_gre_faction_management_category
+
+		allowed = {
+			original_tag = GER
+		}
+
+		available = {
+			tag = GER
+			has_war = yes
+			has_political_power > 50
+			has_country_flag = GER_defense_of_reich_directive
+			NOT = { has_country_flag = GER_defense_northern_coast }
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			set_country_flag = GER_defense_northern_coast
+			add_political_power = -50
+			58 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 3
+					instant_build = yes
+					province = 9347
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 3
+					instant_build = yes
+					province = 6389
+				}
+			}
+			59 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 3
+					instant_build = yes
+					province = 6325
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 3
+					instant_build = yes
+					province = 3326
+				}
+			}
+			56 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 3
+					instant_build = yes
+					province = 241
+				}
+			}
+			35 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 3
+					instant_build = yes
+					province = 9431
+				}
+			}
+			36 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 3
+					instant_build = yes
+					province = 6336
+				}
+			}
+			7 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 3
+					instant_build = yes
+					province = 3314
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 3
+					instant_build = yes
+					province = 391
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 3
+					instant_build = yes
+					province = 3211
+				}
+			}
+		}
+	}
+	
+	GER_reinforce_west_wall = {
+		icon = decision_gre_faction_management_category
+
+		allowed = {
+			original_tag = GER
+		}
+
+		available = {
+			tag = GER
+			has_war = yes
+			has_political_power > 50
+			has_country_flag = GER_defense_of_reich_directive
+			NOT = { 
+				has_country_flag = GER_reinforce_west_wall 
+				allies_breached_west_wall = yes
+			}
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			set_country_flag = GER_defense_northern_coast
+			add_political_power = -50
+			50 = {
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = 11640
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = 6712
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = 6542
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = 3530
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = 6568
+				}
+			}
+			42 = {
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = 3558
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = 563
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = 11531
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = 9575
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = 11435
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = 11470
+				}
+			}
+			51 = {
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = 3547
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = 9522
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = 3444
+				}
+			}
+		}
+	}
+	
+	GER_nero_decree_directive = {
+		icon = decision_gre_faction_management_category
+
+		allowed = {
+			original_tag = GER
+		}
+
+		available = {
+			tag = GER
+			has_war = yes
+			has_ideas = { GER_fuhrer_directive3 }
+			has_political_power > 100
+			NOT = { has_country_flag = GER_nero_decree_directive }
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			set_country_flag = GER_nero_decree_directive
+			every_controlled_state = {
+				limit = {
+					is_on_continent = europe 
+					is_controlled_by = GER 
+				}
+				set_state_flag = GER_nero_decree
+			}
+			add_political_power = -100
+		}
+	}
+}
+
+###################
+#                 #
+# F E S T U N G S #
+#				  #
+###################
+
+GER_festung_category = {
+
+	# Festung Breslau
+	GER_festung_breslau = {
+
+		allowed = { original_tag = GER }
+
+		icon = GER_festung
+
+		available = {
+			has_war = yes
+			has_completed_focus = GER_festungs
+			controls_province = 9570
+			has_political_power > 25
+		}
+		
+		visible = {
+			NOT = {
+				AND = {
+					OR = {
+						GER = {
+							controls_state = 86
+							controls_state = 87
+							controls_state = 90
+							controls_state = 762
+							controls_state = 10
+							controls_state = 72
+							controls_state = 74
+							controls_state = 64
+							controls_state = 65
+							controls_state = 69
+						}
+					}
+				}
+			}
+		}
+
+		complete_effect = {
+			add_political_power = -25
+			66 = {
+				add_province_modifier = {
+					static_modifiers = { festung }
+					province = {
+						id = 9570
+					}
+				}
+			}
+			GER = { country_event = { id = ERM_festung.1 hours = 1 } }
+		}
+
+		ai_will_do = {
+			factor = 200
+		}
+	}
+
+	
+	# Festung Koenigsburg
+	GER_festung_koenigsburg = {
+
+		allowed = { original_tag = GER }
+
+		icon = GER_festung
+
+		available = {
+			has_war = yes
+			has_completed_focus = GER_festungs
+			controls_province = 6332
+			has_political_power > 25
+		}
+		
+		visible = {
+			NOT = {
+				AND = {
+					OR = {
+						GER = {
+							controls_state = 188
+							controls_state = 814
+							controls_state = 11
+							controls_state = 97
+							controls_state = 5
+						}
+					}
+				}
+			}
+		}
+
+		complete_effect = {
+			add_political_power = -25
+			763 = {
+				add_province_modifier = {
+					static_modifiers = { festung }
+					province = {
+						id = 6332
+					}
+				}
+			}
+			GER = { country_event = { id = ERM_festung.2 hours = 1 } }
+		}
+
+		ai_will_do = {
+			factor = 200
+		}
+	}
+	
+	# Festung Kaunas
+	GER_festung_kaunas = {
+
+		allowed = { original_tag = GER }
+
+		icon = GER_festung
+
+		available = {
+			has_war = yes
+			has_completed_focus = GER_festungs
+			controls_province = 6296
+			has_political_power > 25
+		}
+		
+		visible = {
+			NOT = {
+				AND = {
+					OR = {
+						GER = {
+							controls_state = 206
+							controls_state = 784
+							controls_state = 815
+							controls_state = 814
+							controls_state = 189
+						}
+					}
+				}
+			}
+		}
+
+		complete_effect = {
+			add_political_power = -25
+			11 = {
+				add_province_modifier = {
+					static_modifiers = { festung }
+					province = {
+						id = 6296
+					}
+				}
+			}
+			GER = { country_event = { id = ERM_festung.3 hours = 1 } }
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	# Festung Wilno
+	GER_festung_wilno = {
+
+		allowed = { original_tag = GER }
+
+		icon = GER_festung
+
+		available = {
+			has_war = yes
+			has_completed_focus = GER_festungs
+			controls_province = 3320
+			has_political_power > 25
+		}
+		
+		visible = {
+			NOT = {
+				AND = {
+					OR = {
+						GER = {
+							controls_state = 810
+							controls_state = 809
+							controls_state = 96
+							controls_state = 206
+							controls_state = 95
+							controls_state = 814
+							controls_state = 97
+						}
+					}
+				}
+			}
+		}
+
+		complete_effect = {
+			add_political_power = -25
+			784 = {
+				add_province_modifier = {
+					static_modifiers = { festung }
+					province = {
+						id = 3320
+					}
+				}
+			}
+			GER = { country_event = { id = ERM_festung.4 hours = 1 } }
+		}
+
+		ai_will_do = {
+			factor = 25
+		}
+	}
+	
+	# Festung Riga
+	GER_festung_riga = {
+
+		allowed = { original_tag = GER }
+
+		icon = GER_festung
+
+		available = {
+			has_war = yes
+			has_completed_focus = GER_festungs
+			controls_province = 9340
+			has_political_power > 25
+		}
+		
+		visible = {
+			NOT = {
+				AND = {
+					OR = {
+						GER = {
+							controls_state = 12
+							controls_state = 810
+							controls_state = 809 
+							controls_state = 815
+							controls_state = 190
+							controls_state = 209
+						}
+					}
+				}
+			}
+		}
+
+		complete_effect = {
+			add_political_power = -25
+			808 = {
+				add_province_modifier = {
+					static_modifiers = { festung }
+					province = {
+						id = 9340
+					}
+				}
+			}
+			GER = { country_event = { id = ERM_festung.5 hours = 1 } }
+		}
+
+		ai_will_do = {
+			factor = 25
+		}
+	}
+	
+	# Festung Danzig
+	GER_festung_danzig = {
+
+		allowed = { original_tag = GER }
+
+		icon = GER_festung
+
+		available = {
+			has_war = yes
+			has_completed_focus = GER_festungs
+			controls_province = 362
+			has_political_power > 25
+		}
+		
+		visible = {
+			NOT = {
+				AND = {
+					OR = {
+						GER = {
+							controls_state = 5
+							controls_state = 763
+							controls_state = 10
+							controls_state = 807
+							controls_state = 63
+						}
+					}
+				}
+			}
+		}
+
+		complete_effect = {
+			add_political_power = -25
+			85 = {
+				add_province_modifier = {
+					static_modifiers = { festung }
+					province = {
+						id = 362
+					}
+				}
+			}
+			GER = { country_event = { id = ERM_festung.6 hours = 1 } }
+		}
+
+		ai_will_do = {
+			factor = 500
+		}
+	}
+	
+	# Festung Posen
+	GER_festung_posen = {
+
+		allowed = { original_tag = GER }
+
+		icon = GER_festung
+
+		available = {
+			has_war = yes
+			has_completed_focus = GER_festungs
+			controls_province = 6558
+			has_political_power > 25
+		}
+		
+		visible = {
+			NOT = {
+				AND = {
+					OR = {
+						GER = {
+							controls_state = 87
+							controls_state = 66
+							controls_state = 67
+							controls_state = 68
+							controls_state = 63
+							controls_state = 807
+							controls_state = 10
+						}
+					}
+				}
+			}
+		}
+
+		complete_effect = {
+			add_political_power = -25
+			86 = {
+				add_province_modifier = {
+					static_modifiers = { festung }
+					province = {
+						id = 6558
+					}
+				}
+			}
+			GER = { country_event = { id = ERM_festung.7 hours = 1 } }
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	# Festung Warsaw
+	GER_festung_warsaw = {
+
+		allowed = { original_tag = GER }
+
+		icon = GER_festung
+
+		available = {
+			has_war = yes
+			has_completed_focus = GER_festungs
+			controls_province = 3544
+			has_political_power > 25
+		}
+
+		visible = {
+			NOT = {
+				AND = {
+					OR = {
+						GER = {
+							controls_state = 90
+							controls_state = 87
+							controls_state = 98
+							controls_state = 97
+							controls_state = 92
+							controls_state = 94
+						}
+					}
+				}
+			}
+		}
+		
+		complete_effect = {
+			add_political_power = -25
+			10 = {
+				add_province_modifier = {
+					static_modifiers = { festung }
+					province = {
+						id = 3544
+					}
+				}
+			}
+			GER = { country_event = { id = ERM_festung.8 hours = 1 } }
+		}
+
+		ai_will_do = {
+			factor = 500
+		}
+	}
+	
+	# Festung Krakow
+	GER_festung_krakow = {
+
+		allowed = { original_tag = GER }
+
+		icon = GER_festung
+
+		available = {
+			has_war = yes
+			has_completed_focus = GER_festungs
+			controls_province = 9427
+			has_political_power > 25
+		}
+		
+		visible = {
+			NOT = {
+				AND = {
+					OR = {
+						SLO = {
+							controls_state = 71
+						}
+						HUN = {
+							controls_state = 73
+						}
+						GER = {
+							controls_state = 90
+							controls_state = 92
+							controls_state = 91
+							controls_state = 89
+							controls_state = 72
+							controls_state = 762
+						}
+					}
+				}
+			}
+		}
+
+		complete_effect = {
+			add_political_power = -25
+			88 = {
+				add_province_modifier = {
+					static_modifiers = { festung }
+					province = {
+						id = 9427
+					}
+				}
+			}
+			GER = { country_event = { id = ERM_festung.9 hours = 1 } }
+		}
+
+		ai_will_do = {
+			factor = 200
+		}
+	}
+	
+	# Festung Koeslin
+	GER_festung_koeslin = {
+
+		allowed = { original_tag = GER }
+
+		icon = GER_festung
+
+		available = {
+			has_war = yes
+			has_completed_focus = GER_festungs
+			controls_province = 11372
+			has_political_power > 25
+		}
+		
+		visible = {
+			NOT = {
+				AND = {
+					OR = {
+						GER = {
+							controls_state = 807
+							controls_state = 86
+							controls_state = 68
+							controls_state = 62
+						}
+					}
+				}
+			}
+		}
+
+		complete_effect = {
+			add_political_power = -25
+			63 = {
+				add_province_modifier = {
+					static_modifiers = { festung }
+					province = {
+						id = 11372
+					}
+				}
+			}
+			GER = { country_event = { id = ERM_festung.10 hours = 1 } }
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	# Festung Stettin
+	GER_festung_stettin = {
+
+		allowed = { original_tag = GER }
+
+		icon = GER_festung
+
+		available = {
+			has_war = yes
+			has_completed_focus = GER_festungs
+			controls_province = 6282
+			has_political_power > 25
+		}
+		
+		visible = {
+			NOT = {
+				AND = {
+					OR = {
+						GER = {
+							controls_state = 807
+							controls_state = 86
+							controls_state = 68
+							controls_state = 62
+						}
+					}
+				}
+			}
+		}
+
+		complete_effect = {
+			add_political_power = -25
+			63 = {
+				add_province_modifier = {
+					static_modifiers = { festung }
+					province = {
+						id = 6282
+					}
+				}
+			}
+			GER = { country_event = { id = ERM_festung.11 hours = 1 } }
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	# Festung Kuestrin
+	GER_festung_kuestrin = {
+
+		allowed = { original_tag = GER }
+
+		icon = GER_festung
+
+		available = {
+			has_war = yes
+			has_completed_focus = GER_festungs
+			controls_province = 3473
+			has_political_power > 25
+		}
+		
+		visible = {
+			NOT = {
+				AND = {
+					OR = {
+						GER = {
+							controls_state = 63
+							controls_state = 64
+							controls_state = 65
+							controls_state = 66
+							controls_state = 86
+						}
+					}
+				}
+			}
+		}
+
+		complete_effect = {
+			add_political_power = -25
+			68 = {
+				add_province_modifier = {
+					static_modifiers = { festung }
+					province = {
+						id = 3473
+					}
+				}
+			}
+			GER = { country_event = { id = ERM_festung.12 hours = 1 } }
+		}
+
+		ai_will_do = {
+			factor = 300
+		}
+	}
+	
+	# Festung Lodz
+	GER_festung_lodz = {
+
+		allowed = { original_tag = GER }
+
+		icon = GER_festung
+
+		available = {
+			has_war = yes
+			has_completed_focus = GER_festungs
+			controls_province = 9508
+			has_political_power > 25
+		}
+		
+		visible = {
+			NOT = {
+				AND = {
+					OR = {
+						GER = {
+							controls_state = 10
+							controls_state = 90
+							controls_state = 98
+							controls_state = 67
+							controls_state = 86
+							controls_state = 807
+						}
+					}
+				}
+			}
+		}
+
+		complete_effect = {
+			add_political_power = -25
+			87 = {
+				add_province_modifier = {
+					static_modifiers = { festung }
+					province = {
+						id = 9508
+					}
+				}
+			}
+			GER = { country_event = { id = ERM_festung.13 hours = 1 } }
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	# Festung Tallinn
+	GER_festung_tallinn = {
+
+		allowed = { original_tag = GER }
+
+		icon = GER_festung
+
+		available = {
+			has_war = yes
+			has_completed_focus = GER_festungs
+			controls_province = 9508
+			has_political_power > 25
+		}
+		
+		visible = {
+			NOT = {
+				AND = {
+					OR = {
+						GER = {
+							controls_state = 813
+							controls_state = 13
+							controls_state = 811
+							controls_state = 191
+							controls_state = 209
+							controls_state = 208
+						}
+					}
+				}
+			}
+		}
+
+		complete_effect = {
+			add_political_power = -25
+			812 = {
+				add_province_modifier = {
+					static_modifiers = { festung }
+					province = {
+						id = 3152
+					}
+				}
+			}
+			GER = { country_event = { id = ERM_festung.14 hours = 1 } }
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	# Festung Memel
+	GER_festung_memel = {
+
+		allowed = { original_tag = GER }
+
+		icon = GER_festung
+
+		available = {
+			has_war = yes
+			has_completed_focus = GER_festungs
+			controls_province = 3288
+			has_political_power > 25
+		}
+		
+		visible = {
+			NOT = {
+				AND = {
+					OR = {
+						GER = {
+							controls_state = 189
+							controls_state = 11
+							controls_state = 814
+							controls_state = 763
+						}
+					}
+				}
+			}
+		}
+
+		complete_effect = {
+			add_political_power = -25
+			188 = {
+				add_province_modifier = {
+					static_modifiers = { festung }
+					province = {
+						id = 3288
+					}
+				}
+			}
+			GER = { country_event = { id = ERM_festung.15 hours = 1 } }
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+	}
+	
+	# Festung Brno
+	GER_festung_brno = {
+
+		allowed = { original_tag = GER }
+
+		icon = GER_festung
+
+		available = {
+			has_war = yes
+			has_completed_focus = GER_festungs
+			controls_province = 3569
+			has_political_power > 25
+		}
+		
+		visible = {
+			NOT = {
+				AND = {
+					OR = {
+						SLO = {
+							controls_state = 70
+						}
+						GER = {
+							controls_state = 72
+							controls_state = 74
+							controls_state = 9
+							controls_state = 69
+							controls_state = 4
+						}
+					}
+				}
+			}
+		}
+
+		complete_effect = {
+			add_political_power = -25
+			75 = {
+				add_province_modifier = {
+					static_modifiers = { festung }
+					province = {
+						id = 3569
+					}
+				}
+			}
+			GER = { country_event = { id = ERM_festung.16 hours = 1 } }
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+	}
+	
+	# Festung Budapest
+	GER_festung_budapest = {
+
+		allowed = { original_tag = GER }
+
+		icon = GER_festung
+
+		available = {
+			has_war = yes
+			has_completed_focus = GER_festungs
+			AND = {
+				OR = {
+					GER = { controls_province = 3569 }
+					HUN = {
+						controls_province = 9660
+						NOT = { has_war_with = GER }
+						has_war_with = SOV
+					}
+				}
+			}
+			has_political_power > 25
+		}
+		
+		visible = {
+			NOT = {
+				OR = {
+					GER = {
+						AND = {
+							OR = {
+								controls_state = 154
+								controls_state = 664
+								controls_state = 155
+							}
+						}
+					}
+					HUN = {
+						AND = {
+							OR = {
+								controls_state = 154
+								controls_state = 664
+								controls_state = 155
+							}
+						}
+					}
+				}
+			}
+		}
+
+		complete_effect = {
+			add_political_power = -25
+			43 = {
+				add_province_modifier = {
+					static_modifiers = { festung }
+					province = {
+						id = 3569
+					}
+				}
+			}
+			GER = { country_event = { id = ERM_festung.16 hours = 1 } }
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+	}
+	
+	# Festung Bratislava
+	GER_festung_bratislava = {
+
+		allowed = { original_tag = GER }
+
+		icon = GER_festung
+
+		available = {
+			has_war = yes
+			has_completed_focus = GER_festungs
+			AND = {
+				OR = {
+					GER = { controls_province = 9692 }
+					SLO = {
+						controls_province = 9692
+						NOT = { has_war_with = GER }
+						has_war_with = SOV
+					}
+				}
+			}
+			has_political_power > 25
+		}
+		
+		visible = {
+			NOT = {
+				OR = {
+					GER = {
+						AND = {
+							OR = {
+								controls_state = 4
+								controls_state = 75
+								controls_state = 69
+								controls_state = 72
+								controls_state = 71
+								controls_state = 664
+								controls_state = 73
+								controls_state = 43
+								controls_state = 155
+							}
+						}
+					}
+					SLO = {
+						AND = {
+							OR = {
+								controls_state = 4
+								controls_state = 75
+								controls_state = 69
+								controls_state = 72
+								controls_state = 71
+								controls_state = 664
+								controls_state = 73
+								controls_state = 43
+								controls_state = 155
+							}
+						}
+					}
+				}
+			}
+		}
+
+		complete_effect = {
+			add_political_power = -25
+			70 = {
+				add_province_modifier = {
+					static_modifiers = { festung }
+					province = {
+						id = 3569
+					}
+				}
+			}
+			GER = { country_event = { id = ERM_festung.17 hours = 1 } }
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+	}
+	
+	# Festung Vienna
+	GER_festung_wien = {
+
+		allowed = { original_tag = GER }
+
+		icon = GER_festung
+
+		available = {
+			has_war = yes
+			has_completed_focus = GER_festungs
+			controls_province = 11666
+			has_political_power > 25
+		}
+		
+		visible = {
+			NOT = {
+				AND = {
+					OR = {
+						HUN = {
+							controls_state = 664
+							controls_state = 155
+						}
+						GER = {
+							controls_state = 79
+							controls_state = 69
+							controls_state = 70
+							controls_state = 102
+							controls_state = 152
+							controls_state = 153
+							controls_state = 43
+						}
+					}
+				}
+			}
+		}
+
+		complete_effect = {
+			add_political_power = -25
+			4 = {
+				add_province_modifier = {
+					static_modifiers = { festung }
+					province = {
+						id = 3569
+					}
+				}
+			}
+			GER = { country_event = { id = ERM_festung.18 hours = 1 } }
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+	}
+	
+	# Festung Graz
+	GER_festung_graz = {
+
+		allowed = { original_tag = GER }
+
+		icon = GER_festung
+
+		available = {
+			has_war = yes
+			has_completed_focus = GER_festungs
+			controls_province = 9648
+			has_political_power > 25
+		}
+		
+		visible = {
+			NOT = {
+				AND = {
+					OR = {
+						HUN = {
+							controls_state = 664
+							controls_state = 155
+						}
+						GER = {
+							controls_state = 79
+							controls_state = 69
+							controls_state = 70
+							controls_state = 102
+							controls_state = 152
+							controls_state = 153
+							controls_state = 43
+						}
+					}
+				}
+			}
+		}
+
+		complete_effect = {
+			add_political_power = -25
+			4 = {
+				add_province_modifier = {
+					static_modifiers = { festung }
+					province = {
+						id = 9648
+					}
+				}
+			}
+			GER = { country_event = { id = ERM_festung.19 hours = 1 } }
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+	}
+	
+	# Festung Dresden
+	GER_festung_dresden = {
+
+		allowed = { original_tag = GER }
+
+		icon = GER_festung
+
+		available = {
+			has_war = yes
+			has_completed_focus = GER_festungs
+			controls_province = 514
+			has_political_power > 25
+		}
+		
+		visible = {
+			NOT = {
+				AND = {
+					OR = {
+						GER = {
+							controls_state = 64
+							controls_state = 66
+							controls_state = 69
+							controls_state = 60
+							controls_state = 54
+						}
+					}
+				}
+			}
+		}
+
+		complete_effect = {
+			add_political_power = -25
+			65 = {
+				add_province_modifier = {
+					static_modifiers = { festung }
+					province = {
+						id = 514
+					}
+				}
+			}
+			GER = { country_event = { id = ERM_festung.20 hours = 1 } }
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+	}
+	
+	# Festung Leipzig
+	GER_festung_leipzig = {
+
+		allowed = { original_tag = GER }
+
+		icon = GER_festung
+
+		available = {
+			has_war = yes
+			has_completed_focus = GER_festungs
+			controls_province = 3535
+			has_political_power > 25
+		}
+		
+		visible = {
+			NOT = {
+				AND = {
+					OR = {
+						GER = {
+							controls_state = 64
+							controls_state = 66
+							controls_state = 69
+							controls_state = 60
+							controls_state = 54
+						}
+					}
+				}
+			}
+		}
+
+		complete_effect = {
+			add_political_power = -25
+			65 = {
+				add_province_modifier = {
+					static_modifiers = { festung }
+					province = {
+						id = 3535
+					}
+				}
+			}
+			GER = { country_event = { id = ERM_festung.21 hours = 1 } }
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+	}
+	
+	# Festung Prague
+	GER_festung_prague = {
+
+		allowed = { original_tag = GER }
+
+		icon = GER_festung
+
+		available = {
+			has_war = yes
+			has_completed_focus = GER_festungs
+			controls_province = 11542
+			has_political_power > 25
+		}
+		
+		visible = {
+			NOT = {
+				AND = {
+					OR = {
+						GER = {
+							controls_state = 74
+							controls_state = 66
+							controls_state = 69
+							controls_state = 67
+							controls_state = 75
+							controls_state = 152
+							controls_state = 53
+							controls_state = 54
+							controls_state = 60
+						}
+					}
+				}
+			}
+		}
+
+		complete_effect = {
+			add_political_power = -25
+			9 = {
+				add_province_modifier = {
+					static_modifiers = { festung }
+					province = {
+						id = 11542
+					}
+				}
+			}
+			GER = { country_event = { id = ERM_festung.22 hours = 1 } }
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+	}
+	
+	# Festung Linz
+	GER_festung_linz = {
+
+		allowed = { original_tag = GER }
+
+		icon = GER_festung
+
+		available = {
+			has_war = yes
+			has_completed_focus = GER_festungs
+			controls_province = 732
+			has_political_power > 25
+		}
+		
+		visible = {
+			NOT = {
+				AND = {
+					OR = {
+						GER = {
+							controls_state = 4
+							controls_state = 75
+							controls_state = 69
+							controls_state = 52
+							controls_state = 53
+							controls_state = 152
+						}
+					}
+				}
+			}
+		}
+
+		complete_effect = {
+			add_political_power = -25
+			152 = {
+				add_province_modifier = {
+					static_modifiers = { festung }
+					province = {
+						id = 732
+					}
+				}
+			}
+			GER = { country_event = { id = ERM_festung.23 hours = 1 } }
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+	}
+	
+	# Festung Linz Salzburg
+	GER_festung_salzburg = {
+
+		allowed = { original_tag = GER }
+
+		icon = GER_festung
+
+		available = {
+			has_war = yes
+			has_completed_focus = GER_festungs
+			controls_province = 688
+			has_political_power > 25
+		}
+		
+		visible = {
+			NOT = {
+				AND = {
+					OR = {
+						GER = {
+							controls_state = 4
+							controls_state = 75
+							controls_state = 69
+							controls_state = 52
+							controls_state = 53
+							controls_state = 152
+						}
+					}
+				}
+			}
+		}
+
+		complete_effect = {
+			add_political_power = -25
+			152 = {
+				add_province_modifier = {
+					static_modifiers = { festung }
+					province = {
+						id = 688
+					}
+				}
+			}
+			GER = { country_event = { id = ERM_festung.24 hours = 1 } }
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+	}
+	
+	# Festung Munich
+	GER_festung_munich = {
+
+		allowed = { original_tag = GER }
+
+		icon = GER_festung
+
+		available = {
+			has_war = yes
+			has_completed_focus = GER_festungs
+			controls_province = 692
+			has_political_power > 25
+		}
+		
+		visible = {
+			NOT = {
+				AND = {
+					OR = {
+						GER = {
+							controls_state = 50
+							controls_state = 153
+							controls_state = 152
+							controls_state = 53
+							controls_state = 54
+						}
+					}
+				}
+			}
+		}
+
+		complete_effect = {
+			add_political_power = -25
+			52 = {
+				add_province_modifier = {
+					static_modifiers = { festung }
+					province = {
+						id = 592
+					}
+				}
+			}
+			GER = { country_event = { id = ERM_festung.25 hours = 1 } }
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+	}
+	
+	# Festung Augsburg
+	GER_festung_augsburg = {
+
+		allowed = { original_tag = GER }
+
+		icon = GER_festung
+
+		available = {
+			has_war = yes
+			has_completed_focus = GER_festungs
+			controls_province = 708
+			has_political_power > 25
+		}
+		
+		visible = {
+			NOT = {
+				AND = {
+					OR = {
+						GER = {
+							controls_state = 50
+							controls_state = 153
+							controls_state = 152
+							controls_state = 53
+							controls_state = 54
+						}
+					}
+				}
+			}
+		}
+
+		complete_effect = {
+			add_political_power = -25
+			52 = {
+				add_province_modifier = {
+					static_modifiers = { festung }
+					province = {
+						id = 708
+					}
+				}
+			}
+			GER = { country_event = { id = ERM_festung.26 hours = 1 } }
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+	}
+	
+	# Festung Nuremberg
+	GER_festung_nuremberg = {
+
+		allowed = { original_tag = GER }
+
+		icon = GER_festung
+
+		available = {
+			has_war = yes
+			has_completed_focus = GER_festungs
+			controls_province = 11544
+			has_political_power > 25
+		}
+		
+		visible = {
+			NOT = {
+				AND = {
+					OR = {
+						GER = {
+							controls_state = 50
+							controls_state = 55
+							controls_state = 52
+							controls_state = 53
+							controls_state = 69
+							controls_state = 60
+						}
+					}
+				}
+			}
+		}
+
+		complete_effect = {
+			add_political_power = -25
+			54 = {
+				add_province_modifier = {
+					static_modifiers = { festung }
+					province = {
+						id = 11544
+					}
+				}
+			}
+			GER = { country_event = { id = ERM_festung.27 hours = 1 } }
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+	}
+	
+	# Festung Stuttgart
+	GER_festung_stuttgart = {
+
+		allowed = { original_tag = GER }
+
+		icon = GER_festung
+
+		available = {
+			has_war = yes
+			has_completed_focus = GER_festungs
+			controls_province = 9517
+			has_political_power > 25
+		}
+		
+		visible = {
+			NOT = {
+				AND = {
+					OR = {
+						GER = {
+							controls_state = 28
+							controls_state = 17
+							controls_state = 52
+							controls_state = 54
+							controls_state = 55
+							controls_state = 52
+						}
+					}
+				}
+			}
+		}
+
+		complete_effect = {
+			add_political_power = -25
+			50 = {
+				add_province_modifier = {
+					static_modifiers = { festung }
+					province = {
+						id = 9517
+					}
+				}
+			}
+			GER = { country_event = { id = ERM_festung.28 hours = 1 } }
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+	}
+	
+	# Festung Frankfurt
+	GER_festung_frankfurt = {
+
+		allowed = { original_tag = GER }
+
+		icon = GER_festung
+
+		available = {
+			has_war = yes
+			has_completed_focus = GER_festungs
+			controls_province = 6488
+			has_political_power > 25
+		}
+		
+		visible = {
+			NOT = {
+				AND = {
+					OR = {
+						GER = {
+							controls_state = 42
+							controls_state = 51
+							controls_state = 57
+							controls_state = 59
+							controls_state = 60
+							controls_state = 50
+							controls_state = 54
+						}
+					}
+				}
+			}
+		}
+
+		complete_effect = {
+			add_political_power = -25
+			55 = {
+				add_province_modifier = {
+					static_modifiers = { festung }
+					province = {
+						id = 6488
+					}
+				}
+			}
+			GER = { country_event = { id = ERM_festung.29 hours = 1 } }
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+	}
+	
+	# Festung Bitburg
+	GER_festung_bitburg = {
+
+		allowed = { original_tag = GER }
+
+		icon = GER_festung
+
+		available = {
+			has_war = yes
+			has_completed_focus = GER_festungs
+			controls_province = 11435
+			has_political_power > 25
+		}
+		
+		visible = {
+			NOT = {
+				AND = {
+					OR = {
+						GER = {
+							controls_state = 8
+							controls_state = 28
+							controls_state = 34
+							controls_state = 50
+							controls_state = 51
+							controls_state = 55
+						}
+					}
+				}
+			}
+		}
+
+		complete_effect = {
+			add_political_power = -25
+			42 = {
+				add_province_modifier = {
+					static_modifiers = { festung }
+					province = {
+						id = 11435
+					}
+				}
+			}
+			GER = { country_event = { id = ERM_festung.30 hours = 1 } }
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+	}
+	
+	# Festung Saarbrucken
+	GER_festung_saarbrucken = {
+
+		allowed = { original_tag = GER }
+
+		icon = GER_festung
+
+		available = {
+			has_war = yes
+			has_completed_focus = GER_festungs
+			controls_province = 11531
+			has_political_power > 25
+		}
+		
+		visible = {
+			NOT = {
+				AND = {
+					OR = {
+						GER = {
+							controls_state = 8
+							controls_state = 28
+							controls_state = 34
+							controls_state = 50
+							controls_state = 51
+							controls_state = 55
+						}
+					}
+				}
+			}
+		}
+
+		complete_effect = {
+			add_political_power = -25
+			42 = {
+				add_province_modifier = {
+					static_modifiers = { festung }
+					province = {
+						id = 11531
+					}
+				}
+			}
+			GER = { country_event = { id = ERM_festung.31 hours = 1 } }
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+	}
+	
+	# Festung Koln
+	GER_festung_koln = {
+
+		allowed = { original_tag = GER }
+
+		icon = GER_festung
+
+		available = {
+			has_war = yes
+			has_completed_focus = GER_festungs
+			controls_province = 587
+			has_political_power > 25
+		}
+		
+		visible = {
+			NOT = {
+				AND = {
+					OR = {
+						GER = {
+							controls_state = 42
+							controls_state = 34
+							controls_state = 6
+							controls_state = 35
+							controls_state = 36
+							controls_state = 57
+							controls_state = 55
+						}
+					}
+				}
+			}
+		}
+
+		complete_effect = {
+			add_political_power = -25
+			51 = {
+				add_province_modifier = {
+					static_modifiers = { festung }
+					province = {
+						id = 587
+					}
+				}
+			}
+			GER = { country_event = { id = ERM_festung.32 hours = 1 } }
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+	}
+	
+	# Festung Essen
+	GER_festung_essen = {
+
+		allowed = { original_tag = GER }
+
+		icon = GER_festung
+
+		available = {
+			has_war = yes
+			has_completed_focus = GER_festungs
+			controls_province = 6469
+			has_political_power > 25
+		}
+		
+		visible = {
+			NOT = {
+				AND = {
+					OR = {
+						GER = {
+							controls_state = 42
+							controls_state = 34
+							controls_state = 6
+							controls_state = 35
+							controls_state = 36
+							controls_state = 57
+							controls_state = 55
+						}
+					}
+				}
+			}
+		}
+
+		complete_effect = {
+			add_political_power = -25
+			51 = {
+				add_province_modifier = {
+					static_modifiers = { festung }
+					province = {
+						id = 6469
+					}
+				}
+			}
+			GER = { country_event = { id = ERM_festung.33 hours = 1 } }
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+	}
+}
+
+
+

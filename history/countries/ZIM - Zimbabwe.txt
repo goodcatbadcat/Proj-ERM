@@ -1,0 +1,480 @@
+﻿##################
+# RHODESIA SETUP #
+##################
+
+capital = 545 # Salisbury
+
+#################
+# Starting Tech #
+#################
+
+set_research_slots = 3
+
+set_technology = { 
+
+	############
+	# Infantry #
+	############
+	
+	# Support Weapons
+	
+	# Infantry Weapons
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	
+	# Infantry Equipment
+	
+	# Motorised
+	motorised_infantry = 1
+	
+	# Marines
+	marines = 1 
+	
+	# Mountaineers
+
+	######################
+	# Support Battalions #
+	######################
+	
+	tech_support = 1	
+	basic_train = 1 	
+	
+	# Engineer
+	tech_engineers = 1
+	
+	# Recon
+	tech_recon = 1
+	
+	# Military Police
+	
+	# Maintenance
+	
+	# Logistics
+	
+	# Signal
+	
+	# Field Hospital
+	
+	#############
+	# Artillery #
+	#############
+	
+	# Artillery
+	gw_artillery = 1
+	
+	# AT
+	
+	# Anti-Air
+	interwar_antiair = 1
+	
+	#################
+	# Land Doctrine #
+	#################
+	
+	# Mobile Warfare
+	trench_warfare = 1
+	
+	##################
+	# Naval Doctrine #
+	##################
+	
+	# Trade Interdiction
+	fleet_in_being = 1
+	
+	#################
+	# Air Equipment #
+	#################
+	
+	# Interceptor
+	early_fighter = 1
+	fighter1 = 1
+	
+	# Multi-Role
+	CAS1 = 1
+	
+	# Tactical Bomber
+	early_bomber = 1
+	tactical_bomber1 = 1
+	
+	# Strategic Bomber
+	strategic_bomber1 = 1
+	
+	# Naval Bomber
+	
+	################
+	# Air Doctrine #
+	################
+	
+	# Ground Support
+	air_superiority = 1 
+	
+	################################
+	# Engineering / Secret Weapons #
+	################################
+	
+	# Radio
+	
+	# Electrical and Mechanical 
+	
+	# Decryption & Encryption
+	
+	############
+	# Industry #
+	############
+	
+	# Machine Tools
+	
+	# Industry [Concentrated vs Dispersed ]
+	
+	# Construction
+	
+	# Synthetics
+	fuel_silos = 1
+	fuel_refining = 1
+}
+
+##############
+# ARMOR TECH #
+##############
+
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = { 
+		gwtank_chassis = 1
+		
+	}
+}
+
+############
+# Politics #
+############
+
+set_popularities = {
+	populist = 0
+	fascist = 0
+	national_socialist = 0
+	paternal_autocrat = 34
+	social_conservative = 26
+	market_liberal = 0
+	social_liberal = 3
+	social_democrat = 18
+	leninist = 7
+	stalinist = 0
+	anarchist = 2
+	left_wing_radical = 10
+}
+
+set_politics = {
+	ruling_party = social_conservative
+	last_election = "1936.1.1"
+	election_frequency = 72
+	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Ian Smith"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+	expire = "1965.1.1"
+	ideology = paternal_autocrat_subtype
+	traits = { 
+		#
+	}
+}
+
+##############
+# 1944 SETUP #
+##############
+1944.1.1 = {
+
+	#################
+	# COUNTRY SETUP #
+	#################
+	
+	add_political_power = 150
+	set_cosmetic_tag = ZIM_UK
+
+	###########
+	# FOCUSES #
+	###########
+
+	## Generic ##
+	complete_national_focus = army_effort
+	complete_national_focus = equipment_effort
+	complete_national_focus = motorization_effort
+	complete_national_focus = aviation_effort
+	complete_national_focus = naval_effort
+	complete_national_focus = large_navy
+	complete_national_focus = industrial_effort
+	complete_national_focus = construction_effort
+	complete_national_focus = production_effort
+	
+	###################
+	# TECHNOLOGY 1944 #
+	###################
+	
+	set_technology = {
+
+		############
+		# Infantry #
+		############
+		
+		# Support Weapons
+		support_weapons = 1 
+		support_weapons2 = 1 
+		support_weapons3 = 1 
+		
+		# Infantry Weapons
+		infantry_weapons = 1
+		infantry_weapons1 = 1
+		infantry_weapons2 = 1  
+		
+		# Infantry Equipment
+		
+		# Motorised
+		motorised_infantry = 1
+		
+		# Mechanized
+		mechanised_infantry = 1 
+		
+		# Trench Warfare
+		
+		# Marines
+		
+		# Paratroops
+		paratroopers = 1 
+		
+		# Mountaineers
+		tech_mountaineers = 1
+		tech_mountaineers2 = 1 
+		
+		# Special Forces
+		tech_special_forces = 1 
+
+		######################
+		# Support Battalions #
+		######################
+		
+		tech_support = 1	
+		basic_train = 1 	
+	
+		# Engineer
+		tech_engineers = 1
+		tech_engineers2 = 1 
+		
+		# Recon
+		tech_recon = 1
+		tech_recon2 = 1 
+		tech_recon3 = 1 
+		
+		# Military Police
+		tech_military_police = 1 
+		
+		# Maintenance
+		tech_maintenance_company = 1 
+		tech_maintenance_company2 = 1 
+		
+		# Logistics
+		tech_logistics_company = 1 
+		tech_logistics_company2 = 1 
+		tech_logistics_company3 = 1 
+		
+		# Signal
+		tech_signal_company = 1 
+		tech_signal_company2 = 1 
+		tech_signal_company3 = 1 
+		
+		# Field Hospital
+		tech_field_hospital = 1 
+		tech_field_hospital2 = 1 
+		tech_field_hospital3 = 1 
+		
+		#############
+		# Artillery #
+		#############
+		
+		# Artillery
+		gw_artillery = 1
+		interwar_artillery = 1
+		artillery1 = 1 
+		artillery2 = 1
+		artillery3 = 1 
+		
+		# Rocket Artillery
+		
+		# Anti-Air
+		interwar_antiair = 1
+		antiair1 = 1 
+		antiair2 = 1 
+		antiair3 = 1 
+		
+		# Anti-Tank
+		interwar_antitank = 1 
+		antitank1 = 1 
+		antitank2 = 1 
+		antitank3 = 1 
+		
+		#################
+		# Land Doctrine #
+		#################
+		
+		# Mobile Warfare
+		trench_warfare = 1 
+		grand_battle_plan = 1 
+		prepared_defense = 1 
+		grand_assault = 1  
+		
+		##################
+		# Naval Doctrine #
+		##################
+		
+		# Base Strike
+		fleet_in_being = 1 
+		battlefleet_concentration = 1 
+		convoy_sailing = 1 
+		submarine_operations = 1 
+		
+		#################
+		# Air Equipment #
+		#################
+		
+		# Interceptor
+		early_fighter = 1
+		fighter1 = 1
+		fighter2 = 1 
+		
+		# Heavy Fighter
+		
+		# Multi-Role
+		CAS1 = 1
+		
+		# Tactical Bomber
+		early_bomber = 1
+		tactical_bomber1 = 1
+		
+		# Strategic Bomber
+		strategic_bomber1 = 1
+		
+		# Naval Bomber
+		
+		################
+		# Air Doctrine #
+		################
+		
+		# Air Superiority
+		air_superiority = 1 
+		infrastructure_destruction = 1 
+		home_defence = 1 
+		naval_strike_tactics = 1 
+		
+		################################
+		# Engineering / Secret Weapons #
+		################################
+		
+		# Radio
+		radio = 1 
+		radio_detection = 1 
+		decimetric_radar = 1 
+		improved_decimetric_radar = 1 
+		centimetric_radar = 1 
+		
+		# Electrical and Mechanical
+		electronic_mechanical_engineering = 1
+		mechanical_computing = 1 
+		computing_machine = 1 
+		
+		# Decryption & Encryption
+		basic_encryption = 1 
+		improved_encryption = 1 
+		basic_decryption = 1 
+		improved_decryption = 1 
+		
+		# Rocketry
+		
+		# Jet Engine
+		
+		# Nuclear Research
+		
+		############
+		# Industry #
+		############
+		
+		# Machine Tools
+		basic_machine_tools = 1 
+		improved_machine_tools = 1 
+		advanced_machine_tools = 1 
+		
+		# Assembly
+		assembly_line_production = 1 
+		streamlined_line = 1 
+		
+		# Industry [Concentrated vs Dispersed]
+		dispersed_industry = 1 
+		dispersed_industry2 = 1 
+		dispersed_industry3 = 1 
+		
+		# Construction
+		construction1 = 1 
+		construction2 = 1
+		construction3 = 1 		
+		
+		# Excavation
+		excavation1 = 1 
+		excavation2 = 1 
+		excavation3 = 1 
+		
+		# Synthetics
+		synth_oil_experiments = 1
+		oil_processing = 1 
+		rubber_processing = 1 
+		fuel_silos = 1
+		fuel_refining = 1
+		fuel_refining2 = 1 
+		fuel_refining3 = 1 
+	}
+	
+	##############
+	# ARMOR TECH #
+	##############
+
+	if = {
+		limit = {
+			NOT = { has_dlc = "No Step Back" }
+		}
+		set_technology = {
+			gwtank = 1
+			basic_light_tank = 1
+		}
+	}
+
+	if = {
+		limit = {
+			has_dlc = "No Step Back"
+		}
+		set_technology = { 
+			gwtank_chassis = 1
+			basic_light_tank_chassis = 1
+		}
+	}
+	
+	## DOD EQPT CONVERSION ##
+	if = {
+		limit = {
+			has_dlc = "Death or Dishonor"
+		}
+		set_technology = {
+			improved_equipment_conversion = 1 
+		}
+	}
+}

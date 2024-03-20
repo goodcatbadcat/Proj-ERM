@@ -1,0 +1,272 @@
+leader_traits = {
+
+################################################################
+###################### ARMAMENTS MINISTER #########################
+###################################################################
+
+	AM_genius_organizer = {
+		sprite = 10
+		random = yes
+		production_factory_max_efficiency_factor = 0.25
+		local_resources_factor = 0.15
+		production_speed_arms_factory_factor = 0.15
+		production_speed_industrial_complex_factor = 0.10
+		production_speed_infrastructure_factor = 0.25
+		production_speed_synthetic_refinery_factor = 0.25
+		conversion_cost_civ_to_mil_factor= -0.25
+		consumer_goods_factor = -0.10
+		
+		equipment_bonus = {
+			armor = {
+				build_cost_ic = -0.10
+				instant = yes
+			}
+			submarine = {
+				build_cost_ic = -0.10
+				instant = yes
+			}
+			fighter_equipment = {
+				build_cost_ic = -0.075
+				instant = yes
+			}
+			heavy_fighter_equipment = {
+				build_cost_ic = -0.05
+				instant = yes
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	AM_iron_lazar = {
+		sprite = 10
+		random = yes
+		local_resources_factor = 0.10
+		production_speed_arms_factory_factor = 0.15
+		conversion_cost_civ_to_mil_factor= -0.25
+		production_factory_max_efficiency_factor = 0.20
+		consumer_goods_factor = 0.10
+		
+		equipment_bonus = {
+			infantry_equipment = {
+				build_cost_ic = -0.15
+				instant = yes
+			}
+			artillery_equipment = {
+				build_cost_ic = -0.1
+				instant = yes
+			}
+			fighter_equipment = {
+				build_cost_ic = -0.05
+				instant = yes
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	AM_armaments_organizer = {
+		sprite = 10
+		random = yes
+		conversion_cost_civ_to_mil_factor= -0.20
+		
+		equipment_bonus = {
+			infantry_equipment = {
+				build_cost_ic = -0.1
+				instant = yes
+			}
+			armor = {
+				build_cost_ic = -0.05
+				instant = yes
+			}
+			fighter_equipment = {
+				build_cost_ic = -0.05
+				instant = yes
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	AM_industrial_chemist = {
+		sprite = 10
+		random = yes
+		local_resources_factor = 0.25
+		production_speed_synthetic_refinery_factor = 0.15
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	AM_infantry_proponent = {
+		random = yes
+		sprite = 10
+		
+		training_time_army_factor = -0.1
+		production_speed_industrial_complex_factor = 0.025
+		
+		equipment_bonus = {
+			infantry_equipment = {
+				build_cost_ic = -0.15
+				instant = yes
+			}
+		}
+
+		ai_will_do = {
+			factor = 1 
+		}
+	}
+
+	AM_tank_proponent = {
+		random = yes
+		sprite = 10
+		ai_focus_military_advancements_factor = 0.5
+		equipment_bonus = {
+			armor = {
+				build_cost_ic = -0.1
+				instant = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1 
+		}
+	}
+
+	AM_submarine_proponent = {
+		sprite = 10
+		ai_focus_naval_factor = 0.5
+		equipment_bonus = {
+			submarine = {
+				build_cost_ic = -0.1
+				instant = yes
+			}
+		}
+
+		random = no
+	}
+
+	AM_air_superiority_proponent = {
+		sprite = 10
+		ai_focus_aviation_factor = 0.5
+		production_factory_max_efficiency_factor = 0.10
+		
+		equipment_bonus = {
+			fighter_equipment = {
+				build_cost_ic = -0.10
+				instant = yes
+			}
+			heavy_fighter_equipment = {
+				build_cost_ic = -0.10
+				instant = yes
+			}
+		}
+
+		random = no
+	}
+
+	AM_battlefield_support_proponent = {
+		sprite = 10
+		ai_focus_aviation_factor = 0.5
+		
+		equipment_bonus = {
+			CAS_equipment = {
+				build_cost_ic = -0.05
+				instant = yes
+			}
+			tac_bomber_equipment = {
+				build_cost_ic = -0.05
+				instant = yes
+			}
+		}
+
+		random = no
+	}
+
+	AM_battlefleet_proponent = {
+		sprite = 10
+		ai_focus_naval_factor = 0.5
+		industrial_capacity_factory = 0.10
+		navy_refit_speed = 0.35
+		
+		equipment_bonus = {
+			capital_ship = {
+				build_cost_ic = -0.10
+				instant = yes
+			}
+			screen_ship = {
+				build_cost_ic = -0.10
+				instant = yes
+			}
+		}
+		random = no
+	}
+
+	AM_strategic_bomber_proponent = {
+		sprite = 10
+		ai_focus_aviation_factor = 0.5
+		equipment_bonus = {
+			strat_bomber_equipment = {
+				build_cost_ic = -0.1
+				instant = yes
+			}
+		}
+
+		random = no
+	}
+
+	AM_naval_aviation_proponent = {
+		sprite = 10
+		ai_focus_naval_air_factor = 0.5
+		equipment_bonus = {
+			nav_bomber_equipment = {
+				build_cost_ic = -0.05
+				instant = yes
+			}
+			cv_fighter_equipment = {
+				build_cost_ic = -0.05
+				instant = yes
+			}
+			cv_nav_bomber_equipment = {
+				build_cost_ic = -0.05
+				instant = yes
+			}
+		}
+
+		random = no
+	}
+
+	AM_carrier_proponent = {
+		sprite = 10
+		ai_focus_naval_factor = 0.5
+		equipment_bonus = {
+			cv_nav_bomber_equipment = {
+				build_cost_ic = -0.05
+				instant = yes
+			}
+			carrier = {
+				build_cost_ic = -0.1
+				instant = yes
+			}
+		}
+
+		random = no
+	}
+
+	AM_military_entrenpreneur = {
+		random = no
+		sprite = 10
+		supply_consumption_factor = -0.10
+		ai_focus_war_production_factor = 0.5
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

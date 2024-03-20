@@ -1,0 +1,461 @@
+﻿############################
+# HUNGARIAN UNIT TEMPLATES #
+############################
+
+#####################
+# INFANTRY VARIANTS #
+#####################
+
+# Infantry Division
+division_template = {
+	name = "Gyaloghadosztály"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+	}
+	support = {
+       	artillery = { x = 0 y = 0 } 
+		anti_air = { x = 0 y = 1 }
+		anti_tank = { x = 0 y = 2 }
+		recon = { x = 0 y = 3 }
+		signals_company = { x = 0 y = 4 }
+	}
+	priority = 25
+}
+
+# Infantry Brigade
+division_template = {
+	name = "Gyalogdandár"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		artillery_brigade = { x = 2 y = 0 }
+		artillery_brigade = { x = 2 y = 1 }
+	}
+	support = {
+       	artillery = { x = 0 y = 0 } 
+		anti_air = { x = 0 y = 1 }
+		recon = { x = 0 y = 2 }
+		signals_company = { x = 0 y = 3 }
+	}
+	priority = 20
+}
+
+# Mountaineer Division
+division_template = {
+	name = "Hegyihadosztály"
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 0 y = 3 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+		mountaineers = { x = 1 y = 3 }
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+	}
+	support = {
+       	artillery = { x = 0 y = 0 } 
+		anti_air = { x = 0 y = 1 }
+		anti_tank = { x = 0 y = 2 }
+		recon = { x = 0 y = 3 }
+		signals_company = { x = 0 y = 4 }
+	}
+	priority = 5
+}
+
+####################
+# CAVALRY VARIANTS #
+####################
+
+# Cavalry Division
+division_template = {
+	name = "Huszárhadosztály" 			
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		mot_artillery_brigade = { x = 2 y = 2 }
+	    mot_artillery_brigade = { x = 2 y = 3 }
+	}
+	support = {
+       	artillery = { x = 0 y = 0 } 
+		anti_air = { x = 0 y = 1 }
+		anti_tank = { x = 0 y = 2 }
+		engineer = { x = 0 y = 3 }
+		signals_company = { x = 0 y = 4 }
+	}
+	priority = 0
+}
+
+# Cavalry Brigade
+division_template = {
+	name = "Huszárdandár" 			
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 0 y = 3 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		mot_artillery_brigade = { x = 1 y = 2 }
+	    mot_artillery_brigade = { x = 1 y = 3 }
+	}
+	support = {
+       	artillery = { x = 0 y = 0 } 
+		anti_air = { x = 0 y = 1 }
+		engineer = { x = 0 y = 2 }
+		signals_company = { x = 0 y = 3 }
+	}
+	priority = 0
+}
+
+# Mechanized Division
+division_template = {
+	name = "Lovashadosztály" 			
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 0 y = 2 }
+		mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+		mechanized = { x = 1 y = 2 }
+		mechanized = { x = 2 y = 0 }
+		mechanized = { x = 2 y = 1 }
+		mechanized = { x = 2 y = 2 }
+		mot_artillery_brigade = { x = 2 y = 0 }
+		mot_artillery_brigade = { x = 2 y = 1 }
+	}
+	support = {
+       	recon = { x = 0 y = 0 } 
+		maintenance_company = { x = 0 y = 1 }
+		anti_tank = { x = 0 y = 2 }
+		engineer = { x = 0 y = 3 }
+		signals_company = { x = 0 y = 4 }
+	}
+	priority = 5
+}
+
+# Motorized Division
+division_template = {
+	name = "Motorizálthadosztály" 			
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+		mot_artillery_brigade = { x = 2 y = 0 }
+		mot_artillery_brigade = { x = 2 y = 1 }
+	}
+	support = {
+       	artillery = { x = 0 y = 0 } 
+		anti_air = { x = 0 y = 1 }
+		recon = { x = 0 y = 2 }
+		signals_company = { x = 0 y = 3 }
+	}
+	priority = 20
+}
+
+# Motorized Brigade
+division_template = {
+	name = "Motorizáltdandár" 			
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		mot_artillery_brigade = { x = 2 y = 0 }
+		mot_artillery_brigade = { x = 2 y = 1 }
+	}
+	support = {
+       	artillery = { x = 0 y = 0 } 
+		anti_air = { x = 0 y = 1 }
+		recon = { x = 0 y = 2 }
+		signals_company = { x = 0 y = 3 }
+	}
+	priority = 20
+}
+
+####################
+# ARMORED VARIANTS #
+####################
+
+# Armored Division Division
+division_template = {
+	name = "Panceloshadosztaly"
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+		mot_artillery_brigade = { x = 3 y = 2 }
+	    mot_artillery_brigade = { x = 3 y = 3 }
+	}
+	support = {
+       	recon = { x = 0 y = 0 } 
+		maintenance_company = { x = 0 y = 1 }
+		anti_tank = { x = 0 y = 2 }
+		engineer = { x = 0 y = 3 }
+		signals_company = { x = 0 y = 4 }
+	}
+	priority = 5
+}
+
+
+units = {
+
+	####################
+	# MAINLAND HUNGARY #
+	####################
+	division= {	
+		name = "5. Gyaloghadosztály"
+		location = 9660
+		division_template = "Gyaloghadosztály"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.85
+	}
+	division= {	
+		name = "6. Gyaloghadosztály"
+		location = 9660
+		division_template = "Gyaloghadosztály"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.85
+	}
+	division= {	
+		name = "1. Panceloshadosztaly"
+		location = 9660
+		division_template = "Panceloshadosztaly"
+		start_experience_factor = 0.30
+		start_equipment_factor = 0.75
+	}
+	#
+	division= {	
+		name = "7. Gyaloghadosztály"
+		location = 686
+		division_template = "Gyaloghadosztály"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.65
+	}
+	division= {	
+		name = "9. Gyaloghadosztály"
+		location = 686
+		division_template = "Gyaloghadosztály"
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.50
+	}
+	#
+	division= {	
+		name = "10. Gyaloghadosztály"
+		location = 11610
+		division_template = "Gyaloghadosztály"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.75
+	}
+	#
+	division= {	
+		name = "12. Gyaloghadosztály"
+		location = 619
+		division_template = "Gyaloghadosztály"
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.50
+	}
+	#
+	division= {	
+		name = "13. Gyaloghadosztály"
+		location = 6700
+		division_template = "Gyaloghadosztály"
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.50
+	}
+	
+	####################
+	# CARPATHIAN FRONT #
+	####################
+	division= {	
+		name = "9. Székely Határvadáaszdandár"
+		location = 11689
+		division_template = "Gyalogdandár"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.75
+	}
+	#
+	division= {	
+		name = "19. Tartalékhadosztály"
+		location = 727
+		division_template = "Gyaloghadosztály"
+		start_experience_factor = 0.35
+		start_equipment_factor = 0.90
+	}
+	division= {	
+		name = "2. Hegyihadosztály"
+		location = 727
+		division_template = "Hegyihadosztály"
+		start_experience_factor = 0.35
+		start_equipment_factor = 0.90
+	}
+	#
+	division= {	
+		name = "27. Székely Könnyűhadosztály"
+		location = 3743
+		division_template = "Gyaloghadosztály"
+		start_experience_factor = 0.55
+		start_equipment_factor = 0.90
+	}
+	division= {	
+		name = "24. Gyaloghadosztály"
+		location = 3743
+		division_template = "Gyaloghadosztály"
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.50
+	}
+	#
+	division= {	
+		name = "25. Gyaloghadosztály"
+		location = 9425
+		division_template = "Gyaloghadosztály"
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.50
+	}
+	division= {	
+		name = "16. Gyaloghadosztály"
+		location = 9425
+		division_template = "Gyaloghadosztály"
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.50
+	}
+	division= {	
+		name = "1. Hegyihadosztály"
+		location = 9425
+		division_template = "Hegyihadosztály"
+		start_experience_factor = 0.40
+		start_equipment_factor = 0.90
+	}
+	#
+	division= {	
+		name = "18. Tartalékhadosztály"
+		location = 6483
+		division_template = "Gyaloghadosztály"
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.50
+	}
+	#
+	division= {	
+		name = "2. Panceloshadosztaly"
+		location = 11411
+		division_template = "Panceloshadosztaly"
+		start_experience_factor = 0.45
+		start_equipment_factor = 0.85
+	}
+	division= {	
+		name = "20. Gyaloghadosztály"
+		location = 11411
+		division_template = "Gyaloghadosztály"
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.50
+	}
+	
+	######################
+	# BYELORUSSIAN FRONT #
+	######################
+	division= {	
+		name = "5. Tartalékhadosztály"
+		location = 3392
+		division_template = "Gyaloghadosztály"
+		start_experience_factor = 0.40
+		start_equipment_factor = 0.95
+	}
+	division= {	
+		name = "1. Huszárhadosztály"
+		location = 3392
+		division_template = "Huszárhadosztály"
+		start_experience_factor = 0.45
+		start_equipment_factor = 0.95
+	}
+	#
+	division= {	
+		name = "12. Tartalékhadosztály"
+		location = 6306
+		division_template = "Gyaloghadosztály"
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.70
+	}
+	#
+	division= {	
+		name = "23. Tartalékhadosztály"
+		location = 6415
+		division_template = "Gyaloghadosztály"
+		start_experience_factor = 0.40
+		start_equipment_factor = 0.95
+	}
+	division= {	
+		name = "1. Lovashadosztály"
+		location = 6415
+		division_template = "Lovashadosztály"
+		start_experience_factor = 0.40
+		start_equipment_factor = 0.85
+	}
+}
+	
+###########
+# AIR OOB #
+###########
+
+air_wings = {
+
+	# Budapest #
+	43 = {
+		### I Légihadsereg ###
+		fighter_equipment_2 = {
+			owner = "HUN"
+			amount = 100
+		}	
+		name = "I. Vadászosztály"
+		##
+		tac_bomber_equipment_2 = {
+			owner = "HUN"
+			amount = 50
+		}	
+		name = "I. Vadászbombázó Osztály"
+	}
+}

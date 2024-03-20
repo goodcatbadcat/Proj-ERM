@@ -1,0 +1,614 @@
+spriteTypes = {
+
+
+    #####################
+    ## JAPANESE EVENTS ##
+    #####################
+
+    spriteType = {
+        name = "GFX_report_event_"
+        texturefile = "gfx/event_pictures/Romania/report_event_.dds"
+    }
+
+    ####################
+    ## JAPANESE IDEAS ##
+    ####################
+
+    spriteType = {
+        name = "GFX_"
+        texturefile = "gfx/interface/ideas/national_ideas/JAP/.dds"
+    }
+
+    #########################
+    ### FINNISH MINISTERS ###
+    #########################
+
+    ## HOS ##
+
+    SpriteType = {
+        name = "GFX_idea_JAP_Emperor_Hirohito"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Emperor_Hirohito.dds"
+        
+    }
+
+
+    ## HOG ##
+
+    SpriteType = {
+        name = "GFX_idea_JAP_Tojo_Hideki"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Tojo_Hideki.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Koiso_Kuniaki"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Koiso_Kuniaki.dds"
+        
+    }
+    
+    ## FM ##
+
+    SpriteType = {
+        name = "GFX_idea_JAP_Shigemitsu_Mamoru"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Shigemitsu_Mamoru.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Konoe_Fumimaro"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Konoe_Fumimaro.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Abe_Nobuyuki"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Abe_Nobuyuki.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Matsuoka_Yosuke"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Matsuoka_Yosuke.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Toyoda_Teijiro"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Toyoda_Teijiro.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Togo_Shigenori"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Togo_Shigenori.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Tani_Masayuki"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Tani_Masayuki.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Suzuki_Kantaro"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Suzuki_Kantaro.dds"
+        
+    }
+
+    ## AM ##
+
+    SpriteType = {
+        name = "GFX_idea_JAP_Hara_Tomio"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Hara_Tomio.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Hatta_Yoshiaki"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Hatta_Yoshiaki.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Sakonji_Seizo"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Sakonji_Seizo.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Terauchi_Hisaichi"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Terauchi_Hisaichi.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Yonai_Mitsumasa"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Yonai_Mitsumasa.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Nakajima_Chikuhei"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Nakajima_Chikuhei.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Ichiki_Otohiko"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Ichiki_Otohiko.dds"
+        
+    }
+
+    ## MOS ##
+
+    SpriteType = {
+        name = "GFX_idea_JAP_Araki_Sadao"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Araki_Sadao.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Ando_Kisaburo"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Ando_Kisaburo.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Yasui_Eiji"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Yasui_Eiji.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Kobayashi_Seizo"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Kobayashi_Seizo.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Tanabe_Harumichi"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Tanabe_Harumichi.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Yuzawa_Michio"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Yuzawa_Michio.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Abe_Genki"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Abe_Genki.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Kodama_Hideo"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Kodama_Hideo.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Nakamura_Aketo"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Nakamura_Aketo.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Kato_Hakujiro"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Kato_Hakujiro.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Odachi_Shigeo"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Odachi_Shigeo.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Mizuno_Rentaro"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Mizuno_Rentaro.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Gotaro_Ogawa"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Gotaro_Ogawa.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Ugaki_Kazushige"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Ugaki_Kazushige.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Tsuchihashi_Yuitsu"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Tsuchihashi_Yuitsu.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Machida_Chuji"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Machida_Chuji.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Horikiri_Zenjiro"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Horikiri_Zenjiro.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Nomura_Naokuni"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Nomura_Naokuni.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Oka_Takazumi"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Oka_Takazumi.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Suzuki_Kantaro"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Suzuki_Kantaro.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Kato_Ryogoro"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Kato_Ryogoro.dds"
+        
+    }
+
+    ## MOI ##
+
+    SpriteType = {
+        name = "GFX_idea_JAP_Sakurauchi_Yukio"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Sakurauchi_Yukio.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Kawada_Isao"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Kawada_Isao.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Ogura_Masatsune"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Ogura_Masatsune.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Yuki_Toyotaro"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Yuki_Toyotaro.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Ishiwata_Sotaro"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Ishiwata_Sotaro.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Yamamoto_Tatsuo"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Yamamoto_Tatsuo.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Kishi_Nobusuke"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Kishi_Nobusuke.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Aoki_Kazuo"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Aoki_Kazuo.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Ikeda_Shigeaki"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Ikeda_Shigeaki.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Fujiwara_Ginjiro"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Fujiwara_Ginjiro.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Kobayashi_Ichizo"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Kobayashi_Ichizo.dds"
+        
+    }
+
+    ## MOC ##
+
+    SpriteType = {
+        name = "GFX_idea_JAP_Araki_Sadao"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Araki_Sadao.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Nakao_Nahagi"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Nakao_Nahagi.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Hideo_Hiraide"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Hideo_Hiraide.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Okumura_Kiwao"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Okumura_Kiwao.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Miyoshi_Shigeo"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Miyoshi_Shigeo.dds"
+        
+    }
+
+    ## THEORISTS ##
+
+    SpriteType = {
+        name = "GFX_idea_JAP_Ishii_Shiro"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Ishii_Shiro.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Kitano_Masaji"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Kitano_Masaji.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Satoyasu_Iimori"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Satoyasu_Iimori.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Matsusaburo_Fujiwara"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Matsusaburo_Fujiwara.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Arakatsu_Bunsaku"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Arakatsu_Bunsaku.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Yukawa_Hideki"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Yukawa_Hideki.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Horikoshi_Jiro"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Horikoshi_Jiro.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Doi_Takeo"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Doi_Takeo.dds"
+        
+    } 
+
+    ## ARMY CHIEF ##
+
+    SpriteType = {
+        name = "GFX_idea_JAP_Tanigawa_Kazuo"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Tanigawa_Kazuo.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Mikawa_Gunichi"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Mikawa_Gunichi.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Terauchi_Hisaichi"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Terauchi_Hisaichi.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Kenji_Doihara"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Kenji_Doihara.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Yamashita_Tomoyuki"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Yamashita_Tomoyuki.dds"
+        
+    }
+
+    ## HIGH COMAND ##
+
+    SpriteType = {
+        name = "GFX_idea_JAP_Toshizo_Nishio"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Toshizo_Nishio.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Yuitsu_Tsuchihashi"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Yuitsu_Tsuchihashi.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Hata_Shunroku"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Hata_Shunroku.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Fujioka_Takeo"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Fujioka_Takeo.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Aotsu_Kikutaro"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Aotsu_Kikutaro.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Adachi_Hatazo"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Adachi_Hatazo.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Higuchi_Kiichiro"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Higuchi_Kiichiro.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Iimura_Jo"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Iimura_Jo.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Imamura_Hitoshi"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Imamura_Hitoshi.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Okamura_Yasuji"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Okamura_Yasuji.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Umezu_Yoshijiro"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Umezu_Yoshijiro.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Yamada_Otozo"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Yamada_Otozo.dds"
+        
+    }
+
+    ## AIR CHIEF ##
+
+    SpriteType = {
+        name = "GFX_idea_JAP_Higashikuni_Naruhiko"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Higashikuni_Naruhiko.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Kenji_Doihara"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Kenji_Doihara.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Tsukahara_Nishizo"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Tsukahara_Nishizo.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Doihara_Kenji"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Doihara_Kenji.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Higashikuni_Naruhiko"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Higashikuni_Naruhiko.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Wada_Misao"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Wada_Misao.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Yamashita_Tomouki"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Yamashita_Tomouki.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Anami_Korechika"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Anami_Korechika.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Ushiroku_Jun"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Ushiroku_Jun.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Sugawara_Michio"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Sugawara_Michio.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Kawabe_Masakazu"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Kawabe_Masakazu.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Inoue_Ikutaro"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Inoue_Ikutaro.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Tokugawa_Yoshitoshi"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Tokugawa_Yoshitoshi.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Yamamoto_Eisuke"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Yamamoto_Eisuke.dds"
+        
+    }
+
+
+    ## NAVY CHIEF ##
+
+    SpriteType = {
+        name = "GFX_idea_JAP_Abe_Hiroaki"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Abe_Hiroaki.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Daigo_Tadashige"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Daigo_Tadashige.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Hasegawa_Kiyoshi"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Hasegawa_Kiyoshi.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Inoue_Shigeyoshi"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Inoue_Shigeyoshi.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Kondo_Nobutake"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Kondo_Nobutake.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Jisaburo_Ozawa"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Jisaburo_Ozawa.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Toyoda_Soemu"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Toyoda_Soemu.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Yoshida_Zengo"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Yoshida_Zengo.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Shimada_Shigetaro"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Shimada_Shigetaro.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Nagano_Osami"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Nagano_Osami.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Oikawa_Koshiro"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Oikawa_Koshiro.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Fushimi_Hiroyasu"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Fushimi_Hiroyasu.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Takarabe_Takeshi"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Takarabe_Takeshi.dds"
+        
+    }
+    SpriteType = {
+        name = "GFX_idea_JAP_Genda_Minoru"
+        texturefile = "gfx/interface/ideas/ministers/JAP/idea_JAP_Genda_Minoru.dds"
+        
+    }
+
+    
+    #####################
+    # FINNISH COMPANIES #
+    #####################
+
+    ## Armor ##
+    spriteType = {
+        name = "GFX_idea_FIN_"
+        texturefile = "gfx/interface/ideas/companies/FIN/idea_FIN_.dds"
+    }
+}
